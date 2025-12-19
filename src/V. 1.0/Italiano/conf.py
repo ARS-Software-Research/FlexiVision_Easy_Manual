@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Easy Versioning'
-copyright = '2025, Easy Versioning'
-author = 'Niccolò Quadrani'
+project = '<img src="http://localhost:8001/V.%201.0/Italiano/_images/logo_fv.png" alt="Logo" style="padding: 10px; border-radius: 20px; background-color: white;"> '
+copyright = '2025, Ars Automation'
+author = 'Niccolò Quadrani & Noah Costantini'
 release = '1.0'
 
 # -- General configuration ---------------------------------------------------

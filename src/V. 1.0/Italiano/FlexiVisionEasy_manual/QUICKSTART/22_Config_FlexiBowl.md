@@ -15,3 +15,4 @@ Lo scopo è avere una sequenza che rispetti questi criteri:
 Tip: utilizzare sempre il soffio pre-flip (sarà il flip stesso a sparpagliare i componenti) e utilizzare il soffio post-flip (che invece raggruppa i componenti) solo in caso di necessità (applicazioni molto veloci)  
 Importante: è questo il momento di effettuare la regolazione di tutti gli accessori montati sul FlexiBowl, ed eventualmente modificare la movimentazione in base al comportamento degli accessori.   
 Importante: cliccare su Synchronize Parameters ogni volta che si effettua una modifica dei parametri.   
+## CERCARE DI CREARE UNA GUIDA PER LA REGOLAZIONE DEI PARAMETRI IN BASE AL TIPO DI COMPONENTE

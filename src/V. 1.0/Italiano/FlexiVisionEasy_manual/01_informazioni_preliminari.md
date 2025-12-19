@@ -41,6 +41,11 @@ Le informazioni contenute in questo documento sono soggette a modifiche senza pr
 Salvo diversamente specificato, tutte le dimensioni e le misurazioni in questo manuale sono espresse in millimetri (mm).  
 
 :::
+:::{admonition}  SUGGERIMENTO
+:class: tip
 
+BLABLABLA 
+
+:::
 
 inserire qui le identificazioni !!

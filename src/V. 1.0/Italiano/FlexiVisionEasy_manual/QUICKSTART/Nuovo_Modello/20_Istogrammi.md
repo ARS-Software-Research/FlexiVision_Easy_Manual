@@ -10,3 +10,7 @@ jj.	Creare fino a otto istogrammi per uno stesso modello in base alle esigenze d
 kk.	Una volta creati tutti gli istogrammi, cliccare su TEST nella pagina di tutti gli istogrammi e cliccare su TEST per visualizzarli tutti contemporaneamente.   
 ll.	L’istogramma diventa rosso se “triggerato”, cioè se rileva al suo interno del nero/bianco in base all’applicazione (presenza di qualcosa che rende l’area non libera)  
 mm.	Cliccare su next   
+
+```{toctree}  
+20b_Expert.md
+```

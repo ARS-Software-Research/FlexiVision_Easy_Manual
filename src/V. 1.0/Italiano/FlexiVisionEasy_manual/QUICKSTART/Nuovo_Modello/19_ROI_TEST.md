@@ -10,3 +10,7 @@ aa.	Nel riquadro verranno mostrati i componenti rilevati con informazioni su Id,
 FlexiVision ordinerà tutti i componenti riconosciuti nell’immagine e li ordinerà per score decrescente. Ad ognuno assegnerà un Id diverso in modo crescente. (il componente più fedele all’originale avrà Id pari a zero)  
 bb.	Rimuovere tutti i componenti dall’area, fatta eccezione per il componente di riferimento!!!  
 cc.	Cliccare su next   
+
+```{toctree}  
+19b_Expert.md
+```

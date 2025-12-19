@@ -30,3 +30,7 @@ i.	Un valore più vicino allo zero mi restituirà un modello più dettagliato
 ii.	Un valore più vicino a 1 mi restituirà un modello meno dettagliato   
 t.	Nominare il modello   
 u.	Cliccare su next   
+
+```{toctree}  
+18b_Expert.md
+```

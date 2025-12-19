@@ -6,3 +6,7 @@ qq.	Cliccare su gripper offset per calcolare l’offset di cui il robot ha bisog
 rr.	Cliccare su next   
 ss.	Salvare la ricetta   
 tt.	Se ci fossero altri modelli da effettuare, la procedura rimane la stessa   
+
+```{toctree}  
+21b_Expert.md
+```
