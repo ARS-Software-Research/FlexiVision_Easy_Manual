@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexiVision Easy Manual</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #191669 0%, #0A0731 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: block;
+            padding: 20px 25px;
+            background: linear-gradient(135deg,  #191669 0%, #0A0731 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .link-card .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .link-card .description {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .link-card {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FlexiVision® Easy Manual</h1>
+        
+        <div class="links">
+            <a href="documentation/V. 1.0/Italiano/index.html" class="link-card">
+                <div>
+                    <span class="icon">🇮🇹</span>
+                    <strong>Versione Italiana</strong>
+                </div>
+                <div class="description">Manuale in italiano</div>
+            </a>
+            
+            <a href="documentation/V. 1.0/English/index.html" class="link-card">
+                <div>
+                    <span class="icon">🇬🇧</span>
+                    <strong>English Version</strong>
+                </div>
+                <div class="description">Manual in English</div>
+            </a>
+        </div>
+
+        <footer>
+            <p>Made using <a href="https://github.com/Quadra-Ryo/Easy-versioning-sphinx" target="_blank">Easy Versioning Sphinx</a> by <a href = "https://www.linkedin.com/company/ars-automation-srl/posts/?feedView=all">ARS Automation</a></p>
+        </footer>
+    </div>
+</body>
+</html>
