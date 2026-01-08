@@ -201,10 +201,10 @@
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="SETUP/13_setup.html"><strong>SETUP</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="SETUP/13a_FB_Setup.html">STEP 4 : FlexiBowl SetUp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="SETUP/13b_Hopper_Setup.html">STEP 5 : Hopper SetUp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="SETUP/13c_Robot_Setup.html">STEP 6 : Robot SetUp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="SETUP/13d_Camera_Setup.html">STEP 6 : Camera SetUp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SETUP/13a_FB_Setup.html">PASSO 4 : FlexiBowl SetUp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SETUP/13b_Hopper_Setup.html">PASSO 5 : Hopper SetUp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SETUP/13c_Robot_Setup.html">PASSO 6 : Robot SetUp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SETUP/13d_Camera_Setup.html">PASSO 7 : Camera SetUp</a></li>
 </ul>
 </details></li>
 </ul>
@@ -429,24 +429,49 @@ document.write(`
 <section id="pagina-home">
 <h2>Pagina Home<a class="headerlink" href="#pagina-home" title="Link to this heading">#</a></h2>
 <p><img alt="Pagina Home" src="../../_images/pagina_home.png" /></p>
-<div class="pst-scrollable-table-container"><table class="table">
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-text">Descrizione Pagina Home</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 90.0%" />
+</colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>#</p></th>
-<th class="head"><p>descrizione</p></th>
+<tr class="row-odd"><th class="head"><p><strong>#</strong></p></th>
+<th class="head"><p><strong>Descrizione</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
-<td><p>riquadro in cui…</p></td>
+<td><p><strong>Informazioni di Stato e Utente</strong>:</p>
+<ul class="simple">
+<li><p><strong>Current selected recipe</strong>: visualizza il nome della ricetta attualmente caricata e pronta all’uso.</p></li>
+<li><p><strong>Current user name</strong>: mostra il nome dell’utente loggato e il suo livello di accesso al sistema.</p></li>
+<li><p><strong>In run</strong>: indica lo stato operativo; segnala se il sistema è attualmente in funzione o in stato di stop.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>Riquadro in cui…</p></td>
+<td><p><strong>Informazioni Software e Assistenza</strong>:</p>
+<ul class="simple">
+<li><p><strong>Version software</strong>: indica la versione del software FlexiVision attualmente installata.</p></li>
+<li><p><strong>Contact us</strong>: pulsante che permette di accedere rapidamente alle informazioni di contatto per il supporto tecnico e l’assistenza.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td><p>Riquadro in cui…</p></td>
+<td><p><strong>Risorse e Guide Rapide</strong>:</p>
+<ul class="simple">
+<li><p><strong>Documentation</strong>: pulsante che rimanda alla libreria completa della documentazione tecnica e dei manuali.</p></li>
+<li><p><strong>QuickStart</strong>: sezione dedicata alla procedura guidata per una configurazione veloce e intuitiva del sistema.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
-<td><p>Riquadro in cui …</p></td>
+<td><p><strong>Sezione Informativa Generale</strong>:</p>
+<ul class="simple">
+<li><p><strong>What is FlexiVision?</strong>: area descrittiva che fornisce una panoramica sulle funzionalità principali del sistema e sulla sua integrazione con il dispositivo FlexiBowl®.</p></li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -455,30 +480,69 @@ document.write(`
 <section id="pagina-dashboard">
 <h2>Pagina DashBoard<a class="headerlink" href="#pagina-dashboard" title="Link to this heading">#</a></h2>
 <p><img alt="Pagina Dashboard" src="../../_images/pagina_dashboard.png" /></p>
-<div class="pst-scrollable-table-container"><table class="table">
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-text">Descrizione Pagina Dashboard</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 90.0%" />
+</colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>#</p></th>
-<th class="head"><p>descrizione</p></th>
+<tr class="row-odd"><th class="head"><p><strong>#</strong></p></th>
+<th class="head"><p><strong>Descrizione</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
-<td><p>riquadro in cui…</p></td>
+<td><p><strong>Area Visione e Rilevamento</strong></p>
+<ul class="simple">
+<li><p><strong>Detected vision parts con grafico</strong>: quanti componenti sono stati rilevati nell’immagine corrente e l’andamento nel tempo (30s).</p></li>
+<li><p><strong>Elenco modelli rilevati</strong>: tabella con coordinate (<strong>X</strong>, <strong>Y</strong>), rotazione (<strong>Rot</strong>) del componente e lo <strong>Score</strong> (fedeltà dell’oggetto rispetto al modello originale).</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>Riquadro in cui…</p></td>
+<td><p><strong>Stato Operativo</strong></p>
+<ul class="simple">
+<li><p><strong>In run</strong>: indicatore luminoso che segnala se il sistema è in funzione o fermo.</p></li>
+<li><p><strong>In run time</strong>: cronometro che indica il tempo totale di attività del sistema.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td><p>Riquadro in cui…</p></td>
+<td><p><strong>Controlli e Selezione</strong></p>
+<ul class="simple">
+<li><p><strong>Menù tendina FlexiBowl</strong>: permette di selezionare il dispositivo FlexiBowl® su cui si intende operare.</p></li>
+<li><p><strong>Test</strong>: avvia movimentazioni cicliche di FlexiBowl e tramoggia finché ci sono componenti nell’area di visione.</p></li>
+<li><p><strong>One run</strong>: esegue una singola movimentazione, scatta una foto e aggiorna i dati del modello nel riquadro centrale.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
-<td><p>Riquadro in cui …</p></td>
+<td><p><strong>Stato Connessioni</strong></p>
+<ul class="simple">
+<li><p><strong>FlexiBowl</strong>: indica lo stato della connessione in tempo reale con l’alimentatore.</p></li>
+<li><p><strong>Robot</strong>: indica lo stato della connessione in tempo reale con il robot.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-even"><td><p>5</p></td>
-<td><p>Riquadro in cui…</p></td>
+<td><p><strong>Analisi Tempi di Ciclo (Timings)</strong></p>
+<ul class="simple">
+<li><p><strong>Camera/Locator processing time</strong>: tempi singoli di scatto immagine e riconoscimento componenti.</p></li>
+<li><p><strong>Total vision processing Time</strong>: somma dei tempi di camera e locator.</p></li>
+<li><p><strong>Total FlexiBowl / Robot time</strong>: tempo per una sequenza di movimento FB e per un singolo pick &amp; place del robot.</p></li>
+<li><p><strong>Total processing time</strong>: tempo totale del processo (Visione + FB + Robot).</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
-<td><p>Riquadro in cui …</p></td>
+<td><p><strong>Grafici di Performance e Storico</strong></p>
+<ul class="simple">
+<li><p><strong>Parts per minute</strong>: grafico della media dei componenti prelevati al minuto.</p></li>
+<li><p><strong>Fill hopper</strong>: storico degli scarichi effettuati dalla tramoggia sul disco del FlexiBowl.</p></li>
+<li><p><strong>Vision - FlexiBowl - Robot</strong>: grafico comparativo delle tre funzioni per capire l’impatto di ogni singolo processo sul tempo totale.</p></li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -487,21 +551,42 @@ document.write(`
 <section id="pagina-recipes">
 <h2>Pagina Recipes<a class="headerlink" href="#pagina-recipes" title="Link to this heading">#</a></h2>
 <p><img alt="Pagina Recipes" src="../../_images/pagina_recipes.png" /></p>
-<div class="pst-scrollable-table-container"><table class="table">
+<div class="pst-scrollable-table-container"><table class="table" id="id3">
+<caption><span class="caption-text">Descrizione Pagina Recipes</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 90.0%" />
+</colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>#</p></th>
-<th class="head"><p>descrizione</p></th>
+<tr class="row-odd"><th class="head"><p><strong>#</strong></p></th>
+<th class="head"><p><strong>Descrizione</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
-<td><p>riquadro in cui…</p></td>
+<td><p><strong>Gestione Database Ricette</strong></p>
+<ul class="simple">
+<li><p><strong>Backup</strong>: effettua un backup di tutte le ricette in un unico file .xml, salvabile nella posizione desiderata.</p></li>
+<li><p><strong>Import backup</strong>: permette l’importazione di qualsiasi backup precedentemente effettuato con FlexiVision Easy.</p></li>
+<li><p><strong>Load recipe</strong>: carica la ricetta selezionata nell’elenco soprastante per renderla operativa.</p></li>
+<li><p><strong>Delete recipe</strong>: elimina definitivamente la ricetta selezionata dall’elenco.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>Riquadro in cui…</p></td>
+<td><p><strong>Creazione e Salvataggio</strong></p>
+<ul class="simple">
+<li><p><strong>New recipe</strong>: avvia la creazione di una nuova ricetta. Dopo aver scelto il nome e il tipo di applicazione (Standard o Mix), la ricetta viene salvata, caricata e il sistema apre direttamente il menù di creazione modello.</p></li>
+<li><p><strong>Save recipe</strong>: salva la ricetta corrente sovrascrivendo i parametri modificati o crea un nuovo file se non ancora esistente.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td><p>Riquadro in cui…</p></td>
+<td><p><strong>Modifica Ricetta</strong></p>
+<ul class="simple">
+<li><p><strong>Edit recipe</strong>: pulsante diretto che porta al menù di configurazione e creazione del modello per la ricetta attualmente selezionata.</p></li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -510,45 +595,68 @@ document.write(`
 <section id="pagina-setup">
 <h2>Pagina Setup<a class="headerlink" href="#pagina-setup" title="Link to this heading">#</a></h2>
 <p><img alt="Pagina Setup" src="../../_images/pagina_setup.png" /></p>
-<div class="pst-scrollable-table-container"><table class="table">
+<div class="pst-scrollable-table-container"><table class="table" id="id4">
+<caption><span class="caption-text">Descrizione Pagina Setup</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 90.0%" />
+</colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>#</p></th>
-<th class="head"><p>descrizione</p></th>
+<tr class="row-odd"><th class="head"><p><strong>#</strong></p></th>
+<th class="head"><p><strong>Descrizione</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
-<td><p>riquadro in cui…</p></td>
+<td><p><strong>Informazioni di Stato</strong></p>
+<ul class="simple">
+<li><p><strong>Current selected recipe</strong>: indica il nome della ricetta attualmente in uso.</p></li>
+<li><p><strong>Current user name</strong>: mostra l’utente loggato e il relativo livello di accesso.</p></li>
+<li><p><strong>License activated</strong>: indica se la licenza del software risulta correttamente attivata.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>Riquadro in cui…</p></td>
+<td><p><strong>Pannello di Accesso (Login)</strong></p>
+<ul class="simple">
+<li><p><strong>Name</strong>: campo per l’inserimento del nome utente.</p></li>
+<li><p><strong>Password</strong>: campo per l’inserimento della password personale.</p></li>
+<li><p><strong>Login</strong>: pulsante per confermare le credenziali ed effettuare l’accesso al sistema.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td><p>Riquadro in cui…</p></td>
+<td><p><strong>Configurazione Hardware</strong></p>
+<ul class="simple">
+<li><p><strong>Camera setup</strong>: sezione dedicata alla configurazione dei parametri della telecamera.</p></li>
+<li><p><strong>Flexibowl setup</strong>: area per impostare i parametri di movimento e controllo dell’alimentatore.</p></li>
+<li><p><strong>Hopper setup</strong>: configurazione dei parametri della tramoggia (vibrazione e scarico).</p></li>
+<li><p><strong>Robot setup</strong>: sezione per la configurazione della comunicazione e dei parametri del robot.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
-<td><p>Riquadro in cui …</p></td>
+<td><p><strong>Protocollo e Account</strong></p>
+<ul class="simple">
+<li><p><strong>Protocol setup</strong>: pagina di configurazione dei parametri dell’applicazione lato robot e lato visione.</p></li>
+<li><p><strong>Account setup</strong>: permette di configurare i vari account utente in base alle qualifiche e ai livelli di accesso.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-even"><td><p>5</p></td>
-<td><p>riquadro in cui…</p></td>
+<td><p><strong>Simulazione e Test</strong></p>
+<ul class="simple">
+<li><p><strong>Laser pointer</strong>: permette di usare uno strumento laser per simulare un prelievo (pick) in assenza del robot.</p></li>
+<li><p><strong>Evaluate PPM</strong>: permette di effettuare una stima dei pezzi al minuto (PPM) quando si utilizza il laser pointer.</p></li>
+</ul>
+</td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
-<td><p>Riquadro in cui…</p></td>
-</tr>
-<tr class="row-even"><td><p>7</p></td>
-<td><p>Riquadro in cui…</p></td>
-</tr>
-<tr class="row-odd"><td><p>8</p></td>
-<td><p>Riquadro in cui …</p></td>
-</tr>
-<tr class="row-even"><td><p>9</p></td>
-<td><p>Riquadro in cui…</p></td>
-</tr>
-<tr class="row-odd"><td><p>10</p></td>
-<td><p>Riquadro in cui …</p></td>
-</tr>
-<tr class="row-even"><td><p>11</p></td>
-<td><p>Riquadro in cui …</p></td>
+<td><p><strong>Licenza</strong></p>
+<ul class="simple">
+<li><p><strong>Licence software</strong>: pagina per l’attivazione del software; qui va inserita la chiave di licenza fornita da ARS per procedere all’attivazione.</p></li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -684,7 +792,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const bar = document.querySelector('.fixed-bar');
   const dropdowns = bar.querySelectorAll('.dropdown');
-  const defaultLang = 'English';
+  const defaultLang = 'Italiano';
   const languages = ["Italiano"];
   const versions = ["V. 1.0"];
 

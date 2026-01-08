@@ -3,8 +3,8 @@
 descrizione funzionalità toplight
 
 le taglie disponibili sono:
-:::{dropdown} TopLight per FB200/350/500
-    :color: primary
+### TopLight per FB200/350/500
+    
     
  ![Toplight](img/toplight.png)
 
@@ -21,10 +21,10 @@ le taglie disponibili sono:
 |cable length | 5 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate |
-:::  
+ 
 
-:::{dropdown} TopLight XL per FB650/800
-    :color: primary
+### TopLight XL per FB650/800
+   
     
  ![Toplight XL](img/toplightXL.png)
 
@@ -41,10 +41,10 @@ le taglie disponibili sono:
 |cable length | 5 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate |
-:::
 
-:::{dropdown} TopLight XXL per FB650/800
-    :color: primary
+
+### TopLight XXL per FB650/800
+  
     
 ![Toplight XXL ](img/toplightXXL.png)
 
@@ -61,13 +61,12 @@ le taglie disponibili sono:
 |cable length | 5 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate |
-:::
 
 ## Backlight 
 descrizione funzionalità backlight 
 
-:::{dropdown} Backlight per FB200
-    :color: primary
+### Backlight per FB200
+
     
 ![Backlight 200](img/backlight200.png)
 
@@ -83,9 +82,9 @@ descrizione funzionalità backlight
 |cable length | 0.2 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate | 
-:::  
-:::{dropdown} Backlight per FB350
-    :color: primary
+
+### Backlight per FB350
+   
     
 ![Backlight 350](img/backlight350.png)
 
@@ -101,10 +100,9 @@ descrizione funzionalità backlight
 |cable length | 0.2 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate | 
-:::  
 
-:::{dropdown} Backlight per FB500
-    :color: primary
+### Backlight per FB500
+   
     
 ![Backlight 500](img/backlight500.png)
 
@@ -120,10 +118,9 @@ descrizione funzionalità backlight
 |cable length | 0.2 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate |
-:::  
 
-:::{dropdown} Backlight per FB650
-    :color: primary
+### Backlight per FB650
+   
     
 ![Backlight 650](img/backlight650.png)
 
@@ -140,9 +137,9 @@ descrizione funzionalità backlight
 |cable length | 0.2 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate |
-:::  
-:::{dropdown} Backlight per FB800
-    :color: primary
+
+### Backlight per FB800
+
     
 ![Backlight 800](img/backlight800.png)
 
@@ -158,10 +155,9 @@ descrizione funzionalità backlight
 |cable length | 0.2 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate |
-:::  
 
-:::{dropdown} Backlight per FB1200
-    :color: primary
+### Backlight per FB1200
+
     
 ![Backlight 1200](img/backlight1200.png)
 
@@ -177,7 +173,7 @@ descrizione funzionalità backlight
 |cable length | 0.2 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate |
-:::  
+
 
 ## Supporto per Camera e Toplight 
 descrizione funzionalità 

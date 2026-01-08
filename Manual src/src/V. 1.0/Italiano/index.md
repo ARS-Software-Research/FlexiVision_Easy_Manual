@@ -21,14 +21,53 @@ Questo manuale è stato concepito per supportare sia la fase di progettazione e 
 Per questo motivo, è diviso in due macro-sezioni con destinatari e finalità distinte.
   
 ## **Qual è la sezione che stai cercando?**  
-| Se devi... | L'informazione si trova nella... |
-|---|---|
-| Verificare:  dimensioni e pesi, requisiti elettrici, protocolli di comunicazione  | PARTE A :  |  
-| installare i componenti, cablare il sistema, configurare la rete, installare il software, calibrare camera e/o robot | PARTE B |    
+```{list-table} Guida alla Consultazione del Manuale
+:widths: 40 60
+:header-rows: 1
 
-# Legenda simboli: Note, Warning, Tips 
-# Panoramica del sistema (FlexiBowl, FlexiVision, Tramoggia, Robot)
-# Gruppi di intervento e responsabilità 
+* - **Se devi...**
+  - **L'informazione si trova nella...**
+
+* - **Verificare:**
+    - Dimensioni e pesi
+    - Requisiti elettrici
+    - Protocolli di comunicazione
+  - **RIFERIMENTO TECNICO E SPECIFICHE**
+
+* - **Eseguire:**
+    - Installare i componenti
+    - Cablare il sistema
+    - Configurare la rete
+    - Installare il software
+    - Calibrare camera e/o robot
+  - **QUICKSTART: GUIDA OPERATIVA E FLUSSO DI LAVORO**   
+```
+
+## **Legenda Simboli: Note, Warning, Tips**
+
+```{list-table}
+:widths: 25 15 60
+:header-rows: 1
+
+* - **Banner**
+  - **Simbolo**
+  - **Finalità**
+
+* - **Warnings** (avvertenza)
+  - ⚠️
+  - Indica una situazione potenzialmente pericolosa o una procedura critica che, se non eseguita correttamente, potrebbe provocare danni all'apparecchiatura (hardware e software) o un malfunzionamento grave del sistema.
+
+* - **Note**
+  - ℹ️
+  - Fornisce informazioni essenziali per il corretto svolgimento della procedura, un chiarimento tecnico o un rimando a un capitolo correlato.
+
+* - **Tips** (suggerimento)
+  - 💡
+  - Suggerisce una pratica ottimale, un'alternativa o un consiglio che può semplificare l'installazione, la manutenzione o migliorare le prestazioni e l'efficienza del sistema.
+```
+
+## **Panoramica del sistema** 
+## **Gruppi di intervento e responsabilità** 
 
 ```{toctree}
 :hidden:

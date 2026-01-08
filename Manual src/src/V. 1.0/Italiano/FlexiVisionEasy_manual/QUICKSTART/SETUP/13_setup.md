@@ -1,17 +1,34 @@
-# **SETUP**  
-magari questa puo essere la pagina in cui fare la panoramica degli step successivi e mettere i link (toctree) di FlexiBowl Setup, Hopper Setup, Robot Setup e Camera Setup 
-## STEP 1 :	Login 
-a.	Selezionare dal menu a tendina il nome  
-b.	Inserire la password   
-c.	Cliccare su LOGIN  
-## STEP 2 :	Software license 
-## STEP 3 :	Creazione ricetta base da RECIPES 
-a.	 Inserire il nome della ricetta base, tipo “Ricetta_Base”  
-b.	Cliccare su new recipe   
-c.	Selezionare il tipo di applicazione  
-d.	Come faccio a Selezionare il FlexiBowl con cui si vuole lavorare????  
-e.	Cliccare su save Recipe     
-f.	Selezionare la ricetta dal menu di fianco  
+# **SETUP**
+
+Questa sezione guida l'utente attraverso la configurazione dei componenti hardware e software del sistema.
+
+## Operazioni Preliminari
+
+### PASSO 1 : Login
+* Selezionare dal menu a tendina il nome utente.
+* Inserire la password.
+* Cliccare su **LOGIN**.
+
+### PASSO 2 : Software license
+* Accedere alla sezione per l'attivazione e inserire la chiave fornita da ARS Automation.
+
+### PASSO 3 : Creazione ricetta base
+* Creare una nuova ricetta (es. "Ricetta_Base") nella pagina **RECIPES**.
+* Selezionare il tipo di applicazione e il FlexiBowl® di lavoro dal menu a tendina superiore.
+
+---
+
+## Guide al Setup Hardware
+*Selezionare il componente da configurare:*
+
+```{toctree}
+:maxdepth: 1
+
+FlexiBowl Setup <flexibowl_setup>
+Hopper Setup <hopper_setup>
+Robot Setup <robot_setup>
+Camera Setup <camera_setup>
+```
 
 ```{toctree}
 
