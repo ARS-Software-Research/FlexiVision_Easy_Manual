@@ -1,4 +1,4 @@
-# **1.Informazioni Preliminari**
+# **Informazioni Preliminari**
 ## PREMESSA E DIRITTI DI RIPRODUZIONE (FOREWORD & COPYRIGHT)  
 Tutti i diritti sono riservati. Nessuna parte di questa pubblicazione può essere riprodotta, distribuita, tradotta in qualsiasi lingua o trasmessa con qualsiasi mezzo elettronico o meccanico (inclusi fotocopiatura, registrazione o qualsiasi altro sistema di archiviazione e recupero), per scopi diversi dall'uso personale esclusivo, senza previa autorizzazione scritta di ARS S.r.l.
 ARS S.r.l. non è in alcun modo responsabile per le conseguenze derivanti da operazioni errate eseguite dall'utente o dall'uso improprio del prodotto.  

@@ -1,4 +1,4 @@
-# 13. SETUP  
+# **SETUP**  
 magari questa puo essere la pagina in cui fare la panoramica degli step successivi e mettere i link (toctree) di FlexiBowl Setup, Hopper Setup, Robot Setup e Camera Setup 
 ## STEP 1 :	Login 
 a.	Selezionare dal menu a tendina il nome  

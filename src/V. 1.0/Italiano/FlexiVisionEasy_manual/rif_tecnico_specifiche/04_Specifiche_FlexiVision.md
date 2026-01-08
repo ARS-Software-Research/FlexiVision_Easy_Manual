@@ -33,7 +33,8 @@ La camera può anche essere alimentata e triggerata direttamente da una tracking
 |1. PoE (Power over Ethernet) (opzionale)	|L'alimentazione e i dati vengono trasmessi tramite un unico cavo Ethernet. Consumo circa 3.3 W.	| Richiede un PoE Injector o uno Switch PoE compatibile.|
 |2. Cavo Camera Esterno (incluso nel kit standard)|	L'alimentazione è fornita da una fonte CC esterna tramite cavo dedicato. |	Cavo Ethernet separato necessario solo per la comunicazione dati (PoE non richiesto).|  
   
-  ### 4.1.2. Specifiche Fisiche   
+  ### 4.1.2. Specifiche Fisiche     
+  immagini con dimensioni camera, ingombro cavi, posizioni fori viti, grandezza fori viti e viti consigliate  
   ## *4.2. Specifiche VisionController*  
   Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge da controller principale per il software di visione. Tra le opzioni disponibili acquistabili, ARS fornisce il suo VisionController già pre-configurato.   
   ### 4.2.1. Specifiche elettriche VisionController di ARS (da modificare nuovo pc)   
@@ -83,9 +84,13 @@ L'alimentazione (o altre caratteristiche più utili) dei componenti principali d
 |Cavi ethernet 	||
 
 ## *4.5. Panoramica collegamenti*    
-  
-  NOTA: i cavi di comunicazione possono essere ordinati in lunghezze diverse, in base alle vostre esigenze. 
+ ![Pan Coll](img/pan_collegamenti.png)
 
+
+  :::{admonition} NOTA
+  :class: info
+  i cavi di comunicazione possono essere ordinati in lunghezze diverse, in base alle vostre esigenze. 
+:::
 
 ## *4.6.	Protocollo di comunicazione*
 Il robot deve avere la capacità di aprire e gestire uno o più server di comunicazione utilizzando il protocollo TCP/IP, al fine di ricevere e inviare stringhe tramite un task parallelo rispetto a quello principale, così da ricevere informazioni dal sistema di visione mentre il lavoro principale è in esecuzione  
@@ -100,5 +105,6 @@ Il robot deve avere la capacità di aprire e gestire uno o più server di comuni
 |"test_Locator"	|Avvia il processo di localizzazione dell'oggetto senza l'ausilio del FlexiBowl®.	|"Pattern_1;x;y;r"|
 |"start_Control"	|Avvia il ciclo di ispezione.	|"Control_1;x;y;r"|
 |"state_Locator"	|Viene mostrata la diagnostica dello stato del Localizzatore (Locator).	|"Locator is Running" (Localizzatore in Esecuzione)  "Locator is in Error" (Localizzatore in Errore)  "Locator is not Running" (Localizzatore non in Esecuzione)|
-|"start_Empty"	|Avvia la sequenza di Svuotamento Rapido (Quick-Emptying) di FlexiBowl®.	|"start_Empty ended" (start_Empty terminato)|
+|"start_Empty"	|Avvia la sequenza di Svuotamento Rapido (Quick-Emptying) di FlexiBowl®.	|"start_Empty ended" (start_Empty terminato)|  
 
+If hopper should be activated you will receive the string “Hopper;signalnumber;time”

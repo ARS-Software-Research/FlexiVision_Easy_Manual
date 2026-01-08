@@ -12,5 +12,9 @@ La scelta della lente è strettamente dipendente dalla distanza di montaggio rac
 |FB 800	|Circa 950 – 1000 mm	|12 mm|
 |FB 1200	|Circa 1200 mm|	8 mm|  
 
-NOTA: La lente appropriata per il modello FlexiBowl® specificato è sempre inclusa nel pacchetto FlexiVision, non è necessario acquistarla separatamente.  
+:::{admonition}  NOTA
+:class: info
+ La lente appropriata per il modello FlexiBowl® specificato è sempre inclusa nel pacchetto FlexiVision, non è necessario acquistarla separatamente.    
+ :::
+ 
 ## *5.2.	Posizionamento TopLight (se acquistato)*

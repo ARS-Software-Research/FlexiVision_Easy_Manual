@@ -1,5 +1,5 @@
-# **6. PlugIn**  
-
+# **PlugIn**  
+I Plug-in di Comunicazione sono strumenti software essenziali, sviluppati per standardizzare e semplificare l'interfaccia tra il sistema FlexiVision e l'ambiente di automazione (Robot industriali). 
 
 
 :::{card} ABB
