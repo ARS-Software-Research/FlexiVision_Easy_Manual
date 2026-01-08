@@ -5,9 +5,11 @@ Siamo entusiasti di darvi il benvenuto alla vostra nuova guida di FlexiVisionEas
 Questo manuale è stato creato appositamente per essere il vostro punto di riferimento chiaro e affidabile. Ci auguriamo che, consultandolo, possiate godere appieno di tutti i benefici del nostro sistema.
 Il vostro parere è fondamentale per noi: non esitate a fornirci il vostro feedback [contattandoci](https://www.flexibowl.it/contatti)! 
 
-*- Il Team di Ars Automation*  
-[![Ars logo](img/logo.png)](https://www.arsautomation.com)  
-<img src="img/logo_fv.png" style="display: none;" width="0" height="0" alt="">
+*- Il Team di Ars Automation*    
+<a href="https://www.arsautomation.com" target="_blank">
+  <img src="img/logo.png" alt="Ars logo" class="only-light" style="width: 20%; height: auto;">
+  <img src="img/logo_dark.png" alt="Ars logo" class="only-dark" style="width: 20%; height: auto;">
+</a>
   
 ## **Cosa è FlexiVision Easy?**  
 FlexiVision® Easy è la nostra soluzione di visione basata su VisionController, pensata per guidare il robot e disponibile come componente aggiuntivo per i sistemi FlexiBowl®.

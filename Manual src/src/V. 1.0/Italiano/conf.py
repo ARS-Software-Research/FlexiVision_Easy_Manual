@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = '<img src="http://localhost:8001/V.%201.0/Italiano/_images/logo_fv.png" alt="Logo" style="padding: 10px; border-radius: 20px; background-color: white;"> '
+project = 'FlexiVision Easy'
 copyright = '2025, Ars Automation'
 author = 'Niccolò Quadrani & Noah Costantini'
 release = '1.0'
@@ -37,11 +37,6 @@ myst_enable_extensions = [
     "tasklist",
 ]
 
-html_theme_options = {
-    "show_navbar_depth": 1,
-    "show_prev_next": True,
-}
-
 # Supporta .md come file sorgente
 source_suffix = {
     '.rst': 'restructuredtext',
@@ -51,6 +46,17 @@ source_suffix = {
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-#html_theme = 'sphinx_rtd_theme'
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
+
+# Logo configuration - apparirà in alto a sinistra nella sidebar
+html_logo = "_static/logo_fv.png"
+
+html_theme_options = {
+    "logo": {
+        "image_light": "_static/logo_fv.png",
+        "image_dark": "_static/logo_fv_black.png",
+    },
+    "show_navbar_depth": 1,
+    "show_prev_next": True,
+}
