@@ -21,53 +21,93 @@ Questo manuale è stato concepito per supportare sia la fase di progettazione e 
 Per questo motivo, è diviso in due macro-sezioni con destinatari e finalità distinte.
   
 ## **Qual è la sezione che stai cercando?**  
-```{list-table} Guida alla Consultazione del Manuale
+```{list-table}
 :widths: 40 60
 :header-rows: 1
 
-* - **Se devi...**
-  - **L'informazione si trova nella...**
+* - Se devi...
+  - L'informazione si trova nella...
 
-* - **Verificare:**
-    - Dimensioni e pesi
-    - Requisiti elettrici
-    - Protocolli di comunicazione
+* - Verificare dimensioni, pesi, requisiti elettrici e protocolli di comunicazione
   - **RIFERIMENTO TECNICO E SPECIFICHE**
 
-* - **Eseguire:**
-    - Installare i componenti
-    - Cablare il sistema
-    - Configurare la rete
-    - Installare il software
-    - Calibrare camera e/o robot
-  - **QUICKSTART: GUIDA OPERATIVA E FLUSSO DI LAVORO**   
-```
+* - Installare i componenti, cablare il sistema, configurare la rete o calibrare camera/robot
+  - **INSTALLAZIONE DEL SISTEMA** e **QUICKSTART**
 
-## **Legenda Simboli: Note, Warning, Tips**
+* - Programmare un nuovo modello pezzo o configurare il sistema di alimentazione
+  - **QUICKSTART: GUIDA OPERATIVA**
+
+* - Risolvere problemi o richiedere assistenza
+  - **TROUBLESHOOTING** e **SUPPORT**
+```
+## **Gruppi di intervento e responsabilità**
+
+La corretta implementazione di FlexiVision Easy richiede la collaborazione di diverse figure professionali. Questa tabella chiarisce ruoli e responsabilità:
 
 ```{list-table}
-:widths: 25 15 60
+:widths: 25 35 40
 :header-rows: 1
 
-* - **Banner**
-  - **Simbolo**
-  - **Finalità**
+* - Figura professionale
+  - Responsabilità principali
+  - Sezioni del manuale di riferimento
 
-* - **Warnings** (avvertenza)
-  - ⚠️
-  - Indica una situazione potenzialmente pericolosa o una procedura critica che, se non eseguita correttamente, potrebbe provocare danni all'apparecchiatura (hardware e software) o un malfunzionamento grave del sistema.
+* - **Integratore di sistema**
+  - Progettazione layout, dimensionamento componenti, verifica requisiti tecnici
+  - Riferimento tecnico e specifiche, Opzioni
 
-* - **Note**
-  - ℹ️
-  - Fornisce informazioni essenziali per il corretto svolgimento della procedura, un chiarimento tecnico o un rimando a un capitolo correlato.
+* - **Tecnico installatore**
+  - Montaggio meccanico, cablaggio elettrico, configurazione rete
+  - Installazione del sistema, Cablaggio e connessioni
 
-* - **Tips** (suggerimento)
-  - 💡
-  - Suggerisce una pratica ottimale, un'alternativa o un consiglio che può semplificare l'installazione, la manutenzione o migliorare le prestazioni e l'efficienza del sistema.
+* - **Programmatore robot**
+  - Calibrazione camera-robot, integrazione plugin, programmazione logiche di prelievo
+  - Quickstart, Protocol Setup, Calibrazione
+
+* - **Operatore di linea**
+  - Creazione nuovi modelli pezzo, configurazione parametri FlexiBowl, monitoraggio prestazioni
+  - Nuovo modello, Config FlexiBowl, Verifica risultati
+
+* - **Manutentore**
+  - Diagnosi problemi, sostituzione componenti, aggiornamenti software
+  - Troubleshooting, Support
+```
+## **Panoramica del sistema** 
+
+
+
+## **Convenzioni e simboli utilizzati**
+
+In tutto il manuale vengono utilizzati banner informativi per evidenziare contenuti importanti:
+
+```{list-table}
+:widths: 20 80
+:header-rows: 1
+
+* - Tipo
+  - Significato
+
+* - ```{warning}
+    Avvertenza
+    ```
+  - Indica una situazione potenzialmente pericolosa o una procedura critica che, se non eseguita correttamente, potrebbe provocare danni all'apparecchiatura o malfunzionamenti gravi del sistema.
+
+* - ```{note}
+    Nota informativa
+    ```
+  - Fornisce informazioni essenziali per il corretto svolgimento della procedura, chiarimenti tecnici o rimandi a capitoli correlati.
+
+* - ```{tip}
+    Suggerimento
+    ```
+  - Suggerisce una pratica ottimale, un'alternativa o un consiglio che può semplificare l'installazione o migliorare le prestazioni del sistema.
 ```
 
-## **Panoramica del sistema** 
-## **Gruppi di intervento e responsabilità** 
+
+
+
+
+
 
 ```{toctree}
 :hidden:

@@ -114,35 +114,35 @@ descrizione generale interfaccia
 
 * - 1
   - **Informazioni di Stato**
-    * **Current selected recipe**: indica il nome della ricetta attualmente in uso.
-    * **Current user name**: mostra l'utente loggato e il relativo livello di accesso.
-    * **License activated**: indica se la licenza del software risulta correttamente attivata.
+     **Current selected recipe**: indica il nome della ricetta attualmente in uso.
+     **Current user name**: mostra l'utente loggato e il relativo livello di accesso.
+     **License activated**: indica se la licenza del software risulta correttamente attivata.
 
 * - 2
   - **Pannello di Accesso (Login)**
-    * **Name**: campo per l'inserimento del nome utente.
-    * **Password**: campo per l'inserimento della password personale.
-    * **Login**: pulsante per confermare le credenziali ed effettuare l'accesso al sistema.
+     **Name**: campo per l'inserimento del nome utente.
+     **Password**: campo per l'inserimento della password personale.
+     **Login**: pulsante per confermare le credenziali ed effettuare l'accesso al sistema.
 
 * - 3
   - **Configurazione Hardware**
-    * **Camera setup**: sezione dedicata alla configurazione dei parametri della telecamera.
-    * **Flexibowl setup**: area per impostare i parametri di movimento e controllo dell'alimentatore.
-    * **Hopper setup**: configurazione dei parametri della tramoggia (vibrazione e scarico).
-    * **Robot setup**: sezione per la configurazione della comunicazione e dei parametri del robot.
+     **Camera setup**: sezione dedicata alla configurazione dei parametri della telecamera.
+     **Flexibowl setup**: area per impostare i parametri di movimento e controllo dell'alimentatore.
+     **Hopper setup**: configurazione dei parametri della tramoggia (vibrazione e scarico).
+     **Robot setup**: sezione per la configurazione della comunicazione e dei parametri del robot.
 
 * - 4
   - **Protocollo e Account**
-    * **Protocol setup**: pagina di configurazione dei parametri dell'applicazione lato robot e lato visione.
-    * **Account setup**: permette di configurare i vari account utente in base alle qualifiche e ai livelli di accesso.
+     **Protocol setup**: pagina di configurazione dei parametri dell'applicazione lato robot e lato visione.
+     **Account setup**: permette di configurare i vari account utente in base alle qualifiche e ai livelli di accesso.
 
 * - 5
   - **Simulazione e Test**
-    * **Laser pointer**: permette di usare uno strumento laser per simulare un prelievo (pick) in assenza del robot.
-    * **Evaluate PPM**: permette di effettuare una stima dei pezzi al minuto (PPM) quando si utilizza il laser pointer.
+     **Laser pointer**: permette di usare uno strumento laser per simulare un prelievo (pick) in assenza del robot.
+     **Evaluate PPM**: permette di effettuare una stima dei pezzi al minuto (PPM) quando si utilizza il laser pointer.
 
 * - 6
   - **Licenza**
-    * **Licence software**: pagina per l'attivazione del software; qui va inserita la chiave di licenza fornita da ARS per procedere all'attivazione.
+     **Licence software**: pagina per l'attivazione del software; qui va inserita la chiave di licenza fornita da ARS per procedere all'attivazione.
 ```
 ## i tasti INFO
