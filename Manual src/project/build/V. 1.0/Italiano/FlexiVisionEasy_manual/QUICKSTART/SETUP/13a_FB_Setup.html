@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PASSO 4 : FlexiBowl SetUp &#8212; FlexiVision Easy 1.0 documentation</title>
+    <title>Passo 4: FlexiBowl Setup &#8212; FlexiVision Easy 1.0 documentation</title>
   
   
   
@@ -49,7 +49,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="PASSO 5 : Hopper SetUp" href="13b_Hopper_Setup.html" />
-    <link rel="prev" title="SETUP" href="13_setup.html" />
+    <link rel="prev" title="Configurazione Iniziale del Sistema" href="13_setup.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -171,10 +171,10 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">RIFERIMENTO TECNICO E SPECIFICHE</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../rif_tecnico_specifiche/04_Specifiche_FlexiVision.html"><strong>4.	Specifiche Dettagliate FlexiVision</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rif_tecnico_specifiche/04_Specifiche_FlexiVision.html"><strong>Specifiche Dettagliate FlexiVision</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.html"><strong>5.	Calcolo distanza di lavoro ottimale</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.html"><strong>Calcolo Distanza di Lavoro Ottimale</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../rif_tecnico_specifiche/integrazione_software/06_PlugIn.html"><strong>PlugIn</strong></a></li>
@@ -200,11 +200,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../12_Panoramica_Interfaccia.html"><strong>Panoramica dell’interfaccia</strong></a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="13_setup.html"><strong>SETUP</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">PASSO 4 : FlexiBowl SetUp</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="13_setup.html">Configurazione Iniziale del Sistema</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Passo 4: FlexiBowl Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="13b_Hopper_Setup.html">PASSO 5 : Hopper SetUp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="13c_Robot_Setup.html">PASSO 6 : Robot SetUp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13d_Camera_Setup.html">PASSO 7 : Camera SetUp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13d_Camera_Setup.html">Passo 7: Camera Setup</a></li>
 </ul>
 </details></li>
 </ul>
@@ -397,7 +397,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>PASSO 4 : FlexiBowl SetUp</h1>
+    <h1>Passo 4: FlexiBowl Setup</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -407,8 +407,26 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-connessione">Procedura di connessione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descrizione-interfaccia">Descrizione Interfaccia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-configurazione-flexibowl">Accesso alla configurazione FlexiBowl</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-connessione">Procedura di connessione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-inserimento-indirizzo-ip">Step 1: Inserimento indirizzo IP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-test-di-connessione">Step 2: Test di connessione</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-parametri-flexibowl">Configurazione parametri FlexiBowl</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-accesso-configurazione">Step 3: Accesso configurazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-abilitazione-illuminazione-backlight">Step 4: Abilitazione illuminazione (Backlight)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-sincronizzazione-parametri">Step 5: Sincronizzazione parametri</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-di-funzionamento-flexibowl">Test di funzionamento FlexiBowl</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-e-uscita">Salvataggio e uscita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flexibowl-non-vibra">FlexiBowl non vibra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#illuminazione-non-uniforme">Illuminazione non uniforme</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passi-successivi">Passi successivi</a></li>
 </ul>
             </nav>
         </div>
@@ -421,20 +439,503 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="passo-4-flexibowl-setup">
-<h1>PASSO 4 : FlexiBowl SetUp<a class="headerlink" href="#passo-4-flexibowl-setup" title="Link to this heading">#</a></h1>
-<p>Dalla pagina <strong>SETUP</strong>, cliccare sull’icona <strong>FlexiBowl Setup</strong> per accedere alla configurazione.</p>
-<section id="procedura-di-connessione">
-<h2>Procedura di connessione<a class="headerlink" href="#procedura-di-connessione" title="Link to this heading">#</a></h2>
+<h1>Passo 4: FlexiBowl Setup<a class="headerlink" href="#passo-4-flexibowl-setup" title="Link to this heading">#</a></h1>
+<p>Questa sezione descrive la procedura per connettere e configurare il FlexiBowl (alimentatore vibrante) con il sistema FlexiVision Easy.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Prerequisiti</strong></p>
+<p>Prima di procedere, assicurarsi che:</p>
+<ul class="simple">
+<li><p>Il FlexiBowl sia stato installato meccanicamente e collegato elettricamente</p></li>
+<li><p>Il cavo Ethernet dal FlexiBowl sia connesso alla rete</p></li>
+<li><p>L’indirizzo IP del FlexiBowl sia noto (verificare etichetta sul dispositivo o documentazione)</p></li>
+<li><p>La ricetta base sia stata creata (Passo 3)</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<section id="accesso-alla-configurazione-flexibowl">
+<h2>Accesso alla configurazione FlexiBowl<a class="headerlink" href="#accesso-alla-configurazione-flexibowl" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Inserire l’indirizzo <strong>FlexiBowl IP</strong>.</p></li>
-<li><p>Cliccare su <strong>Connect Test</strong>: se l’indicatore diventa verde, la connessione è stabilita.</p></li>
-<li><p>Cliccare su <strong>Config FlexiBowl</strong> e abilitare il backlight su <strong>Light ON</strong>.</p></li>
-<li><p>Cliccare su <strong>Synchronize Parameters</strong>.</p></li>
+<li><p>Dalla pagina principale del software, cliccare su <strong>SETUP</strong></p></li>
+<li><p>Nella pagina SETUP, identificare e cliccare sull’icona <strong>FlexiBowl Setup</strong></p></li>
+<li><p>Si apre la schermata di configurazione del FlexiBowl</p></li>
 </ol>
 </section>
-<section id="descrizione-interfaccia">
-<h2>Descrizione Interfaccia<a class="headerlink" href="#descrizione-interfaccia" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
+<section id="procedura-di-connessione">
+<h2>Procedura di connessione<a class="headerlink" href="#procedura-di-connessione" title="Link to this heading">#</a></h2>
+<section id="step-1-inserimento-indirizzo-ip">
+<h3>Step 1: Inserimento indirizzo IP<a class="headerlink" href="#step-1-inserimento-indirizzo-ip" title="Link to this heading">#</a></h3>
+<p><strong>Configurazione indirizzo di rete</strong></p>
+<ol class="arabic simple">
+<li><p>Nel campo <strong>FlexiBowl IP</strong>, inserire l’indirizzo IP del FlexiBowl</p>
+<ul class="simple">
+<li><p>Formato: <code class="docutils literal notranslate"><span class="pre">192.168.1.XXX</span></code> (o secondo la configurazione della vostra rete)</p></li>
+<li><p>L’indirizzo IP del FlexiBowl è riportato su un’etichetta sul dispositivo</p></li>
+<li><p>Esempio: <code class="docutils literal notranslate"><span class="pre">192.168.1.100</span></code></p></li>
+</ul>
+</li>
+<li><p>Verificare che l’indirizzo sia sulla stessa subnet del VisionController</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Come trovare l’indirizzo IP del FlexiBowl</strong></p>
+<p>Se non si conosce l’indirizzo IP del FlexiBowl:</p>
+<ul class="simple">
+<li><p>Controllare l’etichetta adesiva sul dispositivo FlexiBowl (vicino ai connettori)</p></li>
+<li><p>Consultare la documentazione fornita con il FlexiBowl</p></li>
+<li><p>Utilizzare uno scanner di rete per individuare i dispositivi connessi</p></li>
+<li><p>Contattare il supporto tecnico se l’indirizzo non è disponibile</p></li>
+</ul>
+</div>
 </section>
+<section id="step-2-test-di-connessione">
+<h3>Step 2: Test di connessione<a class="headerlink" href="#step-2-test-di-connessione" title="Link to this heading">#</a></h3>
+<p><strong>Verifica raggiungibilità</strong></p>
+<ol class="arabic simple">
+<li><p>Dopo aver inserito l’IP, cliccare sul pulsante <strong>Connect Test</strong></p></li>
+<li><p>Il sistema esegue un test di comunicazione (ping) verso il FlexiBowl</p></li>
+<li><p>Osservare l’indicatore di <strong>Status</strong>:</p>
+<ul class="simple">
+<li><p><strong>Verde</strong>: Connessione stabilita correttamente</p></li>
+<li><p><strong>Rosso</strong>: Connessione fallita (verificare IP e cablaggio)</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Connessione fallita</strong></p>
+<p>Se l’indicatore rimane rosso o appare un messaggio di errore:</p>
+<ol class="arabic simple">
+<li><p>Verificare che l’indirizzo IP inserito sia corretto</p></li>
+<li><p>Controllare fisicamente il cavo Ethernet (deve essere inserito completamente)</p></li>
+<li><p>Verificare che lo switch/router di rete sia acceso</p></li>
+<li><p>Assicurarsi che FlexiBowl e VisionController siano sulla stessa subnet</p></li>
+<li><p>Provare a pingare il FlexiBowl da terminale Windows:</p>
+<ul class="simple">
+<li><p>Aprire Prompt dei comandi</p></li>
+<li><p>Digitare: <code class="docutils literal notranslate"><span class="pre">ping</span> <span class="pre">192.168.1.XXX</span></code> (sostituire con IP effettivo)</p></li>
+<li><p>Se il ping fallisce, problema di rete; se ha successo, problema software</p></li>
+</ul>
+</li>
+</ol>
+<p>Se il problema persiste, consultare <a class="reference internal" href="#../26_trb_shooting_guide.md"><span class="xref myst">Troubleshooting</span></a>.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="configurazione-parametri-flexibowl">
+<h2>Configurazione parametri FlexiBowl<a class="headerlink" href="#configurazione-parametri-flexibowl" title="Link to this heading">#</a></h2>
+<p>Una volta stabilita la connessione, procedere con la configurazione dei parametri operativi.</p>
+<section id="step-3-accesso-configurazione">
+<h3>Step 3: Accesso configurazione<a class="headerlink" href="#step-3-accesso-configurazione" title="Link to this heading">#</a></h3>
+<p><strong>Apertura pannello config</strong></p>
+<ol class="arabic simple">
+<li><p>Cliccare sul pulsante <strong>Config FlexiBowl</strong></p></li>
+<li><p>Si apre una finestra con i parametri configurabili del FlexiBowl</p></li>
+</ol>
+</section>
+<section id="step-4-abilitazione-illuminazione-backlight">
+<h3>Step 4: Abilitazione illuminazione (Backlight)<a class="headerlink" href="#step-4-abilitazione-illuminazione-backlight" title="Link to this heading">#</a></h3>
+<p><strong>Attivazione backlight</strong></p>
+<ol class="arabic simple">
+<li><p>Nella finestra di configurazione, localizzare il controllo <strong>Backlight</strong> o <strong>Light</strong></p></li>
+<li><p>Attivare l’interruttore portandolo su <strong>Light ON</strong> o <strong>ON</strong></p></li>
+<li><p>Verificare visivamente che l’illuminazione del FlexiBowl si accenda</p>
+<ul class="simple">
+<li><p>Se presente un backlight (illuminazione dal basso), il piatto apparirà illuminato</p></li>
+<li><p>Se presente toplight, verificare che l’illuminatore si accenda</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Verifica funzionamento illuminazione</strong></p>
+<p>Per verificare il corretto funzionamento dell’illuminazione:</p>
+<ul class="simple">
+<li><p>Osservare direttamente il FlexiBowl (in condizioni di luce ambiente ridotta è più evidente)</p></li>
+<li><p>Se disponibile, utilizzare la camera per acquisire un’immagine di test</p></li>
+<li><p>L’illuminazione deve essere uniforme su tutta la superficie del piatto</p></li>
+</ul>
+<p>Se l’illuminazione non si accende, verificare i collegamenti elettrici del backlight/toplight.</p>
+</div>
+</section>
+<section id="step-5-sincronizzazione-parametri">
+<h3>Step 5: Sincronizzazione parametri<a class="headerlink" href="#step-5-sincronizzazione-parametri" title="Link to this heading">#</a></h3>
+<p><strong>Salvataggio configurazione</strong></p>
+<ol class="arabic simple">
+<li><p>Dopo aver configurato tutti i parametri desiderati, cliccare su <strong>Synchronize Parameters</strong></p></li>
+<li><p>Questa operazione:</p>
+<ul class="simple">
+<li><p>Invia i parametri dal VisionController al FlexiBowl</p></li>
+<li><p>Salva la configurazione nella memoria del FlexiBowl</p></li>
+<li><p>Sincronizza lo stato tra software e hardware</p></li>
+</ul>
+</li>
+<li><p>Attendere la conferma di sincronizzazione completata (messaggio o indicatore verde)</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Non saltare la sincronizzazione</strong></p>
+<p>È fondamentale cliccare su <strong>Synchronize Parameters</strong> dopo ogni modifica. Senza questo passaggio:</p>
+<ul class="simple">
+<li><p>Le modifiche non vengono applicate al FlexiBowl fisico</p></li>
+<li><p>Il sistema potrebbe comportarsi in modo incoerente</p></li>
+<li><p>Le impostazioni non vengono salvate permanentemente</p></li>
+</ul>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="test-di-funzionamento-flexibowl">
+<h2>Test di funzionamento FlexiBowl<a class="headerlink" href="#test-di-funzionamento-flexibowl" title="Link to this heading">#</a></h2>
+<p>Dopo aver completato la configurazione, è consigliabile effettuare un test di funzionamento completo.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Test operativo base</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Test illuminazione</strong>:</p>
+<ul class="simple">
+<li><p>Verificare che il backlight/toplight si accenda correttamente</p></li>
+<li><p>Controllare l’uniformità dell’illuminazione sulla superficie</p></li>
+</ul>
+</li>
+<li><p><strong>Test vibrazione</strong> (dalla pagina Config FlexiBowl):</p>
+<ul class="simple">
+<li><p>Attivare la vibrazione manualmente (se disponibile pulsante di test)</p></li>
+<li><p>Verificare che il piatto vibri uniformemente</p></li>
+<li><p>Controllare che non ci siano vibrazioni anomale o rumori</p></li>
+</ul>
+</li>
+<li><p><strong>Test comunicazione bidirezionale</strong>:</p>
+<ul class="simple">
+<li><p>Modificare un parametro (es: intensità luce) dal software</p></li>
+<li><p>Sincronizzare i parametri</p></li>
+<li><p>Verificare che la modifica sia effettivamente applicata sul FlexiBowl fisico</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Calibrazione intensità vibrazione</strong></p>
+<p>Durante l’uso operativo, potrebbe essere necessario regolare l’intensità della vibrazione in base al tipo di pezzo. Questo verrà fatto successivamente nella sezione <a class="reference internal" href="#22_Config_FlexiBowl.md"><span class="xref myst">Config FlexiBowl</span></a> specifica per ogni ricetta.</p>
+<p>Per ora, i parametri predefiniti sono sufficienti per procedere con il setup degli altri componenti.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="salvataggio-e-uscita">
+<h2>Salvataggio e uscita<a class="headerlink" href="#salvataggio-e-uscita" title="Link to this heading">#</a></h2>
+<p><strong>Completamento setup FlexiBowl</strong></p>
+<ol class="arabic simple">
+<li><p>Verificare che tutti i parametri siano configurati correttamente</p></li>
+<li><p>Assicurarsi di aver cliccato <strong>Synchronize Parameters</strong></p></li>
+<li><p>Tornare alla pagina SETUP principale per procedere con il setup successivo</p></li>
+<li><p>Le impostazioni del FlexiBowl sono ora salvate nella ricetta attiva</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="problemi-comuni-e-soluzioni">
+<h2>Problemi comuni e soluzioni<a class="headerlink" href="#problemi-comuni-e-soluzioni" title="Link to this heading">#</a></h2>
+<section id="flexibowl-non-vibra">
+<h3>FlexiBowl non vibra<a class="headerlink" href="#flexibowl-non-vibra" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Vibrazione non funzionante</strong></p>
+<p>Se il FlexiBowl non vibra dopo l’attivazione:</p>
+<ul class="simple">
+<li><p>Verificare l’alimentazione elettrica del FlexiBowl (LED di stato sul dispositivo)</p></li>
+<li><p>Controllare che l’interruttore principale del FlexiBowl sia su ON</p></li>
+<li><p>Verificare il cablaggio dell’alimentazione</p></li>
+<li><p>Consultare il manuale del FlexiBowl per diagnostica specifica</p></li>
+</ul>
+</div>
+</section>
+<section id="illuminazione-non-uniforme">
+<h3>Illuminazione non uniforme<a class="headerlink" href="#illuminazione-non-uniforme" title="Link to this heading">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Ottimizzazione illuminazione</strong></p>
+<p>Se l’illuminazione presenta zone più scure o più chiare:</p>
+<ul class="simple">
+<li><p>Verificare che backlight/toplight sia montato correttamente</p></li>
+<li><p>Pulire la superficie del piatto e dell’illuminatore</p></li>
+<li><p>Regolare l’intensità luminosa (parametro disponibile in configurazione avanzata)</p></li>
+<li><p>Verificare che non ci siano ostruzioni tra luce e superficie</p></li>
+</ul>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="passi-successivi">
+<h2>Passi successivi<a class="headerlink" href="#passi-successivi" title="Link to this heading">#</a></h2>
+<p>Una volta completato il FlexiBowl Setup, procedere con:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="13b_Hopper_Setup.html"><span class="std std-doc">Passo 5: Hopper Setup</span></a></p></li>
+<li><p><a class="reference internal" href="13c_Robot_Setup.html"><span class="std std-doc">Passo 6: Robot Setup</span></a></p></li>
+</ul>
+<br>
+<!-- Versions and languages set-up -->
+<style>
+  .fixed-bar {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(240, 240, 240, 0.85);
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    color: #222;
+    display: flex;
+    gap: 12px;
+    padding: 6px 12px;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: saturate(180%) blur(10px);
+  }
+
+  @media print {
+    .fixed-bar {
+      display: none !important;
+    }
+  }
+
+  .fixed-bar .dropdown {
+    position: relative;
+    user-select: none;
+  }
+
+  .fixed-bar .dropdown-toggle {
+    background-color: rgba(200, 200, 200, 0.4);
+    color: #222;
+    padding: 6px 10px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+  }
+
+  .fixed-bar .dropdown-toggle::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  .fixed-bar .dropdown-toggle:hover {
+    background-color: rgba(100, 150, 220, 0.2);
+    color: #1a3e72;
+    border-color: rgba(26, 62, 114, 0.6);
+  }
+
+  .fixed-bar .dropdown-toggle .fa {
+    font-size: 0.9rem;
+  }
+
+  .fixed-bar .dropdown-menu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: rgba(250, 250, 250, 0.95);
+    border: 1px solid rgba(150, 150, 150, 0.3);
+    border-radius: 4px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    z-index: 10000;
+    backdrop-filter: saturate(180%) blur(8px);
+  }
+
+  .fixed-bar .dropdown-menu.show {
+    display: flex;
+  }
+
+  .fixed-bar .dropdown-menu a {
+    padding: 8px 12px;
+    color: #1a3e72;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+    white-space: nowrap;
+    transition: background-color 0.25s ease;
+  }
+
+  .fixed-bar .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .fixed-bar .dropdown-menu a:hover {
+    background-color: rgba(100, 150, 220, 0.15);
+  }
+</style>
+<div class="fixed-bar" role="region" aria-label="Version and language selector">
+  <div class="dropdown">
+    <div class="dropdown-toggle" tabindex="0" aria-haspopup="listbox" aria-expanded="false">
+      <span class="fa fa-book" aria-hidden="true"></span>
+      Version: <span class="current-value">V. 1.0</span>
+      <span class="fa caret-icon fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-menu" role="listbox">
+      	<a href="#" role="option">V. 1.0</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <div class="dropdown-toggle" tabindex="0" aria-haspopup="listbox" aria-expanded="false">
+      <span class="fa fa-globe" aria-hidden="true"></span>
+      Language: <span class="current-value">Italiano</span>
+      <span class="fa caret-icon fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-menu" role="listbox">
+      	<a href="#" role="option">Italiano</a>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const bar = document.querySelector('.fixed-bar');
+  const dropdowns = bar.querySelectorAll('.dropdown');
+  const defaultLang = 'Italiano';
+  const languages = ["Italiano"];
+  const versions = ["V. 1.0"];
+
+  // ---------------------------
+  // Helpers
+  // ---------------------------
+
+  function closeAll() {
+    dropdowns.forEach(d => {
+      d.querySelector('.dropdown-menu').classList.remove('show');
+      const t = d.querySelector('.dropdown-toggle');
+      t.setAttribute('aria-expanded', 'false');
+      const caret = t.querySelector('.caret-icon');
+      if (caret) {
+        caret.classList.remove('fa-caret-up');
+        caret.classList.add('fa-caret-down');
+      }
+    });
+  }
+
+  function toggleMenu(dropdown) {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+    closeAll();
+    if (!isOpen) {
+      menu.classList.add('show');
+      toggle.setAttribute('aria-expanded', 'true');
+      const caret = toggle.querySelector('.caret-icon');
+      if (caret) {
+        caret.classList.remove('fa-caret-down');
+        caret.classList.add('fa-caret-up');
+      }
+    }
+  }
+
+  async function pathExists(path) {
+    try {
+      const r = await fetch(path, { method: 'HEAD' });
+      return r.ok;
+    } catch {
+      return false;
+    }
+  }
+
+  async function resolvePath(segments, newLang, newVer) {
+    const seg = [...segments];
+
+    const langIndex = seg.findIndex(s => languages.includes(decodeURIComponent(s)));
+    const verIndex = seg.findIndex(s => versions.includes(decodeURIComponent(s)));
+
+    if (newLang) seg[langIndex] = encodeURIComponent(newLang);
+    if (newVer) seg[verIndex] = encodeURIComponent(newVer);
+
+    const primary = "/" + seg.join("/");
+
+    if (await pathExists(primary)) return primary;
+
+    // Fallback: default language
+    if (newLang) {
+      seg[langIndex] = encodeURIComponent(defaultLang);
+    }
+    const fallback = "/" + seg.join("/");
+    if (await pathExists(fallback)) return fallback;
+
+    // Last fallback -> /version/language/index.html
+    return `/${seg[0]}/${seg[1]}/index.html`;
+  }
+
+  // ---------------------------
+  // Events
+  // ---------------------------
+
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const display = dropdown.querySelector('.current-value');
+
+    toggle.addEventListener('click', e => {
+      e.stopPropagation();
+      toggleMenu(dropdown);
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', async e => {
+        e.preventDefault();
+
+        const selected = link.textContent.trim();
+        display.textContent = selected;
+
+        const segments = window.location.pathname.split("/").filter(Boolean);
+
+        const isLang = toggle.textContent.includes("Language");
+        const isVer = toggle.textContent.includes("Version");
+
+        let newLang = null, newVer = null;
+
+        if (isLang) newLang = selected;
+        if (isVer) {
+          newVer = versions.find(v => v.endsWith(selected)) || selected;
+        }
+
+        const newPath = await resolvePath(segments, newLang, newVer);
+        window.location.pathname = newPath;
+      });
+    });
+  });
+
+  // Outside click closes all
+  window.addEventListener('click', closeAll);
+
+  // Escape closes all
+  window.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeAll();
+  });
+
+});
+
+/*
+Silly ahh frog for good luck ~ Niccolò Quadrani
+
+      (')-=-(')
+    __(   "   )__   ~ cra cra brother
+  / _/'-----'\_ \
+___\\ \\     // //___
+>____)/_\---/_\(____<
+
+*/
+
+
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
 </section>
 
 
@@ -454,7 +955,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>SETUP</strong></p>
+        <p class="prev-next-title">Configurazione Iniziale del Sistema</p>
       </div>
     </a>
     <a class="right-next"
@@ -482,8 +983,26 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-connessione">Procedura di connessione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descrizione-interfaccia">Descrizione Interfaccia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-configurazione-flexibowl">Accesso alla configurazione FlexiBowl</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-connessione">Procedura di connessione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-inserimento-indirizzo-ip">Step 1: Inserimento indirizzo IP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-test-di-connessione">Step 2: Test di connessione</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-parametri-flexibowl">Configurazione parametri FlexiBowl</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-accesso-configurazione">Step 3: Accesso configurazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-abilitazione-illuminazione-backlight">Step 4: Abilitazione illuminazione (Backlight)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-sincronizzazione-parametri">Step 5: Sincronizzazione parametri</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-di-funzionamento-flexibowl">Test di funzionamento FlexiBowl</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-e-uscita">Salvataggio e uscita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flexibowl-non-vibra">FlexiBowl non vibra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#illuminazione-non-uniforme">Illuminazione non uniforme</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passi-successivi">Passi successivi</a></li>
 </ul>
   </nav></div>
 

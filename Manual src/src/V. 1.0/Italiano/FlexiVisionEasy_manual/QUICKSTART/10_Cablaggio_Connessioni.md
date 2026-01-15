@@ -41,3 +41,5 @@ tipo:
   - Connect the camera (POE compatible). It must be connected to the VisionController.
   - (Immagine 7)
 ```
+
+immagine con collegamenti elettrici della configurazione a due e tre flexibowl, due e tre camere e due e tre tramogge 

@@ -1,23 +1,226 @@
-# PASSO 4 : FlexiBowl SetUp	
+# Passo 4: FlexiBowl Setup
 
-Dalla pagina **SETUP**, cliccare sull'icona **FlexiBowl Setup** per accedere alla configurazione.
+Questa sezione descrive la procedura per connettere e configurare il FlexiBowl (alimentatore vibrante) con il sistema FlexiVision Easy.
 
-### Procedura di connessione
-1. Inserire l'indirizzo **FlexiBowl IP**.
-2. Cliccare su **Connect Test**: se l'indicatore diventa verde, la connessione è stabilita.
-3. Cliccare su **Config FlexiBowl** e abilitare il backlight su **Light ON**.
-4. Cliccare su **Synchronize Parameters**.
+```{note}
+**Prerequisiti**
 
-### Descrizione Interfaccia
-```{list-table}
-:widths: 25 75
-:header-rows: 1
+Prima di procedere, assicurarsi che:
+- Il FlexiBowl sia stato installato meccanicamente e collegato elettricamente
+- Il cavo Ethernet dal FlexiBowl sia connesso alla rete
+- L'indirizzo IP del FlexiBowl sia noto (verificare etichetta sul dispositivo o documentazione)
+- La ricetta base sia stata creata (Passo 3)
+```
 
-* - Elemento
-  - Funzione
-* - **FlexiBowl IP**
-  - Campo per l'inserimento dell'indirizzo di rete del dispositivo.
-* - **Status**
-  - Indica lo stato attuale della comunicazione.
-* - **Connect Test**
-  - Esegue un ping di verifica verso l'IP inserito.
+---
+
+## Accesso alla configurazione FlexiBowl
+
+
+
+1. Dalla pagina principale del software, cliccare su **SETUP**
+2. Nella pagina SETUP, identificare e cliccare sull'icona **FlexiBowl Setup**
+3. Si apre la schermata di configurazione del FlexiBowl
+
+
+---
+
+## Procedura di connessione
+
+### Step 1: Inserimento indirizzo IP
+
+**Configurazione indirizzo di rete**
+
+1. Nel campo **FlexiBowl IP**, inserire l'indirizzo IP del FlexiBowl
+   - Formato: `192.168.1.XXX` (o secondo la configurazione della vostra rete)
+   - L'indirizzo IP del FlexiBowl è riportato su un'etichetta sul dispositivo
+   - Esempio: `192.168.1.100`
+
+2. Verificare che l'indirizzo sia sulla stessa subnet del VisionController
+
+
+```{tip}
+**Come trovare l'indirizzo IP del FlexiBowl**
+
+Se non si conosce l'indirizzo IP del FlexiBowl:
+- Controllare l'etichetta adesiva sul dispositivo FlexiBowl (vicino ai connettori)
+- Consultare la documentazione fornita con il FlexiBowl
+- Utilizzare uno scanner di rete per individuare i dispositivi connessi
+- Contattare il supporto tecnico se l'indirizzo non è disponibile
+```
+
+### Step 2: Test di connessione
+
+
+**Verifica raggiungibilità**
+
+1. Dopo aver inserito l'IP, cliccare sul pulsante **Connect Test**
+
+2. Il sistema esegue un test di comunicazione (ping) verso il FlexiBowl
+
+3. Osservare l'indicatore di **Status**:
+   - **Verde**: Connessione stabilita correttamente
+   - **Rosso**: Connessione fallita (verificare IP e cablaggio)
+
+```{warning}
+**Connessione fallita**
+
+Se l'indicatore rimane rosso o appare un messaggio di errore:
+
+1. Verificare che l'indirizzo IP inserito sia corretto
+2. Controllare fisicamente il cavo Ethernet (deve essere inserito completamente)
+3. Verificare che lo switch/router di rete sia acceso
+4. Assicurarsi che FlexiBowl e VisionController siano sulla stessa subnet
+5. Provare a pingare il FlexiBowl da terminale Windows:
+   - Aprire Prompt dei comandi
+   - Digitare: `ping 192.168.1.XXX` (sostituire con IP effettivo)
+   - Se il ping fallisce, problema di rete; se ha successo, problema software
+
+Se il problema persiste, consultare [Troubleshooting](../26_trb_shooting_guide.md).
+```
+
+---
+
+## Configurazione parametri FlexiBowl
+
+Una volta stabilita la connessione, procedere con la configurazione dei parametri operativi.
+
+### Step 3: Accesso configurazione
+
+
+**Apertura pannello config**
+
+1. Cliccare sul pulsante **Config FlexiBowl**
+2. Si apre una finestra con i parametri configurabili del FlexiBowl
+
+
+### Step 4: Abilitazione illuminazione (Backlight)
+
+
+**Attivazione backlight**
+
+1. Nella finestra di configurazione, localizzare il controllo **Backlight** o **Light**
+
+2. Attivare l'interruttore portandolo su **Light ON** o **ON**
+
+3. Verificare visivamente che l'illuminazione del FlexiBowl si accenda
+   - Se presente un backlight (illuminazione dal basso), il piatto apparirà illuminato
+   - Se presente toplight, verificare che l'illuminatore si accenda
+
+```{tip}
+**Verifica funzionamento illuminazione**
+
+Per verificare il corretto funzionamento dell'illuminazione:
+- Osservare direttamente il FlexiBowl (in condizioni di luce ambiente ridotta è più evidente)
+- Se disponibile, utilizzare la camera per acquisire un'immagine di test
+- L'illuminazione deve essere uniforme su tutta la superficie del piatto
+
+Se l'illuminazione non si accende, verificare i collegamenti elettrici del backlight/toplight.
+```
+
+### Step 5: Sincronizzazione parametri
+
+
+**Salvataggio configurazione**
+
+1. Dopo aver configurato tutti i parametri desiderati, cliccare su **Synchronize Parameters**
+
+2. Questa operazione:
+   - Invia i parametri dal VisionController al FlexiBowl
+   - Salva la configurazione nella memoria del FlexiBowl
+   - Sincronizza lo stato tra software e hardware
+
+3. Attendere la conferma di sincronizzazione completata (messaggio o indicatore verde)
+
+
+```{warning}
+**Non saltare la sincronizzazione**
+
+È fondamentale cliccare su **Synchronize Parameters** dopo ogni modifica. Senza questo passaggio:
+- Le modifiche non vengono applicate al FlexiBowl fisico
+- Il sistema potrebbe comportarsi in modo incoerente
+- Le impostazioni non vengono salvate permanentemente
+```
+
+---
+
+
+## Test di funzionamento FlexiBowl
+
+Dopo aver completato la configurazione, è consigliabile effettuare un test di funzionamento completo.
+
+```{note}
+**Test operativo base**
+
+1. **Test illuminazione**:
+   - Verificare che il backlight/toplight si accenda correttamente
+   - Controllare l'uniformità dell'illuminazione sulla superficie
+
+2. **Test vibrazione** (dalla pagina Config FlexiBowl):
+   - Attivare la vibrazione manualmente (se disponibile pulsante di test)
+   - Verificare che il piatto vibri uniformemente
+   - Controllare che non ci siano vibrazioni anomale o rumori
+
+3. **Test comunicazione bidirezionale**:
+   - Modificare un parametro (es: intensità luce) dal software
+   - Sincronizzare i parametri
+   - Verificare che la modifica sia effettivamente applicata sul FlexiBowl fisico
+```
+
+```{tip}
+**Calibrazione intensità vibrazione**
+
+Durante l'uso operativo, potrebbe essere necessario regolare l'intensità della vibrazione in base al tipo di pezzo. Questo verrà fatto successivamente nella sezione [Config FlexiBowl](22_Config_FlexiBowl.md) specifica per ogni ricetta.
+
+Per ora, i parametri predefiniti sono sufficienti per procedere con il setup degli altri componenti.
+```
+
+---
+
+## Salvataggio e uscita
+
+**Completamento setup FlexiBowl**
+
+1. Verificare che tutti i parametri siano configurati correttamente
+2. Assicurarsi di aver cliccato **Synchronize Parameters**
+3. Tornare alla pagina SETUP principale per procedere con il setup successivo
+4. Le impostazioni del FlexiBowl sono ora salvate nella ricetta attiva
+
+
+---
+
+## Problemi comuni e soluzioni
+
+### FlexiBowl non vibra
+
+```{warning}
+**Vibrazione non funzionante**
+
+Se il FlexiBowl non vibra dopo l'attivazione:
+- Verificare l'alimentazione elettrica del FlexiBowl (LED di stato sul dispositivo)
+- Controllare che l'interruttore principale del FlexiBowl sia su ON
+- Verificare il cablaggio dell'alimentazione
+- Consultare il manuale del FlexiBowl per diagnostica specifica
+```
+
+### Illuminazione non uniforme
+
+```{tip}
+**Ottimizzazione illuminazione**
+
+Se l'illuminazione presenta zone più scure o più chiare:
+- Verificare che backlight/toplight sia montato correttamente
+- Pulire la superficie del piatto e dell'illuminatore
+- Regolare l'intensità luminosa (parametro disponibile in configurazione avanzata)
+- Verificare che non ci siano ostruzioni tra luce e superficie
+```
+
+---
+
+## Passi successivi
+
+Una volta completato il FlexiBowl Setup, procedere con:
+
+- [Passo 5: Hopper Setup](13b_Hopper_Setup.md)
+- [Passo 6: Robot Setup](13c_Robot_Setup.md)
+

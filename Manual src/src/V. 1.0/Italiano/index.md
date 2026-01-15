@@ -16,9 +16,12 @@ FlexiVision® Easy è la nostra soluzione di visione basata su VisionController,
 Mantenendo tutte le potenti funzionalità della versione precedente, permettendo quindi lo scarico, la separazione, il riconoscimento e il prelievo dei pezzi sfusi sulla superficie dell’alimentatore, FlexiVision Easy rivoluziona l'esperienza utente.
 Grazie a una guida passo passo completa e a strumenti intuitivi, abbiamo estremamente semplificato il processo, rendendo la programmazione e l'utilizzo accessibili e utilizzabili da chiunque, indipendentemente dal livello di esperienza.
 
+## **Panoramica del sistema** 
+immagine anche con collegamenti a tre flexibowl, tre camere e tre tramogge 
+
 ## **Come leggere il manuale**  
 Questo manuale è stato concepito per supportare sia la fase di progettazione e integrazione di sistema, sia la fase di installazione e messa in servizio in campo. 
-Per questo motivo, è diviso in due macro-sezioni con destinatari e finalità distinte.
+Per questo motivo, è diviso in delle macro-sezioni con destinatari e finalità distinte.
   
 ## **Qual è la sezione che stai cercando?**  
 ```{list-table}
@@ -72,7 +75,7 @@ La corretta implementazione di FlexiVision Easy richiede la collaborazione di di
   - Diagnosi problemi, sostituzione componenti, aggiornamenti software
   - Troubleshooting, Support
 ```
-## **Panoramica del sistema** 
+
 
 
 
