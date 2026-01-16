@@ -108,10 +108,7 @@ La distanza di lavoro dipende da:
 Per il calcolo dettagliato della distanza ottimale per la vostra applicazione, consultare la sezione dedicata: [Calcolo Distanza Ottimale](rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.md)
 
 **Distanze tipiche per riferimento:**
-- FlexiBowl 200: circa 350-400 mm
-- FlexiBowl 350: circa 450-500 mm
-- FlexiBowl 500: circa 550-600 mm
-- FlexiBowl 650: circa 650-700 mm
+- 950-1000 mm per ogni modello di FlexiBowl
 ```
 ### Specifiche tecniche Camera 
 immagini + pdf??

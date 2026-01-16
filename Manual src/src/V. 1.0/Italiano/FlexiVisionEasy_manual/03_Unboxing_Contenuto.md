@@ -1,4 +1,4 @@
-# **3. Unboxing e Contenuto della Scatola**
+# 3. Unboxing e Contenuto della Scatola
  Ricevuto il tuo kit FlexiVision, assicurati che tutti i componenti elencati sono inclusi   
 ## *3.1.	Cosa Troverai nella Scatola (Elenco Componenti)*
 

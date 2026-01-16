@@ -1,4 +1,4 @@
-# Passo 7: Camera Setup
+# **Passo 7: Camera Setup**
 
 Questa sezione descrive la procedura per configurare e testare la telecamera industriale del sistema FlexiVision Easy. La corretta configurazione della camera è fondamentale per garantire l'acquisizione di immagini di qualità.
 
@@ -30,6 +30,8 @@ Prima di procedere, assicurarsi che:
 
 La pagina Camera Setup presenta tre riquadri informativi principali e un'area di configurazione:
 
+immagine schermata camera setup
+
 ```{list-table}
 :header-rows: 1
 :widths: 30 70
@@ -52,84 +54,27 @@ La pagina Camera Setup presenta tre riquadri informativi principali e un'area di
 
 ## Procedura di configurazione
 
-### Step 1: Selezione camera
+inserire immagini delle schermate per ogni passaggio per renderli più chiari e visibili 
 
-Se sono presenti multiple camere o se la camera non è stata ancora riconosciuta:
+```{list-table}
+* - **Accesso configurazione**
+  - 1. Cliccare sul pulsante **Config Camera X** (dove X è il numero della camera)
+    2. Si apre una nuova finestra con le impostazioni dettagliate della camera
 
-**Identificazione camera**
-
-1. Nella sezione **Camera Selected**, verificare che sia visualizzato il modello corretto
-   - Dovrebbe apparire: "Cognex CAM-CIC-5000-20G" o simile
-
-2. Se non viene visualizzata alcuna camera o appare "No camera detected":
-   - Verificare i collegamenti fisici (cavo Ethernet e alimentazione)
-   - Attendere alcuni secondi per il riconoscimento automatico
-   - Cliccare su un eventuale pulsante **Refresh** o **Scan** se disponibile
-
-```{warning}
-**Camera non rilevata**
-
-Se la camera non viene rilevata dopo diversi secondi:
-
-1. Verificare che il cavo Ethernet sia connesso saldamente sia al VisionController che alla camera
-2. Se si utilizza PoE, verificare che lo switch supporti effettivamente PoE
-3. Se si utilizza alimentazione esterna, verificare che l'alimentatore sia acceso
-4. Controllare i LED sulla camera (se presente):
-   - LED verde fisso = camera alimentata e funzionante
-   - LED lampeggiante = problema di comunicazione
-   - Nessun LED = problema di alimentazione
-
-Consultare [Troubleshooting](../26_trb_shooting_guide.md) per ulteriori diagnosi.
+* - **Attivazione modalità avanzata**
+  - 3. Nella finestra di configurazione camera, localizzare e cliccare sul pulsante **Expert** (in basso a destra)
+    4. Questa modalità fornisce accesso a tutte le impostazioni avanzate della camera necessarie per la configurazione iniziale
+* - **Configurazione image acquisition device**
+  - 5. Nel pannello **Expert**, cliccare sulla sezione **Image Acquisition** o **Settings**
+    6. Cercare e cliccare su **Image Acquisition Device**
+    7. Si apre un menu di selezione dei dispositivi di acquisizione disponibili
+* -  **Identificazione camera specifica**
+  - 8. Dal menu dei dispositivi, selezionare la camera fisica connessa
+        - Cercare nell'elenco il numero seriale o il modello della vostra camera
+        - Esempio: "CAM-CIC-5000-20G-XXXXX" (dove XXXXX è il seriale)
+    9. Cliccare sulla camera per selezionarla
+    10. Confermare la selezione 
 ```
-
-### Step 2: Apertura configurazione avanzata
-
-Una volta rilevata la camera, procedere con la configurazione dei parametri di acquisizione:
-
-**Accesso configurazione**
-
-1. Cliccare sul pulsante **Config Camera** (o **Config Camera X** dove X è il numero della camera)
-
-2. Si apre una nuova finestra con le impostazioni dettagliate della camera
-
----
-
-## Configurazione parametri acquisizione
-
-La configurazione della camera richiede diversi passaggi per impostare correttamente il dispositivo di acquisizione e i formati video.
-
-### Step 3: Accesso modalità Expert
-
-**Attivazione modalità avanzata**
-
-1. Nella finestra di configurazione camera, localizzare e cliccare sul tab/pulsante **Expert**
-
-2. Questa modalità fornisce accesso a tutte le impostazioni avanzate della camera necessarie per la configurazione iniziale
-
-
-### Step 4: Selezione dispositivo di acquisizione
-
-**Configurazione image acquisition device**
-
-1. Nel pannello **Expert**, cliccare sulla sezione **Image Acquisition** o **Settings**
-
-2. Cercare e cliccare su **Image Acquisition Device**
-
-3. Si apre un menu di selezione dei dispositivi di acquisizione disponibili
-
-
-### Step 5: Selezione camera fisica
-
-**Identificazione camera specifica**
-
-1. Dal menu dei dispositivi, selezionare la camera fisica connessa
-   - Cercare nell'elenco il numero seriale o il modello della vostra camera
-   - Esempio: "CAM-CIC-5000-20G-XXXXX" (dove XXXXX è il seriale)
-
-2. Cliccare sulla camera per selezionarla
-
-3. Confermare la selezione (pulsante **OK** o **Apply** se richiesto)
-
 
 ```{tip}
 **Identificazione del seriale corretto**
@@ -140,19 +85,13 @@ Se sono elencate multiple camere o dispositivi:
 - In caso di dubbio, disconnettere fisicamente altre camere per identificare quella in uso
 ```
 
-### Step 6: Configurazione formato video
 
-Una volta selezionata la camera, è necessario impostare il formato di acquisizione corretto:
-
-**Selezione video format**
-
-1. Cliccare su **Video Formats** o **Format Selection**
-
-2. Dalla lista dei formati disponibili, selezionare **Generic GigEVision**
-
-3. Selezionare **Mono** (monocromatico) come tipo di sensore
-   - La camera FlexiVision utilizza sensore monocromatico per massimizzare la sensibilità alla luce
-   - NON selezionare formati a colori (Color/RGB) anche se disponibili
+```{list-table} 
+* - **Selezione video format**
+  - 11. Cliccare su **Video Formats** 
+    12. Dalla lista dei formati disponibili, selezionare **Generic GigEVision**
+    13. Selezionare **Mono** (monocromatico) come tipo di sensore
+```
 
 
 ```{warning}
@@ -166,40 +105,25 @@ Una volta selezionata la camera, è necessario impostare il formato di acquisizi
 Se "Generic GigEVision" non appare nella lista, verificare l'installazione dei driver Cognex/GigE Vision sul VisionController.
 ```
 
-### Step 7: Inizializzazione acquisizione
-
-**Attivazione sistema di acquisizione**
-
-1. Dopo aver selezionato il formato corretto, cliccare su **Initialize Acquisition**
-
-2. Il software inizializza il collegamento con la camera e prepara il sistema di acquisizione
-
-3. Attendere il completamento dell'inizializzazione (pochi secondi)
-
-4. Un messaggio o un indicatore confermerà l'inizializzazione riuscita
-
----
-
-### Step 8: Test acquisizione multipla
-
-**Verifica funzionamento acquisizione**
-
-1. Localizzare il pulsante **Run** in alto a sinistra dell'interfaccia (icona "play" o simile)
-
-2. Cliccare su **Run** ripetutamente (5-10 volte) per acquisire immagini di test
-
-3. Osservare l'area di visualizzazione immagine:
-   - Dovrebbe mostrare la vista della camera sul FlexiBowl
-   - L'immagine dovrebbe aggiornarsi ad ogni click su Run
-   - Verificare che l'illuminazione sia visibile
-
-
-### Step 9: Verifica problema "schermo blu"
+```{list-table}
+* - **Attivazione sistema di acquisizione**
+  - 14. Dopo aver selezionato il formato corretto, cliccare su **Initialize Acquisition**
+    15. Il software inizializza il collegamento con la camera e prepara il sistema di acquisizione
+    16. Attendere il completamento dell'inizializzazione (pochi secondi)
+    17. Un messaggio o un indicatore confermerà l'inizializzazione riuscita
+* - **Verifica funzionamento acquisizione**
+  - 18. Localizzare il pulsante **Run** in alto a sinistra dell'interfaccia (icona "play" o simile)
+    19. Cliccare su **Run** ripetutamente (5-10 volte) per acquisire immagini di test
+    20. Osservare l'area di visualizzazione immagine:
+        - Dovrebbe mostrare la vista della camera sul FlexiBowl
+        - L'immagine dovrebbe aggiornarsi ad ogni click su Run
+        - Verificare che l'illuminazione sia visibile
+```
 
 ```{warning}
 **Diagnosi schermo completamente blu**
 
-Se durante i test l'immagine acquisita appare **completamente blu** (o uniformemente nera) almeno una volta:
+Se durante i test l'immagine acquisita appare **completamente blu**  almeno una volta:
 
 **Causa**: Problema di comunicazione GigE (latenza di rete o dimensione pacchetti non ottimale)
 
@@ -216,11 +140,7 @@ Procedere con gli step successivi per la configurazione ottimale di questi param
 
 ---
 
-## Ottimizzazione parametri GigE (se necessario)
-
-Se si è verificato il problema dello "schermo blu", è necessario ottimizzare i parametri di comunicazione GigE:
-
-### Latency Level (Livello di Latenza)
+#### Latency Level (Livello di Latenza)
 
 ```{note}
 **Regolazione latency**
@@ -243,7 +163,7 @@ Il parametro **Latency Level** controlla il buffer di comunicazione tra camera e
 - Per reti condivise o con switch multipli: 5-10
 ```
 
-### Packet Size (Dimensione Pacchetto)
+#### Packet Size (Dimensione Pacchetto)
 
 ```{note}
 **Regolazione packet size**
@@ -283,64 +203,30 @@ Se i problemi persistono, verificare:
 
 ---
 
-### Nota sui parametri esposizione/luminosità/contrasto
 
 ```{important}
 **Regolazioni immagine**
 
-Nella sezione Expert/Settings sono disponibili anche parametri per regolare esposizone, luminosità e contrasto, ma NON è necessario mopdificare questi parametri in questa fase. Verra fatto poi automaticamente o manualmente durante le fasi successive.
+Nella sezione Expert/Settings sono disponibili anche parametri per regolare esposizone, luminosità e contrasto, ma NON è necessario modificare questi parametri in questa fase. Verra fatto poi automaticamente o manualmente durante le fasi successive.
 
 Procedere quindi con i valori automatici per completare il setup iniziale.
 ```
 
 ---
 
-## Verifica finale e salvataggio
-
-### Step 10: Test finale acquisizione
-
-**Conferma configurazione**
-
-Prima di uscire dalla configurazione camera:
-
-1. Cliccare su **Run** almeno 2-3 volte consecutivamente
-2. Verificare che:
-   - Nessuna immagine appaia completamente blu o nera
-   - Le immagini si aggiornino regolarmente
-   - La superficie del FlexiBowl sia chiaramente visibile
-   - L'illuminazione sia uniforme
-
-3. Se tutti i test sono positivi, la configurazione è corretta
-
----
-
-## Informazioni tecniche sezioni interface
-
-Per riferimento futuro, ecco il dettaglio di tutte le sezioni visibili nell'interfaccia Camera Setup:
-
 ```{list-table}
-:header-rows: 1
-:widths: 30 70
-
-* - Sezione Interface
-  - Contenuto
-* - **1.1.1. Camera Selected**
-  - Identificativo della camera selezionata (modello e seriale)
-* - **1.1.2. Serial Camera**
-  - Numero seriale univoco della camera connessa
-* - **1.1.3. Cam Exposure**
-  - Valore tempo di esposizione camera (regolabile in modalità avanzata)
-* - **1.1.4. Test: Scatta un'immagine**
-  - Pulsante per acquisizione manuale singola immagine di test
-* - **1.1.5. Info**
-  - Informazioni diagnostiche su driver e versione firmware camera
-* - **1.1.6. Expert**
-  - Accesso alla modalità di configurazione avanzata (utilizzata in questo setup)
-* - **1.1.7. Back/Next**
-  - Navigazione tra le diverse sezioni di configurazione
+* - **Verifica finale e salvataggio**
+  - Prima di uscire dalla configurazione camera:
+        21. Cliccare su **Run** almeno 2-3 volte consecutivamente
+        22. Verificare che:
+            - Nessuna immagine appaia completamente blu o nera
+            - Le immagini si aggiornino regolarmente
+            - La superficie del FlexiBowl sia chiaramente visibile
+            - L'illuminazione sia uniforme
+        23. Se tutti i test sono positivi, la configurazione è corretta
 ```
-
 ---
+
 
 ## Risoluzione problemi comuni
 

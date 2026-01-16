@@ -1,4 +1,4 @@
-# Passo 4: FlexiBowl Setup
+# **Passo 4: FlexiBowl Setup**
 
 Questa sezione descrive la procedura per connettere e configurare il FlexiBowl (alimentatore vibrante) con il sistema FlexiVision Easy.
 
@@ -16,8 +16,6 @@ Prima di procedere, assicurarsi che:
 
 ## Accesso alla configurazione FlexiBowl
 
-
-
 1. Dalla pagina principale del software, cliccare su **SETUP**
 2. Nella pagina SETUP, identificare e cliccare sull'icona **FlexiBowl Setup**
 3. Si apre la schermata di configurazione del FlexiBowl
@@ -34,20 +32,10 @@ Prima di procedere, assicurarsi che:
 1. Nel campo **FlexiBowl IP**, inserire l'indirizzo IP del FlexiBowl
    - Formato: `192.168.1.XXX` (o secondo la configurazione della vostra rete)
    - L'indirizzo IP del FlexiBowl è riportato su un'etichetta sul dispositivo
-   - Esempio: `192.168.1.100`
+   
 
 2. Verificare che l'indirizzo sia sulla stessa subnet del VisionController
 
-
-```{tip}
-**Come trovare l'indirizzo IP del FlexiBowl**
-
-Se non si conosce l'indirizzo IP del FlexiBowl:
-- Controllare l'etichetta adesiva sul dispositivo FlexiBowl (vicino ai connettori)
-- Consultare la documentazione fornita con il FlexiBowl
-- Utilizzare uno scanner di rete per individuare i dispositivi connessi
-- Contattare il supporto tecnico se l'indirizzo non è disponibile
-```
 
 ### Step 2: Test di connessione
 
@@ -140,39 +128,6 @@ Se l'illuminazione non si accende, verificare i collegamenti elettrici del backl
 - Le modifiche non vengono applicate al FlexiBowl fisico
 - Il sistema potrebbe comportarsi in modo incoerente
 - Le impostazioni non vengono salvate permanentemente
-```
-
----
-
-
-## Test di funzionamento FlexiBowl
-
-Dopo aver completato la configurazione, è consigliabile effettuare un test di funzionamento completo.
-
-```{note}
-**Test operativo base**
-
-1. **Test illuminazione**:
-   - Verificare che il backlight/toplight si accenda correttamente
-   - Controllare l'uniformità dell'illuminazione sulla superficie
-
-2. **Test vibrazione** (dalla pagina Config FlexiBowl):
-   - Attivare la vibrazione manualmente (se disponibile pulsante di test)
-   - Verificare che il piatto vibri uniformemente
-   - Controllare che non ci siano vibrazioni anomale o rumori
-
-3. **Test comunicazione bidirezionale**:
-   - Modificare un parametro (es: intensità luce) dal software
-   - Sincronizzare i parametri
-   - Verificare che la modifica sia effettivamente applicata sul FlexiBowl fisico
-```
-
-```{tip}
-**Calibrazione intensità vibrazione**
-
-Durante l'uso operativo, potrebbe essere necessario regolare l'intensità della vibrazione in base al tipo di pezzo. Questo verrà fatto successivamente nella sezione [Config FlexiBowl](22_Config_FlexiBowl.md) specifica per ogni ricetta.
-
-Per ora, i parametri predefiniti sono sufficienti per procedere con il setup degli altri componenti.
 ```
 
 ---

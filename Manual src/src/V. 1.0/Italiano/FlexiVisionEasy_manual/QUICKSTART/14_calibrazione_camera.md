@@ -1,4 +1,4 @@
-# **Calibrazione Camera**
+# Calibrazione Camera
 	Montare la griglia di calibrazione 
 K.	Mettere la camera in “live display”
 L.	Impostare l’apertura del diaframma 

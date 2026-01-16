@@ -1,4 +1,4 @@
-# Configurazione Iniziale del Sistema
+# **Configurazione Iniziale del Sistema**
 
 Questa sezione guida l'utente attraverso la configurazione completa dei componenti hardware e software del sistema FlexiVision Easy. È fondamentale seguire i passaggi nell'ordine indicato per garantire il corretto funzionamento del sistema.
 
@@ -214,35 +214,23 @@ Se la licenza non si attiva:
 - Verificare la connessione Internet (alcune licenze richiedono validazione online)
 - Controllare la data/ora del sistema operativo Windows (deve essere corretta)
 - Assicurarsi di aver inserito la chiave esattamente come fornita
-- Contattare support@arsautomation.com con il codice errore visualizzato
+
+fare riferimento alla sezione [TroubleShooting]
 ```
 
 ```{tip}
 **Prima configurazione completa**
 
 Per una prima installazione, si consiglia di:
-1. Completare tutti i setup di base (questa sezione)
+1. Completare tutti i setup di base (fino al Passo 7)
 2. Effettuare la calibrazione camera seguendo la procedura guidata
 3. Creare un modello di test con un pezzo semplice
 4. Verificare il picking con il robot prima di procedere con la produzione
-
-Tempo stimato per setup completo: 2-4 ore (a seconda dell'esperienza)
 ```
 ---
 
-## Passi successivi
-
-Una volta completato il setup iniziale di tutti i componenti, procedere con:
-
-1. **Calibrazione Camera** - Calibrazione geometrica camera-robot ([Calibrazione](14_calibrazione_camera.md))
-2. **Protocol Setup** - Configurazione avanzata comunicazione ([Protocol Setup](15_Protocol_Setup.md))
-3. **Nuovo Modello Pezzo** - Training del primo modello ([Nuovo Modello](Nuovo_Modello/16_Nuovo_modello.md))
-
-
-
-
 ```{toctree}
-
+:hidden:
 13a_FB_Setup.md
 13b_Hopper_Setup.md
 13c_Robot_Setup.md
