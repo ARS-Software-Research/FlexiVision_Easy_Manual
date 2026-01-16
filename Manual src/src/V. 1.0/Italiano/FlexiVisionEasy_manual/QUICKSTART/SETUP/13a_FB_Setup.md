@@ -3,7 +3,6 @@
 Questa sezione descrive la procedura per connettere e configurare il FlexiBowl (alimentatore vibrante) con il sistema FlexiVision Easy.
 
 ```{note}
-**Prerequisiti**
 
 Prima di procedere, assicurarsi che:
 - Il FlexiBowl sia stato installato meccanicamente e collegato elettricamente
@@ -87,38 +86,27 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 
 **Attivazione backlight**
 
-1. Nella finestra di configurazione, localizzare il controllo **Backlight** o **Light**
+1. Nella finestra di configurazione, localizzare il controllo **Backlight** 
 
-2. Attivare l'interruttore portandolo su **Light ON** o **ON**
+2. Attivare l'interruttore portandolo su **ON**
 
 3. Verificare visivamente che l'illuminazione del FlexiBowl si accenda
-   - Se presente un backlight (illuminazione dal basso), il piatto apparirà illuminato
-   - Se presente toplight, verificare che l'illuminatore si accenda
+   - sul pannello di controllo del FlexiBowl la spia "light on" deve risultare verde 
 
-```{tip}
-**Verifica funzionamento illuminazione**
-
-Per verificare il corretto funzionamento dell'illuminazione:
-- Osservare direttamente il FlexiBowl (in condizioni di luce ambiente ridotta è più evidente)
-- Se disponibile, utilizzare la camera per acquisire un'immagine di test
-- L'illuminazione deve essere uniforme su tutta la superficie del piatto
-
-Se l'illuminazione non si accende, verificare i collegamenti elettrici del backlight/toplight.
-```
 
 ### Step 5: Sincronizzazione parametri
 
 
 **Salvataggio configurazione**
 
-1. Dopo aver configurato tutti i parametri desiderati, cliccare su **Synchronize Parameters**
+1. Cliccare su **Synchronize Parameters**
 
 2. Questa operazione:
    - Invia i parametri dal VisionController al FlexiBowl
    - Salva la configurazione nella memoria del FlexiBowl
    - Sincronizza lo stato tra software e hardware
 
-3. Attendere la conferma di sincronizzazione completata (messaggio o indicatore verde)
+3. Attendere la conferma di sincronizzazione completata 
 
 
 ```{warning}
@@ -148,7 +136,7 @@ Se l'illuminazione non si accende, verificare i collegamenti elettrici del backl
 
 ### FlexiBowl non vibra
 
-```{warning}
+```{warning} non per questa fase ma utile?
 **Vibrazione non funzionante**
 
 Se il FlexiBowl non vibra dopo l'attivazione:
@@ -160,7 +148,7 @@ Se il FlexiBowl non vibra dopo l'attivazione:
 
 ### Illuminazione non uniforme
 
-```{tip}
+```{tip} non in questa fase ma utile?
 **Ottimizzazione illuminazione**
 
 Se l'illuminazione presenta zone più scure o più chiare:

@@ -8,7 +8,7 @@ Questa sezione descrive la procedura per configurare la tramoggia esterna (Hoppe
 Prima di procedere, assicurarsi che:
 - L'Hopper sia stata installata meccanicamente sopra il FlexiBowl
 - I collegamenti elettrici siano stati completati (segnali di controllo e alimentazione)
-- Il FlexiBowl sia già configurato e funzionante (Passo 4)
+- Il FlexiBowl sia già connesso
 ```
 ---
 
@@ -64,7 +64,6 @@ immagini schermate
 Abilitare l'Hopper solo se:
 - Il dispositivo è fisicamente presente e installato
 - I collegamenti elettrici sono stati verificati
-- Si desidera che il sistema richiami automaticamente pezzi quando necessario
 ```
 
 ### Step 2: Configurazione Signal (segnale)
@@ -82,8 +81,6 @@ immagini schermate e valori tipici??
 - Un numero errato attiverà il segnale sbagliato (potenzialmente pericoloso)
 - Consultare lo schema elettrico realizzato durante l'installazione
 - In caso di dubbio, contattare chi ha effettuato il cablaggio
-
-Verificare SEMPRE con un test controllato prima dell'uso in produzione.
 ```
 
 ### Step 3: Salvataggio e completamento
@@ -144,7 +141,7 @@ I parametri di questa logica (numero tentativi, temporizzazioni) possono essere 
 ```{warning}
 **Diagnosi mancata attivazione**
 
-Se l'Hopper non si attiva quando si preme Config Hopper:
+Se l'Hopper non si attiva:
 
 1. Verificare che in **Enable Hopper** sia presente la spunta
 2. Controllare il cablaggio elettrico del segnale digitale

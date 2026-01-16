@@ -209,22 +209,22 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html">Calibrazione Camera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Nuovo_Modello/16_Nuovo_modello.html">16. Creare una nuova ricetta e un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/17_NuovaRicetta.html">creare una nuova ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Nuovo_Modello/16_Nuovo_modello.html">Creare una nuova ricetta e un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/17_NuovaRicetta.html">Creare una Nuova Ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/18_NuovoModello.html">creare un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/18_NuovoModello.html">Creare un Nuovo Modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/18b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/19_ROI_TEST.html">ROI e test</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/19_ROI_TEST.html">Definizione ROI e Tolleranze</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/19b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -232,7 +232,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/20b_Expert.html">expert della pagina …</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/21_RobotPick.html">Robot pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/21_RobotPick.html">Calibrazione Robot Pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/21b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -513,7 +513,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Valore predefinito: <strong>2000</strong> (porta standard FlexiVision)
+<p>Valore predefinito:      (porta standard FlexiVision)<br />
 Il numero di porta deve essere:</p>
 <ul class="simple">
 <li><p>Lo stesso configurato nel programma robot</p></li>
@@ -527,7 +527,7 @@ Il numero di porta deve essere:</p>
 <p>È <strong>fondamentale</strong> che il numero di porta sia identico su entrambi i lati:</p>
 <ul class="simple">
 <li><p><strong>FlexiVision</strong>: Porta configurata in questa pagina</p></li>
-<li><p><strong>Robot</strong>: Porta configurata nel programma robot (variabile di connessione TCP)</p></li>
+<li><p><strong>Robot</strong>: Porta configurata nel programma robot</p></li>
 </ul>
 <p>Se i numeri non corrispondono, la connessione fallirà sempre.</p>
 <p>Esempio:</p>
@@ -582,9 +582,9 @@ Il numero di porta deve essere:</p>
 <tbody>
 <tr class="row-odd"><td><p><strong>1</strong></p></td>
 <td><p>Osservare l’indicatore <strong>Server Online</strong>:</p></td>
-<td><p><strong>Verde</strong>: Server attivo e in ascolto (pronto per connessioni)</p></td>
-<td><p><strong>Rosso</strong>: Server non attivo (problema di configurazione)</p></td>
-<td><p><strong>Giallo</strong>: Server in fase di avvio o riconfigurazione</p></td>
+<td><p><strong>Verde</strong>: Server attivo e in ascolto (pronto per connessioni)
+<strong>Rosso</strong>: Server non attivo (problema di configurazione)
+<strong>Giallo</strong>: Server in fase di avvio o riconfigurazione</p></td>
 </tr>
 </tbody>
 </table>
@@ -601,8 +601,6 @@ Il numero di porta deve essere:</p>
 </section>
 <section id="step-4-salvataggio-e-completamento">
 <h3>Step 4: Salvataggio e completamento<a class="headerlink" href="#step-4-salvataggio-e-completamento" title="Link to this heading">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
 <p><strong>Completamento configurazione</strong></p>
 <ol class="arabic simple">
 <li><p>Verificare che la connessione robot → FlexiVision sia stabile</p></li>
@@ -610,7 +608,6 @@ Il numero di porta deve essere:</p>
 <li><p>I parametri di comunicazione sono automaticamente salvati</p></li>
 <li><p>Tornare alla pagina <strong>SETUP</strong> principale</p></li>
 </ol>
-</div>
 </section>
 </section>
 <hr class="docutils" />

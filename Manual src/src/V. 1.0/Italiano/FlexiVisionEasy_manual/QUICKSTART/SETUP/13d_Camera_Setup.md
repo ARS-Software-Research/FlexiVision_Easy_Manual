@@ -16,13 +16,13 @@ Prima di procedere, assicurarsi che:
 
 ## Accesso alla configurazione Camera
 
-```{note}
+
 **Navigazione**
 
 1. Dalla pagina principale del software, cliccare su **SETUP**
 2. Nella pagina SETUP, identificare e cliccare sull'icona **Camera Setup**
 3. Si apre la pagina di configurazione della camera
-```
+
 
 ---
 

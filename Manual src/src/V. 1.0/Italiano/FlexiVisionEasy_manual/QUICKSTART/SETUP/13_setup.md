@@ -44,7 +44,7 @@ All'avvio del software FlexiVision Easy, viene presentata la schermata di login.
    :header-rows: 0
 
    * - **1**
-     - **Selezionare l'utente** dal menu a tendina (Predefinito: ``Administrator``).
+     - **Selezionare l'utente** dal menu a tendina.
    * - **2**
      - **Inserire la password** fornita da ARS Automation.
        *(Nota: il campo è case-sensitive)*.
@@ -59,8 +59,6 @@ FlexiVision Easy supporta profili utente multipli con diversi livelli di permess
 - **Administrator**: accesso completo a tutte le funzionalità
 - **Operator**: accesso alle funzioni operative (esecuzione ricette, monitoraggio)
 - **Viewer**: solo visualizzazione (nessuna modifica consentita)
-
-Per creare nuovi utenti o modificare le password, consultare la sezione [Gestione Utenti](avanzate/gestione_utenti.md) (se disponibile).
 ```
 
 ---
@@ -78,7 +76,7 @@ Dopo il primo login, è necessario attivare la licenza software.
    - La chiave è composta da caratteri alfanumerici (es: `XXXX-XXXX-XXXX-XXXX`)
    - Copiare e incollare la chiave per evitare errori di digitazione
 
-3. Cliccare su **Activate** o **Attiva**
+3. Cliccare su **Activate** 
 
 4. Attendere la conferma di attivazione (indicatore verde o messaggio di successo)
 ```
@@ -104,20 +102,17 @@ Prima di configurare i componenti hardware, è necessario creare una ricetta di 
 
 1. Navigare alla sezione **RECIPES** dal menu principale
 
-2. Cliccare su **New Recipe** o il pulsante `+`
+2. Cliccare su **New Recipe** 
 
 3. Inserire il nome della ricetta
-   - Utilizzare un nome descrittivo (es: "Ricetta_Base", "Viti_M6", "Connettori_Elettrici")
+   - Utilizzare un nome descrittivo (es: "Ricetta_Base")
    - Evitare caratteri speciali o spazi (usare underscore `_` al posto degli spazi)
 
-4. Selezionare il **tipo di applicazione** dal menu a tendina:
-   - **Locator**: per applicazioni di picking standard (riconoscimento e prelievo pezzi)
-   - **Control**: per ispezione qualità (verifica presenza/assenza feature)
-   - **Locator + Control**: combinazione di entrambe
-
-5. Selezionare il **modello di FlexiBowl** utilizzato:
-   - FB 200, FB 350, FB 500, FB 650, FB 800, FB 1200
-   - Questo parametro determina automaticamente alcune configurazioni (FOV, parametri vibratore, ecc.)
+4. Selezionare il **tipo di applicazione** :
+   - **Standard**: per applicazioni ...
+   - **Mix**: per applicazioni ...
+   
+5. Selezionare il **FlexiBowl** utilizzato
 
 6. Cliccare su **Save** per salvare la ricetta
 ```
@@ -128,10 +123,8 @@ Prima di configurare i componenti hardware, è necessario creare una ricetta di 
 FlexiVision Easy permette di creare ricette multiple per diversi tipi di pezzi o configurazioni. Convenzioni consigliate:
 
 - Utilizzare nomi che identificano chiaramente il pezzo (es: "Vite_M6_Zincata")
-- Creare una ricetta di test generica per prove iniziali
-- Duplicare ricette esistenti per creare varianti simili
 
-Per maggiori dettagli sulla gestione ricette, vedere [Nuovo Modello](Nuovo_Modello/16_Nuovo_modello.md).
+Per maggiori dettagli sulla gestione ricette, consultare la sezione [Creare una nuova ricetta](Nuovo_Modello/17_NuovaRicetta.md).
 ```
 
 ---

@@ -60,7 +60,7 @@ La porta TCP/IP è il parametro critico che deve corrispondere tra robot e Flexi
   - Nel campo **Port**, inserire il numero della porta TCP/IP con cui il robot comunicherà
 ```
 ```{note}
-Valore predefinito: **2000** (porta standard FlexiVision)
+Valore predefinito:      (porta standard FlexiVision)  
 Il numero di porta deve essere:
    - Lo stesso configurato nel programma robot
    - Compreso tra 1024 e 65535 (porte utente)
@@ -72,7 +72,7 @@ Il numero di porta deve essere:
 
 È **fondamentale** che il numero di porta sia identico su entrambi i lati:
 - **FlexiVision**: Porta configurata in questa pagina
-- **Robot**: Porta configurata nel programma robot (variabile di connessione TCP)
+- **Robot**: Porta configurata nel programma robot 
 
 Se i numeri non corrispondono, la connessione fallirà sempre.
 
@@ -123,8 +123,8 @@ Dopo la riconfigurazione, verificare che il server sia attivo:
 * - **1**
   - Osservare l'indicatore **Server Online**:
    - **Verde**: Server attivo e in ascolto (pronto per connessioni)
-   - **Rosso**: Server non attivo (problema di configurazione)
-   - **Giallo**: Server in fase di avvio o riconfigurazione
+     **Rosso**: Server non attivo (problema di configurazione)
+     **Giallo**: Server in fase di avvio o riconfigurazione
 ```
 ```{note}
 Se l'indicatore è verde, il server FlexiVision è pronto a ricevere connessioni dal robot
@@ -135,14 +135,14 @@ Se l'indicatore è rosso, verificare:
 ```
 ### Step 4: Salvataggio e completamento
 
-```{note}
+
 **Completamento configurazione**
 
 1. Verificare che la connessione robot → FlexiVision sia stabile
 2. Testare almeno 2-3 comandi diversi (get_Recipe, state_Locator, test_Locator)
 3. I parametri di comunicazione sono automaticamente salvati
 4. Tornare alla pagina **SETUP** principale
-```
+
 
 ---
 ## Problemi comuni e soluzioni

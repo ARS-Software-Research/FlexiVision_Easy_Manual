@@ -209,22 +209,22 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html">Calibrazione Camera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">16. Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="17_NuovaRicetta.html">creare una nuova ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="17_NuovaRicetta.html">Creare una Nuova Ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="18_NuovoModello.html">creare un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="18_NuovoModello.html">Creare un Nuovo Modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="18b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="19_ROI_TEST.html">ROI e test</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="19_ROI_TEST.html">Definizione ROI e Tolleranze</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="19b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -232,7 +232,7 @@
 <li class="toctree-l3"><a class="reference internal" href="20b_Expert.html">expert della pagina …</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="21_RobotPick.html">Robot pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="21_RobotPick.html">Calibrazione Robot Pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="21b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -384,7 +384,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -400,6 +402,37 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-un-istogramma">Cos’è un Istogramma?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzionamento">Funzionamento</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creazione-istogrammi">Creazione Istogrammi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-funzione">Accesso alla Funzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di Configurazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#istogramma-singolo">Istogramma Singolo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#istogrammi-multipli">Istogrammi Multipli</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-usarli">Quando Usarli</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura">Procedura</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-stati">Interpretazione Stati</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stati-dellistogramma">Stati dell’Istogramma</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cosa-significa-triggered">Cosa Significa “Triggered”?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -411,17 +444,171 @@ document.write(`
                   
   <section id="gli-istogrammi">
 <h1>Gli istogrammi<a class="headerlink" href="#gli-istogrammi" title="Link to this heading">#</a></h1>
-<p>dd.	Cliccare su Histogram 1<br />
-ee.	Cliccare su Enable Histogram<br />
-ff.	Spostare il riquadro associato all’istogramma, nell’area di visione che vogliamo avere sempre libera (come, ad esempio, l’area necessaria alle pinze per fare la presa del componente)<br />
-Importante: creare sempre un istogramma leggermente più grande dello stretto necessario per evitare errori<br />
-gg.	Cliccare su AUTO di expression builder<br />
-hh.	Cliccare su TEST e controllare che il riquadro diventi verde<br />
-ii.	Cliccare su next<br />
-jj.	Creare fino a otto istogrammi per uno stesso modello in base alle esigenze dell’applicazione.<br />
-kk.	Una volta creati tutti gli istogrammi, cliccare su TEST nella pagina di tutti gli istogrammi e cliccare su TEST per visualizzarli tutti contemporaneamente.<br />
-ll.	L’istogramma diventa rosso se “triggerato”, cioè se rileva al suo interno del nero/bianco in base all’applicazione (presenza di qualcosa che rende l’area non libera)<br />
-mm.	Cliccare su next</p>
+<p>Configurazione Istogrammi</p>
+<div class="tip admonition">
+<p class="admonition-title">In questa pagina</p>
+<p>Imparerai a configurare gli istogrammi per verificare che le aree critiche siano libere da ostacoli.</p>
+</div>
+<section id="cose-un-istogramma">
+<h2>Cos’è un Istogramma?<a class="headerlink" href="#cose-un-istogramma" title="Link to this heading">#</a></h2>
+<p>Un <strong>istogramma</strong> in FlexiVision è uno strumento che monitora un’area specifica dell’immagine per verificare che sia libera. Viene utilizzato per controllare, ad esempio, che lo spazio necessario alla pinza per afferrare il componente non sia occupato da altri oggetti.</p>
+<section id="funzionamento">
+<h3>Funzionamento<a class="headerlink" href="#funzionamento" title="Link to this heading">#</a></h3>
+<div class="note admonition">
+<p class="admonition-title">Principio di Funzionamento</p>
+<p>L’istogramma analizza i livelli di bianco e nero in un’area definita:</p>
+<ul class="simple">
+<li><p>🟢 <strong>Verde</strong> → Area libera (OK per il prelievo)</p></li>
+<li><p>🔴 <strong>Rosso</strong> → Area occupata (presenza di ostacoli)</p></li>
+</ul>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="creazione-istogrammi">
+<h2>Creazione Istogrammi<a class="headerlink" href="#creazione-istogrammi" title="Link to this heading">#</a></h2>
+<section id="accesso-alla-funzione">
+<h3>Accesso alla Funzione<a class="headerlink" href="#accesso-alla-funzione" title="Link to this heading">#</a></h3>
+<p>Dalla pagina <strong>Locator Model</strong>, dopo aver cliccato su <strong>Next</strong>, si aprirà l’elenco degli istogrammi disponibili (fino a 8 per modello).</p>
+</section>
+<section id="parametri-principali">
+<h3>Parametri Principali<a class="headerlink" href="#parametri-principali" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parametro</p></th>
+<th class="head"><p>Funzione</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Enable Histogram</strong></p></td>
+<td><p>Attiva l’istogramma</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Expression Builder</strong></p></td>
+<td><p>Configura automaticamente le soglie</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Mean and Standard Deviation</strong></p></td>
+<td><p>Valori statistici dell’area</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Test</strong></p></td>
+<td><p>Verifica il funzionamento</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Result</strong></p></td>
+<td><p>Mostra il risultato (verde/rosso)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="procedura-di-configurazione">
+<h2>Procedura di Configurazione<a class="headerlink" href="#procedura-di-configurazione" title="Link to this heading">#</a></h2>
+<section id="istogramma-singolo">
+<h3>Istogramma Singolo<a class="headerlink" href="#istogramma-singolo" title="Link to this heading">#</a></h3>
+<p><strong>Step 1: Selezione</strong></p>
+<ol class="arabic simple">
+<li><p>Cliccare su <strong>Histogram 1</strong></p></li>
+</ol>
+<p><strong>Step 2: Attivazione</strong>
+2. Cliccare su <strong>Enable Histogram</strong></p>
+<p><strong>Step 3: Posizionamento Area</strong>
+3. Spostare il <strong>riquadro</strong> dell’istogramma nell’area che deve rimanere libera</p>
+<ul class="simple">
+<li><p>Tipicamente: area di presa della pinza</p></li>
+<li><p>Margini attorno al componente</p></li>
+<li><p>Zone di passaggio del robot</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Importante: Creare sempre un istogramma leggermente più grande dello stretto necessario per evitare falsi errori.</p>
+</div>
+<p><strong>Step 4: Configurazione Automatica</strong>
+4. Cliccare su <strong>AUTO</strong> in Expression Builder</p>
+<p><strong>Step 5: Verifica</strong>
+5. Cliccare su <strong>TEST</strong>
+6. Verificare che il riquadro diventi <strong>verde</strong> ✅</p>
+<p><strong>Step 6: Conferma</strong>
+7. Cliccare su <strong>Next</strong></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="istogrammi-multipli">
+<h2>Istogrammi Multipli<a class="headerlink" href="#istogrammi-multipli" title="Link to this heading">#</a></h2>
+<section id="quando-usarli">
+<h3>Quando Usarli<a class="headerlink" href="#quando-usarli" title="Link to this heading">#</a></h3>
+<p>Crea più istogrammi quando:</p>
+<ul class="simple">
+<li><p>La pinza ha una forma complessa</p></li>
+<li><p>Ci sono più punti critici da monitorare</p></li>
+<li><p>L’area di presa ha geometrie particolari</p></li>
+</ul>
+</section>
+<section id="procedura">
+<h3>Procedura<a class="headerlink" href="#procedura" title="Link to this heading">#</a></h3>
+<p><strong>Step 1-7: Ripetizione</strong>
+Ripetere la procedura per ogni istogramma necessario (fino a 8 per modello)</p>
+<p><strong>Step 8: Test Complessivo</strong>
+8. Nella pagina di elenco di tutti gli istogrammi, cliccare su <strong>TEST</strong>
+9. Visualizzare tutti gli istogrammi contemporaneamente</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="interpretazione-stati">
+<h2>Interpretazione Stati<a class="headerlink" href="#interpretazione-stati" title="Link to this heading">#</a></h2>
+<section id="stati-dellistogramma">
+<h3>Stati dell’Istogramma<a class="headerlink" href="#stati-dellistogramma" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 35.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Colore</p></th>
+<th class="head"><p>Stato</p></th>
+<th class="head"><p>Significato</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>🟢 Verde</p></td>
+<td><p>OK</p></td>
+<td><p>Area libera, prelievo possibile</p></td>
+</tr>
+<tr class="row-odd"><td><p>🔴 Rosso</p></td>
+<td><p>Triggered</p></td>
+<td><p>Area occupata, prelievo non sicuro</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="cosa-significa-triggered">
+<h3>Cosa Significa “Triggered”?<a class="headerlink" href="#cosa-significa-triggered" title="Link to this heading">#</a></h3>
+<p>Un istogramma diventa rosso (triggered) quando rileva al suo interno:</p>
+<ul class="simple">
+<li><p>Presenza di altri componenti</p></li>
+<li><p>Ombre o riflessi significativi</p></li>
+<li><p>Qualsiasi elemento che rende l’area non libera</p></li>
+</ul>
+<div class="example admonition">
+<p class="admonition-title">Esempio Pratico</p>
+<p><strong>Scenario:</strong> Pinza con larghezza di 20mm che deve afferrare un componente</p>
+<p><strong>Soluzione:</strong> Creare un istogramma di 25-30mm attorno al componente per assicurarsi che la pinza non urti altri pezzi durante la presa.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="finalizzazione">
+<h2>Finalizzazione<a class="headerlink" href="#finalizzazione" title="Link to this heading">#</a></h2>
+<p><strong>Step 10: Proseguimento</strong>
+10. Dopo aver configurato tutti gli istogrammi necessari, cliccare su <strong>Next</strong>
+11. Si aprirà la pagina <strong>Robot Model Pick Cam</strong></p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Procedi alla <a class="reference internal" href="#pagina-6-calibrazione-robot-pick"><span class="xref myst">Calibrazione Robot</span></a> per completare la configurazione.</p>
+</div>
+<hr class="docutils" />
+<hr class="docutils" />
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="20b_Expert.html">expert della pagina …</a></li>
@@ -689,6 +876,7 @@ ___\\ \\     // //___
 
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
+</section>
 
 
                 </article>
@@ -725,6 +913,44 @@ ___\\ \\     // //___
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-un-istogramma">Cos’è un Istogramma?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzionamento">Funzionamento</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creazione-istogrammi">Creazione Istogrammi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-funzione">Accesso alla Funzione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di Configurazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#istogramma-singolo">Istogramma Singolo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#istogrammi-multipli">Istogrammi Multipli</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-usarli">Quando Usarli</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura">Procedura</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-stati">Interpretazione Stati</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stati-dellistogramma">Stati dell’Istogramma</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cosa-significa-triggered">Cosa Significa “Triggered”?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

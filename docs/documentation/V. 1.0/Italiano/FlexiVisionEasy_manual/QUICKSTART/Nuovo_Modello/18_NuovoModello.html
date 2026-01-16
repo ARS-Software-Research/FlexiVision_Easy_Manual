@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>creare un nuovo modello &#8212; FlexiVision Easy 1.0 documentation</title>
+    <title>Creare un Nuovo Modello &#8212; FlexiVision Easy 1.0 documentation</title>
   
   
   
@@ -209,22 +209,22 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html">Calibrazione Camera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">16. Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="17_NuovaRicetta.html">creare una nuova ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="17_NuovaRicetta.html">Creare una Nuova Ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">creare un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Creare un Nuovo Modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="18b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="19_ROI_TEST.html">ROI e test</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="19_ROI_TEST.html">Definizione ROI e Tolleranze</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="19b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -232,7 +232,7 @@
 <li class="toctree-l3"><a class="reference internal" href="20b_Expert.html">expert della pagina …</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="21_RobotPick.html">Robot pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="21_RobotPick.html">Calibrazione Robot Pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="21b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -384,7 +384,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -395,11 +397,36 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>creare un nuovo modello</h1>
+    <h1>Creare un Nuovo Modello</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-1-preparazione-del-setup-fisico">Fase 1: Preparazione del Setup Fisico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizionamento-iniziale">Posizionamento Iniziale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simulazione-ingombro-pinza">Simulazione Ingombro Pinza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-coordinate">Salvataggio Coordinate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-2-creazione-del-modello-in-flexivision">Fase 2: Creazione del Modello in FlexiVision</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-funzione-train-model">Accesso alla Funzione Train Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-train-model">Parametri Train Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-training">Procedura di Training</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-qualita-del-modello">Verifica Qualità del Modello</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-modello-corretto-deve">✅ Un Modello Corretto Deve:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correzione-del-modello">🔧 Correzione del Modello</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -410,38 +437,159 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="creare-un-nuovo-modello">
-<h1>creare un nuovo modello<a class="headerlink" href="#creare-un-nuovo-modello" title="Link to this heading">#</a></h1>
-<p>Creazione modello/i da edit recipe<br />
-a.	Per ogni modello, il primo step è quello di posizionare un componente al centro dell’area di visione<br />
-b.	Selezionare il frame e il tool del robot calibrato sull’area di visione di FlexiVision dal pendant del robot stesso<br />
-c.	Portare l’ultimo asse del tool del robot a rotazione zero<br />
-d.	Rimuovere il componente<br />
-e.	Portare il robot a livello della superficie<br />
-f.	Riposizionare il componente all’interno della presa<br />
-g.	Aprire e chiudere la pinza un paio di volte in modo da allineare il componente al centro del tool<br />
-h.	Posizionare due oggetti ai due lati al componente per simulare l’ingombro della pinza<br />
-Importante: nel posizionare i due componenti, restare leggermente più larghi per evitare errori nella creazione del modello<br />
-i.	Salvare le coordinate X Y e rotazione attorno a Z dell’ultimo asse del robot<br />
-Importante segnarle!! Serviranno dopo<br />
-j.	Rimuoviamo il robot con il pendant senza spostare nulla<br />
-k.	Aprire Edit recipe<br />
-l.	Selezionare il FlexiBowl<br />
-m.	Selezionare il modello<br />
-n.	Abilitare il modello<br />
-o.	Cliccare su grab Train Image<br />
-p.	Spostare il riquadro che rappresenta la ROI e inquadrare il componente<br />
-q.	Cliccare su Apply Train<br />
-r.	Facendo Zoom, controllare che il modello sia corretto<br />
-Per modello corretto si intende un modello:<br />
-i.	con abbastanza linee per riconoscere il componente.<br />
-ii.	Che non include parti della trama della superficie retrostante<br />
-iii.	Che evita il riconoscimento di riflessi di luce<br />
-iv.	Che evita il riconoscimento dei componenti che sono stati utilizzati per la simulazione dell’ingombro della pinza<br />
-s.	Nel caso in cui il modello non fosse soddisfacente, modificare il feature threshold.<br />
-i.	Un valore più vicino allo zero mi restituirà un modello più dettagliato<br />
-ii.	Un valore più vicino a 1 mi restituirà un modello meno dettagliato<br />
-t.	Nominare il modello<br />
-u.	Cliccare su next</p>
+<h1>Creare un Nuovo Modello<a class="headerlink" href="#creare-un-nuovo-modello" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">In questa pagina</p>
+<p>Imparerai a creare un modello di riferimento per il riconoscimento dei componenti.</p>
+</div>
+<section id="fase-1-preparazione-del-setup-fisico">
+<h2>Fase 1: Preparazione del Setup Fisico<a class="headerlink" href="#fase-1-preparazione-del-setup-fisico" title="Link to this heading">#</a></h2>
+<section id="posizionamento-iniziale">
+<h3>Posizionamento Iniziale<a class="headerlink" href="#posizionamento-iniziale" title="Link to this heading">#</a></h3>
+<p><strong>Step 1-3: Preparazione Robot</strong></p>
+<ol class="arabic simple">
+<li><p>Posizionare un componente al centro dell’area di visione</p></li>
+<li><p>Dal <strong>pendant del robot</strong>:</p>
+<ul class="simple">
+<li><p>Selezionare il <strong>frame</strong> e il <strong>tool</strong> calibrato su FlexiVision</p></li>
+<li><p>Portare l’<strong>ultimo asse</strong> del tool a <strong>rotazione zero</strong> (Rz = 0°)</p></li>
+</ul>
+</li>
+<li><p>Rimuovere temporaneamente il componente</p></li>
+</ol>
+<p><strong>Step 4-6: Posizionamento Componente</strong>
+4. Portare il robot a livello della superficie
+5. Riposizionare il componente e afferrarlo con la pinza
+6. Aprire e chiudere la pinza <strong>2-3 volte</strong> per centrare il componente</p>
+</section>
+<section id="simulazione-ingombro-pinza">
+<h3>Simulazione Ingombro Pinza<a class="headerlink" href="#simulazione-ingombro-pinza" title="Link to this heading">#</a></h3>
+<p><strong>Step 7: Oggetti Laterali</strong>
+7. Posizionare <strong>due oggetti</strong> ai lati del componente per simulare l’ingombro della pinza</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Importante: Lasciare gli oggetti leggermente più distanti del necessario per evitare errori nella creazione del modello.</p>
+</div>
+</section>
+<section id="salvataggio-coordinate">
+<h3>Salvataggio Coordinate<a class="headerlink" href="#salvataggio-coordinate" title="Link to this heading">#</a></h3>
+<p><strong>Step 8: Annotare le Coordinate</strong>
+8. Salvare le coordinate dell’ultimo asse del robot:</p>
+<ul class="simple">
+<li><p><strong>X</strong> (coordinata X)</p></li>
+<li><p><strong>Y</strong> (coordinata Y)</p></li>
+<li><p><strong>Rz</strong> (rotazione attorno a Z)</p></li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>⚠️ IMPORTANTE: Annotare queste coordinate! Saranno indispensabili nella fase di calibrazione robot.</p>
+</div>
+<p><strong>Step 9: Rimozione Robot</strong>
+9. Allontanare il robot con il pendant <strong>senza spostare nulla</strong> sulla superficie</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="fase-2-creazione-del-modello-in-flexivision">
+<h2>Fase 2: Creazione del Modello in FlexiVision<a class="headerlink" href="#fase-2-creazione-del-modello-in-flexivision" title="Link to this heading">#</a></h2>
+<section id="accesso-alla-funzione-train-model">
+<h3>Accesso alla Funzione Train Model<a class="headerlink" href="#accesso-alla-funzione-train-model" title="Link to this heading">#</a></h3>
+<p><strong>Step 1-3: Apertura Editor</strong></p>
+<ol class="arabic simple">
+<li><p>Aprire <strong>Edit Recipe</strong></p></li>
+<li><p>Selezionare il <strong>FlexiBowl</strong></p></li>
+<li><p>Selezionare il <strong>modello</strong> → si aprirà la pagina <strong>Train Model</strong></p></li>
+</ol>
+</section>
+<section id="parametri-train-model">
+<h3>Parametri Train Model<a class="headerlink" href="#parametri-train-model" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parametro</p></th>
+<th class="head"><p>Funzione</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Enable Model</strong></p></td>
+<td><p>Attiva il modello</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Grab Train Image</strong></p></td>
+<td><p>Scatta la foto di riferimento</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Feature Threshold</strong></p></td>
+<td><p>Regola il livello di dettaglio</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Apply Train</strong></p></td>
+<td><p>Genera il modello</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Name Model</strong></p></td>
+<td><p>Assegna un nome al modello</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="procedura-di-training">
+<h3>Procedura di Training<a class="headerlink" href="#procedura-di-training" title="Link to this heading">#</a></h3>
+<p><strong>Step 4: Attivazione</strong>
+4. Cliccare su <strong>Enable Model</strong></p>
+<p><strong>Step 5: Acquisizione Immagine</strong>
+5. Cliccare su <strong>Grab Train Image</strong></p>
+<p><strong>Step 6-7: Posizionamento ROI</strong>
+6. Spostare il <strong>riquadro ROI</strong> per inquadrare completamente il componente
+7. Spostare l’<strong>origine</strong> (punto di riferimento) al centro dell’area del riquadro</p>
+<p><strong>Step 8: Regolazione Dettaglio</strong>
+8. Usare il <strong>Feature Threshold</strong> per regolare il livello di dettaglio</p>
+<div class="note admonition">
+<p class="admonition-title">Feature Threshold</p>
+<ul class="simple">
+<li><p><strong>Valore vicino a 0</strong> → Rileva PIÙ dettagli (modello più preciso)</p></li>
+<li><p><strong>Valore vicino a 1</strong> → Rileva MENO dettagli (modello più semplice)</p></li>
+</ul>
+</div>
+<p><strong>Step 9: Generazione Modello</strong>
+9. Cliccare su <strong>Apply Train</strong></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="verifica-qualita-del-modello">
+<h2>Verifica Qualità del Modello<a class="headerlink" href="#verifica-qualita-del-modello" title="Link to this heading">#</a></h2>
+<p><strong>Step 10: Controllo Visivo</strong>
+10. Fare <strong>Zoom</strong> e verificare che il modello sia corretto</p>
+<section id="un-modello-corretto-deve">
+<h3>✅ Un Modello Corretto Deve:<a class="headerlink" href="#un-modello-corretto-deve" title="Link to this heading">#</a></h3>
+<div class="success admonition">
+<p class="admonition-title">Caratteristiche Modello Valido</p>
+<ul class="simple">
+<li><p>✓ Avere abbastanza linee per riconoscere il componente</p></li>
+<li><p>✓ Non includere la trama della superficie retrostante</p></li>
+<li><p>✓ Evitare riflessi di luce</p></li>
+<li><p>✓ Escludere gli oggetti usati per simulare l’ingombro della pinza</p></li>
+</ul>
+</div>
+</section>
+<section id="correzione-del-modello">
+<h3>🔧 Correzione del Modello<a class="headerlink" href="#correzione-del-modello" title="Link to this heading">#</a></h3>
+<p><strong>Step 11: Ottimizzazione (se necessario)</strong>
+Se il modello non è soddisfacente:</p>
+<ul class="simple">
+<li><p>Modificare il <strong>Feature Threshold</strong></p></li>
+<li><p>Cliccare nuovamente su <strong>Apply Train</strong></p></li>
+<li><p>Ripetere fino a ottenere un modello ottimale</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="finalizzazione">
+<h2>Finalizzazione<a class="headerlink" href="#finalizzazione" title="Link to this heading">#</a></h2>
+<p><strong>Step 12-13: Salvataggio</strong>
+12. Nominare il modello con un nome descrittivo
+13. Cliccare su <strong>Next</strong> → si aprirà la pagina <strong>Define Robot Pick Area</strong></p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Procedi alla <a class="reference internal" href="#pagina-4-definizione-roi"><span class="xref myst">Definizione ROI</span></a> per continuare la configurazione.</p>
+</div>
+<hr class="docutils" />
+<hr class="docutils" />
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="18b_Expert.html">expert della pagina…</a></li>
@@ -709,6 +857,7 @@ ___\\ \\     // //___
 
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
+</section>
 
 
                 </article>
@@ -745,6 +894,38 @@ ___\\ \\     // //___
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-1-preparazione-del-setup-fisico">Fase 1: Preparazione del Setup Fisico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizionamento-iniziale">Posizionamento Iniziale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simulazione-ingombro-pinza">Simulazione Ingombro Pinza</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-coordinate">Salvataggio Coordinate</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-2-creazione-del-modello-in-flexivision">Fase 2: Creazione del Modello in FlexiVision</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-funzione-train-model">Accesso alla Funzione Train Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-train-model">Parametri Train Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-training">Procedura di Training</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-qualita-del-modello">Verifica Qualità del Modello</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#un-modello-corretto-deve">✅ Un Modello Corretto Deve:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correzione-del-modello">🔧 Correzione del Modello</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

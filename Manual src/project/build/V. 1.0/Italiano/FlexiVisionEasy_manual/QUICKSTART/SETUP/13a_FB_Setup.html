@@ -209,22 +209,22 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html">Calibrazione Camera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Nuovo_Modello/16_Nuovo_modello.html">16. Creare una nuova ricetta e un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/17_NuovaRicetta.html">creare una nuova ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Nuovo_Modello/16_Nuovo_modello.html">Creare una nuova ricetta e un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/17_NuovaRicetta.html">Creare una Nuova Ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/18_NuovoModello.html">creare un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/18_NuovoModello.html">Creare un Nuovo Modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/18b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/19_ROI_TEST.html">ROI e test</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/19_ROI_TEST.html">Definizione ROI e Tolleranze</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/19b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -232,7 +232,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/20b_Expert.html">expert della pagina …</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/21_RobotPick.html">Robot pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/21_RobotPick.html">Calibrazione Robot Pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/21b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -442,7 +442,6 @@ document.write(`
 <p>Questa sezione descrive la procedura per connettere e configurare il FlexiBowl (alimentatore vibrante) con il sistema FlexiVision Easy.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Prerequisiti</strong></p>
 <p>Prima di procedere, assicurarsi che:</p>
 <ul class="simple">
 <li><p>Il FlexiBowl sia stato installato meccanicamente e collegato elettricamente</p></li>
@@ -526,32 +525,20 @@ document.write(`
 <h3>Step 4: Abilitazione illuminazione (Backlight)<a class="headerlink" href="#step-4-abilitazione-illuminazione-backlight" title="Link to this heading">#</a></h3>
 <p><strong>Attivazione backlight</strong></p>
 <ol class="arabic simple">
-<li><p>Nella finestra di configurazione, localizzare il controllo <strong>Backlight</strong> o <strong>Light</strong></p></li>
-<li><p>Attivare l’interruttore portandolo su <strong>Light ON</strong> o <strong>ON</strong></p></li>
+<li><p>Nella finestra di configurazione, localizzare il controllo <strong>Backlight</strong></p></li>
+<li><p>Attivare l’interruttore portandolo su <strong>ON</strong></p></li>
 <li><p>Verificare visivamente che l’illuminazione del FlexiBowl si accenda</p>
 <ul class="simple">
-<li><p>Se presente un backlight (illuminazione dal basso), il piatto apparirà illuminato</p></li>
-<li><p>Se presente toplight, verificare che l’illuminatore si accenda</p></li>
+<li><p>sul pannello di controllo del FlexiBowl la spia “light on” deve risultare verde</p></li>
 </ul>
 </li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Verifica funzionamento illuminazione</strong></p>
-<p>Per verificare il corretto funzionamento dell’illuminazione:</p>
-<ul class="simple">
-<li><p>Osservare direttamente il FlexiBowl (in condizioni di luce ambiente ridotta è più evidente)</p></li>
-<li><p>Se disponibile, utilizzare la camera per acquisire un’immagine di test</p></li>
-<li><p>L’illuminazione deve essere uniforme su tutta la superficie del piatto</p></li>
-</ul>
-<p>Se l’illuminazione non si accende, verificare i collegamenti elettrici del backlight/toplight.</p>
-</div>
 </section>
 <section id="step-5-sincronizzazione-parametri">
 <h3>Step 5: Sincronizzazione parametri<a class="headerlink" href="#step-5-sincronizzazione-parametri" title="Link to this heading">#</a></h3>
 <p><strong>Salvataggio configurazione</strong></p>
 <ol class="arabic simple">
-<li><p>Dopo aver configurato tutti i parametri desiderati, cliccare su <strong>Synchronize Parameters</strong></p></li>
+<li><p>Cliccare su <strong>Synchronize Parameters</strong></p></li>
 <li><p>Questa operazione:</p>
 <ul class="simple">
 <li><p>Invia i parametri dal VisionController al FlexiBowl</p></li>
@@ -559,7 +546,7 @@ document.write(`
 <li><p>Sincronizza lo stato tra software e hardware</p></li>
 </ul>
 </li>
-<li><p>Attendere la conferma di sincronizzazione completata (messaggio o indicatore verde)</p></li>
+<li><p>Attendere la conferma di sincronizzazione completata</p></li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -591,7 +578,8 @@ document.write(`
 <h3>FlexiBowl non vibra<a class="headerlink" href="#flexibowl-non-vibra" title="Link to this heading">#</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Vibrazione non funzionante</strong></p>
+<p>non per questa fase ma utile?
+<strong>Vibrazione non funzionante</strong></p>
 <p>Se il FlexiBowl non vibra dopo l’attivazione:</p>
 <ul class="simple">
 <li><p>Verificare l’alimentazione elettrica del FlexiBowl (LED di stato sul dispositivo)</p></li>
@@ -605,7 +593,8 @@ document.write(`
 <h3>Illuminazione non uniforme<a class="headerlink" href="#illuminazione-non-uniforme" title="Link to this heading">#</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>Ottimizzazione illuminazione</strong></p>
+<p>non in questa fase ma utile?
+<strong>Ottimizzazione illuminazione</strong></p>
 <p>Se l’illuminazione presenta zone più scure o più chiare:</p>
 <ul class="simple">
 <li><p>Verificare che backlight/toplight sia montato correttamente</p></li>

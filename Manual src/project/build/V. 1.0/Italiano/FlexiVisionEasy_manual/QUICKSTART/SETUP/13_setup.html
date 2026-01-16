@@ -209,22 +209,22 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html">Calibrazione Camera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../Nuovo_Modello/16_Nuovo_modello.html">16. Creare una nuova ricetta e un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/17_NuovaRicetta.html">creare una nuova ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Nuovo_Modello/16_Nuovo_modello.html">Creare una nuova ricetta e un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/17_NuovaRicetta.html">Creare una Nuova Ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/18_NuovoModello.html">creare un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/18_NuovoModello.html">Creare un Nuovo Modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/18b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/19_ROI_TEST.html">ROI e test</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/19_ROI_TEST.html">Definizione ROI e Tolleranze</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/19b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -232,7 +232,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/20b_Expert.html">expert della pagina …</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/21_RobotPick.html">Robot pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Nuovo_Modello/21_RobotPick.html">Calibrazione Robot Pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../Nuovo_Modello/21b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -481,7 +481,7 @@ document.write(`
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>1</strong></p></td>
-<td><p><strong>Selezionare l’utente</strong> dal menu a tendina (Predefinito: <code class="docutils literal notranslate"><span class="pre">Administrator</span></code>).</p></td>
+<td><p><strong>Selezionare l’utente</strong> dal menu a tendina.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>2</strong></p></td>
 <td><p><strong>Inserire la password</strong> fornita da ARS Automation.
@@ -502,7 +502,6 @@ document.write(`
 <li><p><strong>Operator</strong>: accesso alle funzioni operative (esecuzione ricette, monitoraggio)</p></li>
 <li><p><strong>Viewer</strong>: solo visualizzazione (nessuna modifica consentita)</p></li>
 </ul>
-<p>Per creare nuovi utenti o modificare le password, consultare la sezione <a class="reference internal" href="#avanzate/gestione_utenti.md"><span class="xref myst">Gestione Utenti</span></a> (se disponibile).</p>
 </div>
 </section>
 <hr class="docutils" />
@@ -519,7 +518,7 @@ document.write(`
 <li><p>Copiare e incollare la chiave per evitare errori di digitazione</p></li>
 </ul>
 </li>
-<li><p>Cliccare su <strong>Activate</strong> o <strong>Attiva</strong></p></li>
+<li><p>Cliccare su <strong>Activate</strong></p></li>
 <li><p>Attendere la conferma di attivazione (indicatore verde o messaggio di successo)</p></li>
 </ol>
 </div>
@@ -543,26 +542,20 @@ document.write(`
 <p><strong>Procedura creazione ricetta</strong></p>
 <ol class="arabic simple">
 <li><p>Navigare alla sezione <strong>RECIPES</strong> dal menu principale</p></li>
-<li><p>Cliccare su <strong>New Recipe</strong> o il pulsante <code class="docutils literal notranslate"><span class="pre">+</span></code></p></li>
+<li><p>Cliccare su <strong>New Recipe</strong></p></li>
 <li><p>Inserire il nome della ricetta</p>
 <ul class="simple">
-<li><p>Utilizzare un nome descrittivo (es: “Ricetta_Base”, “Viti_M6”, “Connettori_Elettrici”)</p></li>
+<li><p>Utilizzare un nome descrittivo (es: “Ricetta_Base”)</p></li>
 <li><p>Evitare caratteri speciali o spazi (usare underscore <code class="docutils literal notranslate"><span class="pre">_</span></code> al posto degli spazi)</p></li>
 </ul>
 </li>
-<li><p>Selezionare il <strong>tipo di applicazione</strong> dal menu a tendina:</p>
+<li><p>Selezionare il <strong>tipo di applicazione</strong> :</p>
 <ul class="simple">
-<li><p><strong>Locator</strong>: per applicazioni di picking standard (riconoscimento e prelievo pezzi)</p></li>
-<li><p><strong>Control</strong>: per ispezione qualità (verifica presenza/assenza feature)</p></li>
-<li><p><strong>Locator + Control</strong>: combinazione di entrambe</p></li>
+<li><p><strong>Standard</strong>: per applicazioni …</p></li>
+<li><p><strong>Mix</strong>: per applicazioni …</p></li>
 </ul>
 </li>
-<li><p>Selezionare il <strong>modello di FlexiBowl</strong> utilizzato:</p>
-<ul class="simple">
-<li><p>FB 200, FB 350, FB 500, FB 650, FB 800, FB 1200</p></li>
-<li><p>Questo parametro determina automaticamente alcune configurazioni (FOV, parametri vibratore, ecc.)</p></li>
-</ul>
-</li>
+<li><p>Selezionare il <strong>FlexiBowl</strong> utilizzato</p></li>
 <li><p>Cliccare su <strong>Save</strong> per salvare la ricetta</p></li>
 </ol>
 </div>
@@ -572,10 +565,8 @@ document.write(`
 <p>FlexiVision Easy permette di creare ricette multiple per diversi tipi di pezzi o configurazioni. Convenzioni consigliate:</p>
 <ul class="simple">
 <li><p>Utilizzare nomi che identificano chiaramente il pezzo (es: “Vite_M6_Zincata”)</p></li>
-<li><p>Creare una ricetta di test generica per prove iniziali</p></li>
-<li><p>Duplicare ricette esistenti per creare varianti simili</p></li>
 </ul>
-<p>Per maggiori dettagli sulla gestione ricette, vedere <a class="reference internal" href="#Nuovo_Modello/16_Nuovo_modello.md"><span class="xref myst">Nuovo Modello</span></a>.</p>
+<p>Per maggiori dettagli sulla gestione ricette, consultare la sezione <a class="reference internal" href="#Nuovo_Modello/17_NuovaRicetta.md"><span class="xref myst">Creare una nuova ricetta</span></a>.</p>
 </div>
 </section>
 </section>

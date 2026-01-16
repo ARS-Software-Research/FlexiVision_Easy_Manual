@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>ROI e test &#8212; FlexiVision Easy 1.0 documentation</title>
+    <title>Definizione ROI e Tolleranze &#8212; FlexiVision Easy 1.0 documentation</title>
   
   
   
@@ -209,22 +209,22 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html">Calibrazione Camera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">16. Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="17_NuovaRicetta.html">creare una nuova ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="17_NuovaRicetta.html">Creare una Nuova Ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="18_NuovoModello.html">creare un nuovo modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="18_NuovoModello.html">Creare un Nuovo Modello</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="18b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">ROI e test</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Definizione ROI e Tolleranze</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="19b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -232,7 +232,7 @@
 <li class="toctree-l3"><a class="reference internal" href="20b_Expert.html">expert della pagina …</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="21_RobotPick.html">Robot pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="21_RobotPick.html">Calibrazione Robot Pick</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="21b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
@@ -384,7 +384,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -395,11 +397,39 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>ROI e test</h1>
+    <h1>Definizione ROI e Tolleranze</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-1-define-robot-pick-area">Parte 1: Define Robot Pick Area</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-la-region-search">Cos’è la Region Search?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura">Procedura</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-2-locator-model-impostazione-tolleranze">Parte 2: Locator Model - Impostazione Tolleranze</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-test">Procedura di Test</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-accept-threshold">Configurazione Accept Threshold</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-laccept-threshold">Cos’è l’Accept Threshold?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#come-funziona">Come Funziona</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-risultati">Interpretazione Risultati</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizzazione-componenti-rilevati">Visualizzazione Componenti Rilevati</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinamento-automatico">Ordinamento Automatico</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -409,19 +439,144 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="roi-e-test">
-<h1>ROI e test<a class="headerlink" href="#roi-e-test" title="Link to this heading">#</a></h1>
-<p>v.	Definire la region search (area in cui flexivision andrà a rilevare i componenti) modificando il riquadro<br />
-w.	Cliccare su next<br />
-x.	Posizionare altri componenti nell’area di visione, senza toccare il componente di riferimento<br />
-y.	Cliccare su test per fare un test del riconoscimento dei modelli<br />
-z.	Modificare l’accept threshold (grado minimo di fedeltà (score) del componente rilevato rispetto al modello di riferimento)<br />
-i.	 Impostando un valore più vicino a uno, il riquadro mostrerà solo i componenti con score uguale o maggiore al valore impostato in accept threshold<br />
-Ad esempio, un valore di 0.95 nell’accept threshold mi restituirà solo i componenti con uno score di fedeltà dal 95% in su rispetto al modello di riferimento.<br />
-aa.	Nel riquadro verranno mostrati i componenti rilevati con informazioni su Id, coordinate X Y, Rotazione e score rilevato<br />
-FlexiVision ordinerà tutti i componenti riconosciuti nell’immagine e li ordinerà per score decrescente. Ad ognuno assegnerà un Id diverso in modo crescente. (il componente più fedele all’originale avrà Id pari a zero)<br />
-bb.	Rimuovere tutti i componenti dall’area, fatta eccezione per il componente di riferimento!!!<br />
-cc.	Cliccare su next</p>
+  <section id="definizione-roi-e-tolleranze">
+<h1>Definizione ROI e Tolleranze<a class="headerlink" href="#definizione-roi-e-tolleranze" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">In questa pagina</p>
+<p>Definirai l’area di lavoro e le tolleranze di riconoscimento per il modello.</p>
+</div>
+<section id="parte-1-define-robot-pick-area">
+<h2>Parte 1: Define Robot Pick Area<a class="headerlink" href="#parte-1-define-robot-pick-area" title="Link to this heading">#</a></h2>
+<section id="cose-la-region-search">
+<h3>Cos’è la Region Search?<a class="headerlink" href="#cose-la-region-search" title="Link to this heading">#</a></h3>
+<p>La <strong>Region Search</strong> è l’area all’interno della quale FlexiVision cercherà e rileverà i componenti da prelevare.</p>
+</section>
+<section id="procedura">
+<h3>Procedura<a class="headerlink" href="#procedura" title="Link to this heading">#</a></h3>
+<p><strong>Step 1: Definizione Area</strong></p>
+<ol class="arabic simple">
+<li><p>Nella pagina <strong>Define Robot Pick Area</strong>, modificare il riquadro per delimitare l’area di ricerca</p></li>
+<li><p>Cliccare su <strong>Next</strong> → si aprirà la pagina <strong>Locator Model</strong></p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Dimensiona l’area in base allo spazio effettivo di lavoro del robot, evitando zone non raggiungibili.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="parte-2-locator-model-impostazione-tolleranze">
+<h2>Parte 2: Locator Model - Impostazione Tolleranze<a class="headerlink" href="#parte-2-locator-model-impostazione-tolleranze" title="Link to this heading">#</a></h2>
+<section id="parametri-principali">
+<h3>Parametri Principali<a class="headerlink" href="#parametri-principali" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parametro</p></th>
+<th class="head"><p>Descrizione</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Test</strong></p></td>
+<td><p>Esegue un test di riconoscimento</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Accept Threshold</strong></p></td>
+<td><p>Soglia minima di fedeltà (score)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="procedura-di-test">
+<h3>Procedura di Test<a class="headerlink" href="#procedura-di-test" title="Link to this heading">#</a></h3>
+<p><strong>Step 1: Preparazione Scena</strong></p>
+<ol class="arabic simple">
+<li><p>Posizionare <strong>altri componenti</strong> nell’area di visione</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Non toccare il componente di riferimento usato per il training!</p>
+</div>
+<p><strong>Step 2: Esecuzione Test</strong>
+2. Cliccare su <strong>Test</strong> per verificare il riconoscimento</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="configurazione-accept-threshold">
+<h2>Configurazione Accept Threshold<a class="headerlink" href="#configurazione-accept-threshold" title="Link to this heading">#</a></h2>
+<section id="cose-laccept-threshold">
+<h3>Cos’è l’Accept Threshold?<a class="headerlink" href="#cose-laccept-threshold" title="Link to this heading">#</a></h3>
+<p>È il <strong>grado minimo di fedeltà</strong> (score) che un componente rilevato deve avere rispetto al modello di riferimento per essere accettato.</p>
+</section>
+<section id="come-funziona">
+<h3>Come Funziona<a class="headerlink" href="#come-funziona" title="Link to this heading">#</a></h3>
+<div class="note admonition">
+<p class="admonition-title">Logica dello Score</p>
+<ul class="simple">
+<li><p><strong>Valore 0.95</strong> → Accetta solo componenti con fedeltà ≥ 95%</p></li>
+<li><p><strong>Valore 0.80</strong> → Accetta componenti con fedeltà ≥ 80%</p></li>
+<li><p><strong>Valore più alto</strong> → Più restrittivo (meno falsi positivi)</p></li>
+<li><p><strong>Valore più basso</strong> → Più permissivo (rileva anche componenti meno perfetti)</p></li>
+</ul>
+</div>
+<p><strong>Step 3: Regolazione Soglia</strong>
+3. Modificare l’<strong>Accept Threshold</strong> in base alle esigenze dell’applicazione</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="interpretazione-risultati">
+<h2>Interpretazione Risultati<a class="headerlink" href="#interpretazione-risultati" title="Link to this heading">#</a></h2>
+<section id="visualizzazione-componenti-rilevati">
+<h3>Visualizzazione Componenti Rilevati<a class="headerlink" href="#visualizzazione-componenti-rilevati" title="Link to this heading">#</a></h3>
+<p>Nel riquadro verranno mostrati i componenti con le seguenti informazioni:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Campo</p></th>
+<th class="head"><p>Descrizione</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Id</strong></p></td>
+<td><p>Identificativo univoco (0 = score più alto)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>X, Y</strong></p></td>
+<td><p>Coordinate del componente</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Rotation</strong></p></td>
+<td><p>Angolo di rotazione</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Score</strong></p></td>
+<td><p>Percentuale di fedeltà al modello</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ordinamento-automatico">
+<h3>Ordinamento Automatico<a class="headerlink" href="#ordinamento-automatico" title="Link to this heading">#</a></h3>
+<div class="info admonition">
+<p class="admonition-title">Sistema di Priorità</p>
+<p>FlexiVision ordina automaticamente tutti i componenti riconosciuti per <strong>score decrescente</strong>:</p>
+<ul class="simple">
+<li><p><strong>Id 0</strong> → Componente con score più alto (più fedele al modello)</p></li>
+<li><p><strong>Id 1</strong> → Secondo miglior componente</p></li>
+<li><p><strong>Id 2</strong> → Terzo miglior componente</p></li>
+<li><p>E così via…</p></li>
+</ul>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="finalizzazione">
+<h2>Finalizzazione<a class="headerlink" href="#finalizzazione" title="Link to this heading">#</a></h2>
+<p><strong>Step 4-5: Pulizia e Proseguimento</strong>
+4. Rimuovere <strong>tutti i componenti</strong> dall’area, <strong>tranne il componente di riferimento</strong>
+5. Cliccare su <strong>Next</strong> → si aprirà la pagina degli <strong>Histogram</strong></p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Procedi alla <a class="reference internal" href="#pagina-5-configurazione-istogrammi"><span class="xref myst">Configurazione Istogrammi</span></a> per definire le aree libere.</p>
+</div>
+<hr class="docutils" />
+<hr class="docutils" />
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="19b_Expert.html">expert della pagina…</a></li>
@@ -689,6 +844,7 @@ ___\\ \\     // //___
 
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
+</section>
 
 
                 </article>
@@ -725,6 +881,41 @@ ___\\ \\     // //___
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-1-define-robot-pick-area">Parte 1: Define Robot Pick Area</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-la-region-search">Cos’è la Region Search?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura">Procedura</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parte-2-locator-model-impostazione-tolleranze">Parte 2: Locator Model - Impostazione Tolleranze</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-test">Procedura di Test</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-accept-threshold">Configurazione Accept Threshold</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-laccept-threshold">Cos’è l’Accept Threshold?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#come-funziona">Come Funziona</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-risultati">Interpretazione Risultati</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizzazione-componenti-rilevati">Visualizzazione Componenti Rilevati</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinamento-automatico">Ordinamento Automatico</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
