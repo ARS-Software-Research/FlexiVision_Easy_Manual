@@ -1,9 +1,6 @@
 # Calibrazione Robot Pick
+In questa pagina vedremo come collegare le coordinate della visione con quelle del robot per consentire un prelievo preciso dei componenti.
 
-```{admonition} In questa pagina
-:class: tip
-Collegherai le coordinate della visione con quelle del robot per consentire un prelievo preciso dei componenti.
-```
 
 ## Cos'è il Robot Pick?
 
@@ -13,29 +10,16 @@ La funzione **Robot Pick** calcola l'offset tra le coordinate rilevate da FlexiV
 
 ## Parametri Principali
 
-### Sezione Enable
+|Sezione | Parametro | Funzione |
+|-----------|-----------|----------|
+| Enable | **Enable Robot Pick** | Attiva la calibrazione del robot |
+|Vision Result| **X cord** | Coordinata X rilevata dalla visione |
+|Vision Result| **Y cord** | Coordinata Y rilevata dalla visione |
+|Vision Result| **RZ cord** | Rotazione Z rilevata dalla visione |
+|Insert Robot Coordinate| **X cord** | Coordinata X del robot (da inserire) |
+|Insert Robot Coordinate| **Y cord** | Coordinata Y del robot (da inserire) |
+|Insert Robot Coordinate| **RZ cord** | Rotazione Z del robot (da inserire) |
 
-| Parametro | Funzione |
-|-----------|----------|
-| **Enable Robot Pick** | Attiva la calibrazione del robot |
-
-### Sezione Vision Result
-
-| Parametro | Descrizione |
-|-----------|-------------|
-| **X cord** | Coordinata X rilevata dalla visione |
-| **Y cord** | Coordinata Y rilevata dalla visione |
-| **RZ cord** | Rotazione Z rilevata dalla visione |
-
-### Sezione Insert Robot Coordinate
-
-| Parametro | Descrizione |
-|-----------|-------------|
-| **X cord** | Coordinata X del robot (da inserire) |
-| **Y cord** | Coordinata Y del robot (da inserire) |
-| **RZ cord** | Rotazione Z del robot (da inserire) |
-
-### Funzioni
 
 | Funzione | Descrizione |
 |----------|-------------|
@@ -46,30 +30,25 @@ La funzione **Robot Pick** calcola l'offset tra le coordinate rilevate da FlexiV
 
 ## Procedura di Calibrazione
 
-### Step 1: Attivazione
+### **Step 1: Attivazione e Rilevamento Componente**
 1. Cliccare su **Enable Robot Pick**
-
-### Step 2: Rilevamento Componente
 2. Cliccare su **Find Object**
    - Il sistema rileverà il componente di riferimento
    - Le coordinate appariranno nella sezione **Vision Result**
 
-```{admonition} Vision Result
-:class: note
+```{note} Vision Result
 Queste sono le coordinate che FlexiVision "vede" nell'immagine. Non sono ancora collegate al sistema di coordinate del robot.
 ```
 
-### Step 3: Inserimento Coordinate Robot
+### **Step 2: Inserimento Coordinate Robot e calcolo Offset**
 3. Nel riquadro **Insert Robot Coordinates**, inserire le coordinate salvate durante la creazione del modello:
    - **X cord** → Coordinata X annotata al punto 8 della [Creazione Modello](#fase-1-preparazione-del-setup-fisico)
    - **Y cord** → Coordinata Y annotata al punto 8 della [Creazione Modello](#fase-1-preparazione-del-setup-fisico)
    - **RZ cord** → Rotazione Z annotata al punto 8 della [Creazione Modello](#fase-1-preparazione-del-setup-fisico)
 
 ```{danger}
-⚠️ IMPORTANTE: Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!
+Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!
 ```
-
-### Step 4: Calcolo Offset
 4. Cliccare su **Gripper Offset**
    - Il sistema calcolerà automaticamente la trasformazione tra coordinate visione e coordinate robot
    - Questo offset verrà applicato a tutti i futuri rilevamenti
@@ -102,10 +81,8 @@ Il robot andrà a prelevarlo a X=370, Y=470
 
 ## Finalizzazione e Salvataggio
 
-### Step 5: Proseguimento
+### Step 3: Proseguimento e Salvataggio Ricetta
 5. Cliccare su **Next**
-
-### Step 6: Salvataggio Ricetta
 6. Cliccare su **Save Recipe** per salvare l'intera configurazione
 
 ```{admonition} Salvataggio Completo
@@ -140,13 +117,11 @@ Ogni modello nella ricetta può avere configurazioni diverse (ROI, istogrammi, o
 
 ### Checklist Completamento
 
-Prima di utilizzare la ricetta in produzione, verifica:
+Prima di utilizzare la ricetta in produzione, continua con :
 
-- [ ] Il modello riconosce correttamente i componenti
-- [ ] L'Accept Threshold è appropriato
-- [ ] Gli istogrammi rilevano correttamente le aree occupate
-- [ ] Il robot preleva i componenti nella posizione corretta
-- [ ] La ricetta è stata salvata
+- [Configurazione del FlexiBowl ] (QUICKSTART/22_Config_FlexiBowl.md)
+- [Configurazione della Tramoggia ] (QUICKSTART/23_Config_Hopper.md)
+- [Monitoraggio Applicazione ] (QUICKSTART/24_Verifica_Risultati.md)
 
 ```{seealso}
 Per modifiche successive, consulta:

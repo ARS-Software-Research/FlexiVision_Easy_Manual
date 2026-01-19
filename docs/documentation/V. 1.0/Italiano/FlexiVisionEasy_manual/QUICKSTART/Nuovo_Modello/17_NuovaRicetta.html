@@ -49,7 +49,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="tasto expert della pagina…" href="17b_Expert.html" />
-    <link rel="prev" title="Creare una nuova ricetta e un nuovo modello" href="16_Nuovo_modello.html" />
+    <link rel="prev" title="Creazione Ricette e Modelli - Panoramica" href="16_Nuovo_modello.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -215,7 +215,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">Creazione Ricette e Modelli - Panoramica</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Creare una Nuova Ricetta</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
@@ -240,10 +240,10 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../22_Config_FlexiBowl.html">Configurazione Del FlexiBowl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../22_Config_FlexiBowl.html">Configurazione guidata: FlexiBowl® Wizard</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html">Configurazione della Tramoggia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html">Configurazione della Tramoggia (Hopper)</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../24_Verifica_Risultati.html">Monitoraggio Applicazione</a></li>
@@ -407,39 +407,31 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obiettivo">Obiettivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-creare-una-nuova-ricetta">Quando Creare una Nuova Ricetta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-completa">Procedura Completa</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-al-menu-ricette">Step 1: Accesso al Menu Ricette</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-avvio-creazione">Step 2: Avvio Creazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-assegnazione-nome">Step 3: Assegnazione Nome</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-selezione-modalita-operativa">Step 4: Selezione Modalità Operativa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-interfaccia">Panoramica interfaccia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elementi-principali">Elementi principali</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modalita-standard-configurazione-dettagliata">Modalità Standard - Configurazione Dettagliata</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4a-selezione-flexibowl">Step 4a: Selezione FlexiBowl</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4b-selezione-modello-da-creare">Step 4b: Selezione Modello da Creare</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4c-abilitazione-modello">Step 4c: Abilitazione Modello</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-ricetta-base">Salvataggio ricetta base</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creazione-nuova-ricetta-applicativa">Creazione nuova ricetta applicativa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-alla-sezione-ricette">Step 1: Accesso alla sezione Ricette</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-nominare-la-nuova-ricetta">Step 2: Nominare la nuova ricetta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-creazione-ricetta">Step 3: Creazione ricetta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-selezione-modalita">Step 4: Selezione modalità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-selezione-modello-flexibowl">Step 5: Selezione modello FlexiBowl</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-creazione-nuovo-modello">Step 6: creazione nuovo modello</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stato-della-ricetta">Stato della Ricetta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selezione-della-ricetta-per-lavorare-sui-modelli">Selezione della Ricetta per Lavorare sui Modelli</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-apertura-ricetta-per-editing">Step 5: Apertura Ricetta per Editing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riepilogo-operazioni-effettuate">Riepilogo operazioni effettuate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggerimenti-pratici">Suggerimenti pratici</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-convention-ricette">Naming convention ricette</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#backup-ricette">Backup ricette</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestione-del-salvataggio">Gestione del Salvataggio</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salvare-una-nuova-ricetta">Salvare una Nuova Ricetta</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sovrascrivere-una-ricetta-esistente">Sovrascrivere una Ricetta Esistente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-problemi-comuni">Risoluzione problemi comuni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ricetta-non-salvata-correttamente">Ricetta non salvata correttamente</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modalita-operative-disponibili">Modalità Operative Disponibili</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-mode">Standard Mode</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-mode">Advanced Mode</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist-creazione-ricetta">Checklist Creazione Ricetta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differenza-tra-ricetta-e-modello-riepilogo">Differenza tra Ricetta e Modello - Riepilogo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi passi</a></li>
 </ul>
             </nav>
         </div>
@@ -453,238 +445,279 @@ document.write(`
                   
   <section id="creare-una-nuova-ricetta">
 <h1>Creare una Nuova Ricetta<a class="headerlink" href="#creare-una-nuova-ricetta" title="Link to this heading">#</a></h1>
-<section id="obiettivo">
-<h2>Obiettivo<a class="headerlink" href="#obiettivo" title="Link to this heading">#</a></h2>
-<p>Creare il contenitore principale (ricetta) che raggrupperà tutti gli elementi dell’applicazione: modelli, configurazioni FlexiBowl, impostazioni tramoggia e coordinate robot.</p>
-</section>
-<hr class="docutils" />
-<section id="quando-creare-una-nuova-ricetta">
-<h2>Quando Creare una Nuova Ricetta<a class="headerlink" href="#quando-creare-una-nuova-ricetta" title="Link to this heading">#</a></h2>
-<p>Crea una nuova ricetta quando:</p>
+<p>Questa sezione descrive come creare una nuova ricetta applicativa in FlexiVision Easy. Una ricetta è il contenitore principale che include tutti i modelli pezzo, le configurazioni FlexiBowl/Hopper e i parametri robot necessari per un’applicazione completa di picking.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Creare una nuova ricetta quando:</strong></p>
 <ul class="simple">
-<li><p>Inizi una nuova applicazione con componenti diversi</p></li>
-<li><p>Vuoi testare configurazioni alternative</p></li>
-<li><p>Devi gestire un nuovo tipo di pezzo o una nuova linea produttiva</p></li>
+<li><p>Si lavora con un <strong>tipo di pezzo completamente diverso</strong></p></li>
+<li><p>Si utilizza un <strong>FlexiBowl di dimensione diversa</strong></p></li>
+<li><p>Si cambia <strong>applicazione</strong> (da picking standard a controllo qualità)</p></li>
+<li><p>Si desidera mantenere <strong>configurazioni separate</strong> per produzioni diverse</p></li>
 </ul>
-</section>
-<hr class="docutils" />
-<section id="procedura-completa">
-<h2>Procedura Completa<a class="headerlink" href="#procedura-completa" title="Link to this heading">#</a></h2>
-<section id="step-1-accesso-al-menu-ricette">
-<h3>Step 1: Accesso al Menu Ricette<a class="headerlink" href="#step-1-accesso-al-menu-ricette" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Nel menu principale di FlexiVision, cliccare su <strong>Recipes</strong></p></li>
-</ol>
-<p>Questo aprirà l’interfaccia di gestione delle ricette, dove puoi visualizzare tutte le ricette esistenti o crearne di nuove.</p>
-</section>
-<hr class="docutils" />
-<section id="step-2-avvio-creazione">
-<h3>Step 2: Avvio Creazione<a class="headerlink" href="#step-2-avvio-creazione" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="2">
-<li><p>Cliccare su <strong>New Recipe</strong></p></li>
-</ol>
-<p>Si aprirà la procedura guidata per la creazione della nuova ricetta.</p>
-</section>
-<hr class="docutils" />
-<section id="step-3-assegnazione-nome">
-<h3>Step 3: Assegnazione Nome<a class="headerlink" href="#step-3-assegnazione-nome" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="3">
-<li><p><strong>Nominare la ricetta</strong> con un identificativo chiaro e descrittivo</p></li>
-</ol>
-<p><strong>Suggerimenti per la nomenclatura</strong>:</p>
+<p><strong>NON serve creare una nuova ricetta quando:</strong></p>
 <ul class="simple">
-<li><p>Usa nomi che identifichino il componente: <code class="docutils literal notranslate"><span class="pre">Vite_M8_Zincata</span></code></p></li>
-<li><p>Includi il materiale se rilevante: <code class="docutils literal notranslate"><span class="pre">Ingranaggio_Plastica_Nera</span></code></p></li>
-<li><p>Aggiungi l’applicazione: <code class="docutils literal notranslate"><span class="pre">Assemblaggio_Motore_A</span></code></p></li>
-<li><p>Usa separatori coerenti: underscore <code class="docutils literal notranslate"><span class="pre">_</span></code> o trattini <code class="docutils literal notranslate"><span class="pre">-</span></code></p></li>
-<li><p>Evita spazi e caratteri speciali</p></li>
+<li><p>Si aggiunge una variante dello stesso pezzo (creare nuovo modello nella stessa ricetta)</p></li>
+<li><p>Si fanno piccole regolazioni ai parametri esistenti</p></li>
+<li><p>Si modifica solo l’accept threshold o i filtri</p></li>
 </ul>
-<p><strong>Esempi</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>✓ Buoni:
-  - Viti_M6_x_20_Inox
-  - Guarnizione_Silicone_D32
-  - Connettore_Elettrico_Tipo_A
-
-✗ Da evitare:
-  - ricetta1
-  - test
-  - nuova
-</pre></div>
 </div>
-</section>
 <hr class="docutils" />
-<section id="step-4-selezione-modalita-operativa">
-<h3>Step 4: Selezione Modalità Operativa<a class="headerlink" href="#step-4-selezione-modalita-operativa" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="4">
-<li><p><strong>Selezionare la modalità operativa</strong> desiderata</p></li>
-<li><p>Cliccare su <strong>Next</strong></p></li>
-</ol>
-</section>
-</section>
-<hr class="docutils" />
-<section id="modalita-standard-configurazione-dettagliata">
-<h2>Modalità Standard - Configurazione Dettagliata<a class="headerlink" href="#modalita-standard-configurazione-dettagliata" title="Link to this heading">#</a></h2>
-<p>Per la modalità <strong>Standard</strong> (la più comune), seguire questi passaggi aggiuntivi:</p>
-<section id="step-4a-selezione-flexibowl">
-<h3>Step 4a: Selezione FlexiBowl<a class="headerlink" href="#step-4a-selezione-flexibowl" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Nella lista dei dispositivi disponibili, <strong>selezionare il FlexiBowl</strong> che si vuole configurare</p></li>
-<li><p>Cliccare su <strong>Next</strong></p></li>
-</ol>
-<p>Il sistema mostrerà le informazioni del FlexiBowl selezionato e passerà alla fase di configurazione dei modelli.</p>
-</section>
-<section id="step-4b-selezione-modello-da-creare">
-<h3>Step 4b: Selezione Modello da Creare<a class="headerlink" href="#step-4b-selezione-modello-da-creare" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="3">
-<li><p>Dall’elenco dei modelli disponibili (Model 1, Model 2, … Model N), <strong>cliccare sul modello</strong> che si vuole creare per primo</p></li>
-</ol>
-</section>
-<section id="step-4c-abilitazione-modello">
-<h3>Step 4c: Abilitazione Modello<a class="headerlink" href="#step-4c-abilitazione-modello" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="4">
-<li><p>Cliccare su <strong>Enable Model</strong></p></li>
-</ol>
-<p>Questo attiverà il modello selezionato e lo renderà disponibile per la configurazione.</p>
-<p><strong>Note</strong>:</p>
-<ul class="simple">
-<li><p>Puoi abilitare uno o più modelli per la stessa ricetta</p></li>
-<li><p>Ogni modello può rappresentare un componente diverso o un orientamento diverso dello stesso componente</p></li>
-<li><p>I modelli non abilitati non saranno disponibili durante l’operatività</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="stato-della-ricetta">
-<h2>Stato della Ricetta<a class="headerlink" href="#stato-della-ricetta" title="Link to this heading">#</a></h2>
-<p>A questo punto hai creato la struttura base della ricetta:</p>
-<p>✓ Nome ricetta assegnato<br />
-✓ Modalità operativa selezionata<br />
-✓ FlexiBowl associato<br />
-✓ Modello/i abilitato/i</p>
-<p>La ricetta è ora <strong>pronta per la creazione dei modelli</strong> ma non è ancora operativa.</p>
-</section>
-<hr class="docutils" />
-<section id="selezione-della-ricetta-per-lavorare-sui-modelli">
-<h2>Selezione della Ricetta per Lavorare sui Modelli<a class="headerlink" href="#selezione-della-ricetta-per-lavorare-sui-modelli" title="Link to this heading">#</a></h2>
-<section id="step-5-apertura-ricetta-per-editing">
-<h3>Step 5: Apertura Ricetta per Editing<a class="headerlink" href="#step-5-apertura-ricetta-per-editing" title="Link to this heading">#</a></h3>
-<p>Prima di iniziare a creare i modelli, è necessario:</p>
-<ol class="arabic simple">
-<li><p>Dall’interfaccia principale, <strong>selezionare la ricetta dell’applicazione</strong> in cui si vogliono creare i modelli</p></li>
-<li><p>Questa ricetta diventerà il contesto attivo per tutte le operazioni successive</p></li>
-</ol>
-</section>
-</section>
-<hr class="docutils" />
-<section id="gestione-del-salvataggio">
-<h2>Gestione del Salvataggio<a class="headerlink" href="#gestione-del-salvataggio" title="Link to this heading">#</a></h2>
-<section id="salvare-una-nuova-ricetta">
-<h3>Salvare una Nuova Ricetta<a class="headerlink" href="#salvare-una-nuova-ricetta" title="Link to this heading">#</a></h3>
-<p>Quando hai completato la configurazione e vuoi salvare:</p>
-<ol class="arabic simple">
-<li><p>Cliccare su <strong>Recipes</strong> nel menu</p></li>
-<li><p>Cliccare su <strong>Save Recipe</strong></p></li>
-<li><p>Inserire un <strong>nome nuovo</strong> per la ricetta</p></li>
-<li><p>Confermare</p></li>
-</ol>
-<p>La nuova ricetta viene aggiunta all’elenco delle ricette disponibili.</p>
-</section>
-<hr class="docutils" />
-<section id="sovrascrivere-una-ricetta-esistente">
-<h3>Sovrascrivere una Ricetta Esistente<a class="headerlink" href="#sovrascrivere-una-ricetta-esistente" title="Link to this heading">#</a></h3>
-<p>Se vuoi aggiornare una ricetta già salvata:</p>
-<ol class="arabic simple">
-<li><p>Cliccare su <strong>Recipes</strong></p></li>
-<li><p>Cliccare su <strong>Save Recipe</strong></p></li>
-<li><p>Inserire lo <strong>stesso nome</strong> della ricetta da sovrascrivere</p></li>
-<li><p>Confermare</p></li>
-</ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>⚠️ ATTENZIONE: Sovrascrivere una ricetta
-
-Quando sovrascrivi una ricetta con lo stesso nome, tutti i dati precedenti 
-verranno PERSI definitivamente:
-- Modelli creati
-- ROI configurate
-- Istogrammi impostati
-- Calibrazioni robot
-- Tutte le altre configurazioni
-
-Assicurati di voler procedere prima di confermare.
-
-Suggerimento: Se non sei sicuro, salva con un nome diverso
-(es. aggiungi _v2, _backup, _test al nome).
-</pre></div>
-</div>
-</section>
-</section>
-<hr class="docutils" />
-<section id="modalita-operative-disponibili">
-<h2>Modalità Operative Disponibili<a class="headerlink" href="#modalita-operative-disponibili" title="Link to this heading">#</a></h2>
-<section id="standard-mode">
-<h3>Standard Mode<a class="headerlink" href="#standard-mode" title="Link to this heading">#</a></h3>
-<p>La modalità più comune, utilizzata per applicazioni tipiche con FlexiBowl standard. Offre tutte le funzionalità di base per il riconoscimento e il prelievo.</p>
-</section>
-<section id="advanced-mode">
-<h3>Advanced Mode<a class="headerlink" href="#advanced-mode" title="Link to this heading">#</a></h3>
-<p>(Se disponibile) Per applicazioni che richiedono configurazioni speciali o funzionalità avanzate.</p>
-<p><strong>Note</strong>: Le modalità disponibili possono variare in base alla configurazione del sistema e alle licenze attive.</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="checklist-creazione-ricetta">
-<h2>Checklist Creazione Ricetta<a class="headerlink" href="#checklist-creazione-ricetta" title="Link to this heading">#</a></h2>
-<p>Prima di procedere alla creazione dei modelli, verifica:</p>
-<ul class="contains-task-list simple">
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Nome ricetta chiaro e descrittivo</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Modalità operativa corretta selezionata</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> FlexiBowl giusto associato</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Modelli necessari abilitati</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Ricetta selezionata come contesto attivo</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="differenza-tra-ricetta-e-modello-riepilogo">
-<h2>Differenza tra Ricetta e Modello - Riepilogo<a class="headerlink" href="#differenza-tra-ricetta-e-modello-riepilogo" title="Link to this heading">#</a></h2>
+<section id="panoramica-interfaccia">
+<h2>Panoramica interfaccia<a class="headerlink" href="#panoramica-interfaccia" title="Link to this heading">#</a></h2>
+<p>Prima di procedere con il training del modello, familiarizzare con l’interfaccia Edit Recipe:</p>
+<section id="elementi-principali">
+<h3>Elementi principali<a class="headerlink" href="#elementi-principali" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Aspetto</p></th>
-<th class="head"><p>Ricetta</p></th>
-<th class="head"><p>Modello</p></th>
+<tr class="row-odd"><th class="head"><p>Sezione</p></th>
+<th class="head"><p>Descrizione</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Cosa è</strong></p></td>
-<td><p>Contenitore completo dell’applicazione</p></td>
-<td><p>Immagine di riferimento del componente</p></td>
+<tr class="row-even"><td><p><strong>Models List</strong></p></td>
+<td><p>Elenco di tutti i modelli abilitati nella ricetta (fino a 16). Cliccando su un modello si accede alla sua configurazione.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Contiene</strong></p></td>
-<td><p>Modelli + configurazioni sistema</p></td>
-<td><p>Pattern visivo per riconoscimento</p></td>
+<tr class="row-odd"><td><p><strong>FlexiBowl Configuration</strong></p></td>
+<td><p>Accesso rapido ai parametri del FlexiBowl (vibrazione, velocità, temporizzazioni). Verrà configurato dopo il training modello.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Numero</strong></p></td>
-<td><p>Una per applicazione</p></td>
-<td><p>Uno o più per ricetta</p></td>
+<tr class="row-even"><td><p><strong>Hopper Configuration</strong></p></td>
+<td><p>Parametri della tramoggia (se presente nel sistema). Opzionale.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Include</strong></p></td>
-<td><p>FlexiBowl, tramoggia, coordinate</p></td>
-<td><p>ROI, threshold, istogrammi, offset</p></td>
+<tr class="row-odd"><td><p><strong>Robot Settings</strong></p></td>
+<td><p>Impostazioni comunicazione e coordinate robot. Già configurate durante il setup.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Salvato come</strong></p></td>
-<td><p>File ricetta completo</p></td>
-<td><p>Elemento dentro la ricetta</p></td>
+<tr class="row-even"><td><p><strong>Save Recipe</strong></p></td>
+<td><p>Pulsante per salvare tutte le modifiche effettuate alla ricetta.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
+</section>
+<hr class="docutils" />
+<section id="salvataggio-ricetta-base">
+<h2>Salvataggio ricetta base<a class="headerlink" href="#salvataggio-ricetta-base" title="Link to this heading">#</a></h2>
+<p>Prima di creare una nuova ricetta personalizzata, assicurarsi di aver salvato la ricetta base creata durante il setup iniziale:</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Salvare la ricetta base</strong></p>
+<ol class="arabic simple">
+<li><p>Dalla pagina principale, cliccare su <strong>Recipes</strong></p></li>
+<li><p>Verificare che la ricetta corrente sia quella base (es: “Ricetta_Base” creata durante il setup)</p></li>
+<li><p>Cliccare su <strong>Save Recipe</strong></p></li>
+<li><p>Mantenere lo stesso nome nel campo di salvataggio (si sta sovrascrivendo la ricetta con le configurazioni aggiornate)</p></li>
+<li><p>Confermare il salvataggio</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Perché salvare la ricetta base?</strong></p>
+<p>La ricetta base contiene tutte le configurazioni hardware completate durante il setup:</p>
+<ul class="simple">
+<li><p>Connessione FlexiBowl (IP, parametri)</p></li>
+<li><p>Connessione Hopper (se presente)</p></li>
+<li><p>Connessione Robot (porta TCP/IP)</p></li>
+<li><p>Calibrazione camera</p></li>
+</ul>
+<p>Salvandola, si crea un punto di partenza sicuro per tutte le ricette future. In caso di problemi, si può sempre tornare a questa configurazione funzionante.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="creazione-nuova-ricetta-applicativa">
+<h2>Creazione nuova ricetta applicativa<a class="headerlink" href="#creazione-nuova-ricetta-applicativa" title="Link to this heading">#</a></h2>
+<p>Una volta salvata la ricetta base, procedere con la creazione della ricetta specifica per l’applicazione:</p>
+<section id="step-1-accesso-alla-sezione-ricette">
+<h3>Step 1: Accesso alla sezione Ricette<a class="headerlink" href="#step-1-accesso-alla-sezione-ricette" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Dalla pagina principale del software FlexiVision Easy, cliccare su <strong>Recipes</strong></p></li>
+<li><p>Si apre la pagina di gestione ricette dove sono elencate tutte le ricette esistenti</p></li>
+</ol>
+</section>
+<section id="step-2-nominare-la-nuova-ricetta">
+<h3>Step 2: Nominare la nuova ricetta<a class="headerlink" href="#step-2-nominare-la-nuova-ricetta" title="Link to this heading">#</a></h3>
+<p>Prima di cliccare su “New Recipe”, decidere un nome descrittivo per la ricetta.</p>
+<p><strong>Convenzioni consigliate:</strong></p>
+<ul class="simple">
+<li><p>Utilizzare nomi che identificano chiaramente il pezzo o l’applicazione</p></li>
+<li><p>Evitare spazi (usare underscore <code class="docutils literal notranslate"><span class="pre">_</span></code> o trattini <code class="docutils literal notranslate"><span class="pre">-</span></code>)</p></li>
+<li><p>Includere informazioni rilevanti (tipo pezzo, dimensione, applicazione)</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Evitare nomi generici</strong></p>
+<p>❌ Nomi da evitare:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Test</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Prova</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ricetta1</span></code>, <code class="docutils literal notranslate"><span class="pre">Ricetta2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Nuova_Ricetta</span></code></p></li>
+</ul>
+<p>✓ Nomi consigliati:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Prod_Viti_M8_Acciaio</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Assembly_Connettori_2024</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">QC_Ingranaggi_Serie_X</span></code></p></li>
+</ul>
+<p>Un nome chiaro facilita la gestione quando si hanno molte ricette diverse.</p>
+</div>
+</section>
+<section id="step-3-creazione-ricetta">
+<h3>Step 3: Creazione ricetta<a class="headerlink" href="#step-3-creazione-ricetta" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Cliccare sul pulsante <strong>New Recipe</strong></p></li>
+<li><p>Si apre una finestra di dialogo o un wizard guidato per la configurazione iniziale</p></li>
+<li><p>Nel campo <strong>Nome Ricetta</strong>, inserire il nome scelto al passo precedente</p></li>
+<li><p>Procedere con il pulsante <strong>Next</strong> o <strong>Avanti</strong></p></li>
+</ol>
+</section>
+<section id="step-4-selezione-modalita">
+<h3>Step 4: Selezione modalità<a class="headerlink" href="#step-4-selezione-modalita" title="Link to this heading">#</a></h3>
+<p>Selezionare la modalità operativa dell’applicazione:</p>
+<p>Per la maggior parte delle applicazioni di picking da FlexiBowl:</p>
+<ol class="arabic simple">
+<li><p>Selezionare <strong>Standard</strong> o <strong>…</strong></p></li>
+<li><p>Cliccare su <strong>Next</strong></p></li>
+</ol>
+<p>Quella Standard è la modalità più comune ed è anche quella che verrà descritta in dettaglio nelle sezioni successive.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Quando usare le altre modalità</strong></p>
+</div>
+</section>
+<section id="step-5-selezione-modello-flexibowl">
+<h3>Step 5: Selezione modello FlexiBowl<a class="headerlink" href="#step-5-selezione-modello-flexibowl" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Selezionare il FlexiBowl con cui stiamo lavorando:</p></li>
+<li><p>Cliccare su <strong>Next</strong></p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Controllo ricetta selezionata</strong></p>
+<ol class="arabic simple">
+<li><p>Nella barra superiore o nel menu principale, verificare che sia visualizzato il nome della nuova ricetta creata</p></li>
+<li><p>Se non è la ricetta corrente:</p>
+<ul class="simple">
+<li><p>Tornare alla pagina <strong>Recipes</strong></p></li>
+<li><p>Cliccare sulla nuova ricetta nell’elenco</p></li>
+<li><p>Cliccare su <strong>Load Recipe</strong> o <strong>Seleziona</strong></p></li>
+</ul>
+</li>
+<li><p>Una volta caricata, il nome della ricetta attiva è sempre visibile nell’interfaccia</p></li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Lavorare sempre sulla ricetta corretta</strong></p>
+<p>Quando si lavora con multiple ricette, verificare sempre che sia selezionata quella corretta prima di iniziare modifiche.</p>
+<p>Modifiche applicate alla ricetta sbagliata richiedono di rifare il lavoro o di esportare/importare configurazioni tra ricette.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="step-6-creazione-nuovo-modello">
+<h3>Step 6: creazione nuovo modello<a class="headerlink" href="#step-6-creazione-nuovo-modello" title="Link to this heading">#</a></h3>
+<p>Con la ricetta creata, abilitata e caricata, procedere con la configurazione dei modelli:
+<strong>→ <a class="reference internal" href="18_NuovoModello.html"><span class="std std-doc">Creare un Modello</span></a></strong></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="riepilogo-operazioni-effettuate">
+<h2>Riepilogo operazioni effettuate<a class="headerlink" href="#riepilogo-operazioni-effettuate" title="Link to this heading">#</a></h2>
+<p>A questo punto del processo, sono state completate le seguenti operazioni:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Checklist creazione ricetta</strong></p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Ricetta base salvata</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Nuova ricetta creata con nome descrittivo</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Modalità operativa selezionata (Standard/Locator)</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Modello FlexiBowl configurato</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Primo modello abilitato</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Ricetta attiva selezionata</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Edit Recipe aperto</p></li>
+</ul>
+<p><strong>Prossimo passo</strong>: Training del modello</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="suggerimenti-pratici">
+<h2>Suggerimenti pratici<a class="headerlink" href="#suggerimenti-pratici" title="Link to this heading">#</a></h2>
+<section id="naming-convention-ricette">
+<h3>Naming convention ricette<a class="headerlink" href="#naming-convention-ricette" title="Link to this heading">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Organizzazione ricette aziendali</strong></p>
+<p>Per aziende con molte applicazioni, considerare una naming convention strutturata:</p>
+<p><strong>Formato suggerito</strong>: <code class="docutils literal notranslate"><span class="pre">[LINEA]_[PRODOTTO]_[VARIANTE]_[ANNO]</span></code></p>
+<p><strong>Esempi:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">LineaA_Viti_M6_Zincate_2024</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LineaB_Connettori_TypeX_2024</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">QC_Ingranaggi_SerieY_2025</span></code></p></li>
+</ul>
+<p>Vantaggi:</p>
+<ul class="simple">
+<li><p>Ricette facilmente identificabili</p></li>
+<li><p>Ordinamento alfabetico logico</p></li>
+<li><p>Tracciabilità storica (anno)</p></li>
+</ul>
+</div>
+</section>
+<section id="backup-ricette">
+<h3>Backup ricette<a class="headerlink" href="#backup-ricette" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Protezione del lavoro svolto</strong></p>
+<p>Dopo aver creato e configurato una ricetta:</p>
+<ul class="simple">
+<li><p>Utilizzare la funzione di backup del software (<a class="reference internal" href="#../rif_tecnico_specifiche/integrazione_software/07_Backup_management.md"><span class="xref myst">Backup Management</span></a>)</p></li>
+<li><p>Esportare periodicamente le ricette su supporto esterno</p></li>
+<li><p>Documentare parametri critici su supporto cartaceo/digitale</p></li>
+</ul>
+<p>Una ricetta ben configurata rappresenta ore di lavoro. Proteggerla adeguatamente previene perdite di dati.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="risoluzione-problemi-comuni">
+<h2>Risoluzione problemi comuni<a class="headerlink" href="#risoluzione-problemi-comuni" title="Link to this heading">#</a></h2>
+<section id="ricetta-non-salvata-correttamente">
+<h3>Ricetta non salvata correttamente<a class="headerlink" href="#ricetta-non-salvata-correttamente" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Errore durante salvataggio</strong></p>
+<p>Se il salvataggio della ricetta fallisce:</p>
+<ul class="simple">
+<li><p>Verificare di avere permessi di scrittura sulla cartella del software</p></li>
+<li><p>Controllare lo spazio disponibile su disco</p></li>
+<li><p>Assicurarsi che il nome non contenga caratteri non ammessi (<code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">\</span> <span class="pre">:</span> <span class="pre">*</span> <span class="pre">?</span> <span class="pre">&quot;</span> <span class="pre">&lt;</span> <span class="pre">&gt;</span> <span class="pre">|</span></code>)</p></li>
+<li><p>Verificare che non esista già una ricetta con lo stesso nome</p></li>
+</ul>
+<p>Riprovare il salvataggio dopo aver verificato questi punti.</p>
+</div>
+</section>
+</section>
 <hr class="docutils" />
 <section id="prossimi-passi">
-<h2>Prossimi Passi<a class="headerlink" href="#prossimi-passi" title="Link to this heading">#</a></h2>
-<p>Ora che la ricetta è stata creata e i modelli abilitati, procedi a:</p>
-<p><strong>→ <a class="reference internal" href="#pagina-3-creare-un-nuovo-modello"><span class="xref myst">Creazione Nuovo Modello</span></a></strong></p>
-<p>dove apprenderai come configurare il setup fisico e creare il primo modello di riconoscimento.</p>
-<hr class="docutils" />
-<hr class="docutils" />
+<h2>Prossimi passi<a class="headerlink" href="#prossimi-passi" title="Link to this heading">#</a></h2>
+<p>Una volta creata e configurata la ricetta di base, procedere con il training del primo modello:</p>
+<p><strong>→ <a class="reference internal" href="18_NuovoModello.html"><span class="std std-doc">Creare un Modello</span></a></strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Cosa serve per il prossimo step</strong></p>
+<p>Per procedere con il training del modello, assicurarsi di avere:</p>
+<ul class="simple">
+<li><p>Pezzi fisici da riconoscere (almeno 10-15 pezzi)</p></li>
+<li><p>Robot disponibile per posizionamento pezzo di riferimento</p></li>
+<li><p>FlexiBowl vuoto e pulito</p></li>
+<li><p>Simulatori ingombro pinza (possono essere pezzi dello stesso tipo)</p></li>
+<li><p>Foglio per annotare coordinate robot (X, Y, RZ)</p></li>
+</ul>
+</div>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="17b_Expert.html">tasto expert della pagina…</a></li>
@@ -971,7 +1004,7 @@ ___\\ \\     // //___
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Creare una nuova ricetta e un nuovo modello</p>
+        <p class="prev-next-title">Creazione Ricette e Modelli - Panoramica</p>
       </div>
     </a>
     <a class="right-next"
@@ -999,39 +1032,31 @@ ___\\ \\     // //___
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obiettivo">Obiettivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-creare-una-nuova-ricetta">Quando Creare una Nuova Ricetta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-completa">Procedura Completa</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-al-menu-ricette">Step 1: Accesso al Menu Ricette</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-avvio-creazione">Step 2: Avvio Creazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-assegnazione-nome">Step 3: Assegnazione Nome</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-selezione-modalita-operativa">Step 4: Selezione Modalità Operativa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-interfaccia">Panoramica interfaccia</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elementi-principali">Elementi principali</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modalita-standard-configurazione-dettagliata">Modalità Standard - Configurazione Dettagliata</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4a-selezione-flexibowl">Step 4a: Selezione FlexiBowl</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4b-selezione-modello-da-creare">Step 4b: Selezione Modello da Creare</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4c-abilitazione-modello">Step 4c: Abilitazione Modello</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-ricetta-base">Salvataggio ricetta base</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creazione-nuova-ricetta-applicativa">Creazione nuova ricetta applicativa</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-alla-sezione-ricette">Step 1: Accesso alla sezione Ricette</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-nominare-la-nuova-ricetta">Step 2: Nominare la nuova ricetta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-creazione-ricetta">Step 3: Creazione ricetta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-selezione-modalita">Step 4: Selezione modalità</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-selezione-modello-flexibowl">Step 5: Selezione modello FlexiBowl</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-creazione-nuovo-modello">Step 6: creazione nuovo modello</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stato-della-ricetta">Stato della Ricetta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selezione-della-ricetta-per-lavorare-sui-modelli">Selezione della Ricetta per Lavorare sui Modelli</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-apertura-ricetta-per-editing">Step 5: Apertura Ricetta per Editing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riepilogo-operazioni-effettuate">Riepilogo operazioni effettuate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggerimenti-pratici">Suggerimenti pratici</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-convention-ricette">Naming convention ricette</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#backup-ricette">Backup ricette</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestione-del-salvataggio">Gestione del Salvataggio</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salvare-una-nuova-ricetta">Salvare una Nuova Ricetta</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sovrascrivere-una-ricetta-esistente">Sovrascrivere una Ricetta Esistente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risoluzione-problemi-comuni">Risoluzione problemi comuni</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ricetta-non-salvata-correttamente">Ricetta non salvata correttamente</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modalita-operative-disponibili">Modalità Operative Disponibili</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-mode">Standard Mode</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-mode">Advanced Mode</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist-creazione-ricetta">Checklist Creazione Ricetta</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differenza-tra-ricetta-e-modello-riepilogo">Differenza tra Ricetta e Modello - Riepilogo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi passi</a></li>
 </ul>
   </nav></div>
 

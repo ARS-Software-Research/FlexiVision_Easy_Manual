@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Creare una nuova ricetta e un nuovo modello &#8212; FlexiVision Easy 1.0 documentation</title>
+    <title>Creazione Ricette e Modelli - Panoramica &#8212; FlexiVision Easy 1.0 documentation</title>
   
   
   
@@ -215,7 +215,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Creazione Ricette e Modelli - Panoramica</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="17_NuovaRicetta.html">Creare una Nuova Ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
@@ -240,10 +240,10 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../22_Config_FlexiBowl.html">Configurazione Del FlexiBowl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../22_Config_FlexiBowl.html">Configurazione guidata: FlexiBowl® Wizard</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html">Configurazione della Tramoggia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html">Configurazione della Tramoggia (Hopper)</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../24_Verifica_Risultati.html">Monitoraggio Applicazione</a></li>
@@ -397,7 +397,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Creare una nuova ricetta e un nuovo modello</h1>
+    <h1>Creazione Ricette e Modelli - Panoramica</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -407,29 +407,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">Introduzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concetti-fondamentali">Concetti Fondamentali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-una-ricetta">Cos’è una Ricetta?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-un-modello">Cos’è un Modello?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ricetta-vs-modello-differenze-fondamentali">Ricetta vs Modello: Differenze fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-del-processo-completo">Panoramica del processo completo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fasi-principali">Fasi principali</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#il-processo-completo-6-fasi-principali">Il Processo Completo: 6 Fasi Principali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-1-creazione-della-ricetta">Fase 1: Creazione della Ricetta</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-2-creazione-del-modello">Fase 2: Creazione del Modello</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-3-definizione-area-di-lavoro-roi-region-of-interest">Fase 3: Definizione Area di Lavoro (ROI - Region of Interest)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-4-impostazione-tolleranze-accept-threshold">Fase 4: Impostazione Tolleranze (Accept Threshold)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-5-configurazione-istogrammi">Fase 5: Configurazione Istogrammi</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-6-calibrazione-robot-pick">Fase 6: Calibrazione Robot Pick</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#guida-alla-navigazione-sezioni-dettagliate">Guida alla navigazione sezioni dettagliate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consigli-pratici-prima-di-iniziare">Consigli pratici prima di iniziare</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparazione-materiale">Preparazione materiale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ambiente-ottimale">Ambiente ottimale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#errori-comuni-da-evitare">Errori comuni da evitare</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso-di-lavoro-completo">Flusso di Lavoro Completo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#note-importanti-per-il-processo">Note Importanti per il Processo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordine-delle-operazioni">Ordine delle Operazioni</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-multipli">Modelli Multipli</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-e-sovrascrittura">Salvataggio e Sovrascrittura</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supporto-e-risorse-aggiuntive">Supporto e risorse aggiuntive</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi passi</a></li>
 </ul>
             </nav>
         </div>
@@ -441,244 +432,207 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="creare-una-nuova-ricetta-e-un-nuovo-modello">
-<h1>Creare una nuova ricetta e un nuovo modello<a class="headerlink" href="#creare-una-nuova-ricetta-e-un-nuovo-modello" title="Link to this heading">#</a></h1>
-<section id="introduzione">
-<h2>Introduzione<a class="headerlink" href="#introduzione" title="Link to this heading">#</a></h2>
-<p>Questa sezione fornisce una visione completa del processo di creazione di ricette e modelli in FlexiVision, dalla configurazione iniziale alla calibrazione finale del robot.</p>
-</section>
-<hr class="docutils" />
-<section id="concetti-fondamentali">
-<h2>Concetti Fondamentali<a class="headerlink" href="#concetti-fondamentali" title="Link to this heading">#</a></h2>
-<section id="cose-una-ricetta">
-<h3>Cos’è una Ricetta?<a class="headerlink" href="#cose-una-ricetta" title="Link to this heading">#</a></h3>
-<p>Una <strong>ricetta</strong> è il contenitore principale che include tutti gli elementi necessari per far funzionare un’applicazione FlexiVision. Nello specifico, una ricetta comprende:</p>
+  <section id="creazione-ricette-e-modelli-panoramica">
+<h1>Creazione Ricette e Modelli - Panoramica<a class="headerlink" href="#creazione-ricette-e-modelli-panoramica" title="Link to this heading">#</a></h1>
+<p>Questa sezione guida l’utente attraverso il processo completo di creazione di una ricetta applicativa e dei modelli pezzo necessari per il riconoscimento e il picking robotizzato.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Prerequisiti</strong></p>
+<p>Prima di procedere con la creazione di ricette e modelli, assicurarsi che:</p>
 <ul class="simple">
-<li><p><strong>Modelli dei componenti</strong>: le immagini di riferimento per il riconoscimento</p></li>
-<li><p><strong>Configurazione dei parametri del FlexiBowl</strong>: impostazioni operative del sistema di alimentazione</p></li>
-<li><p><strong>Configurazione dello scarico della tramoggia</strong>: gestione del flusso dei componenti</p></li>
-<li><p><strong>Configurazione delle coordinate del robot</strong>: calibrazione spaziale per il prelievo</p></li>
+<li><p>Tutti i setup hardware siano completati (<a class="reference internal" href="#SETUP/13_setup.md"><span class="xref myst">Setup Componenti</span></a>)</p></li>
+<li><p>La calibrazione camera sia stata eseguita con successo (<a class="reference internal" href="#14_calibrazione_camera.md"><span class="xref myst">Calibrazione Camera</span></a>)</p></li>
+<li><p>La calibrazione robot sia completata</p></li>
+<li><p>Si disponga dei pezzi fisici da riconoscere</p></li>
 </ul>
-<p>Una ricetta è quindi l’insieme completo di tutte le configurazioni necessarie per un’applicazione specifica.</p>
-</section>
-<section id="cose-un-modello">
-<h3>Cos’è un Modello?<a class="headerlink" href="#cose-un-modello" title="Link to this heading">#</a></h3>
-<p>Un <strong>modello</strong> è l’immagine di riferimento che FlexiVision utilizza per riconoscere i componenti nell’area di visione. È essenzialmente un “template” visivo che il sistema confronta con le immagini acquisite in tempo reale per:</p>
-<ul class="simple">
-<li><p>Identificare i componenti corretti</p></li>
-<li><p>Determinare la loro posizione (coordinate X, Y)</p></li>
-<li><p>Rilevare il loro orientamento (rotazione Z)</p></li>
-<li><p>Calcolare il grado di somiglianza (score)</p></li>
-</ul>
-<p>Ogni ricetta può contenere uno o più modelli, permettendo di gestire diverse varianti di componenti nella stessa applicazione.</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="il-processo-completo-6-fasi-principali">
-<h2>Il Processo Completo: 6 Fasi Principali<a class="headerlink" href="#il-processo-completo-6-fasi-principali" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>┌─────────────────┐
-│  1. RICETTA     │  Creazione contenitore applicazione
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  2. MODELLO     │  Training immagine riferimento
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  3. ROI         │  Definizione area di lavoro
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  4. TOLLERANZE  │  Impostazione accept threshold
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  5. ISTOGRAMMI  │  Configurazione aree libere
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  6. ROBOT PICK  │  Calibrazione coordinate
-└─────────────────┘
-</pre></div>
 </div>
-<section id="fase-1-creazione-della-ricetta">
-<h3>Fase 1: Creazione della Ricetta<a class="headerlink" href="#fase-1-creazione-della-ricetta" title="Link to this heading">#</a></h3>
-<p><strong>Obiettivo</strong>: Creare il contenitore principale per l’applicazione</p>
-<p><strong>Attività principali</strong>:</p>
-<ul class="simple">
-<li><p>Nominare la ricetta con un identificativo chiaro</p></li>
-<li><p>Selezionare la modalità operativa (Standard, Advanced, etc.)</p></li>
-<li><p>Scegliere il FlexiBowl da configurare</p></li>
-<li><p>Abilitare i modelli che verranno creati</p></li>
-</ul>
-<p><strong>Risultato</strong>: Una ricetta vuota pronta ad accogliere i modelli</p>
-</section>
 <hr class="docutils" />
-<section id="fase-2-creazione-del-modello">
-<h3>Fase 2: Creazione del Modello<a class="headerlink" href="#fase-2-creazione-del-modello" title="Link to this heading">#</a></h3>
-<p><strong>Obiettivo</strong>: Insegnare a FlexiVision come riconoscere il componente</p>
-<p><strong>Attività principali</strong>:</p>
-<ul class="simple">
-<li><p><strong>Setup fisico</strong>: Posizionamento del componente con robot e simulazione ingombro pinza</p></li>
-<li><p><strong>Acquisizione immagine</strong>: Scatto della foto di riferimento (Grab Train Image)</p></li>
-<li><p><strong>Regolazione dettaglio</strong>: Configurazione Feature Threshold per il livello di dettaglio ottimale</p></li>
-<li><p><strong>Verifica qualità</strong>: Controllo che il modello rilevi le caratteristiche corrette</p></li>
-</ul>
-<p><strong>Risultato</strong>: Un modello validato che rappresenta accuratamente il componente</p>
-</section>
-<hr class="docutils" />
-<section id="fase-3-definizione-area-di-lavoro-roi-region-of-interest">
-<h3>Fase 3: Definizione Area di Lavoro (ROI - Region of Interest)<a class="headerlink" href="#fase-3-definizione-area-di-lavoro-roi-region-of-interest" title="Link to this heading">#</a></h3>
-<p><strong>Obiettivo</strong>: Stabilire dove FlexiVision deve cercare i componenti</p>
-<p><strong>Attività principali</strong>:</p>
-<ul class="simple">
-<li><p>Delimitare la Region Search nell’area di visione</p></li>
-<li><p>Definire i confini operativi raggiungibili dal robot</p></li>
-</ul>
-<p><strong>Risultato</strong>: Un’area di ricerca ottimizzata per l’applicazione</p>
-</section>
-<hr class="docutils" />
-<section id="fase-4-impostazione-tolleranze-accept-threshold">
-<h3>Fase 4: Impostazione Tolleranze (Accept Threshold)<a class="headerlink" href="#fase-4-impostazione-tolleranze-accept-threshold" title="Link to this heading">#</a></h3>
-<p><strong>Obiettivo</strong>: Definire quanto devono essere simili i componenti rilevati al modello di riferimento</p>
-<p><strong>Attività principali</strong>:</p>
-<ul class="simple">
-<li><p>Posizionare componenti di test nell’area</p></li>
-<li><p>Eseguire test di riconoscimento</p></li>
-<li><p>Regolare l’Accept Threshold (soglia di accettazione dello score)</p></li>
-<li><p>Verificare che solo i componenti validi vengano rilevati</p></li>
-</ul>
-<p><strong>Risultato</strong>: Un sistema di filtraggio che identifica solo i componenti corretti</p>
-</section>
-<hr class="docutils" />
-<section id="fase-5-configurazione-istogrammi">
-<h3>Fase 5: Configurazione Istogrammi<a class="headerlink" href="#fase-5-configurazione-istogrammi" title="Link to this heading">#</a></h3>
-<p><strong>Obiettivo</strong>: Identificare le aree che devono rimanere libere da ostacoli</p>
-<p><strong>Attività principali</strong>:</p>
-<ul class="simple">
-<li><p>Posizionare riquadri di controllo nelle aree critiche</p></li>
-<li><p>Configurare le soglie di rilevamento automatico</p></li>
-<li><p>Testare il riconoscimento di aree libere vs occupate</p></li>
-<li><p>Creare fino a 8 istogrammi per modello se necessario</p></li>
-</ul>
-<p><strong>Risultato</strong>: Un sistema di sicurezza che previene collisioni durante il prelievo</p>
-</section>
-<hr class="docutils" />
-<section id="fase-6-calibrazione-robot-pick">
-<h3>Fase 6: Calibrazione Robot Pick<a class="headerlink" href="#fase-6-calibrazione-robot-pick" title="Link to this heading">#</a></h3>
-<p><strong>Obiettivo</strong>: Collegare le coordinate della visione con quelle del robot</p>
-<p><strong>Attività principali</strong>:</p>
-<ul class="simple">
-<li><p>Attivare Enable Robot Pick</p></li>
-<li><p>Rilevare le coordinate visione del componente (Find Object)</p></li>
-<li><p>Inserire le coordinate robot salvate durante il setup</p></li>
-<li><p>Calcolare l’offset con Gripper Offset</p></li>
-</ul>
-<p><strong>Risultato</strong>: Una calibrazione completa che permette al robot di prelevare nella posizione esatta</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="flusso-di-lavoro-completo">
-<h2>Flusso di Lavoro Completo<a class="headerlink" href="#flusso-di-lavoro-completo" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>PREPARAZIONE
-├── Creare nuova ricetta
-├── Nominare e selezionare modalità
-└── Abilitare modello
-
-SETUP FISICO MODELLO
-├── Posizionare componente al centro visione
-├── Selezionare frame e tool robot (Rz=0)
-├── Simulare ingombro pinza con oggetti laterali
-├── Salvare coordinate X, Y, Rz robot
-└── Rimuovere robot senza spostare nulla
-
-TRAINING MODELLO SOFTWARE
-├── Edit Recipe → Seleziona FlexiBowl → Seleziona Modello
-├── Enable Model
-├── Grab Train Image
-├── Posizionare ROI sul componente
-├── Regolare Feature Threshold
-├── Centrare origine
-├── Apply Train
-├── Verificare qualità modello (zoom)
-├── Eventuale correzione Feature Threshold
-└── Nominare modello
-
-DEFINIZIONE AREA LAVORO
-├── Define Robot Pick Area
-└── Definire Region Search
-
-IMPOSTAZIONE TOLLERANZE
-├── Posizionare componenti test
-├── Test riconoscimento
-├── Regolare Accept Threshold
-├── Verificare Id, coordinate, rotazione, score
-└── Rimuovere componenti test (tenere solo riferimento)
-
-CONFIGURAZIONE ISTOGRAMMI
-├── Histogram 1...8 (fino a 8 per modello)
-│   ├── Enable Histogram
-│   ├── Posizionare riquadro su area critica
-│   ├── AUTO Expression Builder
-│   ├── TEST (verificare verde)
-│   └── Next
-└── TEST complessivo tutti istogrammi
-
-CALIBRAZIONE ROBOT
-├── Enable Robot Pick
-├── Find Object (coordinate visione)
-├── Insert Robot Coordinates (da setup fisico)
-├── Gripper Offset (calcolo trasformazione)
-└── Next
-
-SALVATAGGIO
-└── Save Recipe
-</pre></div>
+<section id="ricetta-vs-modello-differenze-fondamentali">
+<h2>Ricetta vs Modello: Differenze fondamentali<a class="headerlink" href="#ricetta-vs-modello-differenze-fondamentali" title="Link to this heading">#</a></h2>
+<p>Prima di iniziare, è importante comprendere la differenza tra <strong>Ricetta</strong> e <strong>Modello</strong>:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Cos’è una Ricetta?</p></th>
+<th class="head"><p>Cos’è un Modello?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Il contenitore globale dell’intera applicazione di picking.</p></td>
+<td><p>La definizione specifica di un singolo componente da riconoscere.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Include fino a 16 modelli, parametri FlexiBowl, Hopper e logiche di comunicazione.</p></td>
+<td><p>Include immagini di training, ROI, feature visive, filtri e offset robot.</p></td>
+</tr>
+<tr class="row-even"><td><p>Gestisce parametri hardware (vibrazioni, velocità) e rete (porta TCP/IP, timeout).</p></td>
+<td><p>Gestisce parametri di visione (threshold, score minimo) e coordinate di prelievo (gripper).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Può gestire più tipi di pezzi simultaneamente (multi-modello).</p></td>
+<td><p>Focalizzato su un unico pattern visivo specifico.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Una ricetta può contenere fino a 8 modelli diversi, permettendo al robot di riconoscere e prelevare diversi tipi di pezzi dalla stessa applicazione senza cambiare configurazione.</p>
 </div>
 </section>
 <hr class="docutils" />
-<section id="note-importanti-per-il-processo">
-<h2>Note Importanti per il Processo<a class="headerlink" href="#note-importanti-per-il-processo" title="Link to this heading">#</a></h2>
-<section id="ordine-delle-operazioni">
-<h3>Ordine delle Operazioni<a class="headerlink" href="#ordine-delle-operazioni" title="Link to this heading">#</a></h3>
-<p>Le fasi devono essere seguite nell’ordine indicato perché:</p>
+<section id="panoramica-del-processo-completo">
+<h2>Panoramica del processo completo<a class="headerlink" href="#panoramica-del-processo-completo" title="Link to this heading">#</a></h2>
+<p>Il processo di creazione di una ricetta completa e funzionante si articola in diverse fasi sequenziali:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="FlexiVisionEasy_manual/QUICKSTART/Nuovo_Modello/img/workflow_ricetta_modello.png"><img alt="Workflow creazione ricetta e modelli" src="FlexiVisionEasy_manual/QUICKSTART/Nuovo_Modello/img/workflow_ricetta_modello.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Schema completo del processo di creazione ricetta e modelli</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="fasi-principali">
+<h3>Fasi principali<a class="headerlink" href="#fasi-principali" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 30.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Fase</p></th>
+<th class="head"><p>Nome</p></th>
+<th class="head"><p>Descrizione</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>1</strong></p></td>
+<td><p>Creazione Ricetta</p></td>
+<td><p>Definizione della ricetta applicativa con nome, tipo e FlexiBowl utilizzato</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>2</strong></p></td>
+<td><p>Preparazione Fisica</p></td>
+<td><p>Posizionamento pezzo con robot e salvataggio coordinate di riferimento</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>3</strong></p></td>
+<td><p>Training Modello</p></td>
+<td><p>Acquisizione immagine e creazione del pattern di riconoscimento</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>4</strong></p></td>
+<td><p>Definizione ROI</p></td>
+<td><p>Definizione dell’area di ricerca dove cercare i pezzi</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>5</strong></p></td>
+<td><p>Impostazione Filtri</p></td>
+<td><p>Configurazione accept threshold e tolleranze di riconoscimento</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>6</strong></p></td>
+<td><p>Creazione Istogrammi</p></td>
+<td><p>Definizione zone che devono rimanere libere (area pinza, ostacoli)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>7</strong></p></td>
+<td><p>Coordinate Robot</p></td>
+<td><p>Calcolo offset gripper per prelievo corretto</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>8</strong></p></td>
+<td><p>Test e Validazione</p></td>
+<td><p>Verifica funzionamento completo e salvataggio ricetta</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="guida-alla-navigazione-sezioni-dettagliate">
+<h2>Guida alla navigazione sezioni dettagliate<a class="headerlink" href="#guida-alla-navigazione-sezioni-dettagliate" title="Link to this heading">#</a></h2>
+<p>Per informazioni complete su ogni fase del processo, consultare le sezioni dedicate:</p>
 <ul class="simple">
-<li><p>Il modello richiede un setup fisico preciso</p></li>
-<li><p>La ROI dipende dal modello creato</p></li>
-<li><p>Le tolleranze si basano sulla ROI definita</p></li>
-<li><p>Gli istogrammi si riferiscono a componenti riconosciuti</p></li>
-<li><p>Il Robot Pick necessita di tutti i parametri precedenti</p></li>
+<li><p><strong><a class="reference internal" href="#Nuovo_Modello/17_Nuova_Ricetta.md"><span class="xref myst">Creazione Nuova Ricetta</span></a></strong> - Come creare e configurare una nuova ricetta</p></li>
+<li><p><strong><a class="reference internal" href="#Nuovo_Modello/18_Training_Modello.md"><span class="xref myst">Training Modello</span></a></strong> - Acquisizione immagine e creazione pattern</p></li>
+<li><p><strong><a class="reference internal" href="#Nuovo_Modello/19_Definizione_ROI.md"><span class="xref myst">Definizione ROI e Filtri</span></a></strong> - Configurazione area di ricerca e tolleranze</p></li>
+<li><p><strong><a class="reference internal" href="#Nuovo_Modello/20_Istogrammi.md"><span class="xref myst">Creazione Istogrammi</span></a></strong> - Definizione zone protette</p></li>
+<li><p><strong><a class="reference internal" href="#Nuovo_Modello/21_Robot_Pick.md"><span class="xref myst">Coordinate Robot Pick</span></a></strong> - Calcolo offset gripper</p></li>
 </ul>
 </section>
-<section id="modelli-multipli">
-<h3>Modelli Multipli<a class="headerlink" href="#modelli-multipli" title="Link to this heading">#</a></h3>
-<p>Una stessa ricetta può contenere più modelli per gestire:</p>
-<ul class="simple">
-<li><p>Varianti dello stesso componente</p></li>
-<li><p>Orientamenti diversi</p></li>
-<li><p>Componenti differenti nella stessa applicazione</p></li>
+<hr class="docutils" />
+<section id="consigli-pratici-prima-di-iniziare">
+<h2>Consigli pratici prima di iniziare<a class="headerlink" href="#consigli-pratici-prima-di-iniziare" title="Link to this heading">#</a></h2>
+<section id="preparazione-materiale">
+<h3>Preparazione materiale<a class="headerlink" href="#preparazione-materiale" title="Link to this heading">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Checklist preparazione</strong></p>
+<p>Prima di iniziare la creazione di modelli, preparare:</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Almeno 10-20 pezzi del tipo da riconoscere (per test)</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Pezzi puliti e in buone condizioni (rappresentativi della produzione)</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Simulatori ingombro pinza (possono essere pezzi dello stesso tipo)</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Foglio per annotare coordinate robot (X, Y, RZ)</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> FlexiBowl vuoto e pulito</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Backlight/Toplight acceso e stabile</p></li>
 </ul>
-<p>Per aggiungere modelli alla stessa ricetta, tornare su “Edit Recipe” e ripetere il processo dal punto 2 (Creazione Modello).</p>
+</div>
 </section>
-<section id="salvataggio-e-sovrascrittura">
-<h3>Salvataggio e Sovrascrittura<a class="headerlink" href="#salvataggio-e-sovrascrittura" title="Link to this heading">#</a></h3>
+<section id="ambiente-ottimale">
+<h3>Ambiente ottimale<a class="headerlink" href="#ambiente-ottimale" title="Link to this heading">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Condizioni ideali per training</strong></p>
 <ul class="simple">
-<li><p><strong>Nuova ricetta</strong>: Save Recipe con nome nuovo</p></li>
-<li><p><strong>Aggiornamento ricetta</strong>: Save Recipe con stesso nome (sovrascrive)</p></li>
+<li><p>Illuminazione stabile (evitare luce solare diretta variabile)</p></li>
+<li><p>FlexiBowl fermo (non in vibrazione durante acquisizione immagini)</p></li>
+<li><p>Robot in posizione sicura (non deve interferire durante le acquisizioni)</p></li>
+<li><p>Software FlexiVision Easy aperto e ricetta base caricata</p></li>
 </ul>
+</div>
 </section>
+<section id="errori-comuni-da-evitare">
+<h3>Errori comuni da evitare<a class="headerlink" href="#errori-comuni-da-evitare" title="Link to this heading">#</a></h3>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p><strong>Evitare questi errori frequenti</strong></p>
+<p>❌ <strong>Non salvare le coordinate robot</strong> durante la preparazione fisica → impossibile calcolare offset gripper</p>
+<p>❌ <strong>Spostare il pezzo</strong> dopo aver salvato le coordinate → offset errato</p>
+<p>❌ <strong>Feature threshold troppo basso</strong> → modello troppo dettagliato, riconosce trama superficie</p>
+<p>❌ <strong>ROI troppo stretta</strong> → pezzi ai bordi non vengono rilevati</p>
+<p>❌ <strong>Istogrammi troppo piccoli</strong> → collisioni pinza con pezzi adiacenti</p>
+<p>❌ <strong>Non testare con pezzi multipli</strong> → problemi non rilevati fino alla produzione</p>
+<p>Seguire attentamente le procedure dettagliate nelle prossime sezioni per evitare questi problemi.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="supporto-e-risorse-aggiuntive">
+<h2>Supporto e risorse aggiuntive<a class="headerlink" href="#supporto-e-risorse-aggiuntive" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>i Tasti INFO</strong></p>
+<ul class="simple">
+<li><p><strong>Video tutorial</strong>:</p></li>
+<li><p><strong>Spiegazione Passo-Passo</strong>:</p></li>
+<li><p><strong>Supporto tecnico</strong>: <a class="reference external" href="mailto:support&#37;&#52;&#48;arsautomation&#46;com">support<span>&#64;</span>arsautomation<span>&#46;</span>com</a> per assistenza</p></li>
+</ul>
+<p>Per problemi specifici durante la creazione di modelli, consultare la sezione <a class="reference internal" href="#../26_trb_shooting_guide.md"><span class="xref myst">Troubleshooting</span></a>.</p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="prossimi-passi">
-<h2>Prossimi Passi<a class="headerlink" href="#prossimi-passi" title="Link to this heading">#</a></h2>
-<p>Nelle pagine successive troverai le procedure dettagliate per ogni fase, con tutti i passaggi tecnici, parametri e controlli di qualità necessari per una configurazione ottimale.</p>
-<hr class="docutils" />
-<hr class="docutils" />
+<h2>Prossimi passi<a class="headerlink" href="#prossimi-passi" title="Link to this heading">#</a></h2>
+<p>Una volta compresa la panoramica del processo, procedere con la creazione effettiva:</p>
+<p><strong>→ <a class="reference internal" href="#Nuovo_Modello/17_NuovaRicetta.md"><span class="xref myst">Inizia: Creazione Nuova Ricetta</span></a></strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Approccio consigliato</strong></p>
+<p>Per il primo modello:</p>
+<ol class="arabic simple">
+<li><p>Leggere completamente questa panoramica</p></li>
+<li><p>Seguire passo-passo la guida dettagliata iniziando da “Nuova Ricetta”</p></li>
+<li><p>Tenere aperte le pagine di riferimento durante il lavoro</p></li>
+<li><p>Annotare le coordinate e i parametri utilizzati per riferimento futuro</p></li>
+</ol>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 <br>
@@ -990,29 +944,20 @@ ___\\ \\     // //___
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzione">Introduzione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concetti-fondamentali">Concetti Fondamentali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-una-ricetta">Cos’è una Ricetta?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-un-modello">Cos’è un Modello?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ricetta-vs-modello-differenze-fondamentali">Ricetta vs Modello: Differenze fondamentali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-del-processo-completo">Panoramica del processo completo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fasi-principali">Fasi principali</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#il-processo-completo-6-fasi-principali">Il Processo Completo: 6 Fasi Principali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-1-creazione-della-ricetta">Fase 1: Creazione della Ricetta</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-2-creazione-del-modello">Fase 2: Creazione del Modello</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-3-definizione-area-di-lavoro-roi-region-of-interest">Fase 3: Definizione Area di Lavoro (ROI - Region of Interest)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-4-impostazione-tolleranze-accept-threshold">Fase 4: Impostazione Tolleranze (Accept Threshold)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-5-configurazione-istogrammi">Fase 5: Configurazione Istogrammi</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-6-calibrazione-robot-pick">Fase 6: Calibrazione Robot Pick</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#guida-alla-navigazione-sezioni-dettagliate">Guida alla navigazione sezioni dettagliate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consigli-pratici-prima-di-iniziare">Consigli pratici prima di iniziare</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparazione-materiale">Preparazione materiale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ambiente-ottimale">Ambiente ottimale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#errori-comuni-da-evitare">Errori comuni da evitare</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flusso-di-lavoro-completo">Flusso di Lavoro Completo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#note-importanti-per-il-processo">Note Importanti per il Processo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordine-delle-operazioni">Ordine delle Operazioni</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-multipli">Modelli Multipli</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-e-sovrascrittura">Salvataggio e Sovrascrittura</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supporto-e-risorse-aggiuntive">Supporto e risorse aggiuntive</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi passi</a></li>
 </ul>
   </nav></div>
 

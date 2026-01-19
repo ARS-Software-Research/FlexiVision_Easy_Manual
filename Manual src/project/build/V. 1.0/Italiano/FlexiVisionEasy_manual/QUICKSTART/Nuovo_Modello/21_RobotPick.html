@@ -215,7 +215,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">Creazione Ricette e Modelli - Panoramica</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="17_NuovaRicetta.html">Creare una Nuova Ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
@@ -240,10 +240,10 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../22_Config_FlexiBowl.html">Configurazione Del FlexiBowl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../22_Config_FlexiBowl.html">Configurazione guidata: FlexiBowl® Wizard</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html">Configurazione della Tramoggia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html">Configurazione della Tramoggia (Hopper)</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../24_Verifica_Risultati.html">Monitoraggio Applicazione</a></li>
@@ -408,18 +408,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-il-robot-pick">Cos’è il Robot Pick?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-enable">Sezione Enable</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-vision-result">Sezione Vision Result</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-insert-robot-coordinate">Sezione Insert Robot Coordinate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni">Funzioni</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-calibrazione">Procedura di Calibrazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-attivazione">Step 1: Attivazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-rilevamento-componente">Step 2: Rilevamento Componente</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-inserimento-coordinate-robot">Step 3: Inserimento Coordinate Robot</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-calcolo-offset">Step 4: Calcolo Offset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-attivazione-e-rilevamento-componente"><strong>Step 1: Attivazione e Rilevamento Componente</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-inserimento-coordinate-robot-e-calcolo-offset"><strong>Step 2: Inserimento Coordinate Robot e calcolo Offset</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#come-funziona-il-gripper-offset">Come Funziona il Gripper Offset?</a><ul class="nav section-nav flex-column">
@@ -427,8 +419,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione-e-salvataggio">Finalizzazione e Salvataggio</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-proseguimento">Step 5: Proseguimento</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-salvataggio-ricetta">Step 6: Salvataggio Ricetta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-proseguimento-e-salvataggio-ricetta">Step 3: Proseguimento e Salvataggio Ricetta</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-multipli">Modelli Multipli</a><ul class="nav section-nav flex-column">
@@ -452,10 +443,7 @@ document.write(`
                   
   <section id="calibrazione-robot-pick">
 <h1>Calibrazione Robot Pick<a class="headerlink" href="#calibrazione-robot-pick" title="Link to this heading">#</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">In questa pagina</p>
-<p>Collegherai le coordinate della visione con quelle del robot per consentire un prelievo preciso dei componenti.</p>
-</div>
+<p>In questa pagina vedremo come collegare le coordinate della visione con quelle del robot per consentire un prelievo preciso dei componenti.</p>
 <section id="cose-il-robot-pick">
 <h2>Cos’è il Robot Pick?<a class="headerlink" href="#cose-il-robot-pick" title="Link to this heading">#</a></h2>
 <p>La funzione <strong>Robot Pick</strong> calcola l’offset tra le coordinate rilevate da FlexiVision e le coordinate reali del robot, permettendo al robot di prelevare i componenti nella posizione corretta.</p>
@@ -463,68 +451,45 @@ document.write(`
 <hr class="docutils" />
 <section id="parametri-principali">
 <h2>Parametri Principali<a class="headerlink" href="#parametri-principali" title="Link to this heading">#</a></h2>
-<section id="sezione-enable">
-<h3>Sezione Enable<a class="headerlink" href="#sezione-enable" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Parametro</p></th>
+<tr class="row-odd"><th class="head"><p>Sezione</p></th>
+<th class="head"><p>Parametro</p></th>
 <th class="head"><p>Funzione</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Enable Robot Pick</strong></p></td>
+<tr class="row-even"><td><p>Enable</p></td>
+<td><p><strong>Enable Robot Pick</strong></p></td>
 <td><p>Attiva la calibrazione del robot</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="sezione-vision-result">
-<h3>Sezione Vision Result<a class="headerlink" href="#sezione-vision-result" title="Link to this heading">#</a></h3>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Parametro</p></th>
-<th class="head"><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>X cord</strong></p></td>
+<tr class="row-odd"><td><p>Vision Result</p></td>
+<td><p><strong>X cord</strong></p></td>
 <td><p>Coordinata X rilevata dalla visione</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Y cord</strong></p></td>
+<tr class="row-even"><td><p>Vision Result</p></td>
+<td><p><strong>Y cord</strong></p></td>
 <td><p>Coordinata Y rilevata dalla visione</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>RZ cord</strong></p></td>
+<tr class="row-odd"><td><p>Vision Result</p></td>
+<td><p><strong>RZ cord</strong></p></td>
 <td><p>Rotazione Z rilevata dalla visione</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="sezione-insert-robot-coordinate">
-<h3>Sezione Insert Robot Coordinate<a class="headerlink" href="#sezione-insert-robot-coordinate" title="Link to this heading">#</a></h3>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Parametro</p></th>
-<th class="head"><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>X cord</strong></p></td>
+<tr class="row-even"><td><p>Insert Robot Coordinate</p></td>
+<td><p><strong>X cord</strong></p></td>
 <td><p>Coordinata X del robot (da inserire)</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Y cord</strong></p></td>
+<tr class="row-odd"><td><p>Insert Robot Coordinate</p></td>
+<td><p><strong>Y cord</strong></p></td>
 <td><p>Coordinata Y del robot (da inserire)</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>RZ cord</strong></p></td>
+<tr class="row-even"><td><p>Insert Robot Coordinate</p></td>
+<td><p><strong>RZ cord</strong></p></td>
 <td><p>Rotazione Z del robot (da inserire)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</section>
-<section id="funzioni">
-<h3>Funzioni<a class="headerlink" href="#funzioni" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Funzione</p></th>
@@ -542,19 +507,13 @@ document.write(`
 </table>
 </div>
 </section>
-</section>
 <hr class="docutils" />
 <section id="procedura-di-calibrazione">
 <h2>Procedura di Calibrazione<a class="headerlink" href="#procedura-di-calibrazione" title="Link to this heading">#</a></h2>
-<section id="step-1-attivazione">
-<h3>Step 1: Attivazione<a class="headerlink" href="#step-1-attivazione" title="Link to this heading">#</a></h3>
+<section id="step-1-attivazione-e-rilevamento-componente">
+<h3><strong>Step 1: Attivazione e Rilevamento Componente</strong><a class="headerlink" href="#step-1-attivazione-e-rilevamento-componente" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Cliccare su <strong>Enable Robot Pick</strong></p></li>
-</ol>
-</section>
-<section id="step-2-rilevamento-componente">
-<h3>Step 2: Rilevamento Componente<a class="headerlink" href="#step-2-rilevamento-componente" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="2">
 <li><p>Cliccare su <strong>Find Object</strong></p>
 <ul class="simple">
 <li><p>Il sistema rileverà il componente di riferimento</p></li>
@@ -562,13 +521,14 @@ document.write(`
 </ul>
 </li>
 </ol>
-<div class="note admonition">
-<p class="admonition-title">Vision Result</p>
-<p>Queste sono le coordinate che FlexiVision “vede” nell’immagine. Non sono ancora collegate al sistema di coordinate del robot.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Vision Result
+Queste sono le coordinate che FlexiVision “vede” nell’immagine. Non sono ancora collegate al sistema di coordinate del robot.</p>
 </div>
 </section>
-<section id="step-3-inserimento-coordinate-robot">
-<h3>Step 3: Inserimento Coordinate Robot<a class="headerlink" href="#step-3-inserimento-coordinate-robot" title="Link to this heading">#</a></h3>
+<section id="step-2-inserimento-coordinate-robot-e-calcolo-offset">
+<h3><strong>Step 2: Inserimento Coordinate Robot e calcolo Offset</strong><a class="headerlink" href="#step-2-inserimento-coordinate-robot-e-calcolo-offset" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="3">
 <li><p>Nel riquadro <strong>Insert Robot Coordinates</strong>, inserire le coordinate salvate durante la creazione del modello:</p>
 <ul class="simple">
@@ -580,11 +540,8 @@ document.write(`
 </ol>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>⚠️ IMPORTANTE: Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!</p>
+<p>Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!</p>
 </div>
-</section>
-<section id="step-4-calcolo-offset">
-<h3>Step 4: Calcolo Offset<a class="headerlink" href="#step-4-calcolo-offset" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="4">
 <li><p>Cliccare su <strong>Gripper Offset</strong></p>
 <ul class="simple">
@@ -622,15 +579,10 @@ Il robot andrà a prelevarlo a X=370, Y=470
 <hr class="docutils" />
 <section id="finalizzazione-e-salvataggio">
 <h2>Finalizzazione e Salvataggio<a class="headerlink" href="#finalizzazione-e-salvataggio" title="Link to this heading">#</a></h2>
-<section id="step-5-proseguimento">
-<h3>Step 5: Proseguimento<a class="headerlink" href="#step-5-proseguimento" title="Link to this heading">#</a></h3>
+<section id="step-3-proseguimento-e-salvataggio-ricetta">
+<h3>Step 3: Proseguimento e Salvataggio Ricetta<a class="headerlink" href="#step-3-proseguimento-e-salvataggio-ricetta" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="5">
 <li><p>Cliccare su <strong>Next</strong></p></li>
-</ol>
-</section>
-<section id="step-6-salvataggio-ricetta">
-<h3>Step 6: Salvataggio Ricetta<a class="headerlink" href="#step-6-salvataggio-ricetta" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="6">
 <li><p>Cliccare su <strong>Save Recipe</strong> per salvare l’intera configurazione</p></li>
 </ol>
 <div class="success admonition">
@@ -669,13 +621,11 @@ Il robot andrà a prelevarlo a X=370, Y=470
 <h2>Verifica Finale<a class="headerlink" href="#verifica-finale" title="Link to this heading">#</a></h2>
 <section id="checklist-completamento">
 <h3>Checklist Completamento<a class="headerlink" href="#checklist-completamento" title="Link to this heading">#</a></h3>
-<p>Prima di utilizzare la ricetta in produzione, verifica:</p>
-<ul class="contains-task-list simple">
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Il modello riconosce correttamente i componenti</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> L’Accept Threshold è appropriato</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Gli istogrammi rilevano correttamente le aree occupate</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Il robot preleva i componenti nella posizione corretta</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> La ricetta è stata salvata</p></li>
+<p>Prima di utilizzare la ricetta in produzione, continua con :</p>
+<ul class="simple">
+<li><p>[Configurazione del FlexiBowl ] (QUICKSTART/22_Config_FlexiBowl.md)</p></li>
+<li><p>[Configurazione della Tramoggia ] (QUICKSTART/23_Config_Hopper.md)</p></li>
+<li><p>[Monitoraggio Applicazione ] (QUICKSTART/24_Verifica_Risultati.md)</p></li>
 </ul>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -1003,18 +953,10 @@ ___\\ \\     // //___
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-il-robot-pick">Cos’è il Robot Pick?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-enable">Sezione Enable</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-vision-result">Sezione Vision Result</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sezione-insert-robot-coordinate">Sezione Insert Robot Coordinate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzioni">Funzioni</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-calibrazione">Procedura di Calibrazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-attivazione">Step 1: Attivazione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-rilevamento-componente">Step 2: Rilevamento Componente</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-inserimento-coordinate-robot">Step 3: Inserimento Coordinate Robot</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-calcolo-offset">Step 4: Calcolo Offset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-attivazione-e-rilevamento-componente"><strong>Step 1: Attivazione e Rilevamento Componente</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-inserimento-coordinate-robot-e-calcolo-offset"><strong>Step 2: Inserimento Coordinate Robot e calcolo Offset</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#come-funziona-il-gripper-offset">Come Funziona il Gripper Offset?</a><ul class="nav section-nav flex-column">
@@ -1022,8 +964,7 @@ ___\\ \\     // //___
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione-e-salvataggio">Finalizzazione e Salvataggio</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-proseguimento">Step 5: Proseguimento</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-salvataggio-ricetta">Step 6: Salvataggio Ricetta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-proseguimento-e-salvataggio-ricetta">Step 3: Proseguimento e Salvataggio Ricetta</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-multipli">Modelli Multipli</a><ul class="nav section-nav flex-column">

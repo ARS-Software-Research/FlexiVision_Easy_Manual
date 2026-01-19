@@ -1,24 +1,55 @@
-# Configurazione della Tramoggia 
-8.	Hooper configuration da hopper setup  
-a.	Regolare il num  
-b.	Cliccare su config hopper x   
-c.	Definire l’area di controllo per lo scarico della tramoggia modificando il riquadro   
-d.	Cliccare su next   
-e.	liberare l’area di visione dai componenti   
-f.	Cliccare sul primo Capture    
-g.	Posizionare nell’area di visione il numero minimo di componenti che vogliamo avere su ogni sezione del Flexibowl perché la tramoggia non effettui lo scarico (se ce ne sono meno la tramoggia ne scaricherà altri)  
-h.	Cliccare su auto in expression builder   
-i.	Levare qualche componente dall’area di visione  
-j.	Cliccare su test   
-k.	Impostare gli steps  
-i.	Svuotare flexibowl   
-ii.	Andiamo sulla sequenza da flexibowl setup   
-iii.	Eseguiamo la sequenza   
-iv.	Contare quante sequenze servono perché i componenti nell’area di visione arrivino all’area di scarico   
-v.	Impostare negli steps questo numero   
-Impostare il time in base all’applicazione (per quanti millisecondi la hopper vibrerà)  
-Solitamente si mette un valore compreso tra 100 e 1000 (valore medio 500)  
-Aumentare o diminuire il time di 100 in 100 per trovare un valore adatto alla nostra applicazione.   
-Tip: il tempo di vibrazione dipende da quanti componenti vogliamo che la tramoggia scarichi, ma anche da quanti componenti sono all’interno della vasca. È importante avere un flusso costante di componenti nella vasca della tramoggia.   
 
-ALLA FINE DI OGNI BLOCCO SALVARE LA RICETTA!!!! OGNI MODIFICA VIENE SALVATA. 
+# Configurazione della Tramoggia (Hopper)
+
+La configurazione della tramoggia permette di gestire il rifornimento automatico dei componenti sul disco del FlexiBowl®. Il sistema utilizza la visione artificiale per determinare quando il livello di riempimento è insufficiente e attivare la vibrazione di scarico.
+
+## Accesso alla Configurazione
+
+1. Cliccare sulla sezione "SETUP"
+2. Dalla sezione **Hopper Setup**, è possibile visualizzare e gestire le unità di carico collegate.
+3. Selezionare la casella **Enable Hopper X** per attivare la tramoggia corrispondente.
+4. Cliccare sul pulsante **Config Hopper X** per accedere alla calibrazione specifica (es. *Define Area Check Hopper Cam 1*).
+
+### **Step 1: Definizione dell'Area di Controllo**
+
+In questa fase si definisce la porzione di disco che la telecamera deve monitorare per lo scarico.
+
+5. Modificare il riquadro blu a schermo per inquadrare l'area dove cadono i componenti dalla tramoggia.
+
+ **Strumenti di supporto**:
+   * **Info**: Cliccare per visualizzare dettagli sulle funzionalità della pagina.
+   * **Expert**: Accesso a impostazioni avanzate di geometria e soglia.
+
+### **Step 2: Definizione dei Valori di Soglia**
+
+6. Nella pagina **Define Value Hopper Cam**, si istruisce il sistema a distinguere tra disco vuoto e disco pieno.
+7. Rimuovere tutti i componenti dall'area di visione e cliccare sul primo pulsante **CAPTURE**.
+8. Posizionare il numero minimo di componenti che si desidera mantenere sul disco. Se il numero scende sotto questa soglia, la tramoggia si attiverà.
+9. Cliccare sul secondo pulsante **CAPTURE**.
+10. Cliccando su **AUTO** nell'Expression Builder, il sistema calcola automaticamente i valori di **Mean** (Media) e **Standard Deviation**.
+* **Turn FLB**: Utilizzare questo comando per ruotare il disco durante il setup.
+11. Rimuovere alcuni pezzi e cliccare su **TEST**. L'indicatore diventa **Verde** se la tramoggia si attiva (scarico necessario), **Rosso** altrimenti.
+
+### **Step 3: Parametri Operativi**
+
+Tornare alla schermata principale di Hopper Setup per definire il comportamento meccanico.
+
+```{list-table} Parametri di Funzionamento
+   :widths: 20 80
+   :header-rows: 1
+
+   * - Parametro
+     - Descrizione e Procedura
+   * - **Steps**
+     - Numero di sequenze necessarie per portare i pezzi dallo scarico all'area di prelievo. Per calcolarlo: svuotare il disco, eseguire la sequenza e contare quanti cicli servono perché i pezzi arrivino alla camera.
+   * - **Time**
+     - Millisecondi di vibrazione della tramoggia. Valore consigliato: **100 - 1000 ms** (Media: **500 ms**). Regolare di +/- 100 ms in base al flusso desiderato.
+```
+
+```{tip}
+   Il tempo di vibrazione dipende non solo dal valore impostato, ma anche dal volume di componenti attualmente presenti nella vasca della tramoggia. È essenziale mantenere un carico costante per un flusso uniforme.
+```
+
+```{important}
+   **Salvataggio della Ricetta**: Al termine di ogni blocco di modifiche, è fondamentale **Salvare la Ricetta**. Ogni variazione apportata viene memorizzata solo se la ricetta viene salvata correttamente prima di uscire o cambiare pagina.
+```

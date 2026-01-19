@@ -1,28 +1,21 @@
 # Definizione ROI e Tolleranze
 
-```{admonition} In questa pagina
-:class: tip
-Definirai l'area di lavoro e le tolleranze di riconoscimento per il modello.
-```
+In questa pagina si procede alla definizione della Region Search e le tolleranze di riconoscimento per il modello.
 
-## Parte 1: Define Robot Pick Area
 
-### Cos'è la Region Search?
+## Cos'è la Region Search?
 La **Region Search** è l'area all'interno della quale FlexiVision cercherà e rileverà i componenti da prelevare.
 
-### Procedura
+## Procedura
 
-**Step 1: Definizione Area**
+### **Step 1: Definizione Area**
 1. Nella pagina **Define Robot Pick Area**, modificare il riquadro per delimitare l'area di ricerca
-2. Cliccare su **Next** → si aprirà la pagina **Locator Model**
+2. Cliccare su **Next** 
+3. si aprirà la pagina **Locator Model 1 Cam 1**
 
 ```{tip}
 Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zone non raggiungibili.
 ```
-
----
-
-## Parte 2: Locator Model - Impostazione Tolleranze
 
 ### Parametri Principali
 
@@ -31,17 +24,15 @@ Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zo
 | **Test** | Esegue un test di riconoscimento |
 | **Accept Threshold** | Soglia minima di fedeltà (score) |
 
-### Procedura di Test
 
-**Step 1: Preparazione Scena**
-1. Posizionare **altri componenti** nell'area di visione
+### **Step 2: Preparazione Scena ed Esecuzione Test**
+4. Posizionare **altri componenti** nell'area di visione
    
 ```{warning}
 Non toccare il componente di riferimento usato per il training!
 ```
 
-**Step 2: Esecuzione Test**
-2. Cliccare su **Test** per verificare il riconoscimento
+5. Cliccare su **Test** per verificare il riconoscimento
 
 ---
 
@@ -60,8 +51,8 @@ Non toccare il componente di riferimento usato per il training!
 - **Valore più basso** → Più permissivo (rileva anche componenti meno perfetti)
 ```
 
-**Step 3: Regolazione Soglia**
-3. Modificare l'**Accept Threshold** in base alle esigenze dell'applicazione
+### **Step 3: Regolazione Soglia**
+6. Modificare l'**Accept Threshold** in base alle esigenze dell'applicazione
 
 ---
 
@@ -78,7 +69,7 @@ Nel riquadro verranno mostrati i componenti con le seguenti informazioni:
 | **Rotation** | Angolo di rotazione |
 | **Score** | Percentuale di fedeltà al modello |
 
-### Ordinamento Automatico
+
 
 ```{admonition} Sistema di Priorità
 :class: info
@@ -93,7 +84,7 @@ FlexiVision ordina automaticamente tutti i componenti riconosciuti per **score d
 
 ## Finalizzazione
 
-**Step 4-5: Pulizia e Proseguimento**
+### **Step 4: Pulizia e Proseguimento**
 4. Rimuovere **tutti i componenti** dall'area, **tranne il componente di riferimento**
 5. Cliccare su **Next** → si aprirà la pagina degli **Histogram**
 
@@ -101,8 +92,6 @@ FlexiVision ordina automaticamente tutti i componenti riconosciuti per **score d
 Procedi alla [Configurazione Istogrammi](#pagina-5-configurazione-istogrammi) per definire le aree libere.
 ```
 
----
----
 ```{toctree}  
 19b_Expert.md
 ```

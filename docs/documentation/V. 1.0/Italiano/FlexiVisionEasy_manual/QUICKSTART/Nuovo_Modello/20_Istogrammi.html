@@ -215,7 +215,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html">15. Protocol Setup</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">Creare una nuova ricetta e un nuovo modello</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html">Creazione Ricette e Modelli - Panoramica</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="17_NuovaRicetta.html">Creare una Nuova Ricetta</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="17b_Expert.html">tasto expert della pagina…</a></li>
 </ul>
@@ -240,10 +240,10 @@
 </details></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../22_Config_FlexiBowl.html">Configurazione Del FlexiBowl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../22_Config_FlexiBowl.html">Configurazione guidata: FlexiBowl® Wizard</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html">Configurazione della Tramoggia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html">Configurazione della Tramoggia (Hopper)</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../24_Verifica_Risultati.html">Monitoraggio Applicazione</a></li>
@@ -407,22 +407,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-un-istogramma">Cos’è un Istogramma?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzionamento">Funzionamento</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-un-istogramma">Cos’è un Istogramma?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creazione-istogrammi">Creazione Istogrammi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-funzione">Accesso alla Funzione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di Configurazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#istogramma-singolo">Istogramma Singolo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-selezione-ed-attivazione"><strong>Step 1: Selezione ed Attivazione</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-posizionamento-area"><strong>Step 2: Posizionamento Area</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-configurazione-automatica"><strong>Step 3: Configurazione Automatica</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#istogrammi-multipli">Istogrammi Multipli</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-usarli">Quando Usarli</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura">Procedura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-3-ripetizione"><strong>Step 1-3: Ripetizione</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-stati">Interpretazione Stati</a><ul class="nav section-nav flex-column">
@@ -430,7 +425,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cosa-significa-triggered">Cosa Significa “Triggered”?</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-10-proseguimento"><strong>Step 10: Proseguimento</strong></a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -444,16 +442,10 @@ document.write(`
                   
   <section id="gli-istogrammi">
 <h1>Gli istogrammi<a class="headerlink" href="#gli-istogrammi" title="Link to this heading">#</a></h1>
-<p>Configurazione Istogrammi</p>
-<div class="tip admonition">
-<p class="admonition-title">In questa pagina</p>
-<p>Imparerai a configurare gli istogrammi per verificare che le aree critiche siano libere da ostacoli.</p>
-</div>
+<p>In questa pagina vedremo come configurare gli istogrammi per verificare che le aree critiche siano libere da ostacoli.</p>
 <section id="cose-un-istogramma">
 <h2>Cos’è un Istogramma?<a class="headerlink" href="#cose-un-istogramma" title="Link to this heading">#</a></h2>
 <p>Un <strong>istogramma</strong> in FlexiVision è uno strumento che monitora un’area specifica dell’immagine per verificare che sia libera. Viene utilizzato per controllare, ad esempio, che lo spazio necessario alla pinza per afferrare il componente non sia occupato da altri oggetti.</p>
-<section id="funzionamento">
-<h3>Funzionamento<a class="headerlink" href="#funzionamento" title="Link to this heading">#</a></h3>
 <div class="note admonition">
 <p class="admonition-title">Principio di Funzionamento</p>
 <p>L’istogramma analizza i livelli di bianco e nero in un’area definita:</p>
@@ -463,14 +455,10 @@ document.write(`
 </ul>
 </div>
 </section>
-</section>
 <hr class="docutils" />
 <section id="creazione-istogrammi">
 <h2>Creazione Istogrammi<a class="headerlink" href="#creazione-istogrammi" title="Link to this heading">#</a></h2>
-<section id="accesso-alla-funzione">
-<h3>Accesso alla Funzione<a class="headerlink" href="#accesso-alla-funzione" title="Link to this heading">#</a></h3>
 <p>Dalla pagina <strong>Locator Model</strong>, dopo aver cliccato su <strong>Next</strong>, si aprirà l’elenco degli istogrammi disponibili (fino a 8 per modello).</p>
-</section>
 <section id="parametri-principali">
 <h3>Parametri Principali<a class="headerlink" href="#parametri-principali" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -499,36 +487,38 @@ document.write(`
 </table>
 </div>
 </section>
-</section>
 <hr class="docutils" />
-<section id="procedura-di-configurazione">
-<h2>Procedura di Configurazione<a class="headerlink" href="#procedura-di-configurazione" title="Link to this heading">#</a></h2>
-<section id="istogramma-singolo">
-<h3>Istogramma Singolo<a class="headerlink" href="#istogramma-singolo" title="Link to this heading">#</a></h3>
-<p><strong>Step 1: Selezione</strong></p>
+<section id="step-1-selezione-ed-attivazione">
+<h3><strong>Step 1: Selezione ed Attivazione</strong><a class="headerlink" href="#step-1-selezione-ed-attivazione" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Cliccare su <strong>Histogram 1</strong></p></li>
+<li><p>Cliccare su <strong>Enable Histogram</strong></p></li>
 </ol>
-<p><strong>Step 2: Attivazione</strong>
-2. Cliccare su <strong>Enable Histogram</strong></p>
-<p><strong>Step 3: Posizionamento Area</strong>
-3. Spostare il <strong>riquadro</strong> dell’istogramma nell’area che deve rimanere libera</p>
+</section>
+<section id="step-2-posizionamento-area">
+<h3><strong>Step 2: Posizionamento Area</strong><a class="headerlink" href="#step-2-posizionamento-area" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="3">
+<li><p>Spostare il <strong>riquadro</strong> dell’istogramma nell’area che deve rimanere libera</p>
 <ul class="simple">
 <li><p>Tipicamente: area di presa della pinza</p></li>
 <li><p>Margini attorno al componente</p></li>
 <li><p>Zone di passaggio del robot</p></li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Importante: Creare sempre un istogramma leggermente più grande dello stretto necessario per evitare falsi errori.</p>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Creare sempre un istogramma leggermente più grande dello stretto necessario per evitare falsi errori.</p>
 </div>
-<p><strong>Step 4: Configurazione Automatica</strong>
-4. Cliccare su <strong>AUTO</strong> in Expression Builder</p>
-<p><strong>Step 5: Verifica</strong>
-5. Cliccare su <strong>TEST</strong>
-6. Verificare che il riquadro diventi <strong>verde</strong> ✅</p>
-<p><strong>Step 6: Conferma</strong>
-7. Cliccare su <strong>Next</strong></p>
+</section>
+<section id="step-3-configurazione-automatica">
+<h3><strong>Step 3: Configurazione Automatica</strong><a class="headerlink" href="#step-3-configurazione-automatica" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="4">
+<li><p>Cliccare su <strong>AUTO</strong> in Expression Builder</p></li>
+<li><p>Cliccare su <strong>TEST</strong></p></li>
+<li><p>Verificare che il riquadro diventi <strong>verde</strong></p></li>
+<li><p>Cliccare su <strong>Next</strong></p></li>
+</ol>
 </section>
 </section>
 <hr class="docutils" />
@@ -543,11 +533,10 @@ document.write(`
 <li><p>L’area di presa ha geometrie particolari</p></li>
 </ul>
 </section>
-<section id="procedura">
-<h3>Procedura<a class="headerlink" href="#procedura" title="Link to this heading">#</a></h3>
-<p><strong>Step 1-7: Ripetizione</strong>
-Ripetere la procedura per ogni istogramma necessario (fino a 8 per modello)</p>
-<p><strong>Step 8: Test Complessivo</strong>
+<section id="step-1-3-ripetizione">
+<h3><strong>Step 1-3: Ripetizione</strong><a class="headerlink" href="#step-1-3-ripetizione" title="Link to this heading">#</a></h3>
+<p>Ripetere la procedura per ogni istogramma necessario (fino a 8 per modello)</p>
+<p><strong>Step 4: Test Complessivo</strong>
 8. Nella pagina di elenco di tutti gli istogrammi, cliccare su <strong>TEST</strong>
 9. Visualizzare tutti gli istogrammi contemporaneamente</p>
 </section>
@@ -600,15 +589,16 @@ Ripetere la procedura per ogni istogramma necessario (fino a 8 per modello)</p>
 <hr class="docutils" />
 <section id="finalizzazione">
 <h2>Finalizzazione<a class="headerlink" href="#finalizzazione" title="Link to this heading">#</a></h2>
-<p><strong>Step 10: Proseguimento</strong>
-10. Dopo aver configurato tutti gli istogrammi necessari, cliccare su <strong>Next</strong>
-11. Si aprirà la pagina <strong>Robot Model Pick Cam</strong></p>
+<section id="step-10-proseguimento">
+<h3><strong>Step 10: Proseguimento</strong><a class="headerlink" href="#step-10-proseguimento" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="10">
+<li><p>Dopo aver configurato tutti gli istogrammi necessari, cliccare su <strong>Next</strong></p></li>
+<li><p>Si aprirà la pagina <strong>Robot Model Pick Cam</strong></p></li>
+</ol>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>Procedi alla <a class="reference internal" href="#pagina-6-calibrazione-robot-pick"><span class="xref myst">Calibrazione Robot</span></a> per completare la configurazione.</p>
 </div>
-<hr class="docutils" />
-<hr class="docutils" />
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="20b_Expert.html">expert della pagina …</a></li>
@@ -877,6 +867,7 @@ ___\\ \\     // //___
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
 </section>
+</section>
 
 
                 </article>
@@ -923,22 +914,17 @@ ___\\ \\     // //___
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-un-istogramma">Cos’è un Istogramma?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funzionamento">Funzionamento</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-un-istogramma">Cos’è un Istogramma?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creazione-istogrammi">Creazione Istogrammi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-funzione">Accesso alla Funzione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di Configurazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#istogramma-singolo">Istogramma Singolo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-selezione-ed-attivazione"><strong>Step 1: Selezione ed Attivazione</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-posizionamento-area"><strong>Step 2: Posizionamento Area</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-configurazione-automatica"><strong>Step 3: Configurazione Automatica</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#istogrammi-multipli">Istogrammi Multipli</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-usarli">Quando Usarli</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura">Procedura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-3-ripetizione"><strong>Step 1-3: Ripetizione</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpretazione-stati">Interpretazione Stati</a><ul class="nav section-nav flex-column">
@@ -946,7 +932,10 @@ ___\\ \\     // //___
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cosa-significa-triggered">Cosa Significa “Triggered”?</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione">Finalizzazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-10-proseguimento"><strong>Step 10: Proseguimento</strong></a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

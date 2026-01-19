@@ -1,18 +1,90 @@
-# Configurazione Del FlexiBowl 
-7.	Flexibowl wizard da flexibowl setup   
-a.	Cliccare su flexibowl wizard   
-b.	Selezionare modello   
-c.	…  
-d.	Vedremo tutti i parametri impostati in base alle informazioni appena inserite.   
-e.	Cliccare su test sequence per   
-Lo scopo è avere una sequenza che rispetti questi criteri:    
-	Il flip finisce nell’esatto momento in cui finisce il move. Non prima e non dopo. (aggiustare questo da Flip Count e Flip Delay)  
-	Il componente non deve muoversi quando la camera scatta la foto   
-•	Diminuire velocità e accelerazione/ decelerazione o angolo   
-•	Inserire una pausa di stabilizzazione nella sequenza “pause ...ms”  
-•	Se questo non dovesse essere sufficiente, abbiamo probabilmente scelto la superficie sbagliata!!!!! Grave!   
-	Nel caso in cui si utilizza un soffio, regolare l’intensità del flusso d’aria in modo da avere i componenti ben separati e ribaltati nell’area di visione  
-Tip: utilizzare sempre il soffio pre-flip (sarà il flip stesso a sparpagliare i componenti) e utilizzare il soffio post-flip (che invece raggruppa i componenti) solo in caso di necessità (applicazioni molto veloci)  
-Importante: è questo il momento di effettuare la regolazione di tutti gli accessori montati sul FlexiBowl, ed eventualmente modificare la movimentazione in base al comportamento degli accessori.   
-Importante: cliccare su Synchronize Parameters ogni volta che si effettua una modifica dei parametri.   
-## CERCARE DI CREARE UNA GUIDA PER LA REGOLAZIONE DEI PARAMETRI IN BASE AL TIPO DI COMPONENTE
+
+# Configurazione guidata: FlexiBowl® Wizard
+
+
+L'interfaccia **FlexiBowl® Wizard** è uno strumento interattivo progettato per guidare l'utente nella configurazione dei parametri di alimentazione in base alla specifica famiglia di prodotti da gestire.
+
+## Accesso al Wizard
+
+Per avviare la procedura, recarsi nella sezione **Setup** del software FlexiVision e cliccare sul pulsante **FlexiBowl Wizard**.
+
+```{note}
+   Prima di procedere, verrà visualizzata una pagina di benvenuto con i termini d'uso. È necessario leggere il disclaimer e cliccare su **Next** per iniziare la configurazione.
+```
+
+### **Step 1: Selezione Modello e Rotazione**
+
+In questa fase si definiscono le caratteristiche hardware del sistema:
+
+1. Selezionare la taglia del dispositivo (es. 200, 350, 500, ecc.).
+2. Definire il senso di rotazione del disco (**Clockwise** o **CounterClockwise**).
+
+### **Step 2: Caratterizzazione del Componente**
+
+Il sistema richiede informazioni sulla morfologia dei pezzi per ottimizzare la separazione.
+
+3. Selezionare la geometria che meglio descrive il componente:
+
+* **FLAT**: Componenti piatti.
+* **CYLINDRICAL**: Componenti cilindrici.
+* **COMPLEX**: Geometrie articolate o irregolari.
+
+4. Definire come i componenti interagiscono tra loro sulla superficie:
+
+* **Tangling / Stacking**: I pezzi tendono ad agganciarsi o impilarsi.
+* **Overlapping**: I pezzi tendono a sormontarsi.
+* **No Tangling / Not Overlapping**: I pezzi rimangono separati e non si sovrappongono.
+
+### **Step 3: Test degli Accessori**
+
+5. Selezionare dal menu a tendina se il FlexiBowl® è equipaggiato con il modulo **Air-blow**.
+6. Cliccare su **TEST Air-blow** per verificare il funzionamento.
+7. Selezionare **USE** per abilitarlo nell'applicazione corrente, altrimenti cliccare su **DON'T USE**.
+
+Il "Flip" è l'unità che genera l'impulso meccanico per ribaltare i pezzi.
+
+8. Cliccare su **TEST FLIP** per verificare la vibrazione.
+ 
+```{important}
+Se l'impulso non è avvertibile, verificare che l'aria compressa sia collegata e agire sul regolatore di pressione meccanico posto sul pannello di controllo.
+```
+```{note}
+   Il Flip è fondamentale per separare, districare o capovolgere i componenti durante il ciclo di alimentazione.
+```
+
+9. Al termine del Wizard, cliccando su **FINISH**, il sistema calcolerà automaticamente i parametri. Sarà quindi possibile affinarli nella dashboard riassuntiva.
+
+```{list-table} Panoramica Parametri
+   :widths: 20 30 50
+   :header-rows: 1
+
+   * - Gruppo
+     - Parametro
+     - Descrizione
+   * - **Move**
+     - Accel, Decel, Speed, Angle
+     - Parametri del movimento principale del disco.
+   * - **Option**
+     - Flip Count, Flip Delay, Blow Time
+     - Gestione dei tempi di attivazione degli accessori.
+   * - **Shake**
+     - Accel, Speed, Angle CW/CCW
+     - Parametri della vibrazione di scuotimento (separazione).
+```
+
+### **Step 4: Validazione della Sequenza**
+
+10. Utilizzare la funzione **Test Sequence** per verificare che il ciclo rispetti i seguenti criteri di efficienza:
+
+```{tip}
+1. **Sincronizzazione**: L'impulso di Flip deve terminare esattamente nello stesso istante in cui termina il movimento (*Move*). Regolare i valori di *Flip Count* e *Delay* per allinearli.
+2. **Stabilità Immagine**: I componenti devono essere immobili al momento dello scatto della camera.
+   * Se i pezzi si muovono, diminuire velocità/accelerazione o inserire una pausa (es. ``pause 200ms``).
+   * Se il problema persiste, la superficie del disco (superficie di grip) potrebbe non essere corretta.
+3. **Regolazione Soffio**:
+   * **Tip**: Usare preferibilmente il soffio *pre-flip* per sparpagliare i pezzi. 
+   * Usare il soffio *post-flip* (che raggruppa i pezzi) solo se strettamente necessario per cicli molto veloci.
+```
+```{warning}
+   Cliccare sempre su **Synchronize Parameters** dopo ogni modifica manuale per rendere attive le variazioni nel controller.
+```

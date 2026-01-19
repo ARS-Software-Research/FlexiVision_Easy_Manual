@@ -7,56 +7,63 @@ Imparerai a creare un modello di riferimento per il riconoscimento dei component
 
 ## Fase 1: Preparazione del Setup Fisico
 
-### Posizionamento Iniziale
-
-**Step 1-3: Preparazione Robot**
+### **Step 1: Preparazione Robot**
 1. Posizionare un componente al centro dell'area di visione
 2. Dal **pendant del robot**:
    - Selezionare il **frame** e il **tool** calibrato su FlexiVision
    - Portare l'**ultimo asse** del tool a **rotazione zero** (Rz = 0°)
 3. Rimuovere temporaneamente il componente
 
-**Step 4-6: Posizionamento Componente**
-4. Portare il robot a livello della superficie
-5. Riposizionare il componente e afferrarlo con la pinza
-6. Aprire e chiudere la pinza **2-3 volte** per centrare il componente
+### **Step 2: Posizionamento Componente**   
+4. Portare il robot a livello della superficie  
+5. Riposizionare il componente e afferrarlo con la pinza  
+6. Aprire e chiudere la pinza **2-3 volte** per centrare il componente  
 
-### Simulazione Ingombro Pinza
-
-**Step 7: Oggetti Laterali**
+### **Step 3: Simulazione Ingombro Pinza**
 7. Posizionare **due oggetti** ai lati del componente per simulare l'ingombro della pinza
 
-```{warning}
-Importante: Lasciare gli oggetti leggermente più distanti del necessario per evitare errori nella creazione del modello.
-```
+```{important}
+Lasciare gli oggetti leggermente più distanti del necessario per evitare errori nella creazione del modello.
+``` 
 
-### Salvataggio Coordinate
-
-**Step 8: Annotare le Coordinate**
+### **Step 4: Annotare le Coordinate**
 8. Salvare le coordinate dell'ultimo asse del robot:
    - **X** (coordinata X)
    - **Y** (coordinata Y)  
    - **Rz** (rotazione attorno a Z)
 
-```{danger}
-⚠️ IMPORTANTE: Annotare queste coordinate! Saranno indispensabili nella fase di calibrazione robot.
+```{important}
+ Annotare queste coordinate! Saranno indispensabili nella fase di calibrazione robot.
 ```
 
-**Step 9: Rimozione Robot**
+### **Step 5: Rimozione Robot**
 9. Allontanare il robot con il pendant **senza spostare nulla** sulla superficie
 
 ---
 
 ## Fase 2: Creazione del Modello in FlexiVision
 
-### Accesso alla Funzione Train Model
+Dopo la configurazione iniziale, il wizard propone di creare il primo modello:
 
-**Step 1-3: Apertura Editor**
-1. Aprire **Edit Recipe**
-2. Selezionare il **FlexiBowl**
-3. Selezionare il **modello** → si aprirà la pagina **Train Model**
+### **Step 6: Abilitazione modello**
 
-### Parametri Train Model
+10. Dalla pagina "Recipes", con la giusta ricetta selezionata, cliccare su "Edit Recipe"
+11. Il sistema mostra gli slot disponibili per i modelli (fino a 8 modelli per ricetta)
+12. Cliccare sul **Modello 1** per accedere alla pagina "Train Model 1 Cam 1"
+13. Cliccare su **Enable Model** per abilitare questo slot. Il modello è ora attivo e pronto per essere configurato.
+
+```{tip}
+**Gestione modelli multipli**
+
+In questa fase si attiva solo il primo modello. Dopo averlo completato, sarà possibile:
+- Abilitare slot aggiuntivi (Modello 2, Modello 3, ecc.) per pezzi diversi nella stessa ricetta
+- Modificare modelli esistenti
+- Disabilitare modelli non più necessari
+
+Per ora, concentrarsi sul completamento del primo modello.
+```
+
+#### Parametri Train Model
 
 | Parametro | Funzione |
 |-----------|----------|
@@ -66,38 +73,33 @@ Importante: Lasciare gli oggetti leggermente più distanti del necessario per ev
 | **Apply Train** | Genera il modello |
 | **Name Model** | Assegna un nome al modello |
 
-### Procedura di Training
+### **Step 7: Procedura di Training**
 
-**Step 4: Attivazione**
-4. Cliccare su **Enable Model**
+14. Cliccare su **Grab Train Image** per scattare una foto del componente di riferimento che abbiamo posizionato sul FlexiBowl
 
-**Step 5: Acquisizione Immagine**
-5. Cliccare su **Grab Train Image**
+```{warning}
+il componente di riferimento dovrà rimanere fermo in quel punto per tutto il processo di creazione dell'applicazione
+```
 
-**Step 6-7: Posizionamento ROI**
-6. Spostare il **riquadro ROI** per inquadrare completamente il componente
-7. Spostare l'**origine** (punto di riferimento) al centro dell'area del riquadro
-
-**Step 8: Regolazione Dettaglio**
-8. Usare il **Feature Threshold** per regolare il livello di dettaglio
+15. Spostare il **riquadro ROI** per inquadrare completamente il componente
+16. Spostare l'**origine** (punto di riferimento) al centro dell'area del riquadro
+17. Usare il **Feature Threshold** per regolare il livello di dettaglio desiderato
 
 ```{admonition} Feature Threshold
 :class: note
 - **Valore vicino a 0** → Rileva PIÙ dettagli (modello più preciso)
 - **Valore vicino a 1** → Rileva MENO dettagli (modello più semplice)
 ```
-
-**Step 9: Generazione Modello**
-9. Cliccare su **Apply Train**
+18. Nominare il modello
+19. Cliccare su **Apply Train**
 
 ---
 
-## Verifica Qualità del Modello
+## Fase 3: Finalizzazione
 
-**Step 10: Controllo Visivo**
-10. Fare **Zoom** e verificare che il modello sia corretto
+### **Step 8: Controllo Visivo**
+20. Fare **Zoom** e verificare che il modello sia corretto
 
-### ✅ Un Modello Corretto Deve:
 
 ```{admonition} Caratteristiche Modello Valido
 :class: success
@@ -107,28 +109,21 @@ Importante: Lasciare gli oggetti leggermente più distanti del necessario per ev
 - ✓ Escludere gli oggetti usati per simulare l'ingombro della pinza
 ```
 
-### 🔧 Correzione del Modello
-
-**Step 11: Ottimizzazione (se necessario)**
+### **Step 9: Ottimizzazione (se necessario)**
 Se il modello non è soddisfacente:
 - Modificare il **Feature Threshold**
 - Cliccare nuovamente su **Apply Train**
 - Ripetere fino a ottenere un modello ottimale
 
----
 
-## Finalizzazione
-
-**Step 12-13: Salvataggio**
-12. Nominare il modello con un nome descrittivo
-13. Cliccare su **Next** → si aprirà la pagina **Define Robot Pick Area**
+### **Step 10: Salvataggio**
+21. Nominare il modello con un nome descrittivo  
+22. Cliccare su **Next** → si aprirà la pagina **Define Robot Pick Area**  
 
 ```{seealso}
-Procedi alla [Definizione ROI](#pagina-4-definizione-roi) per continuare la configurazione.
+Procedi alla [Definizione ROI](Nuovo_Modello/19_ROI_TEST.md) per continuare la configurazione.
 ```
 
----
----
 
 ```{toctree}  
 18b_Expert.md
