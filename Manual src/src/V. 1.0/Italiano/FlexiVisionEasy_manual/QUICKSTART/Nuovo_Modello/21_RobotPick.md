@@ -1,4 +1,4 @@
-# Calibrazione Robot Pick
+# **Calibrazione Robot Pick**
 In questa pagina vedremo come collegare le coordinate della visione con quelle del robot per consentire un prelievo preciso dei componenti.
 
 
@@ -6,7 +6,18 @@ In questa pagina vedremo come collegare le coordinate della visione con quelle d
 
 La funzione **Robot Pick** calcola l'offset tra le coordinate rilevate da FlexiVision e le coordinate reali del robot, permettendo al robot di prelevare i componenti nella posizione corretta.
 
+```{danger}
+**Coordinate robot fondamentali!**
+
+Questa fase richiede **OBBLIGATORIAMENTE** le coordinate X, Y, Rz salvate durante la preparazione fisica del setup (Step 4 del Training Modello).
+
+Senza queste coordinate, non è possibile completare la calibrazione. Se sono state perse o dimenticate, sarà necessario ripetere l'intera preparazione fisica con il robot.
+```
+
 ---
+## Panoramica Interfaccia Robot Pick
+
+Dopo aver cliccato "Next" nella pagina Istogrammi, si apre la pagina **Robot Model Pick Cam**.
 
 ## Parametri Principali
 
@@ -42,12 +53,19 @@ Queste sono le coordinate che FlexiVision "vede" nell'immagine. Non sono ancora 
 
 ### **Step 2: Inserimento Coordinate Robot e calcolo Offset**
 3. Nel riquadro **Insert Robot Coordinates**, inserire le coordinate salvate durante la creazione del modello:
-   - **X cord** → Coordinata X annotata al punto 8 della [Creazione Modello](#fase-1-preparazione-del-setup-fisico)
-   - **Y cord** → Coordinata Y annotata al punto 8 della [Creazione Modello](#fase-1-preparazione-del-setup-fisico)
-   - **RZ cord** → Rotazione Z annotata al punto 8 della [Creazione Modello](#fase-1-preparazione-del-setup-fisico)
+   - **X cord** → Coordinata X annotata al punto 8 della [Creazione Modello]()
+   - **Y cord** → Coordinata Y annotata al punto 8 della [Creazione Modello]()
+   - **RZ cord** → Rotazione Z annotata al punto 8 della [Creazione Modello]()
 
 ```{danger}
-Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!
+Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!  
+Le coordinate devono essere inserite con **massima precisione**:
+- Copiare i valori esattamente come annotati (inclusi decimali)
+- **NON approssimare** (es: 450.23 ≠ 450.2 ≠ 450)
+- Verificare di non aver scambiato X e Y
+- Controllare il segno (+ o -) di ciascuna coordinata
+
+**Errori in questa fase causano offset robot completamente errati**, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore).  
 ```
 4. Cliccare su **Gripper Offset**
    - Il sistema calcolerà automaticamente la trasformazione tra coordinate visione e coordinate robot
@@ -82,7 +100,7 @@ Il robot andrà a prelevarlo a X=370, Y=470
 ## Finalizzazione e Salvataggio
 
 ### Step 3: Proseguimento e Salvataggio Ricetta
-5. Cliccare su **Next**
+5. CliccaNDO su **Next**, torneremo alla pagina delle ricette "Recipes"
 6. Cliccare su **Save Recipe** per salvare l'intera configurazione
 
 ```{admonition} Salvataggio Completo
@@ -104,8 +122,8 @@ Il salvataggio include:
 **Step 7: Modelli Aggiuntivi (opzionale)**
 7. Per creare altri modelli nella stessa ricetta:
    - Tornare su **Edit Recipe**
-   - Selezionare un nuovo modello
-   - Ripetere l'intera procedura dalla [Creazione Modello](#pagina-3-creare-un-nuovo-modello)
+   - Selezionare un nuovo modello non ancora configurato 
+   - Ripetere l'intera procedura dalla [Creazione Modello]()
 
 ```{tip}
 Ogni modello nella ricetta può avere configurazioni diverse (ROI, istogrammi, offset), permettendo di gestire componenti con caratteristiche diverse nella stessa applicazione.
@@ -117,17 +135,14 @@ Ogni modello nella ricetta può avere configurazioni diverse (ROI, istogrammi, o
 
 ### Checklist Completamento
 
-Prima di utilizzare la ricetta in produzione, continua con :
+Prima di considerare la ricetta completata, continua con :
 
 - [Configurazione del FlexiBowl ] (QUICKSTART/22_Config_FlexiBowl.md)
 - [Configurazione della Tramoggia ] (QUICKSTART/23_Config_Hopper.md)
 - [Monitoraggio Applicazione ] (QUICKSTART/24_Verifica_Risultati.md)
 
 ```{seealso}
-Per modifiche successive, consulta:
-- [Modifica Modelli Esistenti](#modifica-modelli)
-- [Ottimizzazione Parametri](#ottimizzazione)
-- [Troubleshooting](#risoluzione-problemi)
+- [Troubleshooting]()
 ```
 
 ---

@@ -1,4 +1,4 @@
-# Creazione Ricette e Modelli - Panoramica
+# **Creazione Ricette e Modelli - Panoramica**
 
 Questa sezione guida l'utente attraverso il processo completo di creazione di una ricetta applicativa e dei modelli pezzo necessari per il riconoscimento e il picking robotizzato.
 

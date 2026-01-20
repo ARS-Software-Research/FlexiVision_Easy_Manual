@@ -239,7 +239,7 @@ FlexiVisionEasy_manual/25_Garanzia.md
 :hidden:
 :caption: TROUBLESHOOTING
 
-FlexiVisionEasy_manual/26_trb_shooting_guide.md
+FlexiVisionEasy_manual/TROUBLESHOOTING/26_trb_shooting_guide.md
 ```
 
 ```{toctree} 

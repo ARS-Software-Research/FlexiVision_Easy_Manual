@@ -6,10 +6,15 @@ L'interfaccia **FlexiBowl® Wizard** è uno strumento interattivo progettato per
 
 ## Accesso al Wizard
 
-Per avviare la procedura, recarsi nella sezione **Setup** del software FlexiVision e cliccare sul pulsante **FlexiBowl Wizard**.
+Per avviare la procedura:
+1. recarsi nella sezione **Setup** del software FlexiVision 
+2. cliccare sul pulsante **FlexiBowl Setup**, si aprirà una pagina con tutti i FlexiBowl gestibili con FlexiVision Easy
+3. cliccare sul pulsante **Config FlexiBowl**, si aprirà una pagina con tutte le movimentazioni disponibili per il flexibowl selezionato 
+4. cliccare sul pulsante **FlexiBowl X Wizard**, si aprirà una pagina di benvenuto al Wizard
+5. Cliccare su NEXT
 
 ```{note}
-   Prima di procedere, verrà visualizzata una pagina di benvenuto con i termini d'uso. È necessario leggere il disclaimer e cliccare su **Next** per iniziare la configurazione.
+Cliccare "NEXT" in ogni pagina del wizard per andare avanti nella configurazione guidata
 ```
 
 ### **Step 1: Selezione Modello e Rotazione**
@@ -31,9 +36,10 @@ Il sistema richiede informazioni sulla morfologia dei pezzi per ottimizzare la s
 
 4. Definire come i componenti interagiscono tra loro sulla superficie:
 
+* **Overlapping**: I pezzi tendono a sovrapporsi.
+* **Not Overlapping**: I pezzi non si sovrappongono.
 * **Tangling / Stacking**: I pezzi tendono ad agganciarsi o impilarsi.
-* **Overlapping**: I pezzi tendono a sormontarsi.
-* **No Tangling / Not Overlapping**: I pezzi rimangono separati e non si sovrappongono.
+* **Not Tangling / Not Stacking** : I pezzi rimangono separati e non si incastrano
 
 ### **Step 3: Test degli Accessori**
 

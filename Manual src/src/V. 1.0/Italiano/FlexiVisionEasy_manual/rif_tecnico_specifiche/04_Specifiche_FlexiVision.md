@@ -264,17 +264,22 @@ Cavi di ricambio e di lunghezza personalizzata
 
 *Schema di collegamento completo del sistema FlexiVision Easy con robot e FlexiBowl*
 
-```{note}
-**Legenda collegamenti**
+```{list-table}
 
-1. **Camera → VisionController**: Cavo Ethernet GigE (dati) + Cavo alimentazione DC
-2. **VisionController → Robot**: Cavo Ethernet (comunicazione TCP/IP)
-3. **VisionController → Rete/PC**: Cavo Ethernet (configurazione e monitoraggio)
-4. **VisionController → Alimentazione**: 9-36V DC
-5. **FlexiBowl → Robot/PLC**: Segnali digitali di controllo
+* - **FlexiBowl → Alimentazione**
+  - Cavo di alimentazione dedicato
+* - **Tramoggia → FlexiBowl**
+  - Cavo di segnale/alimentazione 
+* - **Camera → VisionController**
+  - Cavo Ethernet GigE (dati) + Cavo alimentazione DC
+* - **Robot → VisionController**
+  - Cavo Ethernet (comunicazione TCP/IP)
+* - **VisionController → Alimentazione**
+  - 9-36V DC
+```
 
 Per schemi elettrici dettagliati, consultare la sezione [Cablaggio e Connessioni](10_Cablaggio_Connessioni.md).
-```
+
 
 ---
 

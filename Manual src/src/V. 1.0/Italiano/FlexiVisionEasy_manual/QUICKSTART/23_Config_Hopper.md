@@ -8,17 +8,17 @@ La configurazione della tramoggia permette di gestire il rifornimento automatico
 1. Cliccare sulla sezione "SETUP"
 2. Dalla sezione **Hopper Setup**, è possibile visualizzare e gestire le unità di carico collegate.
 3. Selezionare la casella **Enable Hopper X** per attivare la tramoggia corrispondente.
-4. Cliccare sul pulsante **Config Hopper X** per accedere alla calibrazione specifica (es. *Define Area Check Hopper Cam 1*).
+4. Cliccare sul pulsante **Config Hopper X** per accedere alla configurazione specifica 
 
 ### **Step 1: Definizione dell'Area di Controllo**
 
 In questa fase si definisce la porzione di disco che la telecamera deve monitorare per lo scarico.
 
-5. Modificare il riquadro blu a schermo per inquadrare l'area dove cadono i componenti dalla tramoggia.
+5. Modificare il riquadro blu a schermo per inquadrare l'area in cui verranno rilevati i componenti.
 
  **Strumenti di supporto**:
    * **Info**: Cliccare per visualizzare dettagli sulle funzionalità della pagina.
-   * **Expert**: Accesso a impostazioni avanzate di geometria e soglia.
+   * **Expert**: Accesso a impostazioni avanzate.
 
 ### **Step 2: Definizione dei Valori di Soglia**
 
@@ -27,7 +27,6 @@ In questa fase si definisce la porzione di disco che la telecamera deve monitora
 8. Posizionare il numero minimo di componenti che si desidera mantenere sul disco. Se il numero scende sotto questa soglia, la tramoggia si attiverà.
 9. Cliccare sul secondo pulsante **CAPTURE**.
 10. Cliccando su **AUTO** nell'Expression Builder, il sistema calcola automaticamente i valori di **Mean** (Media) e **Standard Deviation**.
-* **Turn FLB**: Utilizzare questo comando per ruotare il disco durante il setup.
 11. Rimuovere alcuni pezzi e cliccare su **TEST**. L'indicatore diventa **Verde** se la tramoggia si attiva (scarico necessario), **Rosso** altrimenti.
 
 ### **Step 3: Parametri Operativi**

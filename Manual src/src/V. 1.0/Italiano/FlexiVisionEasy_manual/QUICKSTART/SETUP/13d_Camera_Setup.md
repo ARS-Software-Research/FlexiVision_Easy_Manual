@@ -101,8 +101,6 @@ Se sono elencate multiple camere o dispositivi:
 - Altri formati potrebbero non funzionare o causare errori
 - Formati a colori non sono compatibili con questa camera
 - Se il formato non è disponibile, potrebbero mancare driver o configurazioni di sistema
-
-Se "Generic GigEVision" non appare nella lista, verificare l'installazione dei driver Cognex/GigE Vision sul VisionController.
 ```
 
 ```{list-table}
@@ -216,14 +214,14 @@ Procedere quindi con i valori automatici per completare il setup iniziale.
 
 ```{list-table}
 * - **Verifica finale e salvataggio**
-  - Prima di uscire dalla configurazione camera:
-        21. Cliccare su **Run** almeno 2-3 volte consecutivamente
-        22. Verificare che:
-            - Nessuna immagine appaia completamente blu o nera
-            - Le immagini si aggiornino regolarmente
-            - La superficie del FlexiBowl sia chiaramente visibile
-            - L'illuminazione sia uniforme
-        23. Se tutti i test sono positivi, la configurazione è corretta
+  - Prima di uscire dalla configurazione camera:  
+    21. Cliccare su **Run** almeno 2-3 volte consecutivamente  
+    22. Verificare che:  
+      - Nessuna immagine appaia completamente blu o nera
+      - Le immagini si aggiornino regolarmente
+      - La superficie del FlexiBowl sia chiaramente visibile
+      - L'illuminazione sia uniforme
+    23. Se tutti i test sono positivi, la configurazione è corretta
 ```
 ---
 

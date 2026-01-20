@@ -1,4 +1,0 @@
-# Risoluzione Problemi 
-
-## Troubleshooting
-

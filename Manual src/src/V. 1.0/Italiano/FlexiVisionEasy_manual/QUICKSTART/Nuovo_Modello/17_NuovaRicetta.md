@@ -1,4 +1,4 @@
-# Creare una Nuova Ricetta
+# **Creare una Nuova Ricetta**
 
 Questa sezione descrive come creare una nuova ricetta applicativa in FlexiVision Easy. Una ricetta è il contenitore principale che include tutti i modelli pezzo, le configurazioni FlexiBowl/Hopper e i parametri robot necessari per un'applicazione completa di picking.
 
