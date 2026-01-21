@@ -1,5 +1,5 @@
 # Setup Iniziale
-
+(troubleshooting_FB_setup)=
 ## Troubleshooting per la sezione Passo 4: FlexiBowl Setup 
 
 ```{list-table}
@@ -58,7 +58,7 @@
     
     • Verificare senso rotazione fisico e confrontare con impostazione
 ```
-
+(troubleshooting_Hopper_setup)=
 ## Troubleshooting per la sezione Passo 5: Hopper Setup 
 
 ```{list-table}
@@ -132,7 +132,7 @@
     
     • Pulire superficie vibrante della tramoggia
 ```
-
+(troubleshooting_Robot_setup)=
 ## Troubleshooting per la sezione Passo 6: Robot Setup
 
 ```{list-table}
@@ -199,7 +199,7 @@
     
     • Avviare programma server socket sul robot
 ```
-
+(troubleshooting_cam_setup)=
 ## Troubleshooting per la sezione Passo 7: Camera Setup 
 
 ```{list-table}

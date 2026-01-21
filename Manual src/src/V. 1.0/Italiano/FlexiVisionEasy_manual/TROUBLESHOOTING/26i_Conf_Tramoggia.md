@@ -1,3 +1,4 @@
+(troubleshooting_conf_tramoggia)=
 # Configurazione Tramoggia 
 ```{list-table}
 :header-rows: 1

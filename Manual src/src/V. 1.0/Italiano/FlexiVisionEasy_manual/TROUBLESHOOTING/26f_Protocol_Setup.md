@@ -1,3 +1,4 @@
+(troubleshooting_protocol_setup)=
 # Protocol Setup
 ```{list-table}
 :header-rows: 1

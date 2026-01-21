@@ -1,3 +1,4 @@
+(troubleshooting_calib_cam)=
 # Calibrazione Camera
 
 ```{list-table}

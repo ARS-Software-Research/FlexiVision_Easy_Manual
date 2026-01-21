@@ -423,6 +423,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-parametri-operativi"><strong>Step 3: Parametri Operativi</strong></a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-configurazione">Salvataggio Configurazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-hopper">Troubleshooting Hopper</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manutenzione-hopper">Manutenzione Hopper</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-periodiche">Operazioni periodiche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
             </nav>
         </div>
@@ -465,8 +475,28 @@ document.write(`
 <li><p>Posizionare il numero minimo di componenti che si desidera mantenere sul disco. Se il numero scende sotto questa soglia, la tramoggia si attiverà.</p></li>
 <li><p>Cliccare sul secondo pulsante <strong>CAPTURE</strong>.</p></li>
 <li><p>Cliccando su <strong>AUTO</strong> nell’Expression Builder, il sistema calcola automaticamente i valori di <strong>Mean</strong> (Media) e <strong>Standard Deviation</strong>.</p></li>
-<li><p>Rimuovere alcuni pezzi e cliccare su <strong>TEST</strong>. L’indicatore diventa <strong>Verde</strong> se la tramoggia si attiva (scarico necessario), <strong>Rosso</strong> altrimenti.</p></li>
+<li><p>Rimuovere alcuni pezzi e cliccare su <strong>TEST</strong>.</p></li>
+<li><p>Osservare l’indicatore risultato:</p>
+<ul class="simple">
+<li><p><strong>Verde</strong> 🟢: Livello sufficiente, Hopper NON si attiva (OK)</p></li>
+<li><p><strong>Rosso</strong> 🔴: Livello insufficiente, Hopper SI ATTIVA (scarico necessario)</p></li>
+</ul>
+</li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Calibrazione insufficiente</strong></p>
+<p>Se il sistema non rileva correttamente il livello:</p>
+<p><strong>Problema: Sempre verde (non attiva mai Hopper)</strong>
+→ Soglia troppo alta o area monitoraggio non rappresentativa
+→ Soluzione: Ridurre numero pezzi nella seconda acquisizione CAPTURE, ripetere AUTO</p>
+<p><strong>Problema: Sempre rosso (attiva sempre Hopper)</strong>
+→ Soglia troppo bassa o interferenze nell’area
+→ Soluzione: Aumentare numero pezzi nella seconda acquisizione, verificare pulizia area</p>
+<p><strong>Problema: Comportamento erratico (alterna verde/rosso casualmente)</strong>
+→ Illuminazione instabile o area troppo piccola
+→ Soluzione: Verificare backlight stabile, ingrandire area monitoraggio, ripetere calibrazione</p>
+</div>
 </section>
 <section id="step-3-parametri-operativi">
 <h3><strong>Step 3: Parametri Operativi</strong><a class="headerlink" href="#step-3-parametri-operativi" title="Link to this heading">#</a></h3>
@@ -484,7 +514,18 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>Steps</strong></p></td>
-<td><p>Numero di sequenze necessarie per portare i pezzi dallo scarico all’area di prelievo. Per calcolarlo: svuotare il disco, eseguire la sequenza e contare quanti cicli servono perché i pezzi arrivino alla camera.</p></td>
+<td><p>Numero di sequenze necessarie per portare i pezzi dallo scarico all’area di prelievo.
+``{note}
+<strong>Come calcolarlo:</strong></p>
+<ol class="arabic simple">
+<li><p>Svuotare completamente il disco FlexiBowl</p></li>
+<li><p>Attivare manualmente lo scarico Hopper (i pezzi cadono sul disco)</p></li>
+<li><p>Eseguire una sequenza FlexiBowl</p></li>
+<li><p>Contare quanti cicli servono perché i primi pezzi tornino nell’area di scarico della tramoggia</p></li>
+<li><p>Questo numero è il valore da inserire in <strong>Steps</strong>
+``</p></li>
+</ol>
+</td>
 </tr>
 <tr class="row-odd"><td><p><strong>Time</strong></p></td>
 <td><p>Millisecondi di vibrazione della tramoggia. Valore consigliato: <strong>100 - 1000 ms</strong> (Media: <strong>500 ms</strong>). Regolare di +/- 100 ms in base al flusso desiderato.</p></td>
@@ -496,9 +537,172 @@ document.write(`
 <p class="admonition-title">Tip</p>
 <p>Il tempo di vibrazione dipende non solo dal valore impostato, ma anche dal volume di componenti attualmente presenti nella vasca della tramoggia. È essenziale mantenere un carico costante per un flusso uniforme.</p>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Fattori che influenzano il Time</strong></p>
+<p>Il tempo di vibrazione efficace dipende da:</p>
+<p><strong>Volume Hopper</strong>:</p>
+<ul class="simple">
+<li><p>Hopper pieno: Maggiore pressione, più pezzi per ms</p></li>
+<li><p>Hopper semivuoto: Minore pressione, meno pezzi per ms</p></li>
+<li><p><strong>Best practice</strong>: Mantenere Hopper costantemente &gt;50% pieno per flusso uniforme</p></li>
+</ul>
+<p><strong>Tipo di pezzo</strong>:</p>
+<ul class="simple">
+<li><p>Pezzi scorrevoli (cilindri lisci): Scorrono facilmente, Time più breve</p></li>
+<li><p>Pezzi che si incastrano: Scorrono lentamente, Time più lungo</p></li>
+</ul>
+<p><strong>Angolo scarico Hopper</strong>:</p>
+<ul class="simple">
+<li><p>Angolo ripido: Scarico rapido, Time breve</p></li>
+<li><p>Angolo dolce: Scarico lento, Time lungo</p></li>
+</ul>
+<p><strong>Manutenzione</strong>:</p>
+<ul class="simple">
+<li><p>Superficie interna pulita: Flusso ottimale</p></li>
+<li><p>Superficie con residui/usura: Flusso ridotto → Incrementare Time</p></li>
+</ul>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>Salvataggio della Ricetta</strong>: Al termine di ogni blocco di modifiche, è fondamentale <strong>Salvare la Ricetta</strong>. Ogni variazione apportata viene memorizzata solo se la ricetta viene salvata correttamente prima di uscire o cambiare pagina.</p>
+</div>
+</section>
+</section>
+<section id="salvataggio-configurazione">
+<h2>Salvataggio Configurazione<a class="headerlink" href="#salvataggio-configurazione" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Salvataggio ricetta obbligatorio</strong></p>
+<p>Al termine della configurazione Hopper:</p>
+<ol class="arabic simple">
+<li><p>Verificare che tutti i parametri siano configurati correttamente:</p>
+<ul class="simple">
+<li><p>Area monitoraggio posizionata</p></li>
+<li><p>Soglie calibrate (TEST funzionante)</p></li>
+<li><p>Steps e Time impostati</p></li>
+</ul>
+</li>
+<li><p>Tornare alla pagina principale <strong>Recipes</strong></p></li>
+<li><p>Cliccare su <strong>Save Recipe</strong></p></li>
+<li><p>Confermare il salvataggio</p></li>
+</ol>
+<p><strong>IMPORTANTE</strong>: Ogni variazione apportata viene memorizzata <strong>SOLO</strong> se la ricetta viene salvata correttamente prima di uscire o cambiare pagina.</p>
+<p>Senza salvataggio, tutte le configurazioni Hopper verranno perse!</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="troubleshooting-hopper">
+<h2>Troubleshooting Hopper<a class="headerlink" href="#troubleshooting-hopper" title="Link to this heading">#</a></h2>
+<section id="problemi-comuni-e-soluzioni">
+<h3>Problemi comuni e soluzioni<a class="headerlink" href="#problemi-comuni-e-soluzioni" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Hopper non si attiva mai</strong></p>
+<p><strong>Sintomi</strong>: Disco si svuota ma Hopper non scarica</p>
+<p><strong>Cause possibili:</strong></p>
+<ul class="simple">
+<li><p>Soglia configurata troppo bassa (sistema pensa sia sempre pieno)</p></li>
+<li><p>Area monitoraggio mal posizionata (non rappresentativa)</p></li>
+<li><p>Enable Hopper disabilitato</p></li>
+</ul>
+<p><strong>Soluzioni:</strong></p>
+<ol class="arabic simple">
+<li><p>Verificare Enable Hopper attivo</p></li>
+<li><p>Ripetere calibrazione soglie con più pezzi nella seconda acquisizione</p></li>
+<li><p>Spostare area monitoraggio in zona più rappresentativa</p></li>
+<li><p>Eseguire TEST manualmente per verificare trigger</p></li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Hopper si attiva troppo frequentemente</strong></p>
+<p><strong>Sintomi</strong>: Hopper scarica continuamente, disco si riempie eccessivamente</p>
+<p><strong>Cause possibili:</strong></p>
+<ul class="simple">
+<li><p>Soglia configurata troppo alta</p></li>
+<li><p>Time di scarico troppo lungo</p></li>
+<li><p>Area monitoraggio in zona sempre vuota</p></li>
+</ul>
+<p><strong>Soluzioni:</strong></p>
+<ol class="arabic simple">
+<li><p>Ridurre soglia (meno pezzi nella seconda acquisizione CAPTURE)</p></li>
+<li><p>Ridurre Time (durata vibrazione) di 100-200 ms</p></li>
+<li><p>Verificare posizionamento area monitoraggio</p></li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Pezzi scaricati non arrivano in tempo</strong></p>
+<p><strong>Sintomi</strong>: Robot trova disco vuoto subito dopo attivazione Hopper</p>
+<p><strong>Cause possibili:</strong></p>
+<ul class="simple">
+<li><p>Steps troppo pochi (pezzi non hanno tempo di arrivare)</p></li>
+<li><p>Sequenze FlexiBowl non efficaci</p></li>
+<li><p>Ostruzione percorso scarico</p></li>
+</ul>
+<p><strong>Soluzioni:</strong></p>
+<ol class="arabic simple">
+<li><p>Aumentare Steps di 1-2 unità</p></li>
+<li><p>Verificare parametri Config FlexiBowl (velocità, angolo)</p></li>
+<li><p>Ispezionare fisicamente percorso scarico Hopper → Disco</p></li>
+</ol>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="manutenzione-hopper">
+<h2>Manutenzione Hopper<a class="headerlink" href="#manutenzione-hopper" title="Link to this heading">#</a></h2>
+<section id="operazioni-periodiche">
+<h3>Operazioni periodiche<a class="headerlink" href="#operazioni-periodiche" title="Link to this heading">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Manutenzione preventiva</strong></p>
+<p>Per garantire funzionamento ottimale:</p>
+<p><strong>Settimanale:</strong></p>
+<ul class="simple">
+<li><p>Controllare livello riempimento fisico Hopper</p></li>
+<li><p>Verificare pulizia superficie interna</p></li>
+<li><p>Controllare connessione aria compressa (se pneumatico)</p></li>
+</ul>
+<p><strong>Mensile:</strong></p>
+<ul class="simple">
+<li><p>Pulire superficie interna Hopper</p></li>
+<li><p>Verificare usura componenti vibranti</p></li>
+<li><p>Controllare fissaggi meccanici</p></li>
+</ul>
+<p><strong>Trimestrale:</strong></p>
+<ul class="simple">
+<li><p>Ripetere calibrazione soglie (l’usura può alterare i parametri)</p></li>
+<li><p>Verificare portata scarico (può ridursi con usura)</p></li>
+<li><p>Controllare tubazioni aria compressa</p></li>
+</ul>
+<p><strong>Best practice:</strong></p>
+<ul class="simple">
+<li><p>Tenere Hopper sempre &gt;30% pieno per flusso costante</p></li>
+<li><p>Non riempire Hopper oltre 90% (rischio ostruzione scarico)</p></li>
+<li><p>Annotare frequenza riempimento Hopper per pianificare rifornimenti</p></li>
+</ul>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="prossimi-passi">
+<h2>Prossimi Passi<a class="headerlink" href="#prossimi-passi" title="Link to this heading">#</a></h2>
+<p>Una volta completata la configurazione dell’Hopper, procedere con:</p>
+<p><strong>→ <a class="reference internal" href="24_Verifica_Risultati.html"><span class="std std-doc">Verifica Risultati e Dashboard</span></a></strong> - Monitoraggio applicazione completa in produzione</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Sistema completo operativo</strong></p>
+<p>Congratulazioni! Con la configurazione Hopper completata, il sistema FlexiVision Easy è completamente configurato e pronto per l’uso produttivo:</p>
+<ul class="simple">
+<li><p>✓ Modelli pezzo creati e ottimizzati</p></li>
+<li><p>✓ FlexiBowl configurato per movimentazione ottimale</p></li>
+<li><p>✓ Hopper configurato per rifornimento automatico</p></li>
+<li><p>✓ Sistema completamente autonomo</p></li>
+</ul>
+<p>Il sistema ora può operare continuamente con intervento operatore minimo (solo per ricaricare Hopper quando si svuota fisicamente).</p>
+<p>Procedere con il monitoraggio in produzione per validare le configurazioni e ottimizzare ulteriormente se necessario.</p>
 </div>
 <br>
 <!-- Versions and languages set-up -->
@@ -763,7 +967,6 @@ ___\\ \\     // //___
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
 </section>
-</section>
 
 
                 </article>
@@ -816,6 +1019,16 @@ ___\\ \\     // //___
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-parametri-operativi"><strong>Step 3: Parametri Operativi</strong></a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-configurazione">Salvataggio Configurazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-hopper">Troubleshooting Hopper</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#manutenzione-hopper">Manutenzione Hopper</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operazioni-periodiche">Operazioni periodiche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
   </nav></div>
 

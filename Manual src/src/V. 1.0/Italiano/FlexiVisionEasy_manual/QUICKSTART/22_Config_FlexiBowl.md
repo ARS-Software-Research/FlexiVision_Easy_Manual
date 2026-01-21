@@ -58,7 +58,11 @@ Se l'impulso non è avvertibile, verificare che l'aria compressa sia collegata e
    Il Flip è fondamentale per separare, districare o capovolgere i componenti durante il ciclo di alimentazione.
 ```
 
-9. Al termine del Wizard, cliccando su **FINISH**, il sistema calcolerà automaticamente i parametri. Sarà quindi possibile affinarli nella dashboard riassuntiva.
+9. Al termine del Wizard, cliccando su **FINISH**, il sistema calcolerà automaticamente i parametri: 
+    - Parametri di movimento (velocità, accelerazione, angolo)
+    - Parametri di scuotimento (shake)
+    - Temporizzazioni accessori (flip, blow)
+10. Sarà quindi possibile affinarli nella dashboard riassuntiva.
 
 ```{list-table} Panoramica Parametri
    :widths: 20 30 50
@@ -82,7 +86,6 @@ Se l'impulso non è avvertibile, verificare che l'aria compressa sia collegata e
 
 10. Utilizzare la funzione **Test Sequence** per verificare che il ciclo rispetti i seguenti criteri di efficienza:
 
-```{tip}
 1. **Sincronizzazione**: L'impulso di Flip deve terminare esattamente nello stesso istante in cui termina il movimento (*Move*). Regolare i valori di *Flip Count* e *Delay* per allinearli.
 2. **Stabilità Immagine**: I componenti devono essere immobili al momento dello scatto della camera.
    * Se i pezzi si muovono, diminuire velocità/accelerazione o inserire una pausa (es. ``pause 200ms``).
@@ -90,7 +93,48 @@ Se l'impulso non è avvertibile, verificare che l'aria compressa sia collegata e
 3. **Regolazione Soffio**:
    * **Tip**: Usare preferibilmente il soffio *pre-flip* per sparpagliare i pezzi. 
    * Usare il soffio *post-flip* (che raggruppa i pezzi) solo se strettamente necessario per cicli molto veloci.
-```
+
 ```{warning}
    Cliccare sempre su **Synchronize Parameters** dopo ogni modifica manuale per rendere attive le variazioni nel controller.
+```
+
+### Strategie per problemi comuni
+
+```{warning}
+**Troubleshooting configurazione**
+
+**Problema: Pezzi non si separano**
+→ Soluzione: Aumentare Flip Count, incrementare Shake Accel, abilitare Air-blow Pre-Flip
+
+**Problema: Pezzi vengono espulsi dal disco**
+→ Soluzione: Ridurre Speed, ridurre Accel, ridurre Blow Time
+
+**Problema: Ciclo troppo lento**
+→ Soluzione: Aumentare Speed, ridurre Angle (rotazione più breve), ottimizzare Flip timing
+
+**Problema: Pezzi rimangono aggregati in mucchi**
+→ Soluzione: Aumentare Shake Speed, incrementare Flip Count, usare Air-blow Pre-Flip
+
+**Problema: Immagini sfocate (pezzi in movimento)**
+→ Soluzione: Ridurre Speed/Accel, aggiungere pause, verificare superficie grip
+```
+## Prossimi Passi
+
+Una volta completata la configurazione del FlexiBowl, procedere con:
+
+**→ [Configurazione Hopper](23_Config_Hopper.md)** - Se presente tramoggia esterna
+
+**→ [Verifica Risultati](24_Verifica_Risultati.md)** - Monitoraggio applicazione completa
+
+```{tip}
+**Test produzione**
+
+Prima di utilizzare in produzione:
+1. Eseguire 50-100 cicli di test per verificare consistenza
+2. Monitorare tasso di riempimento disco (deve essere costante)
+3. Verificare che non ci siano accumuli anomali o zone vuote persistenti
+4. Annotare eventuali necessità di regolazione fine
+5. Incrementare gradualmente verso velocità produttiva
+
+La configurazione ottimale può richiedere 2-3 sessioni di fine-tuning con il pezzo reale in quantità significativa.
 ```

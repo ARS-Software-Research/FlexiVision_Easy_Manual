@@ -1,4 +1,6 @@
 # Creazione Ricette e modelli 
+
+(troubleshooting_Nuova_Ricetta)=
 ## Troubleshooting per la sezione Creare una Nuova Ricetta 
 
 ```{list-table}
@@ -68,7 +70,7 @@
     
     • Utilizzare naming convention univoche
 ```
-
+(troubleshooting_Nuovo_modello)=
 ## Troubleshooting per la sezione Creare un Nuovo Modello 
 
 ```{list-table}
@@ -199,6 +201,7 @@
     
     • Limitare nome a max 50 caratteri
 ```
+(troubleshooting_Modelli_ROI)=
 ## Troubleshooting per la sezione Definizione ROI e Tolleranze 
 
 ```{list-table}
@@ -305,7 +308,7 @@
     
     • Disattivare air-blow durante setup
 ```
-
+(troubleshooting_istogrammi)=
 ## Troubleshooting per la sezione Istogrammi 
 
 ```{list-table}
@@ -420,7 +423,7 @@
     • Verificare che aree non si sovrappongano
 ```
 
-
+(troubleshooting_robot_pick)=
 ## Troubleshooting per la sezione Calibrazione Robot Pick 
 
 ```{list-table}

@@ -3,7 +3,7 @@
 ## Troubleshooting per la sezione "installazione del sistema"
 
 ```{list-table} 
-:widths: 20 25 55
+:widths: 45 45 25
 :header-rows: 1
 
 * - Sezione
@@ -37,50 +37,44 @@
 ## Troubleshooting per la sezione "Quickstart"
 
 ```{list-table} 
-:widths: 20 25 55
+:widths: 40 38 27
 :header-rows: 1
 
 * - Sezione
-  - Passo Setup
-  - Criticità Riscontrate
+  - Componente
+  - Link alla sezione
 * - **Configurazione Iniziale**
-  - **FlexiBowl (P4)**
-  - Parametri di accelerazione errati, mancata risposta seriale/TCP.
-* - **Configurazione Iniziale**
-  - **Hopper (P5)**
-  - Sovraccarico del disco, mancata attivazione fotocellula.
-* - **Configurazione Iniziale**
-  - **Robot (P6)**
-  - Timeout comunicazione, errore handshake protocollo.
-* - **Configurazione Iniziale**
-  - **Camera (P7)**
-  - Errore apertura stream GigE, timeout esposizione.
+  - 1. **Passo 4: FlexiBowl Setup**  
+    2. **Passo 5: Hopper Setup** 
+    3. **Passo 6: Robot Setup**   
+    4. **Passo 7: Camera Setup** 
+  - 1. [Vai alla Sezione](troubleshooting_FB_setup)  
+    2. [Vai alla Sezione](troubleshooting_Hopper_setup)  
+    3. [Vai alla Sezione](troubleshooting_Robot_setup)  
+    4. [Vai alla Sezione](troubleshooting_cam_setup)
 * - **Calibrazione e Ricette**
-  - **Calibrazione Camera**
-  - Errore riproiezione elevato, target non rilevato.
-* - **Calibrazione e Ricette**
-  - **Protocol Setup**
-  - Stringhe dati troncate, errori di sintassi nel payload.
-* - **Calibrazione e Ricette**
-  - **Modelli e ROI**
-  - ROI troppo stretta, tolleranze di score troppo elevate.
-* - **Calibrazione e Ricette**
-  - **Istogrammi**
-  - Saturazione dei bianchi, soglie di binarizzazione instabili.
-* - **Calibrazione e Ricette**
-  - **Robot Pick**
-  - Offset X-Y costante, errore calibrazione mano-occhio.
+  - 1. **Calibrazione camera**  
+    2. **Protocol Setup**  
+    3. **Creazione Nuova Ricetta**  
+    4. **Creazione Nuovo Modello**  
+    5. **Modelli e ROI**  
+    6. **Istogrammi**  
+    7. **Robot Pick**
+  - 1. [Vai alla Sezione](troubleshooting_calib_cam)  
+    2. [Vai alla Sezione](troubleshooting_protocol_setup)  
+    3. [Vai alla Sezione](troubleshooting_Nuova_Ricetta)  
+    4. [Vai alla Sezione](troubleshooting_Nuovo_modello)  
+    5. [Vai alla Sezione](troubleshooting_Modelli_ROI)  
+    6. [Vai alla Sezione](troubleshooting_istogrammi)  
+    7. [Vai alla Sezione](troubleshooting_robot_pick)
 * - **Avanzate e Monitoraggio**
-  - **FlexiBowl Wizard**
-  - Ottimizzazione parametri di vibrazione fallita.
-* - **Avanzate e Monitoraggio**
-  - **Tramoggia**
-  - Tempi di scarico non sincronizzati con il vuoto del disco.
-* - **Avanzate e Monitoraggio**
-  - **Monitoraggio**
-  - Log non salvati, calo di frame rate (FPS) durante l'esecuzione.
+  - 1. **FlexiBowl Wizard**  
+    2. **Tramoggia**  
+    3. **Monitoraggio**
+  - 1. [Vai alla Sezione](troubleshooting_FB_Wizard)  
+    2. [Vai alla Sezione](troubleshooting_conf_tramoggia)  
+    3. [Vai alla Sezione](troubleshooting_pneumatica)
 ```
-
 
 :::{card} IP Adress
     :class-card: shadow

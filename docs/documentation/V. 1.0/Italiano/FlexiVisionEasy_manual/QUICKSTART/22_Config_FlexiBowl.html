@@ -422,8 +422,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-caratterizzazione-del-componente"><strong>Step 2: Caratterizzazione del Componente</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-test-degli-accessori"><strong>Step 3: Test degli Accessori</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-validazione-della-sequenza"><strong>Step 4: Validazione della Sequenza</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strategie-per-problemi-comuni">Strategie per problemi comuni</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
             </nav>
         </div>
@@ -501,7 +503,14 @@ document.write(`
 <p>Il Flip è fondamentale per separare, districare o capovolgere i componenti durante il ciclo di alimentazione.</p>
 </div>
 <ol class="arabic simple" start="9">
-<li><p>Al termine del Wizard, cliccando su <strong>FINISH</strong>, il sistema calcolerà automaticamente i parametri. Sarà quindi possibile affinarli nella dashboard riassuntiva.</p></li>
+<li><p>Al termine del Wizard, cliccando su <strong>FINISH</strong>, il sistema calcolerà automaticamente i parametri:</p>
+<ul class="simple">
+<li><p>Parametri di movimento (velocità, accelerazione, angolo)</p></li>
+<li><p>Parametri di scuotimento (shake)</p></li>
+<li><p>Temporizzazioni accessori (flip, blow)</p></li>
+</ul>
+</li>
+<li><p>Sarà quindi possibile affinarli nella dashboard riassuntiva.</p></li>
 </ol>
 <div class="pst-scrollable-table-container"><table class="table" id="id1">
 <caption><span class="caption-text">Panoramica Parametri</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
@@ -537,10 +546,6 @@ document.write(`
 <h3><strong>Step 4: Validazione della Sequenza</strong><a class="headerlink" href="#step-4-validazione-della-sequenza" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="10">
 <li><p>Utilizzare la funzione <strong>Test Sequence</strong> per verificare che il ciclo rispetti i seguenti criteri di efficienza:</p></li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<ol class="arabic simple">
 <li><p><strong>Sincronizzazione</strong>: L’impulso di Flip deve terminare esattamente nello stesso istante in cui termina il movimento (<em>Move</em>). Regolare i valori di <em>Flip Count</em> e <em>Delay</em> per allinearli.</p></li>
 <li><p><strong>Stabilità Immagine</strong>: I componenti devono essere immobili al momento dello scatto della camera.</p>
 <ul class="simple">
@@ -555,10 +560,46 @@ document.write(`
 </ul>
 </li>
 </ol>
-</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Cliccare sempre su <strong>Synchronize Parameters</strong> dopo ogni modifica manuale per rendere attive le variazioni nel controller.</p>
+</div>
+</section>
+<section id="strategie-per-problemi-comuni">
+<h3>Strategie per problemi comuni<a class="headerlink" href="#strategie-per-problemi-comuni" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Troubleshooting configurazione</strong></p>
+<p><strong>Problema: Pezzi non si separano</strong>
+→ Soluzione: Aumentare Flip Count, incrementare Shake Accel, abilitare Air-blow Pre-Flip</p>
+<p><strong>Problema: Pezzi vengono espulsi dal disco</strong>
+→ Soluzione: Ridurre Speed, ridurre Accel, ridurre Blow Time</p>
+<p><strong>Problema: Ciclo troppo lento</strong>
+→ Soluzione: Aumentare Speed, ridurre Angle (rotazione più breve), ottimizzare Flip timing</p>
+<p><strong>Problema: Pezzi rimangono aggregati in mucchi</strong>
+→ Soluzione: Aumentare Shake Speed, incrementare Flip Count, usare Air-blow Pre-Flip</p>
+<p><strong>Problema: Immagini sfocate (pezzi in movimento)</strong>
+→ Soluzione: Ridurre Speed/Accel, aggiungere pause, verificare superficie grip</p>
+</div>
+</section>
+</section>
+<section id="prossimi-passi">
+<h2>Prossimi Passi<a class="headerlink" href="#prossimi-passi" title="Link to this heading">#</a></h2>
+<p>Una volta completata la configurazione del FlexiBowl, procedere con:</p>
+<p><strong>→ <a class="reference internal" href="23_Config_Hopper.html"><span class="std std-doc">Configurazione Hopper</span></a></strong> - Se presente tramoggia esterna</p>
+<p><strong>→ <a class="reference internal" href="24_Verifica_Risultati.html"><span class="std std-doc">Verifica Risultati</span></a></strong> - Monitoraggio applicazione completa</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Test produzione</strong></p>
+<p>Prima di utilizzare in produzione:</p>
+<ol class="arabic simple">
+<li><p>Eseguire 50-100 cicli di test per verificare consistenza</p></li>
+<li><p>Monitorare tasso di riempimento disco (deve essere costante)</p></li>
+<li><p>Verificare che non ci siano accumuli anomali o zone vuote persistenti</p></li>
+<li><p>Annotare eventuali necessità di regolazione fine</p></li>
+<li><p>Incrementare gradualmente verso velocità produttiva</p></li>
+</ol>
+<p>La configurazione ottimale può richiedere 2-3 sessioni di fine-tuning con il pezzo reale in quantità significativa.</p>
 </div>
 <br>
 <!-- Versions and languages set-up -->
@@ -823,7 +864,6 @@ ___\\ \\     // //___
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
 </section>
-</section>
 
 
                 </article>
@@ -875,8 +915,10 @@ ___\\ \\     // //___
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-caratterizzazione-del-componente"><strong>Step 2: Caratterizzazione del Componente</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-test-degli-accessori"><strong>Step 3: Test degli Accessori</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-validazione-della-sequenza"><strong>Step 4: Validazione della Sequenza</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strategie-per-problemi-comuni">Strategie per problemi comuni</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
   </nav></div>
 

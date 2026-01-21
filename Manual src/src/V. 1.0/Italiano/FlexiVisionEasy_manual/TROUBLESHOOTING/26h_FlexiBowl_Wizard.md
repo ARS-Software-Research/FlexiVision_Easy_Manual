@@ -1,3 +1,4 @@
+(troubleshooting_FB_Wizard)=
 # FlexiBowl Wizard
 
 ```{list-table}
