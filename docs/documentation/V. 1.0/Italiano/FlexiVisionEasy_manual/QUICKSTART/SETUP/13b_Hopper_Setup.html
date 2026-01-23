@@ -563,44 +563,11 @@ document.write(`
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Ottimizzazione futura</strong></p>
-<p>I parametri impostati in questa fase sono sufficienti per il funzionamento base del sistema.</p>
-<p>Per ottimizzazioni avanzate dell’Hopper (soglie di attivazione, strategie di riempimento, coordinamento con produzione), consultare la sezione <a class="reference internal" href="#23_Config_Hopper.md"><span class="xref myst">Config Hopper</span></a> dopo aver completato la calibrazione e creato i primi modelli pezzo.</p>
-</div>
-<hr class="docutils" />
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Attivazione automatica durante picking</strong></p>
-<p>Una volta configurato, l’Hopper viene richiamato automaticamente dal sistema FlexiVision quando:</p>
-<ol class="arabic simple">
-<li><p>Il software rileva che non ci sono abbastanza pezzi prelevabili sul FlexiBowl</p></li>
-<li><p>Il numero di tentativi di localizzazione falliti supera una soglia</p></li>
-<li><p>Il FlexiBowl ha completato un ciclo completo senza trovare pezzi validi</p></li>
-</ol>
-<p>Quando queste condizioni si verificano, il sistema:</p>
-<ul class="simple">
-<li><p>Invia automaticamente il comando di attivazione all’Hopper</p></li>
-<li><p>Attende che i pezzi si distribuiscano sul FlexiBowl</p></li>
-<li><p>Riprende la ricerca e il picking</p></li>
-</ul>
-<p>Questo processo è completamente automatico e non richiede intervento dell’operatore.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Coordinamento con FlexiBowl</strong></p>
-<p>Durante il funzionamento normale, il sistema coordina FlexiBowl e Hopper:</p>
-<ol class="arabic simple">
-<li><p>Robot richiede un pezzo</p></li>
-<li><p>FlexiVision cerca pezzi sul FlexiBowl</p></li>
-<li><p>Se trova un pezzo → comunica coordinate al robot</p></li>
-<li><p>Se NON trova pezzi → attiva FlexiBowl per distribuire i pezzi presenti</p></li>
-<li><p>Dopo N tentativi falliti → attiva Hopper per aggiungere pezzi</p></li>
-<li><p>Attende distribuzione → riprende ricerca</p></li>
-</ol>
-<p>I parametri di questa logica (numero tentativi, temporizzazioni) possono essere ottimizzati nella sezione <a class="reference internal" href="#23_Config_Hopper.md"><span class="xref myst">Config Hopper</span></a> specifica per ricetta.</p>
+<p>I parametri impostati in questa fase sono sufficienti per la configurazione iniziale del sistema.
+Durante la procedura andremo poi a definire gli altri aspetti della configurazione della tramoggia.</p>
 </div>
 </section>
 </section>
-<hr class="docutils" />
 <section id="problemi-comuni-e-soluzioni">
 <h2>Problemi comuni e soluzioni<a class="headerlink" href="#problemi-comuni-e-soluzioni" title="Link to this heading">#</a></h2>
 <section id="hopper-non-si-attiva">

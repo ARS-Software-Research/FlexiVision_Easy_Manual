@@ -92,46 +92,9 @@ immagini schermate e valori tipici??
 ```{tip}
 **Ottimizzazione futura**
 
-I parametri impostati in questa fase sono sufficienti per il funzionamento base del sistema.
-
-Per ottimizzazioni avanzate dell'Hopper (soglie di attivazione, strategie di riempimento, coordinamento con produzione), consultare la sezione [Config Hopper](23_Config_Hopper.md) dopo aver completato la calibrazione e creato i primi modelli pezzo.
+I parametri impostati in questa fase sono sufficienti per la configurazione iniziale del sistema.
+Durante la procedura andremo poi a definire gli altri aspetti della configurazione della tramoggia.
 ```
-
----
-
-```{note}
-**Attivazione automatica durante picking**
-
-Una volta configurato, l'Hopper viene richiamato automaticamente dal sistema FlexiVision quando:
-
-1. Il software rileva che non ci sono abbastanza pezzi prelevabili sul FlexiBowl
-2. Il numero di tentativi di localizzazione falliti supera una soglia
-3. Il FlexiBowl ha completato un ciclo completo senza trovare pezzi validi
-
-Quando queste condizioni si verificano, il sistema:
-- Invia automaticamente il comando di attivazione all'Hopper
-- Attende che i pezzi si distribuiscano sul FlexiBowl
-- Riprende la ricerca e il picking
-
-Questo processo è completamente automatico e non richiede intervento dell'operatore.
-```
-
-```{tip}
-**Coordinamento con FlexiBowl**
-
-Durante il funzionamento normale, il sistema coordina FlexiBowl e Hopper:
-
-1. Robot richiede un pezzo
-2. FlexiVision cerca pezzi sul FlexiBowl
-3. Se trova un pezzo → comunica coordinate al robot
-4. Se NON trova pezzi → attiva FlexiBowl per distribuire i pezzi presenti
-5. Dopo N tentativi falliti → attiva Hopper per aggiungere pezzi
-6. Attende distribuzione → riprende ricerca
-
-I parametri di questa logica (numero tentativi, temporizzazioni) possono essere ottimizzati nella sezione [Config Hopper](23_Config_Hopper.md) specifica per ricetta.
-```
-
----
 
 
 ## Problemi comuni e soluzioni

@@ -421,7 +421,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipi-di-distorsioni-ottiche">Tipi di distorsioni ottiche</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installazione-e-posizionamento-griglia-di-calibrazione">Installazione e posizionamento griglia di calibrazione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regolazioni-fondamentali-apertura-diaframma-messa-a-fuoco-ed-esposizione">Regolazioni fondamentali: apertura diaframma, messa a fuoco ed esposizione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottenere-un-risultato-soddisfacente">Ottenere un risultato soddisfacente</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-camera">Calibrazione Camera</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-e-necessario-ripetere-la-calibrazione">Quando è necessario ripetere la calibrazione</a></li>
@@ -433,7 +433,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passi-successivi">Passi successivi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#come-si-passa-da-backlight-a-frontlight">Come si passa da backlight a frontlight?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#backlight-a-toplight">backlight a toplight?</a></li>
 </ul>
 </li>
 </ul>
@@ -486,31 +486,37 @@ document.write(`
 <p>La griglia di calibrazione dedicata ARS deve essere posizionata sul FlexiBowl:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
-<tr class="row-odd"><td><ol class="arabic simple">
+<tr class="row-odd"><td><ol class="arabic simple" start="0">
+<li></li>
+</ol>
+</td>
+<td><p>Se presenti, rimuovere i deviatori montati sul FlexiBowl.</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple">
 <li></li>
 </ol>
 </td>
 <td><p><strong>Svitare le quattro viti</strong> della flangia centrale del FlexiBowl</p></td>
 </tr>
-<tr class="row-even"><td><ol class="arabic simple" start="2">
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
 <li></li>
 </ol>
 </td>
 <td><p><strong>Rimuovere la flangia</strong> centrale</p></td>
 </tr>
-<tr class="row-odd"><td><ol class="arabic simple" start="3">
+<tr class="row-even"><td><ol class="arabic simple" start="3">
 <li></li>
 </ol>
 </td>
 <td><p><strong>Rimuovere la superficie</strong> del piatto</p></td>
 </tr>
-<tr class="row-even"><td><ol class="arabic simple" start="4">
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
 <li></li>
 </ol>
 </td>
 <td><p><strong>Posizionare la griglia ARS</strong> sul FlexiBowl allineando i pin di posizionamento con i fori predefiniti</p></td>
 </tr>
-<tr class="row-odd"><td><ol class="arabic simple" start="5">
+<tr class="row-even"><td><ol class="arabic simple" start="5">
 <li></li>
 </ol>
 </td>
@@ -647,8 +653,8 @@ Valore tipico iniziale: <strong>15-30 ms</strong> (dipende dall’intensità del
 </ul>
 </div>
 </section>
-<section id="ottenere-un-risultato-soddisfacente">
-<h3>Ottenere un risultato soddisfacente<a class="headerlink" href="#ottenere-un-risultato-soddisfacente" title="Link to this heading">#</a></h3>
+<section id="calibrazione-camera">
+<h3>Calibrazione Camera<a class="headerlink" href="#calibrazione-camera" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -854,20 +860,9 @@ La calibrazione robot stabilisce la corrispondenza tra coordinate camera e coord
 <li><p><strong><a class="reference internal" href="15_Protocol_Setup.html"><span class="std std-doc">Protocol Setup</span></a></strong> - Configurazione avanzata comunicazione</p></li>
 <li><p><strong><a class="reference internal" href="Nuovo_Modello/16_Nuovo_modello.html"><span class="std std-doc">Nuovo Modello Pezzo</span></a></strong> - Training primo modello per picking</p></li>
 </ol>
-<section id="come-si-passa-da-backlight-a-frontlight">
-<h3>Come si passa da backlight a frontlight?<a class="headerlink" href="#come-si-passa-da-backlight-a-frontlight" title="Link to this heading">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Cambio modalità illuminazione</strong></p>
-<p>Se è necessario passare da illuminazione backlight (dal basso) a frontlight/toplight (dall’alto):</p>
-<ol class="arabic simple">
-<li><p>Accedere a <strong>FlexiBowl Setup</strong> (<a class="reference internal" href="SETUP/13a_FB_Setup.html"><span class="std std-doc">Config FlexiBowl</span></a>)</p></li>
-<li><p>Disattivare il <strong>Backlight</strong> (Light OFF)</p></li>
-<li><p>Attivare il <strong>Toplight/Frontlight</strong> esterno (se disponibile)</p></li>
-<li><p>Tornare alla Camera Setup e regolare nuovamente l’esposizione</p></li>
-</ol>
-<p><strong>Nota importante</strong>: Le impostazioni di esposizione ottimali sono diverse per backlight e frontlight. Sarà necessario ripetere la regolazione dell’esposizione dopo il cambio.</p>
-</div>
+<section id="backlight-a-toplight">
+<h3>backlight a toplight?<a class="headerlink" href="#backlight-a-toplight" title="Link to this heading">#</a></h3>
+<p>quando attivo frontlight?</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Impatto sul riconoscimento pezzi</strong></p>
@@ -1192,7 +1187,7 @@ ___\\ \\     // //___
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipi-di-distorsioni-ottiche">Tipi di distorsioni ottiche</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installazione-e-posizionamento-griglia-di-calibrazione">Installazione e posizionamento griglia di calibrazione</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regolazioni-fondamentali-apertura-diaframma-messa-a-fuoco-ed-esposizione">Regolazioni fondamentali: apertura diaframma, messa a fuoco ed esposizione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ottenere-un-risultato-soddisfacente">Ottenere un risultato soddisfacente</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-camera">Calibrazione Camera</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-e-necessario-ripetere-la-calibrazione">Quando è necessario ripetere la calibrazione</a></li>
@@ -1204,7 +1199,7 @@ ___\\ \\     // //___
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passi-successivi">Passi successivi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#come-si-passa-da-backlight-a-frontlight">Come si passa da backlight a frontlight?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#backlight-a-toplight">backlight a toplight?</a></li>
 </ul>
 </li>
 </ul>

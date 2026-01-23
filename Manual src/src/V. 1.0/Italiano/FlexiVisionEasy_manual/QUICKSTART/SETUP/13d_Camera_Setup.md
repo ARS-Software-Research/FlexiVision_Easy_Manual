@@ -65,7 +65,7 @@ inserire immagini delle schermate per ogni passaggio per renderli più chiari e 
   - 3. Nella finestra di configurazione camera, localizzare e cliccare sul pulsante **Expert** (in basso a destra)
     4. Questa modalità fornisce accesso a tutte le impostazioni avanzate della camera necessarie per la configurazione iniziale
 * - **Configurazione image acquisition device**
-  - 5. Nel pannello **Expert**, cliccare sulla sezione **Image Acquisition** o **Settings**
+  - 5. Nel pannello **Expert**, cliccare sulla sezione **Image Acquisition** da **Settings**
     6. Cercare e cliccare su **Image Acquisition Device**
     7. Si apre un menu di selezione dei dispositivi di acquisizione disponibili
 * -  **Identificazione camera specifica**
@@ -106,13 +106,11 @@ Se sono elencate multiple camere o dispositivi:
 ```{list-table}
 * - **Attivazione sistema di acquisizione**
   - 14. Dopo aver selezionato il formato corretto, cliccare su **Initialize Acquisition**
-    15. Il software inizializza il collegamento con la camera e prepara il sistema di acquisizione
-    16. Attendere il completamento dell'inizializzazione (pochi secondi)
-    17. Un messaggio o un indicatore confermerà l'inizializzazione riuscita
+    15.Attendere il completamento dell'inizializzazione (pochi secondi)
 * - **Verifica funzionamento acquisizione**
-  - 18. Localizzare il pulsante **Run** in alto a sinistra dell'interfaccia (icona "play" o simile)
-    19. Cliccare su **Run** ripetutamente (5-10 volte) per acquisire immagini di test
-    20. Osservare l'area di visualizzazione immagine:
+  - 16. Localizzare il pulsante **Run** in alto a sinistra dell'interfaccia (icona "play" o simile)
+    17. Cliccare su **Run** ripetutamente (5-10 volte) per acquisire immagini di test
+    18. Osservare l'area di visualizzazione immagine:
         - Dovrebbe mostrare la vista della camera sul FlexiBowl
         - L'immagine dovrebbe aggiornarsi ad ogni click su Run
         - Verificare che l'illuminazione sia visibile
@@ -214,14 +212,13 @@ Procedere quindi con i valori automatici per completare il setup iniziale.
 
 ```{list-table}
 * - **Verifica finale e salvataggio**
-  - Prima di uscire dalla configurazione camera:  
-    21. Cliccare su **Run** almeno 2-3 volte consecutivamente  
-    22. Verificare che:  
+  - 19. Cliccare su **Run** almeno 2-3 volte consecutivamente  
+    20. Verificare che:  
       - Nessuna immagine appaia completamente blu o nera
       - Le immagini si aggiornino regolarmente
       - La superficie del FlexiBowl sia chiaramente visibile
       - L'illuminazione sia uniforme
-    23. Se tutti i test sono positivi, la configurazione è corretta
+    21. Se tutti i test sono positivi, la configurazione è corretta
 ```
 ---
 

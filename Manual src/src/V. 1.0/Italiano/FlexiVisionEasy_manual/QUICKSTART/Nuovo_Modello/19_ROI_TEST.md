@@ -146,7 +146,7 @@ Se Accept Threshold fosse 0.85:
 ## Finalizzazione
 
 ### **Step 4: Pulizia e Proseguimento**
-4. Rimuovere **tutti i componenti** dall'area, **tranne il componente di riferimento**
+4. Rimuovere **tutti i componenti** dall'area, **tranne il componente di riferimento** e i due oggetti ai suoi lati
 5. Cliccare su **Next** → si aprirà la pagina degli **Histogram**
 
 ```{danger}

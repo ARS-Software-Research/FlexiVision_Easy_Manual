@@ -70,7 +70,7 @@ Dopo il primo login, è necessario attivare la licenza software.
 ```{div}
 **Procedura di attivazione**
 
-1. Navigare alla sezione **Software License** dal menu principale
+1. Accedere alla seszione SETUP e Cliccare su **Software License** 
 
 2. Inserire la chiave di licenza fornita da ARS Automation nel campo dedicato
    - La chiave è composta da caratteri alfanumerici (es: `XXXX-XXXX-XXXX-XXXX`)
@@ -78,8 +78,7 @@ Dopo il primo login, è necessario attivare la licenza software.
 
 3. Cliccare su **Activate** 
 
-4. Attendere la conferma di attivazione (indicatore verde o messaggio di successo)
-```
+4. Attendere che l'indicatore di stao diventi verde 
 
 ```{warning}
 **Chiave di licenza non valida**
@@ -100,7 +99,7 @@ Prima di configurare i componenti hardware, è necessario creare una ricetta di 
 ```{div}
 **Procedura creazione ricetta**
 
-1. Navigare alla sezione **RECIPES** dal menu principale
+1. Accedere alla sezione **RECIPES** dal pulsante in alto 
 
 2. Cliccare su **New Recipe** 
 
@@ -133,17 +132,14 @@ Per maggiori dettagli sulla gestione ricette, consultare la sezione [Creare una 
 
 Una volta completate le operazioni preliminari, procedere con la configurazione dei componenti hardware nell'ordine seguente.
 
-### Accesso alla pagina SETUP
-
 Tutti i setup hardware sono accessibili dalla pagina centrale **SETUP** del software.
 
-```{div}
-**Navigazione alla pagina SETUP**
+
 
 1. Dal menu principale, cliccare su **SETUP**
 2. Vengono visualizzate le icone dei diversi componenti da configurare
 3. Cliccare sull'icona del componente desiderato per accedere alla sua configurazione specifica
-```
+
 
 ### Sequenza setup consigliata
 

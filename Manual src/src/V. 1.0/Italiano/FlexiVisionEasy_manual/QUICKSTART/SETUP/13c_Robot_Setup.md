@@ -122,8 +122,8 @@ Dopo la riconfigurazione, verificare che il server sia attivo:
 
 * - **1**
   - Osservare l'indicatore **Server Online**:
-   - **Verde**: Server attivo e in ascolto (pronto per connessioni)
-     **Rosso**: Server non attivo (problema di configurazione)
+   - **Verde**: Server attivo e in ascolto (pronto per connessioni)  
+     **Rosso**: Server non attivo (problema di configurazione)  
      **Giallo**: Server in fase di avvio o riconfigurazione
 ```
 ```{note}
@@ -139,7 +139,7 @@ Se l'indicatore è rosso, verificare:
 **Completamento configurazione**
 
 1. Verificare che la connessione robot → FlexiVision sia stabile
-2. Testare almeno 2-3 comandi diversi (get_Recipe, state_Locator, test_Locator)
+2. Testare almeno 2-3 comandi diversi (get_Recipe, state_Locator, test_Locator) ???
 3. I parametri di comunicazione sono automaticamente salvati
 4. Tornare alla pagina **SETUP** principale
 

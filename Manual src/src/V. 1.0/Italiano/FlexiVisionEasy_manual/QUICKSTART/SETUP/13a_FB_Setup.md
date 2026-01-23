@@ -75,16 +75,12 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 ### Step 3: Accesso configurazione
 
 
-**Apertura pannello config**
-
 1. Cliccare sul pulsante **Config FlexiBowl**
 2. Si apre una finestra con i parametri configurabili del FlexiBowl
 
 
 ### Step 4: Abilitazione illuminazione (Backlight)
 
-
-**Attivazione backlight**
 
 1. Nella finestra di configurazione, localizzare il controllo **Backlight** 
 
@@ -96,8 +92,6 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 
 ### Step 5: Sincronizzazione parametri
 
-
-**Salvataggio configurazione**
 
 1. Cliccare su **Synchronize Parameters**
 

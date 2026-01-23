@@ -42,6 +42,8 @@ La calibrazione calcola i parametri matematici per compensare queste distorsioni
 La griglia di calibrazione dedicata ARS deve essere posizionata sul FlexiBowl:
 
 ```{list-table}
+* - 0. 
+  - Se presenti, rimuovere i deviatori montati sul FlexiBowl.
 * - 1. 
   - **Svitare le quattro viti** della flangia centrale del FlexiBowl
 * - 2. 
@@ -167,7 +169,7 @@ Se l'immagine con esposizione 20ms appare:
 
 
 
-### Ottenere un risultato soddisfacente
+### Calibrazione Camera
 
 ```{list-table}
 :widths: 30 70
@@ -357,20 +359,8 @@ Una volta completata la calibrazione camera con risultato Good:
 
 
 
-### Come si passa da backlight a frontlight?
-
-```{note}
-**Cambio modalità illuminazione**
-
-Se è necessario passare da illuminazione backlight (dal basso) a frontlight/toplight (dall'alto):
-
-1. Accedere a **FlexiBowl Setup** ([Config FlexiBowl](SETUP/13a_FB_Setup.md))
-2. Disattivare il **Backlight** (Light OFF)
-3. Attivare il **Toplight/Frontlight** esterno (se disponibile)
-4. Tornare alla Camera Setup e regolare nuovamente l'esposizione
-
-**Nota importante**: Le impostazioni di esposizione ottimali sono diverse per backlight e frontlight. Sarà necessario ripetere la regolazione dell'esposizione dopo il cambio.
-```
+###  backlight a toplight?
+quando attivo frontlight?
 
 ```{warning}
 **Impatto sul riconoscimento pezzi**

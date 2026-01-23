@@ -58,9 +58,7 @@ Prima di creare una nuova ricetta personalizzata, assicurarsi di aver salvato la
 4. Mantenere lo stesso nome nel campo di salvataggio (si sta sovrascrivendo la ricetta con le configurazioni aggiornate)
 
 5. Confermare il salvataggio
-```
 
-```{tip}
 **Perché salvare la ricetta base?**
 
 La ricetta base contiene tutte le configurazioni hardware completate durante il setup:
@@ -69,7 +67,7 @@ La ricetta base contiene tutte le configurazioni hardware completate durante il 
 - Connessione Robot (porta TCP/IP)
 - Calibrazione camera
 
-Salvandola, si crea un punto di partenza sicuro per tutte le ricette future. In caso di problemi, si può sempre tornare a questa configurazione funzionante.
+Si ha quindi molti vantaggi nell'avere una ricetta base già pronta: ... .
 ```
 
 ---
