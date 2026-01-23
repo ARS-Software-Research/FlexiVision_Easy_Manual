@@ -6,6 +6,10 @@ In questa pagina vedremo come creare un modello di riferimento per il riconoscim
 ## Fase 1: Preparazione del Setup Fisico
 
 ### **Step 1: Preparazione Robot**
+0. Smontare la griglia di calibrazione e ripristinare il layout iniziale:
+   - Riposizionare la superficie
+   - riposizionare la flangia centrale 
+   - fissare la flangia centrale con le sue quattro viti
 1. Posizionare un componente al centro dell'area di visione
 2. Dal **pendant del robot**:
    - Selezionare il **frame** e il **tool** calibrato su FlexiVision

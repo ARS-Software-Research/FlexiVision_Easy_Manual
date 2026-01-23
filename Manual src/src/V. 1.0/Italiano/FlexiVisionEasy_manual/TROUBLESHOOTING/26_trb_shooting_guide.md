@@ -1,5 +1,8 @@
 # Risoluzione Problemi 
 
+inserire qui tutti i "possibili problemi" delle varie pagine? o in entrambi?
+
+
 ## Troubleshooting per la sezione "installazione del sistema"
 
 ```{list-table} 
