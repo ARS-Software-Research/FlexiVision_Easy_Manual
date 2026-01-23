@@ -457,7 +457,14 @@ document.write(`
 <h2>Fase 1: Preparazione del Setup Fisico<a class="headerlink" href="#fase-1-preparazione-del-setup-fisico" title="Link to this heading">#</a></h2>
 <section id="step-1-preparazione-robot">
 <h3><strong>Step 1: Preparazione Robot</strong><a class="headerlink" href="#step-1-preparazione-robot" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
+<ol class="arabic simple" start="0">
+<li><p>Smontare la griglia di calibrazione e ripristinare il layout iniziale:</p>
+<ul class="simple">
+<li><p>Riposizionare la superficie</p></li>
+<li><p>riposizionare la flangia centrale</p></li>
+<li><p>fissare la flangia centrale con le sue quattro viti</p></li>
+</ul>
+</li>
 <li><p>Posizionare un componente al centro dell’area di visione</p></li>
 <li><p>Dal <strong>pendant del robot</strong>:</p>
 <ul class="simple">
@@ -824,6 +831,7 @@ document.write(`
     </div>
     <div class="dropdown-menu" role="listbox">
       	<a href="#" role="option">Italiano</a>
+				<a href="#" role="option">Italiano copy</a>
     </div>
   </div>
 </div>
@@ -833,7 +841,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const bar = document.querySelector('.fixed-bar');
   const dropdowns = bar.querySelectorAll('.dropdown');
   const defaultLang = 'Italiano';
-  const languages = ["Italiano"];
+  const languages = ["Italiano", "Italiano copy"];
   const versions = ["V. 1.0"];
 
   // ---------------------------

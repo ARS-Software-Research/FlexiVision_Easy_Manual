@@ -1,0 +1,1373 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Specifiche Dettagliate FlexiVision &#8212; FlexiVision Easy 1.0 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=dd1bcd05" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=dd1bcd05" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=a681ed88"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'FlexiVisionEasy_manual/rif_tecnico_specifiche/04_Specifiche_FlexiVision';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Calcolo Distanza di Lavoro Ottimale" href="05_Calcolo_distanza_ottimale.html" />
+    <link rel="prev" title="3. Unboxing e Contenuto della Scatola" href="../03_Unboxing_Contenuto.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo_fv.png" class="logo__image only-light" alt="FlexiVision Easy 1.0 documentation - Home"/>
+    <script>document.write(`<img src="../../_static/logo_fv_black.png" class="logo__image only-dark" alt="FlexiVision Easy 1.0 documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">PRIMA DI INIZIARE</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_informazioni_preliminari.html"><strong>Informazioni Preliminari</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02_informazioni_sicurezza.html"><strong>Informazioni di Sicurezza</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03_Unboxing_Contenuto.html">3. Unboxing e Contenuto della Scatola</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">RIFERIMENTO TECNICO E SPECIFICHE</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Specifiche Dettagliate FlexiVision</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="05_Calcolo_distanza_ottimale.html"><strong>Calcolo Distanza di Lavoro Ottimale</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="integrazione_software/06_PlugIn.html"><strong>PlugIn</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="integrazione_software/07_Backup_management.html">7. BackUp Management</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="08_Opzioni.html"><strong>Opzioni</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">INSTALLAZIONE DEL SISTEMA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/11_Installazione_Software.html">11. Installazione Software</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">QUICKSTART</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/12_Panoramica_Interfaccia.html"><strong>Panoramica dell’interfaccia</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/SETUP/13_setup.html"><strong>Configurazione Iniziale del Sistema</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13a_FB_Setup.html"><strong>Passo 4: FlexiBowl Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13b_Hopper_Setup.html"><strong>Passo 5: Hopper Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13c_Robot_Setup.html"><strong>Passo 6 : Robot Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13d_Camera_Setup.html"><strong>Passo 7: Camera Setup</strong></a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/15_Protocol_Setup.html">15. Protocol Setup</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17_NuovaRicetta.html"><strong>Creare una Nuova Ricetta</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17b_Expert.html">tasto expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18_NuovoModello.html"><strong>Creare un Nuovo Modello</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19_ROI_TEST.html"><strong>Definizione ROI e Tolleranze</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20_Istogrammi.html"><strong>Gli istogrammi</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20b_Expert.html">expert della pagina …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/21_RobotPick.html"><strong>Calibrazione Robot Pick</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/21b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/22_Config_FlexiBowl.html">Configurazione guidata: FlexiBowl® Wizard</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/23_Config_Hopper.html">Configurazione della Tramoggia (Hopper)</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/24_Verifica_Risultati.html">Monitoraggio Applicazione: Dashboard</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GARANZIA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../25_Garanzia.html"><strong>Garanzia</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">TROUBLESHOOTING</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../TROUBLESHOOTING/26_trb_shooting_guide.html">Risoluzione Problemi</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26b_Installazione_Mecc.html">Installazione Meccanica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26c_Cablaggio_Connessioni.html">Cablaggio e Connessioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26d_Conf_Iniziale.html">Setup Iniziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26e_Calib_Cam.html">Calibrazione Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26f_Protocol_Setup.html">Protocol Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26g_Creazione_Ricette_Modelli.html">Creazione Ricette e modelli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26h_FlexiBowl_Wizard.html">FlexiBowl Wizard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../27_Support.html">Appendici e Contatti</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/FlexiVisionEasy_manual/rif_tecnico_specifiche/04_Specifiche_FlexiVision.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Specifiche Dettagliate FlexiVision</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camera">Camera</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-elettriche">Specifiche elettriche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodi-di-alimentazione">Metodi di alimentazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche-e-dimensioni">Specifiche fisiche e dimensioni</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visioncontroller">VisionController</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Specifiche elettriche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche-e-hardware">Specifiche fisiche e hardware</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#griglia-di-calibrazione">Griglia di calibrazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importanza-della-griglia-dedicata-ars">Importanza della griglia dedicata ARS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-griglia-ars-vs-griglia-stampata">Confronto: Griglia ARS vs Griglia Stampata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-tecniche-griglia">Specifiche tecniche griglia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kit-base">Kit  base</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#componenti-opzionali-forse-ridondante-qui">Componenti opzionali    forse ridondante qui?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-collegamenti">Panoramica collegamenti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#protocollo-di-comunicazione-robot-visione">Protocollo di comunicazione robot-visione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-protocollo">Specifiche protocollo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandi-disponibili">Comandi disponibili</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gestione-ricette">Gestione ricette</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comandi-di-localizzazione">Comandi di localizzazione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comandi-di-controllo-qualita">Comandi di controllo qualità</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comandi-flexibowl">Comandi FlexiBowl</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#segnali-hopper-opzionale">Segnali hopper opzionale</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="specifiche-dettagliate-flexivision">
+<h1><strong>Specifiche Dettagliate FlexiVision</strong><a class="headerlink" href="#specifiche-dettagliate-flexivision" title="Link to this heading">#</a></h1>
+<p>Questa sezione fornisce le specifiche tecniche complete del sistema FlexiVision Easy, inclusi dettagli su camera industriale, VisionController, griglia di calibrazione, protocolli di comunicazione e configurazioni hardware.</p>
+<p>Consultare questa sezione per:</p>
+<ul class="simple">
+<li><p>Verificare la compatibilità con la propria infrastruttura di rete</p></li>
+<li><p>Dimensionare correttamente l’alimentazione elettrica</p></li>
+<li><p>Pianificare l’integrazione meccanica dei componenti</p></li>
+<li><p>Configurare i protocolli di comunicazione robot-visione</p></li>
+</ul>
+<hr class="docutils" />
+<section id="camera">
+<h2>Camera<a class="headerlink" href="#camera" title="Link to this heading">#</a></h2>
+<p>Il sistema FlexiVision utilizza telecamere ad alta risoluzione con interfaccia Gigabit Ethernet per garantire rapidità nell’acquisizione delle immagini e precisione nel riconoscimento dei componenti.</p>
+<section id="specifiche-elettriche">
+<h3>Specifiche elettriche<a class="headerlink" href="#specifiche-elettriche" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Caratteristica</p></th>
+<th class="head"><p>Specifiche</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Brand &amp; Modello</p></td>
+<td><p>Cognex CAM-CIC-5000-20G</p></td>
+</tr>
+<tr class="row-odd"><td><p>Risoluzione</p></td>
+<td><p>5 MP (2448 × 2048 pixel)</p></td>
+</tr>
+<tr class="row-even"><td><p>Frame Rate</p></td>
+<td><p>14 fps</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tipo Sensore</p></td>
+<td><p>CMOS</p></td>
+</tr>
+<tr class="row-even"><td><p>Dimensioni Sensore</p></td>
+<td><p>1/2.5”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tipologia</p></td>
+<td><p>Monocromatica (Monochrome)</p></td>
+</tr>
+<tr class="row-even"><td><p>Protocollo di Connettività</p></td>
+<td><p>Gigabit Ethernet (GigE)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Requisiti di rete obbligatori</strong></p>
+<p>L’interfaccia Gigabit Ethernet è obbligatoria e richiede un’infrastruttura di rete compatibile (switch Gigabit Ethernet).</p>
+<p>La mancata osservanza di questo requisito compromette completamente l’operatività della telecamera. Verificare che tutti i componenti di rete (cavi, switch, porte) supportino lo standard GigE.</p>
+</div>
+</section>
+<section id="metodi-di-alimentazione">
+<h3>Metodi di alimentazione<a class="headerlink" href="#metodi-di-alimentazione" title="Link to this heading">#</a></h3>
+<p>La camera supporta due modalità di alimentazione alternative:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 40.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Metodo</p></th>
+<th class="head"><p>Descrizione</p></th>
+<th class="head"><p>Requisiti</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>PoE (Power over Ethernet)</strong> - Opzionale</p></td>
+<td><p>L’alimentazione e i dati vengono trasmessi tramite un unico cavo Ethernet. Consumo circa 3.3 W.</p></td>
+<td><p>Richiede un PoE Injector o uno Switch PoE compatibile (IEEE 802.3af/at)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Cavo Camera Esterno</strong> - Standard</p></td>
+<td><p>L’alimentazione è fornita da una fonte DC esterna tramite cavo dedicato (incluso nel kit).</p></td>
+<td><p>Cavo Ethernet separato necessario solo per la comunicazione dati (PoE non richiesto)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Quale metodo scegliere?</strong></p>
+<ul class="simple">
+<li><p><strong>PoE</strong>: ideale per installazioni pulite con un solo cavo, ma richiede hardware di rete specifico</p></li>
+<li><p><strong>Alimentazione esterna</strong>: soluzione standard più flessibile, consigliata per la maggior parte delle applicazioni</p></li>
+</ul>
+</div>
+</section>
+<section id="specifiche-fisiche-e-dimensioni">
+<h3>Specifiche fisiche e dimensioni<a class="headerlink" href="#specifiche-fisiche-e-dimensioni" title="Link to this heading">#</a></h3>
+<p>immagini + pdf??</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="visioncontroller">
+<h2>VisionController<a class="headerlink" href="#visioncontroller" title="Link to this heading">#</a></h2>
+<p>Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge da controller principale per il software di visione. ARS fornisce il VisionController già pre-configurato e testato con il software FlexiVision Easy installato.</p>
+<section id="id1">
+<h3>Specifiche elettriche<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Caratteristica</p></th>
+<th class="head"><p>Specifiche</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Alimentazione (Input)</p></td>
+<td><p>9 ~ 36 V DC (tramite terminal block)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Consumo Energetico</p></td>
+<td><p>15 – 35 W (tipico 25 W)</p></td>
+</tr>
+<tr class="row-even"><td><p>Porte di Rete (LAN)</p></td>
+<td><p>6x LAN Gigabit Ethernet (di cui 4x PoE)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Porte USB</p></td>
+<td><p>2x USB 3.0, 2x USB 2.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Uscita Video</p></td>
+<td><p>1x DisplayPort (fino a 4096×2160 &#64; 60Hz)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Protezione</p></td>
+<td><p>Protezione da sovratensione e inversione polarità</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il VisionController dispone di … che possono alimentare direttamente la camera e altri dispositivi compatibili, eliminando la necessità di …</p>
+</div>
+</section>
+<section id="specifiche-fisiche-e-hardware">
+<h3>Specifiche fisiche e hardware<a class="headerlink" href="#specifiche-fisiche-e-hardware" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Caratteristica</p></th>
+<th class="head"><p>Specifiche</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dimensioni (L × P × A)</p></td>
+<td><p>150 mm × 145 mm × 84 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Peso</p></td>
+<td><p>4 kg</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistema Operativo</p></td>
+<td><p>Windows 11 IoT Enterprise 2021 LTSC VALUE 64 bit</p></td>
+</tr>
+<tr class="row-odd"><td><p>Processore</p></td>
+<td><p>Intel Core (specifiche su richiesta)</p></td>
+</tr>
+<tr class="row-even"><td><p>Memoria (RAM)</p></td>
+<td><p>8 GB DDR4-3200 MHz SODIMM</p></td>
+</tr>
+<tr class="row-odd"><td><p>Archiviazione</p></td>
+<td><p>SSD 256 GB SATA 2.5”</p></td>
+</tr>
+<tr class="row-even"><td><p>Grado di Protezione</p></td>
+<td><p>IP40 (installazione in quadro elettrico consigliata)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Temperatura Operativa</p></td>
+<td><p>0°C ~ +50°C</p></td>
+</tr>
+<tr class="row-even"><td><p>Certificazioni</p></td>
+<td><p>CE, FCC</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Il VisionController è progettato per montaggio …</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="griglia-di-calibrazione">
+<h2>Griglia di calibrazione<a class="headerlink" href="#griglia-di-calibrazione" title="Link to this heading">#</a></h2>
+<p>Una calibrazione eccellente è il requisito fondamentale per l’accuratezza del sistema FlexiVision. Solo una calibrazione ad alta precisione garantisce che le coordinate rilevate dalla telecamera (pixel) vengano convertite in modo accurato nelle coordinate reali del robot (millimetri), assicurando così il successo dell’applicazione di picking.</p>
+<section id="importanza-della-griglia-dedicata-ars">
+<h3>Importanza della griglia dedicata ARS<a class="headerlink" href="#importanza-della-griglia-dedicata-ars" title="Link to this heading">#</a></h3>
+<p>Sebbene sia tecnicamente possibile eseguire la calibrazione utilizzando una griglia stampata su carta, l’utilizzo della <strong>Griglia di Calibrazione Dedicata ARS</strong> (spesso utilizzata con l’opzione Laser Tool) innalza significativamente la precisione e semplifica il flusso di lavoro di manutenzione.</p>
+<p>La griglia ARS è realizzata con un’accuratezza estremamente elevata, impossibile da replicare con una stampa standard. Inoltre, la sua struttura è progettata per il montaggio ripetibile sul FlexiBowl.</p>
+</section>
+<section id="confronto-griglia-ars-vs-griglia-stampata">
+<h3>Confronto: Griglia ARS vs Griglia Stampata<a class="headerlink" href="#confronto-griglia-ars-vs-griglia-stampata" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Caratteristica</p></th>
+<th class="head"><p>Griglia ARS Dedicata</p></th>
+<th class="head"><p>Griglia Stampata su Carta</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Precisione Fabbricativa</strong></p></td>
+<td><p>Estremamente Alta (Lavorazione CNC dedicata)</p></td>
+<td><p>Bassa/Variabile (Dipende dalla qualità della stampante)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Ripetibilità di Montaggio</strong></p></td>
+<td><p>Alta (Pin dedicati che si fissano in fori predefiniti sul FlexiBowl)</p></td>
+<td><p>Bassa (Non ripetibile, richiede riposizionamento manuale)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Punto di Riferimento Robot</strong></p></td>
+<td><p>Più Preciso (Con Laser Tool, il contatto fisico è sostituito dall’allineamento visivo)</p></td>
+<td><p>Meno Preciso (Utilizza tip fisico o punta soggetta a usura)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vantaggio in Ricalibrazione</strong></p></td>
+<td><p>Solo la visione richiede ricalibrazione. Il punto di riferimento del robot è mantenuto.</p></td>
+<td><p>Sia la visione che il robot richiedono una ricalibrazione completa</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Durabilità</strong></p></td>
+<td><p>Illimitata (metallo anodizzato)</p></td>
+<td><p>Limitata (carta si deteriora, inchiostro sbiadisce)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Investimento consigliato</strong></p>
+<p>Per applicazioni di produzione, la griglia ARS dedicata  riduce drasticamente i tempi di ricalibrazione e aumenta la precisione complessiva del sistema.</p>
+</div>
+</section>
+<section id="specifiche-tecniche-griglia">
+<h3>Specifiche tecniche griglia<a class="headerlink" href="#specifiche-tecniche-griglia" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Griglia per FlexiBowl 200:</p></li>
+<li><p>Griglia per FlexiBowl 350:</p></li>
+<li><p>Griglia per FlexiBowl 500:</p></li>
+<li><p>Griglia per FlexiBowl 650:</p></li>
+<li><p>Griglia per FlexiBowl 800:</p></li>
+<li><p>Griglia per FlexiBowl 1200:</p></li>
+</ul>
+<p><strong>Materiale:</strong> Alluminio anodizzato con pattern inciso laser ad alta precisione (±0.05 mm)</p>
+<p>Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezione <a class="reference internal" href="#14_calibrazione_camera.md"><span class="xref myst">Calibrazione della Camera</span></a>.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="kit-base">
+<h2>Kit  base<a class="headerlink" href="#kit-base" title="Link to this heading">#</a></h2>
+<p>Il kit standard FlexiVision Easy include tutti i componenti necessari per l’installazione e la messa in servizio del sistema.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Componente</p></th>
+<th class="head"><p>Descrizione e Note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Camera Industriale</strong></p></td>
+<td><p>Cognex CAM-CIC-5000-20G con lente preinstallata e calibrata</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Lente</strong></p></td>
+<td><p>Ottica fissa ottimizzata per la distanza di lavoro standard (specificare modello)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>VisionController</strong></p></td>
+<td><p>PC industriale con software FlexiVision Easy preinstallato e configurato</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Griglia di Calibrazione</strong></p></td>
+<td><p>Griglia dedicata ARS per il modello di FlexiBowl specificato nell’ordine</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Cavo Camera - Alimentazione</strong></p></td>
+<td><p>Lunghezza standard 3 m (lunghezze personalizzate disponibili su richiesta)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Documentazione</strong></p></td>
+<td><p>Manuale utente, guida rapida, certificati di conformità</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Personalizzazione lunghezze cavi</strong></p>
+<p>I cavi di comunicazione e alimentazione possono essere ordinati in lunghezze personalizzate in base alle specifiche esigenze dell’installazione. Specificare le lunghezze desiderate al momento dell’ordine.</p>
+<p>Lunghezze standard disponibili: 3m, 5m, 10m, 15m</p>
+</div>
+</section>
+<section id="componenti-opzionali-forse-ridondante-qui">
+<h2>Componenti opzionali    forse ridondante qui?<a class="headerlink" href="#componenti-opzionali-forse-ridondante-qui" title="Link to this heading">#</a></h2>
+<p>Componenti aggiuntivi disponibili separatamente:</p>
+<div class="admonition docutils">
+<p><a href="rif_tecnico_specifiche/08_Opzioni.md" style="text-decoration: none; color: inherit;"><strong>Toplight</strong>: Illuminatore LED dedicato per applicazioni con scarsa illuminazione ambientale</a></p>
+</div>
+<div class="admonition docutils">
+<p><a href="rif_tecnico_specifiche/08_Opzioni.md" style="text-decoration: none; color: inherit;"><strong>Backlight</strong>: Illuminatore LED</a></p>
+</div>
+<div class="admonition docutils">
+<p><a href="rif_tecnico_specifiche/08_Opzioni.md" style="text-decoration: none; color: inherit;"><strong>Laser Tool</strong>: strumento laser per calibrazione ad alta precisione</a></p>
+</div>
+<div class="admonition docutils">
+<p>Cavi di ricambio e di lunghezza personalizzata</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="panoramica-collegamenti">
+<h2>Panoramica collegamenti<a class="headerlink" href="#panoramica-collegamenti" title="Link to this heading">#</a></h2>
+<p><img alt="Panoramica Collegamenti" src="../../_images/pan_collegamenti1.png" /></p>
+<p><em>Schema di collegamento completo del sistema FlexiVision Easy con robot e FlexiBowl</em></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>FlexiBowl → Alimentazione</strong></p></td>
+<td><p>Cavo di alimentazione dedicato</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Tramoggia → FlexiBowl</strong></p></td>
+<td><p>Cavo di segnale/alimentazione</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Camera → VisionController</strong></p></td>
+<td><p>Cavo Ethernet GigE (dati) + Cavo alimentazione DC</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Robot → VisionController</strong></p></td>
+<td><p>Cavo Ethernet (comunicazione TCP/IP)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>VisionController → Alimentazione</strong></p></td>
+<td><p>9-36V DC</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Per schemi elettrici dettagliati, consultare la sezione <a class="reference internal" href="#10_Cablaggio_Connessioni.md"><span class="xref myst">Cablaggio e Connessioni</span></a>.</p>
+</section>
+<hr class="docutils" />
+<section id="protocollo-di-comunicazione-robot-visione">
+<h2>Protocollo di comunicazione robot-visione<a class="headerlink" href="#protocollo-di-comunicazione-robot-visione" title="Link to this heading">#</a></h2>
+<p>FlexiVision Easy comunica con il robot tramite protocollo <strong>TCP/IP</strong> su rete Ethernet. Il robot deve essere in grado di aprire e gestire uno o più server di comunicazione per ricevere e inviare stringhe tramite un task parallelo rispetto a quello principale, così da ricevere informazioni dal sistema di visione mentre il lavoro principale è in esecuzione.</p>
+<section id="specifiche-protocollo">
+<h3>Specifiche protocollo<a class="headerlink" href="#specifiche-protocollo" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parametro</p></th>
+<th class="head"><p>Valore</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Protocollo</p></td>
+<td><p>TCP/IP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Porta</p></td>
+<td><p>Configurabile (default: 2000)</p></td>
+</tr>
+<tr class="row-even"><td><p>Carattere di terminazione</p></td>
+<td><p>CHR(13) - Carriage Return</p></td>
+</tr>
+<tr class="row-odd"><td><p>Formato dati</p></td>
+<td><p>Stringa ASCII</p></td>
+</tr>
+<tr class="row-even"><td><p>Timeout</p></td>
+<td><p>Configurabile (default: 5000 ms)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encoding</p></td>
+<td><p>UTF-8</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="comandi-disponibili">
+<h3>Comandi disponibili<a class="headerlink" href="#comandi-disponibili" title="Link to this heading">#</a></h3>
+<p>Il sistema supporta i seguenti comandi tramite stringhe di testo inviate sulla connessione TCP/IP:</p>
+<section id="gestione-ricette">
+<h4>Gestione ricette<a class="headerlink" href="#gestione-ricette" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Comando</p></th>
+<th class="head"><p>Azione</p></th>
+<th class="head"><p>Valore di Ritorno</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">set_Recipe=nome_ricetta</span></code></p></td>
+<td><p>Carica la ricetta corrispondente al “nome_ricetta” specificato</p></td>
+<td><p>Nessuno</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">get_Recipe</span></code></p></td>
+<td><p>Restituisce il nome della ricetta attualmente caricata</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">nome_ricetta</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="comandi-di-localizzazione">
+<h4>Comandi di localizzazione<a class="headerlink" href="#comandi-di-localizzazione" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Comando</p></th>
+<th class="head"><p>Azione</p></th>
+<th class="head"><p>Valore di Ritorno</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">start_Locator</span></code></p></td>
+<td><p>Avvia il processo di localizzazione dei pezzi. Richiama automaticamente la routine di manipolazione FlexiBowl se non ci sono pezzi prelevabili</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Pattern_1;x;y;r</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">stop_Locator</span></code></p></td>
+<td><p>Ferma il processo di localizzazione</p></td>
+<td><p>Nessuno</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">turn_Locator</span></code></p></td>
+<td><p>Se nessun pezzo è stato prelevato, fa ruotare il FlexiBowl e riavvia la ricerca</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Pattern_1;x;y;r</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">test_Locator</span></code></p></td>
+<td><p>Avvia la localizzazione senza attivare il FlexiBowl (solo acquisizione immagine)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Pattern_1;x;y;r</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">state_Locator</span></code></p></td>
+<td><p>Restituisce lo stato diagnostico del localizzatore</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Locator</span> <span class="pre">is</span> <span class="pre">Running</span></code> / <code class="docutils literal notranslate"><span class="pre">Locator</span> <span class="pre">is</span> <span class="pre">in</span> <span class="pre">Error</span></code> / <code class="docutils literal notranslate"><span class="pre">Locator</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">Running</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="comandi-di-controllo-qualita">
+<h4>Comandi di controllo qualità<a class="headerlink" href="#comandi-di-controllo-qualita" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Comando</p></th>
+<th class="head"><p>Azione</p></th>
+<th class="head"><p>Valore di Ritorno</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">start_Control</span></code></p></td>
+<td><p>Avvia il ciclo di ispezione qualità sul pezzo</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Control_1;x;y;r</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="comandi-flexibowl">
+<h4>Comandi FlexiBowl<a class="headerlink" href="#comandi-flexibowl" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Comando</p></th>
+<th class="head"><p>Azione</p></th>
+<th class="head"><p>Valore di Ritorno</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">start_Empty</span></code></p></td>
+<td><p>Avvia la sequenza di svuotamento rapido (Quick-Emptying) del FlexiBowl</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">start_Empty</span> <span class="pre">ended</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="segnali-hopper-opzionale">
+<h4>Segnali hopper opzionale<a class="headerlink" href="#segnali-hopper-opzionale" title="Link to this heading">#</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If hopper should be activated you will receive the string “Hopper;signalnumber;time”</p>
+</div>
+<p>Per informazioni dettagliate sull’installazione fisica e i collegamenti elettrici, procedere con le sezioni successive:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="05_Calcolo_distanza_ottimale.html"><span class="std std-doc">Calcolo Distanza Ottimale Camera</span></a></p></li>
+<li><p><a class="reference internal" href="#QUICKSTART/09_Installazione_Meccanica.md"><span class="xref myst">Installazione Meccanica</span></a></p></li>
+<li><p><a class="reference internal" href="#QUICKSTART/10_Cablaggio_Connessioni.md"><span class="xref myst">Cablaggio e Connessioni</span></a></p></li>
+</ul>
+<br>
+<!-- Versions and languages set-up -->
+<style>
+  .fixed-bar {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(240, 240, 240, 0.85);
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    color: #222;
+    display: flex;
+    gap: 12px;
+    padding: 6px 12px;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: saturate(180%) blur(10px);
+  }
+
+  @media print {
+    .fixed-bar {
+      display: none !important;
+    }
+  }
+
+  .fixed-bar .dropdown {
+    position: relative;
+    user-select: none;
+  }
+
+  .fixed-bar .dropdown-toggle {
+    background-color: rgba(200, 200, 200, 0.4);
+    color: #222;
+    padding: 6px 10px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+  }
+
+  .fixed-bar .dropdown-toggle::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  .fixed-bar .dropdown-toggle:hover {
+    background-color: rgba(100, 150, 220, 0.2);
+    color: #1a3e72;
+    border-color: rgba(26, 62, 114, 0.6);
+  }
+
+  .fixed-bar .dropdown-toggle .fa {
+    font-size: 0.9rem;
+  }
+
+  .fixed-bar .dropdown-menu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: rgba(250, 250, 250, 0.95);
+    border: 1px solid rgba(150, 150, 150, 0.3);
+    border-radius: 4px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    z-index: 10000;
+    backdrop-filter: saturate(180%) blur(8px);
+  }
+
+  .fixed-bar .dropdown-menu.show {
+    display: flex;
+  }
+
+  .fixed-bar .dropdown-menu a {
+    padding: 8px 12px;
+    color: #1a3e72;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+    white-space: nowrap;
+    transition: background-color 0.25s ease;
+  }
+
+  .fixed-bar .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .fixed-bar .dropdown-menu a:hover {
+    background-color: rgba(100, 150, 220, 0.15);
+  }
+</style>
+<div class="fixed-bar" role="region" aria-label="Version and language selector">
+  <div class="dropdown">
+    <div class="dropdown-toggle" tabindex="0" aria-haspopup="listbox" aria-expanded="false">
+      <span class="fa fa-book" aria-hidden="true"></span>
+      Version: <span class="current-value">V. 1.0</span>
+      <span class="fa caret-icon fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-menu" role="listbox">
+      	<a href="#" role="option">V. 1.0</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <div class="dropdown-toggle" tabindex="0" aria-haspopup="listbox" aria-expanded="false">
+      <span class="fa fa-globe" aria-hidden="true"></span>
+      Language: <span class="current-value">Italiano copy</span>
+      <span class="fa caret-icon fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-menu" role="listbox">
+      	<a href="#" role="option">Italiano</a>
+				<a href="#" role="option">Italiano copy</a>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const bar = document.querySelector('.fixed-bar');
+  const dropdowns = bar.querySelectorAll('.dropdown');
+  const defaultLang = 'Italiano';
+  const languages = ["Italiano", "Italiano copy"];
+  const versions = ["V. 1.0"];
+
+  // ---------------------------
+  // Helpers
+  // ---------------------------
+
+  function closeAll() {
+    dropdowns.forEach(d => {
+      d.querySelector('.dropdown-menu').classList.remove('show');
+      const t = d.querySelector('.dropdown-toggle');
+      t.setAttribute('aria-expanded', 'false');
+      const caret = t.querySelector('.caret-icon');
+      if (caret) {
+        caret.classList.remove('fa-caret-up');
+        caret.classList.add('fa-caret-down');
+      }
+    });
+  }
+
+  function toggleMenu(dropdown) {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+    closeAll();
+    if (!isOpen) {
+      menu.classList.add('show');
+      toggle.setAttribute('aria-expanded', 'true');
+      const caret = toggle.querySelector('.caret-icon');
+      if (caret) {
+        caret.classList.remove('fa-caret-down');
+        caret.classList.add('fa-caret-up');
+      }
+    }
+  }
+
+  async function pathExists(path) {
+    try {
+      const r = await fetch(path, { method: 'HEAD' });
+      return r.ok;
+    } catch {
+      return false;
+    }
+  }
+
+  async function resolvePath(segments, newLang, newVer) {
+    const seg = [...segments];
+
+    const langIndex = seg.findIndex(s => languages.includes(decodeURIComponent(s)));
+    const verIndex = seg.findIndex(s => versions.includes(decodeURIComponent(s)));
+
+    if (newLang) seg[langIndex] = encodeURIComponent(newLang);
+    if (newVer) seg[verIndex] = encodeURIComponent(newVer);
+
+    const primary = "/" + seg.join("/");
+
+    if (await pathExists(primary)) return primary;
+
+    // Fallback: default language
+    if (newLang) {
+      seg[langIndex] = encodeURIComponent(defaultLang);
+    }
+    const fallback = "/" + seg.join("/");
+    if (await pathExists(fallback)) return fallback;
+
+    // Last fallback -> /version/language/index.html
+    return `/${seg[0]}/${seg[1]}/index.html`;
+  }
+
+  // ---------------------------
+  // Events
+  // ---------------------------
+
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const display = dropdown.querySelector('.current-value');
+
+    toggle.addEventListener('click', e => {
+      e.stopPropagation();
+      toggleMenu(dropdown);
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', async e => {
+        e.preventDefault();
+
+        const selected = link.textContent.trim();
+        display.textContent = selected;
+
+        const segments = window.location.pathname.split("/").filter(Boolean);
+
+        const isLang = toggle.textContent.includes("Language");
+        const isVer = toggle.textContent.includes("Version");
+
+        let newLang = null, newVer = null;
+
+        if (isLang) newLang = selected;
+        if (isVer) {
+          newVer = versions.find(v => v.endsWith(selected)) || selected;
+        }
+
+        const newPath = await resolvePath(segments, newLang, newVer);
+        window.location.pathname = newPath;
+      });
+    });
+  });
+
+  // Outside click closes all
+  window.addEventListener('click', closeAll);
+
+  // Escape closes all
+  window.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeAll();
+  });
+
+});
+
+/*
+Silly ahh frog for good luck ~ Niccolò Quadrani
+
+      (')-=-(')
+    __(   "   )__   ~ cra cra brother
+  / _/'-----'\_ \
+___\\ \\     // //___
+>____)/_\---/_\(____<
+
+*/
+
+
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../03_Unboxing_Contenuto.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">3. Unboxing e Contenuto della Scatola</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="05_Calcolo_distanza_ottimale.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Calcolo Distanza di Lavoro Ottimale</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camera">Camera</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-elettriche">Specifiche elettriche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodi-di-alimentazione">Metodi di alimentazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche-e-dimensioni">Specifiche fisiche e dimensioni</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visioncontroller">VisionController</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Specifiche elettriche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche-e-hardware">Specifiche fisiche e hardware</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#griglia-di-calibrazione">Griglia di calibrazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importanza-della-griglia-dedicata-ars">Importanza della griglia dedicata ARS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-griglia-ars-vs-griglia-stampata">Confronto: Griglia ARS vs Griglia Stampata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-tecniche-griglia">Specifiche tecniche griglia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kit-base">Kit  base</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#componenti-opzionali-forse-ridondante-qui">Componenti opzionali    forse ridondante qui?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-collegamenti">Panoramica collegamenti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#protocollo-di-comunicazione-robot-visione">Protocollo di comunicazione robot-visione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-protocollo">Specifiche protocollo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comandi-disponibili">Comandi disponibili</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gestione-ricette">Gestione ricette</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comandi-di-localizzazione">Comandi di localizzazione</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comandi-di-controllo-qualita">Comandi di controllo qualità</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comandi-flexibowl">Comandi FlexiBowl</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#segnali-hopper-opzionale">Segnali hopper opzionale</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Niccolò Quadrani & Noah Costantini
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Ars Automation.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

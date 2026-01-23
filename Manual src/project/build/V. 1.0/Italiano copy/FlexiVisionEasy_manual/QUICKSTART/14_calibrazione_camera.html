@@ -1,0 +1,1262 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Calibrazione della Camera &#8212; FlexiVision Easy 1.0 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=dd1bcd05" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=dd1bcd05" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=a681ed88"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'FlexiVisionEasy_manual/QUICKSTART/14_calibrazione_camera';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="15. Protocol Setup" href="15_Protocol_Setup.html" />
+    <link rel="prev" title="Passo 7: Camera Setup" href="SETUP/13d_Camera_Setup.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo_fv.png" class="logo__image only-light" alt="FlexiVision Easy 1.0 documentation - Home"/>
+    <script>document.write(`<img src="../../_static/logo_fv_black.png" class="logo__image only-dark" alt="FlexiVision Easy 1.0 documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">PRIMA DI INIZIARE</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_informazioni_preliminari.html"><strong>Informazioni Preliminari</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02_informazioni_sicurezza.html"><strong>Informazioni di Sicurezza</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03_Unboxing_Contenuto.html">3. Unboxing e Contenuto della Scatola</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">RIFERIMENTO TECNICO E SPECIFICHE</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/04_Specifiche_FlexiVision.html"><strong>Specifiche Dettagliate FlexiVision</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.html"><strong>Calcolo Distanza di Lavoro Ottimale</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/integrazione_software/06_PlugIn.html"><strong>PlugIn</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/integrazione_software/07_Backup_management.html">7. BackUp Management</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/08_Opzioni.html"><strong>Opzioni</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">INSTALLAZIONE DEL SISTEMA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="11_Installazione_Software.html">11. Installazione Software</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">QUICKSTART</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="12_Panoramica_Interfaccia.html"><strong>Panoramica dell’interfaccia</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="SETUP/13_setup.html"><strong>Configurazione Iniziale del Sistema</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="SETUP/13a_FB_Setup.html"><strong>Passo 4: FlexiBowl Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="SETUP/13b_Hopper_Setup.html"><strong>Passo 5: Hopper Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="SETUP/13c_Robot_Setup.html"><strong>Passo 6 : Robot Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="SETUP/13d_Camera_Setup.html"><strong>Passo 7: Camera Setup</strong></a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Calibrazione della Camera</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="15_Protocol_Setup.html">15. Protocol Setup</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Nuovo_Modello/17_NuovaRicetta.html"><strong>Creare una Nuova Ricetta</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="Nuovo_Modello/17b_Expert.html">tasto expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Nuovo_Modello/18_NuovoModello.html"><strong>Creare un Nuovo Modello</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="Nuovo_Modello/18b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Nuovo_Modello/19_ROI_TEST.html"><strong>Definizione ROI e Tolleranze</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="Nuovo_Modello/19b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Nuovo_Modello/20_Istogrammi.html"><strong>Gli istogrammi</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="Nuovo_Modello/20b_Expert.html">expert della pagina …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Nuovo_Modello/21_RobotPick.html"><strong>Calibrazione Robot Pick</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="Nuovo_Modello/21b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="22_Config_FlexiBowl.html">Configurazione guidata: FlexiBowl® Wizard</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="23_Config_Hopper.html">Configurazione della Tramoggia (Hopper)</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="24_Verifica_Risultati.html">Monitoraggio Applicazione: Dashboard</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GARANZIA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../25_Garanzia.html"><strong>Garanzia</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">TROUBLESHOOTING</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../TROUBLESHOOTING/26_trb_shooting_guide.html">Risoluzione Problemi</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26b_Installazione_Mecc.html">Installazione Meccanica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26c_Cablaggio_Connessioni.html">Cablaggio e Connessioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26d_Conf_Iniziale.html">Setup Iniziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26e_Calib_Cam.html">Calibrazione Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26f_Protocol_Setup.html">Protocol Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26g_Creazione_Ricette_Modelli.html">Creazione Ricette e modelli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26h_FlexiBowl_Wizard.html">FlexiBowl Wizard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../27_Support.html">Appendici e Contatti</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/FlexiVisionEasy_manual/QUICKSTART/14_calibrazione_camera.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Calibrazione della Camera</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perche-la-calibrazione-e-necessaria">Perché la calibrazione è necessaria?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipi-di-distorsioni-ottiche">Tipi di distorsioni ottiche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installazione-e-posizionamento-griglia-di-calibrazione">Installazione e posizionamento griglia di calibrazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regolazioni-fondamentali-apertura-diaframma-messa-a-fuoco-ed-esposizione">Regolazioni fondamentali: apertura diaframma, messa a fuoco ed esposizione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-camera">Calibrazione Camera</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-e-necessario-ripetere-la-calibrazione">Quando è necessario ripetere la calibrazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passo-successivo-calibrazione-del-robot">Passo successivo: calibrazione del robot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-durante-la-calibrazione">Problemi comuni durante la calibrazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pattern-non-rilevato">Pattern non rilevato</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-sempre-bad-o-acceptable">Calibrazione sempre “Bad” o “Acceptable”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#errori-dopo-cambio-illuminazione">Errori dopo cambio illuminazione</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passi-successivi">Passi successivi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#backlight-a-toplight">backlight a toplight?</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="calibrazione-della-camera">
+<h1><strong>Calibrazione della Camera</strong><a class="headerlink" href="#calibrazione-della-camera" title="Link to this heading">#</a></h1>
+<p>La calibrazione è il passaggio cruciale che stabilisce la relazione geometrica esatta tra il mondo reale (coordinate in millimetri) e l’immagine acquisita dalla telecamera (pixel). Senza una calibrazione precisa, la precisione del sistema di picking risulta compromessa, rendendo inaffidabile l’intera applicazione.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Prerequisito fondamentale</strong></p>
+<p>Prima di procedere con la calibrazione, assicurarsi che tutti i setup hardware siano stati completati correttamente:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="SETUP/13a_FB_Setup.html"><span class="std std-doc">FlexiBowl Setup</span></a> ✓</p></li>
+<li><p><a class="reference internal" href="SETUP/13b_Hopper_Setup.html"><span class="std std-doc">Hopper Setup</span></a> ✓</p></li>
+<li><p><a class="reference internal" href="SETUP/13c_Robot_Setup.html"><span class="std std-doc">Robot Setup</span></a> ✓</p></li>
+<li><p><a class="reference internal" href="SETUP/13d_Camera_Setup.html"><span class="std std-doc">Camera Setup</span></a> ✓</p></li>
+</ul>
+<p>La calibrazione deve essere ripetuta ogni volta che un elemento fisico della telecamera o del suo setup ottico viene modificato (es. messa a fuoco, apertura o posizione).</p>
+</div>
+<hr class="docutils" />
+<section id="perche-la-calibrazione-e-necessaria">
+<h2>Perché la calibrazione è necessaria?<a class="headerlink" href="#perche-la-calibrazione-e-necessaria" title="Link to this heading">#</a></h2>
+<p>La calibrazione è necessaria perché ogni combinazione di sensore e lente introduce alterazioni specifiche nell’immagine. Il suo obiettivo principale è correggere queste distorsioni.</p>
+<section id="tipi-di-distorsioni-ottiche">
+<h3>Tipi di distorsioni ottiche<a class="headerlink" href="#tipi-di-distorsioni-ottiche" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="FlexiVisionEasy_manual/QUICKSTART/img/distorsioni_ottiche.png"><img alt="Tipi di distorsioni ottiche" src="FlexiVisionEasy_manual/QUICKSTART/img/distorsioni_ottiche.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Esempi di distorsioni ottiche: nessuna distorsione (sinistra), distorsione a barile (centro), distorsione a cuscinetto (destra)</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La calibrazione calcola i parametri matematici per compensare queste distorsioni e “raddrizzare” l’immagine virtualmente.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="installazione-e-posizionamento-griglia-di-calibrazione">
+<h3>Installazione e posizionamento griglia di calibrazione<a class="headerlink" href="#installazione-e-posizionamento-griglia-di-calibrazione" title="Link to this heading">#</a></h3>
+<p>La griglia di calibrazione dedicata ARS deve essere posizionata sul FlexiBowl:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple" start="0">
+<li></li>
+</ol>
+</td>
+<td><p>Se presenti, rimuovere i deviatori montati sul FlexiBowl.</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p><strong>Svitare le quattro viti</strong> della flangia centrale del FlexiBowl</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p><strong>Rimuovere la flangia</strong> centrale</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p><strong>Rimuovere la superficie</strong> del piatto</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p><strong>Posizionare la griglia ARS</strong> sul FlexiBowl allineando i pin di posizionamento con i fori predefiniti</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="5">
+<li></li>
+</ol>
+</td>
+<td><p><strong>Fissare la griglia ARS</strong> utilizzando gli appositi fori con viti M4</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="FlexiVisionEasy_manual/QUICKSTART/img/griglia_posizionamento.png"><img alt="Posizionamento griglia calibrazione" src="FlexiVisionEasy_manual/QUICKSTART/img/griglia_posizionamento.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Corretto posizionamento della griglia di calibrazione ARS sul FlexiBowl</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Utilizzo griglia corretta</strong></p>
+<p>Assicurarsi di utilizzare la griglia di calibrazione corretta per il vostro modello di FlexiBowl:</p>
+<ul class="simple">
+<li><p>FB 200 → Griglia 200</p></li>
+<li><p>FB 350 → Griglia 350</p></li>
+<li><p>FB 500 → Griglia 500</p></li>
+<li><p>FB 650 → Griglia 650</p></li>
+<li><p>FB 800 → Griglia 800</p></li>
+<li><p>FB 1200 → Griglia 1200</p></li>
+</ul>
+<p>L’utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida completamente la calibrazione.</p>
+</div>
+</section>
+<section id="regolazioni-fondamentali-apertura-diaframma-messa-a-fuoco-ed-esposizione">
+<h3>Regolazioni fondamentali: apertura diaframma, messa a fuoco ed esposizione<a class="headerlink" href="#regolazioni-fondamentali-apertura-diaframma-messa-a-fuoco-ed-esposizione" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Mettere la camera in “live display”</strong></p></td>
+<td><p>Prima di regolare l’apertura, attivare la modalità di visualizzazione continua:</p>
+<ol class="arabic simple">
+<li><p>Dalla pagina Camera Setup, cliccare il pulsante Expert</p></li>
+<li><p>Attivare la modalità <strong>Live Display</strong></p></li>
+<li><p>L’immagine della griglia dovrebbe essere visibile in tempo reale</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Impostare l’apertura del diaframma</strong></p></td>
+<td><p><strong>A quanto la metto?</strong>
+L’apertura dell’obiettivo deve essere regolata a <strong>f/5.6</strong>.</p>
+<p><strong>Come si regola?</strong></p>
+<ol class="arabic simple" start="4">
+<li><p>Svitare leggermente la vite dell’anello superiore</p></li>
+<li><p>Regolare l’apertura a 5.6</p></li>
+<li><p>Stringere la vite superiore dell’obiettivo.</p></li>
+</ol>
+<p><strong>Perché f/5.6?</strong></p>
+<ul class="simple">
+<li><p><strong>Profondità di campo</strong>: Nitidezza su tutto il FlexiBowl</p></li>
+<li><p><strong>Luminosità</strong>: Tempi di esposizione corretti</p></li>
+<li><p><strong>Qualità</strong>: Riduce le aberrazioni ottiche</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Regolare manualmente il fuoco della camera</strong></p></td>
+<td><ol class="arabic simple" start="7">
+<li><p>Individuare l’anello di messa a fuoco sull’obiettivo</p></li>
+<li><p>Ruotare l’anello lentamente osservando l’immagine live</p></li>
+<li><p>Quando il pattern appare nitido, il fuoco è corretto</p></li>
+<li><p>Bloccare la messa a fuoco con la <strong>vite di blocco</strong></p></li>
+<li><p>Cliccare su “Back”</p></li>
+</ol>
+<p><strong>Immagini di riferimento:</strong>
+Osservare la griglia di calibrazione nell’immagine live per ottenere un pattern definito.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Attenzione alla profondità di campo</strong></p>
+<p>La messa a fuoco deve garantire nitidezza su <strong>tutta la superficie</strong> del FlexiBowl, non solo al centro.</p>
+<p>Se il centro è nitido ma i bordi sono sfocati:</p>
+<ul class="simple">
+<li><p>Verificare che la camera sia perfettamente parallela al piatto</p></li>
+<li><p>Verificare la distanza di lavoro (deve essere quella calcolata)</p></li>
+<li><p>Chiudere leggermente il diaframma (es. f/6.3 o f/7.1) per aumentare la profondità di campo</p></li>
+</ul>
+<p>Se il problema persiste, potrebbe essere necessario rivedere il montaggio meccanico della camera.</p>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>Regolazione tempo di esposizione</strong></p></td>
+<td><ol class="arabic simple" start="12">
+<li><p>Dalla pagina <strong>Camera FLB x</strong>, accedere al parametro <strong>Cam Exposure</strong> (Esposizione della Camera):</p></li>
+<li><p>Regolare il tempo di esposizione e cliccare su “TEST” fino a ottenere:</p>
+<ul class="simple">
+<li><p>Pattern della griglia chiaramente visibile (nero su bianco o viceversa)</p></li>
+<li><p>Contrasto elevato tra quadrati bianchi e neri</p></li>
+<li><p>Nessuna sovraesposizione (aree completamente bianche “bruciate”)</p></li>
+<li><p>Nessuna sottoesposizione (immagine troppo scura)
+Valore tipico iniziale: <strong>15-30 ms</strong> (dipende dall’intensità del backlight/toplight)</p></li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="FlexiVisionEasy_manual/QUICKSTART/img/esposizione_corretta.png"><img alt="Esempio esposizione corretta" src="FlexiVisionEasy_manual/QUICKSTART/img/esposizione_corretta.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Esempio di esposizione corretta: contrasto elevato, pattern ben definito, nessuna area bruciata</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Ottimizzazione esposizione</strong></p>
+<p><strong>Più alto sarà il tempo, più luce entrerà nell’ottica</strong></p>
+<ul class="simple">
+<li><p><strong>Tempo troppo breve</strong>: Immagine scura, pattern poco visibile</p></li>
+<li><p><strong>Tempo troppo lungo</strong>: Immagine sovraesposta, perdita di dettagli</p></li>
+<li><p><strong>Tempo ottimale</strong>: Massimo contrasto senza saturazione</p></li>
+</ul>
+<p><strong>Esempio di impostazione corretta:</strong></p>
+<p>Se l’immagine con esposizione 20ms appare:</p>
+<ul class="simple">
+<li><p>Troppo scura → aumentare a 25-30ms</p></li>
+<li><p>Troppo chiara → ridurre a 15-18ms</p></li>
+<li><p>Contrasto insufficiente → regolare intensità backlight/toplight</p></li>
+</ul>
+</div>
+</section>
+<section id="calibrazione-camera">
+<h3>Calibrazione Camera<a class="headerlink" href="#calibrazione-camera" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Effettuare la calibrazione</strong></p></td>
+<td><ol class="arabic simple" start="14">
+<li><p>Cliccare su “NEXT” per accedere alla pagina “Calibration camera Flb1”</p></li>
+<li><p>I valori “Tile Size X” e “Tile Size Y” sono già impostati</p></li>
+<li><p>Cliccare su “Grab Image Calib” per scattare una foto.</p></li>
+</ol>
+<p>Verificare visivamente che:</p>
+<ul class="simple">
+<li><p>L’intera griglia sia visibile</p></li>
+<li><p>Il pattern sia nitido</p></li>
+<li><p>Non ci siano ombre o riflessi</p></li>
+</ul>
+<ol class="arabic simple" start="17">
+<li><p>Cliccare su “Compute Calib” per effettuare la calibrazione</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Valutare la qualità della calibrazione</strong></p></td>
+<td><p>Il parametro “Result Calibration” restituirà un valore:</p>
+<p><strong>🟢 Good (Verde)</strong>
+Calibrazione eccellente, precisione ottimale. Procedere con fiducia.</p>
+<p><strong>🟠 Acceptable (Arancione)</strong>
+Calibrazione accettabile, precisione buona ma non ottimale.</p>
+<p><strong>🔴 Bad (Rosso)</strong>
+Calibrazione scadente, precisione insufficiente. Da ripetere obbligatoriamente.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Criterio di accettabilità</strong></p>
+<p>Un risultato soddisfacente comprende il settaggio dell’apertura, la messa a fuoco, e il settaggio dell’esposizione migliore per l’applicazione.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Errori durante il calcolo</strong></p>
+<p>Se il calcolo della calibrazione fallisce:</p>
+<p><strong>Possibili cause</strong>:</p>
+<ul class="simple">
+<li><p>Pattern non rilevato (immagine troppo scura o sovraesposta)</p></li>
+<li><p>Quadrati della griglia parzialmente oscurati</p></li>
+<li><p>Distorsione eccessiva (camera troppo vicina o lontana)</p></li>
+<li><p>Tile Size inserito errato</p></li>
+</ul>
+<p><strong>Soluzione</strong>:</p>
+<ul class="simple">
+<li><p>Verificare e migliorare la qualità dell’immagine acquisita</p></li>
+<li><p>Assicurarsi che l’intera griglia sia visibile e ben illuminata</p></li>
+<li><p>Verificare il valore Tile Size</p></li>
+<li><p>Ripetere l’acquisizione immagine (Grab Image) e tentare nuovamente</p></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Accettare solo buone calibrazioni</strong></p>
+<p>Non accontentarsi di calibrazioni “Acceptable” (arancione). Una calibrazione subottimale causa:</p>
+<ul class="simple">
+<li><p>Errori di posizionamento del robot</p></li>
+<li><p>Picking falliti o imprecisi</p></li>
+<li><p>Necessità di correzioni manuali ripetute</p></li>
+</ul>
+<p>Investire tempo per ottenere una calibrazione “Good” (verde) ripaga immediatamente in termini di affidabilità del sistema.
+In caso di risultato <strong>Acceptable</strong> o <strong>Bad</strong>:</p>
+<ol class="arabic simple">
+<li><p>Tornare alla pagina precedente “Camera FLB x”</p></li>
+<li><p>Verificare e migliorare la messa a fuoco del pattern</p></li>
+<li><p>Regolare l’esposizione per massimizzare il contrasto</p></li>
+<li><p>Verificare l’uniformità dell’illuminazione</p></li>
+<li><p>Tornare alla pagina “Calibration Camera FLB x”</p></li>
+<li><p>Acquisire una nuova immagine “Grab Image”</p></li>
+<li><p>Ripetere il calcolo della calibrazione “Compute Calib”</p></li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Nota: la calibrazione viene salvata in automatico</strong></p>
+<p>Una volta completata con successo (risultato Good o Acceptable), la calibrazione viene automaticamente salvata:</p>
+<ul class="simple">
+<li><p>Associata alla ricetta corrente</p></li>
+<li><p>Memorizzata nel profilo della camera</p></li>
+<li><p>Caricata automaticamente all’avvio successivo del software</p></li>
+</ul>
+<p>Non è necessario effettuare salvataggi manuali.</p>
+</div>
+<p><strong>Nota: spiegare che per i dubbi si può aprire info</strong></p>
+<p>In quali casi si apre Expert? Expert si apre per la configurazione della luminosità o per altri parametri.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="quando-e-necessario-ripetere-la-calibrazione">
+<h2>Quando è necessario ripetere la calibrazione<a class="headerlink" href="#quando-e-necessario-ripetere-la-calibrazione" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Ricalibrare quando:</strong></p></td>
+<td><ul class="simple">
+<li><p>Primo setup del sistema (obbligatorio)</p></li>
+<li><p>Dopo aver modificato la posizione della camera</p></li>
+<li><p>Dopo aver regolato il fuoco o l’apertura dell’obiettivo</p></li>
+<li><p>Dopo aver spostato il FlexiBowl</p></li>
+<li><p>Dopo manutenzione meccanica della cella robotica</p></li>
+<li><p>Se si riscontrano errori sistematici di picking</p></li>
+<li><p>Dopo un urto o vibrazione significativa</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Non è necessario ricalibrare quando:</strong></p></td>
+<td><ul class="simple">
+<li><p>Si cambia tipo di pezzo (stesso FlexiBowl, stessa camera)</p></li>
+<li><p>Si modifica la ricetta software</p></li>
+<li><p>Si regolano parametri di riconoscimento</p></li>
+<li><p>Si aggiornano i programmi robot</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="passo-successivo-calibrazione-del-robot">
+<h2>Passo successivo: calibrazione del robot<a class="headerlink" href="#passo-successivo-calibrazione-del-robot" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>Calibrazione Robot</strong></p></td>
+<td><p>Una volta ottenuta una calibrazione di ottima qualità, Cliccare “NEXT”.</p></td>
+<td><p>Apparirà una finestra che richiede la calibrazione del robot prima di proseguire, <strong>non</strong> cliccare su “Sì” fino a che non si effettua questa calibrazione
+La calibrazione robot stabilisce la corrispondenza tra coordinate camera e coordinate robot, ed è il passo finale prima di poter utilizzare il sistema per il picking reale.</p></td>
+<td><p>Per procedere con la calibrazione robot, …</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="problemi-comuni-durante-la-calibrazione">
+<h2>Problemi comuni durante la calibrazione<a class="headerlink" href="#problemi-comuni-durante-la-calibrazione" title="Link to this heading">#</a></h2>
+<section id="pattern-non-rilevato">
+<h3>Pattern non rilevato<a class="headerlink" href="#pattern-non-rilevato" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Errore: “Unable to detect calibration pattern”</strong></p>
+<p>Causa: Il software non riesce a identificare il pattern della griglia.</p>
+<p><strong>Soluzioni</strong>:</p>
+<ul class="simple">
+<li><p>Aumentare il contrasto (regolare esposizione o illuminazione)</p></li>
+<li><p>Verificare che l’intera griglia sia visibile nell’immagine</p></li>
+<li><p>Migliorare la messa a fuoco</p></li>
+<li><p>Pulire la superficie della griglia (polvere o impronte possono interferire)</p></li>
+<li><p>Verificare che la griglia sia quella corretta (quadrati, non cerchi o altri pattern)</p></li>
+</ul>
+</div>
+</section>
+<section id="calibrazione-sempre-bad-o-acceptable">
+<h3>Calibrazione sempre “Bad” o “Acceptable”<a class="headerlink" href="#calibrazione-sempre-bad-o-acceptable" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Qualità calibrazione insufficiente</strong></p>
+<p>Se nonostante le regolazioni la calibrazione rimane sotto “Good”:</p>
+<ol class="arabic simple">
+<li><p>Verificare la distanza di lavoro camera-FlexiBowl (deve essere quella calcolata)</p></li>
+<li><p>Controllare il paralleli della camera rispetto al piatto (deve essere perfettamente orizzontale)</p></li>
+<li><p>Verificare la planarità della griglia (non deve essere deformata o piegata)</p></li>
+<li><p>Assicurarsi che la camera sia stabile (no vibrazioni durante acquisizione)</p></li>
+<li><p>Verificare che l’obiettivo sia avvitato completamente (contatto metal-metal con corpo camera)</p></li>
+</ol>
+<p>Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare <a class="reference internal" href="09_Installazione_Meccanica.html"><span class="std std-doc">Installazione Meccanica</span></a> per revisione.</p>
+</div>
+</section>
+<section id="errori-dopo-cambio-illuminazione">
+<h3>Errori dopo cambio illuminazione<a class="headerlink" href="#errori-dopo-cambio-illuminazione" title="Link to this heading">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Ri-calibrazione dopo cambio backlight/toplight</strong></p>
+<p>Se si passa da backlight a toplight (o viceversa):</p>
+<ol class="arabic simple">
+<li><p>La calibrazione geometrica rimane valida (non serve rifarla)</p></li>
+<li><p>È necessario solo regolare l’esposizione per il nuovo tipo di illuminazione</p></li>
+<li><p>Acquisire un’immagine di test per verificare che il pattern sia ancora ben visibile</p></li>
+<li><p>Se il contrasto è molto diverso, considerare di rifare la calibrazione per massima precisione</p></li>
+</ol>
+<p>In generale, è consigliabile decidere fin dall’inizio il tipo di illuminazione da utilizzare e mantenere quella configurazione.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="passi-successivi">
+<h2>Passi successivi<a class="headerlink" href="#passi-successivi" title="Link to this heading">#</a></h2>
+<p>Una volta completata la calibrazione camera con risultato Good:</p>
+<ol class="arabic simple">
+<li><p><strong>Calibrazione Robot</strong> (procedura guidata successiva)</p></li>
+<li><p><strong><a class="reference internal" href="15_Protocol_Setup.html"><span class="std std-doc">Protocol Setup</span></a></strong> - Configurazione avanzata comunicazione</p></li>
+<li><p><strong><a class="reference internal" href="Nuovo_Modello/16_Nuovo_modello.html"><span class="std std-doc">Nuovo Modello Pezzo</span></a></strong> - Training primo modello per picking</p></li>
+</ol>
+<section id="backlight-a-toplight">
+<h3>backlight a toplight?<a class="headerlink" href="#backlight-a-toplight" title="Link to this heading">#</a></h3>
+<p>quando attivo frontlight?</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Impatto sul riconoscimento pezzi</strong></p>
+<p>La scelta tra backlight e frontlight/toplight influenza significativamente il riconoscimento:</p>
+<ul class="simple">
+<li><p><strong>Backlight</strong>: Ottimo per profili/sagome, pezzi appaiono come silhouette scure su sfondo chiaro</p></li>
+<li><p><strong>Toplight</strong>: Necessario per riconoscere dettagli superficiali, texture, feature interne</p></li>
+</ul>
+<p>La calibrazione deve essere eseguita con lo stesso tipo di illuminazione che verrà utilizzato durante il picking in produzione.</p>
+</div>
+<br>
+<!-- Versions and languages set-up -->
+<style>
+  .fixed-bar {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(240, 240, 240, 0.85);
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    color: #222;
+    display: flex;
+    gap: 12px;
+    padding: 6px 12px;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: saturate(180%) blur(10px);
+  }
+
+  @media print {
+    .fixed-bar {
+      display: none !important;
+    }
+  }
+
+  .fixed-bar .dropdown {
+    position: relative;
+    user-select: none;
+  }
+
+  .fixed-bar .dropdown-toggle {
+    background-color: rgba(200, 200, 200, 0.4);
+    color: #222;
+    padding: 6px 10px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+  }
+
+  .fixed-bar .dropdown-toggle::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  .fixed-bar .dropdown-toggle:hover {
+    background-color: rgba(100, 150, 220, 0.2);
+    color: #1a3e72;
+    border-color: rgba(26, 62, 114, 0.6);
+  }
+
+  .fixed-bar .dropdown-toggle .fa {
+    font-size: 0.9rem;
+  }
+
+  .fixed-bar .dropdown-menu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: rgba(250, 250, 250, 0.95);
+    border: 1px solid rgba(150, 150, 150, 0.3);
+    border-radius: 4px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    z-index: 10000;
+    backdrop-filter: saturate(180%) blur(8px);
+  }
+
+  .fixed-bar .dropdown-menu.show {
+    display: flex;
+  }
+
+  .fixed-bar .dropdown-menu a {
+    padding: 8px 12px;
+    color: #1a3e72;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+    white-space: nowrap;
+    transition: background-color 0.25s ease;
+  }
+
+  .fixed-bar .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .fixed-bar .dropdown-menu a:hover {
+    background-color: rgba(100, 150, 220, 0.15);
+  }
+</style>
+<div class="fixed-bar" role="region" aria-label="Version and language selector">
+  <div class="dropdown">
+    <div class="dropdown-toggle" tabindex="0" aria-haspopup="listbox" aria-expanded="false">
+      <span class="fa fa-book" aria-hidden="true"></span>
+      Version: <span class="current-value">V. 1.0</span>
+      <span class="fa caret-icon fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-menu" role="listbox">
+      	<a href="#" role="option">V. 1.0</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <div class="dropdown-toggle" tabindex="0" aria-haspopup="listbox" aria-expanded="false">
+      <span class="fa fa-globe" aria-hidden="true"></span>
+      Language: <span class="current-value">Italiano copy</span>
+      <span class="fa caret-icon fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-menu" role="listbox">
+      	<a href="#" role="option">Italiano</a>
+				<a href="#" role="option">Italiano copy</a>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const bar = document.querySelector('.fixed-bar');
+  const dropdowns = bar.querySelectorAll('.dropdown');
+  const defaultLang = 'Italiano';
+  const languages = ["Italiano", "Italiano copy"];
+  const versions = ["V. 1.0"];
+
+  // ---------------------------
+  // Helpers
+  // ---------------------------
+
+  function closeAll() {
+    dropdowns.forEach(d => {
+      d.querySelector('.dropdown-menu').classList.remove('show');
+      const t = d.querySelector('.dropdown-toggle');
+      t.setAttribute('aria-expanded', 'false');
+      const caret = t.querySelector('.caret-icon');
+      if (caret) {
+        caret.classList.remove('fa-caret-up');
+        caret.classList.add('fa-caret-down');
+      }
+    });
+  }
+
+  function toggleMenu(dropdown) {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+    closeAll();
+    if (!isOpen) {
+      menu.classList.add('show');
+      toggle.setAttribute('aria-expanded', 'true');
+      const caret = toggle.querySelector('.caret-icon');
+      if (caret) {
+        caret.classList.remove('fa-caret-down');
+        caret.classList.add('fa-caret-up');
+      }
+    }
+  }
+
+  async function pathExists(path) {
+    try {
+      const r = await fetch(path, { method: 'HEAD' });
+      return r.ok;
+    } catch {
+      return false;
+    }
+  }
+
+  async function resolvePath(segments, newLang, newVer) {
+    const seg = [...segments];
+
+    const langIndex = seg.findIndex(s => languages.includes(decodeURIComponent(s)));
+    const verIndex = seg.findIndex(s => versions.includes(decodeURIComponent(s)));
+
+    if (newLang) seg[langIndex] = encodeURIComponent(newLang);
+    if (newVer) seg[verIndex] = encodeURIComponent(newVer);
+
+    const primary = "/" + seg.join("/");
+
+    if (await pathExists(primary)) return primary;
+
+    // Fallback: default language
+    if (newLang) {
+      seg[langIndex] = encodeURIComponent(defaultLang);
+    }
+    const fallback = "/" + seg.join("/");
+    if (await pathExists(fallback)) return fallback;
+
+    // Last fallback -> /version/language/index.html
+    return `/${seg[0]}/${seg[1]}/index.html`;
+  }
+
+  // ---------------------------
+  // Events
+  // ---------------------------
+
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const display = dropdown.querySelector('.current-value');
+
+    toggle.addEventListener('click', e => {
+      e.stopPropagation();
+      toggleMenu(dropdown);
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', async e => {
+        e.preventDefault();
+
+        const selected = link.textContent.trim();
+        display.textContent = selected;
+
+        const segments = window.location.pathname.split("/").filter(Boolean);
+
+        const isLang = toggle.textContent.includes("Language");
+        const isVer = toggle.textContent.includes("Version");
+
+        let newLang = null, newVer = null;
+
+        if (isLang) newLang = selected;
+        if (isVer) {
+          newVer = versions.find(v => v.endsWith(selected)) || selected;
+        }
+
+        const newPath = await resolvePath(segments, newLang, newVer);
+        window.location.pathname = newPath;
+      });
+    });
+  });
+
+  // Outside click closes all
+  window.addEventListener('click', closeAll);
+
+  // Escape closes all
+  window.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeAll();
+  });
+
+});
+
+/*
+Silly ahh frog for good luck ~ Niccolò Quadrani
+
+      (')-=-(')
+    __(   "   )__   ~ cra cra brother
+  / _/'-----'\_ \
+___\\ \\     // //___
+>____)/_\---/_\(____<
+
+*/
+
+
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="SETUP/13d_Camera_Setup.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>Passo 7: Camera Setup</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="15_Protocol_Setup.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">15. Protocol Setup</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perche-la-calibrazione-e-necessaria">Perché la calibrazione è necessaria?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipi-di-distorsioni-ottiche">Tipi di distorsioni ottiche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installazione-e-posizionamento-griglia-di-calibrazione">Installazione e posizionamento griglia di calibrazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regolazioni-fondamentali-apertura-diaframma-messa-a-fuoco-ed-esposizione">Regolazioni fondamentali: apertura diaframma, messa a fuoco ed esposizione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-camera">Calibrazione Camera</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quando-e-necessario-ripetere-la-calibrazione">Quando è necessario ripetere la calibrazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passo-successivo-calibrazione-del-robot">Passo successivo: calibrazione del robot</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-durante-la-calibrazione">Problemi comuni durante la calibrazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pattern-non-rilevato">Pattern non rilevato</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-sempre-bad-o-acceptable">Calibrazione sempre “Bad” o “Acceptable”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#errori-dopo-cambio-illuminazione">Errori dopo cambio illuminazione</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passi-successivi">Passi successivi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#backlight-a-toplight">backlight a toplight?</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Niccolò Quadrani & Noah Costantini
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Ars Automation.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

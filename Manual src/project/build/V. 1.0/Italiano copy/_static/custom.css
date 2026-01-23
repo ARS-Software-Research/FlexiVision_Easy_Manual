@@ -1,0 +1,69 @@
+/* Importa il font Familjen Grotesk da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Applica il font a tutti gli elementi del tema sphinx_book_theme */
+html,
+body,
+.bd-main,
+.bd-content,
+.bd-article,
+.bd-sidebar,
+div.body,
+p,
+li,
+td,
+th,
+span,
+a {
+    font-family: 'Familjen Grotesk', sans-serif !important;
+}
+
+/* Applica il font ai titoli con selettori più specifici */
+.bd-content h1,
+.bd-content h2,
+.bd-content h3,
+.bd-content h4,
+.bd-content h5,
+.bd-content h6,
+.bd-sidebar h1,
+.bd-sidebar h2,
+.bd-sidebar h3,
+.bd-sidebar h4,
+.bd-sidebar h5,
+.bd-sidebar h6,
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Familjen Grotesk', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+/* Applica il font anche agli elementi della sidebar e del menu */
+.bd-sidebar-primary,
+.bd-sidebar-secondary,
+.toctree-l1,
+.toctree-l2,
+.toctree-l3,
+.navbar,
+.navbar-nav {
+    font-family: 'Familjen Grotesk', sans-serif !important;
+}
+
+/* Applica il font agli elementi di codice inline (mantieni monospace per i blocchi) */
+p code,
+li code {
+    font-family: 'Familjen Grotesk', monospace !important;
+}
+
+/* Applica il font a tutti gli input e button */
+input,
+button,
+select,
+textarea {
+    font-family: 'Familjen Grotesk', sans-serif !important;
+}
+
+/* Applica il font alle tabelle */
+table,
+table th,
+table td {
+    font-family: 'Familjen Grotesk', sans-serif !important;
+}
