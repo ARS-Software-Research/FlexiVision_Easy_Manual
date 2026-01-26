@@ -1,5 +1,5 @@
 
-# Configurazione guidata: FlexiBowl® Wizard
+# **Configurazione guidata: FlexiBowl® Wizard**
 
 
 L'interfaccia **FlexiBowl® Wizard** è uno strumento interattivo progettato per guidare l'utente nella configurazione dei parametri di alimentazione in base alla specifica famiglia di prodotti da gestire.

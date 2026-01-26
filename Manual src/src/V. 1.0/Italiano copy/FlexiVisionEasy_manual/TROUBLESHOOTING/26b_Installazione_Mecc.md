@@ -1,6 +1,6 @@
 # Installazione Meccanica
 (troubleshooting_vision_controller)=
-## Problemi con il VisionController 
+## VisionController 
 
 ```{list-table}
 :header-rows: 1
@@ -9,57 +9,24 @@
 * - Problema
   - Possibili Cause
   - Soluzioni
-* - **VisionController si surriscalda e si spegne automaticamente**
-  - • Ventilazione insufficiente (spazio < 50mm)
+* - **VisionController si surriscalda**
+  - • Ventilazione insufficiente (< 50mm di spazio)
     
-    • Orientamento non corretto
-    
-    • Temperatura ambiente > 50°C
-    
-    • Accumulo di polvere nelle prese d'aria
-  - • Verificare spazio libero di almeno 50mm su tutti i lati
-    
-    • Riposizionare in verticale o con ventilazione forzata
-    
-    • Spostare in ambiente più fresco o aggiungere condizionamento
+    • Accumulo di polvere
+  - • Garantire 50mm di spazio libero su tutti i lati
     
     • Pulire le prese di ventilazione
-* - **VisionController non si fissa correttamente alla guida DIN**
-  - • Guida DIN non conforme (non 35mm)
+* - **Non si fissa alla guida DIN**
+  - • Guida non standard (≠ 35mm)
     
-    • Meccanismo di aggancio danneggiato
+    • Meccanismo danneggiato
+  - • Verificare guida DIN 35mm standard
     
-    • Guida non fissata saldamente
-  - • Verificare che la guida sia DIN 35mm standard
-    
-    • Ispezionare meccanismo di aggancio per danni
-    
-    • Fissare meglio la guida DIN al pannello
-* - **VisionController si allenta dal pannello (montaggio con viti)**
-  - • Coppia di serraggio insufficiente
-    
-    • Viti non idonee (non M4)
-    
-    • Foratura pannello non corretta
-  - • Serrare le 4 viti M4 con coppia di 1.2 Nm
-    
-    • Utilizzare viti M4 come da specifiche
-    
-    • Verificare pattern di foratura secondo disegni tecnici
-* - **Protezione IP insufficiente**
-  - • Montaggio all'esterno del quadro elettrico
-    
-    • Quadro con IP < 40
-    
-    • Presenza di polvere/umidità
-  - • Montare all'interno di quadro elettrico IP54
-    
-    • Verificare protezione minima IP40
-    
-    • Sigillare meglio il quadro elettrico
+    • Ispezionare meccanismo di aggancio
 ```
+
 (troubleshooting_camera)=
-## Problemi con la Camera 
+## Camera 
 
 ```{list-table}
 :header-rows: 1
@@ -68,60 +35,31 @@
 * - Problema
   - Possibili Cause
   - Soluzioni
-* - **Immagine non a fuoco**
-  - • Distanza di lavoro non corretta (non 950-1000mm)
+* - **Immagine sfocata**
+  - • Distanza non corretta (≠ 950-1000mm)
     
     • Lente non avvitata completamente
+  - • Misurare e correggere distanza di lavoro
     
-    • Lente con focale errata per il modello FlexiBowl
-  - • Misurare e correggere distanza secondo [Calcolo Distanza Ottimale](rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.md)
+    • Avvitare lente fino a contatto metal-metal
+* - **Immagine distorta**
+  - • Camera non centrata (errore > ±5mm)
     
-    • Avvitare completamente la lente (contatto metal-metal)
+    • Inclinazione errata (tilt > ±1°)
+  - • Verificare centratura con metro
     
-    • Verificare etichetta lente e documentazione ordine
-* - **Immagine distorta o con prospettiva errata**
-  - • Camera non centrata sull'asse FlexiBowl (errore > ±5mm)
+    • Controllare ortogonalità con livella
+* - **Viti si allentano**
+  - • Vibrazioni del sistema
     
-    • Camera inclinata rispetto alla superficie (tilt > ±1°)
+    • Coppia eccessiva (> 0.5 Nm)
+  - • Utilizzare frenafiletti medio
     
-    • Camera ruotata attorno all'asse ottico
-  - • Misurare centratura con metro/calibro e correggere
-    
-    • Verificare ortogonalità con livella di precisione
-    
-    • Allineare camera con asse di rotazione disco
-* - **Impossibile regolare la posizione della camera**
-  - • Supporto meccanico rigido senza microregolazioni
-    
-    • Viti di fissaggio serrate definitivamente
-  - • Progettare supporto con regolazioni: Z(-10/+30mm), X(±10mm), Y(±10mm)
-    
-    • Allentare viti per permettere regolazioni
-* - **Viti di fissaggio camera si allentano**
-  - • Coppia di serraggio eccessiva (> 0.5 Nm)
-    
-    • Vibrazioni del sistema
-    
-    • Viti non idonee
-  - • Serrare con coppia corretta 0.5 Nm per evitare deformazioni
-    
-    • Utilizzare frenafiletti medio
-    
-    • Verificare utilizzo viti M3 × 8mm inox come consigliato
-* - **Camera danneggiata durante montaggio**
-  - • Coppia di serraggio eccessiva
-    
-    • Manipolazione scorretta
-    
-    • Urti durante installazione
-  - • Non superare 0.5 Nm di coppia
-    
-    • Maneggiare con cura evitando pressioni sul corpo ottico
-    
-    • Proteggere durante lavori meccanici circostanti
+    • Serrare con coppia corretta 0.5 Nm
 ```
+
 (troubleshooting_toplight)=
-## Problemi con il Toplight 
+## Toplight 
 
 ```{list-table}
 :header-rows: 1
@@ -130,51 +68,24 @@
 * - Problema
   - Possibili Cause
   - Soluzioni
-* - **Illuminazione non uniforme con ombre evidenti**
-  - • Distanza toplight dalla superficie non corretta
+* - **Illuminazione non uniforme**
+  - • Distanza non corretta
     
-    • Toplight non parallelo al disco FlexiBowl
-    
-    • Angolo di illuminazione non perpendicolare (tilt ≠ 0°)
-  - • Posizionare toplight a distanza simile a quella della camera
+    • Non parallelo al disco
+  - • Posizionare a distanza simile alla camera
     
     • Verificare parallelismo con livella
+* - **Riflessioni (hotspot)**
+  - • Toplight troppo vicino
     
-    • Correggere orientamento a 0° tilt
-* - **Riflessioni dirette verso la camera (hotspot)**
-  - • Toplight troppo vicino alla superficie
+    • Superficie troppo riflettente
+  - • Aumentare distanza
     
-    • Angolazione non corretta
-    
-    • Superficie FlexiBowl troppo riflettente
-  - • Aumentare distanza toplight
-    
-    • Regolare leggermente angolo
-    
-    • Considerare uso di diffusori
-    
-    • Valutare sostituzione superficie grip
-* - **Toplight non concentrico con la camera**
-  - • Errore di posizionamento su struttura supporto
-    
-    • Struttura non correttamente assemblata
-  - • Verificare allineamento centri camera-toplight
-    
-    • Riposizionare toplight concentrico alla camera
-* - **Cablaggio toplight non conforme**
-  - • Tensione errata (≠ 24V DC)
-    
-    • Cavi non schermati
-    
-    • Alimentazione condivisa con altri dispositivi rumorosi
-  - • Verificare tensione su etichetta (tipicamente 24V DC)
-    
-    • Utilizzare cavi schermati dedicati
-    
-    • Predisporre alimentazione separata dal quadro
+    • Considerare diffusori o cambio superficie grip
 ```
+
 (troubleshooting_luce_ambientale)=
-## Problemi di Schermatura Luce Ambientale 
+## Luce Ambientale 
 
 ```{list-table}
 :header-rows: 1
@@ -183,35 +94,19 @@
 * - Problema
   - Possibili Cause
   - Soluzioni
-* - **Rilevamenti incoerenti a diverse ore del giorno**
-  - • Luce solare diretta o indiretta variabile
+* - **Rilevamenti inconsistenti**
+  - • Luce solare variabile
     
-    • Finestre non schermate
+    • Illuminazione con dimmer
+  - • Installare tende oscuranti
     
-    • Illuminazione artificiale con dimmer
-  - • Installare tende oscuranti o pannelli opachi
-    
-    • Schermare completamente finestre nella cella
-    
-    • Utilizzare illuminazione fissa non regolabile
-* - **Riflessioni da superfici circostanti**
-  - • Superfici lucide nelle vicinanze (macchine, pannelli)
+    • Usare illuminazione fissa
+* - **Riflessioni da superfici**
+  - • Superfici lucide vicine
     
     • Parti metalliche riflettenti
-  - • Coprire superfici riflettenti con materiale opaco
+  - • Coprire con materiale opaco
     
-    • Riposizionare elementi riflettenti
-    
-    • Verniciare superfici con vernice opaca
-* - **Interferenze da luci intermittenti**
-  - • Luci di segnalazione robot/macchine
-    
-    • Flash da altre postazioni
-    
-    • Lampade di emergenza
-  - • Schermare completamente la cella robotica
-    
-    • Spostare segnalatori fuori dall'area
-    
-    • Creare cabina chiusa per la cella
+    • Verniciare con vernice opaca
 ```
+

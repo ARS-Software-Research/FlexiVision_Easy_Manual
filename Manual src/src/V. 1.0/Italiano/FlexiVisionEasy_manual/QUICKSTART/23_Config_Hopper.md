@@ -1,5 +1,5 @@
 
-# Configurazione della Tramoggia (Hopper)
+# **Configurazione della Tramoggia (Hopper)**
 
 La configurazione della tramoggia permette di gestire il rifornimento automatico dei componenti sul disco del FlexiBowl®. Il sistema utilizza la visione artificiale per determinare quando il livello di riempimento è insufficiente e attivare la vibrazione di scarico.
 

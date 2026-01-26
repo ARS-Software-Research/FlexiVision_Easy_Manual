@@ -8,147 +8,60 @@
   - Possibili Cause
   - Soluzioni
 * - **Tramoggia non abilitabile**
-  - • Hardware tramoggia non connesso
+  - • Hardware non connesso
     
-    • Ricetta non caricata
+    • Setup iniziale non completato
+  - • Verificare connessioni elettriche/pneumatiche
     
-    • Configurazione base non completata
-  - • Verificare connessioni elettriche/pneumatiche tramoggia
-    
-    • Caricare ricetta corretta
-    
-    • Completare Hopper Setup iniziale
-* - **Area di controllo non definibile**
-  - • Camera tramoggia non rilevata
-    
-    • Immagine non acquisita
-    
-    • Software in modalità sbagliata
-  - • Verificare connessione camera hopper
-    
-    • Acquisire immagine test
-    
-    • Accedere tramite Config Hopper X
-* - **Riquadro blu non modificabile**
-  - • Modalità Expert attiva
-    
-    • Area bloccata
-  - • Uscire da modalità Expert
-    
-    • Riavviare configurazione tramoggia
+    • Completare Hopper Setup
 * - **CAPTURE disco vuoto fallisce**
-  - • Componenti ancora presenti nell'area
-    
-    • Illuminazione insufficiente
+  - • Componenti ancora presenti
     
     • Camera non funzionante
-  - • Rimuovere **TUTTI** i componenti dall'area visibile
-    
-    • Verificare illuminazione camera hopper
+  - • Rimuovere **TUTTI** i componenti
     
     • Testare acquisizione camera
 * - **CAPTURE disco pieno fallisce**
-  - • Troppo pochi componenti posizionati
-    
-    • Componenti fuori area controllo
+  - • Troppo pochi componenti
     
     • Illuminazione cambiata
-  - • Posizionare numero adeguato di componenti nell'area
-    
-    • Verificare componenti dentro riquadro blu
+  - • Posizionare numero adeguato di componenti
     
     • Stabilizzare illuminazione
-* - **AUTO non calcola Mean e Std Dev**
-  - • CAPTURE non eseguiti
-    
-    • Ordine CAPTURE invertito
-    
-    • Area controllo troppo piccola
-  - • Eseguire CAPTURE vuoto poi CAPTURE pieno
-    
-    • Ripetere nell'ordine corretto
-    
-    • Ingrandire area di controllo
-* - **TEST sempre VERDE (tramoggia non si attiva mai)**
-  - • Soglia troppo permissiva
-    
-    • CAPTURE pieno con troppi componenti
-    
-    • Mean calcolato errato
-  - • Ripetere CAPTURE pieno con numero minimo corretto
-    
-    • Verificare AUTO ricalcola correttamente
-    
-    • Regolare manualmente soglia se necessario
-* - **TEST sempre ROSSO (tramoggia si attiva sempre)**
-  - • Soglia troppo restrittiva
-    
-    • CAPTURE vuoto con componenti presenti
+* - **TEST sempre VERDE**
+  - • CAPTURE pieno con troppi componenti
+  - • Ripetere con numero minimo corretto
+* - **TEST sempre ROSSO**
+  - • CAPTURE vuoto con componenti
     
     • Area include zone spurie
-  - • Ripetere CAPTURE vuoto con area completamente pulita
+  - • Ripetere con area completamente pulita
     
-    • Ridefinire area escludendo riflessi/ombre
-    
-    • Ripetere AUTO
-* - **Turn FLB non funziona durante setup**
-  - • FlexiBowl non connesso
-    
-    • Comando non configurato
-    
-    • FlexiBowl in errore
-  - • Verificare connessione FlexiBowl
-    
-    • Controllare configurazione FlexiBowl Setup
-    
-    • Verificare LED READY FlexiBowl
-* - **Steps parametro difficile da calcolare**
+    • Ridefinire area escludendo riflessi
+* - **Steps difficile da calcolare**
   - • Non chiaro quanti cicli servono
-    
-    • Componenti arrivano in momenti diversi
-  - • Svuotare completamente disco
+  - • Svuotare disco completamente
     
     • Attivare tramoggia manualmente
     
-    • Contare cicli finché PRIMI componenti raggiungono camera
+    • Contare cicli fino ai PRIMI componenti
+* - **Time non produce effetto**
+  - • Valore troppo basso/alto
     
-    • Usare valore conservativo (arrotondare per eccesso)
-* - **Time vibrazione non produce effetto desiderato**
-  - • Valore troppo basso (pochi componenti)
-    
-    • Valore troppo alto (troppi componenti)
-    
-    • Livello vasca tramoggia variabile
+    • Livello vasca variabile
   - • Iniziare con 500ms
     
-    • Incrementare ±100ms per regolare flusso
+    • Incrementare ±100ms
     
-    • **CRITICO**: Mantenere carico costante nella vasca
-* - **Flusso componenti irregolare**
-  - • Vasca tramoggia si svuota progressivamente
+    • **CRITICO**: Mantenere carico costante
+* - **Flusso irregolare**
+  - • Vasca si svuota progressivamente
     
-    • Superficie vibrante sporca
-    
-    • Componenti di dimensioni molto variabili
-  - • Implementare riempimento periodico vasca
+    • Superficie sporca
+  - • Implementare riempimento periodico
     
     • Pulire superficie vibrante
-    
-    • Separare componenti per dimensione omogenea
-* - **Tramoggia scarica in momenti sbagliati**
-  - • Steps non corretto
-    
-    • Sincronizzazione errata con ciclo FlexiBowl
-  - • Ricalcolare Steps
-    
-    • Verificare coordinazione Hopper-FlexiBowl
 * - **Modifiche non salvate**
-  - • **Salva Ricetta** non premuto
-    
-    • Uscita pagina prima di salvare
-  - • **FONDAMENTALE**: SEMPRE salvare ricetta dopo modifiche
-    
-    • Verificare messaggio conferma salvataggio
-    
-    • Attendere completamento prima di uscire
+  - • Ricetta non salvata
+  - • **FONDAMENTALE**: SEMPRE salvare ricetta
 ```

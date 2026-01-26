@@ -1,5 +1,5 @@
 
-# Monitoraggio Applicazione: Dashboard
+# **Monitoraggio Applicazione: Dashboard**
 
 La **Dashboard** è l'interfaccia principale per il monitoraggio in tempo reale del sistema FlexiVision Easy. In questa pagina è possibile verificare l'efficienza del processo, analizzare i tempi di ciclo, validare il riconoscimento dei componenti e identificare eventuali colli di bottiglia nel sistema.
 
