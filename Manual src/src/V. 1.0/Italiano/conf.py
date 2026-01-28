@@ -49,6 +49,11 @@ source_suffix = {
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
+# CSS personalizzato
+html_css_files = [
+    'custom.css',
+]
+
 # Logo configuration - apparirà in alto a sinistra nella sidebar
 html_logo = "_static/logo_fv.png"
 

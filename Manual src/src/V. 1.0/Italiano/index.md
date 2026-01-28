@@ -197,12 +197,7 @@ FlexiVisionEasy_manual/QUICKSTART/SETUP/13_setup.md
 
 FlexiVisionEasy_manual/QUICKSTART/14_calibrazione_camera.md
 ``` 
-```{toctree}
-:hidden:
-:caption: 
 
-FlexiVisionEasy_manual/QUICKSTART/15_Protocol_Setup.md
-``` 
 ```{toctree}
 :hidden:
 :caption: 
@@ -222,6 +217,13 @@ FlexiVisionEasy_manual/QUICKSTART/22_Config_FlexiBowl.md
 
 FlexiVisionEasy_manual/QUICKSTART/23_Config_Hopper.md
 ```
+```{toctree}
+:hidden:
+:caption: 
+
+FlexiVisionEasy_manual/QUICKSTART/15_Protocol_Setup.md
+``` 
+
 ```{toctree}
 :hidden:
 :caption: 
