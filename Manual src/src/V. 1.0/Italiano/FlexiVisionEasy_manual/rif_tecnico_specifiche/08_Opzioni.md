@@ -3,9 +3,8 @@
 descrizione funzionalità toplight
 
 le taglie disponibili sono:
-### TopLight per FB200/350/500
     
-    
+```{dropdown} TopLight per FB200/350/500
  ![Toplight](img/toplight.png)
 
 |  |  |  |  |
@@ -21,7 +20,7 @@ le taglie disponibili sono:
 |cable length | 5 m |
 | cooling method | natural air | 
 | opaline material | opaline white methacrylate |
- 
+``` 
 
 ### TopLight XL per FB650/800
    

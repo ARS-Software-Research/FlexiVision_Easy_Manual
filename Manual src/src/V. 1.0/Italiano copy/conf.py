@@ -64,3 +64,7 @@ html_theme_options = {
     "show_navbar_depth": 1,
     "show_prev_next": True,
 }
+
+html_js_files = [
+    'fix_print.js',
+]
