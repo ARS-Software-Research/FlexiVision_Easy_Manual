@@ -12,9 +12,14 @@ Dopo aver cliccato "Next" nella pagina di training, si apre automaticamente la p
 
 
 ### **Step 1: Definizione Area**
-1. Nella pagina **Define Robot Pick Area**, modificare il riquadro per delimitare l'area di ricerca
-2. Una volta dimensionata correttamente la Region Search, Cliccare su **Next** 
-3. si aprirà la pagina **Locator Model 1 Cam 1**
+```{list-table}
+* - 1. 
+  - Nella pagina **Define Robot Pick Area**, modificare il riquadro per delimitare l'area di ricerca
+* - 2. 
+  - Una volta dimensionata correttamente la Region Search, Cliccare su **Next** 
+* - 3. 
+  - Si aprirà la pagina **Locator Model 1 Cam 1**
+```
 
 ```{tip}
 Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zone non raggiungibili.
@@ -36,33 +41,44 @@ Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zo
   - Pannello che mostra tutti i componenti rilevati con dettagli (Id, coordinate, score)
 ```
 
-### **Step 2: Preparazione Scena ed Esecuzione Test**
-4. Posizionare **altri componenti** nell'area di visione in modo casuale intorno al componente di riferimento in modo da non confonderli con esso.
-   
-```{warning}
-Non toccare il componente di riferimento usato per il training! E non perderlo di vista!
+### **Step 2: Preparazione Scena**
+
+```{list-table}
+:widths: 5 95
+
+* - **4.**
+  - Posizionare **altri componenti** nell'area di visione in modo casuale intorno al componente di riferimento in modo da non confonderli con esso.
+    
+    :::{warning}
+    Non toccare il componente di riferimento usato per il training! E non perderlo di vista!
+    :::
 ```
 
-5. Cliccare su **Test** per verificare il riconoscimento
-6. Osservare quanti componenti vengono rilevati e con quali score
+### **Step 3: Esecuzione Test e Accept Threshold**
 
----
+```{list-table}
+:widths: 5 95
 
-### Cos'è l'Accept Threshold?
-È il **grado minimo di fedeltà** (score) che un componente rilevato deve avere rispetto al modello di riferimento per essere accettato.
+* - **5.**
+  - Cliccare su **Test** per verificare il riconoscimento
 
-#### Come Funziona
+* - **6.**
+  - Osservare quanti componenti vengono rilevati e con quali score
 
-```{admonition} Logica dello Score
-:class: note
-- **Valore 0.95** → Accetta solo componenti con fedeltà ≥ 95%
-- **Valore 0.80** → Accetta componenti con fedeltà ≥ 80%
-- **Valore più alto** → Più restrittivo (meno falsi positivi)
-- **Valore più basso** → Più permissivo (rileva anche componenti meno perfetti)
+* - **7.**
+  - Modificare l'**Accept Threshold** in base alle esigenze dell'applicazione
+    
+    :::{note}
+    **Cos'è l'Accept Threshold?**
+    
+    È il **grado minimo di fedeltà** (score) che un componente rilevato deve avere rispetto al modello di riferimento per essere accettato.
+    
+    - **Valore 0.95** → Accetta solo componenti con fedeltà ≥ 95%
+    - **Valore 0.80** → Accetta componenti con fedeltà ≥ 80%
+    - **Valore più alto** → Più restrittivo (meno falsi positivi)
+    - **Valore più basso** → Più permissivo (rileva anche componenti meno perfetti)
+    :::
 ```
-
-### **Step 3: Regolazione Soglia**
-7. Modificare l'**Accept Threshold** in base alle esigenze dell'applicazione
 
 ```{tip}
 
@@ -146,13 +162,16 @@ Se Accept Threshold fosse 0.85:
 ## Finalizzazione
 
 ### **Step 4: Pulizia e Proseguimento**
-4. Rimuovere **tutti i componenti** dall'area, **tranne il componente di riferimento** e i due oggetti ai suoi lati
-5. Cliccare su **Next** → si aprirà la pagina degli **Histogram**
 
-```{danger}
-**Non spostare il componente di riferimento!**
-
-Anche durante la pulizia della scena, fare attenzione a non urtare o spostare il componente di riferimento. Le sue coordinate sono ancora necessarie per la calibrazione robot nella fase finale.
+```{list-table}
+* - 4.
+  - Rimuovere **tutti i componenti** dall'area, **tranne il componente di riferimento** e i due oggetti ai suoi lati
+    :::{danger}
+      **Non spostare il componente di riferimento!**
+      Anche durante la pulizia della scena, fare attenzione a non urtare o spostare il componente di riferimento. Le sue coordinate sono ancora necessarie per la calibrazione robot nella fase finale.
+    :::
+* - 5. 
+  - Cliccare su **Next** → si aprirà la pagina degli **Histogram**
 ```
 
 ```{seealso}
