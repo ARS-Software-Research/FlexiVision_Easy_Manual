@@ -16,7 +16,7 @@ La calibrazione deve essere ripetuta ogni volta che un elemento fisico della tel
 
 ---
 
-## Perché la calibrazione è necessaria?
+## **Perché la calibrazione è necessaria?**
 
 La calibrazione è necessaria perché ogni combinazione di sensore e lente introduce alterazioni specifiche nell'immagine. Il suo obiettivo principale è correggere queste distorsioni.
 
@@ -38,22 +38,20 @@ La calibrazione calcola i parametri matematici per compensare queste distorsioni
 ---
 
 
-### Installazione e posizionamento griglia di calibrazione
+## **Step 1: La griglia di calibrazione**
 La griglia di calibrazione dedicata ARS deve essere posizionata sul FlexiBowl:
 
 ```{list-table}
 * - 0. 
   - Se presenti, rimuovere i deviatori montati sul FlexiBowl.
 * - 1. 
-  - **Svitare le quattro viti** della flangia centrale del FlexiBowl
+  - **Allentare le quattro viti** della flangia centrale del FlexiBowl
 * - 2. 
-  - **Rimuovere la flangia** centrale
+  - **Ruotare leggermente la flangia** centrale e **Rimuoverla**
 * - 3. 
-  - **Rimuovere la superficie** del piatto 
+  - **Sollevare** con cura e **Rimuovere la superficie**  
 * - 4. 
-  - **Posizionare la griglia ARS** sul FlexiBowl allineando i pin di posizionamento con i fori predefiniti
-* - 5. 
-  - **Fissare la griglia ARS** utilizzando gli appositi fori con viti M4 
+  - **Posizionare la griglia ARS** sul FlexiBowl allineando i perni di posizionamento con i fori predefiniti 
 ```
 
 ```{figure} img/griglia_posizionamento.png
@@ -78,44 +76,41 @@ Assicurarsi di utilizzare la griglia di calibrazione corretta per il vostro mode
 L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida completamente la calibrazione.
 ```
 
-### Regolazioni fondamentali: apertura diaframma, messa a fuoco ed esposizione
+## **Step 2: Regolazioni fondamentali**
 
 ```{list-table}
 :widths: 30 70
 :header-rows: 0
-
-* - **Mettere la camera in "live display"**
-  - Prima di regolare l'apertura, attivare la modalità di visualizzazione continua:
-
-    1. Dalla pagina Camera Setup, cliccare il pulsante Expert
-    2. Attivare la modalità **Live Display**
-    3. L'immagine della griglia dovrebbe essere visibile in tempo reale
-
-* - **Impostare l'apertura del diaframma**
-  - **A quanto la metto?**
-    L'apertura dell'obiettivo deve essere regolata a **f/5.6**.
-    
-    **Come si regola?**
-
-    4. Svitare leggermente la vite dell'anello superiore 
-    5. Regolare l'apertura a 5.6
-    6. Stringere la vite superiore dell'obiettivo.
-
-    **Perché f/5.6?**
-    
-    * **Profondità di campo**: Nitidezza su tutto il FlexiBowl
-    * **Luminosità**: Tempi di esposizione corretti
-    * **Qualità**: Riduce le aberrazioni ottiche
-
-* - **Regolare manualmente il fuoco della camera**
-  - 7. Individuare l'anello di messa a fuoco sull'obiettivo
-    8. Ruotare l'anello lentamente osservando l'immagine live
-    9. Quando il pattern appare nitido, il fuoco è corretto
-    10. Bloccare la messa a fuoco con la **vite di blocco**
-    11. Cliccare su "Back"
-
-    **Immagini di riferimento:**
-    Osservare la griglia di calibrazione nell'immagine live per ottenere un pattern definito.
+* - 5. 
+  - Accedere alla sezione Camera SETUP dalla sezione SETUP 
+* - 6. 
+  - Cliccare il pulsante Config Camera della camera corrispondente 
+* - 7. 
+  - Cliccare EXPERT dalla pagina Camera FLB 
+* - 8. 
+  - Dalla sezione Settings, seguire questi passaggi: 
+    - Cliccare **Image Acuisition Device**
+    - Selezionare la Camera 
+    - Cliccare **Video Formats** 
+    - Selezionare **Generic GigEVision** e **Mono**
+    - Cliccare *Initialize Acquisition*
+* - 9.
+  - **Mettere la camera in modalità "live display"**
+      Prima di regolare l'apertura, attivare la modalità di visualizzazione continua:
+* - 10. 
+  - **Impostare l'apertura del diaframma**
+    - Svitare leggermente la vite dell'anello superiore della camera 
+    - Ruotare l'anello osservando l'immagine live, fino a che la giusta quantità di luce non entra nella camera 
+    - Stringere la vite dell'anello superiore della camera 
+* - 11.
+  - **Regolare manualmente il fuoco della camera**
+    - Svitare leggermente la vite dell'anello inferiore della camera
+    - Ruotare l'anello lentamente osservando l'immagine live
+    - Quando il pattern appare nitido, il fuoco è corretto
+    - Stringere la vite dell'anello inferiore della camera 
+    - Chiudere la schermata
+* - 12. 
+  - Cliccare Back 
 ```
 
 ```{warning}
@@ -132,14 +127,16 @@ Se il problema persiste, potrebbe essere necessario rivedere il montaggio meccan
 ```
 
 ```{list-table}
-* - **Regolazione tempo di esposizione**
-  - 12. Dalla pagina **Camera FLB x**, accedere al parametro **Cam Exposure** (Esposizione della Camera):
-    13. Regolare il tempo di esposizione e cliccare su "TEST" fino a ottenere:
+* - 13. 
+  - **Regolare l'esposizione della camera**
+    - Dalla pagina **Camera FLB x**, individuare il parametro **Cam Exposure** (Esposizione della Camera):
+    - Regolare il parametro "Cam Exposure" e cliccare su "TEST", ripetere questo passaggio fino a che non viene trovata la giusta esposizione per l'immagine: 
    		- Pattern della griglia chiaramente visibile (nero su bianco o viceversa)
    		- Contrasto elevato tra quadrati bianchi e neri
    		- Nessuna sovraesposizione (aree completamente bianche "bruciate")
    		- Nessuna sottoesposizione (immagine troppo scura)
-	Valore tipico iniziale: **15-30 ms** (dipende dall'intensità del backlight/toplight)
+* - 14. 
+  - Cliccare NEXT
 ```
 
 ```{figure} img/esposizione_corretta.png
@@ -169,36 +166,50 @@ Se l'immagine con esposizione 20ms appare:
 
 
 
-### Calibrazione Camera
+## **Step 3: Calibrazione Camera**
 
 ```{list-table}
-:widths: 30 70
-:header-rows: 0
+:widths: 5 95
 
-* - **Effettuare la calibrazione**
-  - 14. Cliccare su "NEXT" per accedere alla pagina "Calibration camera Flb1"
-    15. I valori "Tile Size X" e "Tile Size Y" sono già impostati
-    16. Cliccare su "Grab Image Calib" per scattare una foto. 
+* - **15.**
+  - Cliccare su "NEXT" per accedere alla pagina "Calibration camera Flb1"
+
+* - **16.**
+  - Impostare i valori "Tile Size X" e "Tile Size Y" entrambi a 10
+
+* - **17.**
+  - Cliccare su "Grab Image Calib" per scattare una foto della griglia di calibrazione.
     
     Verificare visivamente che:
-    * L'intera griglia sia visibile
-    * Il pattern sia nitido
-    * Non ci siano ombre o riflessi
+    - L'intera griglia sia visibile
+    - Il pattern sia nitido
+    - Non ci siano ombre o riflessi
+
+* - **18.**
+  - Cliccare su "Compute Calib" per effettuare la calibrazione
+
+* - **19.**
+  - **Valutare la qualità della calibrazione**
     
-    17. Cliccare su "Compute Calib" per effettuare la calibrazione 
-
-* - **Valutare la qualità della calibrazione**
-  - Il parametro "Result Calibration" restituirà un valore:
-
-    **🟢 Good (Verde)**
+    Il parametro "Result Calibration" restituirà un valore:
+    
+    🟢 **Excellent (Verde)**
+    
     Calibrazione eccellente, precisione ottimale. Procedere con fiducia.
-
-    **🟠 Acceptable (Arancione)**
+    
+    🟠 **Acceptable (Arancione)**
+    
     Calibrazione accettabile, precisione buona ma non ottimale.
-
-    **🔴 Bad (Rosso)**
+    
+    🔴 **Bad (Rosso)**
+    
     Calibrazione scadente, precisione insufficiente. Da ripetere obbligatoriamente.
+    
+    :::{important}
+    Accettare solo calibrazioni Eccellenti 🟢, altri risultati comprometteranno il funzionamento dell'intera applicazione.
+    :::
 ```
+
 ```{note}
 **Criterio di accettabilità**
 
@@ -264,7 +275,7 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 
 ---
 
-## Quando è necessario ripetere la calibrazione
+### Quando è necessario ripetere la calibrazione
 ```{list-table}
 :widths: 50 50
 :header-rows: 0
@@ -286,22 +297,50 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 ```
 
 ---
+# **Calibrazione Robot**
 
-## Passo successivo: calibrazione del robot
+## **Step 4: Montaggio Laser**
 
 ```{list-table}
-* - **Calibrazione Robot**
+* - 20. 
   - Una volta ottenuta una calibrazione di ottima qualità, Cliccare "NEXT". 
-  - Apparirà una finestra che richiede la calibrazione del robot prima di proseguire, **non** cliccare su "Sì" fino a che non si effettua questa calibrazione
-		La calibrazione robot stabilisce la corrispondenza tra coordinate camera e coordinate robot, ed è il passo finale prima di poter utilizzare il sistema per il picking reale.
-  - Per procedere con la calibrazione robot, ....
+    Apparirà una finestra che richiede la calibrazione del robot prima di proseguire, **NON** cliccare su "Sì" e seguire i prossimi passaggi
+* - 21. 
+  - Montare il Laser Tool con il suo supporto personalizzato 
+* - 22. 
+  - Posizionare lo Spacer Bracket sotto il laser 
+* - 23. 
+  - Abbassare il laser fino al livello dello spacer, così il laser avrà un'altezza di esattamente 3cm dalla griglia di calibrazione
+* - 24. 
+  - Rimuovere lo Spacer Bracket 
+* - 25. 
+  - Accendere il laser 
 ```
 
+## **Step 5: Disegnare un piano a 3 punti**
+```{list-table}
+* - 26.
+  - Portare il laser sul punto di origine 
+* - 27. 
+  - Portare il laser nel punto finale dell'asse X
+* - 28.
+  - Portare il laser nel punto finale dell'asse Y 
+```
+
+## **Step 6: Verifica della traiettoria del robot**
+```{list-table}
+* - 29. 
+  - Riportare il laser sul punto di origine
+* - 30. 
+  - Muovere il robot dalla sua teach pendant lungo gli assi X e Y. 
+* - 31. 
+  - Verificare che la corretta traiettoria sia seguita: il robot, muovendosi esclusivamente lungo gli assi X e Y, deve seguire correttamente le linee della griglia 
+  ```
 ---
 
-## Problemi comuni durante la calibrazione
+# **Problemi comuni durante la calibrazione**
 
-### Pattern non rilevato
+## **Pattern non rilevato**
 
 ```{warning}
 **Errore: "Unable to detect calibration pattern"**
@@ -316,12 +355,12 @@ Causa: Il software non riesce a identificare il pattern della griglia.
 - Verificare che la griglia sia quella corretta (quadrati, non cerchi o altri pattern)
 ```
 
-### Calibrazione sempre "Bad" o "Acceptable"
+## **Calibrazione sempre "Bad" o "Acceptable"**
 
 ```{warning}
 **Qualità calibrazione insufficiente**
 
-Se nonostante le regolazioni la calibrazione rimane sotto "Good":
+Se nonostante le regolazioni la calibrazione rimane sotto "Excellent":
 
 1. Verificare la distanza di lavoro camera-FlexiBowl (deve essere quella calcolata)
 2. Controllare il paralleli della camera rispetto al piatto (deve essere perfettamente orizzontale)
@@ -332,7 +371,7 @@ Se nonostante le regolazioni la calibrazione rimane sotto "Good":
 Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare [Installazione Meccanica](09_Installazione_Meccanica.md) per revisione.
 ```
 
-### Errori dopo cambio illuminazione
+## **Errori dopo cambio illuminazione**
 
 ```{tip}
 **Ri-calibrazione dopo cambio backlight/toplight**
@@ -349,7 +388,7 @@ In generale, è consigliabile decidere fin dall'inizio il tipo di illuminazione 
 
 ---
 
-## Passi successivi
+# **Passi successivi**
 
 Una volta completata la calibrazione camera con risultato Good:
 

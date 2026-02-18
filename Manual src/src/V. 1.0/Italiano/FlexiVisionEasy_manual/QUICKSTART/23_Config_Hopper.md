@@ -3,54 +3,71 @@
 
 La configurazione della tramoggia permette di gestire il rifornimento automatico dei componenti sul disco del FlexiBowl®. Il sistema utilizza la visione artificiale per determinare quando il livello di riempimento è insufficiente e attivare la vibrazione di scarico.
 
-## Accesso alla Configurazione
-
-1. Cliccare sulla sezione "SETUP"
-2. Dalla sezione **Hopper Setup**, è possibile visualizzare e gestire le unità di carico collegate.
-3. Selezionare la casella **Enable Hopper X** per attivare la tramoggia corrispondente.
-4. Cliccare sul pulsante **Config Hopper X** per accedere alla configurazione specifica 
-
-### **Step 1: Definizione dell'Area di Controllo**
+## **Step 1: Accesso alla Configurazione**
+```{list-table}
+* - 1. 
+  - Cliccare sulla sezione "SETUP"
+* - 2. 
+  - Dalla sezione **Hopper Setup**, è possibile visualizzare e gestire le unità di carico collegate.
+* - 3. 
+  - Selezionare la casella **Enable Hopper X** per attivare la tramoggia corrispondente.
+* - 4. 
+  - Cliccare sul pulsante **Config Hopper X** per accedere alla configurazione specifica 
+```
+## **Step 2: Definizione dell'Area di Controllo**
 
 In questa fase si definisce la porzione di disco che la telecamera deve monitorare per lo scarico.
 
-5. Modificare il riquadro blu a schermo per inquadrare l'area in cui verranno rilevati i componenti.
-
- **Strumenti di supporto**:
-   * **Info**: Cliccare per visualizzare dettagli sulle funzionalità della pagina.
-   * **Expert**: Accesso a impostazioni avanzate.
-
-### **Step 2: Definizione dei Valori di Soglia**
-
-6. Nella pagina **Define Value Hopper Cam**, si istruisce il sistema a distinguere tra disco vuoto e disco pieno.
-7. Rimuovere tutti i componenti dall'area di visione e cliccare sul primo pulsante **CAPTURE**.
-8. Posizionare il numero minimo di componenti che si desidera mantenere sul disco. Se il numero scende sotto questa soglia, la tramoggia si attiverà.
-9. Cliccare sul secondo pulsante **CAPTURE**.
-10. Cliccando su **AUTO** nell'Expression Builder, il sistema calcola automaticamente i valori di **Mean** (Media) e **Standard Deviation**.
-11. Rimuovere alcuni pezzi e cliccare su **TEST**. 
-12. Osservare l'indicatore risultato:
-    - **Verde** 🟢: Livello sufficiente, Hopper NON si attiva (OK)
-    - **Rosso** 🔴: Livello insufficiente, Hopper SI ATTIVA (scarico necessario)
-
-```{warning}
-**Calibrazione insufficiente**
-
-Se il sistema non rileva correttamente il livello:
-
-**Problema: Sempre verde (non attiva mai Hopper)**
-→ Soglia troppo alta o area monitoraggio non rappresentativa
-→ Soluzione: Ridurre numero pezzi nella seconda acquisizione CAPTURE, ripetere AUTO
-
-**Problema: Sempre rosso (attiva sempre Hopper)**
-→ Soglia troppo bassa o interferenze nell'area
-→ Soluzione: Aumentare numero pezzi nella seconda acquisizione, verificare pulizia area
-
-**Problema: Comportamento erratico (alterna verde/rosso casualmente)**
-→ Illuminazione instabile o area troppo piccola
-→ Soluzione: Verificare backlight stabile, ingrandire area monitoraggio, ripetere calibrazione
+```{list-table}
+* - 5. 
+  - Modificare il riquadro blu a schermo per inquadrare l'area in cui verranno rilevati i componenti.
+   **Strumenti di supporto**:
+      * **Info**: Cliccare per visualizzare dettagli sulle funzionalità della pagina.
+      * **Expert**: Accesso a impostazioni avanzate.
 ```
 
-### **Step 3: Parametri Operativi**
+## **Step 3: Definizione dei Valori di Soglia**
+
+```{list-table}
+* - 6. 
+  - Cliccare NEXT per accedere alla pagina **Define Value Hopper Cam**, dove si istruisce il sistema a distinguere tra disco vuoto e disco pieno.
+* - 7. 
+  - Rimuovere tutti i componenti dall'area di visione e cliccare sul primo pulsante **CAPTURE**.
+* - 8. 
+  - Posizionare il numero minimo di componenti che si desidera mantenere sul disco. Se il numero scende sotto questa soglia, la tramoggia si attiverà.
+* - 9. 
+  - Cliccare sul secondo pulsante **CAPTURE**.
+* - 10. 
+  - Cliccando su **AUTO** nell'Expression Builder, il sistema calcola automaticamente i valori di **Mean** (Media) e **Standard Deviation**.
+* - 11. 
+  - Rimuovere alcuni pezzi e cliccare su **TEST**. 
+* - 12. 
+  - Osservare l'indicatore risultato:
+    - **Verde** 🟢: Livello insufficiente, Hopper si attiva (scarico necessario)
+    - **Rosso** 🔴: Livello sufficiente, Hopper NON si ATTIVA (OK)
+
+      :::{warning}
+      **Calibrazione insufficiente**
+
+      Se il sistema non rileva correttamente il livello:
+
+      **Problema: Sempre verde (attiva sempre Hopper)**
+      → Soglia troppo bassa o interferenze nell'area
+      → Soluzione: Aumentare numero pezzi nella seconda acquisizione, verificare pulizia area
+
+      **Problema: Sempre rosso (non attiva mai Hopper)**
+      → Soglia troppo alta o area monitoraggio non rappresentativa
+      → Soluzione: Ridurre numero pezzi nella seconda acquisizione CAPTURE, ripetere AUTO
+
+      **Problema: Comportamento errato (alterna verde/rosso casualmente)**
+      → Illuminazione instabile o area troppo piccola
+      → Soluzione: Verificare backlight stabile, ingrandire area monitoraggio, ripetere calibrazione
+      :::
+```
+```{note}  
+**Fill Hopper Threshold** = ... 
+```
+## **Step 4: Parametri Operativi**
 
 Tornare alla schermata principale di Hopper Setup per definire il comportamento meccanico.
 

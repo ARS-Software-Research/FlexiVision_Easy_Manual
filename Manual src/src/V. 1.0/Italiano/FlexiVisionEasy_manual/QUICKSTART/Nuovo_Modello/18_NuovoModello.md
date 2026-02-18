@@ -3,7 +3,7 @@
 In questa pagina vedremo come creare un modello di riferimento per il riconoscimento dei componenti.
 
 
-## Fase 1: Preparazione del Setup Fisico
+## **Step 1: Preparazione del Setup Fisico**
 
 ```{list-table}
 * - 0. 
@@ -16,11 +16,10 @@ In questa pagina vedremo come creare un modello di riferimento per il riconoscim
 ```
 ---
 
-## Fase 2: Creazione del Modello in FlexiVision
+## **Step 2: Abilitazione Modello** 
 
 Completata la preparazione fisica, si procede con l'acquisizione dell'immagine e la creazione del modello
 
-### **Step 1: Abilitazione Modello** 
 ```{list-table}
 * - 2. 
   - Dalla pagina "Recipes", con la giusta ricetta selezionata, cliccare su "Edit Recipe"
@@ -62,8 +61,9 @@ In questa fase si attiva solo il primo modello. Dopo averlo completato, sarà po
 
 Per ora, concentrarsi sul completamento del primo modello.
 ```
+---
 
-### **Step 2: Procedura di Training**
+## **Step 2: Procedura di Training**
 
 ```{list-table}
 :widths: 5 95
@@ -124,12 +124,11 @@ Per ora, concentrarsi sul completamento del primo modello.
 * - **10.**
   - Cliccare su **Apply Train**
 ```
+---
 
-## Fase 3: Verifica e Ottimizzazione
+## **Step 3: Controllo Visivo**
 
 Dopo aver generato il modello, è fondamentale verificarne la qualità prima di procedere.
-
-### **Step 3: Controllo Visivo**
 
 ````{list-table}
 
@@ -174,9 +173,9 @@ Se il modello non è soddisfacente:
 
 Effettuare modifiche graduali (step di 0.1-0.2) e testare ogni volta.
 ```
+---
 
-
-### **Step 4: Salvataggio**
+## **Step 4: Salvataggio**
 ```{list-table}
 * - 12. 
   - Nominare il modello con un nome descrittivo  

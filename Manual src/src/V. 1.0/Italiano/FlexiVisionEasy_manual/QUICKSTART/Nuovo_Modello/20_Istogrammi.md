@@ -14,7 +14,7 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
 ```
 ---
 
-### **Step 1: Setup Fisico**
+## **Step 1: Setup Fisico**
 
 ````{list-table}
 :widths: 5 95
@@ -53,8 +53,9 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
 * - **5.**
   - Allontanare il robot con il pendant **senza spostare nulla** sulla superficie
 ````
+---
 
-### **Step 2: Acesso alla pagina Clearance**
+## **Step 2: Acesso alla pagina Clearance**
 
 ```{list-table}
 :widths: 5 95
@@ -91,8 +92,9 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
     | **Test** | Verifica immediata del funzionamento dell'istogramma |
     | **Result** | Indicatore visivo dello stato (Verde = OK, Rosso = Triggered) |
 ```
+---
 
-### **Step 3: Attivazione e Posizionamento Area**
+## **Step 3: Attivazione e Posizionamento Area**
 
 ```{list-table}
 * - 3. 
@@ -106,8 +108,9 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
     Creare sempre una clearance leggermente più grande dello stretto necessario per evitare falsi errori.
     :::
 ```
+---
 
-### **Step 4: Configurazione Automatica**
+## **Step 4: Configurazione Automatica**
 
 ```{list-table}
 * - 5. 
@@ -140,9 +143,7 @@ Se dopo AUTO e TEST il riquadro rimane rosso:
 
 ---
 
-## Clearance Multipli
-
-### Quando Usarli
+## Clearance Multipli - Quando Usarli
 
 Crea più clearance quando:
 - Il tool del robot è una pinza: serve una clearance per ognuna delle due aree occupate dalla pinza ai lati del componente di riferimento 
@@ -154,8 +155,8 @@ Selezionare una nuova clearance dalla pagina elenco delle Clearances, tipo "Clea
 Ripetere la procedura per ogni clearance necessario (fino a 8 per modello). 
 
 ### **Step 4: Test Complessivo**
-8. Nella pagina di elenco di tutte le clearance, cliccare su **TEST**
-9. Visualizzare tutte le clearance contemporaneamente
+Nella pagina di elenco di tutte le clearance, cliccare su **TEST**
+Visualizzare tutte le clearance contemporaneamente
 
 ---
 
@@ -185,14 +186,15 @@ Una clearance diventa rossa (triggered) quando rileva al suo interno:
 - Ombre o riflessi significativi
 - Qualsiasi elemento che rende l'area non libera
 
-
 ---
 
 ## Finalizzazione
 
-### **Step 10: Proseguimento**
-10. Dopo aver configurato tutte le clearance necessarie, cliccare su **Next**
-11. Si aprirà la pagina **Robot Model Pick Cam**
+### **Step 5: Proseguimento**
+6. Dopo aver configurato tutte le clearance necessarie, cliccare su **Next**
+7. Si aprirà la pagina **Robot Model Pick Cam**
+
+
 
 ```{seealso}
 Procedi alla [Calibrazione Robot](#pagina-6-calibrazione-robot-pick) per completare la configurazione.

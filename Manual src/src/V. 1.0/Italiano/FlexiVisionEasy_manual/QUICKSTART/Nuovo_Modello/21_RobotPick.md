@@ -9,15 +9,15 @@ La funzione **Robot Pick** calcola l'offset tra le coordinate rilevate da FlexiV
 ```{danger}
 **Coordinate robot fondamentali!**
 
-Questa fase richiede **OBBLIGATORIAMENTE** le coordinate X, Y, Rz salvate durante la preparazione fisica del setup (Step 4 del Training Modello).
+Questa fase richiede **OBBLIGATORIAMENTE** le coordinate X, Y, Rz salvate durante la preparazione fisica del setup (Step 1 della sezione Clearances).
 
 Senza queste coordinate, non è possibile completare la calibrazione. Se sono state perse o dimenticate, sarà necessario ripetere l'intera preparazione fisica con il robot.
 ```
-
 ---
+
 ## Panoramica Interfaccia Robot Pick
 
-Dopo aver cliccato "Next" nella pagina Istogrammi, si apre la pagina **Robot Model Pick Cam**.
+Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Model Pick**.
 
 ## Parametri Principali
 
@@ -39,54 +39,57 @@ Dopo aver cliccato "Next" nella pagina Istogrammi, si apre la pagina **Robot Mod
 
 ---
 
-## Procedura di Calibrazione
+## **Step 1: Attivazione e Rilevamento Componente**
 
-### **Step 1: Attivazione e Rilevamento Componente**
-1. Cliccare su **Enable Robot Pick**
-2. Cliccare su **Find Object**
-   - Il sistema rileverà il componente di riferimento
-   - Le coordinate appariranno nella sezione **Vision Result**
+```{list-table}
+* - 1. 
+  - Cliccare su **Enable Robot Pick**
+* - 2. 
+  - Cliccare su **Find Object**:
+      - Il sistema rileverà il componente di riferimento
+      - Le coordinate appariranno nella sezione **Vision Result**
 
-```{note} Vision Result
-Queste sono le coordinate che FlexiVision "vede" nell'immagine. Non sono ancora collegate al sistema di coordinate del robot.
+      :::{note} Vision Result
+      Queste sono le coordinate che FlexiVision "vede" nell'immagine. Non sono ancora collegate al sistema di coordinate del robot.
+      :::
 ```
 
-### **Step 2: Inserimento Coordinate Robot e calcolo Offset**
-3. Nel riquadro **Insert Robot Coordinates**, inserire le coordinate salvate durante la creazione del modello:
-   - **X cord** → Coordinata X annotata al punto 8 della [Creazione Modello]()
-   - **Y cord** → Coordinata Y annotata al punto 8 della [Creazione Modello]()
-   - **RZ cord** → Rotazione Z annotata al punto 8 della [Creazione Modello]()
+## **Step 2: Inserimento Coordinate Robot e calcolo Offset**
 
-```{danger}
-Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!  
-Le coordinate devono essere inserite con **massima precisione**:
-- Copiare i valori esattamente come annotati (inclusi decimali)
-- **NON approssimare** (es: 450.23 ≠ 450.2 ≠ 450)
-- Verificare di non aver scambiato X e Y
-- Controllare il segno (+ o -) di ciascuna coordinata
+```{list-table}
+* - 3. 
+  - Nel riquadro **Insert Robot Coordinates**, inserire le coordinate salvate durante la creazione del modello:
+      - **X cord** → Coordinata X annotata al punto 8 della [Creazione Modello]()
+      - **Y cord** → Coordinata Y annotata al punto 8 della [Creazione Modello]()
+      - **RZ cord** → Rotazione Z annotata al punto 8 della [Creazione Modello]()
 
-**Errori in questa fase causano offset robot completamente errati**, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore).  
+      :::{danger}
+      Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!  
+      Le coordinate devono essere inserite con **massima precisione**:
+      - Copiare i valori esattamente come annotati (inclusi decimali)
+      - **NON approssimare** (es: 450.23 ≠ 450.2 ≠ 450)
+      - Verificare di non aver scambiato X e Y
+      - Controllare il segno (+ o -) di ciascuna coordinata
+
+      **Errori in questa fase causano offset robot completamente errati**, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore).  
+      :::
+* - 4. 
+  - Cliccare su **Gripper Offset**
+      - Il sistema calcolerà automaticamente la trasformazione tra coordinate visione e coordinate robot
+      - Questo offset verrà applicato a tutti i futuri rilevamenti
 ```
-4. Cliccare su **Gripper Offset**
-   - Il sistema calcolerà automaticamente la trasformazione tra coordinate visione e coordinate robot
-   - Questo offset verrà applicato a tutti i futuri rilevamenti
-
 ---
 
-## Come Funziona il Gripper Offset?
-
-```{admonition} Principio di Funzionamento
+```{admonition} **Come Funziona il Gripper Offset?**
 :class: info
 Il sistema confronta:
 - **Coordinate Visione**: dove FlexiVision "vede" il componente
 - **Coordinate Robot**: dove il robot ha effettivamente afferrato il componente
 
 Calcola la differenza e la memorizza come **offset**. Questo offset verrà applicato a tutti i componenti rilevati in futuro, garantendo che il robot prelevi sempre nella posizione corretta.
-```
 
 ### Esempio Pratico
 
-```
 Vision Result:        X=100, Y=200, RZ=0°
 Robot Coordinate:     X=350, Y=450, RZ=0°
 Gripper Offset:       ΔX=+250, ΔY=+250, ΔRZ=0°
@@ -97,43 +100,46 @@ Il robot andrà a prelevarlo a X=370, Y=470
 
 ---
 
-## Finalizzazione e Salvataggio
+## **Step 3: Finalizzazione e Salvataggio**
 
-### Step 3: Proseguimento e Salvataggio Ricetta
-5. CliccaNDO su **Next**, torneremo alla pagina delle ricette "Recipes"
-6. Cliccare su **Save Recipe** per salvare l'intera configurazione
+```{list-table}
+* - 5. 
+  - Cliccadno su **Next**, torneremo alla pagina delle ricette "Recipes"
+* - 6. 
+  - Cliccare su **Save Recipe** per salvare l'intera configurazione
 
-```{admonition} Salvataggio Completo
-:class: success
-Il salvataggio include:
-- ✓ Modello creato
-- ✓ Area di lavoro (ROI)
-- ✓ Tolleranze (Accept Threshold)
-- ✓ Istogrammi configurati
-- ✓ Calibrazione robot (Gripper Offset)
+      :::{admonition} Salvataggio Completo
+      :class: success
+      Il salvataggio include:
+      - ✓ Modello creato
+      - ✓ Area di lavoro (ROI)
+      - ✓ Tolleranze (Accept Threshold)
+      - ✓ Istogrammi configurati
+      - ✓ Calibrazione robot (Gripper Offset)
+      :::
 ```
 
 ---
 
-## Modelli Multipli
+## Modelli Multipli - Aggiungere Altri Modelli
 
-### Aggiungere Altri Modelli
+### **Step 4: Modelli Aggiuntivi (opzionale)**
 
-**Step 7: Modelli Aggiuntivi (opzionale)**
-7. Per creare altri modelli nella stessa ricetta:
-   - Tornare su **Edit Recipe**
-   - Selezionare un nuovo modello non ancora configurato 
-   - Ripetere l'intera procedura dalla [Creazione Modello]()
+```{list-table}
+* - 7. 
+  - Per creare altri modelli nella stessa ricetta:
+      - Tornare su **Edit Recipe**
+      - Selezionare un nuovo modello non ancora configurato 
+      - Ripetere l'intera procedura dalla [Creazione Modello]()
 
-```{tip}
-Ogni modello nella ricetta può avere configurazioni diverse (ROI, istogrammi, offset), permettendo di gestire componenti con caratteristiche diverse nella stessa applicazione.
+      :::{tip}
+      Ogni modello nella ricetta può avere configurazioni diverse (ROI, istogrammi, offset), permettendo di gestire componenti con caratteristiche diverse nella stessa applicazione.
+      :::
 ```
 
 ---
 
 ## Verifica Finale
-
-### Checklist Completamento
 
 Prima di considerare la ricetta completata, continua con :
 
@@ -150,3 +156,4 @@ Prima di considerare la ricetta completata, continua con :
 ```{toctree}  
 21b_Expert.md
 ```
+- [Back To Top]()

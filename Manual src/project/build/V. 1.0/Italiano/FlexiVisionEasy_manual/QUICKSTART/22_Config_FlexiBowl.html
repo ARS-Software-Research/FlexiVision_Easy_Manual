@@ -212,6 +212,9 @@
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
+
+
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -419,14 +422,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-al-wizard">Accesso al Wizard</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-selezione-modello-e-rotazione"><strong>Step 1: Selezione Modello e Rotazione</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-caratterizzazione-del-componente"><strong>Step 2: Caratterizzazione del Componente</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-test-degli-accessori"><strong>Step 3: Test degli Accessori</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-validazione-della-sequenza"><strong>Step 4: Validazione della Sequenza</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strategie-per-problemi-comuni">Strategie per problemi comuni</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-al-wizard"><strong>Step 1: Accesso al Wizard</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-selezione-modello-e-rotazione"><strong>Step 2: Selezione Modello e Rotazione</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-caratterizzazione-del-componente"><strong>Step 3: Caratterizzazione del Componente</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-test-degli-accessori"><strong>Step 4: Test degli Accessori</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-validazione-della-sequenza"><strong>Step 5: Validazione della Sequenza</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strategie-per-problemi-comuni">Strategie per problemi comuni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
             </nav>
@@ -442,78 +443,149 @@ document.write(`
   <section id="configurazione-guidata-flexibowl-wizard">
 <h1><strong>Configurazione guidata: FlexiBowl® Wizard</strong><a class="headerlink" href="#configurazione-guidata-flexibowl-wizard" title="Link to this heading">#</a></h1>
 <p>L’interfaccia <strong>FlexiBowl® Wizard</strong> è uno strumento interattivo progettato per guidare l’utente nella configurazione dei parametri di alimentazione in base alla specifica famiglia di prodotti da gestire.</p>
-<section id="accesso-al-wizard">
-<h2>Accesso al Wizard<a class="headerlink" href="#accesso-al-wizard" title="Link to this heading">#</a></h2>
+<section id="step-1-accesso-al-wizard">
+<h2><strong>Step 1: Accesso al Wizard</strong><a class="headerlink" href="#step-1-accesso-al-wizard" title="Link to this heading">#</a></h2>
 <p>Per avviare la procedura:</p>
-<ol class="arabic simple">
-<li><p>recarsi nella sezione <strong>Setup</strong> del software FlexiVision</p></li>
-<li><p>cliccare sul pulsante <strong>FlexiBowl Setup</strong>, si aprirà una pagina con tutti i FlexiBowl gestibili con FlexiVision Easy</p></li>
-<li><p>cliccare sul pulsante <strong>Config FlexiBowl</strong>, si aprirà una pagina con tutte le movimentazioni disponibili per il flexibowl selezionato</p></li>
-<li><p>cliccare sul pulsante <strong>FlexiBowl X Wizard</strong>, si aprirà una pagina di benvenuto al Wizard</p></li>
-<li><p>Cliccare su NEXT</p></li>
-</ol>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 5.0%" />
+<col style="width: 95.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>1.</strong></p></td>
+<td><p>Recarsi nella sezione <strong>Setup</strong> del software FlexiVision</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>2.</strong></p></td>
+<td><p>Cliccare sul pulsante <strong>FlexiBowl Setup</strong>, si aprirà una pagina con tutti i FlexiBowl gestibili con FlexiVision Easy</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>3.</strong></p></td>
+<td><p>Cliccare sul pulsante <strong>Config FlexiBowl</strong>, si aprirà una pagina con tutte le movimentazioni disponibili per il FlexiBowl selezionato</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>4.</strong></p></td>
+<td><p>Cliccare sul pulsante <strong>FlexiBowl X Wizard</strong>, si aprirà una pagina di benvenuto al Wizard</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>5.</strong></p></td>
+<td><p>Cliccare su NEXT</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Cliccare “NEXT” in ogni pagina del wizard per andare avanti nella configurazione guidata</p>
 </div>
-<section id="step-1-selezione-modello-e-rotazione">
-<h3><strong>Step 1: Selezione Modello e Rotazione</strong><a class="headerlink" href="#step-1-selezione-modello-e-rotazione" title="Link to this heading">#</a></h3>
-<p>In questa fase si definiscono le caratteristiche hardware del sistema:</p>
-<ol class="arabic simple">
-<li><p>Selezionare la taglia del dispositivo (es. 200, 350, 500, ecc.).</p></li>
-<li><p>Definire il senso di rotazione del disco (<strong>Clockwise</strong> o <strong>CounterClockwise</strong>).</p></li>
-</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="step-2-caratterizzazione-del-componente">
-<h3><strong>Step 2: Caratterizzazione del Componente</strong><a class="headerlink" href="#step-2-caratterizzazione-del-componente" title="Link to this heading">#</a></h3>
-<p>Il sistema richiede informazioni sulla morfologia dei pezzi per ottimizzare la separazione.</p>
-<ol class="arabic simple" start="3">
-<li><p>Selezionare la geometria che meglio descrive il componente:</p></li>
+<section id="step-2-selezione-modello-e-rotazione">
+<h2><strong>Step 2: Selezione Modello e Rotazione</strong><a class="headerlink" href="#step-2-selezione-modello-e-rotazione" title="Link to this heading">#</a></h2>
+<p>In questa fase si definiscono le caratteristiche hardware del sistema:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li></li>
 </ol>
+</td>
+<td><p>Selezionare la taglia del dispositivo (es. 200, 350, 500, ecc.).</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="7">
+<li></li>
+</ol>
+</td>
+<td><p>Definire il senso di rotazione del disco (<strong>Clockwise</strong> o <strong>CounterClockwise</strong>).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="step-3-caratterizzazione-del-componente">
+<h2><strong>Step 3: Caratterizzazione del Componente</strong><a class="headerlink" href="#step-3-caratterizzazione-del-componente" title="Link to this heading">#</a></h2>
+<p>Il sistema richiede informazioni sulla morfologia dei pezzi per ottimizzare la separazione.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple" start="8">
+<li></li>
+</ol>
+</td>
+<td><p>Selezionare la geometria che meglio descrive il componente:</p>
 <ul class="simple">
 <li><p><strong>FLAT</strong>: Componenti piatti.</p></li>
 <li><p><strong>CYLINDRICAL</strong>: Componenti cilindrici.</p></li>
 <li><p><strong>COMPLEX</strong>: Geometrie articolate o irregolari.</p></li>
 </ul>
-<ol class="arabic simple" start="4">
-<li><p>Definire come i componenti interagiscono tra loro sulla superficie:</p></li>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="9">
+<li></li>
 </ol>
+</td>
+<td><p>Definire come i componenti interagiscono tra loro sulla superficie:</p>
 <ul class="simple">
 <li><p><strong>Overlapping</strong>: I pezzi tendono a sovrapporsi.</p></li>
 <li><p><strong>Not Overlapping</strong>: I pezzi non si sovrappongono.</p></li>
 <li><p><strong>Tangling / Stacking</strong>: I pezzi tendono ad agganciarsi o impilarsi.</p></li>
 <li><p><strong>Not Tangling / Not Stacking</strong> : I pezzi rimangono separati e non si incastrano</p></li>
 </ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="step-3-test-degli-accessori">
-<h3><strong>Step 3: Test degli Accessori</strong><a class="headerlink" href="#step-3-test-degli-accessori" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="5">
-<li><p>Selezionare dal menu a tendina se il FlexiBowl® è equipaggiato con il modulo <strong>Air-blow</strong>.</p></li>
-<li><p>Cliccare su <strong>TEST Air-blow</strong> per verificare il funzionamento.</p></li>
-<li><p>Selezionare <strong>USE</strong> per abilitarlo nell’applicazione corrente, altrimenti cliccare su <strong>DON’T USE</strong>.</p></li>
+<section id="step-4-test-degli-accessori">
+<h2><strong>Step 4: Test degli Accessori</strong><a class="headerlink" href="#step-4-test-degli-accessori" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple" start="10">
+<li></li>
 </ol>
-<p>Il “Flip” è l’unità che genera l’impulso meccanico per ribaltare i pezzi.</p>
-<ol class="arabic simple" start="8">
-<li><p>Cliccare su <strong>TEST FLIP</strong> per verificare la vibrazione.</p></li>
+</td>
+<td><p>Selezionare dal menu a tendina se il FlexiBowl® è equipaggiato con il modulo <strong>Air-blow</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="11">
+<li></li>
 </ol>
+</td>
+<td><p>Cliccare su <strong>TEST Air-blow</strong> per verificare il funzionamento.</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="12">
+<li></li>
+</ol>
+</td>
+<td><p>Selezionare <strong>USE</strong> per abilitarlo nell’applicazione corrente, altrimenti cliccare su <strong>DON’T USE</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="13">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccare su <strong>TEST FLIP</strong> per verificare la vibrazione.
+Il “Flip” è l’unità che genera l’impulso meccanico per ribaltare i pezzi, è fondamentale per separare, districare o capovolgere i componenti durante il ciclo di alimentazione.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Se l’impulso non è avvertibile, verificare che l’aria compressa sia collegata e agire sul regolatore di pressione meccanico posto sul pannello di controllo.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Il Flip è fondamentale per separare, districare o capovolgere i componenti durante il ciclo di alimentazione.</p>
-</div>
-<ol class="arabic simple" start="9">
-<li><p>Al termine del Wizard, cliccando su <strong>FINISH</strong>, il sistema calcolerà automaticamente i parametri:</p>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="14">
+<li></li>
+</ol>
+</td>
+<td><p>Al termine del Wizard, cliccando su <strong>FINISH</strong>, il sistema calcolerà automaticamente i parametri:</p>
 <ul class="simple">
 <li><p>Parametri di movimento (velocità, accelerazione, angolo)</p></li>
 <li><p>Parametri di scuotimento (shake)</p></li>
 <li><p>Temporizzazioni accessori (flip, blow)</p></li>
 </ul>
-</li>
-<li><p>Sarà quindi possibile affinarli nella dashboard riassuntiva.</p></li>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="15">
+<li></li>
 </ol>
+</td>
+<td><p>Sarà quindi possibile affinarli nella dashboard riassuntiva.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="pst-scrollable-table-container"><table class="table" id="id1">
 <caption><span class="caption-text">Panoramica Parametri</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
 <colgroup>
@@ -544,46 +616,69 @@ document.write(`
 </table>
 </div>
 </section>
-<section id="step-4-validazione-della-sequenza">
-<h3><strong>Step 4: Validazione della Sequenza</strong><a class="headerlink" href="#step-4-validazione-della-sequenza" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="10">
-<li><p>Utilizzare la funzione <strong>Test Sequence</strong> per verificare che il ciclo rispetti i seguenti criteri di efficienza:</p></li>
-<li><p><strong>Sincronizzazione</strong>: L’impulso di Flip deve terminare esattamente nello stesso istante in cui termina il movimento (<em>Move</em>). Regolare i valori di <em>Flip Count</em> e <em>Delay</em> per allinearli.</p></li>
-<li><p><strong>Stabilità Immagine</strong>: I componenti devono essere immobili al momento dello scatto della camera.</p>
+<section id="step-5-validazione-della-sequenza">
+<h2><strong>Step 5: Validazione della Sequenza</strong><a class="headerlink" href="#step-5-validazione-della-sequenza" title="Link to this heading">#</a></h2>
+<p>Utilizzare la funzione <strong>Test Sequence</strong> per verificare che il ciclo rispetti i seguenti criteri di efficienza:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 5.0%" />
+<col style="width: 95.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Sincronizzazione</strong></p></td>
+<td><p>L’impulso di Flip deve terminare esattamente nello stesso istante in cui termina il movimento (<em>Move</em>). Regolare i valori di <em>Flip Count</em> e <em>Delay</em> per allinearli.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Stabilità Immagine</strong></p></td>
+<td><p>I componenti devono essere immobili al momento dello scatto della camera.</p>
 <ul class="simple">
 <li><p>Se i pezzi si muovono, diminuire velocità/accelerazione o inserire una pausa (es. <code class="docutils literal notranslate"><span class="pre">pause</span> <span class="pre">200ms</span></code>).</p></li>
 <li><p>Se il problema persiste, la superficie del disco (superficie di grip) potrebbe non essere corretta.</p></li>
 </ul>
-</li>
-<li><p><strong>Regolazione Soffio</strong>:</p>
-<ul class="simple">
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Regolazione Soffio</strong></p></td>
+<td><ul class="simple">
 <li><p><strong>Tip</strong>: Usare preferibilmente il soffio <em>pre-flip</em> per sparpagliare i pezzi.</p></li>
 <li><p>Usare il soffio <em>post-flip</em> (che raggruppa i pezzi) solo se strettamente necessario per cicli molto veloci.</p></li>
 </ul>
-</li>
-</ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Cliccare sempre su <strong>Synchronize Parameters</strong> dopo ogni modifica manuale per rendere attive le variazioni nel controller.</p>
 </div>
-</section>
-<section id="strategie-per-problemi-comuni">
-<h3>Strategie per problemi comuni<a class="headerlink" href="#strategie-per-problemi-comuni" title="Link to this heading">#</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Troubleshooting configurazione</strong></p>
-<p><strong>Problema: Pezzi non si separano</strong>
-→ Soluzione: Aumentare Flip Count, incrementare Shake Accel, abilitare Air-blow Pre-Flip</p>
-<p><strong>Problema: Pezzi vengono espulsi dal disco</strong>
-→ Soluzione: Ridurre Speed, ridurre Accel, ridurre Blow Time</p>
-<p><strong>Problema: Ciclo troppo lento</strong>
-→ Soluzione: Aumentare Speed, ridurre Angle (rotazione più breve), ottimizzare Flip timing</p>
-<p><strong>Problema: Pezzi rimangono aggregati in mucchi</strong>
-→ Soluzione: Aumentare Shake Speed, incrementare Flip Count, usare Air-blow Pre-Flip</p>
-<p><strong>Problema: Immagini sfocate (pezzi in movimento)</strong>
-→ Soluzione: Ridurre Speed/Accel, aggiungere pause, verificare superficie grip</p>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
+<section id="strategie-per-problemi-comuni">
+<h2>Strategie per problemi comuni<a class="headerlink" href="#strategie-per-problemi-comuni" title="Link to this heading">#</a></h2>
+<p><strong>Troubleshooting configurazione</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Problema</strong></p></th>
+<th class="head"><p><strong>Soluzione</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pezzi non si separano</p></td>
+<td><p>Aumentare Flip Count, incrementare Shake Accel, abilitare Air-blow Pre-Flip</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pezzi vengono espulsi dal disco</p></td>
+<td><p>Ridurre Speed, ridurre Accel, ridurre Blow Time</p></td>
+</tr>
+<tr class="row-even"><td><p>Ciclo troppo lento</p></td>
+<td><p>Aumentare Speed, ridurre Angle (rotazione più breve), ottimizzare Flip timing</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pezzi rimangono aggregati in mucchi</p></td>
+<td><p>Aumentare Shake Speed, incrementare Flip Count, usare Air-blow Pre-Flip</p></td>
+</tr>
+<tr class="row-even"><td><p>Immagini sfocate (pezzi in movimento)</p></td>
+<td><p>Ridurre Speed/Accel, aggiungere pause, verificare superficie grip</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="prossimi-passi">
 <h2>Prossimi Passi<a class="headerlink" href="#prossimi-passi" title="Link to this heading">#</a></h2>
@@ -913,14 +1008,12 @@ ___\\ \\     // //___
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-al-wizard">Accesso al Wizard</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-selezione-modello-e-rotazione"><strong>Step 1: Selezione Modello e Rotazione</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-caratterizzazione-del-componente"><strong>Step 2: Caratterizzazione del Componente</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-test-degli-accessori"><strong>Step 3: Test degli Accessori</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-validazione-della-sequenza"><strong>Step 4: Validazione della Sequenza</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strategie-per-problemi-comuni">Strategie per problemi comuni</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-al-wizard"><strong>Step 1: Accesso al Wizard</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-selezione-modello-e-rotazione"><strong>Step 2: Selezione Modello e Rotazione</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-caratterizzazione-del-componente"><strong>Step 3: Caratterizzazione del Componente</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-test-degli-accessori"><strong>Step 4: Test degli Accessori</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-validazione-della-sequenza"><strong>Step 5: Validazione della Sequenza</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strategie-per-problemi-comuni">Strategie per problemi comuni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
   </nav></div>

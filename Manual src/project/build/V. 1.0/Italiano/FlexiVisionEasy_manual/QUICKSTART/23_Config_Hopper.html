@@ -212,6 +212,9 @@
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
+
+
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -419,12 +422,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-configurazione">Accesso alla Configurazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-definizione-dellarea-di-controllo"><strong>Step 1: Definizione dell’Area di Controllo</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-definizione-dei-valori-di-soglia"><strong>Step 2: Definizione dei Valori di Soglia</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-parametri-operativi"><strong>Step 3: Parametri Operativi</strong></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-alla-configurazione"><strong>Step 1: Accesso alla Configurazione</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-definizione-dellarea-di-controllo"><strong>Step 2: Definizione dell’Area di Controllo</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-definizione-dei-valori-di-soglia"><strong>Step 3: Definizione dei Valori di Soglia</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-parametri-operativi"><strong>Step 4: Parametri Operativi</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-configurazione">Salvataggio Configurazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-hopper">Troubleshooting Hopper</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a></li>
@@ -449,59 +450,135 @@ document.write(`
   <section id="configurazione-della-tramoggia-hopper">
 <h1><strong>Configurazione della Tramoggia (Hopper)</strong><a class="headerlink" href="#configurazione-della-tramoggia-hopper" title="Link to this heading">#</a></h1>
 <p>La configurazione della tramoggia permette di gestire il rifornimento automatico dei componenti sul disco del FlexiBowl®. Il sistema utilizza la visione artificiale per determinare quando il livello di riempimento è insufficiente e attivare la vibrazione di scarico.</p>
-<section id="accesso-alla-configurazione">
-<h2>Accesso alla Configurazione<a class="headerlink" href="#accesso-alla-configurazione" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Cliccare sulla sezione “SETUP”</p></li>
-<li><p>Dalla sezione <strong>Hopper Setup</strong>, è possibile visualizzare e gestire le unità di carico collegate.</p></li>
-<li><p>Selezionare la casella <strong>Enable Hopper X</strong> per attivare la tramoggia corrispondente.</p></li>
-<li><p>Cliccare sul pulsante <strong>Config Hopper X</strong> per accedere alla configurazione specifica</p></li>
+<section id="step-1-accesso-alla-configurazione">
+<h2><strong>Step 1: Accesso alla Configurazione</strong><a class="headerlink" href="#step-1-accesso-alla-configurazione" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
 </ol>
-<section id="step-1-definizione-dellarea-di-controllo">
-<h3><strong>Step 1: Definizione dell’Area di Controllo</strong><a class="headerlink" href="#step-1-definizione-dellarea-di-controllo" title="Link to this heading">#</a></h3>
+</td>
+<td><p>Cliccare sulla sezione “SETUP”</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Dalla sezione <strong>Hopper Setup</strong>, è possibile visualizzare e gestire le unità di carico collegate.</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Selezionare la casella <strong>Enable Hopper X</strong> per attivare la tramoggia corrispondente.</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccare sul pulsante <strong>Config Hopper X</strong> per accedere alla configurazione specifica</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="step-2-definizione-dellarea-di-controllo">
+<h2><strong>Step 2: Definizione dell’Area di Controllo</strong><a class="headerlink" href="#step-2-definizione-dellarea-di-controllo" title="Link to this heading">#</a></h2>
 <p>In questa fase si definisce la porzione di disco che la telecamera deve monitorare per lo scarico.</p>
-<ol class="arabic simple" start="5">
-<li><p>Modificare il riquadro blu a schermo per inquadrare l’area in cui verranno rilevati i componenti.</p></li>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple" start="5">
+<li></li>
 </ol>
-<p><strong>Strumenti di supporto</strong>:</p>
+</td>
+<td><p>Modificare il riquadro blu a schermo per inquadrare l’area in cui verranno rilevati i componenti.
+<strong>Strumenti di supporto</strong>:</p>
 <ul class="simple">
 <li><p><strong>Info</strong>: Cliccare per visualizzare dettagli sulle funzionalità della pagina.</p></li>
 <li><p><strong>Expert</strong>: Accesso a impostazioni avanzate.</p></li>
 </ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="step-2-definizione-dei-valori-di-soglia">
-<h3><strong>Step 2: Definizione dei Valori di Soglia</strong><a class="headerlink" href="#step-2-definizione-dei-valori-di-soglia" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="6">
-<li><p>Nella pagina <strong>Define Value Hopper Cam</strong>, si istruisce il sistema a distinguere tra disco vuoto e disco pieno.</p></li>
-<li><p>Rimuovere tutti i componenti dall’area di visione e cliccare sul primo pulsante <strong>CAPTURE</strong>.</p></li>
-<li><p>Posizionare il numero minimo di componenti che si desidera mantenere sul disco. Se il numero scende sotto questa soglia, la tramoggia si attiverà.</p></li>
-<li><p>Cliccare sul secondo pulsante <strong>CAPTURE</strong>.</p></li>
-<li><p>Cliccando su <strong>AUTO</strong> nell’Expression Builder, il sistema calcola automaticamente i valori di <strong>Mean</strong> (Media) e <strong>Standard Deviation</strong>.</p></li>
-<li><p>Rimuovere alcuni pezzi e cliccare su <strong>TEST</strong>.</p></li>
-<li><p>Osservare l’indicatore risultato:</p>
-<ul class="simple">
-<li><p><strong>Verde</strong> 🟢: Livello sufficiente, Hopper NON si attiva (OK)</p></li>
-<li><p><strong>Rosso</strong> 🔴: Livello insufficiente, Hopper SI ATTIVA (scarico necessario)</p></li>
-</ul>
-</li>
+<section id="step-3-definizione-dei-valori-di-soglia">
+<h2><strong>Step 3: Definizione dei Valori di Soglia</strong><a class="headerlink" href="#step-3-definizione-dei-valori-di-soglia" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li></li>
 </ol>
+</td>
+<td><p>Cliccare NEXT per accedere alla pagina <strong>Define Value Hopper Cam</strong>, dove si istruisce il sistema a distinguere tra disco vuoto e disco pieno.</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="7">
+<li></li>
+</ol>
+</td>
+<td><p>Rimuovere tutti i componenti dall’area di visione e cliccare sul primo pulsante <strong>CAPTURE</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="8">
+<li></li>
+</ol>
+</td>
+<td><p>Posizionare il numero minimo di componenti che si desidera mantenere sul disco. Se il numero scende sotto questa soglia, la tramoggia si attiverà.</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="9">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccare sul secondo pulsante <strong>CAPTURE</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="10">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccando su <strong>AUTO</strong> nell’Expression Builder, il sistema calcola automaticamente i valori di <strong>Mean</strong> (Media) e <strong>Standard Deviation</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="11">
+<li></li>
+</ol>
+</td>
+<td><p>Rimuovere alcuni pezzi e cliccare su <strong>TEST</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="12">
+<li></li>
+</ol>
+</td>
+<td><p>Osservare l’indicatore risultato:</p>
+<ul>
+<li><p><strong>Verde</strong> 🟢: Livello insufficiente, Hopper si attiva (scarico necessario)</p></li>
+<li><p><strong>Rosso</strong> 🔴: Livello sufficiente, Hopper NON si ATTIVA (OK)</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Calibrazione insufficiente</strong></p>
 <p>Se il sistema non rileva correttamente il livello:</p>
-<p><strong>Problema: Sempre verde (non attiva mai Hopper)</strong>
-→ Soglia troppo alta o area monitoraggio non rappresentativa
-→ Soluzione: Ridurre numero pezzi nella seconda acquisizione CAPTURE, ripetere AUTO</p>
-<p><strong>Problema: Sempre rosso (attiva sempre Hopper)</strong>
+<p><strong>Problema: Sempre verde (attiva sempre Hopper)</strong>
 → Soglia troppo bassa o interferenze nell’area
 → Soluzione: Aumentare numero pezzi nella seconda acquisizione, verificare pulizia area</p>
-<p><strong>Problema: Comportamento erratico (alterna verde/rosso casualmente)</strong>
+<p><strong>Problema: Sempre rosso (non attiva mai Hopper)</strong>
+→ Soglia troppo alta o area monitoraggio non rappresentativa
+→ Soluzione: Ridurre numero pezzi nella seconda acquisizione CAPTURE, ripetere AUTO</p>
+<p><strong>Problema: Comportamento errato (alterna verde/rosso casualmente)</strong>
 → Illuminazione instabile o area troppo piccola
 → Soluzione: Verificare backlight stabile, ingrandire area monitoraggio, ripetere calibrazione</p>
 </div>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Fill Hopper Threshold</strong> = …</p>
+</div>
 </section>
-<section id="step-3-parametri-operativi">
-<h3><strong>Step 3: Parametri Operativi</strong><a class="headerlink" href="#step-3-parametri-operativi" title="Link to this heading">#</a></h3>
+<section id="step-4-parametri-operativi">
+<h2><strong>Step 4: Parametri Operativi</strong><a class="headerlink" href="#step-4-parametri-operativi" title="Link to this heading">#</a></h2>
 <p>Tornare alla schermata principale di Hopper Setup per definire il comportamento meccanico.</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id1">
 <caption><span class="caption-text">Parametri di Funzionamento</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
@@ -569,7 +646,6 @@ document.write(`
 <p class="admonition-title">Important</p>
 <p><strong>Salvataggio della Ricetta</strong>: Al termine di ogni blocco di modifiche, è fondamentale <strong>Salvare la Ricetta</strong>. Ogni variazione apportata viene memorizzata solo se la ricetta viene salvata correttamente prima di uscire o cambiare pagina.</p>
 </div>
-</section>
 </section>
 <section id="salvataggio-configurazione">
 <h2>Salvataggio Configurazione<a class="headerlink" href="#salvataggio-configurazione" title="Link to this heading">#</a></h2>
@@ -1016,12 +1092,10 @@ ___\\ \\     // //___
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-configurazione">Accesso alla Configurazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-definizione-dellarea-di-controllo"><strong>Step 1: Definizione dell’Area di Controllo</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-definizione-dei-valori-di-soglia"><strong>Step 2: Definizione dei Valori di Soglia</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-parametri-operativi"><strong>Step 3: Parametri Operativi</strong></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-alla-configurazione"><strong>Step 1: Accesso alla Configurazione</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-definizione-dellarea-di-controllo"><strong>Step 2: Definizione dell’Area di Controllo</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-definizione-dei-valori-di-soglia"><strong>Step 3: Definizione dei Valori di Soglia</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-parametri-operativi"><strong>Step 4: Parametri Operativi</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-configurazione">Salvataggio Configurazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-hopper">Troubleshooting Hopper</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a></li>

@@ -212,6 +212,9 @@
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
+
+
+
 </ul>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -422,27 +425,14 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-il-robot-pick">Cos’è il Robot Pick?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-interfaccia-robot-pick">Panoramica Interfaccia Robot Pick</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-calibrazione">Procedura di Calibrazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-attivazione-e-rilevamento-componente"><strong>Step 1: Attivazione e Rilevamento Componente</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-inserimento-coordinate-robot-e-calcolo-offset"><strong>Step 2: Inserimento Coordinate Robot e calcolo Offset</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-attivazione-e-rilevamento-componente"><strong>Step 1: Attivazione e Rilevamento Componente</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-inserimento-coordinate-robot-e-calcolo-offset"><strong>Step 2: Inserimento Coordinate Robot e calcolo Offset</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-finalizzazione-e-salvataggio"><strong>Step 3: Finalizzazione e Salvataggio</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-multipli-aggiungere-altri-modelli">Modelli Multipli - Aggiungere Altri Modelli</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-modelli-aggiuntivi-opzionale"><strong>Step 4: Modelli Aggiuntivi (opzionale)</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#come-funziona-il-gripper-offset">Come Funziona il Gripper Offset?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio-pratico">Esempio Pratico</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione-e-salvataggio">Finalizzazione e Salvataggio</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-proseguimento-e-salvataggio-ricetta">Step 3: Proseguimento e Salvataggio Ricetta</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-multipli">Modelli Multipli</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggiungere-altri-modelli">Aggiungere Altri Modelli</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-finale">Verifica Finale</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist-completamento">Checklist Completamento</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-finale">Verifica Finale</a></li>
 </ul>
             </nav>
         </div>
@@ -463,14 +453,14 @@ document.write(`
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p><strong>Coordinate robot fondamentali!</strong></p>
-<p>Questa fase richiede <strong>OBBLIGATORIAMENTE</strong> le coordinate X, Y, Rz salvate durante la preparazione fisica del setup (Step 4 del Training Modello).</p>
+<p>Questa fase richiede <strong>OBBLIGATORIAMENTE</strong> le coordinate X, Y, Rz salvate durante la preparazione fisica del setup (Step 1 della sezione Clearances).</p>
 <p>Senza queste coordinate, non è possibile completare la calibrazione. Se sono state perse o dimenticate, sarà necessario ripetere l’intera preparazione fisica con il robot.</p>
 </div>
 </section>
 <hr class="docutils" />
 <section id="panoramica-interfaccia-robot-pick">
 <h2>Panoramica Interfaccia Robot Pick<a class="headerlink" href="#panoramica-interfaccia-robot-pick" title="Link to this heading">#</a></h2>
-<p>Dopo aver cliccato “Next” nella pagina Istogrammi, si apre la pagina <strong>Robot Model Pick Cam</strong>.</p>
+<p>Dopo aver cliccato “Next” nella pagina Clearances, si apre la pagina <strong>Robot Model Pick</strong>.</p>
 </section>
 <section id="parametri-principali">
 <h2>Parametri Principali<a class="headerlink" href="#parametri-principali" title="Link to this heading">#</a></h2>
@@ -531,36 +521,50 @@ document.write(`
 </div>
 </section>
 <hr class="docutils" />
-<section id="procedura-di-calibrazione">
-<h2>Procedura di Calibrazione<a class="headerlink" href="#procedura-di-calibrazione" title="Link to this heading">#</a></h2>
 <section id="step-1-attivazione-e-rilevamento-componente">
-<h3><strong>Step 1: Attivazione e Rilevamento Componente</strong><a class="headerlink" href="#step-1-attivazione-e-rilevamento-componente" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Cliccare su <strong>Enable Robot Pick</strong></p></li>
-<li><p>Cliccare su <strong>Find Object</strong></p>
+<h2><strong>Step 1: Attivazione e Rilevamento Componente</strong><a class="headerlink" href="#step-1-attivazione-e-rilevamento-componente" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccare su <strong>Enable Robot Pick</strong></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccare su <strong>Find Object</strong>:</p>
 <ul class="simple">
 <li><p>Il sistema rileverà il componente di riferimento</p></li>
 <li><p>Le coordinate appariranno nella sezione <strong>Vision Result</strong></p></li>
 </ul>
-</li>
-</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Vision Result
 Queste sono le coordinate che FlexiVision “vede” nell’immagine. Non sono ancora collegate al sistema di coordinate del robot.</p>
 </div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="step-2-inserimento-coordinate-robot-e-calcolo-offset">
-<h3><strong>Step 2: Inserimento Coordinate Robot e calcolo Offset</strong><a class="headerlink" href="#step-2-inserimento-coordinate-robot-e-calcolo-offset" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="3">
-<li><p>Nel riquadro <strong>Insert Robot Coordinates</strong>, inserire le coordinate salvate durante la creazione del modello:</p>
+<h2><strong>Step 2: Inserimento Coordinate Robot e calcolo Offset</strong><a class="headerlink" href="#step-2-inserimento-coordinate-robot-e-calcolo-offset" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Nel riquadro <strong>Insert Robot Coordinates</strong>, inserire le coordinate salvate durante la creazione del modello:</p>
 <ul class="simple">
 <li><p><strong>X cord</strong> → Coordinata X annotata al punto 8 della <a class="reference internal" href="#"><span class="xref myst">Creazione Modello</span></a></p></li>
 <li><p><strong>Y cord</strong> → Coordinata Y annotata al punto 8 della <a class="reference internal" href="#"><span class="xref myst">Creazione Modello</span></a></p></li>
 <li><p><strong>RZ cord</strong> → Rotazione Z annotata al punto 8 della <a class="reference internal" href="#"><span class="xref myst">Creazione Modello</span></a></p></li>
 </ul>
-</li>
-</ol>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p>Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!<br />
@@ -573,49 +577,55 @@ Le coordinate devono essere inserite con <strong>massima precisione</strong>:</p
 </ul>
 <p><strong>Errori in questa fase causano offset robot completamente errati</strong>, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore).</p>
 </div>
-<ol class="arabic simple" start="4">
-<li><p>Cliccare su <strong>Gripper Offset</strong></p>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccare su <strong>Gripper Offset</strong></p>
 <ul class="simple">
 <li><p>Il sistema calcolerà automaticamente la trasformazione tra coordinate visione e coordinate robot</p></li>
 <li><p>Questo offset verrà applicato a tutti i futuri rilevamenti</p></li>
 </ul>
-</li>
-</ol>
-</section>
-</section>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr class="docutils" />
-<section id="come-funziona-il-gripper-offset">
-<h2>Come Funziona il Gripper Offset?<a class="headerlink" href="#come-funziona-il-gripper-offset" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Principio di Funzionamento</p>
+<p class="admonition-title"><strong>Come Funziona il Gripper Offset?</strong></p>
 <p>Il sistema confronta:</p>
 <ul class="simple">
 <li><p><strong>Coordinate Visione</strong>: dove FlexiVision “vede” il componente</p></li>
 <li><p><strong>Coordinate Robot</strong>: dove il robot ha effettivamente afferrato il componente</p></li>
 </ul>
 <p>Calcola la differenza e la memorizza come <strong>offset</strong>. Questo offset verrà applicato a tutti i componenti rilevati in futuro, garantendo che il robot prelevi sempre nella posizione corretta.</p>
-</div>
-<section id="esempio-pratico">
-<h3>Esempio Pratico<a class="headerlink" href="#esempio-pratico" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Vision Result:        X=100, Y=200, RZ=0°
+<p class="rubric" id="esempio-pratico">Esempio Pratico</p>
+<p>Vision Result:        X=100, Y=200, RZ=0°
 Robot Coordinate:     X=350, Y=450, RZ=0°
-Gripper Offset:       ΔX=+250, ΔY=+250, ΔRZ=0°
-
-Quando FlexiVision rileva un nuovo componente a X=120, Y=220
-Il robot andrà a prelevarlo a X=370, Y=470
-</pre></div>
+Gripper Offset:       ΔX=+250, ΔY=+250, ΔRZ=0°</p>
+<p>Quando FlexiVision rileva un nuovo componente a X=120, Y=220
+Il robot andrà a prelevarlo a X=370, Y=470</p>
 </div>
-</section>
 </section>
 <hr class="docutils" />
-<section id="finalizzazione-e-salvataggio">
-<h2>Finalizzazione e Salvataggio<a class="headerlink" href="#finalizzazione-e-salvataggio" title="Link to this heading">#</a></h2>
-<section id="step-3-proseguimento-e-salvataggio-ricetta">
-<h3>Step 3: Proseguimento e Salvataggio Ricetta<a class="headerlink" href="#step-3-proseguimento-e-salvataggio-ricetta" title="Link to this heading">#</a></h3>
-<ol class="arabic simple" start="5">
-<li><p>CliccaNDO su <strong>Next</strong>, torneremo alla pagina delle ricette “Recipes”</p></li>
-<li><p>Cliccare su <strong>Save Recipe</strong> per salvare l’intera configurazione</p></li>
+<section id="step-3-finalizzazione-e-salvataggio">
+<h2><strong>Step 3: Finalizzazione e Salvataggio</strong><a class="headerlink" href="#step-3-finalizzazione-e-salvataggio" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple" start="5">
+<li></li>
 </ol>
+</td>
+<td><p>Cliccadno su <strong>Next</strong>, torneremo alla pagina delle ricette “Recipes”</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="6">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccare su <strong>Save Recipe</strong> per salvare l’intera configurazione</p>
 <div class="success admonition">
 <p class="admonition-title">Salvataggio Completo</p>
 <p>Il salvataggio include:</p>
@@ -627,15 +637,24 @@ Il robot andrà a prelevarlo a X=370, Y=470
 <li><p>✓ Calibrazione robot (Gripper Offset)</p></li>
 </ul>
 </div>
-</section>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <hr class="docutils" />
-<section id="modelli-multipli">
-<h2>Modelli Multipli<a class="headerlink" href="#modelli-multipli" title="Link to this heading">#</a></h2>
-<section id="aggiungere-altri-modelli">
-<h3>Aggiungere Altri Modelli<a class="headerlink" href="#aggiungere-altri-modelli" title="Link to this heading">#</a></h3>
-<p><strong>Step 7: Modelli Aggiuntivi (opzionale)</strong>
-7. Per creare altri modelli nella stessa ricetta:</p>
+<section id="modelli-multipli-aggiungere-altri-modelli">
+<h2>Modelli Multipli - Aggiungere Altri Modelli<a class="headerlink" href="#modelli-multipli-aggiungere-altri-modelli" title="Link to this heading">#</a></h2>
+<section id="step-4-modelli-aggiuntivi-opzionale">
+<h3><strong>Step 4: Modelli Aggiuntivi (opzionale)</strong><a class="headerlink" href="#step-4-modelli-aggiuntivi-opzionale" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple" start="7">
+<li></li>
+</ol>
+</td>
+<td><p>Per creare altri modelli nella stessa ricetta:</p>
 <ul class="simple">
 <li><p>Tornare su <strong>Edit Recipe</strong></p></li>
 <li><p>Selezionare un nuovo modello non ancora configurato</p></li>
@@ -645,13 +664,16 @@ Il robot andrà a prelevarlo a X=370, Y=470
 <p class="admonition-title">Tip</p>
 <p>Ogni modello nella ricetta può avere configurazioni diverse (ROI, istogrammi, offset), permettendo di gestire componenti con caratteristiche diverse nella stessa applicazione.</p>
 </div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 </section>
 <hr class="docutils" />
 <section id="verifica-finale">
 <h2>Verifica Finale<a class="headerlink" href="#verifica-finale" title="Link to this heading">#</a></h2>
-<section id="checklist-completamento">
-<h3>Checklist Completamento<a class="headerlink" href="#checklist-completamento" title="Link to this heading">#</a></h3>
 <p>Prima di considerare la ricetta completata, continua con :</p>
 <ul class="simple">
 <li><p>[Configurazione del FlexiBowl ] (QUICKSTART/22_Config_FlexiBowl.md)</p></li>
@@ -670,6 +692,9 @@ Il robot andrà a prelevarlo a X=370, Y=470
 <li class="toctree-l1"><a class="reference internal" href="21b_Expert.html">expert della pagina…</a></li>
 </ul>
 </div>
+<ul class="simple">
+<li><p><a class="reference internal" href="#"><span class="xref myst">Back To Top</span></a></p></li>
+</ul>
 <br>
 <!-- Versions and languages set-up -->
 <style>
@@ -934,7 +959,6 @@ ___\\ \\     // //___
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
 </section>
-</section>
 
 
                 </article>
@@ -984,27 +1008,14 @@ ___\\ \\     // //___
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cose-il-robot-pick">Cos’è il Robot Pick?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-interfaccia-robot-pick">Panoramica Interfaccia Robot Pick</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-principali">Parametri Principali</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-calibrazione">Procedura di Calibrazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-attivazione-e-rilevamento-componente"><strong>Step 1: Attivazione e Rilevamento Componente</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-inserimento-coordinate-robot-e-calcolo-offset"><strong>Step 2: Inserimento Coordinate Robot e calcolo Offset</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-attivazione-e-rilevamento-componente"><strong>Step 1: Attivazione e Rilevamento Componente</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-inserimento-coordinate-robot-e-calcolo-offset"><strong>Step 2: Inserimento Coordinate Robot e calcolo Offset</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-finalizzazione-e-salvataggio"><strong>Step 3: Finalizzazione e Salvataggio</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-multipli-aggiungere-altri-modelli">Modelli Multipli - Aggiungere Altri Modelli</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-modelli-aggiuntivi-opzionale"><strong>Step 4: Modelli Aggiuntivi (opzionale)</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#come-funziona-il-gripper-offset">Come Funziona il Gripper Offset?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esempio-pratico">Esempio Pratico</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finalizzazione-e-salvataggio">Finalizzazione e Salvataggio</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-proseguimento-e-salvataggio-ricetta">Step 3: Proseguimento e Salvataggio Ricetta</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelli-multipli">Modelli Multipli</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggiungere-altri-modelli">Aggiungere Altri Modelli</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-finale">Verifica Finale</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist-completamento">Checklist Completamento</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-finale">Verifica Finale</a></li>
 </ul>
   </nav></div>
 
