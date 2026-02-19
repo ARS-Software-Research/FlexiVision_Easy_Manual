@@ -67,18 +67,22 @@ FlexiVision Easy supporta profili utente multipli con diversi livelli di permess
 
 Dopo il primo login, è necessario attivare la licenza software.
 
-```{div}
-**Procedura di attivazione**
+```{list-table} 
 
-1. Accedere alla seszione SETUP e Cliccare su **Software License** 
+* - 1. 
+  - Accedere alla seszione SETUP e Cliccare su **Software License** 
 
-2. Inserire la chiave di licenza fornita da ARS Automation nel campo dedicato
+* - 2. 
+  - Inserire la chiave di licenza fornita da ARS Automation nel campo dedicato
    - La chiave è composta da caratteri alfanumerici (es: `XXXX-XXXX-XXXX-XXXX`)
    - Copiare e incollare la chiave per evitare errori di digitazione
 
-3. Cliccare su **Activate** 
+* - 3. 
+  - Cliccare su **Activate** 
 
-4. Attendere che l'indicatore di stao diventi verde 
+* - 4. 
+  - Attendere che l'indicatore di stao diventi verde 
+```
 
 ```{warning}
 **Chiave di licenza non valida**
@@ -96,24 +100,29 @@ Se la licenza non viene accettata:
 
 Prima di configurare i componenti hardware, è necessario creare una ricetta di base che definisca i parametri dell'applicazione.
 
-```{div}
-**Procedura creazione ricetta**
+```{list-table} 
 
-1. Accedere alla sezione **RECIPES** dal pulsante in alto 
+* - 1. 
+  - Accedere alla sezione **RECIPES** dal pulsante in alto 
 
-2. Cliccare su **New Recipe** 
+* - 2. 
+  - Cliccare su **New Recipe** 
 
-3. Inserire il nome della ricetta
+* - 3. 
+  - Inserire il nome della ricetta
    - Utilizzare un nome descrittivo (es: "Ricetta_Base")
    - Evitare caratteri speciali o spazi (usare underscore `_` al posto degli spazi)
 
-4. Selezionare il **tipo di applicazione** :
+* - 4. 
+  - Selezionare il **tipo di applicazione** :
    - **Standard**: per applicazioni ...
    - **Mix**: per applicazioni ...
    
-5. Selezionare il **FlexiBowl** utilizzato
+* - 5. 
+  - Selezionare il **FlexiBowl** utilizzato
 
-6. Cliccare su **Save** per salvare la ricetta
+* - 6. 
+  - Cliccare su **Save** per salvare la ricetta
 ```
 
 ```{tip}
@@ -135,11 +144,14 @@ Una volta completate le operazioni preliminari, procedere con la configurazione 
 Tutti i setup hardware sono accessibili dalla pagina centrale **SETUP** del software.
 
 
-
-1. Dal menu principale, cliccare su **SETUP**
-2. Vengono visualizzate le icone dei diversi componenti da configurare
-3. Cliccare sull'icona del componente desiderato per accedere alla sua configurazione specifica
-
+```{list-table} 
+* - 1. 
+  - Dal menu principale, cliccare su **SETUP**
+* - 2. 
+  - Vengono visualizzate le icone dei diversi componenti da configurare
+* - 3. 
+  - Cliccare sull'icona del componente desiderato per accedere alla sua configurazione specifica
+```
 
 ### Sequenza setup consigliata
 

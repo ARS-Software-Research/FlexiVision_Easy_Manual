@@ -14,40 +14,46 @@ Prima di procedere, assicurarsi che:
 ---
 
 ## Accesso alla configurazione FlexiBowl
-
-1. Dalla pagina principale del software, cliccare su **SETUP**
-2. Nella pagina SETUP, identificare e cliccare sull'icona **FlexiBowl Setup**
-3. Si apre la schermata di configurazione del FlexiBowl
-
+```{list-table}
+* - 1. 
+  - Dalla pagina principale del software, cliccare su **SETUP**
+* - 2. 
+  - Nella pagina SETUP, identificare e cliccare sull'icona **FlexiBowl Setup**
+* - 3. 
+  - Si apre la schermata di configurazione del FlexiBowl
+```
 
 ---
 
 ## Procedura di connessione
 
-### Step 1: Inserimento indirizzo IP
+### **Step 1: Configurazione indirizzo di rete**
 
-**Configurazione indirizzo di rete**
+```{list-table}
+* - 1. 
+  - Nel campo **FlexiBowl IP**, inserire l'indirizzo IP del FlexiBowl
+      - Formato: `192.168.1.XXX` (o secondo la configurazione della vostra rete)
+      - L'indirizzo IP del FlexiBowl è riportato su un'etichetta sul dispositivo
+* - 2. 
+  - Verificare che l'indirizzo sia sulla stessa subnet del VisionController
+```
 
-1. Nel campo **FlexiBowl IP**, inserire l'indirizzo IP del FlexiBowl
-   - Formato: `192.168.1.XXX` (o secondo la configurazione della vostra rete)
-   - L'indirizzo IP del FlexiBowl è riportato su un'etichetta sul dispositivo
-   
+### **Step 2: Test di connessione**
 
-2. Verificare che l'indirizzo sia sulla stessa subnet del VisionController
+```{list-table}
+:widths: 5 95
 
+* - **1.**
+  - Dopo aver inserito l'IP, cliccare sul pulsante **Connect Test**
 
-### Step 2: Test di connessione
+* - **2.**
+  - Il sistema esegue un test di comunicazione (ping) verso il FlexiBowl
 
-
-**Verifica raggiungibilità**
-
-1. Dopo aver inserito l'IP, cliccare sul pulsante **Connect Test**
-
-2. Il sistema esegue un test di comunicazione (ping) verso il FlexiBowl
-
-3. Osservare l'indicatore di **Status**:
-   - **Verde**: Connessione stabilita correttamente
-   - **Rosso**: Connessione fallita (verificare IP e cablaggio)
+* - **3.**
+  - Osservare l'indicatore di **Status**:
+    - 🟢 **Verde**: Connessione stabilita correttamente
+    - 🔴 **Rosso**: Connessione fallita (verificare IP e cablaggio)
+```
 
 ```{warning}
 **Connessione fallita**
@@ -72,36 +78,40 @@ Se il problema persiste, consultare [Troubleshooting](../26_trb_shooting_guide.m
 
 Una volta stabilita la connessione, procedere con la configurazione dei parametri operativi.
 
-### Step 3: Accesso configurazione
+### **Step 3: Accesso configurazione**
 
+```{list-table}
+* - 1. 
+  - Cliccare sul pulsante **Config FlexiBowl**
+* - 2. 
+  - Si apre una finestra con i parametri configurabili del FlexiBowl
+```
 
-1. Cliccare sul pulsante **Config FlexiBowl**
-2. Si apre una finestra con i parametri configurabili del FlexiBowl
+### **Step 4: Abilitazione illuminazione (Backlight)**
 
-
-### Step 4: Abilitazione illuminazione (Backlight)
-
-
-1. Nella finestra di configurazione, localizzare il controllo **Backlight** 
-
-2. Attivare l'interruttore portandolo su **ON**
-
-3. Verificare visivamente che l'illuminazione del FlexiBowl si accenda
+```{list-table}
+* - 1. 
+  - Nella finestra di configurazione, localizzare il controllo **Backlight** 
+* - 2. 
+  - Attivare l'interruttore portandolo su **ON**
+* - 3. 
+  - Verificare visivamente che l'illuminazione del FlexiBowl si accenda
    - sul pannello di controllo del FlexiBowl la spia "light on" deve risultare verde 
+```
 
+### **Step 5: Sincronizzazione parametri**
 
-### Step 5: Sincronizzazione parametri
-
-
-1. Cliccare su **Synchronize Parameters**
-
-2. Questa operazione:
+```{list-table}
+* - 1. 
+  - Cliccare su **Synchronize Parameters**
+* - 2. 
+  - Questa operazione:
    - Invia i parametri dal VisionController al FlexiBowl
    - Salva la configurazione nella memoria del FlexiBowl
    - Sincronizza lo stato tra software e hardware
-
-3. Attendere la conferma di sincronizzazione completata 
-
+* - 3. 
+  - Attendere la conferma di sincronizzazione completata 
+```
 
 ```{warning}
 **Non saltare la sincronizzazione**
@@ -112,17 +122,18 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 - Le impostazioni non vengono salvate permanentemente
 ```
 
----
+### **Step 6: Completamento setup FlexiBowl**
 
-## Salvataggio e uscita
-
-**Completamento setup FlexiBowl**
-
-1. Verificare che tutti i parametri siano configurati correttamente
-2. Assicurarsi di aver cliccato **Synchronize Parameters**
-3. Tornare alla pagina SETUP principale per procedere con il setup successivo
-4. Le impostazioni del FlexiBowl sono ora salvate nella ricetta attiva
-
+```{list-table}
+* - 1. 
+  - Verificare che tutti i parametri siano configurati correttamente
+* - 2. 
+  - Assicurarsi di aver cliccato **Synchronize Parameters**
+* - 3. 
+  - Tornare alla pagina SETUP principale per procedere con il setup successivo
+* - 4. 
+  - Le impostazioni del FlexiBowl sono ora salvate nella ricetta attiva
+```
 
 ---
 
