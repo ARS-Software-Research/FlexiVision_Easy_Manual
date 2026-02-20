@@ -68,19 +68,21 @@ FlexiVision Easy supporta profili utente multipli con diversi livelli di permess
 Dopo il primo login, è necessario attivare la licenza software.
 
 ```{list-table} 
-
 * - 1. 
-  - Accedere alla seszione SETUP e Cliccare su **Software License** 
+  - Inserire la chiavetta fornita nel kit 
 
 * - 2. 
+  - Accedere alla sezione SETUP e Cliccare su **Software License** 
+
+* - 3. 
   - Inserire la chiave di licenza fornita da ARS Automation nel campo dedicato
    - La chiave è composta da caratteri alfanumerici (es: `XXXX-XXXX-XXXX-XXXX`)
    - Copiare e incollare la chiave per evitare errori di digitazione
 
-* - 3. 
+* - 4. 
   - Cliccare su **Activate** 
 
-* - 4. 
+* - 5. 
   - Attendere che l'indicatore di stao diventi verde 
 ```
 

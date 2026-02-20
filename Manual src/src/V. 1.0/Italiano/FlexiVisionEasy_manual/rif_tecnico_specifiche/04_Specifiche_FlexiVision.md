@@ -9,33 +9,104 @@ Consultare questa sezione per:
 - Configurare i protocolli di comunicazione robot-visione
 
 ---
-
+(specifiche_camera)=
 ## Camera 
+
+```{figure} img/Camera2.png
+:alt: Camera FlexiVision CAM-CIC-5000-20G-1
+:align: center
+:width: 50%
+```
 
 Il sistema FlexiVision utilizza telecamere ad alta risoluzione con interfaccia Gigabit Ethernet per garantire rapidità nell'acquisizione delle immagini e precisione nel riconoscimento dei componenti.
 
 ### Specifiche elettriche
-
 ```{list-table}
 :header-rows: 1
 :widths: 40 60
 
-* - Caratteristica
-  - Specifiche
-* - Brand & Modello
-  - Cognex CAM-CIC-5000-20G
-* - Risoluzione
-  - 5 MP (2448 × 2048 pixel)
+* - **Caratteristica**
+  - **Specifiche**
+* - Modello
+  - CAM-CIC-5000-20G-1
+* - Sensore
+  - Sony IMX264 CMOS Global Shutter
+* - Pixel Effettivi
+  - 5 MP (2448 × 2048)
+* - Pixel Size
+  - 3.45 × 3.45 μm
+* - Dimensione Sensore
+  - 2/3"
 * - Frame Rate
-  - 14 fps
-* - Tipo Sensore
-  - CMOS
-* - Dimensioni Sensore
-  - 1/2.5"
-* - Tipologia
-  - Monocromatica (Monochrome)
-* - Protocollo di Connettività
-  - Gigabit Ethernet (GigE)
+  - 24 fps
+* - Bit Depth
+  - 12 bit
+* - SNR
+  - \>38 dB
+* - Dynamic Range
+  - 70 dB
+* - Formato Immagine
+  - Mono8 / 10 / 10Packed
+* - Gain
+  - X1 ~ X32
+* - Gamma
+  - Da 0 a 4, supporto LUT
+* - Tempo di Esposizione
+  - 34.23 μS ~ 1S
+* - Modalità Trigger
+  - Software / Hardware / Free run
+* - Buffer Immagine
+  - 256 MB
+* - Consumo Energetico
+  - 12V ≈ 3.2 W
+* - Attacco Obiettivo
+  - C-mount
+* - GPIO
+  - Connettore Hirose 6-pin: 1 ingresso opto-isolato, 1 uscita opto-isolata, 1 I/O configurabile
+* - Interfaccia
+  - GigE Vision V2.0 / GenICam
+* - Temperatura Operativa
+  - -30°C ~ +50°C
+* - Temperatura di Stoccaggio
+  - -30°C ~ +80°C
+* - Certificazioni
+  - CE, FCC, RoHS
+```
+### Connettore GPIO (Hirose 6-pin)
+
+```{figure} img/Pin_Cam.png
+:alt: Connettore GPIO Hirose 6-pin
+:align: center
+:width: 70%
+
+Vista posteriore della camera con connettori
+```
+
+```{list-table}
+:header-rows: 1
+:widths: 10 20 70
+
+* - **Pin**
+  - **Segnale**
+  - **Descrizione**
+* - 1
+  - Power
+  - Ingresso alimentazione DC 9V ~ 24V
+* - 2
+  - Line1
+  - Ingresso opto-isolato
+* - 3
+  - Line2
+  - GPIO (I/O configurabile senza opto-isolamento via software)
+* - 4
+  - Line0
+  - Uscita opto-isolata
+* - 5
+  - IO GND
+  - Massa opto-isolata
+* - 6
+  - GND
+  - Massa
 ```
 
 ```{warning}
@@ -48,21 +119,19 @@ La mancata osservanza di questo requisito compromette completamente l'operativit
 
 ### Metodi di alimentazione
 
-La camera supporta due modalità di alimentazione alternative:
-
 ```{list-table}
 :header-rows: 1
 :widths: 25 40 35
 
-* - Metodo
-  - Descrizione
-  - Requisiti
-* - **PoE (Power over Ethernet)** - Opzionale
-  - L'alimentazione e i dati vengono trasmessi tramite un unico cavo Ethernet. Consumo circa 3.3 W.
-  - Richiede un PoE Injector o uno Switch PoE compatibile (IEEE 802.3af/at)
-* - **Cavo Camera Esterno** - Standard
-  - L'alimentazione è fornita da una fonte DC esterna tramite cavo dedicato (incluso nel kit).
-  - Cavo Ethernet separato necessario solo per la comunicazione dati (PoE non richiesto)
+* - **Metodo**
+  - **Descrizione**
+  - **Requisiti**
+* - **PoE**
+  - Alimentazione e dati su un unico cavo Ethernet. Consumo circa 3.2 W.
+  - Richiede PoE Injector o Switch PoE compatibile (IEEE 802.3af/at)
+* - **Cavo Camera Esterno**
+  - Alimentazione DC esterna tramite connettore Hirose 6-pin (6V ~ 26V). Incluso nel kit.
+  - Cavo Ethernet separato necessario solo per i dati
 ```
 
 ```{tip}
@@ -73,11 +142,48 @@ La camera supporta due modalità di alimentazione alternative:
 ```
 
 ### Specifiche fisiche e dimensioni
-immagini + pdf??
+```{figure} img/Dimensioni_Cam.png
+:alt: Dimensioni camera CAM-CIC-5000-20G-1
+:align: center
+:width: 100%
+
+Dimensioni camera CAM-CIC-5000-20G-1 (mm)
+```
+```{list-table}
+:header-rows: 1
+:widths: 40 60
+
+* - **Caratteristica**
+  - **Valore**
+* - Larghezza × Altezza (corpo)
+  - 29 × 29 mm
+* - Profondità (corpo)
+  - 42.0 mm
+* - Profondità totale (incluso connettore posteriore)
+  - 48.9 mm
+* - Sporgenza frontale (attacco obiettivo)
+  - 12.60 mm
+* - Interasse fori di fissaggio laterali (M2)
+  - 20.0 × 23.7 mm
+* - Fori di fissaggio frontali
+  - 2× M2 profondità 3 mm
+* - Fori di fissaggio laterali
+  - 4× M2 profondità 3.5 mm + 3× M3 profondità 3.5 mm
+* - Peso
+  - 88 g
+```
+---
+(specifiche_obiettivo)=
+## Obiettivo
 
 ---
-
+(specifiche_VC)=
 ## VisionController
+```{figure} img/PC.png
+:alt: VisionController FlexiVision
+:align: center
+:width: 50%
+```
 
 Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge da controller principale per il software di visione. ARS fornisce il VisionController già pre-configurato e testato con il software FlexiVision Easy installato.
 
@@ -87,54 +193,134 @@ Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge d
 :header-rows: 1
 :widths: 40 60
 
-* - Caratteristica
-  - Specifiche
-* - Alimentazione (Input)
-  - 9 ~ 36 V DC (tramite terminal block)
-* - Consumo Energetico
-  - 15 – 35 W (tipico 25 W)
-* - Porte di Rete (LAN)
-  - 6x LAN Gigabit Ethernet (di cui 4x PoE)
+* - **Caratteristica**
+  - **Specifiche**
+* - CPU
+  - Celeron Quad Core J6412 – 2.0 (2.6) GHz
+    Intel Core i3-1115G4 1.7 (4.1) GHz
+    Intel Core i7-1165G7 2.8 (4.8) GHz
+    Intel Core i3-1215U 6C fino a 4.4 GHz
+    Intel Core i7-1255U 10C fino a 4.7 GHz
+* - Memoria (RAM)
+  - 4G / 8G / 16G / 32G DDR4 3200 MHz
+* - Archiviazione
+  - 128G / 256G / 512G / 1TB SSD M.2 NVME 2280
+* - TPM
+  - TPM 2.0
+* - Sistema Operativo
+  - Win10 LTSC 2021 / Win11 LTSC 2024 / Linux
+* - Pulsante di accensione
+  - Sì (pannello frontale con spia luminosa)
+* - Porte Ethernet
+  - **J6412:** 4× 1Gb LAN — **i3/i7:** 3× Gb LAN
 * - Porte USB
-  - 2x USB 3.0, 2x USB 2.0
+  - **J6412:** 3× USB 3.0 + 3× USB 2.0 TypeA — **i3/i7:** 6× USB 3.0 TypeA
 * - Uscita Video
-  - 1x DisplayPort (fino a 4096×2160 @ 60Hz)
-* - Protezione
-  - Protezione da sovratensione e inversione polarità
+  - **Standard:** 2× HDMI — **i3/i7 12a gen:** 1× HDMI + 1× DisplayPort
+* - Audio
+  - Uscita linea + MIC (Jack 2-in-1 da 3.5 mm)
+* - Alimentazione (V DC)
+  - 12 ~ 32 V DC
+* - Temperatura Operativa
+  - 1°C ~ +50°C
+* - Temperatura di Stoccaggio
+  - -20°C ~ +65°C
+* - Umidità
+  - &lt;90% (senza condensa)
+* - Materiale Scocca
+  - Lega di alluminio + acciaio
+* - Grado di Protezione
+  - IP20
+* - Metodo di Installazione
+  - Montaggio a parete (DIN Rail opzionale)
+* - Consumo Energetico
+  - 25 W
+* - Dimensioni (L × A × P)
+  - 59.8 × 200 × 119.5 mm
+* - Peso
+  - 2 kg
+* - Certificazioni
+  - CE, UL
 ```
 
 ```{note}
-
-
 Il VisionController dispone di ... che possono alimentare direttamente la camera e altri dispositivi compatibili, eliminando la necessità di ....
 ```
+### Porte PC
+```{figure} img/Spec_Elettriche_PC.png
+:alt: Schema elettrico VisionController
+:align: center
+:width: 80%
+```
 
-### Specifiche fisiche e hardware
+
+```{list-table}
+:header-rows: 1
+:widths: 10 25 65
+
+* - **Ref.**
+  - **Connettore**
+  - **Descrizione**
+* - A
+  - Pulsante di accensione
+  - Accensione e spegnimento del dispositivo
+* - B
+  - ETH 10/100/1000 Mbit – RJ45 (LAN 1)
+  - Porta Ethernet Gigabit 1
+* - C
+  - ETH 10/100/1000 Mbit – RJ45 (LAN 2)
+  - Porta Ethernet Gigabit 2
+* - D
+  - Porta Seriale (RS232) COM1
+  - Interfaccia seriale RS232 COM1
+* - E
+  - Porta Seriale (RS232) COM2
+  - Interfaccia seriale RS232 COM2
+* - F
+  - Connettore di ingresso alimentazione
+  - Ingresso alimentazione 12–32V DC (terminal block 3-pin)
+* - G
+  - Uscita Audio + MIC (Jack 3.5 mm)
+  - 1× uscita audio di linea + ingresso microfono (jack 3.5 mm)
+* - H
+  - 6× USB-A
+  - Porte USB (USB 3.0 TypeA per versioni i3/i7)
+* - I
+  - Porta video 2
+  - **B2B12/B2B14:** HDMI 2 — **B2B15/B2B16:** DisplayPort
+* - L
+  - Porta HDMI 1
+  - Uscita video HDMI 1
+* - M
+  - ETH 10/100/1000 Mbit – RJ45 (LAN 3)
+  - Porta Ethernet Gigabit 3
+```
+### Specifiche fisiche 
+
+```{figure} img/Dim_PC.png
+:alt: Dimensioni VisionController
+:align: center
+:width: 80%
+```
 
 ```{list-table}
 :header-rows: 1
 :widths: 40 60
 
-* - Caratteristica
-  - Specifiche
-* - Dimensioni (L × P × A)
-  - 150 mm × 145 mm × 84 mm
-* - Peso
-  - 4 kg
-* - Sistema Operativo
-  - Windows 11 IoT Enterprise 2021 LTSC VALUE 64 bit
-* - Processore
-  - Intel Core (specifiche su richiesta)
-* - Memoria (RAM)
-  - 8 GB DDR4-3200 MHz SODIMM
-* - Archiviazione
-  - SSD 256 GB SATA 2.5"
-* - Grado di Protezione
-  - IP40 (installazione in quadro elettrico consigliata)
-* - Temperatura Operativa
-  - 0°C ~ +50°C
-* - Certificazioni
-  - CE, FCC
+* - **Caratteristica**
+  - **Valore**
+* - Larghezza (totale con staffe)
+  - 245.00 mm
+* - Larghezza (corpo)
+  - 227.00 mm
+* - Larghezza pannello connettori
+  - 200.00 mm
+* - Altezza (totale con staffe)
+  - 123.00 mm
+* - Altezza (corpo)
+  - 120.00 mm
+* - Profondità
+  - 61.10 mm
 ```
 
 ```{tip}
@@ -144,7 +330,7 @@ Il VisionController è progettato per montaggio .....
 ```
 
 ---
-
+(specifiche_griglia)=
 ## Griglia di calibrazione
 
 Una calibrazione eccellente è il requisito fondamentale per l'accuratezza del sistema FlexiVision. Solo una calibrazione ad alta precisione garantisce che le coordinate rilevate dalla telecamera (pixel) vengano convertite in modo accurato nelle coordinate reali del robot (millimetri), assicurando così il successo dell'applicazione di picking.
@@ -204,40 +390,8 @@ Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezi
 
 ---
 
-## Kit  base
 
-Il kit standard FlexiVision Easy include tutti i componenti necessari per l'installazione e la messa in servizio del sistema.
-
-```{list-table}
-:header-rows: 1
-:widths: 40 60
-
-* - Componente
-  - Descrizione e Note
-* - **Camera Industriale**
-  - Cognex CAM-CIC-5000-20G con lente preinstallata e calibrata
-* - **Lente**
-  - Ottica fissa ottimizzata per la distanza di lavoro standard (specificare modello)
-* - **VisionController**
-  - PC industriale con software FlexiVision Easy preinstallato e configurato
-* - **Griglia di Calibrazione**
-  - Griglia dedicata ARS per il modello di FlexiBowl specificato nell'ordine
-* - **Cavo Camera - Alimentazione**
-  - Lunghezza standard 3 m (lunghezze personalizzate disponibili su richiesta)
-
-* - **Documentazione**
-  - Manuale utente, guida rapida, certificati di conformità
-```
-
-```{note}
-**Personalizzazione lunghezze cavi**
-
-I cavi di comunicazione e alimentazione possono essere ordinati in lunghezze personalizzate in base alle specifiche esigenze dell'installazione. Specificare le lunghezze desiderate al momento dell'ordine.
-
-Lunghezze standard disponibili: 3m, 5m, 10m, 15m
-```
-
-## Componenti opzionali    forse ridondante qui?
+## Componenti opzionali 
 
 Componenti aggiuntivi disponibili separatamente:
 :::{div} admonition

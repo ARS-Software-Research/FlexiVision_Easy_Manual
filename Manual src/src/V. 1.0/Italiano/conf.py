@@ -8,7 +8,7 @@
 
 project = 'FlexiVision Easy'
 copyright = '2025, Ars Automation'
-author = 'Niccolò Quadrani & Noah Costantini'
+author = 'Noah Costantini & Niccolò Quadrani'
 release = '1.0'
 
 # -- General configuration ---------------------------------------------------
