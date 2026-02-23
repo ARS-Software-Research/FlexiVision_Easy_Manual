@@ -28,7 +28,7 @@ L'interfaccia della Dashboard si divide in quattro sezioni principali:
 
 ---
 
-## Sezione 1: Controllo Operativo
+## Controllo Operativo
 
 ### Comandi e stato esecuzione
 
@@ -72,7 +72,7 @@ In produzione normale, questi comandi non vengono utilizzati (il robot comanda i
 
 ---
 
-## Sezione 2: Analisi della Visione
+## Analisi della Visione
 
 Al centro della dashboard vengono riportati i dati relativi ai componenti identificati dal sistema di visione.
 
@@ -110,7 +110,8 @@ La tabella sotto l'immagine elenca tutti i componenti presenti nell'area di pick
   - Descrizione
 * - **Id**
   - Intero
-  - Identificativo univoco progressivo del componente (0, 1, 2, ...). Id 0 = componente con score più alto (migliore corrispondenza al modello).
+  - Identificativo univoco progressivo del componente (0, 1, 2, ...).   
+  Id 0 = componente con score più alto (migliore corrispondenza al modello).
 * - **X**
   - Millimetri
   - Coordinata X del componente nel sistema di riferimento camera/FlexiBowl. Origine tipicamente al centro del disco.
@@ -153,7 +154,7 @@ La tabella sotto l'immagine elenca tutti i componenti presenti nell'area di pick
 
 ---
 
-## Sezione 3: Indicatori di Stato e Performance
+## Indicatori di Stato e Performance
 
 ### Connettività
 
@@ -200,15 +201,20 @@ Il sistema fornisce un breakdown dettagliato dei tempi di ciclo per individuare 
 * - Voce Temporale
   - Descrizione
 * - **Camera Processing Time**
-  - Tempo impiegato per l'acquisizione dell'immagine dal sensore camera. Include tempo di esposizione e trasferimento dati. Tipico: 50-150 ms.
+  - Tempo impiegato per l'acquisizione dell'immagine dal sensore camera. Include tempo di esposizione e trasferimento dati. 
+    >Tipico: 50-150 ms.
 * - **Locator Processing Time**
-  - Tempo necessario all'algoritmo di visione per localizzare e riconoscere i componenti nell'immagine acquisita. Dipende da: numero modelli attivi, complessità modelli, numero istogrammi. Tipico: 100-500 ms.
+  - Tempo necessario all'algoritmo di visione per localizzare e riconoscere i componenti nell'immagine acquisita. Dipende da: numero modelli attivi, complessità modelli, numero istogrammi. 
+    >Tipico: 100-500 ms.
 * - **Total Vision Processing**
-  - Somma dei tempi di Camera e Locator. Rappresenta il tempo totale che il sistema di visione impiega per elaborare un'immagine. Tipico: 150-650 ms.
+  - Somma dei tempi di Camera e Locator. Rappresenta il tempo totale che il sistema di visione impiega per elaborare un'immagine.       
+    >Tipico: 150-650 ms.
 * - **Total FlexiBowl Time**
-  - Tempo impiegato dal FlexiBowl per eseguire una sequenza di movimentazione completa (Move + Shake + Flip + eventuali pause). Include tempo movimento fisico del disco. Tipico: 1-5 secondi.
+  - Tempo impiegato dal FlexiBowl per eseguire una sequenza di movimentazione completa (Move + Shake + Flip + eventuali pause). Include tempo movimento fisico del disco. 
+    >Tipico: 1-5 secondi.
 * - **Total Robot Time**
-  - Tempo stimato o rilevato per l'operazione di Pick & Place completa del robot. Include: avvicinamento → presa → sollevamento → deposito → ritorno. Tipico: 2-10 secondi (dipende fortemente da robot e applicazione).
+  - Tempo stimato o rilevato per l'operazione di Pick & Place completa del robot. Include: avvicinamento → presa → sollevamento → deposito → ritorno. 
+    >Tipico: 2-10 secondi (dipende fortemente da robot e applicazione).
 * - **Total Processing Time**
   - Tempo totale del ciclo completo (Vision + FlexiBowl + Robot). Rappresenta il tempo dall'inizio di un ciclo all'inizio del successivo. Determina la produttività massima teorica (PPM).
 ```
@@ -241,7 +247,7 @@ Il grafico dei tempi permette di identificare il **collo di bottiglia** del sist
 
 ---
 
-## Sezione 4: Analisi Grafica
+## Analisi Grafica
 
 I grafici nella parte inferiore della dashboard permettono un'analisi predittiva e diagnostica delle performance del sistema nel tempo.
 

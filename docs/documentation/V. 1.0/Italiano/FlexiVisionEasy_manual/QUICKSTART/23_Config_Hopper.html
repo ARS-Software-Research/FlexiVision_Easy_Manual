@@ -50,7 +50,7 @@
     <script src="../../_static/fix_print.js?v=cc433d1f"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Configurazione Protocollo Comunicazione: Protocol Setup" href="15_Protocol_Setup.html" />
+    <link rel="next" title="Configurazione Protocollo: Protocol Setup" href="15_Protocol_Setup.html" />
     <link rel="prev" title="Configurazione guidata: FlexiBowl® Wizard" href="22_Config_FlexiBowl.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -176,6 +176,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/04_Specifiche_FlexiVision.html"><strong>Specifiche Dettagliate FlexiVision</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/04b_Protocolli_Comunicazione.html"><strong>Protocollo Comunicazione Robot-Visione</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.html"><strong>Calcolo Distanza di Lavoro Ottimale</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -248,7 +251,7 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Configurazione della Tramoggia (Hopper)</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="15_Protocol_Setup.html"><strong>Configurazione Protocollo Comunicazione: Protocol Setup</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_Protocol_Setup.html"><strong>Configurazione Protocollo: Protocol Setup</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="24_Verifica_Risultati.html"><strong>Monitoraggio Applicazione: Dashboard</strong></a></li>
@@ -587,8 +590,8 @@ document.write(`
 <col style="width: 80.0%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Parametro</p></th>
-<th class="head"><p>Descrizione e Procedura</p></th>
+<tr class="row-odd"><th class="head"><p><strong>Parametro</strong></p></th>
+<th class="head"><p><strong>Descrizione e Procedura</strong></p></th>
 </tr>
 </thead>
 <tbody>
@@ -596,17 +599,49 @@ document.write(`
 <td><p>Numero di sequenze necessarie per portare i pezzi dallo scarico all’area di prelievo.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Come calcolarlo:</strong><br />
-1. Svuotare completamente il disco FlexiBowl<br />
-2. Attivare manualmente lo scarico Hopper (i pezzi cadono sul disco)<br />
-3. Eseguire una sequenza FlexiBowl<br />
-4. Contare quanti cicli servono perché i primi pezzi tornino nell’area di scarico della tramoggia<br />
-5. Questo numero è il valore da inserire in <strong>Steps</strong></p>
+<p><strong>Come calcolarlo:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>Svuotare completamente il disco FlexiBowl</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Attivare manualmente lo scarico Hopper (i pezzi cadono sul disco)</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Eseguire una sequenza FlexiBowl</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Contare quanti cicli servono perché i primi pezzi tornino nell’area di scarico della tramoggia</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="5">
+<li></li>
+</ol>
+</td>
+<td><p>Questo numero è il valore da inserire in <strong>Steps</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils">
 </div>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Time</strong></p></td>
-<td><p>Millisecondi di vibrazione della tramoggia. Valore consigliato: <strong>100 - 1000 ms</strong> (Media: <strong>500 ms</strong>). Regolare di +/- 100 ms in base al flusso desiderato.</p></td>
+<td><p>Millisecondi di vibrazione della tramoggia. Valore consigliato: <strong>100 – 1000 ms</strong> (Media: <strong>500 ms</strong>). Regolare di ±100 ms in base al flusso desiderato.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1071,7 +1106,7 @@ ___\\ \\     // //___
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Configurazione Protocollo Comunicazione: Protocol Setup</strong></p>
+        <p class="prev-next-title"><strong>Configurazione Protocollo: Protocol Setup</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

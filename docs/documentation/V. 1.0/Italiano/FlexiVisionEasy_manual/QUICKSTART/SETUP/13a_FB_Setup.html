@@ -176,6 +176,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../rif_tecnico_specifiche/04_Specifiche_FlexiVision.html"><strong>Specifiche Dettagliate FlexiVision</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../rif_tecnico_specifiche/04b_Protocolli_Comunicazione.html"><strong>Protocollo Comunicazione Robot-Visione</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.html"><strong>Calcolo Distanza di Lavoro Ottimale</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -248,7 +251,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html"><strong>Configurazione della Tramoggia (Hopper)</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html"><strong>Configurazione Protocollo Comunicazione: Protocol Setup</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html"><strong>Configurazione Protocollo: Protocol Setup</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../24_Verifica_Risultati.html"><strong>Monitoraggio Applicazione: Dashboard</strong></a></li>
@@ -592,9 +595,61 @@ document.write(`
 </section>
 <section id="step-4-abilitazione-illuminazione-backlight">
 <h3><strong>Step 4: Abilitazione illuminazione (Backlight)</strong><a class="headerlink" href="#step-4-abilitazione-illuminazione-backlight" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>Nella finestra di configurazione, localizzare il controllo <strong>Backlight</strong></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Attivare l’interruttore portandolo su <strong>ON</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Verificare visivamente che l’illuminazione del FlexiBowl si accenda: sul pannello di controllo del FlexiBowl la spia “light on” deve risultare verde</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="step-5-sincronizzazione-parametri">
 <h3><strong>Step 5: Sincronizzazione parametri</strong><a class="headerlink" href="#step-5-sincronizzazione-parametri" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccare su <strong>Synchronize Parameters</strong></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Questa operazione:</p>
+<ul class="simple">
+<li><p>Invia i parametri dal VisionController al FlexiBowl</p></li>
+<li><p>Salva la configurazione nella memoria del FlexiBowl</p></li>
+<li><p>Sincronizza lo stato tra software e hardware</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Attendere la conferma di sincronizzazione completata</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Non saltare la sincronizzazione</strong></p>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Configurazione Protocollo Comunicazione: Protocol Setup &#8212; FlexiVision Easy 1.0 documentation</title>
+    <title>Configurazione Protocollo: Protocol Setup &#8212; FlexiVision Easy 1.0 documentation</title>
   
   
   
@@ -176,6 +176,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/04_Specifiche_FlexiVision.html"><strong>Specifiche Dettagliate FlexiVision</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/04b_Protocolli_Comunicazione.html"><strong>Protocollo Comunicazione Robot-Visione</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.html"><strong>Calcolo Distanza di Lavoro Ottimale</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -248,7 +251,7 @@
 <li class="toctree-l1"><a class="reference internal" href="23_Config_Hopper.html"><strong>Configurazione della Tramoggia (Hopper)</strong></a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Configurazione Protocollo Comunicazione: Protocol Setup</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Configurazione Protocollo: Protocol Setup</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="24_Verifica_Risultati.html"><strong>Monitoraggio Applicazione: Dashboard</strong></a></li>
@@ -412,7 +415,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Configurazione Protocollo Comunicazione: Protocol Setup</h1>
+    <h1>Configurazione Protocollo: Protocol Setup</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -495,8 +498,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="configurazione-protocollo-comunicazione-protocol-setup">
-<h1><strong>Configurazione Protocollo Comunicazione: Protocol Setup</strong><a class="headerlink" href="#configurazione-protocollo-comunicazione-protocol-setup" title="Link to this heading">#</a></h1>
+  <section id="configurazione-protocollo-protocol-setup">
+<h1><strong>Configurazione Protocollo: Protocol Setup</strong><a class="headerlink" href="#configurazione-protocollo-protocol-setup" title="Link to this heading">#</a></h1>
 <p>La pagina <strong>Protocol Setup</strong> permette di configurare i parametri che regolano il flusso di comunicazione e lo scambio dati tra il sistema di visione FlexiVision Easy e il robot. Questi parametri determinano quanti oggetti vengono inviati, come vengono ordinati, e come il sistema gestisce le statistiche e gli stati operativi.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -582,25 +585,36 @@ document.write(`
 <col style="width: 65.0%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Parametro</p></th>
-<th class="head"><p>Descrizione e Funzione</p></th>
+<tr class="row-odd"><th class="head"><p><strong>Parametro</strong></p></th>
+<th class="head"><p><strong>Descrizione e Funzione</strong></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>Max Object Count Return</strong></p></td>
-<td><p>Indica il numero <strong>massimo</strong> di oggetti/coordinate che il sistema di visione può restituire al robot in una singola run (ciclo di elaborazione). Se la visione rileva più oggetti di questo limite, ne vengono inviati al massimo questo numero, selezionati in base al criterio di ordinamento configurato (Sorting Mode).</p></td>
+<td><p>Indica il numero <strong>massimo</strong> di oggetti/coordinate che il sistema di visione può restituire al robot in una singola run. Se la visione rileva più oggetti di questo limite, ne vengono inviati al massimo questo numero, selezionati in base al criterio di ordinamento configurato (Sorting Mode).</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Min Object Count Return</strong></p></td>
-<td><p>Indica il numero <strong>minimo</strong> di oggetti che devono essere rilevati in una run del sistema di visione affinché il risultato venga considerato valido (OK). Se il numero di oggetti rilevati è inferiore a questa soglia, la run viene considerata non valida e tipicamente viene attivata una sequenza di recupero (es: movimentazione FlexiBowl, attivazione Hopper).</p></td>
+<td><p>Indica il numero <strong>minimo</strong> di oggetti che devono essere rilevati in una run affinché il risultato venga considerato valido. Se il numero è inferiore a questa soglia, la run viene considerata non valida e viene attivata una sequenza di recupero (es: movimentazione FlexiBowl, attivazione Hopper).</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Sorting Mode Results</strong></p></td>
-<td><p>Definisce il <strong>criterio di ordinamento</strong> con cui viene ordinata la lista degli oggetti restituiti dalla visione. Opzioni tipiche: per score (dal più alto al più basso), per coordinata X crescente/decrescente, per coordinata Y crescente/decrescente, per distanza da un punto di riferimento. Questo parametro determina la priorità di prelievo degli oggetti e influisce direttamente su quali vengono inclusi nel “Max Object Count Return”.</p></td>
+<td><p>Definisce il <strong>criterio di ordinamento</strong> con cui viene ordinata la lista degli oggetti restituiti dalla visione. Opzioni tipiche: per score, per coordinata X/Y crescente o decrescente, per distanza da un punto di riferimento. Questo parametro determina la priorità di prelievo e influisce su quali oggetti vengono inclusi nel Max Object Count Return.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Pickable parts by the robot detected by vision in each cycle</strong></p></td>
-<td><p>Parametro utilizzato per il <strong>calcolo delle statistiche di produzione</strong>. Indica il numero di prese effettive che il robot effettua per ogni run della visione. Esempio: se il robot preleva 2 pezzi simultaneamente con una pinza doppia, impostare valore 2. <strong>Importante</strong>: Non rappresenta il numero di oggetti rilevati dalla visione, ma il numero di pezzi effettivamente prelevati dal robot per ciclo. Usato per calcolo PPM (Parts Per Minute).</p></td>
+<td><p>Parametro utilizzato per il <strong>calcolo delle statistiche di produzione</strong>. Indica il numero di prese effettive che il robot effettua per ogni run della visione.</p>
+<p><em>Esempio: se il robot preleva 2 pezzi simultaneamente con una pinza doppia, impostare valore 2.</em></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Non rappresenta il numero di oggetti rilevati dalla visione, ma il numero di pezzi effettivamente prelevati dal robot per ciclo. Usato per il calcolo PPM (Parts Per Minute).</p>
+</div>
+</td>
 </tr>
 <tr class="row-even"><td><p><strong>Maximum processing time per part with the robot (in seconds)</strong></p></td>
-<td><p>Parametro utilizzato per <strong>statistiche e gestione del flusso di lavoro</strong>. Definisce il tempo massimo dopo il quale il sistema considera conclusa la gestione/invio delle coordinate relative a una run e passa tipicamente dallo stato RUN allo stato IDLE. <strong>Non è un timeout di errore del robot</strong>, ma un riferimento temporale per il calcolo del ciclo e per le metriche di produttività. Influenza la visualizzazione dello stato “In Run” nella Dashboard.</p></td>
+<td><p>Parametro utilizzato per <strong>statistiche e gestione del flusso di lavoro</strong>. Definisce il tempo massimo dopo il quale il sistema considera conclusa la gestione delle coordinate di una run e passa dallo stato RUN allo stato IDLE.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>Non è un timeout di errore del robot</strong>, ma un riferimento temporale per il calcolo del ciclo e per le metriche di produttività. Influenza la visualizzazione dello stato “In Run” nella Dashboard.</p>
+</div>
+</td>
 </tr>
 </tbody>
 </table>

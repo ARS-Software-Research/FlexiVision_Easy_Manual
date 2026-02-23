@@ -72,24 +72,34 @@ In questa fase si definisce la porzione di disco che la telecamera deve monitora
 Tornare alla schermata principale di Hopper Setup per definire il comportamento meccanico.
 
 ```{list-table} Parametri di Funzionamento
-   :widths: 20 80
-   :header-rows: 1
+:widths: 20 80
+:header-rows: 1
 
-   * - Parametro
-     - Descrizione e Procedura
-   * - **Steps**
-     - Numero di sequenze necessarie per portare i pezzi dallo scarico all'area di prelievo. 
-       
-       :::{note}
-          **Come calcolarlo:**  
-            1. Svuotare completamente il disco FlexiBowl  
-            2. Attivare manualmente lo scarico Hopper (i pezzi cadono sul disco)  
-            3. Eseguire una sequenza FlexiBowl  
-            4. Contare quanti cicli servono perché i primi pezzi tornino nell'area di scarico della tramoggia  
-            5. Questo numero è il valore da inserire in **Steps**  
-       :::
-   * - **Time**
-     - Millisecondi di vibrazione della tramoggia. Valore consigliato: **100 - 1000 ms** (Media: **500 ms**). Regolare di +/- 100 ms in base al flusso desiderato.
+* - **Parametro**
+  - **Descrizione e Procedura**
+* - **Steps**
+  - Numero di sequenze necessarie per portare i pezzi dallo scarico all'area di prelievo.
+
+    :::{note}
+    **Come calcolarlo:**
+
+    :::::{list-table}
+
+    * - 1.
+      - Svuotare completamente il disco FlexiBowl
+    * - 2.
+      - Attivare manualmente lo scarico Hopper (i pezzi cadono sul disco)
+    * - 3.
+      - Eseguire una sequenza FlexiBowl
+    * - 4.
+      - Contare quanti cicli servono perché i primi pezzi tornino nell'area di scarico della tramoggia
+    * - 5.
+      - Questo numero è il valore da inserire in **Steps**
+    :::::
+    :::
+
+* - **Time**
+  - Millisecondi di vibrazione della tramoggia. Valore consigliato: **100 – 1000 ms** (Media: **500 ms**). Regolare di ±100 ms in base al flusso desiderato.
 ```
 
 ```{tip}

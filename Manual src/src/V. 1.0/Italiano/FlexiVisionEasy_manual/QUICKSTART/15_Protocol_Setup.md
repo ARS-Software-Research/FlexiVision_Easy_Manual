@@ -1,4 +1,4 @@
-# **Configurazione Protocollo Comunicazione: Protocol Setup**
+# **Configurazione Protocollo: Protocol Setup**
 
 La pagina **Protocol Setup** permette di configurare i parametri che regolano il flusso di comunicazione e lo scambio dati tra il sistema di visione FlexiVision Easy e il robot. Questi parametri determinano quanti oggetti vengono inviati, come vengono ordinati, e come il sistema gestisce le statistiche e gli stati operativi.
 
@@ -78,18 +78,29 @@ I parametri di Protocol Setup si dividono in due categorie: parametri di flusso 
 :header-rows: 1
 :widths: 35 65
 
-* - Parametro
-  - Descrizione e Funzione
+* - **Parametro**
+  - **Descrizione e Funzione**
 * - **Max Object Count Return**
-  - Indica il numero **massimo** di oggetti/coordinate che il sistema di visione può restituire al robot in una singola run (ciclo di elaborazione). Se la visione rileva più oggetti di questo limite, ne vengono inviati al massimo questo numero, selezionati in base al criterio di ordinamento configurato (Sorting Mode).
+  - Indica il numero **massimo** di oggetti/coordinate che il sistema di visione può restituire al robot in una singola run. Se la visione rileva più oggetti di questo limite, ne vengono inviati al massimo questo numero, selezionati in base al criterio di ordinamento configurato (Sorting Mode).
 * - **Min Object Count Return**
-  - Indica il numero **minimo** di oggetti che devono essere rilevati in una run del sistema di visione affinché il risultato venga considerato valido (OK). Se il numero di oggetti rilevati è inferiore a questa soglia, la run viene considerata non valida e tipicamente viene attivata una sequenza di recupero (es: movimentazione FlexiBowl, attivazione Hopper).
+  - Indica il numero **minimo** di oggetti che devono essere rilevati in una run affinché il risultato venga considerato valido. Se il numero è inferiore a questa soglia, la run viene considerata non valida e viene attivata una sequenza di recupero (es: movimentazione FlexiBowl, attivazione Hopper).
 * - **Sorting Mode Results**
-  - Definisce il **criterio di ordinamento** con cui viene ordinata la lista degli oggetti restituiti dalla visione. Opzioni tipiche: per score (dal più alto al più basso), per coordinata X crescente/decrescente, per coordinata Y crescente/decrescente, per distanza da un punto di riferimento. Questo parametro determina la priorità di prelievo degli oggetti e influisce direttamente su quali vengono inclusi nel "Max Object Count Return".
+  - Definisce il **criterio di ordinamento** con cui viene ordinata la lista degli oggetti restituiti dalla visione. Opzioni tipiche: per score, per coordinata X/Y crescente o decrescente, per distanza da un punto di riferimento. Questo parametro determina la priorità di prelievo e influisce su quali oggetti vengono inclusi nel Max Object Count Return.
 * - **Pickable parts by the robot detected by vision in each cycle**
-  - Parametro utilizzato per il **calcolo delle statistiche di produzione**. Indica il numero di prese effettive che il robot effettua per ogni run della visione. Esempio: se il robot preleva 2 pezzi simultaneamente con una pinza doppia, impostare valore 2. **Importante**: Non rappresenta il numero di oggetti rilevati dalla visione, ma il numero di pezzi effettivamente prelevati dal robot per ciclo. Usato per calcolo PPM (Parts Per Minute).
+  - Parametro utilizzato per il **calcolo delle statistiche di produzione**. Indica il numero di prese effettive che il robot effettua per ogni run della visione.
+
+    *Esempio: se il robot preleva 2 pezzi simultaneamente con una pinza doppia, impostare valore 2.*
+
+    :::{important}
+    Non rappresenta il numero di oggetti rilevati dalla visione, ma il numero di pezzi effettivamente prelevati dal robot per ciclo. Usato per il calcolo PPM (Parts Per Minute).
+    :::
+
 * - **Maximum processing time per part with the robot (in seconds)**
-  - Parametro utilizzato per **statistiche e gestione del flusso di lavoro**. Definisce il tempo massimo dopo il quale il sistema considera conclusa la gestione/invio delle coordinate relative a una run e passa tipicamente dallo stato RUN allo stato IDLE. **Non è un timeout di errore del robot**, ma un riferimento temporale per il calcolo del ciclo e per le metriche di produttività. Influenza la visualizzazione dello stato "In Run" nella Dashboard.
+  - Parametro utilizzato per **statistiche e gestione del flusso di lavoro**. Definisce il tempo massimo dopo il quale il sistema considera conclusa la gestione delle coordinate di una run e passa dallo stato RUN allo stato IDLE.
+
+    :::{attention}
+    **Non è un timeout di errore del robot**, ma un riferimento temporale per il calcolo del ciclo e per le metriche di produttività. Influenza la visualizzazione dello stato "In Run" nella Dashboard.
+    :::
 ```
 
 ---

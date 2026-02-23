@@ -26,7 +26,7 @@ Prima di iniziare, è importante comprendere la differenza tra **Ricetta** e **M
      - Cos'è un Modello?
    * - Il contenitore globale dell'intera applicazione di picking.
      - La definizione specifica di un singolo componente da riconoscere.
-   * - Include fino a 16 modelli, parametri FlexiBowl, Hopper e logiche di comunicazione.
+   * - Include fino a 8 modelli, parametri FlexiBowl, Hopper e logiche di comunicazione.
      - Include immagini di training, ROI, feature visive, filtri e offset robot.
    * - Gestisce parametri hardware (vibrazioni, velocità) e rete (porta TCP/IP, timeout).
      - Gestisce parametri di visione (threshold, score minimo) e coordinate di prelievo (gripper).

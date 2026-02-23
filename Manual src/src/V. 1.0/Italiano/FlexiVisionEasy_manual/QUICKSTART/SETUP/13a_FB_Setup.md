@@ -95,22 +95,23 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 * - 2. 
   - Attivare l'interruttore portandolo su **ON**
 * - 3. 
-  - Verificare visivamente che l'illuminazione del FlexiBowl si accenda
-   - sul pannello di controllo del FlexiBowl la spia "light on" deve risultare verde 
+  - Verificare visivamente che l'illuminazione del FlexiBowl si accenda: sul pannello di controllo del FlexiBowl la spia "light on" deve risultare verde 
 ```
 
 ### **Step 5: Sincronizzazione parametri**
 
 ```{list-table}
-* - 1. 
+
+* - 1.
   - Cliccare su **Synchronize Parameters**
-* - 2. 
+* - 2.
   - Questa operazione:
-   - Invia i parametri dal VisionController al FlexiBowl
-   - Salva la configurazione nella memoria del FlexiBowl
-   - Sincronizza lo stato tra software e hardware
-* - 3. 
-  - Attendere la conferma di sincronizzazione completata 
+
+    - Invia i parametri dal VisionController al FlexiBowl
+    - Salva la configurazione nella memoria del FlexiBowl
+    - Sincronizza lo stato tra software e hardware
+* - 3.
+  - Attendere la conferma di sincronizzazione completata
 ```
 
 ```{warning}

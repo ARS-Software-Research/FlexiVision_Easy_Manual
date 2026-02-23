@@ -393,8 +393,8 @@ In generale, è consigliabile decidere fin dall'inizio il tipo di illuminazione 
 Una volta completata la calibrazione camera con risultato Good:
 
 1. **Calibrazione Robot** (procedura guidata successiva)
-2. **[Protocol Setup](15_Protocol_Setup.md)** - Configurazione avanzata comunicazione
-3. **[Nuovo Modello Pezzo](Nuovo_Modello/16_Nuovo_modello.md)** - Training primo modello per picking
+2. **[Nuovo Modello Pezzo](Nuovo_Modello/16_Nuovo_modello.md)** - Training primo modello per picking
+3. **[Protocol Setup](15_Protocol_Setup.md)** - Configurazione avanzata comunicazione
 
 
 

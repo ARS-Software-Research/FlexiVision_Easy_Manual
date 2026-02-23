@@ -137,6 +137,14 @@ FlexiVisionEasy_manual/03_Unboxing_Contenuto.md
 
 FlexiVisionEasy_manual/rif_tecnico_specifiche/04_Specifiche_FlexiVision.md
 ```    
+
+```{toctree}
+:hidden:
+:caption: 
+
+FlexiVisionEasy_manual/rif_tecnico_specifiche/04b_Protocolli_Comunicazione.md
+```   
+
 ```{toctree}
 :hidden:
 :caption: 

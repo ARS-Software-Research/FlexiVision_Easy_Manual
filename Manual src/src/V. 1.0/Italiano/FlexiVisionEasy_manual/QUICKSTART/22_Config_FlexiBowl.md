@@ -21,7 +21,7 @@ Per avviare la procedura:
   - Cliccare sul pulsante **Config FlexiBowl**, si aprirà una pagina con tutte le movimentazioni disponibili per il FlexiBowl selezionato
 
 * - **4.**
-  - Cliccare sul pulsante **FlexiBowl X Wizard**, si aprirà una pagina di benvenuto al Wizard
+  - Cliccare sul pulsante **FlexiBowl X Wizard**, e poi **FlexiBowl Interface** si aprirà una pagina di benvenuto al Wizard
 
 * - **5.**
   - Cliccare su NEXT
