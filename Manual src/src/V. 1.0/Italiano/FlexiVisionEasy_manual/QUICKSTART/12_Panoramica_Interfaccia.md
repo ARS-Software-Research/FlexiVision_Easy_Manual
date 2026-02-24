@@ -1,7 +1,8 @@
 # **Panoramica dell'interfaccia**
 descrizione generale interfaccia 
 ## Pagina Home  
-![Pagina Home](img/pagina_home.png)
+<img src="../QUICKSTART/img/pagina_homeW.png" class="only-light" style="width: 20%; height: auto;">
+<img src="../QUICKSTART/img/pagina_homeB.png" class="only-dark" style="width: 20%; height: auto;">
 
 ```{list-table} Descrizione Pagina Home
 :header-rows: 1
@@ -32,7 +33,8 @@ descrizione generale interfaccia
 ```
 
 ## Pagina DashBoard 
-![Pagina Dashboard](img/pagina_dashboard.png)
+<img src="../QUICKSTART/img/pagina_dashboardW.png" class="only-light" style="width: 20%; height: auto;">
+<img src="../QUICKSTART/img/pagina_dashboardB.png" class="only-dark" style="width: 20%; height: auto;">
 
 ```{list-table} Descrizione Pagina Dashboard
 :header-rows: 1
@@ -54,8 +56,7 @@ descrizione generale interfaccia
 * - 3
   - **Controlli e Selezione**
     * **Menù tendina FlexiBowl**: permette di selezionare il dispositivo FlexiBowl® su cui si intende operare.
-    * **Test**: avvia movimentazioni cicliche di FlexiBowl e tramoggia finché ci sono componenti nell'area di visione.
-    * **One run**: esegue una singola movimentazione, scatta una foto e aggiorna i dati del modello nel riquadro centrale.
+    * **Test Locator**: avvia movimentazioni cicliche di FlexiBowl e tramoggia finché ci sono componenti nell'area di visione.
 
 * - 4
   - **Stato Connessioni**
@@ -76,7 +77,8 @@ descrizione generale interfaccia
     * **Parts per minute**: grafico della media dei componenti prelevati al minuto.
 ```
 ## Pagina Recipes 
-![Pagina Recipes](img/pagina_recipes.png)
+<img src="../QUICKSTART/img/pagina_recipesW.png" class="only-light" style="width: 20%; height: auto;">
+<img src="../QUICKSTART/img/pagina_recipesB.png" class="only-dark" style="width: 20%; height: auto;">
 
 ```{list-table} Descrizione Pagina Recipes
 :header-rows: 1
@@ -103,7 +105,9 @@ descrizione generale interfaccia
 ```
 
 ## Pagina Setup 
-![Pagina Setup](img/pagina_setup.png)
+<img src="../QUICKSTART/img/pagina_setupW.png" class="only-light" style="width: 20%; height: auto;">
+<img src="../QUICKSTART/img/pagina_setupB.png" class="only-dark" style="width: 20%; height: auto;">
+
 
 ```{list-table} Descrizione Pagina Setup
 :header-rows: 1

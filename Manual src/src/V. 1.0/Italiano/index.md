@@ -181,12 +181,7 @@ FlexiVisionEasy_manual/QUICKSTART/09_Installazione_Meccanica.md
 
 FlexiVisionEasy_manual/QUICKSTART/10_Cablaggio_Connessioni.md
 ```     
-```{toctree}
-:hidden:
-:caption: 
-
-FlexiVisionEasy_manual/QUICKSTART/11_Installazione_Software.md
-```     
+  
 ```{toctree}
 :hidden:
 :caption: QUICKSTART

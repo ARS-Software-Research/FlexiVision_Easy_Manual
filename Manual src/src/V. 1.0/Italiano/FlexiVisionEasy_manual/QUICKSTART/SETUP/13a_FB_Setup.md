@@ -22,7 +22,7 @@ Prima di procedere, assicurarsi che:
 * - 3. 
   - Si apre la schermata di configurazione del FlexiBowl
 ```
-
+![Pagina FlexiBowl Setup](../SETUP/img/pagina_FBsetup.png)
 ---
 
 ## Procedura di connessione
@@ -44,7 +44,7 @@ Prima di procedere, assicurarsi che:
 :widths: 5 95
 
 * - **1.**
-  - Dopo aver inserito l'IP, cliccare sul pulsante **Connect Test**
+  - Dopo aver inserito l'IP, cliccare sul pulsante **Connection Test**
 
 * - **2.**
   - Il sistema esegue un test di comunicazione (ping) verso il FlexiBowl

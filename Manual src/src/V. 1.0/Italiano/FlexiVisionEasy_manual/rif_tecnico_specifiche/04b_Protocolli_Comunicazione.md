@@ -1,6 +1,6 @@
 # **Protocollo Comunicazione Robot-Visione**
 
-FlexiVision Easy comunica con il robot tramite protocollo **TCP/IP** su rete Ethernet. Il robot deve essere in grado di aprire e gestire uno o più server di comunicazione per ricevere e inviare stringhe tramite un task parallelo rispetto a quello principale, così da ricevere informazioni dal sistema di visione mentre il lavoro principale è in esecuzione.
+FlexiVision Easy comunica con il robot tramite protocollo **TCP/IP** su rete Ethernet. 
 
 ## Specifiche protocollo
 

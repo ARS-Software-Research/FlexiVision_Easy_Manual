@@ -197,9 +197,6 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
 </ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../11_Installazione_Software.html">11. Installazione Software</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">QUICKSTART</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../12_Panoramica_Interfaccia.html"><strong>Panoramica dell’interfaccia</strong></a></li>
@@ -427,12 +424,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-configurazione-hopper">Accesso alla configurazione Hopper</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-interfaccia-hopper-setup">Panoramica interfaccia Hopper Setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di configurazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-abilitazione-hopper">Step 1: Abilitazione Hopper</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-configurazione-signal-segnale">Step 2: Configurazione Signal (segnale)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-salvataggio-e-completamento">Step 3: Salvataggio e completamento</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di configurazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hopper-non-si-attiva">Hopper non si attiva</a></li>
 </ul>
@@ -484,6 +476,7 @@ document.write(`
 <section id="panoramica-interfaccia-hopper-setup">
 <h2>Panoramica interfaccia Hopper Setup<a class="headerlink" href="#panoramica-interfaccia-hopper-setup" title="Link to this heading">#</a></h2>
 <p>La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parametri operativi:</p>
+<p><img alt="Pagina Hopper Setup" src="../../../_images/pagina_hoppersetup.png" /></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -517,17 +510,28 @@ document.write(`
 <hr class="docutils" />
 <section id="procedura-di-configurazione">
 <h2>Procedura di configurazione<a class="headerlink" href="#procedura-di-configurazione" title="Link to this heading">#</a></h2>
-<section id="step-1-abilitazione-hopper">
-<h3>Step 1: Abilitazione Hopper<a class="headerlink" href="#step-1-abilitazione-hopper" title="Link to this heading">#</a></h3>
-<p>Il primo passo è abilitare l’Hopper nel sistema:</p>
 <div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 9.1%" />
+<col style="width: 27.3%" />
+<col style="width: 63.6%" />
+</colgroup>
 <tbody>
-<tr class="row-odd"><td><p>Spuntare la checkbox <strong>Enable Hopper</strong></p></td>
+<tr class="row-odd"><td><p>Step 1</p></td>
+<td><p>Abilitazione Hopper</p></td>
+<td><p>Spuntare la checkbox <strong>Enable Hopper</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Step 2</p></td>
+<td><p>Configurazione Signal</p></td>
+<td><p>Nel campo <strong>Signal</strong>, inserire il numero del segnale digitale (DO - Digital Output) utilizzato per controllare l’Hopper</p></td>
+</tr>
+<tr class="row-odd"><td><p>Step 3</p></td>
+<td><p>Salvataggio e Completamento</p></td>
+<td><p>Tornare alla pagina <strong>SETUP</strong> principale per procedere con il setup successivo</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>immagini schermate</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Abilitare l’Hopper solo se:</p>
@@ -536,18 +540,6 @@ document.write(`
 <li><p>I collegamenti elettrici sono stati verificati</p></li>
 </ul>
 </div>
-</section>
-<section id="step-2-configurazione-signal-segnale">
-<h3>Step 2: Configurazione Signal (segnale)<a class="headerlink" href="#step-2-configurazione-signal-segnale" title="Link to this heading">#</a></h3>
-<p>Impostazione numero segnale di controllo</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>Nel campo <strong>Signal</strong>, inserire il numero del segnale digitale (DO - Digital Output) utilizzato per controllare l’Hopper</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>immagini schermate e valori tipici??</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Verifica cablaggio</strong></p>
@@ -558,23 +550,12 @@ document.write(`
 <li><p>In caso di dubbio, contattare chi ha effettuato il cablaggio</p></li>
 </ul>
 </div>
-</section>
-<section id="step-3-salvataggio-e-completamento">
-<h3>Step 3: Salvataggio e completamento<a class="headerlink" href="#step-3-salvataggio-e-completamento" title="Link to this heading">#</a></h3>
-<div class="pst-scrollable-table-container"><table class="table">
-<tbody>
-<tr class="row-odd"><td><p>Tornare alla pagina <strong>SETUP</strong> principale per procedere con il setup successivo</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Ottimizzazione futura</strong></p>
 <p>I parametri impostati in questa fase sono sufficienti per la configurazione iniziale del sistema.
 Durante la procedura andremo poi a definire gli altri aspetti della configurazione della tramoggia.</p>
 </div>
-</section>
 </section>
 <section id="problemi-comuni-e-soluzioni">
 <h2>Problemi comuni e soluzioni<a class="headerlink" href="#problemi-comuni-e-soluzioni" title="Link to this heading">#</a></h2>
@@ -912,12 +893,7 @@ ___\\ \\     // //___
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-configurazione-hopper">Accesso alla configurazione Hopper</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-interfaccia-hopper-setup">Panoramica interfaccia Hopper Setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di configurazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-abilitazione-hopper">Step 1: Abilitazione Hopper</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-configurazione-signal-segnale">Step 2: Configurazione Signal (segnale)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-salvataggio-e-completamento">Step 3: Salvataggio e completamento</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di configurazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hopper-non-si-attiva">Hopper non si attiva</a></li>
 </ul>

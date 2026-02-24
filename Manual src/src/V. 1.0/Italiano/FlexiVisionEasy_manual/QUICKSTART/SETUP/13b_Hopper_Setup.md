@@ -29,6 +29,8 @@ Prima di procedere, assicurarsi che:
 
 La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parametri operativi:
 
+![Pagina Hopper Setup](../SETUP/img/pagina_hoppersetup.png)
+
 ```{list-table}
 :header-rows: 1
 :widths: 30 70
@@ -50,14 +52,18 @@ La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parame
 
 ## Procedura di configurazione
 
-### Step 1: Abilitazione Hopper
-
-Il primo passo è abilitare l'Hopper nel sistema:
-
 ```{list-table}
-* - Spuntare la checkbox **Enable Hopper**
+:widths: 10 30 70 
+* - Step 1
+  - Abilitazione Hopper 
+  - Spuntare la checkbox **Enable Hopper**
+* - Step 2
+  - Configurazione Signal 
+  - Nel campo **Signal**, inserire il numero del segnale digitale (DO - Digital Output) utilizzato per controllare l'Hopper
+* - Step 3
+  - Salvataggio e Completamento 
+  - Tornare alla pagina **SETUP** principale per procedere con il setup successivo
 ```
-immagini schermate
 
 ```{important}
 
@@ -66,14 +72,6 @@ Abilitare l'Hopper solo se:
 - I collegamenti elettrici sono stati verificati
 ```
 
-### Step 2: Configurazione Signal (segnale)
-Impostazione numero segnale di controllo
-
-```{list-table}
-* - Nel campo **Signal**, inserire il numero del segnale digitale (DO - Digital Output) utilizzato per controllare l'Hopper
-```
-immagini schermate e valori tipici??
-
 ```{warning}
 **Verifica cablaggio**
 
@@ -81,12 +79,6 @@ immagini schermate e valori tipici??
 - Un numero errato attiverà il segnale sbagliato (potenzialmente pericoloso)
 - Consultare lo schema elettrico realizzato durante l'installazione
 - In caso di dubbio, contattare chi ha effettuato il cablaggio
-```
-
-### Step 3: Salvataggio e completamento
-
-```{list-table}
-* - Tornare alla pagina **SETUP** principale per procedere con il setup successivo
 ```
 
 ```{tip}

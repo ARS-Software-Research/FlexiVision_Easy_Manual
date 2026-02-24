@@ -67,23 +67,29 @@ FlexiVision Easy supporta profili utente multipli con diversi livelli di permess
 
 Dopo il primo login, è necessario attivare la licenza software.
 
-```{list-table} 
-* - 1. 
-  - Inserire la chiavetta fornita nel kit 
+```{list-table}
+:header-rows: 0
+:widths: 10 90
 
-* - 2. 
-  - Accedere alla sezione SETUP e Cliccare su **Software License** 
+* - **1.**
+  - Inserire la chiavetta fornita nel kit
 
-* - 3. 
-  - Inserire la chiave di licenza fornita da ARS Automation nel campo dedicato
-   - La chiave è composta da caratteri alfanumerici (es: `XXXX-XXXX-XXXX-XXXX`)
-   - Copiare e incollare la chiave per evitare errori di digitazione
+* - **2.**
+  - Accedere alla sezione SETUP e cliccare su **Software License**
+    ```{dropdown} Pagina Software License 
+       ![Pagina Software License](../SETUP/img/pagina_softwareL.png)
+    ```
 
-* - 4. 
-  - Cliccare su **Activate** 
+* - **3.**
+  - Inserire la chiave di licenza fornita da ARS Automation nel campo dedicato.
+    La chiave è composta da caratteri alfanumerici (es: ``XXXX-XXXX-XXXX-XXXX``).
+    Copiare e incollare la chiave per evitare errori di digitazione.
 
-* - 5. 
-  - Attendere che l'indicatore di stao diventi verde 
+* - **4.**
+  - Cliccare su **Activate**
+
+* - **5.**
+  - Attendere che l'indicatore di stato diventi verde
 ```
 
 ```{warning}
@@ -102,28 +108,28 @@ Se la licenza non viene accettata:
 
 Prima di configurare i componenti hardware, è necessario creare una ricetta di base che definisca i parametri dell'applicazione.
 
-```{list-table} 
+```{list-table}
+:header-rows: 0
+:widths: 10 90
 
-* - 1. 
-  - Accedere alla sezione **RECIPES** dal pulsante in alto 
+* - **1.**
+  - Accedere alla sezione **RECIPES** dal pulsante in alto
 
-* - 2. 
-  - Cliccare su **New Recipe** 
+* - **2.**
+  - Cliccare su **New Recipe**
 
-* - 3. 
-  - Inserire il nome della ricetta
-   - Utilizzare un nome descrittivo (es: "Ricetta_Base")
-   - Evitare caratteri speciali o spazi (usare underscore `_` al posto degli spazi)
+* - **3.**
+  - Inserire il nome della ricetta.
+    Utilizzare un nome descrittivo (es: "Ricetta_Base").
+    Evitare caratteri speciali o spazi (usare underscore ``_`` al posto degli spazi).
 
-* - 4. 
-  - Selezionare il **tipo di applicazione** :
-   - **Standard**: per applicazioni ...
-   - **Mix**: per applicazioni ...
-   
-* - 5. 
+* - **4.**
+  - Selezionare il **tipo di applicazione**: **Standard** per applicazioni ... oppure **Mix** per applicazioni ...
+
+* - **5.**
   - Selezionare il **FlexiBowl** utilizzato
 
-* - 6. 
+* - **6.**
   - Cliccare su **Save** per salvare la ricetta
 ```
 

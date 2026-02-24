@@ -54,12 +54,11 @@ La lente appropriata per il modello FlexiBowl specificato nell'ordine è sempre 
 
 Il seguente diagramma illustra la relazione tra distanza di lavoro, lunghezza focale della lente e area di visione risultante per i diversi modelli di FlexiBowl.
 
-```{figure} img/working_distance_diagram.png
-:alt: Schema distanze di lavoro FlexiBowl
-:width: 100%
-:align: center
 
-Diagramma delle distanze di lavoro e posizionamento camera per i diversi modelli FlexiBowl
+```{image} ../rif_tecnico_specifiche/img/working_distance.JPG
+:alt: Distanza Di Lavoro
+:width: 40%
+:align: center
 ```
 
 **Legenda schema:**

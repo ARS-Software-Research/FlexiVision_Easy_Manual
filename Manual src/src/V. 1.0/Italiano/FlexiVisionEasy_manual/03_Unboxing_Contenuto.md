@@ -99,6 +99,6 @@ A seconda della tua applicazione, i seguenti accessori opzionali potrebbero esse
 | Display | — |
 
 ---
-```{important}
+```{importante}
 Se gli articoli ricevuti non corrispondono all'ordine o risultano danneggiati, **non firmare il documento di consegna**. Contatta immediatamente il supporto FlexiVision o il tuo distributore locale.
 ```

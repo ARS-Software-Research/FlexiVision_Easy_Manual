@@ -2,12 +2,6 @@
 
 Questa sezione fornisce le specifiche tecniche complete del sistema FlexiVision Easy, inclusi dettagli su camera industriale, VisionController, griglia di calibrazione, protocolli di comunicazione e configurazioni hardware.
 
-Consultare questa sezione per:
-- Verificare la compatibilità con la propria infrastruttura di rete
-- Dimensionare correttamente l'alimentazione elettrica
-- Pianificare l'integrazione meccanica dei componenti
-- Configurare i protocolli di comunicazione robot-visione
-
 ---
 (specifiche_camera)=
 ## Camera 
