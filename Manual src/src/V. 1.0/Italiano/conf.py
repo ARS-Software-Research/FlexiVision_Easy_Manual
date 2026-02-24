@@ -18,6 +18,7 @@ extensions = [
     'myst_parser',
     'sphinx_copybutton', # Copy button for code blocks  
     'sphinx_design', # Advanced graphic blocks
+    'sphinxcontrib.video'
 ]
 
 templates_path = ['_templates']

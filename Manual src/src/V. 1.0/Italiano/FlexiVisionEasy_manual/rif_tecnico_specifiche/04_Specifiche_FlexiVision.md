@@ -190,29 +190,25 @@ Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge d
 * - **Caratteristica**
   - **Specifiche**
 * - CPU
-  - Celeron Quad Core J6412 – 2.0 (2.6) GHz
-    Intel Core i3-1115G4 1.7 (4.1) GHz
-    Intel Core i7-1165G7 2.8 (4.8) GHz
-    Intel Core i3-1215U 6C fino a 4.4 GHz
-    Intel Core i7-1255U 10C fino a 4.7 GHz
+  - Intel Core i3-1115G4 1.7 (4.1) GHz
 * - Memoria (RAM)
-  - 4G / 8G / 16G / 32G DDR4 3200 MHz
+  - 8G DDR4 3200 MHz
 * - Archiviazione
-  - 128G / 256G / 512G / 1TB SSD M.2 NVME 2280
+  - 256G 
 * - TPM
   - TPM 2.0
 * - Sistema Operativo
-  - Win10 LTSC 2021 / Win11 LTSC 2024 / Linux
+  - Win11 LTSC 2024
 * - Pulsante di accensione
   - Sì (pannello frontale con spia luminosa)
 * - Porte Ethernet
   - **J6412:** 4× 1Gb LAN — **i3/i7:** 3× Gb LAN
 * - Porte USB
-  - **J6412:** 3× USB 3.0 + 3× USB 2.0 TypeA — **i3/i7:** 6× USB 3.0 TypeA
+  -  6× USB 3.0 TypeA
 * - Uscita Video
-  - **Standard:** 2× HDMI — **i3/i7 12a gen:** 1× HDMI + 1× DisplayPort
+  - 1× HDMI + 1× DisplayPort
 * - Audio
-  - Uscita linea + MIC (Jack 2-in-1 da 3.5 mm)
+  - Line Out + MIC (Jack 2-in-1)
 * - Alimentazione (V DC)
   - 12 ~ 32 V DC
 * - Temperatura Operativa

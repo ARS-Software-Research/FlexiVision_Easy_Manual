@@ -16,7 +16,7 @@ In questa pagina vedremo come creare un modello di riferimento per il riconoscim
 ```
 ---
 
-## **Step 2: Abilitazione Modello** 
+## **Step 2: Accesso al Modello** 
 
 Completata la preparazione fisica, si procede con l'acquisizione dell'immagine e la creazione del modello
 
@@ -27,8 +27,6 @@ Completata la preparazione fisica, si procede con l'acquisizione dell'immagine e
   - Il sistema mostra gli slot disponibili per i modelli (fino a 8 modelli per ricetta)
 * - 4. 
   - Cliccare sul **Modello 1** per accedere alla pagina "Train Model 1 Cam 1"
-* - 5. 
-  - Cliccare su **Enable Model** per abilitare questo modello. Il modello è ora attivo e pronto per essere configurato.
 ```
 
 #### Panoramica interfaccia Train Model
@@ -65,8 +63,16 @@ Per ora, concentrarsi sul completamento del primo modello.
 
 ## **Step 2: Procedura di Training**
 
+```{video} video/TastoInfo_TrainModel_1280x720.mp4
+:width: 100%
+:align: center 
+```
+
 ```{list-table}
 :widths: 5 95
+
+* - **5. **
+  - Cliccare su **Enable Model** per abilitare questo modello. Il modello è ora attivo e pronto per essere configurato.
 
 * - **6.**
   - Cliccare su **Grab Train Image** per scattare una foto del componente di riferimento che abbiamo posizionato sul FlexiBowl
