@@ -46,7 +46,7 @@ Una ricetta può contenere fino a 8 modelli diversi, permettendo al robot di ric
 
 Il processo di creazione di una ricetta completa e funzionante si articola in diverse fasi sequenziali:
 
-```{figure} img/workflow_ricetta_modello.png
+```{figure} img/new_model3.jpg
 :alt: Workflow creazione ricetta e modelli
 :width: 100%
 :align: center

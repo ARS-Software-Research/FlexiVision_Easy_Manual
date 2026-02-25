@@ -26,6 +26,8 @@ Il processo di configurazione iniziale è composto da sette passaggi principali:
 6. **Robot Setup** - Configurazione comunicazione con il robot
 7. **Camera Setup** - Configurazione e test della telecamera
 
+![Flowchart setup](img/flowchartSetup.jpg)
+
 ```{warning}
 **Ordine dei passaggi**
 
