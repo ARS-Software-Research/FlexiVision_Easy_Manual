@@ -1,0 +1,961 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Creazione Ricette e modelli &#8212; FlexiVision Easy 1.0 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=4a069d08" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=a681ed88"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'FlexiVisionEasy_manual/TROUBLESHOOTING/26g_Creazione_Ricette_Modelli';</script>
+    <script src="../../_static/fix_print.js?v=cc433d1f"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="FlexiBowl Wizard" href="26h_FlexiBowl_Wizard.html" />
+    <link rel="prev" title="Protocol Setup" href="26f_Protocol_Setup.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo_fv.png" class="logo__image only-light" alt="FlexiVision Easy 1.0 documentation - Home"/>
+    <script>document.write(`<img src="../../_static/logo_fv_black.png" class="logo__image only-dark" alt="FlexiVision Easy 1.0 documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">PRIMA DI INIZIARE</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_informazioni_preliminari.html"><strong>Informazioni Preliminari</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02_informazioni_sicurezza.html"><strong>Informazioni di Sicurezza</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03_Unboxing_Contenuto.html"><strong>Unboxing e Contenuto della Scatola</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">RIFERIMENTO TECNICO E SPECIFICHE</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/04_Specifiche_FlexiVision.html"><strong>Specifiche Dettagliate FlexiVision</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/04b_Protocolli_Comunicazione.html"><strong>Protocollo Comunicazione Robot-Visione</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.html"><strong>Calcolo Distanza di Lavoro Ottimale</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/integrazione_software/06_PlugIn.html"><strong>PlugIn</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/integrazione_software/07_Backup_management.html">7. BackUp Management</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/08_Opzioni.html"><strong>Opzioni</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">INSTALLAZIONE DEL SISTEMA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../INSTALLAZIONE_SISTEMA/09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../INSTALLAZIONE_SISTEMA/10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">QUICKSTART</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/12_Panoramica_Interfaccia.html"><strong>Panoramica dell’interfaccia</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/SETUP/13_setup.html"><strong>Configurazione Iniziale del Sistema</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13a_FB_Setup.html"><strong>Passo 4: FlexiBowl Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13b_Hopper_Setup.html"><strong>Passo 5: Hopper Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13c_Robot_Setup.html"><strong>Passo 6 : Robot Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13d_Camera_Setup.html"><strong>Passo 7: Camera Setup</strong></a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
+
+
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17_NuovaRicetta.html"><strong>Creare una Nuova Ricetta</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17b_Expert.html">tasto expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18_NuovoModello.html"><strong>Creare un Nuovo Modello</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19_ROI_TEST.html"><strong>Definizione ROI e Tolleranze</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20_Istogrammi.html"><strong>Le Clearances</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20b_Expert.html">expert della pagina …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/21_RobotPick.html"><strong>Calibrazione Robot Pick</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/21b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/22_Config_FlexiBowl.html"><strong>Configurazione guidata: FlexiBowl® Wizard</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/23_Config_Hopper.html"><strong>Configurazione della Tramoggia (Hopper)</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/15_Protocol_Setup.html"><strong>Configurazione Protocollo: Protocol Setup</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/24_Verifica_Risultati.html"><strong>Monitoraggio Applicazione: Dashboard</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GARANZIA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../25_Garanzia.html"><strong>Garanzia</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">TROUBLESHOOTING</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="26_trb_shooting_guide.html">Risoluzione Problemi</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="26b_Installazione_Mecc.html">Installazione Meccanica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="26c_Cablaggio_Connessioni.html">Cablaggio e Connessioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="26d_Conf_Iniziale.html">Setup Iniziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="26e_Calib_Cam.html">Calibrazione Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="26f_Protocol_Setup.html">Protocol Setup</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Creazione Ricette e modelli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="26h_FlexiBowl_Wizard.html">FlexiBowl Wizard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../27_Support.html"><strong>Appendici e Contatti</strong></a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/FlexiVisionEasy_manual/TROUBLESHOOTING/26g_Creazione_Ricette_Modelli.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Creazione Ricette e modelli</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-creare-una-nuova-ricetta">Troubleshooting per la sezione Creare una Nuova Ricetta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-creare-un-nuovo-modello">Troubleshooting per la sezione Creare un Nuovo Modello</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-definizione-roi-e-tolleranze">Troubleshooting per la sezione Definizione ROI e Tolleranze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-istogrammi">Troubleshooting per la sezione Istogrammi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-calibrazione-robot-pick">Troubleshooting per la sezione Calibrazione Robot Pick</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="creazione-ricette-e-modelli">
+<h1>Creazione Ricette e modelli<a class="headerlink" href="#creazione-ricette-e-modelli" title="Link to this heading">#</a></h1>
+<section id="troubleshooting-per-la-sezione-creare-una-nuova-ricetta">
+<span id="troubleshooting-nuova-ricetta"></span><h2>Troubleshooting per la sezione Creare una Nuova Ricetta<a class="headerlink" href="#troubleshooting-per-la-sezione-creare-una-nuova-ricetta" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Problema</p></th>
+<th class="head"><p>Possibili Cause</p></th>
+<th class="head"><p>Soluzioni</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Impossibile creare nuova ricetta</strong></p></td>
+<td><p>• Ricetta base non salvata</p>
+<p>• Permessi insufficienti cartella ricette</p>
+<p>• Disco pieno</p>
+<p>• Nome ricetta contiene caratteri non ammessi</p>
+</td>
+<td><p>• Salvare ricetta base prima di crearne di nuove</p>
+<p>• Verificare permessi scrittura su cartella</p>
+<p>• Liberare spazio su disco</p>
+<p>• Evitare caratteri speciali nel nome (/ \ : * ? “ &lt; &gt; |)</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Ricetta creata non appare nell’elenco</strong></p></td>
+<td><p>• Salvataggio non completato</p>
+<p>• File ricetta corrotto</p>
+<p>• Filtro di visualizzazione attivo</p>
+</td>
+<td><p>• Ripetere creazione e salvataggio ricetta</p>
+<p>• Verificare integrità file in cartella ricette</p>
+<p>• Disabilitare eventuali filtri nella lista ricette</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Ricetta salvata ma configurazioni perse</strong></p></td>
+<td><p>• Salvataggio non confermato correttamente</p>
+<p>• Chiusura forzata software</p>
+<p>• Errore scrittura disco</p>
+</td>
+<td><p>• Cliccare sempre “Save Recipe” e attendere conferma</p>
+<p>• Chiudere software correttamente</p>
+<p>• Verificare log errori Windows</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Impossibile caricare ricetta creata</strong></p></td>
+<td><p>• File ricetta corrotto</p>
+<p>• Versione software incompatibile</p>
+<p>• Percorso file cambiato</p>
+</td>
+<td><p>• Ripristinare da backup se disponibile</p>
+<p>• Aggiornare software alla versione corretta</p>
+<p>• Verificare percorso cartella ricette in configurazione</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Ricetta caricata ha configurazioni errate</strong></p></td>
+<td><p>• Ricetta sbagliata selezionata</p>
+<p>• Modifiche non salvate in precedenza</p>
+<p>• Conflitto tra ricette con nomi simili</p>
+</td>
+<td><p>• Verificare nome ricetta nella barra superiore</p>
+<p>• Ricaricare ricetta corretta dall’elenco</p>
+<p>• Utilizzare naming convention univoche</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="troubleshooting-per-la-sezione-creare-un-nuovo-modello">
+<span id="troubleshooting-nuovo-modello"></span><h2>Troubleshooting per la sezione Creare un Nuovo Modello<a class="headerlink" href="#troubleshooting-per-la-sezione-creare-un-nuovo-modello" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Problema</p></th>
+<th class="head"><p>Possibili Cause</p></th>
+<th class="head"><p>Soluzioni</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Impossibile abilitare modello</strong></p></td>
+<td><p>• Ricetta non caricata</p>
+<p>• Limite massimo modelli raggiunto (8 per ricetta)</p>
+<p>• Slot modello già occupato</p>
+</td>
+<td><p>• Caricare ricetta corretta</p>
+<p>• Disabilitare modelli non utilizzati o creare nuova ricetta</p>
+<p>• Selezionare slot modello libero</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Grab Train Image acquisisce immagine nera</strong></p></td>
+<td><p>• Camera non connessa</p>
+<p>• Toplight spento</p>
+<p>• Esposizione troppo bassa</p>
+<p>• Lente con tappo protettivo</p>
+</td>
+<td><p>• Verificare connessione camera in Camera Setup</p>
+<p>• Accendere toplight e verificare alimentazione</p>
+<p>• Aumentare esposizione camera</p>
+<p>• Rimuovere tappo lente</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>ROI non si sposta o ridimensiona</strong></p></td>
+<td><p>• Immagine non acquisita</p>
+<p>• Modalità zoom attiva blocca editing</p>
+<p>• Software bloccato</p>
+</td>
+<td><p>• Eseguire Grab Train Image prima</p>
+<p>• Uscire da modalità zoom</p>
+<p>• Riavviare software</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Origine modello non posizionabile</strong></p></td>
+<td><p>• ROI non definito</p>
+<p>• Click non registrato</p>
+<p>• Bug software</p>
+</td>
+<td><p>• Definire prima ROI attorno al componente</p>
+<p>• Fare click deciso sul punto desiderato</p>
+<p>• Riavviare software e riprovare</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Apply Train non genera modello</strong></p></td>
+<td><p>• Feature Threshold non impostato</p>
+<p>• ROI troppo piccolo</p>
+<p>• Immagine senza contrasto sufficiente</p>
+<p>• Modello non nominato</p>
+</td>
+<td><p>• Impostare Feature Threshold (iniziare con 0.5)</p>
+<p>• Ingrandire ROI per includere tutto il componente</p>
+<p>• Migliorare contrasto/illuminazione</p>
+<p>• Inserire nome modello</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Modello creato include trama superficie</strong></p></td>
+<td><p>• Feature Threshold troppo basso</p>
+<p>• Superficie grip troppo texturizzata</p>
+<p>• Contrasto insufficiente componente-superficie</p>
+</td>
+<td><p>• Aumentare Feature Threshold (es: da 0.3 a 0.6)</p>
+<p>• Sostituire superficie grip con una più uniforme</p>
+<p>• Migliorare illuminazione per aumentare contrasto</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Modello creato ha troppo poche linee</strong></p></td>
+<td><p>• Feature Threshold troppo alto</p>
+<p>• Componente con geometria troppo semplice</p>
+<p>• Immagine sfocata</p>
+</td>
+<td><p>• Diminuire Feature Threshold (es: da 0.8 a 0.5)</p>
+<p>• Verificare che il componente abbia dettagli sufficienti</p>
+<p>• Verificare fuoco camera e correggere se necessario</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Modello include simulatori ingombro pinza</strong></p></td>
+<td><p>• Simulatori troppo vicini al componente</p>
+<p>• ROI troppo grande</p>
+<p>• Feature Threshold troppo basso</p>
+</td>
+<td><p>• Riposizionare simulatori con margine 2-3mm maggiore</p>
+<p>• Ridurre ROI per escludere simulatori</p>
+<p>• Aumentare Feature Threshold</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Modello include riflessi luce</strong></p></td>
+<td><p>• Feature Threshold troppo basso</p>
+<p>• Illuminazione non uniforme</p>
+<p>• Superficie componente molto riflettente</p>
+</td>
+<td><p>• Aumentare Feature Threshold</p>
+<p>• Regolare posizione/angolo toplight</p>
+<p>• Ridurre potenza toplight</p>
+<p>• Utilizzare filtro polarizzatore se disponibile</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Impossibile nominare modello</strong></p></td>
+<td><p>• Campo nome bloccato</p>
+<p>• Nome contiene caratteri non ammessi</p>
+<p>• Lunghezza nome eccessiva</p>
+</td>
+<td><p>• Cliccare nel campo nome per attivarlo</p>
+<p>• Usare solo lettere, numeri, underscore e trattini</p>
+<p>• Limitare nome a max 50 caratteri</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="troubleshooting-per-la-sezione-definizione-roi-e-tolleranze">
+<span id="troubleshooting-modelli-roi"></span><h2>Troubleshooting per la sezione Definizione ROI e Tolleranze<a class="headerlink" href="#troubleshooting-per-la-sezione-definizione-roi-e-tolleranze" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Problema</p></th>
+<th class="head"><p>Possibili Cause</p></th>
+<th class="head"><p>Soluzioni</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Region Search non modificabile</strong></p></td>
+<td><p>• Modello non completato correttamente</p>
+<p>• Immagine non caricata</p>
+<p>• Software in modalità visualizzazione</p>
+</td>
+<td><p>• Completare training modello prima</p>
+<p>• Acquisire nuova immagine</p>
+<p>• Verificare di essere in modalità edit</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Test non rileva alcun componente</strong></p></td>
+<td><p>• Accept Threshold troppo alto</p>
+<p>• Componenti fuori dalla Region Search</p>
+<p>• Modello non corretto</p>
+<p>• Illuminazione cambiata rispetto a training</p>
+</td>
+<td><p>• Diminuire Accept Threshold (es: da 0.90 a 0.75)</p>
+<p>• Allargare Region Search per includere componenti</p>
+<p>• Ripetere training modello</p>
+<p>• Stabilizzare illuminazione</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Test rileva troppi falsi positivi</strong></p></td>
+<td><p>• Accept Threshold troppo basso</p>
+<p>• Modello troppo semplice/generico</p>
+<p>• Componenti molto simili ma diversi presenti</p>
+</td>
+<td><p>• Aumentare Accept Threshold (es: da 0.70 a 0.85)</p>
+<p>• Rifare modello con Feature Threshold più basso (più dettagliato)</p>
+<p>• Separare in modelli diversi se necessario</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Test rileva componenti ma con score troppo bassi</strong></p></td>
+<td><p>• Variabilità componenti reali vs modello training</p>
+<p>• Illuminazione diversa</p>
+<p>• Componenti sporchi/danneggiati</p>
+<p>• Modello troppo dettagliato</p>
+</td>
+<td><p>• Verificare qualità componenti e pulire se necessario</p>
+<p>• Standardizzare illuminazione</p>
+<p>• Scartare componenti danneggiati</p>
+<p>• Rifare modello con Feature Threshold più alto (meno dettagliato)</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Score componente di riferimento non è il più alto</strong></p></td>
+<td><p>• Altri componenti più fedeli al modello</p>
+<p>• Componente di riferimento spostato</p>
+<p>• Calibrazione errata</p>
+</td>
+<td><p>• Normale se altri componenti sono in posizione migliore</p>
+<p>• Verificare che componente riferimento non sia stato urtato</p>
+<p>• Ripetere calibrazione se necessario</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Results Panel vuoto anche con componenti visibili</strong></p></td>
+<td><p>• Nessun componente supera Accept Threshold</p>
+<p>• Region Search non include componenti</p>
+<p>• Test non eseguito</p>
+</td>
+<td><p>• Diminuire Accept Threshold</p>
+<p>• Verificare e allargare Region Search</p>
+<p>• Cliccare pulsante Test</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Coordinate X,Y,Rotation non corrette</strong></p></td>
+<td><p>• Calibrazione camera non eseguita</p>
+<p>• Sistema di riferimento errato</p>
+<p>• Camera spostata dopo calibrazione</p>
+</td>
+<td><p>• Eseguire calibrazione camera completa</p>
+<p>• Verificare origine sistema coordinate</p>
+<p>• Ripetere calibrazione camera</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Componente di riferimento perso/spostato</strong></p></td>
+<td><p>• Urtato durante pulizia scena</p>
+<p>• Vibrazione accidentale FlexiBowl</p>
+<p>• Soffio d’aria attivato</p>
+</td>
+<td><p>• Riposizionare componente usando coordinate salvate</p>
+<p>• Fare attenzione durante manipolazioni</p>
+<p>• Disattivare air-blow durante setup</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="troubleshooting-per-la-sezione-istogrammi">
+<span id="troubleshooting-istogrammi"></span><h2>Troubleshooting per la sezione Istogrammi<a class="headerlink" href="#troubleshooting-per-la-sezione-istogrammi" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Problema</p></th>
+<th class="head"><p>Possibili Cause</p></th>
+<th class="head"><p>Soluzioni</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Impossibile abilitare istogramma</strong></p></td>
+<td><p>• Modello non completato</p>
+<p>• Limite massimo istogrammi raggiunto (8 per modello)</p>
+<p>• Slot già occupato</p>
+</td>
+<td><p>• Completare configurazione modello prima</p>
+<p>• Disabilitare istogrammi non utilizzati</p>
+<p>• Selezionare slot libero</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Riquadro istogramma non spostabile</strong></p></td>
+<td><p>• Istogramma non abilitato</p>
+<p>• Modalità test attiva</p>
+<p>• Software bloccato</p>
+</td>
+<td><p>• Cliccare Enable Histogram prima</p>
+<p>• Uscire da modalità test</p>
+<p>• Riavviare software</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>AUTO non calcola Mean e Std Dev</strong></p></td>
+<td><p>• Area istogramma troppo piccola</p>
+<p>• Istogramma fuori dall’immagine</p>
+<p>• Immagine non caricata</p>
+</td>
+<td><p>• Ingrandire area istogramma</p>
+<p>• Spostare istogramma dentro area visibile</p>
+<p>• Acquisire nuova immagine</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Test sempre ROSSO anche con area libera</strong></p></td>
+<td><p>• Calibrazione AUTO eseguita con area occupata</p>
+<p>• Ombra o riflesso nell’area</p>
+<p>• Bordo FlexiBowl incluso nell’area</p>
+<p>• Sporcizia sulla superficie</p>
+</td>
+<td><p>• Ripetere AUTO con area completamente libera</p>
+<p>• Escludere zone con ombre/riflessi</p>
+<p>• Ridurre area escludendo bordi</p>
+<p>• Pulire superficie FlexiBowl</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Test sempre VERDE anche con area occupata</strong></p></td>
+<td><p>• Calibrazione AUTO eseguita con componenti già presenti</p>
+<p>• Soglie calcolate male</p>
+<p>• Contrasto insufficiente</p>
+</td>
+<td><p>• Ripetere AUTO assicurandosi area completamente vuota</p>
+<p>• Ripetere calibrazione con illuminazione stabile</p>
+<p>• Migliorare contrasto illuminazione</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Istogramma triggera casualmente</strong></p></td>
+<td><p>• Area troppo grande include zone variabili</p>
+<p>• Illuminazione instabile</p>
+<p>• Vibrazioni durante acquisizione</p>
+<p>• Soglia troppo stretta</p>
+</td>
+<td><p>• Ridurre area al minimo necessario</p>
+<p>• Stabilizzare illuminazione</p>
+<p>• Inserire pause stabilizzazione</p>
+<p>• Ripetere calibrazione AUTO</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Istogramma non triggera quando dovrebbe</strong></p></td>
+<td><p>• Area troppo piccola non include ostacolo</p>
+<p>• Soglia troppo permissiva</p>
+<p>• Componenti simili a superficie</p>
+</td>
+<td><p>• Ingrandire area istogramma</p>
+<p>• Ripetere calibrazione AUTO con maggior contrasto</p>
+<p>• Migliorare illuminazione</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Impossibile creare secondo istogramma per pinza</strong></p></td>
+<td><p>• Primo istogramma non completato</p>
+<p>• Slot istogramma sbagliato selezionato</p>
+</td>
+<td><p>• Completare e salvare primo istogramma</p>
+<p>• Tornare all’elenco e selezionare Histogram 2</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Test multipli istogrammi non funziona</strong></p></td>
+<td><p>• Non tutti gli istogrammi abilitati</p>
+<p>• Configurazione incompleta</p>
+<p>• Conflitto tra istogrammi</p>
+</td>
+<td><p>• Verificare abilitazione di tutti gli istogrammi necessari</p>
+<p>• Completare configurazione AUTO per ogni istogramma</p>
+<p>• Verificare che aree non si sovrappongano</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="troubleshooting-per-la-sezione-calibrazione-robot-pick">
+<span id="troubleshooting-robot-pick"></span><h2>Troubleshooting per la sezione Calibrazione Robot Pick<a class="headerlink" href="#troubleshooting-per-la-sezione-calibrazione-robot-pick" title="Link to this heading">#</a></h2>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="26f_Protocol_Setup.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Protocol Setup</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="26h_FlexiBowl_Wizard.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">FlexiBowl Wizard</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-creare-una-nuova-ricetta">Troubleshooting per la sezione Creare una Nuova Ricetta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-creare-un-nuovo-modello">Troubleshooting per la sezione Creare un Nuovo Modello</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-definizione-roi-e-tolleranze">Troubleshooting per la sezione Definizione ROI e Tolleranze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-istogrammi">Troubleshooting per la sezione Istogrammi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-per-la-sezione-calibrazione-robot-pick">Troubleshooting per la sezione Calibrazione Robot Pick</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Noah Costantini & Niccolò Quadrani
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Ars Automation.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

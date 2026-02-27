@@ -16,9 +16,12 @@ Prima di procedere, assicurarsi che:
 
 ```{list-table}
 * - **1** 
-  - Dalla pagina principale del software, cliccare su **SETUP**
+  - Dalla pagina principale del software, cliccare su <img src="../SETUP/img/tasto_setup1.png" class="inline-icon">
 * - **2**
   - Nella pagina SETUP, identificare e cliccare sull'icona **Hopper Setup**
+    ```{dropdown} Pagina Setup 
+       ![Pagina Setup](../SETUP/img/pagina_setup1.png)
+    ```
 * - **3** 
   - Si apre la pagina di configurazione dell'Hopper
 ```
@@ -62,7 +65,7 @@ La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parame
   - Nel campo **Signal**, inserire il numero del segnale digitale (DO - Digital Output) utilizzato per controllare l'Hopper
 * - Step 3
   - Salvataggio e Completamento 
-  - Tornare alla pagina **SETUP** principale per procedere con il setup successivo
+  - Tornare alla pagina <img src="../SETUP/img/tasto_setup1.png" class="inline-icon"> principale per procedere con il setup successivo
 ```
 
 ```{important}

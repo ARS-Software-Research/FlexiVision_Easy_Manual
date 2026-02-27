@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=c7c60f48" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=4a438950" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -192,10 +192,10 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">INSTALLAZIONE DEL SISTEMA</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../INSTALLAZIONE_SISTEMA/09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../INSTALLAZIONE_SISTEMA/10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">QUICKSTART</span></p>
 <ul class="nav bd-sidenav">
@@ -273,7 +273,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../27_Support.html">Appendici e Contatti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../27_Support.html"><strong>Appendici e Contatti</strong></a></li>
 </ul>
 
     </div>
@@ -439,6 +439,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-montaggio-laser"><strong>Step 4: Montaggio Laser</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-disegnare-un-piano-a-3-punti"><strong>Step 5: Disegnare un piano a 3 punti</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-verifica-della-traiettoria-del-robot"><strong>Step 6: Verifica della traiettoria del robot</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-salvataggio-ricetta-base-da-verificare"><strong>Step 7: Salvataggio Ricetta Base</strong> - da verificare</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-durante-la-calibrazione"><strong>Problemi comuni durante la calibrazione</strong></a><ul class="visible nav section-nav flex-column">
@@ -464,7 +465,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="calibrazione-della-camera">
-<h1><strong>Calibrazione della Camera</strong><a class="headerlink" href="#calibrazione-della-camera" title="Link to this heading">#</a></h1>
+<span id="calibrazione"></span><h1><strong>Calibrazione della Camera</strong><a class="headerlink" href="#calibrazione-della-camera" title="Link to this heading">#</a></h1>
 <p>La calibrazione è il passaggio cruciale che stabilisce la relazione geometrica esatta tra il mondo reale (coordinate in millimetri) e l’immagine acquisita dalla telecamera (pixel). Senza una calibrazione precisa, la precisione del sistema di picking risulta compromessa, rendendo inaffidabile l’intera applicazione.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -945,6 +946,14 @@ Apparirà una finestra che richiede la calibrazione del robot prima di proseguir
 </table>
 </div>
 </section>
+<section id="step-7-salvataggio-ricetta-base-da-verificare">
+<h2><strong>Step 7: Salvataggio Ricetta Base</strong> - da verificare<a class="headerlink" href="#step-7-salvataggio-ricetta-base-da-verificare" title="Link to this heading">#</a></h2>
+<p>L’ultimo step della procedura è il salvataggio della rietta base
+Cliccare su Recipes
+controllare di avere la ricetta contenente tutti i setup e la calibrazione selezionata nel menu a sinistra e cliccare su Save Recipe<br />
+Questa ci permetterà di avere salvati a parte tutti i passaggi fatti fin’ora, in modo da avere una base per tutte le future ricette che conterranno i vari modelli<br />
+Per continuare con la creazione dei modelli, duplicare la ricetta base, rinominarla come si preferisce e cliccare su Edit Recipe, si aprirà una pagina con l’elenco di tutti i modelli disponibili</p>
+</section>
 </section>
 <hr class="docutils" />
 <section id="problemi-comuni-durante-la-calibrazione">
@@ -978,7 +987,7 @@ Apparirà una finestra che richiede la calibrazione del robot prima di proseguir
 <li><p>Assicurarsi che la camera sia stabile (no vibrazioni durante acquisizione)</p></li>
 <li><p>Verificare che l’obiettivo sia avvitato completamente (contatto metal-metal con corpo camera)</p></li>
 </ol>
-<p>Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare <a class="reference internal" href="09_Installazione_Meccanica.html"><span class="std std-doc">Installazione Meccanica</span></a> per revisione.</p>
+<p>Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare <a class="reference internal" href="#09_Installazione_Meccanica.md"><span class="xref myst">Installazione Meccanica</span></a> per revisione.</p>
 </div>
 </section>
 <section id="errori-dopo-cambio-illuminazione">
@@ -1346,6 +1355,7 @@ ___\\ \\     // //___
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-montaggio-laser"><strong>Step 4: Montaggio Laser</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-disegnare-un-piano-a-3-punti"><strong>Step 5: Disegnare un piano a 3 punti</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-verifica-della-traiettoria-del-robot"><strong>Step 6: Verifica della traiettoria del robot</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-salvataggio-ricetta-base-da-verificare"><strong>Step 7: Salvataggio Ricetta Base</strong> - da verificare</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-durante-la-calibrazione"><strong>Problemi comuni durante la calibrazione</strong></a><ul class="visible nav section-nav flex-column">

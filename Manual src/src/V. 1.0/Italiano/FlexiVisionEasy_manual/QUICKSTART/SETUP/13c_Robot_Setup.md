@@ -19,9 +19,12 @@ Prima di procedere, assicurarsi che:
 ```{list-table}
 
 * - **1** 
-  - Dalla pagina principale del software, cliccare su **SETUP**
+  - Dalla pagina principale del software, cliccare su <img src="../SETUP/img/tasto_setup1.png" class="inline-icon">
 * - **2**
   - Nella pagina SETUP, identificare e cliccare sull'icona **Robot Setup**
+    ```{dropdown} Pagina Setup 
+       ![Pagina Setup](../SETUP/img/pagina_setup1.png)
+    ```
 * - **3**
   - Si apre la pagina di configurazione della comunicazione robot
 ```
@@ -31,6 +34,7 @@ Prima di procedere, assicurarsi che:
 ## Panoramica interfaccia Robot Setup
 
 La pagina Robot Setup presenta diverse sezioni per configurare e testare la comunicazione:
+![Pagina Robot Setup](../SETUP/img/pagina_robotsetup.png)
 
 ```{list-table}
 :header-rows: 1
@@ -44,6 +48,8 @@ La pagina Robot Setup presenta diverse sezioni per configurare e testare la comu
   - Pulsante per riconfigurare il server di comunicazione con nuovi parametri
 * - **Server Online**
   - Indicatore di stato del server FlexiVision (verde = server attivo e accessibile)
+* - **Client Connect**
+  - 
 * - **Messaggi robot-flexivision**
   - Finestra di log che mostra i messaggi scambiati tra robot e FlexiVision (utilizzata per debugging)
 ```
@@ -122,9 +128,9 @@ Dopo la riconfigurazione, verificare che il server sia attivo:
 
 * - **1**
   - Osservare l'indicatore **Server Online**:
-   - **Verde**: Server attivo e in ascolto (pronto per connessioni)  
-     **Rosso**: Server non attivo (problema di configurazione)  
-     **Giallo**: Server in fase di avvio o riconfigurazione
+   - **Verde**: Server attivo   
+     **Rosso**: Server non attivo  
+     
 ```
 ```{note}
 Se l'indicatore è verde, il server FlexiVision è pronto a ricevere connessioni dal robot

@@ -16,9 +16,12 @@ Prima di procedere, assicurarsi che:
 ## Accesso alla configurazione FlexiBowl
 ```{list-table}
 * - 1. 
-  - Dalla pagina principale del software, cliccare su **SETUP**
+  - Dalla pagina principale del software, cliccare su <img src="../SETUP/img/tasto_setup1.png" class="inline-icon">
 * - 2. 
   - Nella pagina SETUP, identificare e cliccare sull'icona **FlexiBowl Setup**
+    ```{dropdown} Pagina Setup 
+       ![Pagina Setup](../SETUP/img/pagina_setup1.png)
+    ```
 * - 3. 
   - Si apre la schermata di configurazione del FlexiBowl
 ```
@@ -82,7 +85,7 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 
 ```{list-table}
 * - 1. 
-  - Cliccare sul pulsante **Config FlexiBowl**
+  - Cliccare sul pulsante <img src="../SETUP/img/FB_config1.png" class="inline-icon icon-xl" >
 * - 2. 
   - Si apre una finestra con i parametri configurabili del FlexiBowl
 ```

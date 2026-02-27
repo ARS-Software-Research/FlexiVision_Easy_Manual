@@ -1,0 +1,1316 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Specifiche Dettagliate FlexiVision &#8212; FlexiVision Easy 1.0 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=4a069d08" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=a681ed88"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'FlexiVisionEasy_manual/rif_tecnico_specifiche/04_Specifiche_FlexiVision';</script>
+    <script src="../../_static/fix_print.js?v=cc433d1f"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Protocollo Comunicazione Robot-Visione" href="04b_Protocolli_Comunicazione.html" />
+    <link rel="prev" title="Unboxing e Contenuto della Scatola" href="../03_Unboxing_Contenuto.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo_fv.png" class="logo__image only-light" alt="FlexiVision Easy 1.0 documentation - Home"/>
+    <script>document.write(`<img src="../../_static/logo_fv_black.png" class="logo__image only-dark" alt="FlexiVision Easy 1.0 documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">PRIMA DI INIZIARE</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_informazioni_preliminari.html"><strong>Informazioni Preliminari</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02_informazioni_sicurezza.html"><strong>Informazioni di Sicurezza</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03_Unboxing_Contenuto.html"><strong>Unboxing e Contenuto della Scatola</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">RIFERIMENTO TECNICO E SPECIFICHE</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Specifiche Dettagliate FlexiVision</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="04b_Protocolli_Comunicazione.html"><strong>Protocollo Comunicazione Robot-Visione</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="05_Calcolo_distanza_ottimale.html"><strong>Calcolo Distanza di Lavoro Ottimale</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="integrazione_software/06_PlugIn.html"><strong>PlugIn</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="integrazione_software/07_Backup_management.html">7. BackUp Management</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="08_Opzioni.html"><strong>Opzioni</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">INSTALLAZIONE DEL SISTEMA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../INSTALLAZIONE_SISTEMA/09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../INSTALLAZIONE_SISTEMA/10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">QUICKSTART</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/12_Panoramica_Interfaccia.html"><strong>Panoramica dell’interfaccia</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/SETUP/13_setup.html"><strong>Configurazione Iniziale del Sistema</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13a_FB_Setup.html"><strong>Passo 4: FlexiBowl Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13b_Hopper_Setup.html"><strong>Passo 5: Hopper Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13c_Robot_Setup.html"><strong>Passo 6 : Robot Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/SETUP/13d_Camera_Setup.html"><strong>Passo 7: Camera Setup</strong></a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
+
+
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17_NuovaRicetta.html"><strong>Creare una Nuova Ricetta</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17b_Expert.html">tasto expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18_NuovoModello.html"><strong>Creare un Nuovo Modello</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19_ROI_TEST.html"><strong>Definizione ROI e Tolleranze</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20_Istogrammi.html"><strong>Le Clearances</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20b_Expert.html">expert della pagina …</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/21_RobotPick.html"><strong>Calibrazione Robot Pick</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/21b_Expert.html">expert della pagina…</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/22_Config_FlexiBowl.html"><strong>Configurazione guidata: FlexiBowl® Wizard</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/23_Config_Hopper.html"><strong>Configurazione della Tramoggia (Hopper)</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/15_Protocol_Setup.html"><strong>Configurazione Protocollo: Protocol Setup</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/24_Verifica_Risultati.html"><strong>Monitoraggio Applicazione: Dashboard</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">GARANZIA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../25_Garanzia.html"><strong>Garanzia</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">TROUBLESHOOTING</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../TROUBLESHOOTING/26_trb_shooting_guide.html">Risoluzione Problemi</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26b_Installazione_Mecc.html">Installazione Meccanica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26c_Cablaggio_Connessioni.html">Cablaggio e Connessioni</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26d_Conf_Iniziale.html">Setup Iniziale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26e_Calib_Cam.html">Calibrazione Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26f_Protocol_Setup.html">Protocol Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26g_Creazione_Ricette_Modelli.html">Creazione Ricette e modelli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26h_FlexiBowl_Wizard.html">FlexiBowl Wizard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../27_Support.html"><strong>Appendici e Contatti</strong></a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/FlexiVisionEasy_manual/rif_tecnico_specifiche/04_Specifiche_FlexiVision.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Specifiche Dettagliate FlexiVision</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camera">Camera</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-elettriche">Specifiche elettriche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connettore-gpio-hirose-6-pin">Connettore GPIO (Hirose 6-pin)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodi-di-alimentazione">Metodi di alimentazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche-e-dimensioni">Specifiche fisiche e dimensioni</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obiettivo">Obiettivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visioncontroller">VisionController</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Specifiche elettriche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#porte-pc">Porte PC</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche">Specifiche fisiche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumento-laser-per-calibrazione">Strumento Laser per Calibrazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#griglia-di-calibrazione">Griglia di calibrazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importanza-della-griglia-dedicata-ars">Importanza della griglia dedicata ARS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-griglia-ars-vs-griglia-stampata">Confronto: Griglia ARS vs Griglia Stampata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-tecniche-griglia">Specifiche tecniche griglia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#componenti-opzionali">Componenti opzionali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-collegamenti">Panoramica collegamenti</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="specifiche-dettagliate-flexivision">
+<span id="specifiche-tecniche"></span><h1><strong>Specifiche Dettagliate FlexiVision</strong><a class="headerlink" href="#specifiche-dettagliate-flexivision" title="Link to this heading">#</a></h1>
+<p>Questa sezione fornisce le specifiche tecniche complete del sistema FlexiVision Easy, inclusi dettagli su camera industriale, VisionController, griglia di calibrazione, protocolli di comunicazione e configurazioni hardware.</p>
+<hr class="docutils" />
+<section id="camera">
+<span id="specifiche-camera"></span><h2>Camera<a class="headerlink" href="#camera" title="Link to this heading">#</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/Camera2.png"><img alt="Camera FlexiVision CAM-CIC-5000-20G-1" src="../../_images/Camera2.png" style="width: 50%;" />
+</a>
+</figure>
+<p>Il sistema FlexiVision utilizza telecamere ad alta risoluzione con interfaccia Gigabit Ethernet per garantire rapidità nell’acquisizione delle immagini e precisione nel riconoscimento dei componenti.</p>
+<section id="specifiche-elettriche">
+<h3>Specifiche elettriche<a class="headerlink" href="#specifiche-elettriche" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Caratteristica</strong></p></th>
+<th class="head"><p><strong>Specifiche</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Modello</p></td>
+<td><p>CAM-CIC-5000-20G-1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pixel Effettivi</p></td>
+<td><p>5 MP (2448 × 2048)</p></td>
+</tr>
+<tr class="row-even"><td><p>SNR</p></td>
+<td><p>&gt;38 dB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dynamic Range</p></td>
+<td><p>70 dB</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>Connettore Hirose 6-pin: 1 ingresso opto-isolato, 1 uscita opto-isolata, 1 I/O configurabile</p></td>
+</tr>
+<tr class="row-odd"><td><p>Formato Immagine</p></td>
+<td><p>Mono8 / 10 / 10Packed</p></td>
+</tr>
+<tr class="row-even"><td><p>Binning</p></td>
+<td><p>Support</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gain</p></td>
+<td><p>X1 ~ X32</p></td>
+</tr>
+<tr class="row-even"><td><p>Gamma</p></td>
+<td><p>Da 0 a 4, supporto LUT</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tempo di Esposizione</p></td>
+<td><p>34.23 μS ~ 1S</p></td>
+</tr>
+<tr class="row-even"><td><p>Modalità Trigger</p></td>
+<td><p>Software / Hardware / Free run</p></td>
+</tr>
+<tr class="row-odd"><td><p>Buffer Immagine</p></td>
+<td><p>256 MB</p></td>
+</tr>
+<tr class="row-even"><td><p>impostazioni utente</p></td>
+<td><p>Support two sets of user-defined configuration</p></td>
+</tr>
+<tr class="row-odd"><td><p>Consumo Energetico</p></td>
+<td><p>12V ≈ 3.2 W</p></td>
+</tr>
+<tr class="row-even"><td><p>Attacco Obiettivo</p></td>
+<td><p>C-mount</p></td>
+</tr>
+<tr class="row-odd"><td><p>Temperatura Operativa</p></td>
+<td><p>-30°C ~ +50°C</p></td>
+</tr>
+<tr class="row-even"><td><p>Temperatura di Stoccaggio</p></td>
+<td><p>-30°C ~ +80°C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Certificazioni</p></td>
+<td><p>CE, FCC, RoHS</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Risoluzione</p></td>
+<td><p>2448 x 2048</p></td>
+</tr>
+<tr class="row-even"><td><p>Pixel Size</p></td>
+<td><p>3.45 × 3.45 μm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sensore</p></td>
+<td><p>IMX264 CMOS Global Shutter</p></td>
+</tr>
+<tr class="row-even"><td><p>Dimensione Sensore</p></td>
+<td><p>2/3”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Frame Rate</p></td>
+<td><p>24 fps</p></td>
+</tr>
+<tr class="row-even"><td><p>Bit Depth</p></td>
+<td><p>12 bit</p></td>
+</tr>
+<tr class="row-odd"><td><p>Interfaccia</p></td>
+<td><p>GigE, POE</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="connettore-gpio-hirose-6-pin">
+<h3>Connettore GPIO (Hirose 6-pin)<a class="headerlink" href="#connettore-gpio-hirose-6-pin" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/Pin_Cam.png"><img alt="Connettore GPIO Hirose 6-pin" src="../../_images/Pin_Cam.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Vista posteriore della camera con connettori</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 20.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Pin</strong></p></th>
+<th class="head"><p><strong>Segnale</strong></p></th>
+<th class="head"><p><strong>Descrizione</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Power</p></td>
+<td><p>Ingresso alimentazione DC 9V ~ 24V</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Line1</p></td>
+<td><p>Ingresso opto-isolato</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Line2</p></td>
+<td><p>GPIO (I/O configurabile senza opto-isolamento via software)</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Line0</p></td>
+<td><p>Uscita opto-isolata</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>IO GND</p></td>
+<td><p>Massa opto-isolata</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>GND</p></td>
+<td><p>Massa</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Requisiti di rete obbligatori</strong></p>
+<p>L’interfaccia Gigabit Ethernet è obbligatoria e richiede un’infrastruttura di rete compatibile (switch Gigabit Ethernet).</p>
+<p>La mancata osservanza di questo requisito compromette completamente l’operatività della telecamera. Verificare che tutti i componenti di rete (cavi, switch, porte) supportino lo standard GigE.</p>
+</div>
+</section>
+<section id="metodi-di-alimentazione">
+<h3>Metodi di alimentazione<a class="headerlink" href="#metodi-di-alimentazione" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 40.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Metodo</strong></p></th>
+<th class="head"><p><strong>Descrizione</strong></p></th>
+<th class="head"><p><strong>Requisiti</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>PoE</strong></p></td>
+<td><p>Alimentazione e dati su un unico cavo Ethernet. Consumo circa 3.2 W.</p></td>
+<td><p>Richiede PoE Injector o Switch PoE compatibile (IEEE 802.3af/at)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Cavo Camera Esterno</strong></p></td>
+<td><p>Alimentazione DC esterna tramite connettore Hirose 6-pin (6V ~ 26V). Incluso nel kit.</p></td>
+<td><p>Cavo Ethernet separato necessario solo per i dati</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Quale metodo scegliere?</strong></p>
+<ul class="simple">
+<li><p><strong>PoE</strong>: ideale per installazioni pulite con un solo cavo, ma richiede hardware di rete specifico</p></li>
+<li><p><strong>Alimentazione esterna</strong>: soluzione standard più flessibile, consigliata per la maggior parte delle applicazioni</p></li>
+</ul>
+</div>
+</section>
+<section id="specifiche-fisiche-e-dimensioni">
+<h3>Specifiche fisiche e dimensioni<a class="headerlink" href="#specifiche-fisiche-e-dimensioni" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/Dimensioni_Cam1.png"><img alt="Dimensioni camera CAM-CIC-5000-20G-1" src="../../_images/Dimensioni_Cam1.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Dimensioni camera CAM-CIC-5000-20G-1 (mm)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Caratteristica</strong></p></th>
+<th class="head"><p><strong>Valore</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Larghezza × Altezza (corpo)</p></td>
+<td><p>29 × 29 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Profondità (corpo)</p></td>
+<td><p>42.0 mm</p></td>
+</tr>
+<tr class="row-even"><td><p>Profondità totale (incluso connettore posteriore)</p></td>
+<td><p>48.9 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sporgenza frontale (attacco obiettivo)</p></td>
+<td><p>12.60 mm</p></td>
+</tr>
+<tr class="row-even"><td><p>Interasse fori di fissaggio laterali (M2)</p></td>
+<td><p>20.0 × 23.7 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fori di fissaggio frontali</p></td>
+<td><p>2× M2 profondità 3 mm</p></td>
+</tr>
+<tr class="row-even"><td><p>Fori di fissaggio laterali</p></td>
+<td><p>4× M2 profondità 3.5 mm + 3× M3 profondità 3.5 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Peso</p></td>
+<td><p>88 g</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+</section>
+<section id="obiettivo">
+<span id="specifiche-obiettivo"></span><h2>Obiettivo<a class="headerlink" href="#obiettivo" title="Link to this heading">#</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/Ottica1.png"><img alt="Camera FlexiVision CAM-CIC-5000-20G-1" src="../../_images/Ottica1.png" style="width: 50%;" />
+</a>
+</figure>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parametro</p></th>
+<th class="head"><p>Ingrandimento di Riferimento</p></th>
+<th class="head"><p>M.O.D.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Tipo di lente</strong></p></td>
+<td><p>CCTV Lens</p></td>
+<td><p>CCTV Lens</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Posizione di fuoco</strong></p></td>
+<td><p>Reference Magnification</p></td>
+<td><p>M.O.D.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Ingrandimento</strong></p></td>
+<td><p>0.069</p></td>
+<td><p>0.167</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Lunghezza focale (mm)</strong></p></td>
+<td><p>34.97</p></td>
+<td><p>34.97</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Numero F (Fno)</strong></p></td>
+<td><p>2.00 ~ 16.00</p></td>
+<td><p>2.00 ~ 16.00</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Apertura Numerica (NA)</strong></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Distanza di lavoro / oggetto (mm)</strong></p></td>
+<td><p>500.0 / 507.0</p></td>
+<td><p>200.0 / 207.0</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Distanza oggetto-immagine (mm)</strong></p></td>
+<td><p>555.75</p></td>
+<td><p>259.16</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Lunghezza meccanica tubo (mm)</strong></p></td>
+<td><p>36.30 ~ 38.20</p></td>
+<td><p>36.30 ~ 38.20</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Back focus lente (mm)</strong></p></td>
+<td><p>14.75</p></td>
+<td><p>18.16</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Profondità di campo (mm)</strong></p></td>
+<td><p>35.476</p></td>
+<td><p>6.336</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Risoluzione &#64;550nm (µm)</strong></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Posizione piano principale Ant./Post. (mm)</strong></p></td>
+<td><p>37.60 / -22.61</p></td>
+<td><p>37.60 / -22.61</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Posizione pupilla Entr./Usc. (mm)</strong></p></td>
+<td><p>25.22 / -41.78</p></td>
+<td><p>25.22 / -41.78</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Diametro pupilla Entr./Usc. (mm)</strong></p></td>
+<td><p>17.03 / 26.36</p></td>
+<td><p>17.03 / 26.36</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Angolo di campo (°) H × V</strong></p></td>
+<td><p>13.69 × 10.34</p></td>
+<td><p>12.62 × 9.76</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Distorsione TV (%)</strong></p></td>
+<td><p>-0.088</p></td>
+<td><p>-0.142</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Illuminazione relativa (%)</strong></p></td>
+<td><p>44.95</p></td>
+<td><p>50.20</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Peso (g)</strong></p></td>
+<td><p>50</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Attacco (Mount)</strong></p></td>
+<td><p>C-mount</p></td>
+<td><p>C-mount</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Cerchio immagine (mm)</strong></p></td>
+<td><p>φ11</p></td>
+<td><p>φ11</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Camera massima compatibile</strong></p></td>
+<td><p>2/3”</p></td>
+<td><p>2/3”</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+</section>
+<section id="visioncontroller">
+<span id="specifiche-vc"></span><h2>VisionController<a class="headerlink" href="#visioncontroller" title="Link to this heading">#</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/PC.png"><img alt="VisionController FlexiVision" src="../../_images/PC.png" style="width: 50%;" />
+</a>
+</figure>
+<p>Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge da controller principale per il software di visione. ARS fornisce il VisionController già pre-configurato e testato con il software FlexiVision Easy installato.</p>
+<section id="id1">
+<h3>Specifiche elettriche<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Caratteristica</strong></p></th>
+<th class="head"><p><strong>Specifiche</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CPU</p></td>
+<td><p>Intel Core i3-1115G4 1.7 (4.1) GHz</p></td>
+</tr>
+<tr class="row-odd"><td><p>Memoria (RAM)</p></td>
+<td><p>8G DDR4 3200 MHz</p></td>
+</tr>
+<tr class="row-even"><td><p>Archiviazione</p></td>
+<td><p>256G</p></td>
+</tr>
+<tr class="row-odd"><td><p>TPM</p></td>
+<td><p>TPM 2.0</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistema Operativo</p></td>
+<td><p>Win11 LTSC 2024</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pulsante di accensione</p></td>
+<td><p>Sì (pannello frontale con spia luminosa)</p></td>
+</tr>
+<tr class="row-even"><td><p>Porte Ethernet</p></td>
+<td><p><strong>J6412:</strong> 4× 1Gb LAN — <strong>i3/i7:</strong> 3× Gb LAN</p></td>
+</tr>
+<tr class="row-odd"><td><p>Porte USB</p></td>
+<td><p>6× USB 3.0 TypeA</p></td>
+</tr>
+<tr class="row-even"><td><p>Uscita Video</p></td>
+<td><p>1× HDMI + 1× DisplayPort</p></td>
+</tr>
+<tr class="row-odd"><td><p>Audio</p></td>
+<td><p>Line Out + MIC (Jack 2-in-1)</p></td>
+</tr>
+<tr class="row-even"><td><p>Alimentazione (V DC)</p></td>
+<td><p>12 ~ 32 V DC</p></td>
+</tr>
+<tr class="row-odd"><td><p>Temperatura Operativa</p></td>
+<td><p>1°C ~ +50°C</p></td>
+</tr>
+<tr class="row-even"><td><p>Temperatura di Stoccaggio</p></td>
+<td><p>-20°C ~ +65°C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Umidità</p></td>
+<td><p>&lt;90% (senza condensa)</p></td>
+</tr>
+<tr class="row-even"><td><p>Materiale Scocca</p></td>
+<td><p>Lega di alluminio + acciaio</p></td>
+</tr>
+<tr class="row-odd"><td><p>Grado di Protezione</p></td>
+<td><p>IP20</p></td>
+</tr>
+<tr class="row-even"><td><p>Metodo di Installazione</p></td>
+<td><p>Montaggio a parete (DIN Rail opzionale)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Consumo Energetico</p></td>
+<td><p>25 W</p></td>
+</tr>
+<tr class="row-even"><td><p>Dimensioni (L × A × P)</p></td>
+<td><p>59.8 × 200 × 119.5 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Peso</p></td>
+<td><p>2 kg</p></td>
+</tr>
+<tr class="row-even"><td><p>Certificazioni</p></td>
+<td><p>CE, UL</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il VisionController dispone di … che possono alimentare direttamente la camera e altri dispositivi compatibili, eliminando la necessità di …</p>
+</div>
+</section>
+<section id="porte-pc">
+<h3>Porte PC<a class="headerlink" href="#porte-pc" title="Link to this heading">#</a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/Spec_Elettriche_PC.png"><img alt="Schema elettrico VisionController" src="../../_images/Spec_Elettriche_PC.png" style="width: 80%;" />
+</a>
+</figure>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 25.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Ref.</strong></p></th>
+<th class="head"><p><strong>Connettore</strong></p></th>
+<th class="head"><p><strong>Descrizione</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>Pulsante di accensione</p></td>
+<td><p>Accensione e spegnimento del dispositivo</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>ETH 10/100/1000 Mbit – RJ45 (LAN 1)</p></td>
+<td><p>Porta Ethernet Gigabit 1</p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>ETH 10/100/1000 Mbit – RJ45 (LAN 2)</p></td>
+<td><p>Porta Ethernet Gigabit 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p>Porta Seriale (RS232) COM1</p></td>
+<td><p>Interfaccia seriale RS232 COM1</p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p>Porta Seriale (RS232) COM2</p></td>
+<td><p>Interfaccia seriale RS232 COM2</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>Connettore di ingresso alimentazione</p></td>
+<td><p>Ingresso alimentazione 12–32V DC (terminal block 3-pin)</p></td>
+</tr>
+<tr class="row-even"><td><p>G</p></td>
+<td><p>Uscita Audio + MIC (Jack 3.5 mm)</p></td>
+<td><p>1× uscita audio di linea + ingresso microfono (jack 3.5 mm)</p></td>
+</tr>
+<tr class="row-odd"><td><p>H</p></td>
+<td><p>6× USB-A</p></td>
+<td><p>Porte USB (USB 3.0 TypeA per versioni i3/i7)</p></td>
+</tr>
+<tr class="row-even"><td><p>I</p></td>
+<td><p>Porta video 2</p></td>
+<td><p><strong>B2B12/B2B14:</strong> HDMI 2 — <strong>B2B15/B2B16:</strong> DisplayPort</p></td>
+</tr>
+<tr class="row-odd"><td><p>L</p></td>
+<td><p>Porta HDMI 1</p></td>
+<td><p>Uscita video HDMI 1</p></td>
+</tr>
+<tr class="row-even"><td><p>M</p></td>
+<td><p>ETH 10/100/1000 Mbit – RJ45 (LAN 3)</p></td>
+<td><p>Porta Ethernet Gigabit 3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="specifiche-fisiche">
+<h3>Specifiche fisiche<a class="headerlink" href="#specifiche-fisiche" title="Link to this heading">#</a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/Dim_PC1.png"><img alt="Dimensioni VisionController" src="../../_images/Dim_PC1.png" style="width: 80%;" />
+</a>
+</figure>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Caratteristica</strong></p></th>
+<th class="head"><p><strong>Valore</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Larghezza (totale con staffe)</p></td>
+<td><p>245.00 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Larghezza (corpo)</p></td>
+<td><p>227.00 mm</p></td>
+</tr>
+<tr class="row-even"><td><p>Larghezza pannello connettori</p></td>
+<td><p>200.00 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Altezza (totale con staffe)</p></td>
+<td><p>123.00 mm</p></td>
+</tr>
+<tr class="row-even"><td><p>Altezza (corpo)</p></td>
+<td><p>120.00 mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Profondità</p></td>
+<td><p>61.10 mm</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Il VisionController è progettato per montaggio …</p>
+</div>
+<hr class="docutils" />
+</section>
+</section>
+<section id="strumento-laser-per-calibrazione">
+<span id="laser"></span><h2>Strumento Laser per Calibrazione<a class="headerlink" href="#strumento-laser-per-calibrazione" title="Link to this heading">#</a></h2>
+<p>Lo Strumento Laser è una soluzione avanzata per la calibrazione che migliora la precisione con cui viene salvato il punto di riferimento del robot.
+Il beneficio principale del laser è che non richiede un contatto fisico con la griglia di calibrazione. Funzionando come un puntatore ad alta precisione, il laser consente all’operatore di allineare il punto target in modo visivo e ripetibile sulla griglia, offrendo un grado di accuratezza molto superiore rispetto all’uso di una punta fisica.
+Questa precisione è essenziale per il successo della calibrazione e si integra perfettamente con la ripetibilità garantita dalla Griglia di Calibrazione Dedicata ARS.</p>
+<p><img alt="Laser Cal" src="../../_images/laser_calibration.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Caratteristica</p></th>
+<th class="head"><p>Strumento Laser (Laser Tool)</p></th>
+<th class="head"><p>Strumento a Punta (Tip Tool) Standard</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Metodo di Riferimento</p></td>
+<td><p>Non a contatto (puntatore visivo)</p></td>
+<td><p>A contatto (punta meccanica/fisica)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precisione del Riferimento</p></td>
+<td><p>Massima precisione; l’operatore allinea visivamente il punto con accuratezza.</p></td>
+<td><p>Media, subordinata alla vista dell’operatore</p></td>
+</tr>
+<tr class="row-even"><td><p>Facilità d’Uso</p></td>
+<td><p>Semplifica la procedura di allineamento visivo.</p></td>
+<td><p>Richiede maggiore attenzione nel posizionamento e nell’evitare l’inclinazione.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vantaggio Chiave</p></td>
+<td><p>Consente di salvare il punto di riferimento robot con la massima fedeltà possibile, essenziale per l’accuratezza finale del picking.</p></td>
+<td><p>Metodo base, ma meno preciso del laser.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Suggerimento</p>
+<p>L’utilizzo dello Strumento Laser in combinazione con la Griglia di Calibrazione Dedicata ARS costituisce la metodologia più robusta e precisa per l’installazione del sistema FlexiVision</p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="griglia-di-calibrazione">
+<span id="specifiche-griglia"></span><h2>Griglia di calibrazione<a class="headerlink" href="#griglia-di-calibrazione" title="Link to this heading">#</a></h2>
+<p>Una calibrazione eccellente è il requisito fondamentale per l’accuratezza del sistema FlexiVision. Solo una calibrazione ad alta precisione garantisce che le coordinate rilevate dalla telecamera (pixel) vengano convertite in modo accurato nelle coordinate reali del robot (millimetri), assicurando così il successo dell’applicazione di picking.</p>
+<section id="importanza-della-griglia-dedicata-ars">
+<h3>Importanza della griglia dedicata ARS<a class="headerlink" href="#importanza-della-griglia-dedicata-ars" title="Link to this heading">#</a></h3>
+<p>Sebbene sia tecnicamente possibile eseguire la calibrazione utilizzando una griglia stampata su carta, l’utilizzo della <strong>Griglia di Calibrazione Dedicata ARS</strong> (spesso utilizzata con l’opzione Laser Tool) innalza significativamente la precisione e semplifica il flusso di lavoro di manutenzione.</p>
+<p>La griglia ARS è realizzata con un’accuratezza estremamente elevata, impossibile da replicare con una stampa standard. Inoltre, la sua struttura è progettata per il montaggio ripetibile sul FlexiBowl.</p>
+</section>
+<section id="confronto-griglia-ars-vs-griglia-stampata">
+<h3>Confronto: Griglia ARS vs Griglia Stampata<a class="headerlink" href="#confronto-griglia-ars-vs-griglia-stampata" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Caratteristica</p></th>
+<th class="head"><p>Griglia ARS Dedicata</p></th>
+<th class="head"><p>Griglia Stampata su Carta</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Precisione Fabbricativa</strong></p></td>
+<td><p>Estremamente Alta (Lavorazione CNC dedicata)</p></td>
+<td><p>Bassa/Variabile (Dipende dalla qualità della stampante)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Ripetibilità di Montaggio</strong></p></td>
+<td><p>Alta (Pin dedicati che si fissano in fori predefiniti sul FlexiBowl)</p></td>
+<td><p>Bassa (Non ripetibile, richiede riposizionamento manuale)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Punto di Riferimento Robot</strong></p></td>
+<td><p>Più Preciso (Con Laser Tool, il contatto fisico è sostituito dall’allineamento visivo)</p></td>
+<td><p>Meno Preciso (Utilizza tip fisico o punta soggetta a usura)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vantaggio in Ricalibrazione</strong></p></td>
+<td><p>Solo la visione richiede ricalibrazione. Il punto di riferimento del robot è mantenuto.</p></td>
+<td><p>Sia la visione che il robot richiedono una ricalibrazione completa</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Durabilità</strong></p></td>
+<td><p>Illimitata (metallo anodizzato)</p></td>
+<td><p>Limitata (carta si deteriora, inchiostro sbiadisce)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Investimento consigliato</strong></p>
+<p>Per applicazioni di produzione, la griglia ARS dedicata  riduce drasticamente i tempi di ricalibrazione e aumenta la precisione complessiva del sistema.</p>
+</div>
+</section>
+<section id="specifiche-tecniche-griglia">
+<h3>Specifiche tecniche griglia<a class="headerlink" href="#specifiche-tecniche-griglia" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Griglia per FlexiBowl 200:</p></li>
+<li><p>Griglia per FlexiBowl 350:</p></li>
+<li><p>Griglia per FlexiBowl 500:</p></li>
+<li><p>Griglia per FlexiBowl 650:</p></li>
+<li><p>Griglia per FlexiBowl 800:</p></li>
+<li><p>Griglia per FlexiBowl 1200:</p></li>
+</ul>
+<p><strong>Materiale:</strong> Alluminio anodizzato con pattern inciso laser ad alta precisione (±0.05 mm)</p>
+<p>Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezione <a class="reference internal" href="#14_calibrazione_camera.md"><span class="xref myst">Calibrazione della Camera</span></a>.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="componenti-opzionali">
+<h2>Componenti opzionali<a class="headerlink" href="#componenti-opzionali" title="Link to this heading">#</a></h2>
+<p>Componenti aggiuntivi disponibili separatamente:</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#toplight"><span class="std std-ref"><strong>Toplight</strong></span></a></div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#backlight"><span class="std std-ref"><strong>Backlight</strong></span></a></div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="#laser"><span class="std std-ref"><strong>Laser Tool</strong></span></a></div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#supporto"><span class="std std-ref"><strong>Supporto per Camera e Toplight</strong></span></a></div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#switch"><span class="std std-ref"><strong>Switch</strong></span></a></div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#display"><span class="std std-ref"><strong>Display</strong></span></a></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="panoramica-collegamenti">
+<h2>Panoramica collegamenti<a class="headerlink" href="#panoramica-collegamenti" title="Link to this heading">#</a></h2>
+<p><img alt="Panoramica Collegamenti" src="../../_images/pan_collegamenti.png" /></p>
+<p><em>Schema di collegamento completo del sistema FlexiVision Easy con robot e FlexiBowl</em></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>FlexiBowl → Alimentazione</strong></p></td>
+<td><p>Cavo di alimentazione dedicato</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Tramoggia → FlexiBowl</strong></p></td>
+<td><p>Cavo di segnale/alimentazione</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Camera → VisionController</strong></p></td>
+<td><p>Cavo Ethernet GigE (dati) + Cavo alimentazione DC</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Robot → VisionController</strong></p></td>
+<td><p>Cavo Ethernet (comunicazione TCP/IP)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>VisionController → Alimentazione</strong></p></td>
+<td><p>9-36V DC</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Per schemi elettrici dettagliati, consultare la sezione <a class="reference internal" href="#10_Cablaggio_Connessioni.md"><span class="xref myst">Cablaggio e Connessioni</span></a>.</p>
+<hr class="docutils" />
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../03_Unboxing_Contenuto.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>Unboxing e Contenuto della Scatola</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="04b_Protocolli_Comunicazione.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Protocollo Comunicazione Robot-Visione</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camera">Camera</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-elettriche">Specifiche elettriche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connettore-gpio-hirose-6-pin">Connettore GPIO (Hirose 6-pin)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodi-di-alimentazione">Metodi di alimentazione</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche-e-dimensioni">Specifiche fisiche e dimensioni</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obiettivo">Obiettivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visioncontroller">VisionController</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Specifiche elettriche</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#porte-pc">Porte PC</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche">Specifiche fisiche</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumento-laser-per-calibrazione">Strumento Laser per Calibrazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#griglia-di-calibrazione">Griglia di calibrazione</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importanza-della-griglia-dedicata-ars">Importanza della griglia dedicata ARS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-griglia-ars-vs-griglia-stampata">Confronto: Griglia ARS vs Griglia Stampata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-tecniche-griglia">Specifiche tecniche griglia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#componenti-opzionali">Componenti opzionali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-collegamenti">Panoramica collegamenti</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Noah Costantini & Niccolò Quadrani
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Ars Automation.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=c7c60f48" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=4a438950" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -192,10 +192,10 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">INSTALLAZIONE DEL SISTEMA</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="QUICKSTART/09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="INSTALLAZIONE_SISTEMA/09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="QUICKSTART/10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="INSTALLAZIONE_SISTEMA/10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">QUICKSTART</span></p>
 <ul class="nav bd-sidenav">
@@ -273,7 +273,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="27_Support.html">Appendici e Contatti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="27_Support.html"><strong>Appendici e Contatti</strong></a></li>
 </ul>
 
     </div>
@@ -423,24 +423,59 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sicurezza-operativa">Sicurezza operativa</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sistemi-robotizzati">Integrazione con sistemi robotizzati</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precauzioni-generali-prima-degli-interventi">Precauzioni generali prima degli interventi</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modifiche-e-manomissioni">Modifiche e manomissioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sistemi-robotizzati">Integrazione con sistemi robotizzati</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#requisiti-di-sicurezza-della-cella"><strong>Requisiti di sicurezza della cella</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attenzione-durante-loperativita"><strong>Attenzione durante l’operatività</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precauzioni-generali-prima-degli-interventi">Precauzioni generali prima degli interventi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#disconnessione-alimentazioni"><strong>Disconnessione alimentazioni</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#procedure-di-sicurezza"><strong>Procedure di sicurezza</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modifiche-e-manomissioni">Modifiche e manomissioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#divieto-di-modifiche-non-autorizzate"><strong>Divieto di modifiche non autorizzate</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conseguenze-delle-modifiche"><strong>Conseguenze delle modifiche</strong></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condizioni-ambientali-e-protezione">Condizioni ambientali e protezione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protezione-da-liquidi">Protezione da liquidi</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-operative">Temperature operative</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condizioni-ambientali-per-installazione-e-stoccaggio">Condizioni ambientali per installazione e stoccaggio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protezione-da-liquidi">Protezione da liquidi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rischio-contatto-con-liquidi"><strong>Rischio contatto con liquidi</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-per-ambienti-critici"><strong>Soluzioni per ambienti critici</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-operative">Temperature operative</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-calde-temperature-massime"><strong>Superfici calde - Temperature massime</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#responsabilita-del-cliente"><strong>Responsabilità del cliente</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condizioni-ambientali-per-installazione-e-stoccaggio">Condizioni ambientali per installazione e stoccaggio</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#requisiti-ambientali-tabella-di-riferimento"><strong>Requisiti ambientali - Tabella di riferimento</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#precauzioni-aggiuntive-per-lambiente"><strong>Precauzioni aggiuntive per l’ambiente</strong></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasporto-e-movimentazione">Trasporto e movimentazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ricezione-e-ispezione">Ricezione e ispezione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentazione-e-stoccaggio">Movimentazione e stoccaggio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ricezione-e-ispezione">Ricezione e ispezione</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ispezione-allarrivo"><strong>Ispezione all’arrivo</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#in-caso-di-danni-o-discrepanze"><strong>In caso di danni o discrepanze</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentazione-e-stoccaggio">Movimentazione e stoccaggio</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#trasporto"><strong>Trasporto</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stoccaggio"><strong>Stoccaggio</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#disimballaggio"><strong>Disimballaggio</strong></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#smaltimento-e-fine-vita">Smaltimento e fine vita</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dismissione-del-prodotto">Dismissione del prodotto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smaltimento-responsabile"><strong>Smaltimento responsabile</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#componenti-soggetti-a-smaltimento-speciale"><strong>Componenti soggetti a smaltimento speciale</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-consigliata"><strong>Procedura consigliata</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conformita-e-normative">Conformità e normative</a></li>
@@ -468,10 +503,11 @@ document.write(`
 <h2>Sicurezza operativa<a class="headerlink" href="#sicurezza-operativa" title="Link to this heading">#</a></h2>
 <section id="integrazione-con-sistemi-robotizzati">
 <h3>Integrazione con sistemi robotizzati<a class="headerlink" href="#integrazione-con-sistemi-robotizzati" title="Link to this heading">#</a></h3>
+<section id="requisiti-di-sicurezza-della-cella">
+<h4><strong>Requisiti di sicurezza della cella</strong><a class="headerlink" href="#requisiti-di-sicurezza-della-cella" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Requisiti di sicurezza della cella</strong></p>
-<p>FlexiVision Easy opera in stretta connessione con sistemi robotizzati di terze parti. L’utente deve garantire che l’area di lavoro sia dotata di tutte le misure di sicurezza necessarie:</p>
+<p>FlexiVision One opera in stretta connessione con sistemi robotizzati di terze parti. L’utente deve garantire che l’area di lavoro sia dotata di tutte le misure di sicurezza necessarie:</p>
 <ul class="simple">
 <li><p>Barriere perimetrali certificate secondo normativa vigente</p></li>
 <li><p>Sensori di presenza e sistemi di arresto di emergenza</p></li>
@@ -479,9 +515,11 @@ document.write(`
 <li><p>Formazione del personale sui rischi specifici della cella robotizzata</p></li>
 </ul>
 </div>
+</section>
+<section id="attenzione-durante-loperativita">
+<h4><strong>Attenzione durante l’operatività</strong><a class="headerlink" href="#attenzione-durante-loperativita" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Attenzione durante l’operatività</strong></p>
 <p>Durante il funzionamento del sistema, tenere sempre conto di:</p>
 <ul class="simple">
 <li><p>Ingombri fisici del robot e del FlexiBowl</p></li>
@@ -491,11 +529,13 @@ document.write(`
 </ul>
 </div>
 </section>
+</section>
 <section id="precauzioni-generali-prima-degli-interventi">
 <h3>Precauzioni generali prima degli interventi<a class="headerlink" href="#precauzioni-generali-prima-degli-interventi" title="Link to this heading">#</a></h3>
+<section id="disconnessione-alimentazioni">
+<h4><strong>Disconnessione alimentazioni</strong><a class="headerlink" href="#disconnessione-alimentazioni" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Disconnessione alimentazioni</strong></p>
 <p>Prima di eseguire qualsiasi intervento di manutenzione, modifica o ispezione sul sistema, assicurarsi sempre che:</p>
 <ul class="simple">
 <li><p>Tutte le fonti di alimentazione elettrica siano disconnesse (VisionController, FlexiBowl, Camera, Illuminatore)</p></li>
@@ -504,22 +544,28 @@ document.write(`
 <li><p>Il robot sia in modalità di sicurezza o completamente spento</p></li>
 </ul>
 </div>
+</section>
+<section id="procedure-di-sicurezza">
+<h4><strong>Procedure di sicurezza</strong><a class="headerlink" href="#procedure-di-sicurezza" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Procedure di sicurezza</strong></p>
 <p>Non affidarsi esclusivamente agli interruttori: utilizzare procedure di lockout/tagout (LOTO) quando disponibili.</p>
 </div>
 </section>
+</section>
 <section id="modifiche-e-manomissioni">
 <h3>Modifiche e manomissioni<a class="headerlink" href="#modifiche-e-manomissioni" title="Link to this heading">#</a></h3>
+<section id="divieto-di-modifiche-non-autorizzate">
+<h4><strong>Divieto di modifiche non autorizzate</strong><a class="headerlink" href="#divieto-di-modifiche-non-autorizzate" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Divieto di modifiche non autorizzate</strong></p>
 <p>Non modificare mai il prodotto o i suoi componenti senza espressa autorizzazione scritta di ARS S.r.l.</p>
 </div>
+</section>
+<section id="conseguenze-delle-modifiche">
+<h4><strong>Conseguenze delle modifiche</strong><a class="headerlink" href="#conseguenze-delle-modifiche" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Conseguenze delle modifiche</strong></p>
 <p>Modifiche non autorizzate possono:</p>
 <ul class="simple">
 <li><p>Causare malfunzionamenti del sistema</p></li>
@@ -530,14 +576,16 @@ document.write(`
 </div>
 </section>
 </section>
+</section>
 <hr class="docutils" />
 <section id="condizioni-ambientali-e-protezione">
 <h2>Condizioni ambientali e protezione<a class="headerlink" href="#condizioni-ambientali-e-protezione" title="Link to this heading">#</a></h2>
 <section id="protezione-da-liquidi">
 <h3>Protezione da liquidi<a class="headerlink" href="#protezione-da-liquidi" title="Link to this heading">#</a></h3>
+<section id="rischio-contatto-con-liquidi">
+<h4><strong>Rischio contatto con liquidi</strong><a class="headerlink" href="#rischio-contatto-con-liquidi" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Rischio contatto con liquidi</strong></p>
 <p>Non utilizzare il prodotto in ambienti dove il VisionController, la camera o altri componenti elettronici possano entrare in contatto con:</p>
 <ul class="simple">
 <li><p>Gocce d’acqua o spruzzi</p></li>
@@ -546,17 +594,21 @@ document.write(`
 <li><p>Polveri conduttive</p></li>
 </ul>
 </div>
+</section>
+<section id="soluzioni-per-ambienti-critici">
+<h4><strong>Soluzioni per ambienti critici</strong><a class="headerlink" href="#soluzioni-per-ambienti-critici" title="Link to this heading">#</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Soluzioni per ambienti critici</strong></p>
 <p>Se il sistema deve operare in ambienti con presenza di liquidi, prevedere adeguate protezioni (custodie IP65 o superiori) e consultare il servizio tecnico ARS per soluzioni personalizzate.</p>
 </div>
 </section>
+</section>
 <section id="temperature-operative">
 <h3>Temperature operative<a class="headerlink" href="#temperature-operative" title="Link to this heading">#</a></h3>
+<section id="superfici-calde-temperature-massime">
+<h4><strong>Superfici calde - Temperature massime</strong><a class="headerlink" href="#superfici-calde-temperature-massime" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Superfici calde - Temperature massime</strong></p>
 <p>In condizioni di utilizzo intenso o ambienti caldi, alcuni componenti del sistema possono raggiungere temperature elevate:</p>
 <ul class="simple">
 <li><p>VisionController: fino a 50°C sulle superfici esterne</p></li>
@@ -564,9 +616,11 @@ document.write(`
 <li><p>Camera industriale: fino a 45°C sul corpo metallico</p></li>
 </ul>
 </div>
+</section>
+<section id="responsabilita-del-cliente">
+<h4><strong>Responsabilità del cliente</strong><a class="headerlink" href="#responsabilita-del-cliente" title="Link to this heading">#</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Responsabilità del cliente</strong></p>
 <p>È responsabilità del cliente:</p>
 <ul class="simple">
 <li><p>Documentare i rischi termici nella propria valutazione dei rischi</p></li>
@@ -576,11 +630,13 @@ document.write(`
 </ul>
 </div>
 </section>
+</section>
 <section id="condizioni-ambientali-per-installazione-e-stoccaggio">
 <h3>Condizioni ambientali per installazione e stoccaggio<a class="headerlink" href="#condizioni-ambientali-per-installazione-e-stoccaggio" title="Link to this heading">#</a></h3>
+<section id="requisiti-ambientali-tabella-di-riferimento">
+<h4><strong>Requisiti ambientali - Tabella di riferimento</strong><a class="headerlink" href="#requisiti-ambientali-tabella-di-riferimento" title="Link to this heading">#</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Requisiti ambientali - Tabella di riferimento</strong></p>
 <p>Per garantire durata e affidabilità, il VisionController e la camera devono essere utilizzati e conservati nelle seguenti condizioni:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -614,9 +670,11 @@ document.write(`
 </table>
 </div>
 </div>
+</section>
+<section id="precauzioni-aggiuntive-per-lambiente">
+<h4><strong>Precauzioni aggiuntive per l’ambiente</strong><a class="headerlink" href="#precauzioni-aggiuntive-per-lambiente" title="Link to this heading">#</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Precauzioni aggiuntive per l’ambiente</strong></p>
 <p>Per preservare l’integrità dei componenti:</p>
 <ul class="simple">
 <li><p>Evitare l’esposizione diretta alla luce solare</p></li>
@@ -627,23 +685,27 @@ document.write(`
 </div>
 </section>
 </section>
+</section>
 <hr class="docutils" />
 <section id="trasporto-e-movimentazione">
 <h2>Trasporto e movimentazione<a class="headerlink" href="#trasporto-e-movimentazione" title="Link to this heading">#</a></h2>
 <section id="ricezione-e-ispezione">
 <h3>Ricezione e ispezione<a class="headerlink" href="#ricezione-e-ispezione" title="Link to this heading">#</a></h3>
+<section id="ispezione-allarrivo">
+<h4><strong>Ispezione all’arrivo</strong><a class="headerlink" href="#ispezione-allarrivo" title="Link to this heading">#</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Ispezione all’arrivo</strong></p>
 <p>Alla ricezione del prodotto, prima di firmare la bolla di consegna:</p>
 <ol class="arabic simple">
 <li><p><strong>Ispezione esterna dell’imballaggio</strong>: Verificare l’integrità della scatola e dell’imballo esterno. Controllare la presenza di eventuali segni di urti, schiacciamenti o bagnature.</p></li>
 <li><p><strong>Verifica contenuto</strong>: Confrontare il contenuto con la nota di consegna. Verificare la presenza di tutti i componenti ordinati.</p></li>
 </ol>
 </div>
+</section>
+<section id="in-caso-di-danni-o-discrepanze">
+<h4><strong>In caso di danni o discrepanze</strong><a class="headerlink" href="#in-caso-di-danni-o-discrepanze" title="Link to this heading">#</a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>In caso di danni o discrepanze</strong></p>
 <p>Se si riscontrano problemi:</p>
 <ul class="simple">
 <li><p>NON firmare la ricevuta come “conforme”</p></li>
@@ -653,12 +715,14 @@ document.write(`
 </ul>
 </div>
 </section>
+</section>
 <section id="movimentazione-e-stoccaggio">
 <h3>Movimentazione e stoccaggio<a class="headerlink" href="#movimentazione-e-stoccaggio" title="Link to this heading">#</a></h3>
+<p>Per prevenire danni durante trasporto e stoccaggio:</p>
+<section id="trasporto">
+<h4><strong>Trasporto</strong><a class="headerlink" href="#trasporto" title="Link to this heading">#</a></h4>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>Buone pratiche per la movimentazione</strong></p>
-<p>Per prevenire danni durante trasporto e stoccaggio:</p>
 <p><strong>Durante il trasporto:</strong></p>
 <ul class="simple">
 <li><p>Movimentare sempre l’imballaggio in posizione verticale (rispettare le frecce “ALTO” sull’imballo)</p></li>
@@ -666,6 +730,12 @@ document.write(`
 <li><p>Utilizzare carrelli o transpallet adeguati al peso</p></li>
 <li><p>Evitare sbalzi termici improvvisi</p></li>
 </ul>
+</div>
+</section>
+<section id="stoccaggio">
+<h4><strong>Stoccaggio</strong><a class="headerlink" href="#stoccaggio" title="Link to this heading">#</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p><strong>Durante lo stoccaggio:</strong></p>
 <ul class="simple">
 <li><p>Conservare in luogo asciutto e coperto</p></li>
@@ -673,6 +743,12 @@ document.write(`
 <li><p>Non salire o appoggiarsi sull’imballaggio</p></li>
 <li><p>Rispettare le condizioni ambientali indicate nella tabella precedente</p></li>
 </ul>
+</div>
+</section>
+<section id="disimballaggio">
+<h4><strong>Disimballaggio</strong><a class="headerlink" href="#disimballaggio" title="Link to this heading">#</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p><strong>Durante il disimballaggio:</strong></p>
 <ul class="simple">
 <li><p>Aprire con cura per non danneggiare i componenti interni</p></li>
@@ -682,15 +758,21 @@ document.write(`
 </div>
 </section>
 </section>
+</section>
 <hr class="docutils" />
 <section id="smaltimento-e-fine-vita">
 <h2>Smaltimento e fine vita<a class="headerlink" href="#smaltimento-e-fine-vita" title="Link to this heading">#</a></h2>
-<section id="dismissione-del-prodotto">
-<h3>Dismissione del prodotto<a class="headerlink" href="#dismissione-del-prodotto" title="Link to this heading">#</a></h3>
+<section id="smaltimento-responsabile">
+<h3><strong>Smaltimento responsabile</strong><a class="headerlink" href="#smaltimento-responsabile" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Quando il prodotto raggiunge la fine del suo ciclo di vita, deve essere smaltito in conformità con le normative vigenti relative ai rifiuti di apparecchiature elettriche ed elettroniche (RAEE/WEEE).</p>
+</div>
+</section>
+<section id="componenti-soggetti-a-smaltimento-speciale">
+<h3><strong>Componenti soggetti a smaltimento speciale</strong><a class="headerlink" href="#componenti-soggetti-a-smaltimento-speciale" title="Link to this heading">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Smaltimento responsabile</strong></p>
-<p>Quando il prodotto raggiunge la fine del suo ciclo di vita, deve essere smaltito in conformità con le normative vigenti relative ai rifiuti di apparecchiature elettriche ed elettroniche (RAEE/WEEE).</p>
 <p><strong>Componenti soggetti a smaltimento speciale:</strong></p>
 <ul class="simple">
 <li><p>Schede elettroniche (VisionController): RAEE categoria 6</p></li>
@@ -698,7 +780,12 @@ document.write(`
 <li><p>Illuminatori a LED: RAEE categoria 5</p></li>
 <li><p>Cavi e connettori: smaltimento con materiali elettrici</p></li>
 </ul>
-<p><strong>Procedura consigliata:</strong></p>
+</div>
+</section>
+<section id="procedura-consigliata">
+<h3><strong>Procedura consigliata</strong><a class="headerlink" href="#procedura-consigliata" title="Link to this heading">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <ol class="arabic simple">
 <li><p>Contattare un ente certificato per lo smaltimento RAEE</p></li>
 <li><p>Fornire la documentazione tecnica del prodotto</p></li>
@@ -1040,24 +1127,59 @@ ___\\ \\     // //___
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sicurezza-operativa">Sicurezza operativa</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sistemi-robotizzati">Integrazione con sistemi robotizzati</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precauzioni-generali-prima-degli-interventi">Precauzioni generali prima degli interventi</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modifiche-e-manomissioni">Modifiche e manomissioni</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrazione-con-sistemi-robotizzati">Integrazione con sistemi robotizzati</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#requisiti-di-sicurezza-della-cella"><strong>Requisiti di sicurezza della cella</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#attenzione-durante-loperativita"><strong>Attenzione durante l’operatività</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precauzioni-generali-prima-degli-interventi">Precauzioni generali prima degli interventi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#disconnessione-alimentazioni"><strong>Disconnessione alimentazioni</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#procedure-di-sicurezza"><strong>Procedure di sicurezza</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modifiche-e-manomissioni">Modifiche e manomissioni</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#divieto-di-modifiche-non-autorizzate"><strong>Divieto di modifiche non autorizzate</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conseguenze-delle-modifiche"><strong>Conseguenze delle modifiche</strong></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condizioni-ambientali-e-protezione">Condizioni ambientali e protezione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protezione-da-liquidi">Protezione da liquidi</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-operative">Temperature operative</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condizioni-ambientali-per-installazione-e-stoccaggio">Condizioni ambientali per installazione e stoccaggio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#protezione-da-liquidi">Protezione da liquidi</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rischio-contatto-con-liquidi"><strong>Rischio contatto con liquidi</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soluzioni-per-ambienti-critici"><strong>Soluzioni per ambienti critici</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-operative">Temperature operative</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#superfici-calde-temperature-massime"><strong>Superfici calde - Temperature massime</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#responsabilita-del-cliente"><strong>Responsabilità del cliente</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#condizioni-ambientali-per-installazione-e-stoccaggio">Condizioni ambientali per installazione e stoccaggio</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#requisiti-ambientali-tabella-di-riferimento"><strong>Requisiti ambientali - Tabella di riferimento</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#precauzioni-aggiuntive-per-lambiente"><strong>Precauzioni aggiuntive per l’ambiente</strong></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trasporto-e-movimentazione">Trasporto e movimentazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ricezione-e-ispezione">Ricezione e ispezione</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentazione-e-stoccaggio">Movimentazione e stoccaggio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ricezione-e-ispezione">Ricezione e ispezione</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ispezione-allarrivo"><strong>Ispezione all’arrivo</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#in-caso-di-danni-o-discrepanze"><strong>In caso di danni o discrepanze</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentazione-e-stoccaggio">Movimentazione e stoccaggio</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#trasporto"><strong>Trasporto</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stoccaggio"><strong>Stoccaggio</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#disimballaggio"><strong>Disimballaggio</strong></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#smaltimento-e-fine-vita">Smaltimento e fine vita</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dismissione-del-prodotto">Dismissione del prodotto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smaltimento-responsabile"><strong>Smaltimento responsabile</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#componenti-soggetti-a-smaltimento-speciale"><strong>Componenti soggetti a smaltimento speciale</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-consigliata"><strong>Procedura consigliata</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conformita-e-normative">Conformità e normative</a></li>

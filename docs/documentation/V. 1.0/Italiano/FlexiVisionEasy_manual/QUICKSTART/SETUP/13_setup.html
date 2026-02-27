@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=c7c60f48" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=4a438950" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -192,10 +192,10 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">INSTALLAZIONE DEL SISTEMA</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../INSTALLAZIONE_SISTEMA/09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../INSTALLAZIONE_SISTEMA/10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">QUICKSTART</span></p>
 <ul class="nav bd-sidenav">
@@ -273,7 +273,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../27_Support.html">Appendici e Contatti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../27_Support.html"><strong>Appendici e Contatti</strong></a></li>
 </ul>
 
     </div>
@@ -457,9 +457,8 @@ document.write(`
 <p><strong>Prerequisiti</strong></p>
 <p>Prima di iniziare la configurazione software, assicurarsi che:</p>
 <ul class="simple">
-<li><p>L’installazione meccanica di tutti i componenti sia completata (<a class="reference internal" href="#09_Installazione_Meccanica.md"><span class="xref myst">Installazione Meccanica</span></a>)</p></li>
-<li><p>Tutti i cavi siano collegati correttamente (<a class="reference internal" href="#10_Cablaggio_Connessioni.md"><span class="xref myst">Cablaggio e Connessioni</span></a>)</p></li>
-<li><p>Il software FlexiVision Easy sia stato installato sul VisionController (<a class="reference internal" href="#11_Installazione_Software.md"><span class="xref myst">Installazione Software</span></a>)</p></li>
+<li><p>L’installazione meccanica di tutti i componenti sia completata (<a class="reference internal" href="../../INSTALLAZIONE_SISTEMA/09_Installazione_Meccanica.html#installazione-meccanica"><span class="std std-ref">Installazione Meccanica</span></a>)</p></li>
+<li><p>Tutti i cavi siano collegati correttamente (<a class="reference internal" href="../../INSTALLAZIONE_SISTEMA/10_Cablaggio_Connessioni.html#cablaggio"><span class="std std-ref">Cablaggio e Connessioni</span></a>)</p></li>
 <li><p>Si disponga della licenza software fornita da ARS Automation</p></li>
 </ul>
 </div>
@@ -472,7 +471,7 @@ document.write(`
 <li><p><strong>Attivazione licenza</strong> - Inserimento della chiave di licenza</p></li>
 <li><p><strong>Creazione ricetta base</strong> - Configurazione del profilo applicativo</p></li>
 <li><p><strong>FlexiBowl Setup</strong> - Connessione e configurazione dell’alimentatore vibrante</p></li>
-<li><p><strong>Hopper Setup</strong> (opzionale) - Configurazione tramoggia esterna</p></li>
+<li><p><strong>Hopper Setup</strong>  - Configurazione tramoggia esterna</p></li>
 <li><p><strong>Robot Setup</strong> - Configurazione comunicazione con il robot</p></li>
 <li><p><strong>Camera Setup</strong> - Configurazione e test della telecamera</p></li>
 </ol>
@@ -513,9 +512,10 @@ document.write(`
 <p><strong>Gestione utenti</strong></p>
 <p>FlexiVision Easy supporta profili utente multipli con diversi livelli di permessi:</p>
 <ul class="simple">
-<li><p><strong>Administrator</strong>: accesso completo a tutte le funzionalità</p></li>
-<li><p><strong>Operator</strong>: accesso alle funzioni operative (esecuzione ricette, monitoraggio)</p></li>
-<li><p><strong>Viewer</strong>: solo visualizzazione (nessuna modifica consentita)</p></li>
+<li><p><strong>ARS</strong></p></li>
+<li><p><strong>Engineer</strong></p></li>
+<li><p><strong>Technician</strong></p></li>
+<li><p><strong>Operator</strong></p></li>
 </ul>
 </div>
 </section>

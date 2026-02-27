@@ -1,0 +1,205 @@
+# **Le Clearances** 
+ In questa pagina vedremo come configurare le clearance per verificare che le aree critiche siano libere da ostacoli.
+
+## Cos'è una Clearance?
+
+Una **Clearance** in FlexiVision è uno strumento che monitora un'area specifica dell'immagine per verificare che sia libera. Viene utilizzato per controllare, ad esempio, che lo spazio necessario alla pinza per afferrare il componente non sia occupato da altri oggetti.
+
+
+```{admonition} Principio di Funzionamento. 
+:class: note
+L'istogramma analizza i livelli di bianco e nero in un'area definita:
+- 🟢 **Verde** → Area libera (OK per il prelievo)
+- 🔴 **Rosso** → Area occupata (presenza di ostacoli)
+```
+---
+
+## **Step 1: Setup Fisico**
+
+````{list-table}
+:widths: 5 95
+
+* - **1.**
+  - Dal **pendant del robot**:
+    - Selezionare il **frame** e il **tool** calibrato su FlexiVision
+    - Portare l'**ultimo asse** del tool a **rotazione zero** (Rz = 0°)
+* - **2.**
+  - Simulare una presa:
+    - Aprire la pinza
+    - Portare il tool del robot sul componente a livello della superficie, come per afferrarlo
+* - **3.**
+  - Posizionare **due oggetti** ai lati del componente per simulare l'ingombro della pinza (ai lati della pinza per avere, una volta rimosso il robot, l'area libera fra il componente di riferimento e i due oggetti rappresenterà l'area di ingombro della pinza del robot)
+    
+    :::{important}
+    Lasciare gli oggetti leggermente più distanti del necessario per evitare errori nella creazione del modello. (margine 2-3 mm)
+    :::
+    :::{figure} img/simulazione_ingombro_pinza.png
+        :alt: Simulazione ingombro pinza
+        :width: 70%
+        :align: center
+        
+        Esempio di posizionamento simulatori ingombro pinza. Nota il margine di sicurezza lasciato tra pezzo e simulatori.
+    :::
+* - **4.**
+  - Annotare le Coordinate:
+    - Salvare le coordinate dell'ultimo asse del robot:
+      - **X** (coordinata X)
+      - **Y** (coordinata Y)
+      - **Rz** (rotazione attorno a Z)
+    
+    :::{important}
+    Annotare queste coordinate! Saranno indispensabili nella fase di calibrazione robot.
+    :::
+* - **5.**
+  - Allontanare il robot con il pendant **senza spostare nulla** sulla superficie
+````
+---
+
+## **Step 2: Acesso alla pagina Clearance**
+
+```{list-table}
+:widths: 5 95
+
+* - **1.**
+  - Dalla pagina **Locator Model**, dopo aver cliccato su **Next**, si aprirà l'elenco de clearance disponibili (fino a 8 per modello).
+    
+    **Panoramica interfaccia**
+    
+    :::{figure} img/paginaclearances.png
+    :alt: Simulazione ingombro pinza
+    :width: 70%
+    :align: center
+    
+    Screen pagina Clearances.
+    :::
+    
+    | Elemento | Descrizione |
+    |----------|-------------|
+    | **Clearance 1...8** | Slot disponibili per creare fino a 8 clearance diversi per lo stesso modello |
+    | **Test (globale)** | Pulsante per testare simultaneamente tutte le clearance abilitati |
+    | **Next** | Avanzamento alla fase successiva (Robot Pick) dopo configurazione clearance |
+
+* - **2.**
+  - Cliccare su **Clearance 1**, si aprirà la pagina relativa alla configurazione del primo clearance "Clearance 1"
+    
+    **Panoramica interfaccia configurazione**
+    
+    | Parametro | Funzione |
+    |-----------|----------|
+    | **Enable Histogram** | Attiva questo istogramma rendendolo operativo |
+    | **Expression Builder** | Strumento per configurare automaticamente le soglie di rilevamento |
+    | **Mean and Standard Deviation** | Valori statistici calcolati sull'area selezionata (media e deviazione standard dei livelli di grigio) |
+    | **Test** | Verifica immediata del funzionamento dell'istogramma |
+    | **Result** | Indicatore visivo dello stato (Verde = OK, Rosso = Triggered) |
+```
+---
+
+## **Step 3: Attivazione e Posizionamento Area**
+
+```{list-table}
+* - 3. 
+  - Cliccare su **Enable Clearance** per attivare la clearance 
+* - 4. 
+  - Spostare il **riquadro** dell'istogramma nell'area che deve rimanere libera
+      - Tipicamente: area di presa della pinza (una clearance per ogni area di presa della pinza)
+      - Margini attorno al componente
+      - Zone di passaggio del robot
+    :::{important}
+    Creare sempre una clearance leggermente più grande dello stretto necessario per evitare falsi errori.
+    :::
+```
+---
+
+## **Step 4: Configurazione Automatica**
+
+```{list-table}
+* - 5. 
+  - Cliccare su **AUTO** in Expression Builder
+* - 6. 
+  - Cliccare su **TEST**
+* - 7. 
+  - Verificare che il riquadro diventi **verde** 
+* - 8. 
+  - Cliccare su **Next**
+```
+
+```{warning}
+**Cosa fare se il test fallisce (riquadro rosso)?**
+
+Se dopo AUTO e TEST il riquadro rimane rosso:
+
+**Possibili cause:**
+- C'è effettivamente qualcosa nell'area (pezzo, ombra, sporcizia)
+- L'illuminazione è variata tra configurazione AUTO e TEST
+- L'area selezionata include bordi del FlexiBowl o artefatti
+
+**Soluzioni:**
+1. Verificare visivamente che l'area sia completamente libera
+2. Pulire la superficie del FlexiBowl se necessario
+3. Riposizionare leggermente il riquadro escludendo bordi/artefatti
+4. Ripetere AUTO con condizioni di illuminazione stabili
+5. Ripetere TEST per verificare
+```
+
+---
+
+## Clearance Multipli - Quando Usarli
+
+Crea più clearance quando:
+- Il tool del robot è una pinza: serve una clearance per ognuna delle due aree occupate dalla pinza ai lati del componente di riferimento 
+- Ci sono più punti critici da monitorare
+- L'area di presa ha geometrie particolari
+
+### **Step 2-3: Ripetizione**
+Selezionare una nuova clearance dalla pagina elenco delle Clearances, tipo "Clearance 2" e Ripetere gli Step 2-3.
+Ripetere la procedura per ogni clearance necessario (fino a 8 per modello). 
+
+### **Step 4: Test Complessivo**
+Nella pagina di elenco di tutte le clearance, cliccare su **TEST**
+Visualizzare tutte le clearance contemporaneamente
+
+---
+
+## Interpretazione Stati
+
+### Stati delle Clearance 
+
+```{list-table}
+:header-rows: 1
+:widths: 15 35 50
+
+* - Colore
+  - Stato
+  - Significato
+* - 🟢 Verde
+  - OK
+  - Area libera, prelievo possibile
+* - 🔴 Rosso
+  - Triggered
+  - Area occupata, prelievo non sicuro
+```
+
+### Cosa Significa "Triggered"?
+
+Una clearance diventa rossa (triggered) quando rileva al suo interno:
+- Presenza di altri componenti
+- Ombre o riflessi significativi
+- Qualsiasi elemento che rende l'area non libera
+
+---
+
+## Finalizzazione
+
+### **Step 5: Proseguimento**
+6. Dopo aver configurato tutte le clearance necessarie, cliccare su **Next**
+7. Si aprirà la pagina **Robot Model Pick Cam**
+
+
+
+```{seealso}
+Procedi alla [Calibrazione Robot](#pagina-6-calibrazione-robot-pick) per completare la configurazione.
+```
+
+```{toctree}  
+20b_Expert.md
+```

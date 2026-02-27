@@ -105,8 +105,8 @@ Se sono elencate multiple camere o dispositivi:
 
 ```{list-table}
 * - **Attivazione sistema di acquisizione**
-  - 14. Dopo aver selezionato il formato corretto, cliccare su **Initialize Acquisition**
-    15.Attendere il completamento dell'inizializzazione (pochi secondi)
+  - 14. Dopo aver selezionato il formato corretto, cliccare su **Initialize Acquisition**  
+  15.Attendere il completamento dell'inizializzazione (pochi secondi)
 * - **Verifica funzionamento acquisizione**
   - 16. Localizzare il pulsante **Run** in alto a sinistra dell'interfaccia (icona "play" o simile)
     17. Cliccare su **Run** ripetutamente (5-10 volte) per acquisire immagini di test

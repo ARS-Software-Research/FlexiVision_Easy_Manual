@@ -77,7 +77,6 @@ table td {
    TABLE HOVER EFFECTS
    ============================================ */
 
-/* Selettori multipli per coprire diverse strutture di tabelle */
 table tbody tr,
 table.docutils tbody tr,
 .docutils tbody tr,
@@ -86,28 +85,24 @@ table.docutils tbody tr,
     cursor: pointer;
 }
 
-/* Colore di sfondo hover - selettori multipli */
 table tbody tr:hover,
 table.docutils tbody tr:hover,
 .docutils tbody tr:hover,
 .bd-content table tbody tr:hover,
 table.list-table tbody tr:hover {
-    background-color: #cfe2ff !important; /* Blu chiaro con ottimo contrasto */
+    background-color: #cfe2ff !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
 }
 
-/* Versione più aggressiva - applica a TUTTE le tabelle */
 tbody tr:hover {
     background-color: #cfe2ff !important;
 }
 
-/* Assicura che il testo rimanga sempre nero/scuro per leggibilità */
 tbody tr:hover td,
 tbody tr:hover th {
-    color: #212529 !important; /* Testo scuro per contrasto ottimale */
+    color: #212529 !important;
 }
 
-/* Mantieni il colore dell'header invariato */
 table thead tr:hover,
 thead tr:hover {
     background-color: inherit !important;
@@ -117,13 +112,49 @@ thead tr:hover {
 
 
 /* ============================================
+   INLINE ICON FIX DEFINITIVO
+   ============================================ */
+
+.bd-content table img.inline-icon {
+    height: 39px;
+    width: auto;
+    max-height: none;
+}
+
+.bd-content table td {
+    line-height: 1.6;
+}
+
+.bd-content table td:first-child {
+    text-align: center;
+    vertical-align: middle;
+}
+/* Dimensioni variabili */
+
+.bd-content table img.inline-icon.icon-small {
+    height: 24px;
+}
+
+.bd-content table img.inline-icon.icon-medium {
+    height: 50px;
+}
+
+.bd-content table img.inline-icon.icon-large {
+    height: 60px;
+}
+
+.bd-content table img.inline-icon.icon-xl {
+    height: 80px;
+}
+
+/* ============================================
    OPTIONAL: DARK MODE SUPPORT
    ============================================ */
 
-/* Se il tema supporta dark mode, aggiungi colori appropriati */
+
 @media (prefers-color-scheme: dark) {
     table.docutils tbody tr:hover {
-        background-color: #1e3a5f !important; /* Blu scuro */
+        background-color: #1e3a5f !important;
     }
     
     table.docutils tbody tr:nth-child(even):hover {

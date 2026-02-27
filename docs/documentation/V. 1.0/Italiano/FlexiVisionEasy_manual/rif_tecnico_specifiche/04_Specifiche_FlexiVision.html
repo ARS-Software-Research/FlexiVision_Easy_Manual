@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=c7c60f48" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=4a438950" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -192,10 +192,10 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">INSTALLAZIONE DEL SISTEMA</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../INSTALLAZIONE_SISTEMA/09_Installazione_Meccanica.html"><strong>Installazione Meccanica del Sistema</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../INSTALLAZIONE_SISTEMA/10_Cablaggio_Connessioni.html"><strong>Cablaggio e Connessioni</strong></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">QUICKSTART</span></p>
 <ul class="nav bd-sidenav">
@@ -273,7 +273,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../27_Support.html">Appendici e Contatti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../27_Support.html"><strong>Appendici e Contatti</strong></a></li>
 </ul>
 
     </div>
@@ -436,6 +436,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche">Specifiche fisiche</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumento-laser-per-calibrazione">Strumento Laser per Calibrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#griglia-di-calibrazione">Griglia di calibrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importanza-della-griglia-dedicata-ars">Importanza della griglia dedicata ARS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-griglia-ars-vs-griglia-stampata">Confronto: Griglia ARS vs Griglia Stampata</a></li>
@@ -456,7 +457,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="specifiche-dettagliate-flexivision">
-<h1><strong>Specifiche Dettagliate FlexiVision</strong><a class="headerlink" href="#specifiche-dettagliate-flexivision" title="Link to this heading">#</a></h1>
+<span id="specifiche-tecniche"></span><h1><strong>Specifiche Dettagliate FlexiVision</strong><a class="headerlink" href="#specifiche-dettagliate-flexivision" title="Link to this heading">#</a></h1>
 <p>Questa sezione fornisce le specifiche tecniche complete del sistema FlexiVision Easy, inclusi dettagli su camera industriale, VisionController, griglia di calibrazione, protocolli di comunicazione e configurazioni hardware.</p>
 <hr class="docutils" />
 <section id="camera">
@@ -482,14 +483,70 @@ document.write(`
 <tr class="row-even"><td><p>Modello</p></td>
 <td><p>CAM-CIC-5000-20G-1</p></td>
 </tr>
-<tr class="row-odd"><td><p>Sensore</p></td>
-<td><p>Sony IMX264 CMOS Global Shutter</p></td>
-</tr>
-<tr class="row-even"><td><p>Pixel Effettivi</p></td>
+<tr class="row-odd"><td><p>Pixel Effettivi</p></td>
 <td><p>5 MP (2448 × 2048)</p></td>
 </tr>
-<tr class="row-odd"><td><p>Pixel Size</p></td>
+<tr class="row-even"><td><p>SNR</p></td>
+<td><p>&gt;38 dB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dynamic Range</p></td>
+<td><p>70 dB</p></td>
+</tr>
+<tr class="row-even"><td><p>GPIO</p></td>
+<td><p>Connettore Hirose 6-pin: 1 ingresso opto-isolato, 1 uscita opto-isolata, 1 I/O configurabile</p></td>
+</tr>
+<tr class="row-odd"><td><p>Formato Immagine</p></td>
+<td><p>Mono8 / 10 / 10Packed</p></td>
+</tr>
+<tr class="row-even"><td><p>Binning</p></td>
+<td><p>Support</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gain</p></td>
+<td><p>X1 ~ X32</p></td>
+</tr>
+<tr class="row-even"><td><p>Gamma</p></td>
+<td><p>Da 0 a 4, supporto LUT</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tempo di Esposizione</p></td>
+<td><p>34.23 μS ~ 1S</p></td>
+</tr>
+<tr class="row-even"><td><p>Modalità Trigger</p></td>
+<td><p>Software / Hardware / Free run</p></td>
+</tr>
+<tr class="row-odd"><td><p>Buffer Immagine</p></td>
+<td><p>256 MB</p></td>
+</tr>
+<tr class="row-even"><td><p>impostazioni utente</p></td>
+<td><p>Support two sets of user-defined configuration</p></td>
+</tr>
+<tr class="row-odd"><td><p>Consumo Energetico</p></td>
+<td><p>12V ≈ 3.2 W</p></td>
+</tr>
+<tr class="row-even"><td><p>Attacco Obiettivo</p></td>
+<td><p>C-mount</p></td>
+</tr>
+<tr class="row-odd"><td><p>Temperatura Operativa</p></td>
+<td><p>-30°C ~ +50°C</p></td>
+</tr>
+<tr class="row-even"><td><p>Temperatura di Stoccaggio</p></td>
+<td><p>-30°C ~ +80°C</p></td>
+</tr>
+<tr class="row-odd"><td><p>Certificazioni</p></td>
+<td><p>CE, FCC, RoHS</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Risoluzione</p></td>
+<td><p>2448 x 2048</p></td>
+</tr>
+<tr class="row-even"><td><p>Pixel Size</p></td>
 <td><p>3.45 × 3.45 μm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sensore</p></td>
+<td><p>IMX264 CMOS Global Shutter</p></td>
 </tr>
 <tr class="row-even"><td><p>Dimensione Sensore</p></td>
 <td><p>2/3”</p></td>
@@ -500,50 +557,8 @@ document.write(`
 <tr class="row-even"><td><p>Bit Depth</p></td>
 <td><p>12 bit</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNR</p></td>
-<td><p>&gt;38 dB</p></td>
-</tr>
-<tr class="row-even"><td><p>Dynamic Range</p></td>
-<td><p>70 dB</p></td>
-</tr>
-<tr class="row-odd"><td><p>Formato Immagine</p></td>
-<td><p>Mono8 / 10 / 10Packed</p></td>
-</tr>
-<tr class="row-even"><td><p>Gain</p></td>
-<td><p>X1 ~ X32</p></td>
-</tr>
-<tr class="row-odd"><td><p>Gamma</p></td>
-<td><p>Da 0 a 4, supporto LUT</p></td>
-</tr>
-<tr class="row-even"><td><p>Tempo di Esposizione</p></td>
-<td><p>34.23 μS ~ 1S</p></td>
-</tr>
-<tr class="row-odd"><td><p>Modalità Trigger</p></td>
-<td><p>Software / Hardware / Free run</p></td>
-</tr>
-<tr class="row-even"><td><p>Buffer Immagine</p></td>
-<td><p>256 MB</p></td>
-</tr>
-<tr class="row-odd"><td><p>Consumo Energetico</p></td>
-<td><p>12V ≈ 3.2 W</p></td>
-</tr>
-<tr class="row-even"><td><p>Attacco Obiettivo</p></td>
-<td><p>C-mount</p></td>
-</tr>
-<tr class="row-odd"><td><p>GPIO</p></td>
-<td><p>Connettore Hirose 6-pin: 1 ingresso opto-isolato, 1 uscita opto-isolata, 1 I/O configurabile</p></td>
-</tr>
-<tr class="row-even"><td><p>Interfaccia</p></td>
-<td><p>GigE Vision V2.0 / GenICam</p></td>
-</tr>
-<tr class="row-odd"><td><p>Temperatura Operativa</p></td>
-<td><p>-30°C ~ +50°C</p></td>
-</tr>
-<tr class="row-even"><td><p>Temperatura di Stoccaggio</p></td>
-<td><p>-30°C ~ +80°C</p></td>
-</tr>
-<tr class="row-odd"><td><p>Certificazioni</p></td>
-<td><p>CE, FCC, RoHS</p></td>
+<tr class="row-odd"><td><p>Interfaccia</p></td>
+<td><p>GigE, POE</p></td>
 </tr>
 </tbody>
 </table>
@@ -643,7 +658,7 @@ document.write(`
 <section id="specifiche-fisiche-e-dimensioni">
 <h3>Specifiche fisiche e dimensioni<a class="headerlink" href="#specifiche-fisiche-e-dimensioni" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../../_images/Dimensioni_Cam.png"><img alt="Dimensioni camera CAM-CIC-5000-20G-1" src="../../_images/Dimensioni_Cam.png" style="width: 100%;" />
+<a class="reference internal image-reference" href="../../_images/Dimensioni_Cam1.png"><img alt="Dimensioni camera CAM-CIC-5000-20G-1" src="../../_images/Dimensioni_Cam1.png" style="width: 100%;" />
 </a>
 <figcaption>
 <p><span class="caption-text">Dimensioni camera CAM-CIC-5000-20G-1 (mm)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
@@ -692,6 +707,109 @@ document.write(`
 </section>
 <section id="obiettivo">
 <span id="specifiche-obiettivo"></span><h2>Obiettivo<a class="headerlink" href="#obiettivo" title="Link to this heading">#</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/Ottica1.png"><img alt="Camera FlexiVision CAM-CIC-5000-20G-1" src="../../_images/Ottica1.png" style="width: 50%;" />
+</a>
+</figure>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parametro</p></th>
+<th class="head"><p>Ingrandimento di Riferimento</p></th>
+<th class="head"><p>M.O.D.</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Tipo di lente</strong></p></td>
+<td><p>CCTV Lens</p></td>
+<td><p>CCTV Lens</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Posizione di fuoco</strong></p></td>
+<td><p>Reference Magnification</p></td>
+<td><p>M.O.D.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Ingrandimento</strong></p></td>
+<td><p>0.069</p></td>
+<td><p>0.167</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Lunghezza focale (mm)</strong></p></td>
+<td><p>34.97</p></td>
+<td><p>34.97</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Numero F (Fno)</strong></p></td>
+<td><p>2.00 ~ 16.00</p></td>
+<td><p>2.00 ~ 16.00</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Apertura Numerica (NA)</strong></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Distanza di lavoro / oggetto (mm)</strong></p></td>
+<td><p>500.0 / 507.0</p></td>
+<td><p>200.0 / 207.0</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Distanza oggetto-immagine (mm)</strong></p></td>
+<td><p>555.75</p></td>
+<td><p>259.16</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Lunghezza meccanica tubo (mm)</strong></p></td>
+<td><p>36.30 ~ 38.20</p></td>
+<td><p>36.30 ~ 38.20</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Back focus lente (mm)</strong></p></td>
+<td><p>14.75</p></td>
+<td><p>18.16</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Profondità di campo (mm)</strong></p></td>
+<td><p>35.476</p></td>
+<td><p>6.336</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Risoluzione &#64;550nm (µm)</strong></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Posizione piano principale Ant./Post. (mm)</strong></p></td>
+<td><p>37.60 / -22.61</p></td>
+<td><p>37.60 / -22.61</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Posizione pupilla Entr./Usc. (mm)</strong></p></td>
+<td><p>25.22 / -41.78</p></td>
+<td><p>25.22 / -41.78</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Diametro pupilla Entr./Usc. (mm)</strong></p></td>
+<td><p>17.03 / 26.36</p></td>
+<td><p>17.03 / 26.36</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Angolo di campo (°) H × V</strong></p></td>
+<td><p>13.69 × 10.34</p></td>
+<td><p>12.62 × 9.76</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Distorsione TV (%)</strong></p></td>
+<td><p>-0.088</p></td>
+<td><p>-0.142</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Illuminazione relativa (%)</strong></p></td>
+<td><p>44.95</p></td>
+<td><p>50.20</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Peso (g)</strong></p></td>
+<td><p>50</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Attacco (Mount)</strong></p></td>
+<td><p>C-mount</p></td>
+<td><p>C-mount</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Cerchio immagine (mm)</strong></p></td>
+<td><p>φ11</p></td>
+<td><p>φ11</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Camera massima compatibile</strong></p></td>
+<td><p>2/3”</p></td>
+<td><p>2/3”</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr class="docutils" />
 </section>
 <section id="visioncontroller">
@@ -855,7 +973,7 @@ document.write(`
 <section id="specifiche-fisiche">
 <h3>Specifiche fisiche<a class="headerlink" href="#specifiche-fisiche" title="Link to this heading">#</a></h3>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../../_images/Dim_PC.png"><img alt="Dimensioni VisionController" src="../../_images/Dim_PC.png" style="width: 80%;" />
+<a class="reference internal image-reference" href="../../_images/Dim_PC1.png"><img alt="Dimensioni VisionController" src="../../_images/Dim_PC1.png" style="width: 80%;" />
 </a>
 </figure>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -896,6 +1014,45 @@ document.write(`
 </div>
 <hr class="docutils" />
 </section>
+</section>
+<section id="strumento-laser-per-calibrazione">
+<span id="laser"></span><h2>Strumento Laser per Calibrazione<a class="headerlink" href="#strumento-laser-per-calibrazione" title="Link to this heading">#</a></h2>
+<p>Lo Strumento Laser è una soluzione avanzata per la calibrazione che migliora la precisione con cui viene salvato il punto di riferimento del robot.
+Il beneficio principale del laser è che non richiede un contatto fisico con la griglia di calibrazione. Funzionando come un puntatore ad alta precisione, il laser consente all’operatore di allineare il punto target in modo visivo e ripetibile sulla griglia, offrendo un grado di accuratezza molto superiore rispetto all’uso di una punta fisica.
+Questa precisione è essenziale per il successo della calibrazione e si integra perfettamente con la ripetibilità garantita dalla Griglia di Calibrazione Dedicata ARS.</p>
+<p><img alt="Laser Cal" src="../../_images/laser_calibration.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Caratteristica</p></th>
+<th class="head"><p>Strumento Laser (Laser Tool)</p></th>
+<th class="head"><p>Strumento a Punta (Tip Tool) Standard</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Metodo di Riferimento</p></td>
+<td><p>Non a contatto (puntatore visivo)</p></td>
+<td><p>A contatto (punta meccanica/fisica)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Precisione del Riferimento</p></td>
+<td><p>Massima precisione; l’operatore allinea visivamente il punto con accuratezza.</p></td>
+<td><p>Media, subordinata alla vista dell’operatore</p></td>
+</tr>
+<tr class="row-even"><td><p>Facilità d’Uso</p></td>
+<td><p>Semplifica la procedura di allineamento visivo.</p></td>
+<td><p>Richiede maggiore attenzione nel posizionamento e nell’evitare l’inclinazione.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vantaggio Chiave</p></td>
+<td><p>Consente di salvare il punto di riferimento robot con la massima fedeltà possibile, essenziale per l’accuratezza finale del picking.</p></td>
+<td><p>Metodo base, ma meno preciso del laser.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Suggerimento</p>
+<p>L’utilizzo dello Strumento Laser in combinazione con la Griglia di Calibrazione Dedicata ARS costituisce la metodologia più robusta e precisa per l’installazione del sistema FlexiVision</p>
+</div>
+<hr class="docutils" />
 </section>
 <section id="griglia-di-calibrazione">
 <span id="specifiche-griglia"></span><h2>Griglia di calibrazione<a class="headerlink" href="#griglia-di-calibrazione" title="Link to this heading">#</a></h2>
@@ -967,23 +1124,47 @@ document.write(`
 <section id="componenti-opzionali">
 <h2>Componenti opzionali<a class="headerlink" href="#componenti-opzionali" title="Link to this heading">#</a></h2>
 <p>Componenti aggiuntivi disponibili separatamente:</p>
-<div class="admonition docutils">
-<p><a href="rif_tecnico_specifiche/08_Opzioni.md" style="text-decoration: none; color: inherit;"><strong>Toplight</strong>: Illuminatore LED dedicato per applicazioni con scarsa illuminazione ambientale</a></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#toplight"><span class="std std-ref"><strong>Toplight</strong></span></a></div>
 </div>
-<div class="admonition docutils">
-<p><a href="rif_tecnico_specifiche/08_Opzioni.md" style="text-decoration: none; color: inherit;"><strong>Backlight</strong>: Illuminatore LED</a></p>
 </div>
-<div class="admonition docutils">
-<p><a href="rif_tecnico_specifiche/08_Opzioni.md" style="text-decoration: none; color: inherit;"><strong>Laser Tool</strong>: strumento laser per calibrazione ad alta precisione</a></p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#backlight"><span class="std std-ref"><strong>Backlight</strong></span></a></div>
 </div>
-<div class="admonition docutils">
-<p>Cavi di ricambio e di lunghezza personalizzata</p>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="#laser"><span class="std std-ref"><strong>Laser Tool</strong></span></a></div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#supporto"><span class="std std-ref"><strong>Supporto per Camera e Toplight</strong></span></a></div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#switch"><span class="std std-ref"><strong>Switch</strong></span></a></div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a class="reference internal" href="08_Opzioni.html#display"><span class="std std-ref"><strong>Display</strong></span></a></div>
+</div>
 </div>
 </section>
 <hr class="docutils" />
 <section id="panoramica-collegamenti">
 <h2>Panoramica collegamenti<a class="headerlink" href="#panoramica-collegamenti" title="Link to this heading">#</a></h2>
-<p><img alt="Panoramica Collegamenti" src="../../_images/pan_collegamenti1.png" /></p>
+<p><img alt="Panoramica Collegamenti" src="../../_images/pan_collegamenti.png" /></p>
 <p><em>Schema di collegamento completo del sistema FlexiVision Easy con robot e FlexiBowl</em></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
@@ -1331,6 +1512,7 @@ ___\\ \\     // //___
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#specifiche-fisiche">Specifiche fisiche</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strumento-laser-per-calibrazione">Strumento Laser per Calibrazione</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#griglia-di-calibrazione">Griglia di calibrazione</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#importanza-della-griglia-dedicata-ars">Importanza della griglia dedicata ARS</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confronto-griglia-ars-vs-griglia-stampata">Confronto: Griglia ARS vs Griglia Stampata</a></li>
