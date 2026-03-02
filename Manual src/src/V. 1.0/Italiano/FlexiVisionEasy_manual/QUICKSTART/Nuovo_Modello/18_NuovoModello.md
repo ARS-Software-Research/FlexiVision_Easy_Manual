@@ -1,3 +1,4 @@
+(nuovomodello)=
 # **Creare un Nuovo Modello**
 
 In questa pagina vedremo come creare un modello di riferimento per il riconoscimento dei componenti.
@@ -61,7 +62,7 @@ Per ora, concentrarsi sul completamento del primo modello.
 ```
 ---
 
-## **Step 2: Procedura di Training**
+## **Step 3: Procedura di Training**
 
 ```{video} video/TastoInfo_TrainModel_1280x720.mp4
 :width: 100%
@@ -132,7 +133,7 @@ Per ora, concentrarsi sul completamento del primo modello.
 ```
 ---
 
-## **Step 3: Controllo Visivo**
+## **Step 4: Controllo Visivo**
 
 Dopo aver generato il modello, è fondamentale verificarne la qualità prima di procedere.
 
@@ -181,7 +182,7 @@ Effettuare modifiche graduali (step di 0.1-0.2) e testare ogni volta.
 ```
 ---
 
-## **Step 4: Salvataggio**
+## **Step 5: Salvataggio**
 ```{list-table}
 * - 12. 
   - Nominare il modello con un nome descrittivo  
@@ -190,7 +191,7 @@ Effettuare modifiche graduali (step di 0.1-0.2) e testare ogni volta.
 ```
 
 ```{seealso}
-Procedi alla [Definizione ROI](Nuovo_Modello/19_ROI_TEST.md) per continuare la configurazione.
+Procedi alla [Definizione ROI](roitest) per continuare la configurazione.
 ```
 ```{toctree}  
 18b_Expert.md

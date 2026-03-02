@@ -76,7 +76,7 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
 * - **Fissaggio**
   - Guida DIN 35 mm o viti M4 su pannello
 * - **Temperatura ambiente**
-  - 0°C ~ +50°C (verificare specifiche complete nella sezione [Specifiche VisionController](rif_tecnico_specifiche/04_Specifiche_FlexiVision.md#visioncontroller))
+  - 0°C ~ +50°C (verificare specifiche complete nella sezione [Specifiche VisionController]((specifiche_VC)))
 * - **Protezione**
   - IP40 minimo (consigliato montaggio in quadro elettrico IP54)
 ```

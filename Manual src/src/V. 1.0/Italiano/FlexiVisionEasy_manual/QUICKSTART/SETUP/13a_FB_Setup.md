@@ -1,6 +1,7 @@
+(fbsetup)=
 # **Passo 4: FlexiBowl Setup**
 
-Questa sezione descrive la procedura per connettere e configurare il FlexiBowl (alimentatore vibrante) con il sistema FlexiVision Easy.
+Questa sezione descrive la procedura per connettere e configurare il FlexiBowl (alimentatore vibrante) con il sistema FlexiVision One.
 
 ```{note}
 
@@ -72,7 +73,7 @@ Se l'indicatore rimane rosso o appare un messaggio di errore:
    - Digitare: `ping 192.168.1.XXX` (sostituire con IP effettivo)
    - Se il ping fallisce, problema di rete; se ha successo, problema software
 
-Se il problema persiste, consultare [Troubleshooting](../26_trb_shooting_guide.md).
+Se il problema persiste, consultare [Troubleshooting](troubleshooting).
 ```
 
 ---

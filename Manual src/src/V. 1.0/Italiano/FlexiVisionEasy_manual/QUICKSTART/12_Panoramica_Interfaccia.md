@@ -1,5 +1,7 @@
 # **Panoramica dell'interfaccia**
-descrizione generale interfaccia 
+L’interfaccia di FlexiVision One è strutturata in sezioni funzionali che guidano l’utente dalla configurazione iniziale alla gestione operativa del sistema.
+Ogni pagina fornisce informazioni in tempo reale su stato macchina, connessioni, prestazioni e parametri di processo, con accesso diretto alle funzioni principali.
+La navigazione è progettata per garantire semplicità d’uso, controllo immediato delle operazioni e monitoraggio continuo delle performance di visione, alimentazione e robot.
 ## Pagina Home  
 <img src="../QUICKSTART/img/pagina_homeW.png" class="only-light" style="width: 20%; height: auto;">
 <img src="../QUICKSTART/img/pagina_homeB.png" class="only-dark" style="width: 20%; height: auto;">

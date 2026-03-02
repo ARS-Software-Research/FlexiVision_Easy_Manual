@@ -1,7 +1,7 @@
-
+(dashboard)=
 # **Monitoraggio Applicazione: Dashboard**
 
-La **Dashboard** è l'interfaccia principale per il monitoraggio in tempo reale del sistema FlexiVision Easy. In questa pagina è possibile verificare l'efficienza del processo, analizzare i tempi di ciclo, validare il riconoscimento dei componenti e identificare eventuali colli di bottiglia nel sistema.
+La **Dashboard** è l'interfaccia principale per il monitoraggio in tempo reale del sistema FlexiVision One. In questa pagina è possibile verificare l'efficienza del processo, analizzare i tempi di ciclo, validare il riconoscimento dei componenti e identificare eventuali colli di bottiglia nel sistema.
 
 ```{note}
 **Accesso Dashboard**
@@ -167,9 +167,13 @@ Indicatori di stato delle comunicazioni con i dispositivi esterni:
 * - Indicatore
   - Descrizione
 * - **FlexiBowl**
-  - Stato della connessione hardware tra il VisionController (PC) e il controller del FlexiBowl. **Verde**: Connesso e comunicante. **Rosso**: Disconnesso o errore comunicazione.
+  - Stato della connessione hardware tra il VisionController (PC) e il controller del FlexiBowl.  
+    **Verde**: Connesso e comunicante.  
+    **Rosso**: Disconnesso o errore comunicazione.
 * - **Robot**
-  - Stato della comunicazione TCP/IP con il robot o PLC incaricato del prelievo. **Verde**: Connessione TCP stabilita. **Rosso**: Disconnesso o timeout comunicazione.
+  - Stato della comunicazione TCP/IP con il robot o PLC incaricato del prelievo.   
+    **Verde**: Connessione TCP stabilita.  
+    **Rosso**: Disconnesso o timeout comunicazione.
 ```
 
 ```{warning}

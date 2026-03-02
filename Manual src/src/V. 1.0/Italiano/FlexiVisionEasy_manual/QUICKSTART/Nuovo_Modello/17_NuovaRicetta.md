@@ -1,6 +1,7 @@
+(nuovaricetta)=
 # **Creare una Nuova Ricetta**
 
-Questa sezione descrive come creare una nuova ricetta applicativa in FlexiVision Easy. Una ricetta è il contenitore principale che include tutti i modelli pezzo, le configurazioni FlexiBowl/Hopper e i parametri robot necessari per un'applicazione completa di picking.
+Questa sezione descrive come creare una nuova ricetta applicativa in FlexiVision One. Una ricetta è il contenitore principale che include tutti i modelli pezzo, le configurazioni FlexiBowl/Hopper e i parametri robot necessari per un'applicazione completa di picking.
 
 ```{note}
 **Creare una nuova ricetta quando:**
@@ -83,7 +84,7 @@ se invece cambio la Tramoggia, mi basta aggiornare il campo signal della tramogg
 
 ### Step 1: Accesso alla sezione Ricette
 
-1. Dalla pagina principale del software FlexiVision Easy, cliccare su **Recipes**
+1. Dalla pagina principale del software FlexiVision One, cliccare su **Recipes**
 
 2. Si apre la pagina di gestione ricette dove sono elencate tutte le ricette esistenti
 
@@ -227,7 +228,7 @@ Vantaggi:
 **Protezione del lavoro svolto**
 
 Dopo aver creato e configurato una ricetta:
-- Utilizzare la funzione di backup del software ([Backup Management](../rif_tecnico_specifiche/integrazione_software/07_Backup_management.md))
+- Utilizzare la funzione di backup del software ([Backup Management](backup))
 - Esportare periodicamente le ricette su supporto esterno
 - Documentare parametri critici su supporto cartaceo/digitale
 

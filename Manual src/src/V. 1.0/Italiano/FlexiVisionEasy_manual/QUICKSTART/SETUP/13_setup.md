@@ -1,6 +1,7 @@
+(setupcomponenti)=
 # **Configurazione Iniziale del Sistema**
 
-Questa sezione guida l'utente attraverso la configurazione completa dei componenti hardware e software del sistema FlexiVision Easy. È fondamentale seguire i passaggi nell'ordine indicato per garantire il corretto funzionamento del sistema.
+Questa sezione guida l'utente attraverso la configurazione completa dei componenti hardware e software del sistema FlexiVision One. È fondamentale seguire i passaggi nell'ordine indicato per garantire il corretto funzionamento del sistema.
 
 ```{note}
 **Prerequisiti**
@@ -39,7 +40,7 @@ L'ordine dei setup è importante! Non saltare passaggi o modificare la sequenza,
 
 ### Passo 1: Login al sistema
 
-All'avvio del software FlexiVision Easy, viene presentata la schermata di login.
+All'avvio del software FlexiVision One, viene presentata la schermata di login.
 ```{list-table} 
    :widths: 10 90
    :header-rows: 0
@@ -56,7 +57,7 @@ All'avvio del software FlexiVision Easy, viene presentata la schermata di login.
 ```{tip}
 **Gestione utenti**
 
-FlexiVision Easy supporta profili utente multipli con diversi livelli di permessi:
+FlexiVision One supporta profili utente multipli con diversi livelli di permessi:
 - **ARS**
 - **Engineer**
 - **Technician**
@@ -142,7 +143,7 @@ FlexiVision Easy permette di creare ricette multiple per diversi tipi di pezzi o
 
 - Utilizzare nomi che identificano chiaramente il pezzo (es: "Vite_M6_Zincata")
 
-Per maggiori dettagli sulla gestione ricette, consultare la sezione [Creare una nuova ricetta](Nuovo_Modello/17_NuovaRicetta.md).
+Per maggiori dettagli sulla gestione ricette, consultare la sezione [Creare una nuova ricetta](nuovaricetta).
 ```
 
 ---
@@ -173,16 +174,16 @@ Tutti i setup hardware sono accessibili dalla pagina centrale **SETUP** del soft
   - Componente
   - Descrizione
 * - **4**
-  - [FlexiBowl Setup](SETUP/13a_FB_Setup.md)
+  - [FlexiBowl Setup](fbsetup)
   - Connessione e test comunicazione con l'alimentatore vibrante
 * - **5**
-  - [Hopper Setup](SETUP/13b_Hopper_Setup.md)
+  - [Hopper Setup](hoppersetup)
   - (Opzionale) Configurazione tramoggia esterna se presente
 * - **6**
-  - [Robot Setup](SETUP/13c_Robot_Setup.md)
+  - [Robot Setup](robotsetup)
   - Configurazione porta TCP/IP e test comunicazione con il robot
 * - **7**
-  - [Camera Setup](SETUP/13d_Camera_Setup.md)
+  - [Camera Setup](camerasetup)
   - Configurazione acquisizione immagini e test camera
 ```
 
@@ -213,7 +214,7 @@ Se FlexiBowl, robot o camera non sono raggiungibili:
 4. Utilizzare il comando `ping` da terminale per testare la raggiungibilità
 5. Disabilitare temporaneamente firewall sul VisionController per test
 
-Per dettagli sulla configurazione di rete, vedere [Cablaggio e Connessioni](10_Cablaggio_Connessioni.md).
+Per dettagli sulla configurazione di rete, vedere [Cablaggio e Connessioni](cablaggio).
 ```
 
 ### Licenza non attivabile

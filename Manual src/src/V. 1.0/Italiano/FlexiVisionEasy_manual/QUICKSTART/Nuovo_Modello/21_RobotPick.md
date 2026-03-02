@@ -1,3 +1,4 @@
+(robotpick)=
 # **Calibrazione Robot Pick**
 In questa pagina vedremo come collegare le coordinate della visione con quelle del robot per consentire un prelievo preciso dei componenti.
 
@@ -59,9 +60,9 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
 ```{list-table}
 * - 3. 
   - Nel riquadro **Insert Robot Coordinates**, inserire le coordinate salvate durante la creazione del modello:
-      - **X cord** → Coordinata X annotata al punto 8 della [Creazione Modello]()
-      - **Y cord** → Coordinata Y annotata al punto 8 della [Creazione Modello]()
-      - **RZ cord** → Rotazione Z annotata al punto 8 della [Creazione Modello]()
+      - **X cord** → Coordinata X annotata al punto 8 della [Creazione Modello](nuovomodello)
+      - **Y cord** → Coordinata Y annotata al punto 8 della [Creazione Modello](nuovomodello)
+      - **RZ cord** → Rotazione Z annotata al punto 8 della [Creazione Modello](nuovomodello)
 
       :::{danger}
       Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!  
@@ -130,7 +131,7 @@ Il robot andrà a prelevarlo a X=370, Y=470
   - Per creare altri modelli nella stessa ricetta:
       - Tornare su **Edit Recipe**
       - Selezionare un nuovo modello non ancora configurato 
-      - Ripetere l'intera procedura dalla [Creazione Modello]()
+      - Ripetere l'intera procedura dalla [Creazione Modello](nuovomodello)
 
       :::{tip}
       Ogni modello nella ricetta può avere configurazioni diverse (ROI, istogrammi, offset), permettendo di gestire componenti con caratteristiche diverse nella stessa applicazione.
@@ -143,12 +144,12 @@ Il robot andrà a prelevarlo a X=370, Y=470
 
 Prima di considerare la ricetta completata, continua con :
 
-- [Configurazione del FlexiBowl ] (QUICKSTART/22_Config_FlexiBowl.md)
-- [Configurazione della Tramoggia ] (QUICKSTART/23_Config_Hopper.md)
-- [Monitoraggio Applicazione ] (QUICKSTART/24_Verifica_Risultati.md)
+- [Configurazione del FlexiBowl ](configfb)
+- [Configurazione della Tramoggia ](confighopper)
+- [Monitoraggio Applicazione ](dashboard)
 
 ```{seealso}
-- [Troubleshooting]()
+- [Troubleshooting](troubleshooting)
 ```
 
 ---
@@ -156,4 +157,4 @@ Prima di considerare la ricetta completata, continua con :
 ```{toctree}  
 21b_Expert.md
 ```
-- [Back To Top]()
+[Back To Top]()

@@ -6,8 +6,8 @@ Questa sezione guida l'utente attraverso il processo completo di creazione di un
 **Prerequisiti**
 
 Prima di procedere con la creazione di ricette e modelli, assicurarsi che:
-- Tutti i setup hardware siano completati ([Setup Componenti](SETUP/13_setup.md))
-- La calibrazione camera sia stata eseguita con successo ([Calibrazione Camera](14_calibrazione_camera.md))
+- Tutti i setup hardware siano completati ([Setup Componenti](setupcomponenti))
+- La calibrazione camera sia stata eseguita con successo ([Calibrazione Camera](calibrazione))
 - La calibrazione robot sia completata
 - Si disponga dei pezzi fisici da riconoscere
 ```
@@ -95,11 +95,11 @@ Schema completo del processo di creazione ricetta e modelli
 
 Per informazioni complete su ogni fase del processo, consultare le sezioni dedicate:
 
-- **[Creazione Nuova Ricetta](Nuovo_Modello/17_Nuova_Ricetta.md)** - Come creare e configurare una nuova ricetta
-- **[Training Modello](Nuovo_Modello/18_Training_Modello.md)** - Acquisizione immagine e creazione pattern
-- **[Definizione ROI e Filtri](Nuovo_Modello/19_Definizione_ROI.md)** - Configurazione area di ricerca e tolleranze
-- **[Creazione Istogrammi](Nuovo_Modello/20_Istogrammi.md)** - Definizione zone protette
-- **[Coordinate Robot Pick](Nuovo_Modello/21_Robot_Pick.md)** - Calcolo offset gripper
+- **[Creazione Nuova Ricetta](nuovaricetta)** - Come creare e configurare una nuova ricetta
+- **[Training Modello]((nuovomodello))** - Acquisizione immagine e creazione pattern
+- **[Definizione ROI e Filtri]((roitest))** - Configurazione area di ricerca e tolleranze
+- **[Creazione Istogrammi](istogrammi)** - Definizione zone protette
+- **[Coordinate Robot Pick](robotpick)** - Calcolo offset gripper
 
 ---
 
@@ -162,7 +162,7 @@ Seguire attentamente le procedure dettagliate nelle prossime sezioni per evitare
 - **Spiegazione Passo-Passo**:
 - **Supporto tecnico**: [support@arsautomation.com](mailto:support@arsautomation.com) per assistenza
 
-Per problemi specifici durante la creazione di modelli, consultare la sezione [Troubleshooting](../26_trb_shooting_guide.md).
+Per problemi specifici durante la creazione di modelli, consultare la sezione [Troubleshooting](troubleshooting).
 ```
 
 ---
@@ -171,7 +171,7 @@ Per problemi specifici durante la creazione di modelli, consultare la sezione [T
 
 Una volta compresa la panoramica del processo, procedere con la creazione effettiva:
 
-**→ [Inizia: Creazione Nuova Ricetta](Nuovo_Modello/17_NuovaRicetta.md)**
+**→ [Inizia: Creazione Nuova Ricetta](nuovaricetta)**
 
 ```{tip}
 **Approccio consigliato**

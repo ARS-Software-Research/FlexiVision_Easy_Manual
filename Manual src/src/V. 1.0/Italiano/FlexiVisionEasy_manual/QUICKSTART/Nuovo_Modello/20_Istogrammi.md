@@ -1,3 +1,4 @@
+(istogrammi)=
 # **Le Clearances** 
  In questa pagina vedremo come configurare le clearance per verificare che le aree critiche siano libere da ostacoli.
 
@@ -197,7 +198,7 @@ Una clearance diventa rossa (triggered) quando rileva al suo interno:
 
 
 ```{seealso}
-Procedi alla [Calibrazione Robot](#pagina-6-calibrazione-robot-pick) per completare la configurazione.
+Procedi alla [Calibrazione Robot](robotpick) per completare la configurazione.
 ```
 
 ```{toctree}  

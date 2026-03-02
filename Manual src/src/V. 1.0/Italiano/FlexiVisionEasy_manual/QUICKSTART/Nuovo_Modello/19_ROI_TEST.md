@@ -1,3 +1,4 @@
+(roitest)=
 # **Definizione ROI e Tolleranze**
 
 In questa sezione si procede alla definizione della Region Search (area di ricerca) e delle tolleranze di riconoscimento per il modello creato. Questi parametri determinano dove e con quale precisione FlexiVision cercherà i componenti durante il funzionamento.
@@ -175,7 +176,7 @@ Se Accept Threshold fosse 0.85:
 ```
 
 ```{seealso}
-Procedi alla [Configurazione Istogrammi](#pagina-5-configurazione-istogrammi) per definire le aree libere.
+Procedi alla [Configurazione Istogrammi](istogrammi) per definire le aree libere.
 ```
 
 ```{toctree}  

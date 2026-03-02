@@ -185,7 +185,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/integrazione_software/06_PlugIn.html"><strong>PlugIn</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/integrazione_software/07_Backup_management.html">7. BackUp Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/integrazione_software/07_Backup_management.html"><strong>BackUp Management</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../rif_tecnico_specifiche/08_Opzioni.html"><strong>Opzioni</strong></a></li>
@@ -465,8 +465,8 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="monitoraggio-applicazione-dashboard">
-<h1><strong>Monitoraggio Applicazione: Dashboard</strong><a class="headerlink" href="#monitoraggio-applicazione-dashboard" title="Link to this heading">#</a></h1>
-<p>La <strong>Dashboard</strong> è l’interfaccia principale per il monitoraggio in tempo reale del sistema FlexiVision Easy. In questa pagina è possibile verificare l’efficienza del processo, analizzare i tempi di ciclo, validare il riconoscimento dei componenti e identificare eventuali colli di bottiglia nel sistema.</p>
+<span id="dashboard"></span><h1><strong>Monitoraggio Applicazione: Dashboard</strong><a class="headerlink" href="#monitoraggio-applicazione-dashboard" title="Link to this heading">#</a></h1>
+<p>La <strong>Dashboard</strong> è l’interfaccia principale per il monitoraggio in tempo reale del sistema FlexiVision One. In questa pagina è possibile verificare l’efficienza del processo, analizzare i tempi di ciclo, validare il riconoscimento dei componenti e identificare eventuali colli di bottiglia nel sistema.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Accesso Dashboard</strong></p>
@@ -629,10 +629,14 @@ Id 0 = componente con score più alto (migliore corrispondenza al modello).</p><
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>FlexiBowl</strong></p></td>
-<td><p>Stato della connessione hardware tra il VisionController (PC) e il controller del FlexiBowl. <strong>Verde</strong>: Connesso e comunicante. <strong>Rosso</strong>: Disconnesso o errore comunicazione.</p></td>
+<td><p>Stato della connessione hardware tra il VisionController (PC) e il controller del FlexiBowl.<br />
+<strong>Verde</strong>: Connesso e comunicante.<br />
+<strong>Rosso</strong>: Disconnesso o errore comunicazione.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Robot</strong></p></td>
-<td><p>Stato della comunicazione TCP/IP con il robot o PLC incaricato del prelievo. <strong>Verde</strong>: Connessione TCP stabilita. <strong>Rosso</strong>: Disconnesso o timeout comunicazione.</p></td>
+<td><p>Stato della comunicazione TCP/IP con il robot o PLC incaricato del prelievo.<br />
+<strong>Verde</strong>: Connessione TCP stabilita.<br />
+<strong>Rosso</strong>: Disconnesso o timeout comunicazione.</p></td>
 </tr>
 </tbody>
 </table>

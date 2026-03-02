@@ -80,8 +80,7 @@ L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida co
 ## **Step 2: Regolazioni fondamentali**
 
 ```{list-table}
-:widths: 30 70
-:header-rows: 0
+
 * - 5. 
   - Accedere alla sezione Camera SETUP dalla sezione SETUP 
 * - 6. 
@@ -194,17 +193,11 @@ Se l'immagine con esposizione 20ms appare:
     
     Il parametro "Result Calibration" restituirà un valore:
     
-    🟢 **Excellent (Verde)**
+    🟢 **Excellent (Verde)**: Calibrazione eccellente, precisione ottimale. Procedere con fiducia.
     
-    Calibrazione eccellente, precisione ottimale. Procedere con fiducia.
+    🟠 **Acceptable (Arancione)**: Calibrazione accettabile, precisione buona ma non ottimale.
     
-    🟠 **Acceptable (Arancione)**
-    
-    Calibrazione accettabile, precisione buona ma non ottimale.
-    
-    🔴 **Bad (Rosso)**
-    
-    Calibrazione scadente, precisione insufficiente. Da ripetere obbligatoriamente.
+    🔴 **Bad (Rosso)**: Calibrazione scadente, precisione insufficiente. Da ripetere obbligatoriamente.
     
     :::{important}
     Accettare solo calibrazioni Eccellenti 🟢, altri risultati comprometteranno il funzionamento dell'intera applicazione.
@@ -400,11 +393,7 @@ In generale, è consigliabile decidere fin dall'inizio il tipo di illuminazione 
 
 # **Passi successivi**
 
-Una volta completata la calibrazione camera con risultato Good:
 
-1. **Calibrazione Robot** (procedura guidata successiva)
-2. **[Nuovo Modello Pezzo](Nuovo_Modello/16_Nuovo_modello.md)** - Training primo modello per picking
-3. **[Protocol Setup](15_Protocol_Setup.md)** - Configurazione avanzata comunicazione
 
 
 

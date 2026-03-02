@@ -1,6 +1,7 @@
+(camerasetup)=
 # **Passo 7: Camera Setup**
 
-Questa sezione descrive la procedura per configurare e testare la telecamera industriale del sistema FlexiVision Easy. La corretta configurazione della camera è fondamentale per garantire l'acquisizione di immagini di qualità.
+Questa sezione descrive la procedura per configurare e testare la telecamera industriale del sistema FlexiVision One. La corretta configurazione della camera è fondamentale per garantire l'acquisizione di immagini di qualità.
 
 ```{note}
 **Prerequisiti**
@@ -293,5 +294,5 @@ Una volta completato il Camera Setup:
 
 1. **Verifica setup completo**: Tornare alla pagina SETUP e verificare che tutti i componenti (FlexiBowl, Hopper se presente, Robot, Camera) siano configurati
 
-2. **Procedere con calibrazione**: [Calibrazione Camera](14_calibrazione_camera.md)
+2. **Procedere con calibrazione**: [Calibrazione Camera](calibrazione)
 
