@@ -153,3 +153,86 @@ descrizione generale interfaccia
   - **Licence software**: pagina per l'attivazione del software; qui va inserita la chiave di licenza fornita da ARS per procedere all'attivazione.
 ```
 ## i tasti INFO
+In ognuna delle sezioni operative, è disponibile un tasto INFO in alto a destra.
+All'interno di questo pulsante è disponibile la spiegazione della procedura Step By Step, la stessa procedura è visibile nel video tutorial.
+```{dropdown} Tasto Info della pagina [Camera FLB](cameraFLB)
+
+   :::{video} video2/TastoInfo_CameraFLB_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
+
+```{dropdown} Tasto Info della pagina [Calibration](calibrazione)
+
+   :::{video} video2/TastoInfo_Calibration_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
+```{dropdown} Tasto Info della pagina [Train Model](modello)
+
+   :::{video} video2/TastoInfo_TrainModel_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
+```{dropdown} Tasto Info della pagina [Define Robot Picking Area](robotarea)
+
+   :::{video} video2/TastoInfo_DefineRobotArea_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
+```{dropdown} Tasto Info della pagina [Locator Model](locator)
+
+   :::{video} video2/TastiInfo_LocatorModel_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
+```{dropdown} Tasto Info della pagina [Clearances](clearances)
+
+   :::{video} video2/TastoInfo_Clearances_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
+```{dropdown} Tasto Info della pagina [Clearance 1](clearance1)
+
+   :::{video} video2/TastoInfo_Clearance1_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
+```{dropdown} Tasto Info della pagina [Picking Offset](pickingoffset)
+
+   :::{video} video2/TastoInfo_PickingOffset_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
+```{dropdown} Tasto Info della pagina [Define Hopper Area](definehopperarea)
+
+   :::{video} video2/TastoInfo_AreaHopper_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
+```{dropdown} Tasto Info della pagina [Define Value Hopper](definevaluehopper)
+
+   :::{video} video2/TastoInfo_Hopper_1280x720.mp4
+   :width: 100%
+   :align: center
+   :::
+
+```
