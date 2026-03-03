@@ -7,8 +7,8 @@ Il vostro parere è fondamentale per noi: non esitate a fornirci il vostro feedb
 
 *- Il Team di Ars Automation*    
 <a href="https://www.arsautomation.com" target="_blank">
-  <img src="img/logo.png" alt="Ars logo" class="only-light" style="width: 10%; height: auto;">
-  <img src="img/logo_dark.png" alt="Ars logo" class="only-dark" style="width: 10%; height: auto;">
+  <img src="img/logo.png" alt="Ars logo" class="only-light">
+  <img src="img/logo_dark.png" alt="Ars logo" class="only-dark">
 </a>
   
 ## **Cosa è FlexiVision One?**  
@@ -17,8 +17,14 @@ Mantenendo tutte le potenti funzionalità della versione precedente, permettendo
 Grazie a una guida passo passo completa e a strumenti intuitivi, abbiamo estremamente semplificato il processo, rendendo la programmazione e l'utilizzo accessibili e utilizzabili da chiunque, indipendentemente dal livello di esperienza.
 
 ## **Panoramica del sistema** 
-immagine anche con collegamenti a tre flexibowl, tre camere e tre tramogge 
+immagine anche con collegamenti a tre flexibowl, tre camere e tre tramogge
 
+```{figure} img/Icon_FlexiVision.png
+
+:align: center
+:width: 50%
+:height: 50%
+```
 ## **Come leggere il manuale**  
 Questo manuale è stato concepito per supportare sia la fase di progettazione e integrazione di sistema, sia la fase di installazione e messa in servizio in campo. 
 Per questo motivo, è diviso in delle macro-sezioni con destinatari e finalità distinte.

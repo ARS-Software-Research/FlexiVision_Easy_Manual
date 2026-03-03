@@ -72,7 +72,7 @@ Per ora, concentrarsi sul completamento del primo modello.
 ```{list-table}
 :widths: 5 95
 
-* - **5. **
+* - **5.**
   - Cliccare su **Enable Model** per abilitare questo modello. Il modello è ora attivo e pronto per essere configurato.
 
 * - **6.**

@@ -6,9 +6,13 @@ La configurazione della tramoggia permette di gestire il rifornimento automatico
 ## **Step 1: Accesso alla Configurazione**
 ```{list-table}
 * - 1. 
-  - Cliccare sulla sezione "SETUP"
+  - Cliccare sulla sezione <img src="../QUICKSTART/img/tasto_setup1.png" class="inline-icon">
 * - 2. 
   - Dalla sezione **Hopper Setup**, è possibile visualizzare e gestire le unità di carico collegate.
+    
+    :::{dropdown} Pagina Hopper Setup 
+    ![Pagina Hooper Setup](../QUICKSTART/img/pagina_hoppersetup.png)
+    :::
 * - 3. 
   - Selezionare la casella **Enable Hopper X** per attivare la tramoggia corrispondente.
 * - 4. 
@@ -25,12 +29,24 @@ In questa fase si definisce la porzione di disco che la telecamera deve monitora
       * **Info**: Cliccare per visualizzare dettagli sulle funzionalità della pagina.
       * **Expert**: Accesso a impostazioni avanzate.
 ```
+``````{seealso}
+  ```{dropdown} Video Tutorial Step 2: Definizione Area di Controllo
+
+    :::{video} Nuovo_Modello/video/TastoInfo_AreaHopper_1280x720.mp4
+    :width: 100%
+    :align: center
+    :::
+  ```
+``````
 
 ## **Step 3: Definizione dei Valori di Soglia**
 
 ```{list-table}
 * - 6. 
-  - Cliccare NEXT per accedere alla pagina **Define Value Hopper Cam**, dove si istruisce il sistema a distinguere tra disco vuoto e disco pieno.
+  - Cliccare <img src="../QUICKSTART/img/tasto_next.png" class="inline-icon icon-small"> per accedere alla pagina **Define Value Hopper Cam**, dove si istruisce il sistema a distinguere tra disco vuoto e disco pieno.
+    :::{dropdown} Pagina Define Value Hopper Cam 
+    ![Pagina Define Value Hopper Cam](../QUICKSTART/img/pagina_valuehopper.png)
+    :::
 * - 7. 
   - Rimuovere tutti i componenti dall'area di visione e cliccare sul primo pulsante **CAPTURE**.
 * - 8. 
@@ -38,9 +54,9 @@ In questa fase si definisce la porzione di disco che la telecamera deve monitora
 * - 9. 
   - Cliccare sul secondo pulsante **CAPTURE**.
 * - 10. 
-  - Cliccando su **AUTO** nell'Expression Builder, il sistema calcola automaticamente i valori di **Mean** (Media) e **Standard Deviation**.
+  - Cliccando su <img src="../QUICKSTART/img/tasto_AUTO.png" class="inline-icon"> nell'Expression Builder, il sistema calcola automaticamente i valori di **Mean** (Media) e **Standard Deviation**.
 * - 11. 
-  - Rimuovere alcuni pezzi e cliccare su **TEST**. 
+  - Rimuovere alcuni pezzi e cliccare su <img src="../QUICKSTART/img/tasto_TEST.png" class="inline-icon">. 
 * - 12. 
   - Osservare l'indicatore risultato:
     - **Verde** 🟢: Livello insufficiente, Hopper si attiva (scarico necessario)
@@ -64,12 +80,23 @@ In questa fase si definisce la porzione di disco che la telecamera deve monitora
       → Soluzione: Verificare backlight stabile, ingrandire area monitoraggio, ripetere calibrazione
       :::
 ```
+``````{seealso}
+  ```{dropdown} Video Tutorial Step 3: Definizione Valori di Soglia
+
+    :::{video} Nuovo_Modello/video/TastoInfo_Hopper_1280x720.mp4
+    :width: 100%
+    :align: center
+    :::
+  ```
+``````
+
 ```{note}  
 **Fill Hopper Threshold** = ... 
 ```
 ## **Step 4: Parametri Operativi**
 
 Tornare alla schermata principale di Hopper Setup per definire il comportamento meccanico.
+![Pagina Hopper Setup](../QUICKSTART/img/pagina_hoppersetup.png)
 
 ```{list-table} Parametri di Funzionamento
 :widths: 20 80
@@ -139,17 +166,19 @@ Il tempo di vibrazione efficace dipende da:
 
 Al termine della configurazione Hopper:
 
-1. Verificare che tutti i parametri siano configurati correttamente:
-   - Area monitoraggio posizionata
-   - Soglie calibrate (TEST funzionante)
-   - Steps e Time impostati
-
-2. Tornare alla pagina principale **Recipes**
-
-3. Cliccare su **Save Recipe**
-
-4. Confermare il salvataggio
-
+  :::{list-table}
+    * - 1. 
+      - Verificare che tutti i parametri siano configurati correttamente:
+        - Area monitoraggio posizionata
+        - Soglie calibrate (TEST funzionante)
+        - Steps e Time impostati
+    * - 2. 
+      - Tornare alla pagina principale <img src="../QUICKSTART/img/tasto_recipes.png" class="inline-icon icon-small">
+    * - 3. 
+      - Cliccare su <img src="../QUICKSTART/img/tasto_save_recipes.png" class="inline-icon icon-small">
+    * - 4. 
+      - Confermare il salvataggio
+  :::
 **IMPORTANTE**: Ogni variazione apportata viene memorizzata **SOLO** se la ricetta viene salvata correttamente prima di uscire o cambiare pagina.
 
 Senza salvataggio, tutte le configurazioni Hopper verranno perse!
@@ -253,7 +282,7 @@ Una volta completata la configurazione dell'Hopper, procedere con:
 ```{tip}
 **Sistema completo operativo**
 
-Congratulazioni! Con la configurazione Hopper completata, il sistema FlexiVision Easy è completamente configurato e pronto per l'uso produttivo:
+Congratulazioni! Con la configurazione Hopper completata, il sistema FlexiVision One è completamente configurato e pronto per l'uso produttivo:
 
 - ✓ Modelli pezzo creati e ottimizzati
 - ✓ FlexiBowl configurato per movimentazione ottimale

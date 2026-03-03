@@ -46,7 +46,7 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
 * - 1. 
   - Cliccare su **Enable Robot Pick**
 * - 2. 
-  - Cliccare su **Find Object**:
+  - Cliccare su <img src="../Nuovo_Modello/img/tasto_FIND_OBJECT1.png" class="inline-icon">:
       - Il sistema rileverà il componente di riferimento
       - Le coordinate appariranno nella sezione **Vision Result**
 
@@ -75,7 +75,7 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
       **Errori in questa fase causano offset robot completamente errati**, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore).  
       :::
 * - 4. 
-  - Cliccare su **Gripper Offset**
+  - Cliccare su <img src="../Nuovo_Modello/img/tasto_GRIPPER_OFFSET.png" class="inline-icon">
       - Il sistema calcolerà automaticamente la trasformazione tra coordinate visione e coordinate robot
       - Questo offset verrà applicato a tutti i futuri rilevamenti
 ```
@@ -105,9 +105,9 @@ Il robot andrà a prelevarlo a X=370, Y=470
 
 ```{list-table}
 * - 5. 
-  - Cliccadno su **Next**, torneremo alla pagina delle ricette "Recipes"
+  - Cliccando su <img src="../Nuovo_Modello/img/tasto_next.png" class="inline-icon">, torneremo alla pagina delle ricette <img src="../Nuovo_Modello/img/tasto_recipes.png" class="inline-icon">
 * - 6. 
-  - Cliccare su **Save Recipe** per salvare l'intera configurazione
+  - Cliccare su <img src="../Nuovo_Modello/img/tasto_save_recipes.png" class="inline-icon"> per salvare l'intera configurazione
 
       :::{admonition} Salvataggio Completo
       :class: success
@@ -129,7 +129,7 @@ Il robot andrà a prelevarlo a X=370, Y=470
 ```{list-table}
 * - 7. 
   - Per creare altri modelli nella stessa ricetta:
-      - Tornare su **Edit Recipe**
+      - Tornare su <img src="../Nuovo_Modello/img/tasto_edit_recipes.png" class="inline-icon">
       - Selezionare un nuovo modello non ancora configurato 
       - Ripetere l'intera procedura dalla [Creazione Modello](nuovomodello)
 

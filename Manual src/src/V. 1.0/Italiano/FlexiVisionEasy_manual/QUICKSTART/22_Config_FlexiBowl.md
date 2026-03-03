@@ -12,22 +12,30 @@ Per avviare la procedura:
 :widths: 5 95
 
 * - **1.**
-  - Recarsi nella sezione **Setup** del software FlexiVision
+  - Recarsi nella sezione <img src="../QUICKSTART/img/tasto_setup1.png" class="inline-icon"> del software FlexiVision
 
 * - **2.**
-  - Cliccare sul pulsante **FlexiBowl Setup**, si aprirà una pagina con tutti i FlexiBowl gestibili con FlexiVision Easy
+  - Cliccare sul pulsante **FlexiBowl Setup**, si aprirà una pagina con tutti i FlexiBowl gestibili con FlexiVision One
+
+    :::{dropdown} Pagina FlexiBowl Setup  
+    ![Pagina FlexiBowl Setup](../QUICKSTART/img/pagina_FBsetup.png)
+    :::
 
 * - **3.**
-  - Cliccare sul pulsante **Config FlexiBowl**, si aprirà una pagina con tutte le movimentazioni disponibili per il FlexiBowl selezionato
+  - Cliccare sul pulsante <img src="../QUICKSTART/img/FB_config1.png" class="inline-icon icon-xl">, si aprirà una pagina con tutte le movimentazioni disponibili per il FlexiBowl selezionato
+
+    :::{dropdown} Pagina Configurazione FlexiBowl  
+    ![Pagina FlexiBowl Config](../QUICKSTART/img/pagina_FBsetup.png)
+    :::
 
 * - **4.**
   - Cliccare sul pulsante **FlexiBowl X Wizard**, e poi **FlexiBowl Interface** si aprirà una pagina di benvenuto al Wizard
 
 * - **5.**
-  - Cliccare su NEXT
+  - Cliccare su <img src="../QUICKSTART/img/tasto_next.png" class="inline-icon icon-small">
     
     :::{note}
-    Cliccare "NEXT" in ogni pagina del wizard per andare avanti nella configurazione guidata
+    Cliccare <img src="../QUICKSTART/img/tasto_next.png" class="inline-icon icon-small"> in ogni pagina del wizard per andare avanti nella configurazione guidata
     :::
 ```
 

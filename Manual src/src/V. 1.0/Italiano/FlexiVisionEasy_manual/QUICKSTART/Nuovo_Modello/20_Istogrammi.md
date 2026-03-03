@@ -1,6 +1,6 @@
 (istogrammi)=
 # **Le Clearances** 
- In questa pagina vedremo come configurare le clearance per verificare che le aree critiche siano libere da ostacoli.
+ In questa pagina vedremo come configurare le Clearances per verificare che le aree critiche siano libere da ostacoli.
 
 ## Cos'è una Clearance?
 
@@ -81,7 +81,7 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
     | **Next** | Avanzamento alla fase successiva (Robot Pick) dopo configurazione clearance |
 
 * - **2.**
-  - Cliccare su **Clearance 1**, si aprirà la pagina relativa alla configurazione del primo clearance "Clearance 1"
+  - Cliccare su **Clearance 1**, si aprirà la pagina relativa alla configurazione della prima clearance "Clearance 1"
     
     **Panoramica interfaccia configurazione**
     
@@ -101,7 +101,7 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
 * - 3. 
   - Cliccare su **Enable Clearance** per attivare la clearance 
 * - 4. 
-  - Spostare il **riquadro** dell'istogramma nell'area che deve rimanere libera
+  - Spostare il **riquadro** della Clearance nell'area che deve rimanere libera
       - Tipicamente: area di presa della pinza (una clearance per ogni area di presa della pinza)
       - Margini attorno al componente
       - Zone di passaggio del robot
@@ -115,13 +115,13 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
 
 ```{list-table}
 * - 5. 
-  - Cliccare su **AUTO** in Expression Builder
+  - Cliccare su <img src="../Nuovo_Modello/img/tasto_AUTO.png" class="inline-icon"> in Expression Builder
 * - 6. 
-  - Cliccare su **TEST**
+  - Cliccare su <img src="../Nuovo_Modello/img/tasto_TEST.png" class="inline-icon">
 * - 7. 
   - Verificare che il riquadro diventi **verde** 
 * - 8. 
-  - Cliccare su **Next**
+  - Cliccare su <img src="../Nuovo_Modello/img/tasto_next.png" class="inline-icon">
 ```
 
 ```{warning}
@@ -189,9 +189,7 @@ Una clearance diventa rossa (triggered) quando rileva al suo interno:
 
 ---
 
-## Finalizzazione
-
-### **Step 5: Proseguimento**
+## **Step 5: Finalizzazione**
 6. Dopo aver configurato tutte le clearance necessarie, cliccare su **Next**
 7. Si aprirà la pagina **Robot Model Pick Cam**
 

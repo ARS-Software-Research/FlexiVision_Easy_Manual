@@ -70,9 +70,8 @@ La posizione esatta del menu Protocol Setup può variare leggermente in base all
 
 ## Parametri Configurabili
 
-### Panoramica parametri principali
-
 I parametri di Protocol Setup si dividono in due categorie: parametri di flusso dati e parametri statistici.
+![Pagina Protocol Setup](../QUICKSTART/img/pagina_protocolsetup.png)
 
 ```{list-table}
 :header-rows: 1

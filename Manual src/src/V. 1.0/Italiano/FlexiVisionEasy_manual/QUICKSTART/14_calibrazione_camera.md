@@ -23,7 +23,7 @@ La calibrazione è necessaria perché ogni combinazione di sensore e lente intro
 
 ### Tipi di distorsioni ottiche
 
-```{figure} img/distorsioni_ottiche.png
+```{figure} img/distorsioni_new.png
 :alt: Tipi di distorsioni ottiche
 :width: 80%
 :align: center

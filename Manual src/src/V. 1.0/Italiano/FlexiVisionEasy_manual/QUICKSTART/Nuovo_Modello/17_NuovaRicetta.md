@@ -50,16 +50,18 @@ Prima di creare una nuova ricetta personalizzata, assicurarsi di aver salvato la
 ```{important}
 **Salvare la ricetta base**
 
-1. Dalla pagina principale, cliccare su **Recipes**
-
-2. Verificare che la ricetta corrente sia quella base (es: "Ricetta_Base" creata durante il setup)
-
-3. Cliccare su **Save Recipe**
-
-4. Mantenere lo stesso nome nel campo di salvataggio (si sta sovrascrivendo la ricetta con le configurazioni aggiornate)
-
-5. Confermare il salvataggio
-
+  :::{list-table}
+  * - 1. 
+    - Dalla pagina principale, cliccare su **Recipes**
+  * - 2. 
+    - Verificare che la ricetta corrente sia quella base (es: "Ricetta_Base" creata durante il setup)
+  * - 3. 
+    - Cliccare su **Save Recipe**
+  * - 4. 
+    - Mantenere lo stesso nome nel campo di salvataggio (si sta sovrascrivendo la ricetta con le configurazioni aggiornate)
+  * - 5. 
+    - Confermare il salvataggio
+  :::
 **Perché salvare la ricetta base?**
 
 La ricetta base contiene tutte le configurazioni hardware completate durante il setup:
@@ -84,10 +86,13 @@ se invece cambio la Tramoggia, mi basta aggiornare il campo signal della tramogg
 
 ### Step 1: Accesso alla sezione Ricette
 
-1. Dalla pagina principale del software FlexiVision One, cliccare su **Recipes**
+```{list-table}
 
-2. Si apre la pagina di gestione ricette dove sono elencate tutte le ricette esistenti
-
+* - 1. 
+  - Dalla pagina principale del software FlexiVision One, cliccare su **Recipes**
+* - 2. 
+  - Si apre la pagina di gestione ricette dove sono elencate tutte le ricette esistenti
+```
 
 ### Step 2: Nominare la nuova ricetta
 
@@ -118,24 +123,28 @@ Un nome chiaro facilita la gestione quando si hanno molte ricette diverse.
 
 ### Step 3: Creazione ricetta
 
-1. Cliccare sul pulsante **New Recipe**
-
-2. Si apre una finestra di dialogo o un wizard guidato per la configurazione iniziale
-
-3. Nel campo **Nome Ricetta**, inserire il nome scelto al passo precedente
-
-4. Procedere con il pulsante **Next** o **Avanti**
-
+```{list-table}
+* - 1. 
+  - Cliccare sul pulsante **New Recipe**
+* - 2. 
+  - Si apre una finestra di dialogo o un wizard guidato per la configurazione iniziale
+* - 3. 
+  - Nel campo **Nome Ricetta**, inserire il nome scelto al passo precedente
+* - 4. 
+  - Procedere con il pulsante **Next** o **Avanti**
+```
 
 ### Step 4: Selezione modalità
 Selezionare la modalità operativa dell'applicazione:
 
 Per la maggior parte delle applicazioni di picking da FlexiBowl:
 
-1. Selezionare **Standard** o **...**
-
-2. Cliccare su **Next**
-
+```{list-table}
+* - 1. 
+  - Selezionare **Standard** o **...**
+* - 2. 
+  - Cliccare su **Next**
+```
 Quella Standard è la modalità più comune ed è anche quella che verrà descritta in dettaglio nelle sezioni successive.
 
 ```{tip}
@@ -145,21 +154,27 @@ Quella Standard è la modalità più comune ed è anche quella che verrà descri
 
 ### Step 5: Selezione modello FlexiBowl
 
-1. Selezionare il FlexiBowl con cui stiamo lavorando:
-
-2. Cliccare su **Next**
+```{list-table}
+* - 1. 
+  - Selezionare il FlexiBowl con cui stiamo lavorando:
+* - 2. 
+  - Cliccare su **Next**
+```
 
 ```{tip}
 **Controllo ricetta selezionata**
 
-1. Nella barra superiore o nel menu principale, verificare che sia visualizzato il nome della nuova ricetta creata
-
-2. Se non è la ricetta corrente:
-   - Tornare alla pagina **Recipes**
-   - Cliccare sulla nuova ricetta nell'elenco
-   - Cliccare su **Load Recipe** o **Seleziona**
-
-3. Una volta caricata, il nome della ricetta attiva è sempre visibile nell'interfaccia
+  :::{list-table}
+  * - 1. 
+    - Nella barra superiore o nel menu principale, verificare che sia visualizzato il nome della nuova ricetta creata
+  * - 2. 
+    - Se non è la ricetta corrente:
+      - Tornare alla pagina **Recipes**
+      - Cliccare sulla nuova ricetta nell'elenco
+      - Cliccare su **Load Recipe** o **Seleziona**
+  * - 3. 
+    - Una volta caricata, il nome della ricetta attiva è sempre visibile nell'interfaccia
+  :::
 ```
 
 ```{warning}

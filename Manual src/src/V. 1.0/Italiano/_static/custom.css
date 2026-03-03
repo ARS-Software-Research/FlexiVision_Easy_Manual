@@ -132,7 +132,7 @@ thead tr:hover {
 /* Dimensioni variabili */
 
 .bd-content table img.inline-icon.icon-small {
-    height: 24px;
+    height: 30px;
 }
 
 .bd-content table img.inline-icon.icon-medium {
@@ -164,4 +164,33 @@ thead tr:hover {
     table.docutils tbody tr:nth-child(odd):hover {
         background-color: #1a2f4a !important;
     }
+}
+
+/* ============================================
+   GESTIONE LOGO ARS (SIDEBAR E CONTENUTO)
+   ============================================ */
+
+/* Imposta una dimensione visibile e fissa per entrambi i loghi */
+.only-light, .only-dark {
+    width: 200px !important; /* Dimensione ideale basata sullo screenshot */
+    height: auto !important;
+    display: inline-block !important;
+    margin-bottom: 10px;
+}
+
+/* Mostra il logo corretto in base al tema (Light/Dark) */
+/* Questo risolve il problema dei due loghi visibili insieme o minuscoli */
+
+html[data-theme="light"] .only-dark {
+    display: none !important;
+}
+
+html[data-theme="dark"] .only-light {
+    display: none !important;
+}
+
+/* Se vuoi che il logo nel testo (quello in basso) sia più grande di quello nella sidebar */
+.bd-content .only-light, 
+.bd-content .only-dark {
+    width: 250px !important;
 }

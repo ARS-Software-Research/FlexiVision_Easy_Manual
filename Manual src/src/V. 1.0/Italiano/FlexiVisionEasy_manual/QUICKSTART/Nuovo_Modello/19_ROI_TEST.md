@@ -17,10 +17,19 @@ Dopo aver cliccato "Next" nella pagina di training, si apre automaticamente la p
 * - 1. 
   - Nella pagina **Define Robot Pick Area**, modificare il riquadro per delimitare l'area di ricerca
 * - 2. 
-  - Una volta dimensionata correttamente la Region Search, Cliccare su **Next** 
+  - Una volta dimensionata correttamente la Region Search, Cliccare su <img src="../Nuovo_Modello/img/tasto_next.png" class="inline-icon">
 * - 3. 
   - Si aprirà la pagina **Locator Model 1 Cam 1**
 ```
+``````{seealso}
+  ```{dropdown} Video Tutorial Step 1
+
+    :::{video} video/TastoInfo_DefineRobotArea_1280x720.mp4
+    :width: 100%
+    :align: center
+    :::
+  ```
+``````
 
 ```{tip}
 Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zone non raggiungibili.
@@ -61,7 +70,7 @@ Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zo
 :widths: 5 95
 
 * - **5.**
-  - Cliccare su **Test** per verificare il riconoscimento
+  - Cliccare su <img src="../Nuovo_Modello/img/tasto_TEST.png" class="inline-icon"> per verificare il riconoscimento
 
 * - **6.**
   - Osservare quanti componenti vengono rilevati e con quali score
@@ -172,7 +181,7 @@ Se Accept Threshold fosse 0.85:
       Anche durante la pulizia della scena, fare attenzione a non urtare o spostare il componente di riferimento. Le sue coordinate sono ancora necessarie per la calibrazione robot nella fase finale.
     :::
 * - 5. 
-  - Cliccare su **Next** → si aprirà la pagina degli **Histogram**
+  - Cliccare su <img src="../Nuovo_Modello/img/tasto_next.png" class="inline-icon"> → si aprirà la pagina delle **Clearances**
 ```
 
 ```{seealso}
