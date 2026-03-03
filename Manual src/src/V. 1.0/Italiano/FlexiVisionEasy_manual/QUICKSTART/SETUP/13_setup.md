@@ -78,7 +78,7 @@ Dopo il primo login, è necessario attivare la licenza software.
   - Inserire la chiavetta fornita nel kit
 
 * - **2.**
-  - Accedere alla sezione SETUP e cliccare su **Software License**
+  - Accedere alla sezione <img src="../SETUP/img/tasto_setup1.png" class="inline-icon"> e cliccare su **Software License**
     ```{dropdown} Pagina Software License 
        ![Pagina Software License](../SETUP/img/pagina_softwareL.png)
     ```
@@ -116,7 +116,7 @@ Prima di configurare i componenti hardware, è necessario creare una ricetta di 
 :widths: 10 90
 
 * - **1.**
-  - Accedere alla sezione **RECIPES** dal pulsante in alto
+  - Accedere alla sezione <img src="../SETUP/img/tasto_recipes.png" class="inline-icon"> dal pulsante in alto
 
 * - **2.**
   - Cliccare su **New Recipe**
@@ -139,7 +139,7 @@ Prima di configurare i componenti hardware, è necessario creare una ricetta di 
 ```{tip}
 **Organizzazione ricette**
 
-FlexiVision Easy permette di creare ricette multiple per diversi tipi di pezzi o configurazioni. Convenzioni consigliate:
+FlexiVision One permette di creare ricette multiple per diversi tipi di pezzi o configurazioni. Convenzioni consigliate:
 
 - Utilizzare nomi che identificano chiaramente il pezzo (es: "Vite_M6_Zincata")
 
@@ -157,7 +157,7 @@ Tutti i setup hardware sono accessibili dalla pagina centrale **SETUP** del soft
 
 ```{list-table} 
 * - 1. 
-  - Dal menu principale, cliccare su **SETUP**
+  - Dal menu principale, cliccare su <img src="../SETUP/img/tasto_setup1.png" class="inline-icon">
 * - 2. 
   - Vengono visualizzate le icone dei diversi componenti da configurare
 * - 3. 
