@@ -255,157 +255,179 @@ I grafici nella parte inferiore della dashboard permettono un'analisi predittiva
 
 ### 1. Parts Per Minute (PPM)
 
-**Grafico produttività**
+```{list-table}
+* - **Grafico produttività**
+  - Mostra la produttività media del sistema espressa in **componenti prelevati al minuto** (Parts Per Minute).
 
-Mostra la produttività media del sistema espressa in **componenti prelevati al minuto** (Parts Per Minute).
+* - **Caratteristiche**:
+  - 
+    - Asse X: Tempo (ultimi minuti/ore)
+    - Asse Y: PPM (pezzi/minuto)
+    - Linea trend: Media mobile per identificare tendenze
 
-**Caratteristiche**:
-- Asse X: Tempo (ultimi minuti/ore)
-- Asse Y: PPM (pezzi/minuto)
-- Linea trend: Media mobile per identificare tendenze
-
-**Utilizzo**:
-- Monitorare stabilità produttività nel tempo
-- Identificare degradazioni performance
-- Calcolare throughput effettivo vs teorico
-
+* - **Utilizzo**:
+  - 
+    - Monitorare stabilità produttività nel tempo
+    - Identificare degradazioni performance
+    - Calcolare throughput effettivo vs teorico
+```
 
 ```{tip}
-**Interpretazione PPM**
 
-**PPM costante e stabile**:
-- ✓ Sistema ben configurato
-- ✓ Parametri ottimizzati
-- ✓ Nessun collo di bottiglia critico
+  :::{list-table} **Interpretazione PPM**
 
-**PPM in diminuzione progressiva**:
-- ⚠️ Possibile usura componenti (superficie grip FlexiBowl)
-- ⚠️ Hopper che si svuota (se presente, meno pressione = scarico più lento)
-- ⚠️ Accumulo sporcizia su camera/illuminazione
+    * - **PPM costante e stabile**:
+      - 
+        - ✓ Sistema ben configurato
+        - ✓ Parametri ottimizzati
+        - ✓ Nessun collo di bottiglia critico
 
-**PPM con fluttuazioni ampie**:
-- ⚠️ Instabilità nel processo
-- ⚠️ Problemi intermittenti di riconoscimento
-- ⚠️ Interferenze esterne (vibrazioni, luce variabile)
+    * - **PPM in diminuzione progressiva**:
+      - 
+        - ⚠️ Possibile usura componenti (superficie grip FlexiBowl)
+        - ⚠️ Hopper che si svuota (se presente, meno pressione = scarico più lento)
+        - ⚠️ Accumulo sporcizia su camera/illuminazione
 
-**Azioni correttive**:
-- Analizzare correlazione con grafici tempi
-- Identificare quale componente (Vision/FlexiBowl/Robot) causa variazioni
-- Intervenire su parametri specifici
+    * - **PPM con fluttuazioni ampie**:
+      - 
+        - ⚠️ Instabilità nel processo
+        - ⚠️ Problemi intermittenti di riconoscimento
+        - ⚠️ Interferenze esterne (vibrazioni, luce variabile)
+
+    * - **Azioni correttive**:
+      - 
+        - Analizzare correlazione con grafici tempi
+        - Identificare quale componente (Vision/FlexiBowl/Robot) causa variazioni
+        - Intervenire su parametri specifici
+  :::
 ```
 
 ### 2. Fill Hopper
 
-**Grafico attivazioni tramoggia**
+```{list-table}
+* - **Grafico attivazioni tramoggia**
+  - Rappresenta lo storico degli impulsi di scarico inviati alla tramoggia (Hopper), utile per monitorare l'autonomia del magazzino componenti.
 
-Rappresenta lo storico degli impulsi di scarico inviati alla tramoggia (Hopper), utile per monitorare l'autonomia del magazzino componenti.
+* - **Caratteristiche**:
+  - 
+    - Asse X: Tempo
+    - Asse Y: Attivazioni Hopper (eventi)
+    - Picchi: Ogni picco rappresenta un'attivazione scarico
 
-**Caratteristiche**:
-- Asse X: Tempo
-- Asse Y: Attivazioni Hopper (eventi)
-- Picchi: Ogni picco rappresenta un'attivazione scarico
-
-**Utilizzo**:
-- Prevedere quando ricaricare Hopper fisicamente
-- Verificare efficacia configurazione Hopper
-- Identificare anomalie nel comportamento scarico
-
+* - **Utilizzo**:
+  - 
+    - Prevedere quando ricaricare Hopper fisicamente
+    - Verificare efficacia configurazione Hopper
+    - Identificare anomalie nel comportamento scarico
+```
 
 ```{tip}
-**Analisi pattern Fill Hopper**
+  
+  :::{list-table} **Analisi pattern Fill Hopper**
 
-**Attivazioni regolari e costanti**:
-- ✓ Configurazione Hopper ottimale
-- ✓ Flusso pezzi stabile e prevedibile
-- ✓ Autonomia calcolabile (es: attivazione ogni 10 min)
+    * - **Attivazioni regolari e costanti**:
+      - 
+        - ✓ Configurazione Hopper ottimale
+        - ✓ Flusso pezzi stabile e prevedibile
+        - ✓ Autonomia calcolabile (es: attivazione ogni 10 min)
 
-**Attivazioni sempre più frequenti**:
-- ⚠️ Hopper si sta svuotando (meno pezzi = più attivazioni per mantenere livello)
-- ⚠️ Time scarico insufficiente per volume ridotto
-- **Azione**: Pianificare ricarica Hopper a breve
+    * - **Attivazioni sempre più frequenti**:
+      - 
+        - ⚠️ Hopper si sta svuotando (meno pezzi = più attivazioni per mantenere livello)
+        - ⚠️ Time scarico insufficiente per volume ridotto
+        - **Azione**: Pianificare ricarica Hopper a breve
 
-**Nessuna attivazione per lungo periodo**:
-- ⚠️ Robot fermo o rallentato (pezzi non vengono consumati)
-- ⚠️ Possibile problema sistema che non richiede pezzi
-- **Azione**: Verificare stato produzione
+    * - **Nessuna attivazione per lungo periodo**:
+      - 
+        - ⚠️ Robot fermo o rallentato (pezzi non vengono consumati)
+        - ⚠️ Possibile problema sistema che non richiede pezzi
+        - **Azione**: Verificare stato produzione
 
-**Attivazioni molto ravvicinate (burst)**:
-- ⚠️ Soglia Hopper mal configurata (troppo alta)
-- ⚠️ Steps insufficienti (pezzi non arrivano in tempo)
-- **Azione**: Rivedere Config Hopper
+    * - **Attivazioni molto ravvicinate (burst)**:
+      - 
+        - ⚠️ Soglia Hopper mal configurata (troppo alta)
+        - ⚠️ Steps insufficienti (pezzi non arrivano in tempo)
+        - **Azione**: Rivedere Config Hopper
+  :::
 ```
 
 ### 3. Vision - FlexiBowl - Robot (Grafico Comparativo)
 
-**Grafico tempi sovrapposti**
+```{list-table} 
+* - **Grafico tempi sovrapposti**
+  - Un grafico comparativo a tre linee che sovrappone i tempi dei singoli processi nel tempo.
 
-Un grafico comparativo a tre linee che sovrappone i tempi dei singoli processi nel tempo.
+* - **Linee visualizzate**:
+  - 
+    - **Linea blu**: Total Vision Processing
+    - **Linea verde**: Total FlexiBowl Time
+    - **Linea rossa**: Total Robot Time
 
-**Linee visualizzate**:
-- **Linea blu**: Total Vision Processing
-- **Linea verde**: Total FlexiBowl Time
-- **Linea rossa**: Total Robot Time
-
-**Utilizzo**: Identificare istantaneamente quale processo influenza maggiormente il tempo di ciclo totale e come varia nel tempo.
+* - **Utilizzo**: 
+  - Identificare istantaneamente quale processo influenza maggiormente il tempo di ciclo totale e come varia nel tempo.
+```
 
 ```{tip}
-**Questo grafico è fondamentale per il tuning**
 
-Permette di capire istantaneamente:
+  :::{list-table} **Questo grafico è fondamentale per il tuning**, infatti permette di capire istantaneamente:
 
-**Quale processo domina il ciclo**:
-- Se linea Robot sempre più alta → Robot è collo di bottiglia
-- Se linea FlexiBowl sempre più alta → Movimentazione da ottimizzare
-- Se linea Vision sempre più alta → Elaborazione immagini troppo lenta
+    * - **Quale processo domina il ciclo**:
+      - 
+        - Se linea Robot sempre più alta → Robot è collo di bottiglia
+        - Se linea FlexiBowl sempre più alta → Movimentazione da ottimizzare
+        - Se linea Vision sempre più alta → Elaborazione immagini troppo lenta
 
-**Variazioni nel tempo**:
-- Linea Vision che cresce gradualmente → Possibile degrado performance (memoria, CPU)
-- Linea FlexiBowl che oscilla → Comportamento pezzi non costante
-- Linea Robot instabile → Problemi intermittenti robot (interferenze, ritardi comunicazione)
+    * - **Variazioni nel tempo**:
+      - 
+        - Linea Vision che cresce gradualmente → Possibile degrado performance (memoria, CPU)
+        - Linea FlexiBowl che oscilla → Comportamento pezzi non costante
+        - Linea Robot instabile → Problemi intermittenti robot (interferenze, ritardi comunicazione)
 
-**Bilanciamento ottimale**:
-- Idealmente, le tre linee dovrebbero essere relativamente bilanciate
-- Nessuna linea dovrebbe dominare eccessivamente (>2x le altre)
-- Se una linea è 3-5x le altre, concentrare ottimizzazione su quel processo
+    * - **Bilanciamento ottimale**:
+      - 
+        - Idealmente, le tre linee dovrebbero essere relativamente bilanciate
+        - Nessuna linea dovrebbe dominare eccessivamente (>2x le altre)
+        - Se una linea è 3-5x le altre, concentrare ottimizzazione su quel processo
 
-**Esempio lettura**:
+    * - **Esempio lettura**:
+      - 
+        Vision: 300 ms (costante)
+        FlexiBowl: 2000 ms (costante)
+        Robot: 8000 ms (variabile 6000-10000)
 
-Vision: 300 ms (costante)
-FlexiBowl: 2000 ms (costante)
-Robot: 8000 ms (variabile 6000-10000)
-
-Interpretazione: Robot è chiaro collo di bottiglia. 
-Azione: Ottimizzare programma robot, ridurre traiettorie, aumentare velocità.
-
+        Interpretazione: Robot è chiaro collo di bottiglia. 
+        Azione: Ottimizzare programma robot, ridurre traiettorie, aumentare velocità.
+  :::
 ```
 
 ---
 
-## Monitoraggio Qualità
+## Monitoraggio Qualità - Indicatori critici da monitorare
 
-### Indicatori critici da monitorare
+```{list-table}
+* - **Score dei componenti**
+  - Assicurarsi che lo **Score** dei componenti rilevati sia costantemente sopra la soglia di tolleranza (Accept Threshold) impostata durante la configurazione modello.
 
-**Score dei componenti**
+* - **Monitoraggio Score**:
+  - 
+    - Controllare periodicamente tabella Modelli Rilevati
+    - Verificare che score tipici siano 0.85-0.95
+    - Investigare se score scendono sotto 0.80 regolarmente
 
-Assicurarsi che lo **Score** dei componenti rilevati sia costantemente sopra la soglia di tolleranza (Accept Threshold) impostata durante la configurazione modello.
+* - **Score in diminuzione progressiva**:
+  - 
+    - ⚠️ Pezzi reali diversi da quello di training (variazioni produzione)
+    - ⚠️ Illuminazione cambiata (backlight più debole, sporcizia)
+    - ⚠️ Camera non più a fuoco (vibrazioni, urti)
+    - ⚠️ Superficie FlexiBowl sporca (pattern interferente)
 
-**Monitoraggio Score**:
-- Controllare periodicamente tabella Modelli Rilevati
-- Verificare che score tipici siano 0.85-0.95
-- Investigare se score scendono sotto 0.80 regolarmente
-
-**Score in diminuzione progressiva**:
-- ⚠️ Pezzi reali diversi da quello di training (variazioni produzione)
-- ⚠️ Illuminazione cambiata (backlight più debole, sporcizia)
-- ⚠️ Camera non più a fuoco (vibrazioni, urti)
-- ⚠️ Superficie FlexiBowl sporca (pattern interferente)
-
-**Azioni correttive**:
-- Pulire camera, illuminazione, superficie FlexiBowl
-- Verificare messa a fuoco camera
-- Considerare re-training modello se pezzi sono cambiati
-- Ridurre Accept Threshold se score sono comunque affidabili ma più bassi
-
+* - **Azioni correttive**:
+  - 
+    - Pulire camera, illuminazione, superficie FlexiBowl
+    - Verificare messa a fuoco camera
+    - Considerare re-training modello se pezzi sono cambiati
+    - Ridurre Accept Threshold se score sono comunque affidabili ma più bassi
+```
 
 ---
 
@@ -413,66 +435,66 @@ Assicurarsi che lo **Score** dei componenti rilevati sia costantemente sopra la 
 
 ### Check giornalieri
 
-**All'avvio produzione** (5 minuti):
-- Verificare indicatori connettività FlexiBowl e Robot (verdi)
-- Controllare che primi cicli mostrino score normali (>0.85)
-- Osservare che PPM si stabilizzi su valore atteso
+```{list-table}
+* - **All'avvio produzione** (5 minuti):
+  - 
+    - Verificare indicatori connettività FlexiBowl e Robot (verdi)
+    - Controllare che primi cicli mostrino score normali (>0.85)
+    - Osservare che PPM si stabilizzi su valore atteso
 
-**Durante produzione** (check ogni 1-2 ore):
-- Dare un'occhiata a PPM per verificare stabilità
-- Controllare Fill Hopper per prevedere ricarica necessaria
-- Verificare assenza errori o warning nel log
+* - **Durante produzione** (check ogni 1-2 ore):
+  - 
+    - Dare un'occhiata a PPM per verificare stabilità
+    - Controllare Fill Hopper per prevedere ricarica necessaria
+    - Verificare assenza errori o warning nel log
 
-**A fine turno** (2 minuti):
-- Annotare PPM medio del turno
-- Controllare numero attivazioni Hopper
-- Verificare eventuali anomalie o eventi
-- Confrontare con dati giorno precedente
-
+* - **A fine turno** (2 minuti):
+  - 
+    - Annotare PPM medio del turno
+    - Controllare numero attivazioni Hopper
+    - Verificare eventuali anomalie o eventi
+    - Confrontare con dati giorno precedente
+```
 Questa routine minima garantisce identificazione rapida di problemi e mantiene tracciabilità performance.
 
-### Report performance
+### Report performance  
 
-```{tip}
-**Metriche chiave da tracciare**
-
+```{tip} **Metriche chiave da tracciare**
 Per valutazione performance nel tempo, tracciare:
 
-**Giornalmente**:
-- PPM medio del turno
-- Numero pezzi totali prelevati
-- Numero attivazioni Hopper
-- Downtime totale (e cause)
+  :::{list-table} 
 
-**Settimanalmente**:
-- Trend PPM (in aumento/diminuzione?)
-- Confronto PPM teorico vs reale
-- Score medio componenti rilevati
-- Eventuali modifiche configurazione e loro impatto
+    * - **Giornalmente**:
+      - 
+        - PPM medio del turno
+        - Numero pezzi totali prelevati
+        - Numero attivazioni Hopper
+        - Downtime totale (e cause)
 
-**Mensilmente**:
-- Overall Equipment Effectiveness (OEE)
-- Analisi colli di bottiglia principali
-- Necessità di manutenzione predittiva
-- ROI del sistema
+    * - **Settimanalmente**:
+      - 
+        - Trend PPM (in aumento/diminuzione?)
+        - Confronto PPM teorico vs reale
+        - Score medio componenti rilevati
+        - Eventuali modifiche configurazione e loro impatto
+
+    * - **Mensilmente**:
+      - 
+        - Overall Equipment Effectiveness (OEE)
+        - Analisi colli di bottiglia principali
+        - Necessità di manutenzione predittiva
+        - ROI del sistema
+  :::
 
 Questi dati permettono ottimizzazione continua e giustificano investimenti in miglioramenti.
 ```
 
 ---
 
-## Prossimi Passi
-
-Una volta validato il sistema tramite Dashboard:
-
-**→ [Troubleshooting](26_trb_shooting_guide.md)** - Guida risoluzione problemi comuni
-
-**→ [Support](27_Support.md)** - Contatti assistenza tecnica
-
 ```{tip}
-**Sistema operativo!**
+**Sistema operativo completato!**
 
-Congratulazioni! Il sistema FlexiVision Easy è ora completamente configurato, ottimizzato e validato per la produzione.
+Congratulazioni! Il sistema FlexiVision One è ora completamente configurato, ottimizzato e validato per la produzione.
 
 **Riepilogo percorso completato:**
 - ✓ Setup hardware (FlexiBowl, Robot, Camera)
@@ -489,3 +511,10 @@ Il sistema è pronto per operare in produzione con supervisione minima. Utilizza
 
 **Risultato**: Sistema di picking robotizzato completamente autonomo e ottimizzato!
 ```
+---
+
+Una volta validato il sistema tramite Dashboard:
+
+**→ [Troubleshooting](26_trb_shooting_guide.md)** - Guida risoluzione problemi comuni
+
+**→ [Support](27_Support.md)** - Contatti assistenza tecnica

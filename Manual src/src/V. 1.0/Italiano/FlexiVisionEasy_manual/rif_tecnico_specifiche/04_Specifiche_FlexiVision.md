@@ -146,7 +146,7 @@ La mancata osservanza di questo requisito compromette completamente l'operativit
 ```
 
 ### Specifiche fisiche e dimensioni
-```{figure} img/Dimensioni_Cam.png
+```{figure} img/dimensioni_cam.png
 :alt: Dimensioni camera CAM-CIC-5000-20G-1
 :align: center
 :width: 100%
@@ -179,7 +179,7 @@ Dimensioni camera CAM-CIC-5000-20G-1 (mm)
 ---
 (specifiche_obiettivo)=
 ## Obiettivo
-```{figure} img/Ottica.png
+```{figure} img/Ottica_000046.png
 :alt: Camera FlexiVision CAM-CIC-5000-20G-1
 :align: center
 :width: 50%
@@ -279,7 +279,7 @@ Il VisionController dispone di ... che possono alimentare direttamente la camera
 ```{figure} img/Spec_Elettriche_PC.png
 :alt: Schema elettrico VisionController
 :align: center
-:width: 80%
+:width: 50%
 ```
 
 
@@ -326,7 +326,7 @@ Il VisionController dispone di ... che possono alimentare direttamente la camera
 ```
 ### Specifiche fisiche 
 
-```{figure} img/Dim_PC.png
+```{figure} img/dimensioni_VC.png
 :alt: Dimensioni VisionController
 :align: center
 :width: 80%
@@ -445,23 +445,40 @@ Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezi
 Componenti aggiuntivi disponibili separatamente:
 
 
-:::{card} [**Toplight**](toplight)
+:::{card} Toplight
+:link: toplight
+:link-type: ref
+:class-card: shadow
 :::
 
-:::{card} [**Backlight**](backlight)
+:::{card} Backlight
+:link: backlight
+:link-type: ref
+:class-card: shadow
 :::
 
-:::{card} [**Laser Tool**](laser)
+:::{card} Laser Tool
+:link: laser
+:link-type: ref
+:class-card: shadow
 :::
 
-:::{card} [**Supporto per Camera e Toplight**](supporto) 
+:::{card} Supporto per Camera e Toplight
+:link: supporto
+:link-type: ref
+:class-card: shadow
 :::
 
-
-:::{card} [**Switch**](switch)
+:::{card} Switch
+:link: switch
+:link-type: ref
+:class-card: shadow
 :::
 
-:::{card} [**Display**](display)
+:::{card} Display
+:link: display
+:link-type: ref
+:class-card: shadow
 :::
 
 ---

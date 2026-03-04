@@ -2,94 +2,46 @@
    FONT CONFIGURATION
    ============================================ */
 
-/* Importa il font Familjen Grotesk da Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
 
-/* Applica il font a tutti gli elementi del tema sphinx_book_theme */
-html,
-body,
-.bd-main,
-.bd-content,
-.bd-article,
-.bd-sidebar,
-div.body,
-p,
-li,
-td,
-th,
-span,
-a {
+html, body, .bd-main, .bd-content, .bd-article, .bd-sidebar, div.body, p, li, td, th, span, a {
     font-family: 'Familjen Grotesk', sans-serif !important;
 }
 
-/* Applica il font ai titoli con selettori più specifici */
-.bd-content h1,
-.bd-content h2,
-.bd-content h3,
-.bd-content h4,
-.bd-content h5,
-.bd-content h6,
-.bd-sidebar h1,
-.bd-sidebar h2,
-.bd-sidebar h3,
-.bd-sidebar h4,
-.bd-sidebar h5,
-.bd-sidebar h6,
+.bd-content h1, .bd-content h2, .bd-content h3, .bd-content h4, .bd-content h5, .bd-content h6, 
+.bd-sidebar h1, .bd-sidebar h2, .bd-sidebar h3, .bd-sidebar h4, .bd-sidebar h5, .bd-sidebar h6, 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Familjen Grotesk', sans-serif !important;
     font-weight: 700 !important;
 }
 
-/* Applica il font anche agli elementi della sidebar e del menu */
-.bd-sidebar-primary,
-.bd-sidebar-secondary,
-.toctree-l1,
-.toctree-l2,
-.toctree-l3,
-.navbar,
-.navbar-nav {
+.bd-sidebar-primary, .bd-sidebar-secondary, .toctree-l1, .toctree-l2, .toctree-l3, .navbar, .navbar-nav {
     font-family: 'Familjen Grotesk', sans-serif !important;
 }
 
-/* Applica il font agli elementi di codice inline (mantieni monospace per i blocchi) */
-p code,
-li code {
+p code, li code {
     font-family: 'Familjen Grotesk', monospace !important;
 }
 
-/* Applica il font a tutti gli input e button */
-input,
-button,
-select,
-textarea {
+input, button, select, textarea {
     font-family: 'Familjen Grotesk', sans-serif !important;
 }
 
-/* Applica il font alle tabelle */
-table,
-table th,
-table td {
+table, table th, table td {
     font-family: 'Familjen Grotesk', sans-serif !important;
 }
-
 
 /* ============================================
    TABLE HOVER EFFECTS
    ============================================ */
 
-table tbody tr,
-table.docutils tbody tr,
-.docutils tbody tr,
-.bd-content table tbody tr {
+table tbody tr, table.docutils tbody tr, .docutils tbody tr, .bd-content table tbody tr {
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
 }
 
-table tbody tr:hover,
-table.docutils tbody tr:hover,
-.docutils tbody tr:hover,
-.bd-content table tbody tr:hover,
-table.list-table tbody tr:hover {
+table tbody tr:hover, table.docutils tbody tr:hover, .docutils tbody tr:hover, 
+.bd-content table tbody tr:hover, table.list-table tbody tr:hover {
     background-color: #cfe2ff !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
 }
@@ -98,21 +50,18 @@ tbody tr:hover {
     background-color: #cfe2ff !important;
 }
 
-tbody tr:hover td,
-tbody tr:hover th {
+tbody tr:hover td, tbody tr:hover th {
     color: #212529 !important;
 }
 
-table thead tr:hover,
-thead tr:hover {
+table thead tr:hover, thead tr:hover {
     background-color: inherit !important;
     cursor: default !important;
     box-shadow: none !important;
 }
 
-
 /* ============================================
-   INLINE ICON FIX DEFINITIVO
+   INLINE ICON & TABLE ALIGNMENT FIX
    ============================================ */
 
 .bd-content table img.inline-icon {
@@ -125,72 +74,53 @@ thead tr:hover {
     line-height: 1.6;
 }
 
+/* MODIFICA QUI: 
+   Ho cambiato vertical-align da 'middle' a 'top'.
+   In questo modo il testo nella prima colonna è centrato orizzontalmente ma in alto.
+*/
 .bd-content table td:first-child {
     text-align: center;
-    vertical-align: middle;
-}
-/* Dimensioni variabili */
-
-.bd-content table img.inline-icon.icon-small {
-    height: 30px;
+    vertical-align: top !important; 
+    padding-top: 15px; /* Opzionale: aggiunge un po' di respiro dal bordo superiore */
 }
 
-.bd-content table img.inline-icon.icon-medium {
-    height: 50px;
-}
+/* Dimensioni variabili icone */
+.bd-content table img.inline-icon.icon-small { height: 30px; }
+.bd-content table img.inline-icon.icon-medium { height: 50px; }
+.bd-content table img.inline-icon.icon-large { height: 60px; }
+.bd-content table img.inline-icon.icon-xl { height: 80px; }
 
-.bd-content table img.inline-icon.icon-large {
-    height: 60px;
-}
-
-.bd-content table img.inline-icon.icon-xl {
-    height: 80px;
+/* Classe specifica per forzare l'allineamento in alto su TUTTE le celle di una tabella */
+.align-top table td, 
+.align-top table th,
+.bd-content table.align-top td {
+    vertical-align: top !important;
 }
 
 /* ============================================
    OPTIONAL: DARK MODE SUPPORT
    ============================================ */
 
-
 @media (prefers-color-scheme: dark) {
-    table.docutils tbody tr:hover {
-        background-color: #1e3a5f !important;
-    }
-    
-    table.docutils tbody tr:nth-child(even):hover {
-        background-color: #1e3a5f !important;
-    }
-    
-    table.docutils tbody tr:nth-child(odd):hover {
-        background-color: #1a2f4a !important;
-    }
+    table.docutils tbody tr:hover { background-color: #1e3a5f !important; }
+    table.docutils tbody tr:nth-child(even):hover { background-color: #1e3a5f !important; }
+    table.docutils tbody tr:nth-child(odd):hover { background-color: #1a2f4a !important; }
 }
 
 /* ============================================
-   GESTIONE LOGO ARS (SIDEBAR E CONTENUTO)
+   GESTIONE LOGO ARS
    ============================================ */
 
-/* Imposta una dimensione visibile e fissa per entrambi i loghi */
 .only-light, .only-dark {
-    width: 200px !important; /* Dimensione ideale basata sullo screenshot */
+    width: 200px !important;
     height: auto !important;
     display: inline-block !important;
     margin-bottom: 10px;
 }
 
-/* Mostra il logo corretto in base al tema (Light/Dark) */
-/* Questo risolve il problema dei due loghi visibili insieme o minuscoli */
+html[data-theme="light"] .only-dark { display: none !important; }
+html[data-theme="dark"] .only-light { display: none !important; }
 
-html[data-theme="light"] .only-dark {
-    display: none !important;
-}
-
-html[data-theme="dark"] .only-light {
-    display: none !important;
-}
-
-/* Se vuoi che il logo nel testo (quello in basso) sia più grande di quello nella sidebar */
-.bd-content .only-light, 
-.bd-content .only-dark {
+.bd-content .only-light, .bd-content .only-dark {
     width: 250px !important;
 }

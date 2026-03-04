@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=5ae1aa73" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=041d62ba" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -422,42 +422,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-e-importanza-protocol-setup">Funzione e Importanza Protocol Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ruolo-nel-sistema">Ruolo nel sistema</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#impatto-sulla-dashboard">Impatto sulla Dashboard</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-protocol-setup">Accesso Protocol Setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-configurabili">Parametri Configurabili</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-dettagliata-parametri">Configurazione Dettagliata Parametri</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max-object-count-return">Max Object Count Return</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-limita-quante-coordinate-vengono-inviate-al-robot-per-ogni-ciclo-di-visione"><strong>Funzione</strong>: Limita quante coordinate vengono inviate al robot per ogni ciclo di visione.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#valori-tipici"><strong>Valori tipici:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione-max-object-count"><strong>Ottimizzazione Max Object Count</strong></a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-object-count-return">Min Object Count Return</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-definisce-quando-una-run-di-visione-e-considerata-successo-vs-fallimento"><strong>Funzione</strong>: Definisce quando una run di visione è considerata “successo” vs “fallimento”.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Valori tipici:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comportamento-sistema"><strong>Comportamento sistema:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#impatto-sulla-produttivita"><strong>Impatto sulla produttività</strong></a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max-object-count-return">Max Object Count Return</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-object-count-return">Min Object Count Return</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting-mode-results">Sorting Mode Results</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pickable-parts-by-the-robot">Pickable parts by the robot</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-parametro-statistico-che-indica-quanti-pezzi-vengono-effettivamente-prelevati-dal-robot-per-ogni-ciclo-di-visione"><strong>Funzione</strong>: Parametro statistico che indica quanti pezzi vengono <strong>effettivamente prelevati</strong> dal robot per ogni ciclo di visione.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Valori tipici:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#impatto-su-statistiche-dashboard"><strong>Impatto su statistiche Dashboard</strong></a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maximum-processing-time-per-part">Maximum processing time per part</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-tempo-di-riferimento-in-secondi-che-il-sistema-usa-per-determinare-quando-un-ciclo-e-considerato-completato-e-passare-da-stato-run-a-idle"><strong>Funzione</strong>: Tempo di riferimento (in secondi) che il sistema usa per determinare quando un ciclo è considerato “completato” e passare da stato RUN a IDLE.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>Valori tipici:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#come-calcolarlo"><strong>Come calcolarlo</strong>:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cosa-non-e"><strong>Cosa NON è</strong>:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#impatto-tempo-processing-su-dashboard"><strong>Impatto tempo processing su Dashboard</strong></a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pickable-parts-by-the-robot-prese-robot-per-ciclo-visione">Pickable parts by the robot - <strong>Prese robot per ciclo visione</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maximum-processing-time-per-part">Maximum processing time per part</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-ottimale-per-scenari-tipici">Configurazione Ottimale per Scenari Tipici</a><ul class="nav section-nav flex-column">
@@ -466,19 +438,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-3-robot-lento-alta-affidabilita">Scenario 3: Robot lento, alta affidabilità</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-tuning-protocol-setup">Procedura di Tuning Protocol Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approccio-sistematico">Approccio sistematico</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-tuning-protocol-setup">Procedura di Tuning Protocol Setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-configurazione">Salvataggio Configurazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-configurazione">Verifica Configurazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-validazione">Test validazione</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-protocol-setup">Troubleshooting Protocol Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni">Problemi comuni</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-configurazione-test-validazione">Verifica Configurazione - Test validazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-protocol-setup-problemi-comuni">Troubleshooting Protocol Setup - Problemi comuni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist-completamento">Checklist Completamento</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
@@ -505,55 +468,22 @@ document.write(`
 <li><p><strong>Prima di produzione continua</strong>: Per ottimizzare statistiche e metriche Dashboard</p></li>
 </ul>
 </div>
-<hr class="docutils" />
-<section id="funzione-e-importanza-protocol-setup">
-<h2>Funzione e Importanza Protocol Setup<a class="headerlink" href="#funzione-e-importanza-protocol-setup" title="Link to this heading">#</a></h2>
-<section id="ruolo-nel-sistema">
-<h3>Ruolo nel sistema<a class="headerlink" href="#ruolo-nel-sistema" title="Link to this heading">#</a></h3>
-<p>I parametri di Protocol Setup definiscono:</p>
-<ol class="arabic simple">
-<li><p><strong>Quanti oggetti inviare al robot</strong>: Numero massimo e minimo di coordinate per ciclo</p></li>
-<li><p><strong>Come ordinarli</strong>: Priorità di prelievo (score, posizione, ecc.)</p></li>
-<li><p><strong>Calcolo statistiche</strong>: Metriche di produttività e performance</p></li>
-<li><p><strong>Gestione stati sistema</strong>: Quando il sistema passa da RUN a IDLE</p></li>
-</ol>
-<p>Questi parametri sono <strong>fondamentali</strong> per:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Posizionamento Protocol Setup nel workflow</strong></p>
+<p>Protocol Setup si configura tipicamente:</p>
 <ul class="simple">
-<li><p>Ottimizzare il throughput (pezzi/minuto)</p></li>
-<li><p>Calcolare correttamente le metriche di produzione</p></li>
-<li><p>Garantire sincronizzazione corretta robot-visione</p></li>
-<li><p>Visualizzare dati accurati nella Dashboard</p></li>
+<li><p><strong>Dopo</strong>: Calibrazione robot, creazione modelli</p></li>
+<li><p><strong>Prima</strong>: Monitoraggio produzione continua</p></li>
 </ul>
-</section>
-<section id="impatto-sulla-dashboard">
-<h3>Impatto sulla Dashboard<a class="headerlink" href="#impatto-sulla-dashboard" title="Link to this heading">#</a></h3>
-<p>Le modifiche ai parametri di Protocol Setup influenzano la Dashboard principalmente in termini di:</p>
-<p><strong>Statistiche visualizzate:</strong></p>
+<p>Questo perché:</p>
 <ul class="simple">
-<li><p>Numero prese robot per ciclo</p></li>
-<li><p>Tempo ciclo totale</p></li>
-<li><p>Parts Per Minute (PPM)</p></li>
-<li><p>Grafici storici produttività</p></li>
+<li><p>Richiede comprensione del comportamento robot (velocità, tipo gripper)</p></li>
+<li><p>Influenza le statistiche mostrate in Dashboard</p></li>
+<li><p>È l’ultimo step di configurazione prima della produzione vera</p></li>
 </ul>
-<p><strong>Stati operativi:</strong></p>
-<ul class="simple">
-<li><p>Transizioni RUN → IDLE</p></li>
-<li><p>Tempo “In Run”</p></li>
-<li><p>Sincronizzazione visione-robot</p></li>
-</ul>
-<p><strong>KPI (Key Performance Indicators):</strong></p>
-<ul class="simple">
-<li><p>Overall Equipment Effectiveness (OEE)</p></li>
-<li><p>Utilizzo robot</p></li>
-<li><p>Efficienza sistema</p></li>
-</ul>
-<p><strong>Comportamento ciclo:</strong></p>
-<ul class="simple">
-<li><p>Stabilità comunicazione robot-visione</p></li>
-<li><p>Gestione timeout e code</p></li>
-</ul>
-</section>
-</section>
+<p>Una volta configurato correttamente, raramente richiede modifiche (solo se cambia robot o modalità operativa).</p>
+</div>
 <hr class="docutils" />
 <section id="accesso-protocol-setup">
 <h2>Accesso Protocol Setup<a class="headerlink" href="#accesso-protocol-setup" title="Link to this heading">#</a></h2>
@@ -583,16 +513,18 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Max Object Count Return</strong></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#maxobject"><span class="std std-ref"><strong>Max Object Count Return</strong></span></a></p></td>
 <td><p>Indica il numero <strong>massimo</strong> di oggetti/coordinate che il sistema di visione può restituire al robot in una singola run. Se la visione rileva più oggetti di questo limite, ne vengono inviati al massimo questo numero, selezionati in base al criterio di ordinamento configurato (Sorting Mode).</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Min Object Count Return</strong></p></td>
-<td><p>Indica il numero <strong>minimo</strong> di oggetti che devono essere rilevati in una run affinché il risultato venga considerato valido. Se il numero è inferiore a questa soglia, la run viene considerata non valida e viene attivata una sequenza di recupero (es: movimentazione FlexiBowl, attivazione Hopper).</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#minobject"><span class="std std-ref"><strong>Min Object Count Return</strong></span></a></p></td>
+<td><p>Indica il numero <strong>minimo</strong> di oggetti che devono essere rilevati in una run affinché il risultato venga considerato valido. Se il numero è inferiore a questa soglia, la run viene considerata non valida.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Sorting Mode Results</strong></p></td>
-<td><p>Definisce il <strong>criterio di ordinamento</strong> con cui viene ordinata la lista degli oggetti restituiti dalla visione. Opzioni tipiche: per score, per coordinata X/Y crescente o decrescente, per distanza da un punto di riferimento. Questo parametro determina la priorità di prelievo e influisce su quali oggetti vengono inclusi nel Max Object Count Return.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#sortingmode"><span class="std std-ref"><strong>Sorting Mode Results</strong></span></a></p></td>
+<td><p>Definisce il <strong>criterio di ordinamento</strong> con cui viene ordinata la lista degli oggetti restituiti dalla visione.</p>
+<p><em>Opzioni tipiche:</em> per score, per coordinata X/Y crescente o decrescente, per distanza da un punto di riferimento. Questo parametro  determina la priorità di prelievo e influisce su quali oggetti vengono inclusi nel Max Object Count Return.</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p><strong>Pickable parts by the robot detected by vision in each cycle</strong></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pickableparts"><span class="std std-ref"><strong>Pickable parts by the robot detected by vision in each cycle</strong></span></a></p></td>
 <td><p>Parametro utilizzato per il <strong>calcolo delle statistiche di produzione</strong>. Indica il numero di prese effettive che il robot effettua per ogni run della visione.</p>
 <p><em>Esempio: se il robot preleva 2 pezzi simultaneamente con una pinza doppia, impostare valore 2.</em></p>
 <div class="admonition important">
@@ -601,7 +533,7 @@ document.write(`
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>Maximum processing time per part with the robot (in seconds)</strong></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#maxprocessingtime"><span class="std std-ref"><strong>Maximum processing time per part with the robot (in seconds)</strong></span></a></p></td>
 <td><p>Parametro utilizzato per <strong>statistiche e gestione del flusso di lavoro</strong>. Definisce il tempo massimo dopo il quale il sistema considera conclusa la gestione delle coordinate di una run e passa dallo stato RUN allo stato IDLE.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -617,13 +549,14 @@ document.write(`
 <section id="configurazione-dettagliata-parametri">
 <h2>Configurazione Dettagliata Parametri<a class="headerlink" href="#configurazione-dettagliata-parametri" title="Link to this heading">#</a></h2>
 <section id="max-object-count-return">
-<h3>Max Object Count Return<a class="headerlink" href="#max-object-count-return" title="Link to this heading">#</a></h3>
-<section id="funzione-limita-quante-coordinate-vengono-inviate-al-robot-per-ogni-ciclo-di-visione">
-<h4><strong>Funzione</strong>: Limita quante coordinate vengono inviate al robot per ogni ciclo di visione.<a class="headerlink" href="#funzione-limita-quante-coordinate-vengono-inviate-al-robot-per-ogni-ciclo-di-visione" title="Link to this heading">#</a></h4>
-</section>
-<section id="valori-tipici">
-<h4><strong>Valori tipici:</strong><a class="headerlink" href="#valori-tipici" title="Link to this heading">#</a></h4>
-<ul class="simple">
+<span id="maxobject"></span><h3>Max Object Count Return<a class="headerlink" href="#max-object-count-return" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="align-top table">
+<tbody>
+<tr class="row-odd"><td><p><strong>Funzione</strong>:</p></td>
+<td><p>Limita quante coordinate vengono inviate al robot per ogni ciclo di visione.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Valori tipici:</strong></p></td>
+<td><ul class="simple">
 <li><p><strong>1-3 oggetti</strong>: Configurazione più comune per robot con picking singolo o doppio</p></li>
 <li><p><strong>4-8 oggetti</strong>: Per sistemi con buffer o robot veloci che possono gestire code</p></li>
 <li><p><strong>&gt;8 oggetti</strong>: Raramente necessario, può saturare la comunicazione</p></li>
@@ -643,10 +576,10 @@ document.write(`
 <li><p>Max Count ottimale: 3/2 = 1.5 → Arrotondare a 2 oggetti</p></li>
 </ul>
 </div>
-</section>
-<section id="ottimizzazione-max-object-count">
-<h4><strong>Ottimizzazione Max Object Count</strong><a class="headerlink" href="#ottimizzazione-max-object-count" title="Link to this heading">#</a></h4>
-<p><strong>Valore troppo basso</strong> (es: 1 quando robot è veloce):</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Ottimizzazione Max Object Count</strong></p></td>
+<td><p><strong>Valore troppo basso</strong> (es: 1 quando robot è veloce):</p>
 <ul class="simple">
 <li><p>Effetto: Robot attende spesso la visione (idle time)</p></li>
 <li><p>Sintomo: Dashboard mostra robot time basso rispetto a vision time</p></li>
@@ -664,27 +597,31 @@ document.write(`
 <li><p>Nessun idle time significativo</p></li>
 <li><p>Nessuna saturazione comunicazione</p></li>
 </ul>
-</section>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="min-object-count-return">
-<h3>Min Object Count Return<a class="headerlink" href="#min-object-count-return" title="Link to this heading">#</a></h3>
-<section id="funzione-definisce-quando-una-run-di-visione-e-considerata-successo-vs-fallimento">
-<h4><strong>Funzione</strong>: Definisce quando una run di visione è considerata “successo” vs “fallimento”.<a class="headerlink" href="#funzione-definisce-quando-una-run-di-visione-e-considerata-successo-vs-fallimento" title="Link to this heading">#</a></h4>
-</section>
-<section id="id1">
-<h4><strong>Valori tipici:</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
-<ul class="simple">
+<span id="minobject"></span><h3>Min Object Count Return<a class="headerlink" href="#min-object-count-return" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>Funzione</strong>:</p></td>
+<td><p>Definisce quando una run di visione è considerata “successo” vs “fallimento”.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Valori tipici:</strong></p></td>
+<td><ul class="simple">
 <li><p><strong>1</strong>: Configurazione più comune - anche un solo pezzo valido è accettabile</p></li>
 <li><p><strong>2-3</strong>: Per applicazioni che richiedono efficienza alta (evitare cicli con pochi pezzi)</p></li>
 <li><p><strong>&gt;3</strong>: Raro, solo per applicazioni speciali con multi-pick obbligatorio</p></li>
 </ul>
-</section>
-<section id="comportamento-sistema">
-<h4><strong>Comportamento sistema:</strong><a class="headerlink" href="#comportamento-sistema" title="Link to this heading">#</a></h4>
-<ul class="simple">
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Comportamento sistema:</strong></p></td>
+<td><ul>
 <li><p><strong>Oggetti rilevati ≥ Min Count</strong>: Run OK, coordinate inviate a robot</p></li>
-<li><p><strong>Oggetti rilevati &lt; Min Count</strong>: Run NON OK, attivazione recupero (FlexiBowl shake, Hopper)</p></li>
-</ul>
+<li><p><strong>Oggetti rilevati &lt; Min Count</strong>: Run NON OK, attivazione recupero (FlexiBowl shake, Hopper)</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Come scegliere il valore:</strong></p>
@@ -693,10 +630,12 @@ document.write(`
 <li><p>Se si vuole forzare riempimento prima del picking → Min Count = 2-3</p></li>
 </ul>
 </div>
-</section>
-<section id="impatto-sulla-produttivita">
-<h4><strong>Impatto sulla produttività</strong><a class="headerlink" href="#impatto-sulla-produttivita" title="Link to this heading">#</a></h4>
-<p><strong>Min Count = 1</strong> (più permissivo):</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Impatto sulla produttività</strong></p></td>
+<td><p><strong>Min Count = 1</strong> (più permissivo):</p>
 <ul class="simple">
 <li><p>✓ Massima flessibilità, robot lavora sempre se c’è almeno 1 pezzo</p></li>
 <li><p>✓ Throughput più alto in condizioni di scarso riempimento</p></li>
@@ -710,10 +649,14 @@ document.write(`
 <li><p>✗ Throughput ridotto se sistema non mantiene sempre ≥3 pezzi</p></li>
 </ul>
 <p><strong>Regola generale</strong>: Iniziare con Min Count = 1, aumentare solo se si verificano troppi cicli con efficienza bassa.</p>
-</section>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="sorting-mode-results">
-<h3>Sorting Mode Results<a class="headerlink" href="#sorting-mode-results" title="Link to this heading">#</a></h3>
+<span id="sortingmode"></span><h3>Sorting Mode Results<a class="headerlink" href="#sorting-mode-results" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -778,19 +721,18 @@ document.write(`
 <p>La modalità di sorting interagisce con Max Object Count. I primi N oggetti (secondo il criterio) vengono inviati.</p>
 </div>
 </section>
-<section id="pickable-parts-by-the-robot">
-<h3>Pickable parts by the robot<a class="headerlink" href="#pickable-parts-by-the-robot" title="Link to this heading">#</a></h3>
-<p><strong>Prese robot per ciclo visione</strong></p>
-<section id="funzione-parametro-statistico-che-indica-quanti-pezzi-vengono-effettivamente-prelevati-dal-robot-per-ogni-ciclo-di-visione">
-<h4><strong>Funzione</strong>: Parametro statistico che indica quanti pezzi vengono <strong>effettivamente prelevati</strong> dal robot per ogni ciclo di visione.<a class="headerlink" href="#funzione-parametro-statistico-che-indica-quanti-pezzi-vengono-effettivamente-prelevati-dal-robot-per-ogni-ciclo-di-visione" title="Link to this heading">#</a></h4>
-</section>
-<section id="id2">
-<h4><strong>Valori tipici:</strong><a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
-<ul class="simple">
+<section id="pickable-parts-by-the-robot-prese-robot-per-ciclo-visione">
+<span id="pickableparts"></span><h3>Pickable parts by the robot - <strong>Prese robot per ciclo visione</strong><a class="headerlink" href="#pickable-parts-by-the-robot-prese-robot-per-ciclo-visione" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>Funzione</strong>:</p></td>
+<td><p>Parametro statistico che indica quanti pezzi vengono <strong>effettivamente prelevati</strong> dal robot per ogni ciclo di visione.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Valori tipici:</strong></p></td>
+<td><ul>
 <li><p><strong>1</strong>: Robot con gripper singolo, preleva 1 pezzo alla volta (più comune)</p></li>
 <li><p><strong>2</strong>: Robot con gripper doppio o pinza multi-punto che preleva 2 pezzi simultaneamente</p></li>
-<li><p><strong>&gt;2</strong>: Sistemi speciali con multi-pick (raro)</p></li>
-</ul>
+<li><p><strong>&gt;2</strong>: Sistemi speciali con multi-pick (raro)</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Questo valore rappresenta le <strong>prese fisiche</strong>, non gli oggetti rilevati dalla visione.</p>
@@ -804,11 +746,13 @@ Scenario: Visione rileva 5 oggetti, Max Count = 3, Gripper doppio</p>
 <li><p>Pickable parts setting: 2</p></li>
 </ul>
 <p>Calcolo PPM sarà basato su “2 pezzi ogni X secondi”, non su 3 o 5.</p>
-</section>
-<section id="impatto-su-statistiche-dashboard">
-<h4><strong>Impatto su statistiche Dashboard</strong><a class="headerlink" href="#impatto-su-statistiche-dashboard" title="Link to this heading">#</a></h4>
-<p>Questo parametro è <strong>cruciale</strong> per il calcolo accurato di:</p>
-<p><strong>Parts Per Minute (PPM)</strong>:</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Impatto su statistiche Dashboard</strong></p></td>
+<td><p>Questo parametro è <strong>cruciale</strong> per il calcolo accurato di:
+<strong>Parts Per Minute (PPM)</strong>:</p>
 <ul class="simple">
 <li><p>Formula: <code class="docutils literal notranslate"><span class="pre">PPM</span> <span class="pre">=</span> <span class="pre">(Pickable</span> <span class="pre">parts</span> <span class="pre">×</span> <span class="pre">60)</span> <span class="pre">/</span> <span class="pre">Tempo</span> <span class="pre">ciclo</span> <span class="pre">totale</span></code></p></li>
 <li><p>Se impostato errato, PPM visualizzato non corrisponde a realtà</p></li>
@@ -829,41 +773,46 @@ Scenario: Visione rileva 5 oggetti, Max Count = 3, Gripper doppio</p>
 <li><p>Dividere per 10 cicli</p></li>
 <li><p>Questo è il valore da impostare</p></li>
 </ol>
-</section>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="maximum-processing-time-per-part">
-<h3>Maximum processing time per part<a class="headerlink" href="#maximum-processing-time-per-part" title="Link to this heading">#</a></h3>
-<section id="funzione-tempo-di-riferimento-in-secondi-che-il-sistema-usa-per-determinare-quando-un-ciclo-e-considerato-completato-e-passare-da-stato-run-a-idle">
-<h4><strong>Funzione</strong>: Tempo di riferimento (in secondi) che il sistema usa per determinare quando un ciclo è considerato “completato” e passare da stato RUN a IDLE.<a class="headerlink" href="#funzione-tempo-di-riferimento-in-secondi-che-il-sistema-usa-per-determinare-quando-un-ciclo-e-considerato-completato-e-passare-da-stato-run-a-idle" title="Link to this heading">#</a></h4>
-</section>
-<section id="id3">
-<h4><strong>Valori tipici:</strong><a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
-<ul class="simple">
+<span id="maxprocessingtime"></span><h3>Maximum processing time per part<a class="headerlink" href="#maximum-processing-time-per-part" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>Funzione</strong>:</p></td>
+<td><p>Tempo di riferimento (in secondi) che il sistema usa per determinare quando un ciclo è considerato “completato” e passare da stato RUN a IDLE.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Valori tipici:</strong></p></td>
+<td><ul class="simple">
 <li><p><strong>2-5 secondi</strong>: Per robot veloci con cicli brevi</p></li>
 <li><p><strong>5-10 secondi</strong>: Per robot medi con traiettorie standard</p></li>
 <li><p><strong>10-20 secondi</strong>: Per robot lenti o con lunghe distanze di deposito</p></li>
 </ul>
-</section>
-<section id="come-calcolarlo">
-<h4><strong>Come calcolarlo</strong>:<a class="headerlink" href="#come-calcolarlo" title="Link to this heading">#</a></h4>
-<p>Tempo processing = Tempo medio pick&amp;place robot × 1.2 (margine 20%)</p>
-<p>Esempio:</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Come calcolarlo</strong>:</p></td>
+<td><p>Tempo processing = Tempo medio pick&amp;place robot × 1.2 (margine 20%)
+Esempio:</p>
 <ul class="simple">
 <li><p>Robot impiega mediamente 4 secondi per pick&amp;place</p></li>
 <li><p>Impostare: 4 × 1.2 = 4.8 → arrotondare a 5 secondi</p></li>
 </ul>
-</section>
-<section id="cosa-non-e">
-<h4><strong>Cosa NON è</strong>:<a class="headerlink" href="#cosa-non-e" title="Link to this heading">#</a></h4>
-<ul class="simple">
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Cosa NON è</strong>:</p></td>
+<td><ul class="simple">
 <li><p>✗ Non è un timeout di errore (robot non si ferma se supera questo tempo)</p></li>
 <li><p>✗ Non blocca operazioni se sforato</p></li>
 <li><p>✓ È solo un riferimento per statistiche e gestione stati</p></li>
 </ul>
-</section>
-<section id="impatto-tempo-processing-su-dashboard">
-<h4><strong>Impatto tempo processing su Dashboard</strong><a class="headerlink" href="#impatto-tempo-processing-su-dashboard" title="Link to this heading">#</a></h4>
-<p><strong>Valore troppo breve</strong> (es: 2 secondi quando robot impiega 6):</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Impatto tempo processing su Dashboard</strong></p></td>
+<td><p><strong>Valore troppo breve</strong> (es: 2 secondi quando robot impiega 6):</p>
 <ul class="simple">
 <li><p>Sistema passa continuamente RUN → IDLE → RUN</p></li>
 <li><p>Dashboard mostra “In Run Time” inferiore al reale</p></li>
@@ -881,7 +830,11 @@ Scenario: Visione rileva 5 oggetti, Max Count = 3, Gripper doppio</p>
 <li><p>“In Run Time” corrisponde al tempo effettivo di lavoro robot</p></li>
 <li><p>Statistiche accurate e utilizzabili per analisi</p></li>
 </ul>
-</section>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 </section>
 <hr class="docutils" />
@@ -954,14 +907,13 @@ Maximum processing time: 10 secondi</p>
 <hr class="docutils" />
 <section id="procedura-di-tuning-protocol-setup">
 <h2>Procedura di Tuning Protocol Setup<a class="headerlink" href="#procedura-di-tuning-protocol-setup" title="Link to this heading">#</a></h2>
-<section id="approccio-sistematico">
-<h3>Approccio sistematico<a class="headerlink" href="#approccio-sistematico" title="Link to this heading">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Workflow ottimizzazione</strong></p>
-<p><strong>Fase 1: Configurazione iniziale</strong> (durante commissioning)</p>
-<ol class="arabic simple">
-<li><p>Impostare valori conservativi:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-text"><strong>Workflow ottimizzazione</strong></span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td><p><strong>Fase 1: Configurazione iniziale</strong> (durante commissioning)</p></td>
+<td><ol class="arabic simple">
+<li><p>Impostare valori conservativi:</p></li>
+</ol>
 <ul class="simple">
 <li><p>Max Count: 2</p></li>
 <li><p>Min Count: 1</p></li>
@@ -969,52 +921,60 @@ Maximum processing time: 10 secondi</p>
 <li><p>Pickable: 1 (o valore effettivo gripper)</p></li>
 <li><p>Processing time: Stima iniziale</p></li>
 </ul>
-</li>
+<ol class="arabic simple" start="2">
 <li><p>Eseguire 10-20 cicli di test</p></li>
-<li><p>Annotare:</p>
+<li><p>Annotare:</p></li>
+</ol>
 <ul class="simple">
 <li><p>Tempo medio pick&amp;place robot effettivo</p></li>
 <li><p>Quanti oggetti vengono effettivamente utilizzati</p></li>
 <li><p>Eventuali idle time robot</p></li>
 </ul>
-</li>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Fase 2: Primo tuning</strong> (dopo primi test produzione)</p></td>
+<td><ol class="arabic simple" start="4">
+<li><p>Regolare Processing Time:</p></li>
 </ol>
-<p><strong>Fase 2: Primo tuning</strong> (dopo primi test produzione)</p>
-<ol class="arabic simple" start="4">
-<li><p>Regolare Processing Time:</p>
 <ul class="simple">
 <li><p>Impostare = Tempo medio pick&amp;place × 1.2</p></li>
 </ul>
-</li>
-<li><p>Regolare Max Count:</p>
+<ol class="arabic simple" start="5">
+<li><p>Regolare Max Count:</p></li>
+</ol>
 <ul class="simple">
 <li><p>Se robot attende spesso → Aumentare Max Count</p></li>
 <li><p>Se molte coordinate non usate → Ridurre Max Count</p></li>
 </ul>
-</li>
+<ol class="arabic simple" start="6">
 <li><p>Eseguire 50-100 cicli di produzione</p></li>
-<li><p>Monitorare Dashboard:</p>
+<li><p>Monitorare Dashboard:</p></li>
+</ol>
 <ul class="simple">
 <li><p>PPM stabile?</p></li>
 <li><p>“In Run Time” accurato?</p></li>
 <li><p>Nessun comportamento anomalo?</p></li>
 </ul>
-</li>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Fase 3: Ottimizzazione fine</strong> (produzione continua)</p></td>
+<td><ol class="arabic simple" start="8">
+<li><p>Dopo 1-2 settimane produzione, analizzare:</p></li>
 </ol>
-<p><strong>Fase 3: Ottimizzazione fine</strong> (produzione continua)</p>
-<ol class="arabic simple" start="8">
-<li><p>Dopo 1-2 settimane produzione, analizzare:</p>
 <ul class="simple">
 <li><p>Dati storici PPM</p></li>
 <li><p>Efficienza robot media</p></li>
 <li><p>Eventuali pattern di inefficienza</p></li>
 </ul>
-</li>
+<ol class="arabic simple" start="9">
 <li><p>Regolazioni finali se necessarie</p></li>
 <li><p>Documentare configurazione ottimale</p></li>
 </ol>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-</section>
 </section>
 <hr class="docutils" />
 <section id="salvataggio-configurazione">
@@ -1033,42 +993,44 @@ Maximum processing time: 10 secondi</p>
 </div>
 </section>
 <hr class="docutils" />
-<section id="verifica-configurazione">
-<h2>Verifica Configurazione<a class="headerlink" href="#verifica-configurazione" title="Link to this heading">#</a></h2>
-<section id="test-validazione">
-<h3>Test validazione<a class="headerlink" href="#test-validazione" title="Link to this heading">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Checklist verifica</strong></p>
+<section id="verifica-configurazione-test-validazione">
+<h2>Verifica Configurazione - Test validazione<a class="headerlink" href="#verifica-configurazione-test-validazione" title="Link to this heading">#</a></h2>
 <p>Dopo configurazione Protocol Setup, eseguire questi test:</p>
-<p><strong>Test 1: Ciclo singolo</strong></p>
-<ul class="contains-task-list simple">
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>Test 1: Ciclo singolo</strong></p></td>
+<td><ul class="contains-task-list simple">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Eseguire 1 ciclo manuale (One Run)</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Verificare che coordinate inviate = Max Count (o numero rilevato se &lt; Max)</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Verificare ordinamento corretto (primo oggetto = score più alto se By Score)</p></li>
 </ul>
-<p><strong>Test 2: Ciclo continuo</strong></p>
-<ul class="contains-task-list simple">
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Test 2: Ciclo continuo</strong></p></td>
+<td><ul class="contains-task-list simple">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Eseguire 10 cicli produttivi</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Monitorare Dashboard: “In Run Time” cresce correttamente?</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Verificare transizioni RUN → IDLE coerenti</p></li>
 </ul>
-<p><strong>Test 3: Statistiche</strong></p>
-<ul class="contains-task-list simple">
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Test 3: Statistiche</strong></p></td>
+<td><ul class="contains-task-list simple">
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Eseguire 50 cicli</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Calcolare PPM manualmente: (Pezzi prelevati totali / Tempo totale) × 60</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Confrontare con PPM mostrato in Dashboard</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Differenza dovrebbe essere &lt; 5%</p></li>
 </ul>
-<p>Se tutti i test sono positivi, configurazione è corretta.</p>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-</section>
+<p>Se tutti i test sono positivi, configurazione è corretta.</p>
 </section>
 <hr class="docutils" />
-<section id="troubleshooting-protocol-setup">
-<h2>Troubleshooting Protocol Setup<a class="headerlink" href="#troubleshooting-protocol-setup" title="Link to this heading">#</a></h2>
-<section id="problemi-comuni">
-<h3>Problemi comuni<a class="headerlink" href="#problemi-comuni" title="Link to this heading">#</a></h3>
+<section id="troubleshooting-protocol-setup-problemi-comuni">
+<h2>Troubleshooting Protocol Setup - Problemi comuni<a class="headerlink" href="#troubleshooting-protocol-setup-problemi-comuni" title="Link to this heading">#</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>PPM Dashboard non corrisponde a realtà</strong></p>
@@ -1093,7 +1055,6 @@ Maximum processing time: 10 secondi</p>
 <p><strong>Causa</strong>: “Max Object Count” troppo alto per velocità robot</p>
 <p><strong>Soluzione</strong>: Ridurre Max Count a valore realistico basato su tempo ciclo robot</p>
 </div>
-</section>
 </section>
 <hr class="docutils" />
 <section id="checklist-completamento">
@@ -1121,22 +1082,6 @@ Maximum processing time: 10 secondi</p>
 <p>Una volta completato Protocol Setup, il sistema è configurato completamente per l’operatività:</p>
 <p><strong>→ <a class="reference internal" href="22_Config_FlexiBowl.html"><span class="std std-doc">Config FlexiBowl</span></a></strong> - Ottimizzazione movimentazione (se non già fatto)</p>
 <p><strong>→ <a class="reference internal" href="24_Verifica_Risultati.html"><span class="std std-doc">Verifica Risultati (Dashboard)</span></a></strong> - Monitoraggio produzione e validazione configurazione</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Posizionamento Protocol Setup nel workflow</strong></p>
-<p>Protocol Setup si configura tipicamente:</p>
-<ul class="simple">
-<li><p><strong>Dopo</strong>: Calibrazione robot, creazione modelli</p></li>
-<li><p><strong>Prima</strong>: Monitoraggio produzione continua</p></li>
-</ul>
-<p>Questo perché:</p>
-<ul class="simple">
-<li><p>Richiede comprensione del comportamento robot (velocità, tipo gripper)</p></li>
-<li><p>Influenza le statistiche mostrate in Dashboard</p></li>
-<li><p>È l’ultimo step di configurazione prima della produzione vera</p></li>
-</ul>
-<p>Una volta configurato correttamente, raramente richiede modifiche (solo se cambia robot o modalità operativa).</p>
-</div>
 <br>
 <!-- Versions and languages set-up -->
 <style>
@@ -1447,42 +1392,14 @@ ___\\ \\     // //___
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-e-importanza-protocol-setup">Funzione e Importanza Protocol Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ruolo-nel-sistema">Ruolo nel sistema</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#impatto-sulla-dashboard">Impatto sulla Dashboard</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-protocol-setup">Accesso Protocol Setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametri-configurabili">Parametri Configurabili</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-dettagliata-parametri">Configurazione Dettagliata Parametri</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max-object-count-return">Max Object Count Return</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-limita-quante-coordinate-vengono-inviate-al-robot-per-ogni-ciclo-di-visione"><strong>Funzione</strong>: Limita quante coordinate vengono inviate al robot per ogni ciclo di visione.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#valori-tipici"><strong>Valori tipici:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ottimizzazione-max-object-count"><strong>Ottimizzazione Max Object Count</strong></a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-object-count-return">Min Object Count Return</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-definisce-quando-una-run-di-visione-e-considerata-successo-vs-fallimento"><strong>Funzione</strong>: Definisce quando una run di visione è considerata “successo” vs “fallimento”.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Valori tipici:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comportamento-sistema"><strong>Comportamento sistema:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#impatto-sulla-produttivita"><strong>Impatto sulla produttività</strong></a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#max-object-count-return">Max Object Count Return</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#min-object-count-return">Min Object Count Return</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sorting-mode-results">Sorting Mode Results</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pickable-parts-by-the-robot">Pickable parts by the robot</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-parametro-statistico-che-indica-quanti-pezzi-vengono-effettivamente-prelevati-dal-robot-per-ogni-ciclo-di-visione"><strong>Funzione</strong>: Parametro statistico che indica quanti pezzi vengono <strong>effettivamente prelevati</strong> dal robot per ogni ciclo di visione.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>Valori tipici:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#impatto-su-statistiche-dashboard"><strong>Impatto su statistiche Dashboard</strong></a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maximum-processing-time-per-part">Maximum processing time per part</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#funzione-tempo-di-riferimento-in-secondi-che-il-sistema-usa-per-determinare-quando-un-ciclo-e-considerato-completato-e-passare-da-stato-run-a-idle"><strong>Funzione</strong>: Tempo di riferimento (in secondi) che il sistema usa per determinare quando un ciclo è considerato “completato” e passare da stato RUN a IDLE.</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>Valori tipici:</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#come-calcolarlo"><strong>Come calcolarlo</strong>:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cosa-non-e"><strong>Cosa NON è</strong>:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#impatto-tempo-processing-su-dashboard"><strong>Impatto tempo processing su Dashboard</strong></a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pickable-parts-by-the-robot-prese-robot-per-ciclo-visione">Pickable parts by the robot - <strong>Prese robot per ciclo visione</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maximum-processing-time-per-part">Maximum processing time per part</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-ottimale-per-scenari-tipici">Configurazione Ottimale per Scenari Tipici</a><ul class="nav section-nav flex-column">
@@ -1491,19 +1408,10 @@ ___\\ \\     // //___
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-3-robot-lento-alta-affidabilita">Scenario 3: Robot lento, alta affidabilità</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-tuning-protocol-setup">Procedura di Tuning Protocol Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approccio-sistematico">Approccio sistematico</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-tuning-protocol-setup">Procedura di Tuning Protocol Setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-configurazione">Salvataggio Configurazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-configurazione">Verifica Configurazione</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-validazione">Test validazione</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-protocol-setup">Troubleshooting Protocol Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni">Problemi comuni</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-configurazione-test-validazione">Verifica Configurazione - Test validazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-protocol-setup-problemi-comuni">Troubleshooting Protocol Setup - Problemi comuni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checklist-completamento">Checklist Completamento</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
