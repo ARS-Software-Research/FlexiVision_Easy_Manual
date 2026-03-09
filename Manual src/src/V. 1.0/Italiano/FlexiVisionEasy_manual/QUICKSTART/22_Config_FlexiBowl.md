@@ -130,7 +130,54 @@ Utilizzare la funzione **Test Sequence** per verificare che il ciclo rispetti i 
     Cliccare sempre su **Synchronize Parameters** dopo ogni modifica manuale per rendere attive le variazioni nel controller.
     :::
 ```
+## Panoramica Parametri Flexibowl
+```{list-table}
+:header-rows: 1
+:widths: 5 25 70
 
+* - ID
+  - Elemento
+  - Descrizione
+* - 1
+  - MOVE – Accelerazione
+  - Valore di accelerazione utilizzato ad ogni comando MOVE
+* - 2
+  - MOVE – Decelerazione
+  - Valore di decelerazione utilizzato ad ogni comando MOVE
+* - 3
+  - MOVE – Velocità
+  - Valore di velocità (rpm) utilizzato ad ogni comando MOVE
+* - 4
+  - MOVE – Angolo
+  - Angolo con cui FlexiBowl® si muove ad ogni comando MOVE
+* - 5
+  - SHAKE – Accelerazione
+  - Valore di accelerazione utilizzato ad ogni comando SHAKE
+* - 6
+  - SHAKE – Decelerazione
+  - Valore di decelerazione utilizzato ad ogni comando SHAKE
+* - 7
+  - MOVE – Velocità
+  - Valore di velocità (rpm) utilizzato ad ogni comando SHAKE
+* - 8
+  - MOVE – Angolo CW
+  - Angolo orario con cui FlexiBowl® si muove ad ogni comando SHAKE
+* - 9
+  - MOVE – Angolo CCW
+  - Angolo antiorario con cui FlexiBowl® si muove ad ogni comando SHAKE
+* - 10
+  - OPTION – Conteggio Flip
+  - Numero di attivazioni Flip che verranno eseguite
+* - 11
+  - OPTION – Ritardo Flip
+  - Tempo (in millisecondi) tra un'attivazione e una disattivazione del flip
+* - 12
+  - OPTION – Tempo Blow
+  - Tempo (in millisecondi) di attivazione del blow
+* - 13
+  - OPTION – Luce accesa
+  - Premere per abilitare/disabilitare la retroilluminazione
+```
 ## Strategie per problemi comuni
 
 **Troubleshooting configurazione**

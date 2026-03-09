@@ -106,7 +106,7 @@ Se la licenza non viene accettata:
 ```
 
 ---
-
+(ricettabase)=
 ### Passo 3: Creazione ricetta base
 
 Prima di configurare i componenti hardware, è necessario creare una ricetta di base che definisca i parametri dell'applicazione.
