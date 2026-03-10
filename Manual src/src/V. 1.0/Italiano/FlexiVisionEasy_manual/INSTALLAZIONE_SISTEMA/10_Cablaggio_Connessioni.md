@@ -53,6 +53,8 @@ tipo:
 ```
 
 
+dal vecchio manuale:
+
 ```{list-table} 
 :header-rows: 1
 :widths: 10 70 20
@@ -92,4 +94,3 @@ tipo:
   - (Immagine 7)
 ```
 
-immagine con collegamenti elettrici della configurazione a due e tre flexibowl, due e tre camere e due e tre tramogge 

@@ -82,12 +82,12 @@ Rispettare sempre le distanze indicate in tabella durante il montaggio meccanico
 :width: 40%
 :align: center
 ```
-```{image} ../rif_tecnico_specifiche/img/config_sbagliata.JPG
+```{image} ../rif_tecnico_specifiche/img/config_sbagliata.png
 :alt: Distanza Di Lavoro
 :width: 40%
 :align: center
 ```
-```{image} ../rif_tecnico_specifiche/img/config_sbagliata2.JPG
+```{image} ../rif_tecnico_specifiche/img/config_sbagliata2.png
 :alt: Distanza Di Lavoro
 :width: 40%
 :align: center

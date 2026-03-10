@@ -122,6 +122,12 @@ Il posizionamento preciso e l'allineamento della telecamera sono passaggi critic
 
 La telecamera deve essere montata in modo che la faccia frontale della lente sia posizionata a una distanza specifica (Working Distance) dalla superficie del piatto FlexiBowl.
 
+```{image} ../rif_tecnico_specifiche/img/config_giusta.JPG
+:alt: Distanza Di Lavoro
+:width: 40%
+:align: center
+```
+
 ```{note}
 La distanza di lavoro dipende da:
 - Modello di FlexiBowl (diametro superficie)
@@ -131,7 +137,44 @@ La distanza di lavoro dipende da:
 Per il calcolo dettagliato della distanza ottimale per la vostra applicazione, consultare la sezione dedicata: [Calcolo Distanza Ottimale](distanza_lavoro)
 
 ```
-### Specifiche tecniche Camera 
+
+### Posizionamento e allineamento
+
+Il corretto allineamento della camera è fondamentale per ottenere immagini di qualità e garantire precisione nel picking.
+
+```{image} ../rif_tecnico_specifiche/img/config_sbagliata.png
+:alt: Distanza Di Lavoro
+:width: 40%
+:align: center
+```
+```{image} ../rif_tecnico_specifiche/img/config_sbagliata2.png
+:alt: Distanza Di Lavoro
+:width: 40%
+:align: center
+```
+
+
+```{list-table}
+* - **Centratura:**
+  - 
+    - La camera deve essere posizionata esattamente al di sopra dell'area di visione del FlexiBowl
+    - Tolleranza massima di centratura: ±5 mm
+* - **Ortogonalità:**
+  - 
+    - La camera deve essere montata perfettamente parallela alla superficie del piatto
+    - Non sono ammesse inclinazioni laterali (tilt) o rotazioni rispetto alla verticale
+    - Tolleranza massima di inclinazione: ±1°
+```
+
+```{tip}
+Per facilitare la messa a punto e permettere aggiustamenti futuri, si raccomanda fortemente di progettare il supporto meccanico della camera con possibilità di microregolazioni:
+- **Asse Z (altezza)**: -10 mm / +30 mm (per adattamento distanza di lavoro)
+- **Asse X (sinistra-destra)**: ±10 mm (per centratura fine)
+- **Asse Y (avanti-indietro)**: ±10 mm (per centratura fine)
+Questa flessibilità è particolarmente utile durante la calibrazione iniziale e per eventuali ricalibrazione future.
+```
+
+### Dimensioni Camera 
 ```{figure} img/Dimensioni_Cam.png
 :alt: Dimensioni camera CAM-CIC-5000-20G-1
 :align: center
@@ -162,37 +205,11 @@ Dimensioni camera CAM-CIC-5000-20G-1 (mm)
 * - Peso
   - 88 g
 ```
-
-### Posizionamento e allineamento
-
-Il corretto allineamento della camera è fondamentale per ottenere immagini di qualità e garantire precisione nel picking.
-
-```{warning}
-**Centratura:**
-- La camera deve essere posizionata esattamente al di sopra dell'area di visione del FlexiBowl
-- Tolleranza massima di centratura: ±5 mm
-```
-
-```{warning}
-**Ortogonalità:**
-- La camera deve essere montata perfettamente parallela alla superficie del piatto
-- Non sono ammesse inclinazioni laterali (tilt) o rotazioni rispetto alla verticale
-- Tolleranza massima di inclinazione: ±1°
-```
-
 ```{warning}
 **Fissaggio:**
 - Utilizzare i 4 fori di montaggio M3 presenti sul corpo camera
 - Viti consigliate: M3 × 8 mm (acciaio inox)
 - Coppia di serraggio: 0.5 Nm (non serrare eccessivamente per evitare deformazioni)
-```
-
-```{tip}
-Per facilitare la messa a punto e permettere aggiustamenti futuri, si raccomanda fortemente di progettare il supporto meccanico della camera con possibilità di microregolazioni:
-- **Asse Z (altezza)**: -10 mm / +30 mm (per adattamento distanza di lavoro)
-- **Asse X (sinistra-destra)**: ±10 mm (per centratura fine)
-- **Asse Y (avanti-indietro)**: ±10 mm (per centratura fine)
-Questa flessibilità è particolarmente utile durante la calibrazione iniziale e per eventuali ricalibrazione future.
 ```
 
 ### Verifica montaggio lente
