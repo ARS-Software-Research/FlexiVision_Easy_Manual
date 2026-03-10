@@ -45,7 +45,7 @@ Durante l'utilizzo, l'operatore deve:
 - Rispettare le norme di sicurezza applicabili a robot e macchinari industriali
 ```
 ```{warning}
-**ARS S.r.l. declina ogni responsabilità per danni a persone o cose derivanti dal movimento di macchine e sistemi collegati al software FlexiVision Easy.**
+**ARS S.r.l. declina ogni responsabilità per danni a persone o cose derivanti dal movimento di macchine e sistemi collegati al software FlexiVision One.**
 
 L'integrazione del sistema nell'ambiente di lavoro e la valutazione dei rischi sono responsabilità dell'integratore di sistema e dell'utilizzatore finale.
 ```
@@ -87,7 +87,7 @@ Nessuna parte di questa pubblicazione può essere riprodotta, distribuita, trado
 
 ARS S.r.l. declina ogni responsabilità per conseguenze derivanti da operazioni errate eseguite dall'utente o dall'uso improprio del prodotto.
 
-**Marchi registrati**: FlexiBowl® e FlexiVision® sono marchi registrati di ARS S.r.l. Tutti gli altri marchi, nomi commerciali e loghi menzionati in questo documento appartengono ai rispettivi proprietari e sono utilizzati esclusivamente a scopo identificativo.
+**Marchi registrati**: FlexiBowl® è un marchio registrati di ARS S.r.l. Tutti gli altri marchi, nomi commerciali e loghi menzionati in questo documento appartengono ai rispettivi proprietari e sono utilizzati esclusivamente a scopo identificativo.
 ```
 ---
 

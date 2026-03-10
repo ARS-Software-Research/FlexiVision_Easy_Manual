@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=041d62ba" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=d5a64ad9" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -452,13 +452,13 @@ Questo manuale è stato creato appositamente per essere il vostro punto di rifer
 Il vostro parere è fondamentale per noi: non esitate a fornirci il vostro feedback <a class="reference external" href="https://www.flexibowl.it/contatti">contattandoci</a>!</p>
 <p><em>- Il Team di Ars Automation</em><br />
 <a href="https://www.arsautomation.com" target="_blank">
-<img alt="Ars logo" class="only-light" src="_images/logo.png" />
-<img alt="Ars logo" class="only-dark" src="_images/logo_dark.png" />
+<img alt="Ars logo" class="only-light img-logo" src="_images/logo.png" />
+<img alt="Ars logo" class="only-dark img-logo" src="_images/logo_dark.png" />
 </a></p>
 </section>
 <section id="cosa-e-flexivision-one">
 <h2><strong>Cosa è FlexiVision One?</strong><a class="headerlink" href="#cosa-e-flexivision-one" title="Link to this heading">#</a></h2>
-<p>FlexiVision® One è la nostra soluzione di visione basata su VisionController, pensata per guidare il robot e disponibile come componente aggiuntivo per i sistemi FlexiBowl®.
+<p>FlexiVision One è la nostra soluzione di visione basata su VisionController, pensata per guidare il robot e disponibile come componente aggiuntivo per i sistemi FlexiBowl®.
 Mantenendo tutte le potenti funzionalità della versione precedente, permettendo quindi lo scarico, la separazione, il riconoscimento e il prelievo dei pezzi sfusi sulla superficie dell’alimentatore, FlexiVision One rivoluziona l’esperienza utente.
 Grazie a una guida passo passo completa e a strumenti intuitivi, abbiamo estremamente semplificato il processo, rendendo la programmazione e l’utilizzo accessibili e utilizzabili da chiunque, indipendentemente dal livello di esperienza.</p>
 </section>
@@ -488,16 +488,16 @@ Per questo motivo, è diviso in delle macro-sezioni con destinatari e finalità 
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Verificare dimensioni, pesi, requisiti elettrici e protocolli di comunicazione</p></td>
-<td><p><strong>RIFERIMENTO TECNICO E SPECIFICHE</strong></p></td>
+<td><p><a class="reference internal" href="#(specifiche_tecniche)"><span class="xref myst"><strong>RIFERIMENTO TECNICO E SPECIFICHE</strong></span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Installare i componenti, cablare il sistema, configurare la rete o calibrare camera/robot</p></td>
-<td><p><strong>INSTALLAZIONE DEL SISTEMA</strong> e <strong>QUICKSTART</strong></p></td>
+<td><p><a class="reference internal" href="FlexiVisionEasy_manual/INSTALLAZIONE_SISTEMA/09_Installazione_Meccanica.html#installazione-meccanica"><span class="std std-ref"><strong>INSTALLAZIONE DEL SISTEMA</strong></span></a> e <a class="reference internal" href="FlexiVisionEasy_manual/QUICKSTART/12_Panoramica_Interfaccia.html#quickstart"><span class="std std-ref"><strong>QUICKSTART</strong></span></a></p></td>
 </tr>
 <tr class="row-even"><td><p>Programmare un nuovo modello pezzo o configurare il sistema di alimentazione</p></td>
-<td><p><strong>QUICKSTART: GUIDA OPERATIVA</strong></p></td>
+<td><p><a class="reference internal" href="FlexiVisionEasy_manual/QUICKSTART/12_Panoramica_Interfaccia.html#quickstart"><span class="std std-ref"><strong>QUICKSTART</strong></span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Risolvere problemi o richiedere assistenza</p></td>
-<td><p><strong>TROUBLESHOOTING</strong> e <strong>SUPPORT</strong></p></td>
+<td><p><a class="reference internal" href="FlexiVisionEasy_manual/TROUBLESHOOTING/26_trb_shooting_guide.html#troubleshooting"><span class="std std-ref"><strong>TROUBLESHOOTING</strong></span></a> e <a class="reference internal" href="FlexiVisionEasy_manual/27_Support.html#support"><span class="std std-ref"><strong>SUPPORT</strong></span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -533,11 +533,11 @@ Per questo motivo, è diviso in delle macro-sezioni con destinatari e finalità 
 </tr>
 <tr class="row-odd"><td><p><strong>Operatore di linea</strong></p></td>
 <td><p>Creazione nuovi modelli pezzo, configurazione parametri FlexiBowl, monitoraggio prestazioni</p></td>
-<td><p>Nuovo modello, Config FlexiBowl, Verifica risultati</p></td>
+<td><p>Verifica risultati Run Time</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Manutentore</strong></p></td>
 <td><p>Diagnosi problemi, sostituzione componenti, aggiornamenti software</p></td>
-<td><p>Troubleshooting, Support</p></td>
+<td><p>Nuovo modello, Configurazione FlexiBowl, Troubleshooting, Support</p></td>
 </tr>
 </tbody>
 </table>
@@ -564,19 +564,33 @@ Per questo motivo, è diviso in delle macro-sezioni con destinatari e finalità 
 </td>
 <td><p>Indica una situazione potenzialmente pericolosa o una procedura critica che, se non eseguita correttamente, potrebbe provocare danni all’apparecchiatura o malfunzionamenti gravi del sistema.</p></td>
 </tr>
-<tr class="row-odd"><td><div class="admonition note">
+<tr class="row-odd"><td><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Importante</p>
+</div>
+</td>
+<td><p>Evidenzia informazioni fondamentali che non devono essere ignorate per garantire il corretto funzionamento del sistema o la sicurezza dell’operazione.</p></td>
+</tr>
+<tr class="row-even"><td><div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Nota informativa</p>
 </div>
 </td>
 <td><p>Fornisce informazioni essenziali per il corretto svolgimento della procedura, chiarimenti tecnici o rimandi a capitoli correlati.</p></td>
 </tr>
-<tr class="row-even"><td><div class="admonition tip">
+<tr class="row-odd"><td><div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Suggerimento</p>
 </div>
 </td>
 <td><p>Suggerisce una pratica ottimale, un’alternativa o un consiglio che può semplificare l’installazione o migliorare le prestazioni del sistema.</p></td>
+</tr>
+<tr class="row-even"><td><div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Errore</p>
+</div>
+</td>
+<td><p>Indica un errore critico o una condizione di guasto che richiede intervento immediato. Segnala situazioni che compromettono il funzionamento del sistema e richiedono azione correttiva.</p></td>
 </tr>
 </tbody>
 </table>

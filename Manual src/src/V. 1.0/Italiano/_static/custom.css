@@ -109,18 +109,27 @@ table thead tr:hover, thead tr:hover {
 
 /* ============================================
    GESTIONE LOGO ARS
+   Solo per immagini con classe img-logo (piccole, per il logo)
    ============================================ */
 
-.only-light, .only-dark {
+.only-light.img-logo, .only-dark.img-logo {
     width: 200px !important;
     height: auto !important;
     display: inline-block !important;
     margin-bottom: 10px;
 }
 
+/* Immagini grandi con only-light/only-dark (es. screenshot pagine) */
+.only-light:not(.img-logo), .only-dark:not(.img-logo) {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 html[data-theme="light"] .only-dark { display: none !important; }
 html[data-theme="dark"] .only-light { display: none !important; }
 
-.bd-content .only-light, .bd-content .only-dark {
+.bd-content .only-light.img-logo, .bd-content .only-dark.img-logo {
     width: 250px !important;
 }

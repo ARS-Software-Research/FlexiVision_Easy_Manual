@@ -7,12 +7,12 @@ Il vostro parere è fondamentale per noi: non esitate a fornirci il vostro feedb
 
 *- Il Team di Ars Automation*    
 <a href="https://www.arsautomation.com" target="_blank">
-  <img src="img/logo.png" alt="Ars logo" class="only-light">
-  <img src="img/logo_dark.png" alt="Ars logo" class="only-dark">
+  <img src="img/logo.png" alt="Ars logo" class="only-light img-logo">
+  <img src="img/logo_dark.png" alt="Ars logo" class="only-dark img-logo">
 </a>
   
 ## **Cosa è FlexiVision One?**  
-FlexiVision® One è la nostra soluzione di visione basata su VisionController, pensata per guidare il robot e disponibile come componente aggiuntivo per i sistemi FlexiBowl®.
+FlexiVision One è la nostra soluzione di visione basata su VisionController, pensata per guidare il robot e disponibile come componente aggiuntivo per i sistemi FlexiBowl®.
 Mantenendo tutte le potenti funzionalità della versione precedente, permettendo quindi lo scarico, la separazione, il riconoscimento e il prelievo dei pezzi sfusi sulla superficie dell’alimentatore, FlexiVision One rivoluziona l'esperienza utente.
 Grazie a una guida passo passo completa e a strumenti intuitivi, abbiamo estremamente semplificato il processo, rendendo la programmazione e l'utilizzo accessibili e utilizzabili da chiunque, indipendentemente dal livello di esperienza.
 
@@ -38,16 +38,16 @@ Per questo motivo, è diviso in delle macro-sezioni con destinatari e finalità 
   - L'informazione si trova in...
 
 * - Verificare dimensioni, pesi, requisiti elettrici e protocolli di comunicazione
-  - **RIFERIMENTO TECNICO E SPECIFICHE**
+  - [**RIFERIMENTO TECNICO E SPECIFICHE**]((specifiche_tecniche))
 
 * - Installare i componenti, cablare il sistema, configurare la rete o calibrare camera/robot
-  - **INSTALLAZIONE DEL SISTEMA** e **QUICKSTART**
+  - [**INSTALLAZIONE DEL SISTEMA**](Installazione_Meccanica) e [**QUICKSTART**](quickstart)
 
 * - Programmare un nuovo modello pezzo o configurare il sistema di alimentazione
-  - **QUICKSTART: GUIDA OPERATIVA**
+  - [**QUICKSTART**](quickstart)
 
 * - Risolvere problemi o richiedere assistenza
-  - **TROUBLESHOOTING** e **SUPPORT**
+  - [**TROUBLESHOOTING**](troubleshooting) e [**SUPPORT**](support)
 ```
 ## **Gruppi di intervento e responsabilità**
 
@@ -75,15 +75,12 @@ La corretta implementazione di FlexiVision One richiede la collaborazione di div
 
 * - **Operatore di linea**
   - Creazione nuovi modelli pezzo, configurazione parametri FlexiBowl, monitoraggio prestazioni
-  - Nuovo modello, Config FlexiBowl, Verifica risultati
+  - Verifica risultati Run Time
 
 * - **Manutentore**
   - Diagnosi problemi, sostituzione componenti, aggiornamenti software
-  - Troubleshooting, Support
+  - Nuovo modello, Configurazione FlexiBowl, Troubleshooting, Support
 ```
-
-
-
 
 ## **Convenzioni e simboli utilizzati**
 
@@ -101,6 +98,11 @@ In tutto il manuale vengono utilizzati banner informativi per evidenziare conten
     ```
   - Indica una situazione potenzialmente pericolosa o una procedura critica che, se non eseguita correttamente, potrebbe provocare danni all'apparecchiatura o malfunzionamenti gravi del sistema.
 
+* - ```{important}
+    Importante
+    ```
+  - Evidenzia informazioni fondamentali che non devono essere ignorate per garantire il corretto funzionamento del sistema o la sicurezza dell'operazione.
+
 * - ```{note}
     Nota informativa
     ```
@@ -110,6 +112,11 @@ In tutto il manuale vengono utilizzati banner informativi per evidenziare conten
     Suggerimento
     ```
   - Suggerisce una pratica ottimale, un'alternativa o un consiglio che può semplificare l'installazione o migliorare le prestazioni del sistema.
+
+* - ```{error}
+    Errore
+    ```
+  - Indica un errore critico o una condizione di guasto che richiede intervento immediato. Segnala situazioni che compromettono il funzionamento del sistema e richiedono azione correttiva.
 ```
 
 

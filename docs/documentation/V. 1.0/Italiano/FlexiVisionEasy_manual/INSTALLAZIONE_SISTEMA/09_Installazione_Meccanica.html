@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=041d62ba" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=d5a64ad9" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -463,10 +463,10 @@ document.write(`
 <p>Prima di procedere con l’installazione dei componenti di visione, assicurarsi che:</p>
 <ul class="simple">
 <li><p>Il FlexiBowl sia stato montato e fissato alla struttura portante (cellula robotica)</p></li>
-<li><p>La tramoggia (Hopper), se presente, sia stata installata correttamente</p></li>
+<li><p>La tramoggia (Hopper) sia stata installata correttamente</p></li>
 <li><p>La struttura di supporto per camera e illuminatore sia stata preparata</p></li>
 </ul>
-<p>Per l’installazione del FlexiBowl, consultare il Manuale Dedicato fornito con l’alimentatore vibrante.</p>
+<p>Per l’installazione del FlexiBowl, consultare il Manuale Dedicato fornito.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -476,7 +476,6 @@ document.write(`
 <li><p>Competenze di base in assemblaggio meccanico</p></li>
 <li><p>Utilizzo di strumenti di misura (calibro, livella, metro)</p></li>
 <li><p>Capacità di lettura di disegni tecnici</p></li>
-<li><p>Tempo stimato:</p></li>
 </ul>
 </div>
 <hr class="docutils" />
@@ -539,19 +538,16 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
 <tr class="row-even"><td><p><strong>Posizione consigliata</strong></p></td>
 <td><p>Interno quadro elettrico o su pannello dedicato vicino alla cella robotica</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Orientamento</strong></p></td>
-<td><p>Verticale (consigliato) o orizzontale con ventilazione forzata</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Spazio di ventilazione</strong></p></td>
+<tr class="row-odd"><td><p><strong>Spazio di ventilazione</strong></p></td>
 <td><p>Minimo 50 mm su tutti i lati per circolazione aria</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Fissaggio</strong></p></td>
+<tr class="row-even"><td><p><strong>Fissaggio</strong></p></td>
 <td><p>Guida DIN 35 mm o viti M4 su pannello</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Temperatura ambiente</strong></p></td>
-<td><p>0°C ~ +50°C (verificare specifiche complete nella sezione <a class="reference internal" href="#(specifiche_VC)"><span class="xref myst">Specifiche VisionController</span></a>)</p></td>
+<tr class="row-odd"><td><p><strong>Temperatura ambiente</strong></p></td>
+<td><p>1°C ~ +50°C (verificare specifiche complete nella sezione <a class="reference internal" href="../rif_tecnico_specifiche/04_Specifiche_FlexiVision.html#specifiche-vc"><span class="std std-ref">Specifiche VisionController</span></a>)</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Protezione</strong></p></td>
+<tr class="row-even"><td><p><strong>Protezione</strong></p></td>
 <td><p>IP40 minimo (consigliato montaggio in quadro elettrico IP54)</p></td>
 </tr>
 </tbody>
@@ -593,7 +589,7 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Ventilazione critica</strong></p>
+<p><strong>Ventilazione</strong></p>
 <p>Il VisionController genera calore durante il funzionamento. Una ventilazione inadeguata può causare:</p>
 <ul class="simple">
 <li><p>Surriscaldamento e spegnimenti automatici</p></li>
@@ -620,10 +616,6 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
 <li><p>Dimensioni dei pezzi da rilevare</p></li>
 </ul>
 <p>Per il calcolo dettagliato della distanza ottimale per la vostra applicazione, consultare la sezione dedicata: <a class="reference internal" href="../rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.html#distanza-lavoro"><span class="std std-ref">Calcolo Distanza Ottimale</span></a></p>
-<p><strong>Distanze tipiche per riferimento:</strong></p>
-<ul class="simple">
-<li><p>950-1000 mm per ogni modello di FlexiBowl</p></li>
-</ul>
 </div>
 </section>
 <section id="specifiche-tecniche-camera">
@@ -681,7 +673,7 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
 <p class="admonition-title">Warning</p>
 <p><strong>Centratura:</strong></p>
 <ul class="simple">
-<li><p>La camera deve essere posizionata esattamente al centro del FlexiBowl (asse ottico coincidente con l’asse di rotazione del piatto)</p></li>
+<li><p>La camera deve essere posizionata esattamente al di sopra dell’area di visione del FlexiBowl</p></li>
 <li><p>Tolleranza massima di centratura: ±5 mm</p></li>
 </ul>
 </div>

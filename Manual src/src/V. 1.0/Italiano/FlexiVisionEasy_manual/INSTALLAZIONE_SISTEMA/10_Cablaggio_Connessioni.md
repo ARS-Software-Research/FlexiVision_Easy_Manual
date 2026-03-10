@@ -2,7 +2,56 @@
 # **Cablaggio e Connessioni**
 immagine panoramica connessione elettriche 
 tipo:  
-![Pan Coll](img/pan_collegamenti.png)
+![Pan Coll](img/panoramicacollegamenti.png)
+```{list-table}
+:widths: 25 25 50
+:header-rows: 1
+
+* - **Da**
+  - **A**
+  - **Collegamento**
+
+* - Rete elettrica
+  - FlexiBowl
+  - Alimentazione 110/220 Vdc
+
+* - Rete elettrica
+  - Robot
+  - Alimentazione 110/220 Vdc
+
+* - Rete elettrica
+  - Camera
+  - Alimentazione 24 Vdc
+
+* - Rete elettrica
+  - Illuminatore (luce)
+  - Alimentazione 24 Vdc
+
+* - Rete elettrica
+  - Controller Tramoggia
+  - Alimentazione 110/220 Vdc
+
+* - Controller Tramoggia
+  - Tramoggia
+  - Alimentazione e segnale
+
+* - Robot
+  - Controller Tramoggia
+  - I/O Digitali
+
+* - VisionController
+  - Camera
+  - Ethernet TCP
+
+* - VisionController
+  - FlexiBowl
+  - Ethernet TCP
+
+* - VisionController
+  - Robot
+  - Ethernet TCP
+```
+
 
 ```{list-table} 
 :header-rows: 1
@@ -13,33 +62,33 @@ tipo:
   - **Immagine**
 
 * - 1
-  - Connect the power supply to the FlexiBowl® connection.  
-    [🔗 Refer to manual for power supply specs](http://link-al-manuale.com)
+  - Collegare l'alimentazione alla connessione del FlexiBowl®.  
+    [🔗 Fare riferimento al manuale per le specifiche di alimentazione](http://link-al-manuale.com)
   - (Immagine 1)
 
 * - 2
-  - Connect Ethernet cable to the FlexiBowl® Ethernet socket.
+  - Collegare il cavo Ethernet alla presa Ethernet del FlexiBowl®.
   - (Immagine 2)
 
 * - 3
-  - Connect the compressed air to the FlexiBowl® connection.  
-    [🔗 Refer to manual for pneumatic specs](http://link-al-manuale.com)
+  - Collegare l'aria compressa alla connessione del FlexiBowl®.  
+    [🔗 Fare riferimento al manuale per le specifiche pneumatiche](http://link-al-manuale.com)
   - (Immagine 3)
 
 * - 4
-  - Turn **ON** the FlexiBowl® AC switch (position "I"). The READY led is **ON**.
+  - Accendere l'interruttore AC del FlexiBowl® (posizione "I"). Il led READY è **ON**.
   - (Immagine 4)
 
 * - 5
-  - Connect the FlexiBowl® to the VisionController.
+  - Collegare il FlexiBowl® al VisionController.
   - (Immagine 5)
 
 * - 6
-  - Connect the VisionController (PC) via the Ethernet connection.
+  - Collegare il VisionController (PC) tramite la connessione Ethernet.
   - (Immagine 6)
 
 * - 7
-  - Connect the camera (POE compatible). It must be connected to the VisionController.
+  - Collegare la telecamera (compatibile POE). Deve essere collegata al VisionController.
   - (Immagine 7)
 ```
 

@@ -17,12 +17,7 @@ Il rispetto di tutte le norme di sicurezza riportate in questa sezione è obblig
 #### **Requisiti di sicurezza della cella**
 
 ```{warning}
-FlexiVision One opera in stretta connessione con sistemi robotizzati di terze parti. L'utente deve garantire che l'area di lavoro sia dotata di tutte le misure di sicurezza necessarie:
-
-- Barriere perimetrali certificate secondo normativa vigente
-- Sensori di presenza e sistemi di arresto di emergenza
-- Segnaletica di sicurezza adeguata
-- Formazione del personale sui rischi specifici della cella robotizzata
+FlexiVision One opera in stretta connessione con sistemi robotizzati di terze parti. L'utente deve garantire che l'area di lavoro sia dotata di tutte le misure di sicurezza necessarie imposte dalle normative pertinenti
 ```
 #### **Attenzione durante l'operatività**
 
@@ -105,8 +100,8 @@ Se il sistema deve operare in ambienti con presenza di liquidi, prevedere adegua
 In condizioni di utilizzo intenso o ambienti caldi, alcuni componenti del sistema possono raggiungere temperature elevate:
 
 - VisionController: fino a 50°C sulle superfici esterne
-- Illuminatore LED: fino a 60°C sulla superficie frontale
-- Camera industriale: fino a 45°C sul corpo metallico
+- Illuminatore LED: fino a 40°C sulla superficie frontale
+- Camera industriale: fino a 50°C sul corpo metallico
 ```
 #### **Responsabilità del cliente**
 
@@ -129,11 +124,10 @@ Per garantire durata e affidabilità, il VisionController e la camera devono ess
 
 | Parametro | Condizioni operative | Condizioni di stoccaggio |
 |-----------|---------------------|--------------------------|
-| **Temperatura** | +5°C ÷ +45°C | -10°C ÷ +60°C |
-| **Umidità relativa** | 20% ÷ 80% (senza condensa) | 10% ÷ 90% (senza condensa) |
-| **Altitudine** | 0 ÷ 2000 m s.l.m. | 0 ÷ 3000 m s.l.m. |
-| **Grado di inquinamento** | Pollution Degree 2 (IEC 61010-1) | - |
-| **Categoria installazione** | Overvoltage Category II | - |
+| **Temperatura** | +1°C ÷ +50°C | -20°C ÷ +65°C |
+| **Umidità relativa** | <90% (senza condensa) | <90% (senza condensa) |
+
+
 ```
 #### **Precauzioni aggiuntive per l'ambiente**
 
@@ -222,32 +216,5 @@ Quando il prodotto raggiunge la fine del suo ciclo di vita, deve essere smaltito
 - Illuminatori a LED: RAEE categoria 5
 - Cavi e connettori: smaltimento con materiali elettrici
 ```
-### **Procedura consigliata**
-
-```{tip}
-1. Contattare un ente certificato per lo smaltimento RAEE
-2. Fornire la documentazione tecnica del prodotto
-3. Assicurarsi che vengano rispettate tutte le normative locali e nazionali
-4. Conservare la documentazione di avvenuto smaltimento
-```
-
 ---
 
-## Conformità e normative
-
-Il sistema FlexiVision Easy è progettato per essere conforme alle seguenti direttive e normative (verificare la Dichiarazione di Conformità fornita con il prodotto):
-
-- Direttiva Macchine 2006/42/CE
-- Direttiva EMC 2014/30/UE
-- Direttiva Bassa Tensione 2014/35/UE
-- IEC 61010-1: Sicurezza apparecchi elettrici per misura, controllo e laboratorio
-
-```{warning}
-**Responsabilità dell'integratore**
-
-L'integrazione di FlexiVision Easy in un sistema completo (cella robotizzata) è responsabilità dell'integratore di sistema, che deve:
-- Effettuare una nuova valutazione dei rischi complessiva
-- Garantire la conformità del sistema integrato alle normative applicabili
-- Produrre la documentazione tecnica del sistema completo
-- Apporre la marcatura CE sul sistema integrato (se applicabile)
-```

@@ -508,6 +508,15 @@ descrizione funzionalità backlight
 | Metodo di raffreddamento | Aria naturale |  |  |
 | Materiale opalino | Metacrilato bianco opalino |  |  |
 ```
+---
+(filtroIR)=
+## Filtro IR
+
+
+
+
+
+---
 (supporto)=
 ## Supporto per Camera e Toplight
 descrizione funzionalità

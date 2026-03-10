@@ -62,32 +62,39 @@ Il seguente diagramma illustra la relazione tra distanza di lavoro, lunghezza fo
 ```
 
 **Legenda schema:**
-- **Working Distance**: Distanza verticale tra la faccia frontale della lente e la superficie del piatto FlexiBowl
+- **Distanza di Lavoro**: Distanza verticale tra la faccia frontale della lente e la superficie del piatto FlexiBowl
 - **Area di visione**: Zona della superficie del FlexiBowl coperta dal campo visivo della camera
 
-
-```{note}
-
-**Tolleranza di montaggio:**
-- Distanza ottimale: valore centrale dell'intervallo
-- Tolleranza accettabile: ±50 mm rispetto al valore ottimale
-- Oltre la tolleranza: possibile sfocatura o FOV inadeguato
-```
 
 ```{warning}
 **Importanza della distanza corretta**
 
 Deviazioni significative dalla distanza di lavoro raccomandata possono causare:
 
-- **Distanza troppo breve**: FOV insufficiente (parte del FlexiBowl non visibile), possibile vignettatura
+- **Distanza troppo breve**: FOV insufficiente (parte del FlexiBowl non visibile).
 - **Distanza troppo lunga**: Risoluzione insufficiente per rilevare pezzi piccoli, sfocatura
 
 Rispettare sempre le distanze indicate in tabella durante il montaggio meccanico della camera.
 ```
-
+### Posizionamento Camera 
+```{image} ../rif_tecnico_specifiche/img/config_giusta.JPG
+:alt: Distanza Di Lavoro
+:width: 40%
+:align: center
+```
+```{image} ../rif_tecnico_specifiche/img/config_sbagliata.JPG
+:alt: Distanza Di Lavoro
+:width: 40%
+:align: center
+```
+```{image} ../rif_tecnico_specifiche/img/config_sbagliata2.JPG
+:alt: Distanza Di Lavoro
+:width: 40%
+:align: center
+```
 ---
 
-## Posizionamento TopLight (se acquistato)
+## Posizionamento TopLight 
 
 Se il sistema include un TopLight (illuminatore dall'alto), il suo posizionamento deve essere coordinato con quello della camera per garantire un'illuminazione uniforme.
 
@@ -125,53 +132,10 @@ immagine del sistema con toplight
 Quando si posiziona il TopLight, assicurarsi che:
 
 - La luce non si rifletta direttamente dalla superficie del FlexiBowl verso la camera (causando abbagliamento)
-- Non ci siano ombre dure causate da componenti meccanici
+- Non ci siano ombre causate da componenti meccanici
 - L'illuminazione sia il più uniforme possibile su tutta la superficie utile
 
-In caso di superfici molto riflettenti (pezzi metallici lucidi), considerare l'uso di illuminazione diffusa o polarizzata.
 ```
-
----
-
-## Verifica campo visivo
-
-Dopo aver installato la camera alla distanza raccomandata, è importante verificare che il campo visivo copra correttamente l'area di lavoro.
-
-### Procedura di verifica  -- NON SO SE FATTIBILE
-
-```{note}
-**Test preliminare FOV**
-
-Prima della calibrazione completa, effettuare una verifica rapida del campo visivo:
-
-1. Collegare la camera al VisionController (vedere [Cablaggio e Connessioni](../QUICKSTART/10_Cablaggio_Connessioni.md))
-2. Avviare il software FlexiVision Easy
-3. Acquisire un'immagine di test della superficie vuota del FlexiBowl
-4. Verificare visivamente che:
-   - L'intera superficie utile del FlexiBowl sia visibile
-   - Il bordo esterno del piatto sia completamente nell'inquadratura
-   - Non ci siano zone d'ombra significative
-   - La messa a fuoco sia nitida su tutta la superficie
-
-Se il FOV non è corretto, regolare la distanza di lavoro prima di procedere con la calibrazione.
-```
-
-```{tip}
-**Margine di sicurezza FOV**
-
-È buona pratica avere un piccolo margine (circa 20-30 mm) tra il bordo utile del FlexiBowl e il bordo dell'immagine acquisita. Questo margine:
-
-- Compensa piccole tolleranze di montaggio
-- Garantisce che vibrazioni o movimenti non portino il bordo fuori dall'inquadratura
-- Facilita la calibrazione (la griglia può essere posizionata con più flessibilità)
-```
----
-
-## Considerazioni per applicazioni speciali   ??
-
-### Pezzi molto piccoli (< mm)
-
-### Pezzi con geometrie complesse
 
 ---
 

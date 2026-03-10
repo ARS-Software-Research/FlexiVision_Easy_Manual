@@ -9,10 +9,10 @@ Questa sezione descrive i requisiti di montaggio e posizionamento dei componenti
 Prima di procedere con l'installazione dei componenti di visione, assicurarsi che:
 
 - Il FlexiBowl sia stato montato e fissato alla struttura portante (cellula robotica)
-- La tramoggia (Hopper), se presente, sia stata installata correttamente
+- La tramoggia (Hopper) sia stata installata correttamente
 - La struttura di supporto per camera e illuminatore sia stata preparata
 
-Per l'installazione del FlexiBowl, consultare il Manuale Dedicato fornito con l'alimentatore vibrante.
+Per l'installazione del FlexiBowl, consultare il Manuale Dedicato fornito.
 ```
 
 ```{note}
@@ -21,8 +21,7 @@ Per l'installazione del FlexiBowl, consultare il Manuale Dedicato fornito con l'
 L'installazione meccanica richiede:
 - Competenze di base in assemblaggio meccanico
 - Utilizzo di strumenti di misura (calibro, livella, metro)
-- Capacità di lettura di disegni tecnici
-- Tempo stimato: 
+- Capacità di lettura di disegni tecnici 
 ```
 
 ---
@@ -69,14 +68,12 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
   - Specifiche
 * - **Posizione consigliata**
   - Interno quadro elettrico o su pannello dedicato vicino alla cella robotica
-* - **Orientamento**
-  - Verticale (consigliato) o orizzontale con ventilazione forzata
 * - **Spazio di ventilazione**
   - Minimo 50 mm su tutti i lati per circolazione aria
 * - **Fissaggio**
   - Guida DIN 35 mm o viti M4 su pannello
 * - **Temperatura ambiente**
-  - 0°C ~ +50°C (verificare specifiche complete nella sezione [Specifiche VisionController]((specifiche_VC)))
+  - 1°C ~ +50°C (verificare specifiche complete nella sezione [Specifiche VisionController](specifiche_VC))
 * - **Protezione**
   - IP40 minimo (consigliato montaggio in quadro elettrico IP54)
 ```
@@ -102,7 +99,7 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
 ```
 
 ```{warning}
-**Ventilazione critica**
+**Ventilazione**
 
 Il VisionController genera calore durante il funzionamento. Una ventilazione inadeguata può causare:
 - Surriscaldamento e spegnimenti automatici
@@ -133,8 +130,6 @@ La distanza di lavoro dipende da:
 
 Per il calcolo dettagliato della distanza ottimale per la vostra applicazione, consultare la sezione dedicata: [Calcolo Distanza Ottimale](distanza_lavoro)
 
-**Distanze tipiche per riferimento:**
-- 950-1000 mm per ogni modello di FlexiBowl
 ```
 ### Specifiche tecniche Camera 
 ```{figure} img/Dimensioni_Cam.png
@@ -174,7 +169,7 @@ Il corretto allineamento della camera è fondamentale per ottenere immagini di q
 
 ```{warning}
 **Centratura:**
-- La camera deve essere posizionata esattamente al centro del FlexiBowl (asse ottico coincidente con l'asse di rotazione del piatto)
+- La camera deve essere posizionata esattamente al di sopra dell'area di visione del FlexiBowl
 - Tolleranza massima di centratura: ±5 mm
 ```
 

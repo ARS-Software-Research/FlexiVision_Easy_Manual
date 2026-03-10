@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=041d62ba" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=d5a64ad9" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -425,19 +425,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanze-di-lavoro-raccomandate-e-selezione-lenti">Distanze di lavoro raccomandate e selezione lenti</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabella-riepilogativa-per-modello">Tabella riepilogativa per modello</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-distanze-e-campo-visivo">Schema distanze e campo visivo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizionamento-camera">Posizionamento Camera</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizionamento-toplight-se-acquistato">Posizionamento TopLight (se acquistato)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizionamento-toplight">Posizionamento TopLight</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-posizionamento-integrato">Schema posizionamento integrato</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-campo-visivo">Verifica campo visivo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-verifica-non-so-se-fattibile">Procedura di verifica  – NON SO SE FATTIBILE</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerazioni-per-applicazioni-speciali">Considerazioni per applicazioni speciali   ??</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pezzi-molto-piccoli-mm">Pezzi molto piccoli (&lt; mm)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pezzi-con-geometrie-complesse">Pezzi con geometrie complesse</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riferimenti-correlati">Riferimenti correlati</a></li>
@@ -521,33 +513,33 @@ document.write(`
 </a>
 <p><strong>Legenda schema:</strong></p>
 <ul class="simple">
-<li><p><strong>Working Distance</strong>: Distanza verticale tra la faccia frontale della lente e la superficie del piatto FlexiBowl</p></li>
+<li><p><strong>Distanza di Lavoro</strong>: Distanza verticale tra la faccia frontale della lente e la superficie del piatto FlexiBowl</p></li>
 <li><p><strong>Area di visione</strong>: Zona della superficie del FlexiBowl coperta dal campo visivo della camera</p></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Tolleranza di montaggio:</strong></p>
-<ul class="simple">
-<li><p>Distanza ottimale: valore centrale dell’intervallo</p></li>
-<li><p>Tolleranza accettabile: ±50 mm rispetto al valore ottimale</p></li>
-<li><p>Oltre la tolleranza: possibile sfocatura o FOV inadeguato</p></li>
-</ul>
-</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Importanza della distanza corretta</strong></p>
 <p>Deviazioni significative dalla distanza di lavoro raccomandata possono causare:</p>
 <ul class="simple">
-<li><p><strong>Distanza troppo breve</strong>: FOV insufficiente (parte del FlexiBowl non visibile), possibile vignettatura</p></li>
+<li><p><strong>Distanza troppo breve</strong>: FOV insufficiente (parte del FlexiBowl non visibile).</p></li>
 <li><p><strong>Distanza troppo lunga</strong>: Risoluzione insufficiente per rilevare pezzi piccoli, sfocatura</p></li>
 </ul>
 <p>Rispettare sempre le distanze indicate in tabella durante il montaggio meccanico della camera.</p>
 </div>
 </section>
+<section id="posizionamento-camera">
+<h3>Posizionamento Camera<a class="headerlink" href="#posizionamento-camera" title="Link to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../../_images/config_giusta.JPG"><img alt="Distanza Di Lavoro" class="align-center" src="../../_images/config_giusta.JPG" style="width: 40%;" />
+</a>
+<a class="reference internal image-reference" href="FlexiVisionEasy_manual/rif_tecnico_specifiche/img/config_sbagliata.JPG"><img alt="Distanza Di Lavoro" class="align-center" src="FlexiVisionEasy_manual/rif_tecnico_specifiche/img/config_sbagliata.JPG" style="width: 40%;" />
+</a>
+<a class="reference internal image-reference" href="FlexiVisionEasy_manual/rif_tecnico_specifiche/img/config_sbagliata2.JPG"><img alt="Distanza Di Lavoro" class="align-center" src="FlexiVisionEasy_manual/rif_tecnico_specifiche/img/config_sbagliata2.JPG" style="width: 40%;" />
+</a>
+</section>
 </section>
 <hr class="docutils" />
-<section id="posizionamento-toplight-se-acquistato">
-<h2>Posizionamento TopLight (se acquistato)<a class="headerlink" href="#posizionamento-toplight-se-acquistato" title="Link to this heading">#</a></h2>
+<section id="posizionamento-toplight">
+<h2>Posizionamento TopLight<a class="headerlink" href="#posizionamento-toplight" title="Link to this heading">#</a></h2>
 <p>Se il sistema include un TopLight (illuminatore dall’alto), il suo posizionamento deve essere coordinato con quello della camera per garantire un’illuminazione uniforme.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
@@ -594,58 +586,10 @@ document.write(`
 <p>Quando si posiziona il TopLight, assicurarsi che:</p>
 <ul class="simple">
 <li><p>La luce non si rifletta direttamente dalla superficie del FlexiBowl verso la camera (causando abbagliamento)</p></li>
-<li><p>Non ci siano ombre dure causate da componenti meccanici</p></li>
+<li><p>Non ci siano ombre causate da componenti meccanici</p></li>
 <li><p>L’illuminazione sia il più uniforme possibile su tutta la superficie utile</p></li>
 </ul>
-<p>In caso di superfici molto riflettenti (pezzi metallici lucidi), considerare l’uso di illuminazione diffusa o polarizzata.</p>
 </div>
-</section>
-</section>
-<hr class="docutils" />
-<section id="verifica-campo-visivo">
-<h2>Verifica campo visivo<a class="headerlink" href="#verifica-campo-visivo" title="Link to this heading">#</a></h2>
-<p>Dopo aver installato la camera alla distanza raccomandata, è importante verificare che il campo visivo copra correttamente l’area di lavoro.</p>
-<section id="procedura-di-verifica-non-so-se-fattibile">
-<h3>Procedura di verifica  – NON SO SE FATTIBILE<a class="headerlink" href="#procedura-di-verifica-non-so-se-fattibile" title="Link to this heading">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Test preliminare FOV</strong></p>
-<p>Prima della calibrazione completa, effettuare una verifica rapida del campo visivo:</p>
-<ol class="arabic simple">
-<li><p>Collegare la camera al VisionController (vedere <a class="reference internal" href="#../QUICKSTART/10_Cablaggio_Connessioni.md"><span class="xref myst">Cablaggio e Connessioni</span></a>)</p></li>
-<li><p>Avviare il software FlexiVision Easy</p></li>
-<li><p>Acquisire un’immagine di test della superficie vuota del FlexiBowl</p></li>
-<li><p>Verificare visivamente che:</p>
-<ul class="simple">
-<li><p>L’intera superficie utile del FlexiBowl sia visibile</p></li>
-<li><p>Il bordo esterno del piatto sia completamente nell’inquadratura</p></li>
-<li><p>Non ci siano zone d’ombra significative</p></li>
-<li><p>La messa a fuoco sia nitida su tutta la superficie</p></li>
-</ul>
-</li>
-</ol>
-<p>Se il FOV non è corretto, regolare la distanza di lavoro prima di procedere con la calibrazione.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Margine di sicurezza FOV</strong></p>
-<p>È buona pratica avere un piccolo margine (circa 20-30 mm) tra il bordo utile del FlexiBowl e il bordo dell’immagine acquisita. Questo margine:</p>
-<ul class="simple">
-<li><p>Compensa piccole tolleranze di montaggio</p></li>
-<li><p>Garantisce che vibrazioni o movimenti non portino il bordo fuori dall’inquadratura</p></li>
-<li><p>Facilita la calibrazione (la griglia può essere posizionata con più flessibilità)</p></li>
-</ul>
-</div>
-</section>
-</section>
-<hr class="docutils" />
-<section id="considerazioni-per-applicazioni-speciali">
-<h2>Considerazioni per applicazioni speciali   ??<a class="headerlink" href="#considerazioni-per-applicazioni-speciali" title="Link to this heading">#</a></h2>
-<section id="pezzi-molto-piccoli-mm">
-<h3>Pezzi molto piccoli (&lt; mm)<a class="headerlink" href="#pezzi-molto-piccoli-mm" title="Link to this heading">#</a></h3>
-</section>
-<section id="pezzi-con-geometrie-complesse">
-<h3>Pezzi con geometrie complesse<a class="headerlink" href="#pezzi-con-geometrie-complesse" title="Link to this heading">#</a></h3>
 </section>
 </section>
 <hr class="docutils" />
@@ -971,19 +915,11 @@ ___\\ \\     // //___
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distanze-di-lavoro-raccomandate-e-selezione-lenti">Distanze di lavoro raccomandate e selezione lenti</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabella-riepilogativa-per-modello">Tabella riepilogativa per modello</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-distanze-e-campo-visivo">Schema distanze e campo visivo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#posizionamento-camera">Posizionamento Camera</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizionamento-toplight-se-acquistato">Posizionamento TopLight (se acquistato)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posizionamento-toplight">Posizionamento TopLight</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-posizionamento-integrato">Schema posizionamento integrato</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verifica-campo-visivo">Verifica campo visivo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-verifica-non-so-se-fattibile">Procedura di verifica  – NON SO SE FATTIBILE</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerazioni-per-applicazioni-speciali">Considerazioni per applicazioni speciali   ??</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pezzi-molto-piccoli-mm">Pezzi molto piccoli (&lt; mm)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pezzi-con-geometrie-complesse">Pezzi con geometrie complesse</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riferimenti-correlati">Riferimenti correlati</a></li>

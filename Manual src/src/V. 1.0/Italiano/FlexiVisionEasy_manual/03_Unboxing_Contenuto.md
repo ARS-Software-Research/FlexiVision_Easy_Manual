@@ -3,7 +3,7 @@
 Una volta ricevuto il tuo kit FlexiVision, verifica che tutti gli elementi elencati di seguito siano inclusi e in buone condizioni.
 
 ## Kit FlexiVision
-```{figure} ../img/Kit_FlexiVision.png
+```{figure} ../img/Kit_Senzasfondo.png
 :alt: Contenuto del kit FlexiVision
 :align: center
 
@@ -20,8 +20,6 @@ Componenti inclusi nel kit FlexiVision standard.
 * - 1
   - Obiettivo *(lunghezza focale specifica per la distanza di lavoro scelta)*
 * - 1
-  - Filtro IR
-* - 1
   - Griglia di Calibrazione *(specifica per il modello ordinato)*
 * - 1
   - VisionController
@@ -30,7 +28,9 @@ Componenti inclusi nel kit FlexiVision standard.
 * - 1
   - Strumento Laser per calibrazione
 * - 1
-  - Cavo di alimentazione (5 m)
+  - Cavo di alimentazione (10 m)
+* - 1
+  - Cavo Ethernet
 ```
 ```{note}
 La griglia di calibrazione e l'ottica possono differire dalle immagini a seconda del kit scelto.
@@ -38,7 +38,7 @@ La griglia di calibrazione e l'ottica possono differire dalle immagini a seconda
 ### Panoramica del Kit
 ```{list-table}
 :header-rows: 1
-:widths: 28 40 35
+:widths: 30 40 35
 
 * - **Componente**
   - **Specifiche Tecniche**
@@ -53,11 +53,6 @@ La griglia di calibrazione e l'ottica possono differire dalle immagini a seconda
   - :::{figure} ../img/Ottica.png
     :width: 150px
     :::
-* - Filtro IR
-  - 
-  - :::{figure} ../img/Filtro_IR.png
-    :width: 150px
-    :::
 * - Griglia di Calibrazione
   - [Vai alle specifiche della Griglia di Calibrazione](specifiche_griglia)
   - :::{figure} ../img/Calib_Grid.png
@@ -68,19 +63,24 @@ La griglia di calibrazione e l'ottica possono differire dalle immagini a seconda
   - :::{figure} ../img/VisionController.png
     :width: 150px
     :::
-* - Chiave di Licenza
-  - 
-  - :::{figure} ../img/Chiave_Licenza.png
-    :width: 150px
-    :::
 * - Strumento Laser per calibrazione
   - [Vai alle specifiche dello Strumento Laser](laser)
   - :::{figure} ../img/laser.png
     :width: 150px
     :::
-* - Cavo di alimentazione (5 m)
+* - Cavo di alimentazione (10 m)
+  - [Vai alle specifiche del Cavo](cavo)
+  - :::{figure} ../img/Cavo_Alim.png
+    :width: 150px
+    :::
+* - Cavo Ethernet (3 m)
   - 
   - :::{figure} ../img/Cavo_Alim.png
+    :width: 150px
+    :::
+* - Chiave di Licenza
+  - 
+  - :::{figure} ../img/Chiave_Licenza.png
     :width: 150px
     :::
 ```
@@ -93,7 +93,8 @@ A seconda della tua applicazione, i seguenti accessori opzionali potrebbero esse
 |------------|----------------------|
 | Toplight | [Link alla Sezione](toplight) |
 | Backlight | [Link alla Sezione](backlight) |
-| Cavo Ethernet | 3 m / 5 m / 10 m |
+| Filtro IR | [Link alla Sezione](filtroIR) |
+| Cavo Ethernet |  5 m / 10 m |
 | Camera bracket stand | [Link alla Sezione](supporto) |
 | Switch Ethernet | [Link alla sezione](switch) |
 | Display | [Link alla Sezione](display) |

@@ -1,7 +1,7 @@
 (specifiche_tecniche)=
 # **Specifiche Dettagliate FlexiVision**
 
-Questa sezione fornisce le specifiche tecniche complete del sistema FlexiVision Easy, inclusi dettagli su camera industriale, VisionController, griglia di calibrazione, protocolli di comunicazione e configurazioni hardware.
+Questa sezione fornisce le specifiche tecniche complete del sistema FlexiVision One, inclusi dettagli su camera industriale, VisionController, griglia di calibrazione, protocolli di comunicazione e configurazioni hardware.
 
 ---
 (specifiche_camera)=
@@ -48,6 +48,8 @@ Il sistema FlexiVision utilizza telecamere ad alta risoluzione con interfaccia G
   - 256 MB
 * - impostazioni utente 
   - Support two sets of user-defined configuration
+* - Alimentazione
+  - 6V ~ 26V
 * - Consumo Energetico
   - 12V ≈ 3.2 W
 * - Attacco Obiettivo
@@ -58,8 +60,6 @@ Il sistema FlexiVision utilizza telecamere ad alta risoluzione con interfaccia G
   - -30°C ~ +80°C
 * - Certificazioni
   - CE, FCC, RoHS
-```
-```{list-table}
 * - Risoluzione
   - 2448 x 2048
 * - Pixel Size
@@ -144,6 +144,57 @@ La mancata osservanza di questo requisito compromette completamente l'operativit
 - **PoE**: ideale per installazioni pulite con un solo cavo, ma richiede hardware di rete specifico
 - **Alimentazione esterna**: soluzione standard più flessibile, consigliata per la maggior parte delle applicazioni
 ```
+(cavo)=
+### Cavo di Alimentazione 
+```{figure} img/Cavo_Specfiche.png
+:alt: Specifiche Cavo Alimentazione Camera
+:align: center
+:width: 100%
+
+Specifiche Cavo Alimentazione Camera
+```
+```{list-table}
+:widths: 30 70
+:header-rows: 1
+
+* - Parametro
+  - Valore
+
+* - **Descrizione**
+  - Cavo I/O 10 metri, connettore HRS6P
+
+* - **Product ID**
+  - COG-IO-CBL-6P-10M
+
+* - **Drawing Number**
+  - 185-1252R rev. B
+
+* - **Compatibilità**
+  - Telecamere CIC-series
+
+* - **Lunghezza**
+  - 10 metri (33')
+
+* - **Connettore (P1)**
+  - Push/Pull 6P RECP Shell SZ 7 Female
+
+* - **Sezione conduttori**
+  - 22 AWG
+
+* - **Tipo cavo**
+  - Schermato, 3 coppie twistare, flessibile
+
+* - **Colori cavi**
+  - Pin 6: Bianco, Pin 1: Marrone, Pin 5: Grigio, Pin 3: Verde, Pin 2: Rosa, Pin 4: Giallo
+
+* - **Schermatura**
+  - Shield su tutti i conduttori
+
+* - **Conformità**
+  - UL/CSA e RoHS
+```
+
+
 
 ### Specifiche fisiche e dimensioni
 ```{figure} img/dimensioni_cam.png
@@ -241,7 +292,7 @@ Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge d
 * - Pulsante di accensione
   - Sì (pannello frontale con spia luminosa)
 * - Porte Ethernet
-  - **J6412:** 4× 1Gb LAN — **i3/i7:** 3× Gb LAN
+  - **i3/i7:** 3× Gb LAN
 * - Porte USB
   -  6× USB 3.0 TypeA
 * - Uscita Video
@@ -272,9 +323,6 @@ Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge d
   - CE, UL
 ```
 
-```{note}
-Il VisionController dispone di ... che possono alimentare direttamente la camera e altri dispositivi compatibili, eliminando la necessità di ....
-```
 ### Porte PC
 ```{figure} img/Spec_Elettriche_PC.png
 :alt: Schema elettrico VisionController
@@ -352,11 +400,6 @@ Il VisionController dispone di ... che possono alimentare direttamente la camera
   - 61.10 mm
 ```
 
-```{tip}
-
-
-Il VisionController è progettato per montaggio .....
-```
 ---
 (laser)=
 ## Strumento Laser per Calibrazione 
@@ -365,7 +408,7 @@ Il beneficio principale del laser è che non richiede un contatto fisico con la 
 Questa precisione è essenziale per il successo della calibrazione e si integra perfettamente con la ripetibilità garantita dalla Griglia di Calibrazione Dedicata ARS.
 
 
-![Laser Cal](img/laser_calibration.png) 
+![Laser Cal](img/laser.png) 
 
 |Caratteristica	|Strumento Laser (Laser Tool)|	Strumento a Punta (Tip Tool) Standard |
 |--|--|--|
@@ -382,48 +425,16 @@ L'utilizzo dello Strumento Laser in combinazione con la Griglia di Calibrazione 
 (specifiche_griglia)=
 ## Griglia di calibrazione
 
+```{figure} img/Calib_Grid.png
+:alt: Griglia di Calibrazione
+:align: center
+:width: 50%
+```
+
+
 Una calibrazione eccellente è il requisito fondamentale per l'accuratezza del sistema FlexiVision. Solo una calibrazione ad alta precisione garantisce che le coordinate rilevate dalla telecamera (pixel) vengano convertite in modo accurato nelle coordinate reali del robot (millimetri), assicurando così il successo dell'applicazione di picking.
 
-### Importanza della griglia dedicata ARS
-
-Sebbene sia tecnicamente possibile eseguire la calibrazione utilizzando una griglia stampata su carta, l'utilizzo della **Griglia di Calibrazione Dedicata ARS** (spesso utilizzata con l'opzione Laser Tool) innalza significativamente la precisione e semplifica il flusso di lavoro di manutenzione.
-
-La griglia ARS è realizzata con un'accuratezza estremamente elevata, impossibile da replicare con una stampa standard. Inoltre, la sua struttura è progettata per il montaggio ripetibile sul FlexiBowl.
-
-### Confronto: Griglia ARS vs Griglia Stampata
-
-```{list-table}
-:header-rows: 1
-:widths: 30 35 35
-
-* - Caratteristica
-  - Griglia ARS Dedicata
-  - Griglia Stampata su Carta
-* - **Precisione Fabbricativa**
-  - Estremamente Alta (Lavorazione CNC dedicata)
-  - Bassa/Variabile (Dipende dalla qualità della stampante)
-* - **Ripetibilità di Montaggio**
-  - Alta (Pin dedicati che si fissano in fori predefiniti sul FlexiBowl)
-  - Bassa (Non ripetibile, richiede riposizionamento manuale)
-* - **Punto di Riferimento Robot**
-  - Più Preciso (Con Laser Tool, il contatto fisico è sostituito dall'allineamento visivo)
-  - Meno Preciso (Utilizza tip fisico o punta soggetta a usura)
-* - **Vantaggio in Ricalibrazione**
-  - Solo la visione richiede ricalibrazione. Il punto di riferimento del robot è mantenuto.
-  - Sia la visione che il robot richiedono una ricalibrazione completa
-* - **Durabilità**
-  - Illimitata (metallo anodizzato)
-  - Limitata (carta si deteriora, inchiostro sbiadisce)
-```
-
-```{tip}
-**Investimento consigliato**
-
-Per applicazioni di produzione, la griglia ARS dedicata  riduce drasticamente i tempi di ricalibrazione e aumenta la precisione complessiva del sistema.
-```
-
 ### Specifiche tecniche griglia
-
 
 - Griglia per FlexiBowl 200: 
 - Griglia per FlexiBowl 350: 
@@ -431,8 +442,6 @@ Per applicazioni di produzione, la griglia ARS dedicata  riduce drasticamente i 
 - Griglia per FlexiBowl 650: 
 - Griglia per FlexiBowl 800: 
 - Griglia per FlexiBowl 1200: 
-
-**Materiale:** Alluminio anodizzato con pattern inciso laser ad alta precisione (±0.05 mm)
 
 
 Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezione [Calibrazione della Camera](14_calibrazione_camera.md).
@@ -457,11 +466,6 @@ Componenti aggiuntivi disponibili separatamente:
 :class-card: shadow
 :::
 
-:::{card} Laser Tool
-:link: laser
-:link-type: ref
-:class-card: shadow
-:::
 
 :::{card} Supporto per Camera e Toplight
 :link: supporto
@@ -485,25 +489,60 @@ Componenti aggiuntivi disponibili separatamente:
 
 ## Panoramica collegamenti
 
-![Panoramica Collegamenti](img/pan_collegamenti.png)
+![Panoramica Collegamenti](img/panoramicacollegamenti.png)
 
 *Schema di collegamento completo del sistema FlexiVision Easy con robot e FlexiBowl*
 
 ```{list-table}
+:widths: 25 25 50
+:header-rows: 1
 
-* - **FlexiBowl → Alimentazione**
-  - Cavo di alimentazione dedicato
-* - **Tramoggia → FlexiBowl**
-  - Cavo di segnale/alimentazione 
-* - **Camera → VisionController**
-  - Cavo Ethernet GigE (dati) + Cavo alimentazione DC
-* - **Robot → VisionController**
-  - Cavo Ethernet (comunicazione TCP/IP)
-* - **VisionController → Alimentazione**
-  - 9-36V DC
+* - **Da**
+  - **A**
+  - **Collegamento**
+
+* - Rete elettrica
+  - FlexiBowl
+  - Alimentazione 110/220 Vdc
+
+* - Rete elettrica
+  - Robot
+  - Alimentazione 110/220 Vdc
+
+* - Rete elettrica
+  - Camera
+  - Alimentazione 24 Vdc
+
+* - Rete elettrica
+  - Illuminatore (luce)
+  - Alimentazione 24 Vdc
+
+* - Rete elettrica
+  - Controller Tramoggia
+  - Alimentazione 110/220 Vdc
+
+* - Controller Tramoggia
+  - Tramoggia
+  - Alimentazione e segnale
+
+* - Robot
+  - Controller Tramoggia
+  - I/O Digitali
+
+* - VisionController
+  - Camera
+  - Ethernet TCP
+
+* - VisionController
+  - FlexiBowl
+  - Ethernet TCP
+
+* - VisionController
+  - Robot
+  - Ethernet TCP
 ```
 
-Per schemi elettrici dettagliati, consultare la sezione [Cablaggio e Connessioni](10_Cablaggio_Connessioni.md).
+Per schemi elettrici dettagliati, consultare la sezione [Cablaggio e Connessioni](cablaggio).
 
 
 ---
