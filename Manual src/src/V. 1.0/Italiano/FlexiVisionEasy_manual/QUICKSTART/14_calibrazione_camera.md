@@ -40,6 +40,12 @@ La calibrazione calcola i parametri matematici per compensare queste distorsioni
 
 
 ## **Step 1: La griglia di calibrazione**
+
+:::{video} video2/Step1_calib.mp4
+    :width: 100%
+    :align: center
+:::
+
 La griglia di calibrazione dedicata ARS deve essere posizionata sul FlexiBowl:
 
 ```{list-table}
@@ -78,6 +84,11 @@ L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida co
 ```
 
 ## **Step 2: Regolazioni fondamentali**
+
+:::{video} video2/Step2_calib.mp4
+    :width: 100%
+    :align: center
+:::
 
 ```{list-table}
 
@@ -125,6 +136,11 @@ Se il centro è nitido ma i bordi sono sfocati:
 
 Se il problema persiste, potrebbe essere necessario rivedere il montaggio meccanico della camera.
 ```
+:::{video} video2/Step2b_calib.mp4
+    :width: 100%
+    :align: center
+:::
+
 
 ```{list-table}
 * - 13. 
@@ -168,6 +184,11 @@ Se l'immagine con esposizione 20ms appare:
 
 ## **Step 3: Calibrazione Camera**
 
+:::{video} video2/Step3_calib.mp4
+    :width: 100%
+    :align: center
+:::
+
 ```{list-table}
 :widths: 5 95
 
@@ -175,9 +196,6 @@ Se l'immagine con esposizione 20ms appare:
   - Cliccare su "NEXT" per accedere alla pagina "Calibration camera Flb1"
 
 * - **16.**
-  - Impostare i valori "Tile Size X" e "Tile Size Y" entrambi a 10
-
-* - **17.**
   - Cliccare su "Grab Image Calib" per scattare una foto della griglia di calibrazione.
     
     Verificare visivamente che:
@@ -185,8 +203,11 @@ Se l'immagine con esposizione 20ms appare:
     - Il pattern sia nitido
     - Non ci siano ombre o riflessi
 
+* - **17.**
+  - Impostare i valori "Tile Size X" e "Tile Size Y" entrambi a 10
+
 * - **18.**
-  - Cliccare su "Compute Calib" per effettuare la calibrazione
+  - Cliccare su "Calibrate" per effettuare la calibrazione
 
 * - **19.**
   - **Valutare la qualità della calibrazione**
@@ -202,6 +223,7 @@ Se l'immagine con esposizione 20ms appare:
     :::{important}
     Accettare solo calibrazioni Eccellenti 🟢, altri risultati comprometteranno il funzionamento dell'intera applicazione.
     :::
+
 ```
 
 ```{note}
@@ -295,6 +317,11 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 
 ## **Step 4: Montaggio Laser**
 
+:::{video} video2/Step4_calib.mp4
+    :width: 100%
+    :align: center
+:::
+
 ```{list-table}
 * - 20. 
   - Una volta ottenuta una calibrazione di ottima qualità, Cliccare "NEXT". 
@@ -312,6 +339,12 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 ```
 
 ## **Step 5: Disegnare un piano a 3 punti**
+
+:::{video} video2/Step5_calib.mp4
+    :width: 100%
+    :align: center
+:::
+
 ```{list-table}
 * - 26.
   - Portare il laser sul punto di origine 
@@ -322,6 +355,12 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 ```
 
 ## **Step 6: Verifica della traiettoria del robot**
+
+:::{video} video2/Step6_calib.mp4
+    :width: 100%
+    :align: center
+:::
+
 ```{list-table}
 * - 29. 
   - Riportare il laser sul punto di origine
@@ -329,6 +368,8 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
   - Muovere il robot dalla sua teach pendant lungo gli assi X e Y. 
 * - 31. 
   - Verificare che la corretta traiettoria sia seguita: il robot, muovendosi esclusivamente lungo gli assi X e Y, deve seguire correttamente le linee della griglia 
+* - 32.
+  - Cliccare "YES"
   ```
 ## **Step 7: Salvataggio Ricetta Base** - da verificare
 L'ultimo step della procedura è il salvataggio della rietta base
@@ -341,72 +382,9 @@ Per continuare con la creazione dei modelli, duplicare la ricetta base, rinomina
 
 ---
 
-# **Problemi comuni durante la calibrazione**
-
-## **Pattern non rilevato**
-
-```{warning}
-**Errore: "Unable to detect calibration pattern"**
-
-Causa: Il software non riesce a identificare il pattern della griglia.
-
-**Soluzioni**:
-- Aumentare il contrasto (regolare esposizione o illuminazione)
-- Verificare che l'intera griglia sia visibile nell'immagine
-- Migliorare la messa a fuoco
-- Pulire la superficie della griglia (polvere o impronte possono interferire)
-- Verificare che la griglia sia quella corretta (quadrati, non cerchi o altri pattern)
-```
-
-## **Calibrazione sempre "Bad" o "Acceptable"**
-
-```{warning}
-**Qualità calibrazione insufficiente**
-
-Se nonostante le regolazioni la calibrazione rimane sotto "Excellent":
-
-1. Verificare la distanza di lavoro camera-FlexiBowl (deve essere quella calcolata)
-2. Controllare il paralleli della camera rispetto al piatto (deve essere perfettamente orizzontale)
-3. Verificare la planarità della griglia (non deve essere deformata o piegata)
-4. Assicurarsi che la camera sia stabile (no vibrazioni durante acquisizione)
-5. Verificare che l'obiettivo sia avvitato completamente (contatto metal-metal con corpo camera)
-
-Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare [Installazione Meccanica](09_Installazione_Meccanica.md) per revisione.
-```
-
-## **Errori dopo cambio illuminazione**
-
-```{tip}
-**Ri-calibrazione dopo cambio backlight/toplight**
-
-Se si passa da backlight a toplight (o viceversa):
-
-1. La calibrazione geometrica rimane valida (non serve rifarla)
-2. È necessario solo regolare l'esposizione per il nuovo tipo di illuminazione
-3. Acquisire un'immagine di test per verificare che il pattern sia ancora ben visibile
-4. Se il contrasto è molto diverso, considerare di rifare la calibrazione per massima precisione
-
-In generale, è consigliabile decidere fin dall'inizio il tipo di illuminazione da utilizzare e mantenere quella configurazione.
-```
-
----
-
 # **Passi successivi**
 
 
 
 
 
-###  backlight a toplight?
-quando attivo frontlight?
-
-```{warning}
-**Impatto sul riconoscimento pezzi**
-
-La scelta tra backlight e frontlight/toplight influenza significativamente il riconoscimento:
-
-- **Backlight**: Ottimo per profili/sagome, pezzi appaiono come silhouette scure su sfondo chiaro
-- **Toplight**: Necessario per riconoscere dettagli superficiali, texture, feature interne
-
-La calibrazione deve essere eseguita con lo stesso tipo di illuminazione che verrà utilizzato durante il picking in produzione.
-```

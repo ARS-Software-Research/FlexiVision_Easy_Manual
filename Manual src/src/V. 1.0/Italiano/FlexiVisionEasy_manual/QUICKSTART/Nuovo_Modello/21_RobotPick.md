@@ -3,8 +3,7 @@
 In questa pagina vedremo come collegare le coordinate della visione con quelle del robot per consentire un prelievo preciso dei componenti.
 
 
-## Cos'è il Robot Pick?
-
+**Cos'è il Robot Pick?**  
 La funzione **Robot Pick** calcola l'offset tra le coordinate rilevate da FlexiVision e le coordinate reali del robot, permettendo al robot di prelevare i componenti nella posizione corretta.
 
 ```{danger}
@@ -20,7 +19,7 @@ Senza queste coordinate, non è possibile completare la calibrazione. Se sono st
 
 Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Model Pick**.
 
-## Parametri Principali
+![Pagina Robot Pick](../Nuovo_Modello/img/pagina_robotpick.png)
 
 |Sezione | Parametro | Funzione |
 |-----------|-----------|----------|
@@ -36,11 +35,17 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
 | Funzione | Descrizione |
 |----------|-------------|
 | **Find Object** | Rileva il componente e mostra coordinate visione |
-| **Gripper Offset** | Calcola l'offset per il prelievo corretto |
+| **Picking Offset** | Calcola l'offset per il prelievo corretto |
 
 ---
 
 ## **Step 1: Attivazione e Rilevamento Componente**
+
+:::{video} video/Step1_robot.mp4
+    :width: 100%
+    :align: center
+:::
+
 
 ```{list-table}
 * - 1. 
@@ -56,6 +61,11 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
 ```
 
 ## **Step 2: Inserimento Coordinate Robot e calcolo Offset**
+
+:::{video} video/Step2_robot.mp4
+    :width: 100%
+    :align: center
+:::
 
 ```{list-table}
 * - 3. 
@@ -102,6 +112,7 @@ Il robot andrà a prelevarlo a X=370, Y=470
 ---
 
 ## **Step 3: Finalizzazione e Salvataggio**
+
 
 ```{list-table}
 * - 5. 

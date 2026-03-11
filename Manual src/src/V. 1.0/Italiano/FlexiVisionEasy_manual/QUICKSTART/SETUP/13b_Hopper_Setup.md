@@ -7,7 +7,7 @@ Questa sezione descrive la procedura per configurare la tramoggia esterna (Hoppe
 **Prerequisiti**
 
 Prima di procedere, assicurarsi che:
-- L'Hopper sia stata installata meccanicamente sopra il FlexiBowl
+- L'Hopper sia stata installata meccanicamente 
 - I collegamenti elettrici siano stati completati (segnali di controllo e alimentazione)
 - Il FlexiBowl sia già connesso
 ```
@@ -44,7 +44,7 @@ La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parame
 * - **Enable Hopper**
   - Interruttore per abilitare/disabilitare l'utilizzo dell'Hopper nel sistema
 * - **Steps**
-  - Numero di sequenze necessarie con cui il FlexiBowl arriva sotto l'area di scarico della tramoggia
+  - Numero di sequenze necessarie con cui l'area di visione arriva sotto l'area di scarico della tramoggia
 * - **Time**
   - Durata dell'attivazione del segnale in millisecondi
 * - **Signal**
@@ -79,7 +79,7 @@ Abilitare l'Hopper solo se:
 ```{warning}
 **Verifica cablaggio**
 
-È fondamentale inserire il numero di segnale corretto corrispondente al cablaggio fisico:
+È fondamentale inserire il numero di segnale corretto:
 - Un numero errato attiverà il segnale sbagliato (potenzialmente pericoloso)
 - Consultare lo schema elettrico realizzato durante l'installazione
 - In caso di dubbio, contattare chi ha effettuato il cablaggio
@@ -90,24 +90,6 @@ Abilitare l'Hopper solo se:
 
 I parametri impostati in questa fase sono sufficienti per la configurazione iniziale del sistema.
 Durante la procedura andremo poi a definire gli altri aspetti della configurazione della tramoggia.
-```
-
-
-## Problemi comuni e soluzioni
-
-### Hopper non si attiva
-
-```{warning}
-**Diagnosi mancata attivazione**
-
-Se l'Hopper non si attiva:
-
-1. Verificare che in **Enable Hopper** sia presente la spunta
-2. Controllare il cablaggio elettrico del segnale digitale
-3. Verificare che il numero **Signal** corrisponda al DO fisicamente connesso
-4. Controllare l'alimentazione dell'Hopper 
-5. Testare il segnale digitale con un multimetro (presenza tensione quando attivato)
-6. Consultare il manuale dell'Hopper per verifiche specifiche del dispositivo
 ```
 
 ---

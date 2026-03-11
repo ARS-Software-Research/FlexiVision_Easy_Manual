@@ -25,12 +25,19 @@ Completata la preparazione fisica, si procede con l'acquisizione dell'immagine e
 * - 2. 
   - Dalla pagina "Recipes", con la giusta ricetta selezionata, cliccare su "Edit Recipe"
 * - 3. 
-  - Il sistema mostra gli slot disponibili per i modelli (fino a 8 modelli per ricetta)
+  - Selezionare il FlexiBowl con cui si sta lavorando
+    :::{dropdown}
+
+    :::
 * - 4. 
+  - Verranno mostrati gli slot disponibili per i modelli (fino a 8 modelli per ricetta)
+* - 5. 
   - Cliccare sul **Modello 1** per accedere alla pagina "Train Model 1 Cam 1"
 ```
 
 #### Panoramica interfaccia Train Model
+
+![Pagina Train Model](../Nuovo_Modello/img/pagina_trainmodel.png)
 
 ```{list-table}
 :header-rows: 1
@@ -42,11 +49,11 @@ Completata la preparazione fisica, si procede con l'acquisizione dell'immagine e
   - Attiva questo slot di modello rendendolo utilizzabile
 * - **Grab Train Image**
   - Scatta una foto del componente di riferimento per il training
-* - **Feature Threshold**
+* - **Score Threshold**
   - Regola il livello di dettaglio del modello (da 0 = massimo dettaglio a 1 = minimo dettaglio)
-* - **Apply Train**
+* - **Train**
   - Genera effettivamente il modello elaborando l'immagine acquisita
-* - **Name Model**
+* - **Model Name**
   - Campo di testo per assegnare un nome descrittivo al modello
 ```
 
@@ -99,10 +106,10 @@ Per ora, concentrarsi sul completamento del primo modello.
     :::
 
 * - **9.**
-  - Usare il **Feature Threshold** per regolare il livello di dettaglio desiderato
+  - Usare lo **Score Threshold** per regolare il livello di dettaglio desiderato
     
     :::{note}
-    **Feature Threshold**
+    **Score Threshold**
     
     **Valore vicino a 0** → Rileva PIÙ dettagli (modello più preciso)
     
@@ -110,7 +117,7 @@ Per ora, concentrarsi sul completamento del primo modello.
     :::
     
     :::{tip}
-    **Come scegliere il Feature Threshold ottimale?**
+    **Come scegliere lo Score Threshold ottimale?**
     
     **Usare valore BASSO (0.1-0.3) quando:**
     - Il pezzo ha molti dettagli distintivi (incisioni, loghi, texture)
@@ -129,7 +136,7 @@ Per ora, concentrarsi sul completamento del primo modello.
     :::
 
 * - **10.**
-  - Cliccare su **Apply Train**
+  - Cliccare su **Train**
 ```
 ---
 
@@ -143,11 +150,11 @@ Dopo aver generato il modello, è fondamentale verificarne la qualità prima di 
   - Fare **Zoom** sull'immagine per ispezionare i dettagli del modello creato e verificare che il modello sia corretto
     
     :::{tip}
-      **Caratteristiche Modello Valido**
-      ✓ Avere abbastanza linee per riconoscere il componente
-      ✓ Non includere la trama della superficie retrostante
-      ✓ Evitare riflessi di luce
-      ✓ Escludere gli oggetti usati per simulare l'ingombro della pinza
+      **Caratteristiche Modello Valido**  
+      ✓ Avere abbastanza linee per riconoscere il componente  
+      ✓ Non includere la trama della superficie retrostante  
+      ✓ Evitare riflessi di luce  
+      ✓ Escludere gli oggetti usati per simulare l'ingombro della pinza  
     :::
 
     :::{figure} img/modello_corretto_vs_errato.png
@@ -161,8 +168,8 @@ Dopo aver generato il modello, è fondamentale verificarne la qualità prima di 
 
 ```{attention}
 Se il modello non è soddisfacente:
-- Modificare il **Feature Threshold**
-- Cliccare nuovamente su **Apply Train**
+- Modificare lo **Score Threshold**
+- Cliccare nuovamente su **Train**
 - Ripetere fino a ottenere un modello ottimale
 ```
 
@@ -170,13 +177,13 @@ Se il modello non è soddisfacente:
 **Strategia di ottimizzazione**
 
 **Problema: Modello include trama superficie**
-→ Soluzione: Aumentare Feature Threshold (es: da 0.4 a 0.6)
+→ Soluzione: Aumentare Score Threshold (es: da 0.4 a 0.6)
 
 **Problema: Modello ha troppo poche linee, non distintivo**
-→ Soluzione: Diminuire Feature Threshold (es: da 0.6 a 0.4)
+→ Soluzione: Diminuire Score Threshold (es: da 0.6 a 0.4)
 
 **Problema: Modello include riflessi**
-→ Soluzione: Aumentare Feature Threshold oppure regolare esposizione camera
+→ Soluzione: Aumentare Score Threshold oppure regolare esposizione camera
 
 Effettuare modifiche graduali (step di 0.1-0.2) e testare ogni volta.
 ```

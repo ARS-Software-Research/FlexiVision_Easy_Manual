@@ -139,35 +139,6 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 * - 4. 
   - Le impostazioni del FlexiBowl sono ora salvate nella ricetta attiva
 ```
-
----
-
-## Problemi comuni e soluzioni
-
-### FlexiBowl non vibra
-
-```{warning} non per questa fase ma utile?
-**Vibrazione non funzionante**
-
-Se il FlexiBowl non vibra dopo l'attivazione:
-- Verificare l'alimentazione elettrica del FlexiBowl (LED di stato sul dispositivo)
-- Controllare che l'interruttore principale del FlexiBowl sia su ON
-- Verificare il cablaggio dell'alimentazione
-- Consultare il manuale del FlexiBowl per diagnostica specifica
-```
-
-### Illuminazione non uniforme
-
-```{tip} non in questa fase ma utile?
-**Ottimizzazione illuminazione**
-
-Se l'illuminazione presenta zone più scure o più chiare:
-- Verificare che backlight/toplight sia montato correttamente
-- Pulire la superficie del piatto e dell'illuminatore
-- Regolare l'intensità luminosa (parametro disponibile in configurazione avanzata)
-- Verificare che non ci siano ostruzioni tra luce e superficie
-```
-
 ---
 
 ## Passi successivi

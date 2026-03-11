@@ -3,39 +3,40 @@
 
 In questa sezione si procede alla definizione della Region Search (area di ricerca) e delle tolleranze di riconoscimento per il modello creato. Questi parametri determinano dove e con quale precisione FlexiVision cercherà i componenti durante il funzionamento.
 
-
-## Cos'è la Region Search?
+**Cos'è la Region Search?**  
 La **Region Search** è l'area all'interno della quale FlexiVision cercherà e rileverà i componenti da prelevare.
 
-## Procedura
+# Procedura
 
-Dopo aver cliccato "Next" nella pagina di training, si apre automaticamente la pagina **Define Robot Pick Area**.
+Dopo aver cliccato "Next" nella pagina di training, si apre automaticamente la pagina **Define Robot Picking Limit Area Model**.
+
+![Pagina Define Robot Pick Area](../Nuovo_Modello/img/pagina_definerobotpickarea.png)
 
 
-### **Step 1: Definizione Area**
+## **Step 1: Definizione Area**
+
+:::{video} video/TastoInfo_DefineRobotArea_1280x720.mp4
+    :width: 100%
+    :align: center
+:::
+
 ```{list-table}
 * - 1. 
-  - Nella pagina **Define Robot Pick Area**, modificare il riquadro per delimitare l'area di ricerca
+  - Nella pagina **Define Robot Picking Limit Area Model**, modificare il riquadro per delimitare l'area di ricerca
 * - 2. 
   - Una volta dimensionata correttamente la Region Search, Cliccare su <img src="../Nuovo_Modello/img/tasto_next.png" class="inline-icon">
 * - 3. 
   - Si aprirà la pagina **Locator Model 1 Cam 1**
 ```
-``````{seealso}
-  ```{dropdown} Video Tutorial Step 1
 
-    :::{video} video/TastoInfo_DefineRobotArea_1280x720.mp4
-    :width: 100%
-    :align: center
-    :::
-  ```
-``````
 
 ```{tip}
 Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zone non raggiungibili.
 ```
 
-#### Panoramica interfaccia Locator Model
+### Panoramica interfaccia Locator Model
+
+![Pagina Locator Model](../Nuovo_Modello/img/pagina_locatormodel.png)
 
 ```{list-table}
 :header-rows: 1
@@ -50,8 +51,17 @@ Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zo
 * - **Results Panel**
   - Pannello che mostra tutti i componenti rilevati con dettagli (Id, coordinate, score)
 ```
+### **Video Tutorial**
+Video tutorial esplicativo dei successivi Step 2 e Step 3: 
+:::{video} video/TastiInfo_LocatorModel_1280x720.mp4
+    :width: 100%
+    :align: center
+:::
 
-### **Step 2: Preparazione Scena**
+
+
+
+## **Step 2: Preparazione Scena**
 
 ```{list-table}
 :widths: 5 95
@@ -64,7 +74,7 @@ Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zo
     :::
 ```
 
-### **Step 3: Esecuzione Test e Accept Threshold**
+## **Step 3: Esecuzione Test e Accept Threshold**
 
 ```{list-table}
 :widths: 5 95
@@ -169,9 +179,9 @@ Se Accept Threshold fosse 0.85:
 
 ---
 
-## Finalizzazione
+# Finalizzazione
 
-### **Step 4: Pulizia e Proseguimento**
+## **Step 4: Pulizia e Proseguimento**
 
 ```{list-table}
 * - 4.

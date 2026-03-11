@@ -8,8 +8,7 @@ Questa sezione guida l'utente attraverso la configurazione completa dei componen
 
 Prima di iniziare la configurazione software, assicurarsi che:
 - L'installazione meccanica di tutti i componenti sia completata ([Installazione Meccanica](Installazione_Meccanica))
-- Tutti i cavi siano collegati correttamente ([Cablaggio e Connessioni](cablaggio))
-- Si disponga della licenza software fornita da ARS Automation 
+- Tutti i cavi siano collegati correttamente ([Cablaggio e Connessioni](cablaggio)) 
 ```
 
 ---
@@ -175,10 +174,10 @@ Tutti i setup hardware sono accessibili dalla pagina centrale **SETUP** del soft
   - Descrizione
 * - **4**
   - [FlexiBowl Setup](fbsetup)
-  - Connessione e test comunicazione con l'alimentatore vibrante
+  - Connessione e test comunicazione con FlexiBowl
 * - **5**
   - [Hopper Setup](hoppersetup)
-  - (Opzionale) Configurazione tramoggia esterna se presente
+  - Configurazione tramoggia esterna se presente
 * - **6**
   - [Robot Setup](robotsetup)
   - Configurazione porta TCP/IP e test comunicazione con il robot
@@ -190,54 +189,7 @@ Tutti i setup hardware sono accessibili dalla pagina centrale **SETUP** del soft
 ```{warning}
 **Importanza della sequenza**
 
-Seguire l'ordine indicato è importante perché:
-- La camera ha bisogno che il FlexiBowl sia configurato per testare l'illuminazione
-- Il robot setup richiede che la ricetta base sia già creata
-- Alcuni parametri dipendono dalle configurazioni precedenti
-```
----
-
-## Risoluzione problemi comuni
-
-### Problemi di connessione di rete
-
-```{warning}
-**Componenti non raggiungibili**
-
-Se FlexiBowl, robot o camera non sono raggiungibili:
-
-1. Verificare che tutti i cavi Ethernet siano collegati correttamente
-2. Controllare che switch/router siano accesi
-3. Verificare gli indirizzi IP di tutti i dispositivi:
-   - Devono essere sulla stessa subnet (es: 192.168.1.x)
-   - Non devono esserci conflitti di IP (due dispositivi con stesso IP)
-4. Utilizzare il comando `ping` da terminale per testare la raggiungibilità
-5. Disabilitare temporaneamente firewall sul VisionController per test
-
-Per dettagli sulla configurazione di rete, vedere [Cablaggio e Connessioni](cablaggio).
-```
-
-### Licenza non attivabile
-
-```{note}
-**Problemi con la licenza**
-
-Se la licenza non si attiva:
-- Verificare la connessione Internet (alcune licenze richiedono validazione online)
-- Controllare la data/ora del sistema operativo Windows (deve essere corretta)
-- Assicurarsi di aver inserito la chiave esattamente come fornita
-
-fare riferimento alla sezione [TroubleShooting]
-```
-
-```{tip}
-**Prima configurazione completa**
-
-Per una prima installazione, si consiglia di:
-1. Completare tutti i setup di base (fino al Passo 7)
-2. Effettuare la calibrazione camera seguendo la procedura guidata
-3. Creare un modello di test con un pezzo semplice
-4. Verificare il picking con il robot prima di procedere con la produzione
+Seguire l'ordine indicato è importante perché la camera ha bisogno che il FlexiBowl sia configurato per testare l'illuminazione e  alcuni parametri dipendono dalle configurazioni precedenti
 ```
 ---
 

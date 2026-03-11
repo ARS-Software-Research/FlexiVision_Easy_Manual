@@ -59,7 +59,7 @@ Il sistema FlexiVision utilizza telecamere ad alta risoluzione con interfaccia G
 * - Temperatura di Stoccaggio
   - -30°C ~ +80°C
 * - Certificazioni
-  - CE, FCC, RoHS
+  - CE, UL, FCC, RoHS
 * - Risoluzione
   - 2448 x 2048
 * - Pixel Size

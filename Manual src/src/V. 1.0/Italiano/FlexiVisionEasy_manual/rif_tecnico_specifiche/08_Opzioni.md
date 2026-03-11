@@ -508,6 +508,19 @@ descrizione funzionalità backlight
 | Metodo di raffreddamento | Aria naturale |  |  |
 | Materiale opalino | Metacrilato bianco opalino |  |  |
 ```
+
+#  backlight a toplight?
+
+```{warning}
+**Impatto sul riconoscimento pezzi**
+
+La scelta tra backlight e toplight influenza significativamente il riconoscimento:
+
+- **Backlight**: Ottimo per profili/sagome, pezzi appaiono come silhouette scure su sfondo chiaro
+- **Toplight**: Necessario per riconoscere dettagli superficiali, texture, feature interne
+
+La calibrazione deve essere eseguita con lo stesso tipo di illuminazione che verrà utilizzato durante il picking in produzione.
+```
 ---
 (filtroIR)=
 ## Filtro IR

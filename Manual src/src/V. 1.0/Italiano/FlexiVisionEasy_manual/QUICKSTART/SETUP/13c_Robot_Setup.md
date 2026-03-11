@@ -88,17 +88,6 @@ Esempio:
 - ✅ CORRETTO: FlexiVision porta 2000, Robot porta 2000 → Comunicazione funzionante
 ```
 
-```{tip}
-**Porta standard per brand robot**
-
-Alcuni brand robot utilizzano porte predefinite diverse:
-- **ABB**: Tipicamente 2000-2010
-- **KUKA**: Tipicamente 2000 o 59152
-- **Fanuc**: Tipicamente 2000 o 60000-60010
-- **Universal Robots**: Tipicamente 30000-30010
-- **Yaskawa/Motoman**: Tipicamente 2000 o 10001
-```
-
 ### Step 2: Riconfigurazione server
 
 Dopo aver impostato la porta corretta, è necessario riavviare il server di comunicazione:
@@ -146,84 +135,9 @@ Se l'indicatore è rosso, verificare:
 **Completamento configurazione**
 
 1. Verificare che la connessione robot → FlexiVision sia stabile
-2. Testare almeno 2-3 comandi diversi (get_Recipe, state_Locator, test_Locator) ???
+
 3. I parametri di comunicazione sono automaticamente salvati
 4. Tornare alla pagina **SETUP** principale
-
-
----
-## Problemi comuni e soluzioni
-
-### Robot non riesce a connettersi
-
-```{warning}
-**Diagnosi connessione fallita**
-
-Se il robot non riesce a stabilire la connessione:
-
-**Verifiche base**:
-1. Server FlexiVision online (indicatore verde)
-2. Indirizzo IP corretto nel programma robot
-3. Porta corretta nel programma robot (uguale a FlexiVision)
-4. Cavo Ethernet collegato correttamente
-
-**Verifiche rete**:
-1. Ping dal VisionController al robot:
-   - Aprire Prompt comandi su VisionController
-   - `ping <IP_ROBOT>` (es: `ping 192.168.1.10`)
-   - Se fallisce: problema di rete fisica/configurazione IP
-
-2. Ping dal robot al VisionController (se disponibile funzione ping sul robot)
-
-3. Verificare che robot e VisionController siano sulla stessa subnet
-
-**Verifiche firewall**:
-1. Disabilitare temporaneamente firewall Windows per test
-2. Se funziona, problema firewall → configurare eccezione
-
-**Verifiche robot**:
-1. Verificare sintassi corretta comando connessione TCP/IP (consultare manuale robot)
-2. Controllare timeout connessione (aumentare se necessario)
-3. Verificare permessi di rete sul controller robot
-```
-
-### Connessione instabile o si disconnette
-
-```{note}
-**Stabilizzazione connessione**
-
-Se la connessione si interrompe frequentemente:
-
-1. Verificare qualità cavo Ethernet (utilizzare Cat5e o Cat6)
-2. Evitare cavi troppo lunghi (max 50m senza switch intermedio)
-3. Verificare che non ci sia traffico di rete eccessivo sulla stessa subnet
-4. Aumentare timeout sul robot (se configurabile)
-5. Verificare alimentazione stabile del VisionController
-6. Controllare log di Windows per errori di rete
-
-Se il problema persiste, contattare supporto tecnico per analisi approfondita.
-```
-
-### Comandi non vengono riconosciuti
-
-```{warning}
-**Sintassi comandi errata**
-
-Se FlexiVision risponde con "Invalid command":
-
-1. Verificare la sintassi esatta del comando (case-sensitive, underscore, ecc.)
-2. Assicurarsi di inviare il carattere terminatore CHR(13) dopo ogni comando
-3. Non aggiungere spazi extra all'inizio o alla fine del comando
-4. Verificare nel log messaggi il comando esattamente come ricevuto
-
-Esempi corretti vs errati:
-- ✅ `start_Locator` (con underscore, minuscolo)
-- ❌ `Start_Locator` (maiuscola errata)
-- ❌ `start Locator` (spazio invece di underscore)
-- ❌ `startLocator` (manca underscore)
-
-Consultare [Protocollo TCP/IP](../rif_tecnico_specifiche/04_Specifiche_FlexiVision.md#comandi-disponibili) per l'elenco completo e corretto dei comandi.
-```
 
 ---
 

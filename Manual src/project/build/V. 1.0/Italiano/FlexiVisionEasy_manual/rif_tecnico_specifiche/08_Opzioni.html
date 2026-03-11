@@ -171,6 +171,12 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../03_Unboxing_Contenuto.html"><strong>Unboxing e Contenuto della Scatola</strong></a></li>
 </ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../27_Support.html"><strong>Contatti</strong></a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../27b_Glossario.html"><strong>Glossario</strong></a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">RIFERIMENTO TECNICO E SPECIFICHE</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="04_Specifiche_FlexiVision.html"><strong>Specifiche Dettagliate FlexiVision</strong></a></li>
@@ -189,6 +195,7 @@
 </ul>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Opzioni</strong></a></li>
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">INSTALLAZIONE DEL SISTEMA</span></p>
 <ul class="nav bd-sidenav">
@@ -214,22 +221,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 
 
-
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17_NuovaRicetta.html"><strong>Creare una Nuova Ricetta</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17b_Expert.html">tasto expert della pagina…</a></li>
-</ul>
-</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17_NuovaRicetta.html"><strong>Creare una Nuova Ricetta</strong></a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18_NuovoModello.html"><strong>Creare un Nuovo Modello</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18b_Expert.html">expert della pagina…</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19_ROI_TEST.html"><strong>Definizione ROI e Tolleranze</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19b_Expert.html">expert della pagina…</a></li>
-</ul>
-</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19_ROI_TEST.html"><strong>Definizione ROI e Tolleranze</strong></a></li>
+
+
 <li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20_Istogrammi.html"><strong>Le Clearances</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20b_Expert.html">expert della pagina …</a></li>
 </ul>
@@ -270,10 +272,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
 </ul>
 </details></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../27_Support.html"><strong>Appendici e Contatti</strong></a></li>
+
 </ul>
 
     </div>
@@ -422,8 +421,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Opzioni</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toplight">Toplight</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#backlight">Backlight</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#backlight-a-toplight">backlight a toplight?</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtro-ir">Filtro IR</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supporto-per-camera-e-toplight">Supporto per Camera e Toplight</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#switch">Switch</a></li>
@@ -434,6 +437,9 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ring-light">Ring Light</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -1377,8 +1383,21 @@ Nessuno shock termico (variazione massima: 10°C in 24h)</p></td>
 </table>
 </div>
 </div>
-</details><hr class="docutils" />
+</details></section>
 </section>
+<section id="backlight-a-toplight">
+<h1>backlight a toplight?<a class="headerlink" href="#backlight-a-toplight" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Impatto sul riconoscimento pezzi</strong></p>
+<p>La scelta tra backlight e toplight influenza significativamente il riconoscimento:</p>
+<ul class="simple">
+<li><p><strong>Backlight</strong>: Ottimo per profili/sagome, pezzi appaiono come silhouette scure su sfondo chiaro</p></li>
+<li><p><strong>Toplight</strong>: Necessario per riconoscere dettagli superficiali, texture, feature interne</p></li>
+</ul>
+<p>La calibrazione deve essere eseguita con lo stesso tipo di illuminazione che verrà utilizzato durante il picking in produzione.</p>
+</div>
+<hr class="docutils" />
 <section id="filtro-ir">
 <span id="filtroir"></span><h2>Filtro IR<a class="headerlink" href="#filtro-ir" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
@@ -1821,8 +1840,12 @@ ___\\ \\     // //___
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Opzioni</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toplight">Toplight</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#backlight">Backlight</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#backlight-a-toplight">backlight a toplight?</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtro-ir">Filtro IR</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supporto-per-camera-e-toplight">Supporto per Camera e Toplight</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#switch">Switch</a></li>
@@ -1833,6 +1856,9 @@ ___\\ \\     // //___
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ring-light">Ring Light</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>

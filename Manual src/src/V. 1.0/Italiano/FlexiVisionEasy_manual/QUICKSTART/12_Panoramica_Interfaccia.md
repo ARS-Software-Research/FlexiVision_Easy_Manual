@@ -79,6 +79,7 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
     * **Elenco modelli rilevati**: tabella con coordinate (**X**, **Y**), rotazione (**Rot**) del componente e lo **Score** (fedeltà dell'oggetto rispetto al modello originale).
     * **Parts per minute**: grafico della media dei componenti prelevati al minuto.
 ```
+(recipes)=
 ## Pagina Recipes 
 <img src="../QUICKSTART/img/pagina_recipesW.png" class="only-light" style="width: 20%; height: auto;">
 <img src="../QUICKSTART/img/pagina_recipesB.png" class="only-dark" style="width: 20%; height: auto;">

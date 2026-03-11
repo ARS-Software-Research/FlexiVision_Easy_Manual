@@ -2,20 +2,30 @@
 # **Le Clearances** 
  In questa pagina vedremo come configurare le Clearances per verificare che le aree critiche siano libere da ostacoli.
 
-## Cos'è una Clearance?
-
+ **Cos'è una Clearance?**  
 Una **Clearance** in FlexiVision è uno strumento che monitora un'area specifica dell'immagine per verificare che sia libera. Viene utilizzato per controllare, ad esempio, che lo spazio necessario alla pinza per afferrare il componente non sia occupato da altri oggetti.
 
 
-```{admonition} Principio di Funzionamento. 
-:class: note
+```{note} Principio di Funzionamento. 
+
 L'istogramma analizza i livelli di bianco e nero in un'area definita:
 - 🟢 **Verde** → Area libera (OK per il prelievo)
 - 🔴 **Rosso** → Area occupata (presenza di ostacoli)
 ```
----
+:::{attention}
+L'utilizzo delle Clearances varia al variare del pezzo di cui si deve fare il modello. Questa è una valutazione a carico della figura incaricata di creare l'applicazione. 
+:::
+--- 
 
 ## **Step 1: Setup Fisico**
+
+:::{danger} **Attenzione!**
+  Vi mostreremo la procedura con il Tool Pinza, in quanto necessita obbligatoriamente della configurazione di Clearances per i modelli. Altri Tool per il robot potrebbero non aver bisogno delle Clearances per simularne l'ingombro. 
+:::
+:::{video} video/Step1.mp4
+    :width: 100%
+    :align: center
+:::
 
 ````{list-table}
 :widths: 5 95
@@ -34,13 +44,7 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
     :::{important}
     Lasciare gli oggetti leggermente più distanti del necessario per evitare errori nella creazione del modello. (margine 2-3 mm)
     :::
-    :::{figure} img/simulazione_ingombro_pinza.png
-        :alt: Simulazione ingombro pinza
-        :width: 70%
-        :align: center
-        
-        Esempio di posizionamento simulatori ingombro pinza. Nota il margine di sicurezza lasciato tra pezzo e simulatori.
-    :::
+    
 * - **4.**
   - Annotare le Coordinate:
     - Salvare le coordinate dell'ultimo asse del robot:
@@ -62,40 +66,42 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
 :widths: 5 95
 
 * - **1.**
-  - Dalla pagina **Locator Model**, dopo aver cliccato su **Next**, si aprirà l'elenco de clearance disponibili (fino a 8 per modello).
+  - Dalla pagina **Locator Model**, dopo aver cliccato su **Next**, si aprirà l'elenco delle clearance disponibili (fino a 8 per modello).
     
-    **Panoramica interfaccia**
+    :::{dropdown} **Pagina Clearances**
     
-    :::{figure} img/paginaclearances.png
-    :alt: Simulazione ingombro pinza
-    :width: 70%
-    :align: center
+      ![Pagina Clearances](../Nuovo_Modello/img/pagina_clearances.png)
     
-    Screen pagina Clearances.
+      | Elemento | Descrizione |
+      |----------|-------------|
+      | **Clearance 1...8** | Slot disponibili per creare fino a 8 clearance diversi per lo stesso modello |
+      | **Test (globale)** | Pulsante per testare simultaneamente tutte le clearance abilitati |
+      | **Next** | Avanzamento alla fase successiva (Robot Pick) dopo configurazione clearance |
     :::
-    
-    | Elemento | Descrizione |
-    |----------|-------------|
-    | **Clearance 1...8** | Slot disponibili per creare fino a 8 clearance diversi per lo stesso modello |
-    | **Test (globale)** | Pulsante per testare simultaneamente tutte le clearance abilitati |
-    | **Next** | Avanzamento alla fase successiva (Robot Pick) dopo configurazione clearance |
-
 * - **2.**
   - Cliccare su **Clearance 1**, si aprirà la pagina relativa alla configurazione della prima clearance "Clearance 1"
     
-    **Panoramica interfaccia configurazione**
-    
-    | Parametro | Funzione |
-    |-----------|----------|
-    | **Enable Histogram** | Attiva questo istogramma rendendolo operativo |
-    | **Expression Builder** | Strumento per configurare automaticamente le soglie di rilevamento |
-    | **Mean and Standard Deviation** | Valori statistici calcolati sull'area selezionata (media e deviazione standard dei livelli di grigio) |
-    | **Test** | Verifica immediata del funzionamento dell'istogramma |
-    | **Result** | Indicatore visivo dello stato (Verde = OK, Rosso = Triggered) |
+    :::{dropdown} **Pagina Clearance 1**
+
+      ![Pagina Clearance 1](../Nuovo_Modello/img/pagina_clearance1.png)
+
+      | Parametro | Funzione |
+      |-----------|----------|
+      | **Enable Histogram** | Attiva questo istogramma rendendolo operativo |
+      | **Expression Builder** | Strumento per configurare automaticamente le soglie di rilevamento |
+      | **Mean and Standard Deviation** | Valori statistici calcolati sull'area selezionata (media e deviazione standard dei livelli di grigio) |
+      | **Test** | Verifica immediata del funzionamento dell'istogramma |
+      | **Result** | Indicatore visivo dello stato (Verde = OK, Rosso = Triggered) |
+    :::
 ```
 ---
 
 ## **Step 3: Attivazione e Posizionamento Area**
+
+:::{video} video/Step3.mp4
+    :width: 100%
+    :align: center
+:::
 
 ```{list-table}
 * - 3. 
@@ -112,6 +118,11 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
 ---
 
 ## **Step 4: Configurazione Automatica**
+
+:::{video} video/Step4.mp4
+    :width: 100%
+    :align: center
+:::
 
 ```{list-table}
 * - 5. 

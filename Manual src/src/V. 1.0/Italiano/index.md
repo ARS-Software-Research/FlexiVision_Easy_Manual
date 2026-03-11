@@ -144,6 +144,19 @@ FlexiVisionEasy_manual/02_informazioni_sicurezza.md
 
 FlexiVisionEasy_manual/03_Unboxing_Contenuto.md
 ```    
+```{toctree} 
+:hidden:
+:caption: 
+FlexiVisionEasy_manual/27_Support.md
+
+```
+```{toctree} 
+:hidden:
+:caption: 
+FlexiVisionEasy_manual/27b_Glossario.md
+
+```
+
 ```{toctree}
 :hidden:
 :caption: RIFERIMENTO TECNICO E SPECIFICHE 
@@ -260,10 +273,4 @@ FlexiVisionEasy_manual/25_Garanzia.md
 FlexiVisionEasy_manual/TROUBLESHOOTING/26_trb_shooting_guide.md
 ```
 
-```{toctree} 
-:hidden:
-:caption: SUPPORT
-FlexiVisionEasy_manual/27_Support.md
-
-```
 

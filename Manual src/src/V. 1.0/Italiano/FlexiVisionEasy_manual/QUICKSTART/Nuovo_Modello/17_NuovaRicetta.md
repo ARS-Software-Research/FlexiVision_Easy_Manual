@@ -7,7 +7,7 @@ Questa sezione descrive come creare una nuova ricetta applicativa in FlexiVision
 
 - Si lavora con un **tipo di pezzo completamente diverso**
 - Si utilizza un **FlexiBowl di dimensione diversa**
-- Si cambia **applicazione** (da picking standard a controllo qualità)
+- Si cambia **applicazione** 
 - Si desidera mantenere **configurazioni separate** per produzioni diverse
 
 **NON serve creare una nuova ricetta quando:**
@@ -20,36 +20,13 @@ Questa sezione descrive come creare una nuova ricetta applicativa in FlexiVision
 
 ## Panoramica interfaccia
 
-Prima di procedere con il training del modello, familiarizzare con l'interfaccia Edit Recipe:
+Prima di procedere con il training del modello, familiarizzare con l'interfaccia [Recipes](recipes).
 
-### Elementi principali
-```{list-table}
-:header-rows: 1
-:widths: 30 70
-
-* - Sezione
-  - Descrizione
-* - **Models List**
-  - Elenco di tutti i modelli abilitati nella ricetta (fino a 16). Cliccando su un modello si accede alla sua configurazione.
-* - **FlexiBowl Configuration**
-  - Accesso rapido ai parametri del FlexiBowl (vibrazione, velocità, temporizzazioni). Verrà configurato dopo il training modello.
-* - **Hopper Configuration**
-  - Parametri della tramoggia (se presente nel sistema). Opzionale.
-* - **Robot Settings**
-  - Impostazioni comunicazione e coordinate robot. Già configurate durante il setup.
-* - **Save Recipe**
-  - Pulsante per salvare tutte le modifiche effettuate alla ricetta.
-```
-
----
 
 ## Salvataggio ricetta base
 
 Prima di procedere, assicurarsi di aver salvato la ricetta base creata durante il setup iniziale:
-```{important}
-**Salvare la ricetta base**
-
-  :::{list-table}
+:::{list-table}
   * - 1.
     - Dalla pagina principale, cliccare su **Recipes**
   * - 2.
@@ -60,13 +37,15 @@ Prima di procedere, assicurarsi di aver salvato la ricetta base creata durante i
     - Mantenere lo stesso nome nel campo di salvataggio (si sta sovrascrivendo la ricetta con le configurazioni aggiornate)
   * - 5.
     - Confermare il salvataggio
-  :::
+:::
+
+```{important}
 
 **Perché salvare la ricetta base?**
 
 La ricetta base contiene tutte le configurazioni hardware completate durante il setup:
 - Connessione FlexiBowl (IP, parametri)
-- Connessione Hopper (se presente)
+- Connessione Hopper 
 - Connessione Robot (porta TCP/IP)
 - Calibrazione camera
 
@@ -209,7 +188,7 @@ Segui questo percorso se vuoi mantenere calibrazione e configurazioni hardware e
 Prima di cliccare su "Save Recipe", scegli un nome descrittivo.
 ```{list-table}
 * - 7. 
-  - Rinominare la Ricetta duplicata 
+  - Rinominare la Ricetta duplicata   
     **Convenzioni consigliate:**
     - Nomi che identificano chiaramente il pezzo o l'applicazione
     - Niente spazi (usare `_` o `-`)
@@ -234,7 +213,7 @@ Prima di cliccare su "Save Recipe", scegli un nome descrittivo.
 
 ## Creazione nuovo modello
 
-Con la ricetta creata, abilitata e caricata — indipendentemente dal percorso seguito — procedere con la configurazione dei modelli:
+Con la ricetta creata e caricata — indipendentemente dal percorso seguito — procedere con la configurazione dei modelli:
 
 **→ [Creare un Modello](18_NuovoModello.md)**
 
@@ -244,14 +223,10 @@ Con la ricetta creata, abilitata e caricata — indipendentemente dal percorso s
 ```{note}
 **Checklist creazione ricetta**
 
-- [x] Ricetta base salvata
-- [x] Percorso scelto (Nuova da zero / Duplica)
-- [x] Nuova ricetta creata con nome descrittivo
-- [x] Modalità operativa selezionata (Standard/Locator)
-- [x] Modello FlexiBowl configurato
-- [x] Primo modello abilitato
-- [x] Ricetta attiva selezionata
-- [x] Edit Recipe aperto
+[x] Ricetta base salvata
+[x] Percorso e modelaità operativa scelti (Nuova da zero / Duplicazione della Ricetta Base)
+[x] Nuova ricetta creata con nome descrittivo funzionale
+
 
 **Prossimo passo**: Training del modello
 ```
@@ -310,33 +285,16 @@ Una ricetta ben configurata rappresenta ore di lavoro. Proteggerla adeguatamente
 
 ---
 
-## Risoluzione problemi comuni
-
-### Ricetta non salvata correttamente
-```{warning}
-**Errore durante salvataggio**
-
-Se il salvataggio della ricetta fallisce:
-- Verificare di avere permessi di scrittura sulla cartella del software
-- Controllare lo spazio disponibile su disco
-- Assicurarsi che il nome non contenga caratteri non ammessi (`/ \ : * ? " < > |`)
-- Verificare che non esista già una ricetta con lo stesso nome
-```
-
----
-
 ## Prossimi passi
 
 **→ [Creare un Modello](18_NuovoModello.md)**
+
 ```{tip}
 **Cosa serve per il prossimo step**
 
 - Pezzi fisici da riconoscere (almeno 10-15 pezzi)
-- Robot disponibile per posizionamento pezzo di riferimento
 - FlexiBowl vuoto e pulito
-- Simulatori ingombro pinza
+- Robot disponibile per posizionamento pezzo di riferimento
+- Se il tool del robot che stiamo utilizzando è una pinza, ci occorreranno anche due oggetti (non necessariamente uguali ai pezzi di cui si vuole fare il modello) da utilizzare come simulatori per l'ingombro del tool. 
 - Foglio per annotare coordinate robot (X, Y, RZ)
-```
-```{toctree}
-17b_Expert.md
 ```
