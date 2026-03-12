@@ -13,7 +13,7 @@ FlexiVision Easy comunica con il robot tramite protocollo **TCP/IP** su rete Eth
 * - Protocollo
   - TCP/IP
 * - Porta
-  - Configurabile (default: 2000)
+  - Configurabile (default: FB1 → 4001 ; FB2 → 4002 ; FB3 → 4003)
 * - Carattere di terminazione
   - CHR(13) - Carriage Return
 * - Formato dati

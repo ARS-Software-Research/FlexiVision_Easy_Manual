@@ -226,9 +226,26 @@ Prima di procedere con il fissaggio definitivo:
 ## Montaggio Toplight
 
 Se l'ordine include un Toplight (illuminatore dall'alto), questo deve essere montato sulla stessa struttura di supporto della telecamera per garantire un'illuminazione uniforme della superficie di lavoro.
+:::{attention}
+Durante il montaggio, l'apparecchio deve essere spento e staccato dalla corrente. 
+::: 
 
 ### Specifiche Tecniche 
 immagini + pdf??
+
+### Modalità di fissaggio 
+Il Toplight può essere fissato in due modalità: sull'[angolo](angolo) o sul [lato](lato)
+(angolo)=
+#### 1. Fissaggio sull'angolo 
+(lato)=
+#### 2. Fissaggio sul lato
+:::{error}
+![montaggio Laterale](./img/errorimontaggiolaterale.png)
+:::
+
+:::{tip}
+![montaggio Laterale](./img/montaggiolaterale.png)
+:::
 
 ### Procedura di installazione
 

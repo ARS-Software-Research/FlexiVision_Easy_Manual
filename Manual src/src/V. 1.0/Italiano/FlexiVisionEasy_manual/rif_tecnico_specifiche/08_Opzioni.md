@@ -6,7 +6,7 @@ Il Toplight è un sistema di illuminazione dall'alto che illumina la superficie 
 I Toplight disponibli sono: 
 
 ```{dropdown} TopLight 500x300 - White 
-![Toplight](img/toplight.png)
+![Toplight](./img/toplight_CM002316.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -101,7 +101,7 @@ I Toplight disponibli sono:
 
 ```
 ```{dropdown} TopLight 500x300 - Red  
-![Toplight](img/toplight.png)
+![Toplight](./img/toplight_CM002316.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -198,7 +198,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 500x300 - Infrared
-![Toplight](img/toplight.png)
+![Toplight](./img/toplight_CM002316.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -295,7 +295,7 @@ I Toplight disponibli sono:
 
 ```{dropdown} TopLight 700x300 - White
 
-![Toplight XL](img/toplightXL.png)
+![Toplight](./img/toplight_CM002317.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -391,7 +391,7 @@ I Toplight disponibli sono:
 
 ```{dropdown} TopLight 700x300 - Red
 
-![Toplight XL](img/toplightXL.png)
+![Toplight](./img/toplight_CM002317.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -487,7 +487,7 @@ I Toplight disponibli sono:
 
 ```{dropdown} TopLight 700x300 - Infrared
 
-![Toplight XL](img/toplightXL.png)
+![Toplight](./img/toplight_CM002317.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -583,7 +583,7 @@ I Toplight disponibli sono:
 
 ```{dropdown} TopLight 700x500 - White
 
-![Toplight XXL](img/toplightXXL.png)
+![Toplight](./img/toplight_CM002318.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -679,7 +679,7 @@ I Toplight disponibli sono:
 
 ```{dropdown} TopLight 700x500 - Red
 
-![Toplight XXL](img/toplightXXL.png)
+![Toplight](./img/toplight_CM002318.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -775,7 +775,7 @@ I Toplight disponibli sono:
 
 ```{dropdown} TopLight 700x500 - Infrared
 
-![Toplight XXL](img/toplightXXL.png)
+![Toplight](./img/toplight_CM002318.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -871,7 +871,7 @@ I Toplight disponibli sono:
 
 ```{dropdown} TopLight 900x600 - White
 
-![Toplight XXL](img/toplightXXL.png)
+![Toplight](./img/toplight_CM002319.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -966,7 +966,7 @@ I Toplight disponibli sono:
 ```
 ```{dropdown} TopLight 900x600 - Red
 
-![Toplight XXL](img/toplightXXL.png)
+![Toplight](./img/toplight_CM002319.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|
@@ -1062,7 +1062,7 @@ I Toplight disponibli sono:
 
 ```{dropdown} TopLight 900x600 - Infrared
 
-![Toplight XXL](img/toplightXXL.png)
+![Toplight](./img/toplight_CM002319.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
 |--|--|--|--|--|--|--|

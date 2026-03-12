@@ -194,13 +194,7 @@ Specifiche Cavo Alimentazione Camera
 
 
 ### Specifiche fisiche e dimensioni
-```{figure} img/dimensioni_cam.png
-:alt: Dimensioni camera 
-:align: center
-:width: 100%
-
-Dimensioni camera CAM-CIC-5000-20G-1 (mm)
-```
+![Dimensioni Camera](./img/dimensioni_cam.png)
 ```{list-table}
 :header-rows: 1
 :widths: 40 60
@@ -444,46 +438,6 @@ Una calibrazione eccellente è il requisito fondamentale per l'accuratezza del s
 Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezione [Calibrazione della Camera](14_calibrazione_camera.md).
 
 ---
-
-
-## Componenti opzionali 
-
-Componenti aggiuntivi disponibili separatamente:
-
-
-:::{card} Toplight
-:link: toplight
-:link-type: ref
-:class-card: shadow
-:::
-
-:::{card} Backlight
-:link: backlight
-:link-type: ref
-:class-card: shadow
-:::
-
-
-:::{card} Supporto per Camera e Toplight
-:link: supporto
-:link-type: ref
-:class-card: shadow
-:::
-
-:::{card} Switch
-:link: switch
-:link-type: ref
-:class-card: shadow
-:::
-
-:::{card} Display
-:link: display
-:link-type: ref
-:class-card: shadow
-:::
-
----
-
 ## Panoramica collegamenti
 
 ![Panoramica Collegamenti](img/panoramicacollegamenti.png)
@@ -543,4 +497,44 @@ Per schemi elettrici dettagliati, consultare la sezione [Cablaggio e Connessioni
 
 
 ---
+
+
+## Componenti opzionali 
+
+Componenti aggiuntivi disponibili separatamente:
+
+
+:::{card} Toplight
+:link: toplight
+:link-type: ref
+:class-card: shadow
+:::
+
+:::{card} Backlight
+:link: backlight
+:link-type: ref
+:class-card: shadow
+:::
+
+
+:::{card} Supporto per Camera e Toplight
+:link: supporto
+:link-type: ref
+:class-card: shadow
+:::
+
+:::{card} Switch
+:link: switch
+:link-type: ref
+:class-card: shadow
+:::
+
+:::{card} Display
+:link: display
+:link-type: ref
+:class-card: shadow
+:::
+
+---
+
 
