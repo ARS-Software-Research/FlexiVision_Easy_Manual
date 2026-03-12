@@ -85,7 +85,7 @@ Se cambi solo la tramoggia, non è necessario scegliere il Percorso A. È suffic
 
 ---
 
-## Percorso A — Crea una nuova ricetta da zero
+# Percorso A — Crea una nuova ricetta da zero
 
 Segui questo percorso se è necessario ripetere la calibrazione o ricominciare completamente il setup.
 ```{warning}
@@ -95,8 +95,15 @@ Calibrazione camera, connessione robot e configurazione hardware dovranno essere
 
 Se vuoi ricominciare completamente dall'inizio: **→ [Creazione Ricetta Base](ricettabase)**
 ```
+:::{attention}
+**Cambio pezzo e ricalibrazione**
+ 
+   Come spiegato nella sezione [Calibrazione Camera](calibrazione) , per ottenere la massima precisione la griglia di calibrazione deve essere posta alla stessa altezza del pezzo usato nell'applicazione.  
+- Se il nuovo pezzo ha un'altezza **simile** all'originale e/o l'applicazione **non richiede la massima precisione**, non è necessario ripetere la calibrazione: è possibile procedere direttamente con il [Percorso B](percorsoB).  
+- Se il nuovo pezzo **differisce in altezza** dall'originale in modo sostanziale, è necessario **ripetere la calibrazione** utilizzando i distanziali forniti con la griglia, come descritto in [Calibrazione Camera](calibrazione)
+:::
 
-### Step 1: Accesso alla sezione Ricette
+## Step 1: Accesso alla sezione Ricette
 ```{list-table}
 * - 1.
   - Dalla pagina principale del software FlexiVision One, cliccare su **Recipes**
@@ -104,7 +111,7 @@ Se vuoi ricominciare completamente dall'inizio: **→ [Creazione Ricetta Base](r
   - Si apre la pagina di gestione ricette con l'elenco di tutte le ricette esistenti
 ```
 
-### Step 2: Creare la ricetta e nominarla
+## Step 2: Creare la ricetta e nominarla
 ```{list-table}
 * - 3.
   - Cliccare sul pulsante **New Recipe**
@@ -116,7 +123,7 @@ Se vuoi ricominciare completamente dall'inizio: **→ [Creazione Ricetta Base](r
   - Cliccare su **Next**
 ```
 
-### Step 3: Selezionare la modalità operativa
+## Step 3: Selezionare la modalità operativa
 ```{list-table}
 * - 6.
   - Selezionare **Standard** o **...**
@@ -131,7 +138,7 @@ Quella Standard è la modalità più comune ed è quella descritta in dettaglio 
 [da completare]
 ```
 
-### Step 4: Selezione modello FlexiBowl
+## Step 4: Selezione modello FlexiBowl
 ```{list-table}
 * - 8.
   - Selezionare il FlexiBowl con cui si sta lavorando
@@ -154,12 +161,12 @@ Quella Standard è la modalità più comune ed è quella descritta in dettaglio 
 **→ Continua con [Step 5: Creazione nuovo modello](nuovomodello)**
 
 ---
-
-## Percorso B — Duplica la ricetta base
+(percorsoB)=
+# Percorso B — Duplica la ricetta base
 
 Segui questo percorso se vuoi mantenere calibrazione e configurazioni hardware esistenti.
 
-### Step 1: Accesso alla sezione Ricette
+## Step 1: Accesso alla sezione Ricette
 ```{list-table}
 * - 1.
   - Dalla pagina principale del software FlexiVision One, cliccare su **Recipes**
@@ -167,7 +174,7 @@ Segui questo percorso se vuoi mantenere calibrazione e configurazioni hardware e
   - Si apre la pagina di gestione ricette con l'elenco di tutte le ricette esistenti
 ```
 
-### Step 2: Duplica la Ricetta Base 
+## Step 2: Duplica la Ricetta Base 
 ```{list-table}
 * - 3.
   - Selelzionare la Ricetta Base
@@ -183,7 +190,7 @@ Segui questo percorso se vuoi mantenere calibrazione e configurazioni hardware e
     Con più ricette presenti, verificare sempre che sia selezionata quella corretta prima di iniziare modifiche. Modifiche applicate alla ricetta sbagliata richiedono di rifare il lavoro.
     :::
 ```
-### Step 3: Nominare la Ricetta
+## Step 3: Nominare la Ricetta
 
 Prima di cliccare su "Save Recipe", scegli un nome descrittivo.
 ```{list-table}

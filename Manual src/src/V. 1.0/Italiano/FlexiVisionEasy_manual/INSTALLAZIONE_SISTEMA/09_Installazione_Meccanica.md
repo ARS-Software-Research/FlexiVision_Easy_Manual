@@ -124,7 +124,7 @@ La telecamera deve essere montata in modo che la faccia frontale della lente sia
 
 ```{image} ../rif_tecnico_specifiche/img/config_giusta.JPG
 :alt: Distanza Di Lavoro
-:width: 40%
+:width: 70%
 :align: center
 ```
 

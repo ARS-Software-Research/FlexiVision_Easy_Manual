@@ -108,13 +108,15 @@ Per ora, concentrarsi sul completamento del primo modello.
 * - **9.**
   - Usare lo **Score Threshold** per regolare il livello di dettaglio desiderato
     
-    :::{note}
+    ::::{note}
     **Score Threshold**
+     
+      ![Confronto Score threshold](../Nuovo_Modello/img/confrontomodello.png)
     
     **Valore vicino a 0** → Rileva PIÙ dettagli (modello più preciso)
     
     **Valore vicino a 1** → Rileva MENO dettagli (modello più semplice)
-    :::
+    ::::
     
     :::{tip}
     **Come scegliere lo Score Threshold ottimale?**
@@ -157,13 +159,7 @@ Dopo aver generato il modello, è fondamentale verificarne la qualità prima di 
       ✓ Escludere gli oggetti usati per simulare l'ingombro della pinza  
     :::
 
-    :::{figure} img/modello_corretto_vs_errato.png
-        :alt: Confronto modello corretto e errato
-        :width: 100%
-        :align: center
-        
-        A sinistra: modello corretto (solo contorni pezzo). A destra: modello errato (include trama superficie e riflessi).
-    :::
+    ![Confronto Modello](../Nuovo_Modello/img/confrontomodello2.png)
 ````
 
 ```{attention}

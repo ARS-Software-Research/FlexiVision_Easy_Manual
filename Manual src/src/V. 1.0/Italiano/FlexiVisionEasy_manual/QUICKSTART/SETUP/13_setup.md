@@ -126,8 +126,7 @@ Prima di configurare i componenti hardware, è necessario creare una ricetta di 
     Evitare caratteri speciali o spazi (usare underscore ``_`` al posto degli spazi).
 
 * - **4.**
-  - Selezionare il **tipo di applicazione**: **Standard** per applicazioni ... oppure **Mix** per applicazioni ...
-
+  - Selezionare applicazione **Standard**
 * - **5.**
   - Selezionare il **FlexiBowl** utilizzato
 

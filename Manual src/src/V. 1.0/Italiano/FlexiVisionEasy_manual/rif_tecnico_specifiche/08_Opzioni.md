@@ -1,11 +1,11 @@
 # **Opzioni**                                                                
 (toplight)=
 ## Toplight
-descrizione funzionalità toplight
+Il Toplight è un sistema di illuminazione dall'alto che illumina la superficie del pezzo direttamente dall'alto, esaltando texture e dettagli superficiali. È la scelta ideale quando l'applicazione richiede il riconoscimento di caratteristiche visibili sulla faccia superiore del pezzo.
 
-le taglie disponibili sono:
+I Toplight disponibli sono: 
 
-```{dropdown} TopLight 500x300
+```{dropdown} TopLight 500x300 - White 
 ![Toplight](img/toplight.png)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -17,6 +17,9 @@ le taglie disponibili sono:
 :widths: 35 65
 :header-rows: 0
 
+* - **Codice**
+  - CM002316
+
 * - **Elettronica**
   -
 
@@ -24,19 +27,7 @@ le taglie disponibili sono:
   - 24 VDC ±10%
 
 * - Modalità di funzionamento
-  - Continua o strobo
-
-* - Ingresso strobo
-  - PNP: da 5 a 24V per 100% ON. Da 0 a 1V per 100% OFF.
-
-* - Overdrive
-  - No
-
-* - Condizioni strobo (tempo ON, duty cycle)
-  - Nessuna restrizione
-
-* - Dimmerazione
-  - Pin 5 (Connettore M12 5 poli): 0–10V = 100–30% rispettivamente
+  - Continua 
 
 * - Tempo massimo di salita
   - 15 µs
@@ -62,6 +53,12 @@ le taglie disponibili sono:
 * - Tensione massima di funzionamento
   - 30V sull’ingresso luce
 
+* - Lunghezza d'onda
+  - 
+
+* - Classe di Rischio 
+  - 0 (nesusn rischio)
+
 * - **Meccanica**
   -
 
@@ -99,12 +96,204 @@ le taglie disponibili sono:
   - IP 50
 
 * - Marcature
-  - RoHS-CE-DEEE
+  - RoHS-CE-DEEE, UL
+:::
+
+```
+```{dropdown} TopLight 500x300 - Red  
+![Toplight](img/toplight.png)
+
+| Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
+|--|--|--|--|--|--|--|
+| **A** | **B** | **C** | **C + 10mm** | **D** | - | - |
+| 500 | 300 | 45 | 55 | 65 | 0.15 m^2 | 1.6 m |
+
+:::{list-table}
+:widths: 35 65
+:header-rows: 0
+
+* - **Codice**
+  - CM002401
+
+* - **Elettronica**
+  -
+
+* - Alimentazione
+  - 24 VDC ±10%
+
+* - Modalità di funzionamento
+  - Continua 
+
+* - Tempo massimo di salita
+  - 15 µs
+
+* - Tempo massimo di discesa
+  - 10 µs
+
+* - Controllo
+  - Connettore M12 5 poli
+
+* - Configurazione pin connettore
+  - 1: 24VDC / 3: GND / 4: PNP
+
+* - Consumo
+  - 96.6W
+
+* - Tensione minima di funzionamento
+  - 20V sull’ingresso luce
+
+* - Tensione nominale di funzionamento
+  - 24V sull’ingresso luce (±10%)
+
+* - Tensione massima di funzionamento
+  - 30V sull’ingresso luce
+
+* - Lunghezza d'onda
+  - 630 nm 
+
+* - Classe di Rischio 
+  - 0 (nesusn rischio)
+
+
+* - **Meccanica**
+  -
+
+* - Spessore
+  - 45mm + 10mm con piastra di fissaggio
+
+* - Diametro interno
+  - 65mm
+
+* - Peso
+  - 23.8 Kg/m² ±15%
+
+* - Materiali
+  - Alluminio e ABS caricato
+
+* - Diffusore
+  - PMMA bianco
+
+* - Fissaggio
+  - 4 dadi M4 (forniti) da inserire nella scanalatura
+    oppure 4 viti M4x20 (non fornite) applicate agli angoli
+
+* - **Ambiente**
+  -
+
+* - Temperatura di esercizio
+  - -10°C a +40°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Temperatura di stoccaggio
+  - -20°C a +60°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Grado di protezione IP
+  - IP 50
+
+* - Marcature
+  - RoHS-CE-DEEE, UL
 :::
 
 ```
 
-```{dropdown} TopLight 700x300
+```{dropdown} TopLight 500x300 - Infrared
+![Toplight](img/toplight.png)
+
+| Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
+|--|--|--|--|--|--|--|
+| **A** | **B** | **C** | **C + 10mm** | **D** | - | - |
+| 500 | 300 | 45 | 55 | 65 | 0.15 m^2 | 1.6 m |
+
+:::{list-table}
+:widths: 35 65
+:header-rows: 0
+
+* - **Codice**
+  - CM002405
+
+* - **Elettronica**
+  -
+
+* - Alimentazione
+  - 24 VDC ±10%
+
+* - Modalità di funzionamento
+  - Continua 
+
+* - Tempo massimo di salita
+  - 15 µs
+
+* - Tempo massimo di discesa
+  - 10 µs
+
+* - Controllo
+  - Connettore M12 5 poli
+
+* - Configurazione pin connettore
+  - 1: 24VDC / 3: GND / 4: PNP
+
+* - Consumo
+  - 96.6W
+
+* - Tensione minima di funzionamento
+  - 20V sull’ingresso luce
+
+* - Tensione nominale di funzionamento
+  - 24V sull’ingresso luce (±10%)
+
+* - Tensione massima di funzionamento
+  - 30V sull’ingresso luce
+
+* - Lunghezza d'onda
+  - 850 nm 
+
+* - Classe di Rischio 
+  - 1 (basso rischio)
+
+* - **Meccanica**
+  -
+
+* - Spessore
+  - 45mm + 10mm con piastra di fissaggio
+
+* - Diametro interno
+  - 65mm
+
+* - Peso
+  - 23.8 Kg/m² ±15%
+
+* - Materiali
+  - Alluminio e ABS caricato
+
+* - Diffusore
+  - PMMA bianco
+
+* - Fissaggio
+  - 4 dadi M4 (forniti) da inserire nella scanalatura
+    oppure 4 viti M4x20 (non fornite) applicate agli angoli
+
+* - **Ambiente**
+  -
+
+* - Temperatura di esercizio
+  - -10°C a +40°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Temperatura di stoccaggio
+  - -20°C a +60°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Grado di protezione IP
+  - IP 50
+
+* - Marcature
+  - RoHS-CE-DEEE, UL
+:::
+
+```
+
+```{dropdown} TopLight 700x300 - White
 
 ![Toplight XL](img/toplightXL.png)
 
@@ -117,6 +306,9 @@ le taglie disponibili sono:
 :widths: 35 65
 :header-rows: 0
 
+* - **Codice**
+  - CM002317
+
 * - **Elettronica**
   -
 
@@ -124,19 +316,7 @@ le taglie disponibili sono:
   - 24 VDC ±10%
 
 * - Modalità di funzionamento
-  - Continua o strobo
-
-* - Ingresso strobo
-  - PNP: da 5 a 24V per 100% ON. Da 0 a 1V per 100% OFF.
-
-* - Overdrive
-  - No
-
-* - Condizioni strobo (tempo ON, duty cycle)
-  - Nessuna restrizione
-
-* - Dimmerazione
-  - Pin 5 (Connettore M12 5 poli): 0–10V = 100–30% rispettivamente
+  - Continua 
 
 * - Tempo massimo di salita
   - 15 µs
@@ -162,6 +342,12 @@ le taglie disponibili sono:
 * - Tensione massima di funzionamento
   - 30V sull’ingresso luce
 
+* - Lunghezza d'onda
+  - 
+
+* - Classe di Rischio 
+  - 0 (nesusn rischio)
+
 * - **Meccanica**
   -
 
@@ -199,11 +385,203 @@ le taglie disponibili sono:
   - IP 50
 
 * - Marcature
-  - RoHS-CE-DEEE
+  - RoHS-CE-DEEE, UL
 :::
 ```
 
-```{dropdown} TopLight 700x500
+```{dropdown} TopLight 700x300 - Red
+
+![Toplight XL](img/toplightXL.png)
+
+| Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
+|--|--|--|--|--|--|--|
+| **A** | **B** | **C** | **C + 10mm** | **D** | - | - |
+| 700 | 300 | 45 | 55 | 65 | 0.21 m^2 | 2 m |
+
+:::{list-table}
+:widths: 35 65
+:header-rows: 0
+ 
+ * - **Codice**
+   - CM002402
+
+* - **Elettronica**
+  -
+
+* - Alimentazione
+  - 24 VDC ±10%
+
+* - Modalità di funzionamento
+  - Continua 
+
+* - Tempo massimo di salita
+  - 15 µs
+
+* - Tempo massimo di discesa
+  - 10 µs
+
+* - Controllo
+  - Connettore M12 5 poli
+
+* - Configurazione pin connettore
+  - 1: 24VDC / 3: GND / 4: PNP
+
+* - Consumo
+  - 135.6W
+
+* - Tensione minima di funzionamento
+  - 20V sull’ingresso luce
+
+* - Tensione nominale di funzionamento
+  - 24V sull’ingresso luce (±10%)
+
+* - Tensione massima di funzionamento
+  - 30V sull’ingresso luce
+
+* - Lunghezza d'onda
+  - 630 nm 
+
+* - Classe di Rischio 
+  - 0 (nesusn rischio)
+
+* - **Meccanica**
+  -
+
+* - Spessore
+  - 45mm + 10mm con piastra di fissaggio
+
+* - Diametro interno
+  - 65mm
+
+* - Peso
+  - 23.8 Kg/m² ±15%
+
+* - Materiali
+  - Alluminio e ABS caricato
+
+* - Diffusore
+  - PMMA bianco
+
+* - Fissaggio
+  - 4 dadi M4 (forniti) da inserire nella scanalatura
+    oppure 4 viti M4x20 (non fornite) applicate agli angoli
+
+* - **Ambiente**
+  -
+
+* - Temperatura di esercizio
+  - -10°C a +40°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Temperatura di stoccaggio
+  - -20°C a +60°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Grado di protezione IP
+  - IP 50
+
+* - Marcature
+  - RoHS-CE-DEEE, UL
+:::
+```
+
+```{dropdown} TopLight 700x300 - Infrared
+
+![Toplight XL](img/toplightXL.png)
+
+| Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
+|--|--|--|--|--|--|--|
+| **A** | **B** | **C** | **C + 10mm** | **D** | - | - |
+| 700 | 300 | 45 | 55 | 65 | 0.21 m^2 | 2 m |
+
+:::{list-table}
+:widths: 35 65
+:header-rows: 0
+
+* - **Codice** 
+  - CM002406
+
+* - **Elettronica**
+  -
+
+* - Alimentazione
+  - 24 VDC ±10%
+
+* - Modalità di funzionamento
+  - Continua 
+
+* - Tempo massimo di salita
+  - 15 µs
+
+* - Tempo massimo di discesa
+  - 10 µs
+
+* - Controllo
+  - Connettore M12 5 poli
+
+* - Configurazione pin connettore
+  - 1: 24VDC / 3: GND / 4: PNP
+
+* - Consumo
+  - 135.6W
+
+* - Tensione minima di funzionamento
+  - 20V sull’ingresso luce
+
+* - Tensione nominale di funzionamento
+  - 24V sull’ingresso luce (±10%)
+
+* - Tensione massima di funzionamento
+  - 30V sull’ingresso luce
+
+* - Lunghezza d'onda
+  - 850 nm 
+
+* - Classe di Rischio 
+  - 1 (basso rischio)
+
+* - **Meccanica**
+  -
+
+* - Spessore
+  - 45mm + 10mm con piastra di fissaggio
+
+* - Diametro interno
+  - 65mm
+
+* - Peso
+  - 23.8 Kg/m² ±15%
+
+* - Materiali
+  - Alluminio e ABS caricato
+
+* - Diffusore
+  - PMMA bianco
+
+* - Fissaggio
+  - 4 dadi M4 (forniti) da inserire nella scanalatura
+    oppure 4 viti M4x20 (non fornite) applicate agli angoli
+
+* - **Ambiente**
+  -
+
+* - Temperatura di esercizio
+  - -10°C a +40°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Temperatura di stoccaggio
+  - -20°C a +60°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Grado di protezione IP
+  - IP 50
+
+* - Marcature
+  - RoHS-CE-DEEE, UL
+:::
+```
+
+```{dropdown} TopLight 700x500 - White
 
 ![Toplight XXL](img/toplightXXL.png)
 
@@ -216,6 +594,9 @@ le taglie disponibili sono:
 :widths: 35 65
 :header-rows: 0
 
+* - **Codice**
+  - CM002318
+
 * - **Elettronica**
   -
 
@@ -223,19 +604,7 @@ le taglie disponibili sono:
   - 24 VDC ±10%
 
 * - Modalità di funzionamento
-  - Continua o strobo
-
-* - Ingresso strobo
-  - PNP: da 5 a 24V per 100% ON. Da 0 a 1V per 100% OFF.
-
-* - Overdrive
-  - No
-
-* - Condizioni strobo (tempo ON, duty cycle)
-  - Nessuna restrizione
-
-* - Dimmerazione
-  - Pin 5 (Connettore M12 5 poli): 0–10V = 100–30% rispettivamente
+  - Continua 
 
 * - Tempo massimo di salita
   - 15 µs
@@ -261,6 +630,12 @@ le taglie disponibili sono:
 * - Tensione massima di funzionamento
   - 30V sull’ingresso luce
 
+* - Lunghezza d'onda
+  - 
+
+* - Classe di Rischio 
+  - 0 (nesusn rischio)
+
 * - **Meccanica**
   -
 
@@ -298,11 +673,203 @@ le taglie disponibili sono:
   - IP 50
 
 * - Marcature
-  - RoHS-CE-DEEE
+  - RoHS-CE-DEEE, UL
 :::
 ```
 
-```{dropdown} TopLight 900x600
+```{dropdown} TopLight 700x500 - Red
+
+![Toplight XXL](img/toplightXXL.png)
+
+| Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
+|--|--|--|--|--|--|--|
+| **A** | **B** | **C** | **C + 10mm** | **D** | - | - |
+| 700 | 500 | 45 | 55 | 65 | 0.35 m^2 | 2.4 m |
+
+:::{list-table}
+:widths: 35 65
+:header-rows: 0
+
+* - **Codice**
+  - CM002403
+
+* - **Elettronica**
+  -
+
+* - Alimentazione
+  - 24 VDC ±10%
+
+* - Modalità di funzionamento
+  - Continua 
+
+* - Tempo massimo di salita
+  - 15 µs
+
+* - Tempo massimo di discesa
+  - 10 µs
+
+* - Controllo
+  - Connettore M12 5 poli
+
+* - Configurazione pin connettore
+  - 1: 24VDC / 3: GND / 4: PNP
+
+* - Consumo
+  - 252.6W
+
+* - Tensione minima di funzionamento
+  - 20V sull’ingresso luce
+
+* - Tensione nominale di funzionamento
+  - 24V sull’ingresso luce (±10%)
+
+* - Tensione massima di funzionamento
+  - 30V sull’ingresso luce
+
+* - Lunghezza d'onda
+  - 630 nm 
+
+* - Classe di Rischio 
+  - 0 (nesusn rischio)
+
+* - **Meccanica**
+  -
+
+* - Spessore
+  - 45mm + 10mm con piastra di fissaggio
+
+* - Diametro interno
+  - 65mm
+
+* - Peso
+  - 23.8 Kg/m² ±15%
+
+* - Materiali
+  - Alluminio e ABS caricato
+
+* - Diffusore
+  - PMMA bianco
+
+* - Fissaggio
+  - 4 dadi M4 (forniti) da inserire nella scanalatura
+    oppure 4 viti M4x20 (non fornite) applicate agli angoli
+
+* - **Ambiente**
+  -
+
+* - Temperatura di esercizio
+  - -10°C a +40°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Temperatura di stoccaggio
+  - -20°C a +60°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Grado di protezione IP
+  - IP 50
+
+* - Marcature
+  - RoHS-CE-DEEE, UL
+:::
+```
+
+```{dropdown} TopLight 700x500 - Infrared
+
+![Toplight XXL](img/toplightXXL.png)
+
+| Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
+|--|--|--|--|--|--|--|
+| **A** | **B** | **C** | **C + 10mm** | **D** | - | - |
+| 700 | 500 | 45 | 55 | 65 | 0.35 m^2 | 2.4 m |
+
+:::{list-table}
+:widths: 35 65
+:header-rows: 0
+
+* - **Codice**
+  - CM002407
+
+* - **Elettronica**
+  -
+
+* - Alimentazione
+  - 24 VDC ±10%
+
+* - Modalità di funzionamento
+  - Continua 
+
+* - Tempo massimo di salita
+  - 15 µs
+
+* - Tempo massimo di discesa
+  - 10 µs
+
+* - Controllo
+  - Connettore M12 5 poli
+
+* - Configurazione pin connettore
+  - 1: 24VDC / 3: GND / 4: PNP
+
+* - Consumo
+  - 252.6W
+
+* - Tensione minima di funzionamento
+  - 20V sull’ingresso luce
+
+* - Tensione nominale di funzionamento
+  - 24V sull’ingresso luce (±10%)
+
+* - Tensione massima di funzionamento
+  - 30V sull’ingresso luce
+
+* - Lunghezza d'onda
+  - 850 nm 
+
+* - Classe di Rischio 
+  - 1 (basso rischio)
+
+* - **Meccanica**
+  -
+
+* - Spessore
+  - 45mm + 10mm con piastra di fissaggio
+
+* - Diametro interno
+  - 65mm
+
+* - Peso
+  - 23.8 Kg/m² ±15%
+
+* - Materiali
+  - Alluminio e ABS caricato
+
+* - Diffusore
+  - PMMA bianco
+
+* - Fissaggio
+  - 4 dadi M4 (forniti) da inserire nella scanalatura
+    oppure 4 viti M4x20 (non fornite) applicate agli angoli
+
+* - **Ambiente**
+  -
+
+* - Temperatura di esercizio
+  - -10°C a +40°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Temperatura di stoccaggio
+  - -20°C a +60°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Grado di protezione IP
+  - IP 50
+
+* - Marcature
+  - RoHS-CE-DEEE, UL
+:::
+```
+
+```{dropdown} TopLight 900x600 - White
 
 ![Toplight XXL](img/toplightXXL.png)
 
@@ -315,6 +882,9 @@ le taglie disponibili sono:
 :widths: 35 65
 :header-rows: 0
 
+* - **Codice**
+  - CM002319
+
 * - **Elettronica**
   -
 
@@ -322,19 +892,7 @@ le taglie disponibili sono:
   - 24 VDC ±10%
 
 * - Modalità di funzionamento
-  - Continua o strobo
-
-* - Ingresso strobo
-  - PNP: da 5 a 24V per 100% ON. Da 0 a 1V per 100% OFF.
-
-* - Overdrive
-  - No
-
-* - Condizioni strobo (tempo ON, duty cycle)
-  - Nessuna restrizione
-
-* - Dimmerazione
-  - Pin 5 (Connettore M12 5 poli): 0–10V = 100–30% rispettivamente
+  - Continua 
 
 * - Tempo massimo di salita
   - 15 µs
@@ -360,6 +918,12 @@ le taglie disponibili sono:
 * - Tensione massima di funzionamento
   - 30V sull’ingresso luce
 
+* - Lunghezza d'onda
+  - 
+
+* - Classe di Rischio 
+  - 0 (nesusn rischio)
+
 * - **Meccanica**
   -
 
@@ -397,13 +961,204 @@ le taglie disponibili sono:
   - IP 50
 
 * - Marcature
-  - RoHS-CE-DEEE
+  - RoHS-CE-DEEE, UL
+:::
+```
+```{dropdown} TopLight 900x600 - Red
+
+![Toplight XXL](img/toplightXXL.png)
+
+| Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
+|--|--|--|--|--|--|--|
+| **A** | **B** | **C** | **C + 10mm** | **D** | - | - |
+| 900 | 600 | 45 | 55 | 65 | 0.54 m^2 | 3 m |
+
+:::{list-table}
+:widths: 35 65
+:header-rows: 0
+
+* - **Codice**
+  - CM002404
+
+* - **Elettronica**
+  -
+
+* - Alimentazione
+  - 24 VDC ±10%
+
+* - Modalità di funzionamento
+  - Continua 
+
+* - Tempo massimo di salita
+  - 15 µs
+
+* - Tempo massimo di discesa
+  - 10 µs
+
+* - Controllo
+  - Connettore M12 5 poli
+
+* - Configurazione pin connettore
+  - 1: 24VDC / 3: GND / 4: PNP
+
+* - Consumo
+  - 345.6W
+
+* - Tensione minima di funzionamento
+  - 20V sull’ingresso luce
+
+* - Tensione nominale di funzionamento
+  - 24V sull’ingresso luce (±10%)
+
+* - Tensione massima di funzionamento
+  - 30V sull’ingresso luce
+
+* - Lunghezza d'onda
+  - 630 nm 
+
+* - Classe di Rischio 
+  - 0 (nesusn rischio)
+
+* - **Meccanica**
+  -
+
+* - Spessore
+  - 45mm + 10mm con piastra di fissaggio
+
+* - Diametro interno
+  - 65mm
+
+* - Peso
+  - 23.8 Kg/m² ±15%
+
+* - Materiali
+  - Alluminio e ABS caricato
+
+* - Diffusore
+  - PMMA bianco
+
+* - Fissaggio
+  - 4 dadi M4 (forniti) da inserire nella scanalatura
+    oppure 4 viti M4x20 (non fornite) applicate agli angoli
+
+* - **Ambiente**
+  -
+
+* - Temperatura di esercizio
+  - -10°C a +40°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Temperatura di stoccaggio
+  - -20°C a +60°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Grado di protezione IP
+  - IP 50
+
+* - Marcature
+  - RoHS-CE-DEEE, UL
+:::
+```
+
+```{dropdown} TopLight 900x600 - Infrared
+
+![Toplight XXL](img/toplightXXL.png)
+
+| Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
+|--|--|--|--|--|--|--|
+| **A** | **B** | **C** | **C + 10mm** | **D** | - | - |
+| 900 | 600 | 45 | 55 | 65 | 0.54 m^2 | 3 m |
+
+:::{list-table}
+:widths: 35 65
+:header-rows: 0
+
+* - **Codice**
+  - CM002408
+
+* - **Elettronica**
+  -
+
+* - Alimentazione
+  - 24 VDC ±10%
+
+* - Modalità di funzionamento
+  - Continua 
+
+* - Tempo massimo di salita
+  - 15 µs
+
+* - Tempo massimo di discesa
+  - 10 µs
+
+* - Controllo
+  - Connettore M12 5 poli
+
+* - Configurazione pin connettore
+  - 1: 24VDC / 3: GND / 4: PNP
+
+* - Consumo
+  - 345.6W
+
+* - Tensione minima di funzionamento
+  - 20V sull’ingresso luce
+
+* - Tensione nominale di funzionamento
+  - 24V sull’ingresso luce (±10%)
+
+* - Tensione massima di funzionamento
+  - 30V sull’ingresso luce
+
+* - Lunghezza d'onda
+  - 850 nm 
+
+* - Classe di Rischio 
+  - 1 (basso rischio)
+
+* - **Meccanica**
+  -
+
+* - Spessore
+  - 45mm + 10mm con piastra di fissaggio
+
+* - Diametro interno
+  - 65mm
+
+* - Peso
+  - 23.8 Kg/m² ±15%
+
+* - Materiali
+  - Alluminio e ABS caricato
+
+* - Diffusore
+  - PMMA bianco
+
+* - Fissaggio
+  - 4 dadi M4 (forniti) da inserire nella scanalatura
+    oppure 4 viti M4x20 (non fornite) applicate agli angoli
+
+* - **Ambiente**
+  -
+
+* - Temperatura di esercizio
+  - -10°C a +40°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Temperatura di stoccaggio
+  - -20°C a +60°C / 80% di umidità senza condensa
+    Nessuno shock termico (variazione massima: 10°C in 24h)
+
+* - Grado di protezione IP
+  - IP 50
+
+* - Marcature
+  - RoHS-CE-DEEE, UL
 :::
 ```
 
 (backlight)=
 ## Backlight
-descrizione funzionalità backlight
+Il Backlight è un sistema di retroilluminazione posizionato all'interno del piano del FlexiBowl che illumina il pezzo dal basso, creando un contrasto netto tra il profilo del pezzo e lo sfondo luminoso. È particolarmente efficace per il riconoscimento di sagome, contorni e fori, indipendentemente dal colore o dalla finitura superficiale del pezzo.
 
 ```{dropdown} Backlight per FB200
 
@@ -525,14 +1280,15 @@ La calibrazione deve essere eseguita con lo stesso tipo di illuminazione che ver
 (filtroIR)=
 ## Filtro IR
 
-
+Il filtro IR è un accessorio ottico da applicare all'obiettivo della camera che blocca la luce visibile lasciando passare esclusivamente la radiazione infrarossa. È necessario solo nel caso in cui si utilizzi un Backlight IR (850 nm): senza filtro, la camera riceverebbe sia luce visibile che infrarossa, compromettendo il contrasto e la qualità del riconoscimento.
 
 
 
 ---
 (supporto)=
 ## Supporto per Camera e Toplight
-descrizione funzionalità
+
+Il supporto per camera e toplight è una struttura regolabile in acciaio inox e alluminio che consente di posizionare con precisione la telecamera e il sistema di illuminazione sopra il FlexiBowl. Grazie agli ampi intervalli di regolazione verticale e radiale, permette di adattare il setup ottico a diverse configurazioni di applicazione senza richiedere modifiche strutturali.
 
 ![Cam Top Stand](img/cam_top_stand.png)
 

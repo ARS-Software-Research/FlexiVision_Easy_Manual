@@ -82,6 +82,16 @@ Assicurarsi di utilizzare la griglia di calibrazione corretta per il vostro mode
 
 L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida completamente la calibrazione.
 ```
+:::{attention} 
+ La griglia di calibrazione deve essere posizionata **alla stessa altezza dell'oggetto** utilizzato nell'applicazione.
+ 
+   Per questo motivo, viene fornita con dei **distanziali** da inserire nei pioli della griglia prima di installarla sul FlexiBowl.
+   I distanziali hanno la funzione di **sollevare la griglia** fino al livello dell'altezza del pezzo, garantendo una calibrazione accurata.
+  ```{figure} img/altezzacalibrazione.png
+    :width: 100%
+    :align: center
+  ```
+:::
 
 ## **Step 2: Regolazioni fondamentali**
 
@@ -113,6 +123,11 @@ L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida co
     - Svitare leggermente la vite dell'anello superiore della camera 
     - Ruotare l'anello osservando l'immagine live, fino a che la giusta quantità di luce non entra nella camera 
     - Stringere la vite dell'anello superiore della camera 
+
+    :::{figure} img/Esp_Corretta.png
+    :width: 100%
+    :align: center
+    :::
 * - 11.
   - **Regolare manualmente il fuoco della camera**
     - Svitare leggermente la vite dell'anello inferiore della camera
@@ -120,6 +135,10 @@ L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida co
     - Quando il pattern appare nitido, il fuoco è corretto
     - Stringere la vite dell'anello inferiore della camera 
     - Chiudere la schermata
+    :::{figure} img/Fuoco_Corretto.png
+    :width: 100%
+    :align: center
+    :::
 * - 12. 
   - Cliccare Back 
 ```
@@ -131,8 +150,8 @@ La messa a fuoco deve garantire nitidezza su **tutta la superficie** del FlexiBo
 
 Se il centro è nitido ma i bordi sono sfocati:
 - Verificare che la camera sia perfettamente parallela al piatto
-- Verificare la distanza di lavoro (deve essere quella calcolata)
-- Chiudere leggermente il diaframma (es. f/6.3 o f/7.1) per aumentare la profondità di campo
+- Verificare la distanza di lavoro 
+- Chiudere leggermente il diaframma per aumentare la profondità di campo
 
 Se il problema persiste, potrebbe essere necessario rivedere il montaggio meccanico della camera.
 ```
@@ -155,7 +174,7 @@ Se il problema persiste, potrebbe essere necessario rivedere il montaggio meccan
   - Cliccare NEXT
 ```
 
-```{figure} img/esposizione_corretta.png
+```{figure} img/Esposizioni.png
 :alt: Esempio esposizione corretta
 :width: 60%
 :align: center
@@ -254,12 +273,12 @@ Se il calcolo della calibrazione fallisce:
 ```{warning}
 **Accettare solo buone calibrazioni**
 
-Non accontentarsi di calibrazioni "Acceptable" (arancione). Una calibrazione subottimale causa:
+Non accontentarsi di calibrazioni "Acceptable" (arancione). Una calibrazione non ottimale causa:
 - Errori di posizionamento del robot 
 - Picking falliti o imprecisi
 - Necessità di correzioni manuali ripetute
 
-Investire tempo per ottenere una calibrazione "Good" (verde) ripaga immediatamente in termini di affidabilità del sistema.
+Investire tempo per ottenere una calibrazione Eccellente (verde) ripaga immediatamente in termini di affidabilità del sistema.
 In caso di risultato **Acceptable** o **Bad**:
 
 1. Tornare alla pagina precedente "Camera FLB x"
@@ -268,17 +287,14 @@ In caso di risultato **Acceptable** o **Bad**:
 4. Verificare l'uniformità dell'illuminazione
 5. Tornare alla pagina "Calibration Camera FLB x"
 6. Acquisire una nuova immagine "Grab Image"
-7. Ripetere il calcolo della calibrazione "Compute Calib"
+7. Ripetere il calcolo della calibrazione "Calibrate"
 ```
 
 
 ```{note}
-**Nota: la calibrazione viene salvata in automatico**
+**La calibrazione viene salvata in automatico**
 
-Una volta completata con successo (risultato Good o Acceptable), la calibrazione viene automaticamente salvata:
-- Associata alla ricetta corrente
-- Memorizzata nel profilo della camera
-- Caricata automaticamente all'avvio successivo del software
+Una volta completata con successo (risultato Good o Acceptable), la calibrazione viene automaticamente salvata, associata alla ricetta corrente e caricata automaticamente all'avvio successivo del software.  
 
 Non è necessario effettuare salvataggi manuali.
 ```
@@ -382,7 +398,7 @@ Per continuare con la creazione dei modelli, duplicare la ricetta base, rinomina
 
 ---
 
-# **Passi successivi**
+
 
 
 

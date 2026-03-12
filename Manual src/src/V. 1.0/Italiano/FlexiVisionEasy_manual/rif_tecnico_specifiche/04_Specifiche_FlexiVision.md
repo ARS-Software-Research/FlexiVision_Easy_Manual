@@ -133,7 +133,7 @@ La mancata osservanza di questo requisito compromette completamente l'operativit
 * - **PoE**
   - Alimentazione e dati su un unico cavo Ethernet. Consumo circa 3.2 W.
   - Richiede PoE Injector o Switch PoE compatibile (IEEE 802.3af/at)
-* - **Cavo Camera Esterno**
+* - **Cavo Camera Esterno Fornito nel Kit**
   - Alimentazione DC esterna tramite connettore Hirose 6-pin (6V ~ 26V). Incluso nel kit.
   - Cavo Ethernet separato necessario solo per i dati
 ```
@@ -163,9 +163,6 @@ Specifiche Cavo Alimentazione Camera
 * - **Descrizione**
   - Cavo I/O 10 metri, connettore HRS6P
 
-* - **Product ID**
-  - COG-IO-CBL-6P-10M
-
 * - **Drawing Number**
   - 185-1252R rev. B
 
@@ -185,7 +182,7 @@ Specifiche Cavo Alimentazione Camera
   - Schermato, 3 coppie twistare, flessibile
 
 * - **Colori cavi**
-  - Pin 6: Bianco, Pin 1: Marrone, Pin 5: Grigio, Pin 3: Verde, Pin 2: Rosa, Pin 4: Giallo
+  - Pin 6: Bianco, Pin 1: Marrone, Pin 5: Grigio, Pin 2: Verde , Pin 3: Rosa, Pin 4: Giallo
 
 * - **Schermatura**
   - Shield su tutti i conduttori
@@ -198,7 +195,7 @@ Specifiche Cavo Alimentazione Camera
 
 ### Specifiche fisiche e dimensioni
 ```{figure} img/dimensioni_cam.png
-:alt: Dimensioni camera CAM-CIC-5000-20G-1
+:alt: Dimensioni camera 
 :align: center
 :width: 100%
 
