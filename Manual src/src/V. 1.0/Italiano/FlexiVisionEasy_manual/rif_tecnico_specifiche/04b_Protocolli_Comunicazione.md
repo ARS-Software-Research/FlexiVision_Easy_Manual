@@ -1,3 +1,4 @@
+(protocollo)=
 # **Protocollo Comunicazione Robot-Visione**
 
 FlexiVision Easy comunica con il robot tramite protocollo **TCP/IP** su rete Ethernet. 

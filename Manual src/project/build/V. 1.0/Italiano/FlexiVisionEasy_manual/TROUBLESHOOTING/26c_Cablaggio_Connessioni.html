@@ -456,30 +456,24 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>LED READY non si accende dopo accensione switch</strong></p></td>
+<tr class="row-even"><td><p><strong>LED READY non si accende</strong></p></td>
 <td><p>• Alimentazione non collegata correttamente</p>
 <p>• Switch AC in posizione “O” invece di “I”</p>
 <p>• Cavo alimentazione danneggiato</p>
-<p>• Tensione errata</p>
-<p>• Fusibile interno bruciato</p>
+<p>• Fusibili all’interno del pannello frontale bruciati</p>
 </td>
 <td><p>• Verificare connessione alimentazione secondo manuale FlexiBowl</p>
 <p>• Portare switch in posizione “I” (ON)</p>
 <p>• Ispezionare cavo per danni e sostituire se necessario</p>
-<p>• Verificare tensione conforme a specifiche (consultare manuale)</p>
 <p>• Contattare supporto tecnico per sostituzione fusibile</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>FlexiBowl si spegne casualmente</strong></p></td>
 <td><p>• Connessione alimentazione allentata</p>
-<p>• Cavo sottodimensionato</p>
 <p>• Interferenze elettriche</p>
-<p>• Sovraccarico termico</p>
 </td>
 <td><p>• Serrare connessioni alimentazione</p>
-<p>• Utilizzare cavo con sezione adeguata</p>
 <p>• Collegare a linea dedicata con filtro EMI</p>
-<p>• Verificare ventilazione controller FlexiBowl</p>
 </td>
 </tr>
 </tbody>
@@ -488,56 +482,6 @@ document.write(`
 </section>
 <section id="problemi-di-connessione-ethernet">
 <span id="troubleshooting-ethernet"></span><h2>Problemi di Connessione Ethernet<a class="headerlink" href="#problemi-di-connessione-ethernet" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table">
-<colgroup>
-<col style="width: 30.0%" />
-<col style="width: 35.0%" />
-<col style="width: 35.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Problema</p></th>
-<th class="head"><p>Possibili Cause</p></th>
-<th class="head"><p>Soluzioni</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>FlexiBowl non comunica con VisionController</strong></p></td>
-<td><p>• Cavo Ethernet non collegato correttamente</p>
-<p>• Cavo Ethernet danneggiato</p>
-<p>• Indirizzo IP non configurato o errato</p>
-<p>• FlexiBowl e VisionController su subnet diverse</p>
-</td>
-<td><p>• Verificare connessione fisica cavo Ethernet su entrambi i lati</p>
-<p>• Testare cavo con cable tester o sostituire</p>
-<p>• Verificare configurazione IP in <a class="reference internal" href="#QUICKSTART/xx_FlexiBowl_Setup.md"><span class="xref myst">FlexiBowl Setup</span></a></p>
-<p>• Configurare FlexiBowl e VisionController nella stessa rete (es: 192.168.1.x)</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Connessione intermittente</strong></p></td>
-<td><p>• Cavo Ethernet di categoria insufficiente (&lt; Cat5e)</p>
-<p>• Cavo troppo lungo (&gt; 100m)</p>
-<p>• Connettore RJ45 danneggiato o mal crimpato</p>
-<p>• Interferenze elettromagnetiche</p>
-</td>
-<td><p>• Utilizzare cavo Cat5e o superiore</p>
-<p>• Ridurre lunghezza cavo sotto 100m o usare switch intermedio</p>
-<p>• Sostituire connettori o cavo completo</p>
-<p>• Utilizzare cavo schermato (STP) lontano da fonti EMI</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>VisionController non rileva FlexiBowl sulla rete</strong></p></td>
-<td><p>• FlexiBowl non acceso (LED READY spento)</p>
-<p>• Firewall blocca comunicazione</p>
-<p>• Porta Ethernet VisionController guasta</p>
-</td>
-<td><p>• Verificare LED READY acceso sul FlexiBowl</p>
-<p>• Disabilitare temporaneamente firewall per test</p>
-<p>• Provare altra porta Ethernet del VisionController</p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
 </section>
 <section id="problemi-pneumatici-aria-compressa">
 <span id="troubleshooting-pneumatica"></span><h2>Problemi Pneumatici (Aria Compressa)<a class="headerlink" href="#problemi-pneumatici-aria-compressa" title="Link to this heading">#</a></h2>
@@ -555,41 +499,31 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>Flip non funziona o impulso molto debole</strong></p></td>
-<td><p>• Aria compressa non collegata</p>
+<td><p>• Aria compressa non collegata<br />
+• Tubo pneumatico danneggiato o ostruito<br />
+• Regolatore di pressione chiuso o su minimo</p>
 <p>• Pressione insufficiente (&lt; 5 bar)</p>
-<p>• Regolatore di pressione chiuso o su minimo</p>
 <p>• Perdite nel circuito pneumatico</p>
-<p>• Tubo pneumatico danneggiato o ostruito</p>
 </td>
 <td><p>• Collegare aria compressa alla connessione FlexiBowl (vedere manuale)</p>
+<p>• Verificare tubo per pieghe/ostruzioni, sostituire se necessario<br />
+• Aprire regolatore di pressione sul pannello di controllo</p>
 <p>• Aumentare pressione a 5-6 bar</p>
-<p>• Aprire regolatore di pressione sul pannello di controllo</p>
 <p>• Ispezionare raccordi con acqua saponata, serrare o sostituire</p>
-<p>• Verificare tubo per pieghe/ostruzioni, sostituire se necessario</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Air-blow non funziona</strong></p></td>
-<td><p>• Modulo Air-blow non alimentato</p>
+<td><p>• FlexiBowl non predisposto con opzione Air-Blow</p>
+<p>• Deviatori ad aria non alimentati esternamente</p>
+<p>• Regolatori Flusso chiusi</p>
 <p>• Pressione aria insufficiente</p>
-<p>• Ugelli ostruiti</p>
 <p>• Elettrovalvola guasta</p>
 </td>
-<td><p>• Verificare alimentazione elettrica modulo air-blow</p>
+<td><p>• Verificare che il FlexiBowl ordinato abbia la voce Option Blow Test sia True  nel foglio produzione</p>
+<p>• Verificare che alimentazione Pneumatica esterna sia presente (tubo fornito)</p>
+<p>• In presenza di più deviatori ad aria, controllare che il regolatore di flusso sul lato del FlexiBowl sia impostato sopra lo zero</p>
 <p>• Controllare pressione aria (5-6 bar)</p>
-<p>• Pulire ugelli con aria compressa</p>
-<p>• Testare elettrovalvola, sostituire se difettosa</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Tramoggia non vibra per scarico componenti</strong></p></td>
-<td><p>• Aria compressa non collegata alla tramoggia</p>
-<p>• Pressione insufficiente</p>
-<p>• Vibratore pneumatico guasto</p>
-<p>• Comando elettrico non arriva</p>
-</td>
-<td><p>• Verificare connessione pneumatica tramoggia</p>
-<p>• Aumentare pressione a valore consigliato</p>
-<p>• Testare vibratore manualmente, sostituire se necessario</p>
-<p>• Verificare segnale di comando da VisionController</p>
+<p>• seguire <a class="reference internal" href="#"><span class="xref myst">Istruzioni</span></a></p>
 </td>
 </tr>
 </tbody>
@@ -614,51 +548,37 @@ document.write(`
 <tr class="row-even"><td><p><strong>Camera non rilevata dal VisionController</strong></p></td>
 <td><p>• Cavo Ethernet camera non collegato</p>
 <p>• Camera collegata a porta non POE del VisionController</p>
-<p>• Camera non POE-compatibile (richiede alimentazione separata)</p>
-<p>• Porta POE VisionController guasta</p>
-<p>• Indirizzo IP camera in conflitto</p>
+<p>• Indirizzo IP camera in conflitto con quelli di altri dispositivi nella stessa sottorete<br />
+• Porta POE VisionController guasta</p>
 </td>
-<td><p>• Verificare connessione fisica cavo camera</p>
-<p>• Collegare camera SOLO a porta POE del VisionController</p>
-<p>• Verificare compatibilità POE camera, altrimenti alimentare separatamente</p>
-<p>• Provare altra porta POE del VisionController</p>
-<p>• Reimpostare IP camera o configurare IP statico univoco</p>
-</td>
+<td><p>• Verificare connessione fisica cavo camera<br />
+• Collegare camera SOLO a porta POE del VisionController<br />
+• Reimpostare IP camera o configurare IP statico univoco<br />
+• Provare altra porta POE del VisionController</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Immagine camera nera o assente</strong></p></td>
-<td><p>• Camera non alimentata (POE non attivo)</p>
-<p>• Lente con tappo protettivo non rimosso</p>
-<p>• Lente non installata</p>
-<p>• Esposizione camera troppo bassa</p>
+<td><p>• Illuminatore spento
+• Esposizione camera troppo bassa
+• Lente con tappo protettivo non rimosso<br />
+• Lente non installata<br />
+• Camera non alimentata (POE non attivo)</p>
 <p>• Camera guasta</p>
 </td>
-<td><p>• Verificare LED camera acceso (indicatore POE attivo)</p>
-<p>• Rimuovere tappo protettivo lente</p>
-<p>• Installare lente con focale corretta</p>
-<p>• Aumentare esposizione in <a class="reference internal" href="#QUICKSTART/xx_Camera_Setup.md"><span class="xref myst">Camera Setup</span></a></p>
-<p>• Sostituire camera</p>
-</td>
+<td><p>• Controllare che l’illuminatore sia acceso
+• Aumentare esposizione in <a class="reference internal" href="#QUICKSTART/xx_Camera_Setup.md"><span class="xref myst">Camera Setup</span></a>
+• Rimuovere tappo protettivo lente
+• Installare lente con focale corretta
+• Verificare LED camera acceso (indicatore POE attivo)
+• Sostituire camera</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Immagine disturbata o con artefatti</strong></p></td>
-<td><p>• Cavo Ethernet camera troppo lungo (&gt; 100m)</p>
-<p>• Cavo non schermato vicino a fonti EMI</p>
-<p>• Connettore RJ45 mal crimpato</p>
-<p>• Interferenze da alimentatori switching</p>
-</td>
-<td><p>• Ridurre lunghezza cavo o usare switch POE intermedio</p>
-<p>• Utilizzare cavo schermato (STP)</p>
-<p>• Rifare crimpatura connettore o sostituire cavo</p>
-<p>• Allontanare cavo camera da fonti di disturbo</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Camera si disconnette casualmente</strong></p></td>
+<tr class="row-even"><td><p><strong>Camera si disconnette casualmente</strong></p></td>
 <td><p>• Alimentazione POE insufficiente (potenza &lt; richiesta camera)</p>
 <p>• Cavo danneggiato</p>
 <p>• Surriscaldamento camera</p>
-<p>• Porta POE instabile</p>
+<p>• Porta POE danneggiata</p>
 </td>
-<td><p>• Verificare potenza POE disponibile (standard 802.3af: 15.4W, 802.3at: 30W)</p>
-<p>• Sostituire cavo Ethernet</p>
+<td><p>• Verificare potenza POE disponibile
+• Sostituire cavo Ethernet</p>
 <p>• Migliorare ventilazione area camera</p>
 <p>• Sostituire switch POE o porta VisionController</p>
 </td>

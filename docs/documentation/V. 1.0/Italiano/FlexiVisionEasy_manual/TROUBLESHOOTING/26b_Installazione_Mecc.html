@@ -456,14 +456,10 @@ document.write(`
 <tbody>
 <tr class="row-even"><td><p><strong>VisionController si surriscalda e si spegne automaticamente</strong></p></td>
 <td><p>• Ventilazione insufficiente (spazio &lt; 50mm)</p>
-<p>• Orientamento non corretto</p>
 <p>• Temperatura ambiente &gt; 50°C</p>
-<p>• Accumulo di polvere nelle prese d’aria</p>
 </td>
 <td><p>• Verificare spazio libero di almeno 50mm su tutti i lati</p>
-<p>• Riposizionare in verticale o con ventilazione forzata</p>
 <p>• Spostare in ambiente più fresco o aggiungere condizionamento</p>
-<p>• Pulire le prese di ventilazione</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>VisionController non si fissa correttamente alla guida DIN</strong></p></td>
@@ -516,51 +512,19 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>Immagine non a fuoco</strong></p></td>
-<td><p>• Distanza di lavoro non corretta (non 950-1000mm)</p>
+<td><p>• Distanza di lavoro non corretta per il modello di FlexiBowl</p>
 <p>• Lente non avvitata completamente</p>
-<p>• Lente con focale errata per il modello FlexiBowl</p>
 </td>
 <td><p>• Misurare e correggere distanza secondo <a class="reference internal" href="#rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.md"><span class="xref myst">Calcolo Distanza Ottimale</span></a></p>
 <p>• Avvitare completamente la lente (contatto metal-metal)</p>
-<p>• Verificare etichetta lente e documentazione ordine</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Immagine distorta o con prospettiva errata</strong></p></td>
-<td><p>• Camera non centrata sull’asse FlexiBowl (errore &gt; ±5mm)</p>
+<td><p>• Camera non centrata sull’area di visione del FlexiBowl (errore &gt; ±5mm)</p>
 <p>• Camera inclinata rispetto alla superficie (tilt &gt; ±1°)</p>
-<p>• Camera ruotata attorno all’asse ottico</p>
 </td>
 <td><p>• Misurare centratura con metro/calibro e correggere</p>
 <p>• Verificare ortogonalità con livella di precisione</p>
-<p>• Allineare camera con asse di rotazione disco</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Impossibile regolare la posizione della camera</strong></p></td>
-<td><p>• Supporto meccanico rigido senza microregolazioni</p>
-<p>• Viti di fissaggio serrate definitivamente</p>
-</td>
-<td><p>• Progettare supporto con regolazioni: Z(-10/+30mm), X(±10mm), Y(±10mm)</p>
-<p>• Allentare viti per permettere regolazioni</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Viti di fissaggio camera si allentano</strong></p></td>
-<td><p>• Coppia di serraggio eccessiva (&gt; 0.5 Nm)</p>
-<p>• Vibrazioni del sistema</p>
-<p>• Viti non idonee</p>
-</td>
-<td><p>• Serrare con coppia corretta 0.5 Nm per evitare deformazioni</p>
-<p>• Utilizzare frenafiletti medio</p>
-<p>• Verificare utilizzo viti M3 × 8mm inox come consigliato</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Camera danneggiata durante montaggio</strong></p></td>
-<td><p>• Coppia di serraggio eccessiva</p>
-<p>• Manipolazione scorretta</p>
-<p>• Urti durante installazione</p>
-</td>
-<td><p>• Non superare 0.5 Nm di coppia</p>
-<p>• Maneggiare con cura evitando pressioni sul corpo ottico</p>
-<p>• Proteggere durante lavori meccanici circostanti</p>
 </td>
 </tr>
 </tbody>
@@ -592,34 +556,9 @@ document.write(`
 <p>• Correggere orientamento a 0° tilt</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Riflessioni dirette verso la camera (hotspot)</strong></p></td>
-<td><p>• Toplight troppo vicino alla superficie</p>
-<p>• Angolazione non corretta</p>
-<p>• Superficie FlexiBowl troppo riflettente</p>
-</td>
-<td><p>• Aumentare distanza toplight</p>
-<p>• Regolare leggermente angolo</p>
-<p>• Considerare uso di diffusori</p>
-<p>• Valutare sostituzione superficie grip</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Toplight non concentrico con la camera</strong></p></td>
-<td><p>• Errore di posizionamento su struttura supporto</p>
-<p>• Struttura non correttamente assemblata</p>
-</td>
-<td><p>• Verificare allineamento centri camera-toplight</p>
-<p>• Riposizionare toplight concentrico alla camera</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Cablaggio toplight non conforme</strong></p></td>
-<td><p>• Tensione errata (≠ 24V DC)</p>
-<p>• Cavi non schermati</p>
-<p>• Alimentazione condivisa con altri dispositivi rumorosi</p>
-</td>
-<td><p>• Verificare tensione su etichetta (tipicamente 24V DC)</p>
-<p>• Utilizzare cavi schermati dedicati</p>
-<p>• Predisporre alimentazione separata dal quadro</p>
-</td>
+<tr class="row-odd"><td><p><strong>Riflessi indiretti verso la camera</strong></p></td>
+<td><p>• Superficie non compatibile con illuminatore</p></td>
+<td><p>• Controllare la compatibilità con la superficie</p></td>
 </tr>
 </tbody>
 </table>
@@ -650,23 +589,11 @@ document.write(`
 <p>• Utilizzare illuminazione fissa non regolabile</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Riflessioni da superfici circostanti</strong></p></td>
-<td><p>• Superfici lucide nelle vicinanze (macchine, pannelli)</p>
-<p>• Parti metalliche riflettenti</p>
-</td>
+<tr class="row-odd"><td><p><strong>Riflessi da superfici circostanti</strong></p></td>
+<td><p>• Superfici riflettenti nelle vicinanze (macchine, pannelli)</p></td>
 <td><p>• Coprire superfici riflettenti con materiale opaco</p>
 <p>• Riposizionare elementi riflettenti</p>
 <p>• Verniciare superfici con vernice opaca</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Interferenze da luci intermittenti</strong></p></td>
-<td><p>• Luci di segnalazione robot/macchine</p>
-<p>• Flash da altre postazioni</p>
-<p>• Lampade di emergenza</p>
-</td>
-<td><p>• Schermare completamente la cella robotica</p>
-<p>• Spostare segnalatori fuori dall’area</p>
-<p>• Creare cabina chiusa per la cella</p>
 </td>
 </tr>
 </tbody>

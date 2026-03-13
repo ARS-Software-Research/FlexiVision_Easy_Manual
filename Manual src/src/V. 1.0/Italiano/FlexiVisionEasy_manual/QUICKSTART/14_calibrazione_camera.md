@@ -160,6 +160,9 @@ Se il problema persiste, potrebbe essere necessario rivedere il montaggio meccan
     :align: center
 :::
 
+:::{error}
+Se cliccando più volte il tasto RUN appare anche solo una volta una schermata completamente blu, fare riferimento alla sezione []()
+:::
 
 ```{list-table}
 * - 13. 

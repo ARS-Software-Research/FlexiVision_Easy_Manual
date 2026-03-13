@@ -1,13 +1,8 @@
 (troubleshooting)=
 # Risoluzione Problemi 
 
-inserire qui tutti i "possibili problemi" delle varie pagine? o in entrambi?
-
-
-## Troubleshooting per la sezione "installazione del sistema"
-
 ```{list-table} 
-:widths: 45 45 25
+:widths: 45 45 30
 :header-rows: 1
 
 * - Sezione
@@ -35,18 +30,6 @@ inserire qui tutti i "possibili problemi" delle varie pagine? o in entrambi?
     4. [Vai alla Sezione](troubleshooting_connessione_camera)
     5. [Vai alla Sezione](troubleshooting_connessione_toplight)
     6. [Vai alla Sezione](troubleshooting_multi)  
-```
----
-
-## Troubleshooting per la sezione "Quickstart"
-
-```{list-table} 
-:widths: 40 38 27
-:header-rows: 1
-
-* - Sezione
-  - Componente
-  - Link alla sezione
 * - **Configurazione Iniziale**
   - 1. **Passo 4: FlexiBowl Setup**  
     2. **Passo 5: Hopper Setup** 
@@ -216,12 +199,11 @@ Se il robot non riesce a stabilire la connessione:
 
 Se la connessione si interrompe frequentemente:
 
-1. Verificare qualità cavo Ethernet (utilizzare Cat5e o Cat6)
-2. Evitare cavi troppo lunghi (max 50m senza switch intermedio)
-3. Verificare che non ci sia traffico di rete eccessivo sulla stessa subnet
-4. Aumentare timeout sul robot (se configurabile)
-5. Verificare alimentazione stabile del VisionController
-6. Controllare log di Windows per errori di rete
+1. Verificare qualità cavo Ethernet (utilizzare da Cat6 in su)
+2. Evitare cavi troppo lunghi 
+3. Verificare che non ci sia traffico di rete eccessivo sulla stessa subnet, si possono utilizzare programmi come Wireshark o TCP dump 
+4. Verificare alimentazione stabile del VisionController
+5. Controllare log di Windows per errori di rete
 
 Se il problema persiste, contattare supporto tecnico per analisi approfondita.
 ```
@@ -236,7 +218,7 @@ Se FlexiVision risponde con "Invalid command":
 1. Verificare la sintassi esatta del comando (case-sensitive, underscore, ecc.)
 2. Assicurarsi di inviare il carattere terminatore CHR(13) dopo ogni comando
 3. Non aggiungere spazi extra all'inizio o alla fine del comando
-4. Verificare nel log messaggi il comando esattamente come ricevuto
+4. Verificare, nel log messaggi della sezione Robot Setup, il comando che FlexiVision ha ricevuto 
 
 Esempi corretti vs errati:
 - ✅ `start_Locator` (con underscore, minuscolo)
@@ -244,7 +226,7 @@ Esempi corretti vs errati:
 - ❌ `start Locator` (spazio invece di underscore)
 - ❌ `startLocator` (manca underscore)
 
-Consultare [Protocollo TCP/IP](../rif_tecnico_specifiche/04_Specifiche_FlexiVision.md#comandi-disponibili) per l'elenco completo e corretto dei comandi.
+Consultare [Protocollo TCP/IP](protocollo) per l'elenco completo e corretto dei comandi.
 ```
 
 ---
@@ -258,11 +240,10 @@ Consultare [Protocollo TCP/IP](../rif_tecnico_specifiche/04_Specifiche_FlexiVisi
 Se l'immagine appare sfocata:
 
 1. Verificare che la camera sia alla distanza di lavoro corretta ([Calcolo Distanza Ottimale](../rif_tecnico_specifiche/05_Calcolo_distanza_ottimale.md))
-2. Controllare che la lente sia avvitata completamente (contatto metal-metal)
+2. Controllare che la lente sia avvitata completamente 
 3. Verificare che non ci siano sporcizia o impronte sulla lente
 4. Assicurarsi che la camera sia montata perfettamente parallela al piatto FlexiBowl
 
-La messa a fuoco fine verrà ottimizzata durante la calibrazione.
 ```
 
 ### Immagine troppo scura o troppo chiara
@@ -274,15 +255,15 @@ Se l'immagine acquisita è troppo scura o troppo chiara:
 
 **Troppo scura**:
 - Verificare che il backlight/toplight sia acceso (Config FlexiBowl)
-- Aumentare l'intensità dell'illuminazione
-- Aumentare il tempo di esposizione (parametro Exposure in modalità Expert)
+- Aumentare il tempo di esposizione (parametro Cam Exposure in [Camera FLB])
 
 **Troppo chiara (sovraesposta)**:
-- Ridurre l'intensità dell'illuminazione
-- Ridurre il tempo di esposizione
+- Ridurre il tempo di esposizione (parametro Cam Exposure in [Camera FLB])
 - Verificare che non ci sia luce ambientale eccessiva
-
-Queste regolazioni verranno fatte in dettaglio durante la calibrazione e il training modello.
+- Regolare l'apertura del diaframma nel corpo dell'ottica della camera 
+  :::{warning}
+  Fare particolare attenzione nel maneggiare la camera, in quanto, se la calibrazione è già stata effettuata, anche un piccolo spostamento della camera può compromettere l'affidabilità della calibrazione 
+  :::
 ```
 
 ### Frame rate basso o acquisizione lenta
@@ -291,25 +272,15 @@ Queste regolazioni verranno fatte in dettaglio durante la calibrazione e il trai
 **Performance acquisizione**
 
 Se l'acquisizione immagini è lenta:
-- Verificare che il cavo Ethernet sia Gigabit (Cat5e o Cat6)
+- Verificare che il cavo Ethernet sia Gigabit (da  Cat6 in su )
 - Controllare che lo switch di rete sia Gigabit Ethernet (non Fast Ethernet 100Mbps)
-- Aumentare il Packet Size a 9000 se la rete supporta Jumbo Frames
-- Ridurre il Latency Level se non ci sono problemi di schermate blu
+- Cambiare il Latency Level se non ci sono problemi di schermate blu
+- Ridurre il Packet Size a 1500-2000 
 
-Il frame rate massimo della camera è 14 fps (immagini al secondo), sufficiente per tutte le applicazioni di picking standard.
+
+Il frame rate massimo della camera è 24 fps (immagini al secondo), sufficiente per tutte le applicazioni di picking standard.
 ```
----
 
-```{tip}
-
-A questo punto dovrebbero essere completati:
-- [✓] Login e attivazione licenza
-- [✓] Creazione ricetta base
-- [✓] FlexiBowl Setup
-- [✓] Hopper Setup 
-- [✓] Robot Setup
-- [✓] Camera Setup
-```
 ---
 # **Problemi comuni durante la calibrazione**
 
@@ -336,10 +307,9 @@ Causa: Il software non riesce a identificare il pattern della griglia.
 Se nonostante le regolazioni la calibrazione rimane sotto "Excellent":
 
 1. Verificare la distanza di lavoro camera-FlexiBowl (deve essere quella calcolata)
-2. Controllare il paralleli della camera rispetto al piatto (deve essere perfettamente orizzontale)
-3. Verificare la planarità della griglia (non deve essere deformata o piegata)
-4. Assicurarsi che la camera sia stabile (no vibrazioni durante acquisizione)
-5. Verificare che l'obiettivo sia avvitato completamente (contatto metal-metal con corpo camera)
+2. Controllare cje la camera sia parallela rispetto al piano del FlexiBowl (deve essere perfettamente orizzontale)
+3. Assicurarsi che la camera sia stabile (no vibrazioni durante acquisizione)
+4. Verificare che l'obiettivo sia avvitato completamente 
 
 Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare [Installazione Meccanica](09_Installazione_Meccanica.md) per revisione.
 ```
@@ -352,9 +322,8 @@ Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. C
 Se si passa da backlight a toplight (o viceversa):
 
 1. La calibrazione geometrica rimane valida (non serve rifarla)
-2. È necessario solo regolare l'esposizione per il nuovo tipo di illuminazione
+2. È necessario solo regolare l'esposizione della camera per il nuovo tipo di illuminazione
 3. Acquisire un'immagine di test per verificare che il pattern sia ancora ben visibile
-4. Se il contrasto è molto diverso, considerare di rifare la calibrazione per massima precisione
 
 In generale, è consigliabile decidere fin dall'inizio il tipo di illuminazione da utilizzare e mantenere quella configurazione.
 ```
@@ -366,10 +335,10 @@ In generale, è consigliabile decidere fin dall'inizio il tipo di illuminazione 
 **Errore durante salvataggio**
 
 Se il salvataggio della ricetta fallisce:
-- Verificare di avere permessi di scrittura sulla cartella del software
-- Controllare lo spazio disponibile su disco
+- Verificare che ci sia sufficiente spazio sul disco 
 - Assicurarsi che il nome non contenga caratteri non ammessi (`/ \ : * ? " < > |`)
 - Verificare che non esista già una ricetta con lo stesso nome
+- Verificare di avere permessi di scrittura sulla cartella del software
 ```
 
 ---

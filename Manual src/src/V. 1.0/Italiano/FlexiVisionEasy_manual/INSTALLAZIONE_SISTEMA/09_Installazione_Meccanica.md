@@ -41,7 +41,8 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
 ```{list-table}
 :header-rows: 1
 :widths: 40 60
-
+* - **Fori Viti**
+  - M5
 * - **Caratteristica**
   - **Valore**
 * - Larghezza (totale con staffe)
@@ -80,36 +81,47 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
 
 ### Procedura di installazione
 
+#### Montaggio con Fori 
+
 ```{list-table} 
    :header-rows: 1
    :widths: 35 65
 
    * - Fase
      - Descrizione Operativa
-   * - **1. Disimballaggio**
+   * - **1. Preparazione supporto**
+     - Praticare i fori secondo le indicazioni riportate nella scheda tecnica 
+   * - **2. Disimballaggio**
      - Estrarre il VisionController dalla confezione prestando attenzione a non danneggiare i connettori. Verificare l'integrità del prodotto.
-   * - **2. Preparazione supporto**
-     - * **Per montaggio su guida DIN**: verificare che la guida sia pulita e fissata saldamente.
-       * **Per montaggio su pannello**: praticare fori M4 secondo il pattern fornito nei disegni tecnici.
-   * - **3. Orientamento**
-     - Posizionare il controller con le prese di ventilazione libere da ostruzioni.
-   * - **4. Fissaggio**
-     - **Guida DIN**: Agganciare il dispositivo facendolo scorrere sulla guida fino allo scatto.  
-       **Pannello**: Utilizzare 4 viti M4 con coppia di serraggio 1.2 Nm.
+   * - **3. Fissaggio**
+     - Fissare il VisionController con viti M5  
+```
+
+#### Montaggio con guida DIN
+
+```{list-table} 
+   :header-rows: 1
+   :widths: 35 65
+
+   * - Fase
+     - Descrizione Operativa
+   * - **1. Preparazione supporto**
+     - verificare che la guida sia pulita e fissata saldamente.
+   * - **2. Disimballaggio**
+     - Estrarre il VisionController dalla confezione prestando attenzione a non danneggiare i connettori. Verificare l'integrità del prodotto.
+   * - **3. Fissaggio**
+     - Agganciare il dispositivo facendolo scorrere sulla guida fino allo scatto.  
 ```
 
 ```{warning}
 **Ventilazione**
 
-Il VisionController genera calore durante il funzionamento. Una ventilazione inadeguata può causare:
+Il VisionController genera calore durante il funzionamento. Garantire sempre almeno 50 mm di spazio libero attorno al dispositivo.
+Altrimenti si può avere:
 - Surriscaldamento e spegnimenti automatici
 - Riduzione delle prestazioni
 - Danneggiamento dei componenti interni
-
-Garantire sempre almeno 50 mm di spazio libero attorno al dispositivo.
 ```
-
-
 
 ---
 
@@ -120,39 +132,65 @@ Il posizionamento preciso e l'allineamento della telecamera sono passaggi critic
 
 ### Distanza di lavoro ottimale
 
-La telecamera deve essere montata in modo che la faccia frontale della lente sia posizionata a una distanza specifica (Working Distance) dalla superficie del piatto FlexiBowl.
+La telecamera deve essere montata in modo che la faccia frontale della lente sia posizionata a una distanza specifica (Working Distance) dalla superficie del piatto FlexiBowl.  
+Per il calcolo dettagliato della distanza ottimale per la vostra applicazione, consultare la sezione dedicata: [Calcolo Distanza Ottimale](distanza_lavoro)
 
-```{image} ../rif_tecnico_specifiche/img/config_giusta.JPG
+```{image} ../rif_tecnico_specifiche/img/working_distance.JPG
 :alt: Distanza Di Lavoro
-:width: 70%
+:width: 40%
 :align: center
 ```
 
-```{note}
-La distanza di lavoro dipende da:
-- Modello di FlexiBowl (diametro superficie)
-- Risoluzione richiesta (mm/pixel)
-- Dimensioni dei pezzi da rilevare
+```{list-table}
+:header-rows: 1
+:widths: 25 40 35
 
-Per il calcolo dettagliato della distanza ottimale per la vostra applicazione, consultare la sezione dedicata: [Calcolo Distanza Ottimale](distanza_lavoro)
-
+* - Modello FlexiBowl
+  - Distanza di Lavoro Raccomandata (Working Distance)
+  - Lente Inclusa nel Kit (Lunghezza Focale)
+* - **FB 200**
+  - 800 mm 
+  - 35 mm
+* - **FB 350**
+  - 1000 mm
+  - 35 mm
+* - **FB 500**
+  - 1000 mm
+  - 25 mm
+* - **FB 650**
+  - 1000 mm
+  - 16 mm
+* - **FB 800**
+  - 1000 mm
+  - 16 mm
+* - **FB 1200**
+  - 1300 mm
+  - 12 mm
 ```
 
 ### Posizionamento e allineamento
 
 Il corretto allineamento della camera è fondamentale per ottenere immagini di qualità e garantire precisione nel picking.
 
+**Configurazioni errate.** Le immagini mostrano esempi di posizionamento non corretto della camera: il campo visivo (indicato in rosso) risulta decentrato rispetto all'area di visone, coprendo solo parzialmente l'area di lavoro o includendo zone esterne ad essa. Queste configurazioni compromettono il riconoscimento dei pezzi e il funzionamento del sistema di visione.    
+
 ```{image} ../rif_tecnico_specifiche/img/config_sbagliata.png
 :alt: Distanza Di Lavoro
-:width: 40%
+:width: 60%
 :align: center
 ```
 ```{image} ../rif_tecnico_specifiche/img/config_sbagliata2.png
 :alt: Distanza Di Lavoro
-:width: 40%
+:width: 60%
 :align: center
 ```
+**Configurazione corretta.** La camera deve essere posizionata centralmente rispetto all'area di visione del FlexiBowl (zona backlight). In questo modo il campo visivo (indicato in verde) copre simmetricamente l'intera area di lavoro, garantendo il corretto funzionamento del sistema di visione.  
 
+```{image} ../rif_tecnico_specifiche/img/config_giusta.JPG
+:alt: Distanza Di Lavoro
+:width: 70%
+:align: center
+```
 
 ```{list-table}
 * - **Centratura:**
@@ -226,29 +264,18 @@ Prima di procedere con il fissaggio definitivo:
 ## Montaggio Toplight
 
 Se l'ordine include un Toplight (illuminatore dall'alto), questo deve essere montato sulla stessa struttura di supporto della telecamera per garantire un'illuminazione uniforme della superficie di lavoro.
+
 :::{attention}
-Durante il montaggio, l'apparecchio deve essere spento e staccato dalla corrente. 
-::: 
-
-### Specifiche Tecniche 
-immagini + pdf??
-
-### Modalità di fissaggio 
-Il Toplight può essere fissato in due modalità: sull'[angolo](angolo) o sul [lato](lato)
-(angolo)=
-#### 1. Fissaggio sull'angolo 
-(lato)=
-#### 2. Fissaggio sul lato
-:::{error}
-![montaggio Laterale](./img/errorimontaggiolaterale.png)
+Durante il montaggio, l'apparecchio deve essere spento e staccato dalla corrente.
 :::
+### Posizionamento Toplight 
+![Posizone Toplight e Cam](./img/posizione_cam_TPL_B.png)
 
-:::{tip}
-![montaggio Laterale](./img/montaggiolaterale.png)
-:::
+![Posizione Toplight Cam + FB](./img/posizioneTPL_giusta.png)
+
+![Posizione Toplight Cam + FB Sbagliata](./img/posizioneTPL_sbagliata.png)
 
 ### Procedura di installazione
-
 ```{list-table}
 :header-rows: 1
 :widths: 35 65
@@ -268,18 +295,64 @@ Il Toplight può essere fissato in due modalità: sull'[angolo](angolo) o sul [l
 * - **4. Angolo di illuminazione**
   - Perpendicolare alla superficie (0° tilt).
 * - **5. Fissaggio**
-  - Secondo specifiche del modello fornito (tipicamente M4).
+  - Secondo specifiche della modalità scelta (vedi sezione seguente).
 ```
 
-```{tip}
-Per ottenere i migliori risultati:
+### Modalità di fissaggio
 
-- Verificare l'uniformità luminosa acquisendo un'immagine di test (durante la fase di calibrazione)
-- Se necessario, regolare leggermente la distanza o l'angolo del Toplight
-- Considerare l'uso di diffusori se l'illuminazione presenta hotspot evidenti
+Il Toplight può essere fissato in due modalità: sull'[angolo](angolo) o sul [lato](lato).
+
+:::{note}
+I componenti di fissaggio **non sono inclusi** nella fornitura del Toplight. Il montaggio può quindi essere personalizzato in base alle esigenze dell'installazione.
+
+- Fissaggio sul lato (scanalatura): dadi M4 **forniti**
+- Fissaggio sull'angolo: viti CHC M4x20 **non fornite**
+
+In entrambi i casi si raccomanda l'uso di un **frenafiletti** (non fornito) per evitare allentamenti nel tempo. La coppia di serraggio consigliata è compresa tra **0,5 e 1,5 Nm**.
+:::
+
+(angolo)=
+#### 1. Fissaggio sull'angolo
+
+Il fissaggio sull'angolo utilizza viti CHC M4x20 (non fornite) applicate nei fori posizionati ai quattro angoli del Toplight.
+```{figure} img/fissaggio_angolo.png
+:alt: Fissaggio del Toplight sull'angolo con vite CHC M4x20
+:align: center
+:width: 60%
+
+Fissaggio sull'angolo tramite vite CHC M4x20 (non fornita).
 ```
+
+(lato)=
+#### 2. Fissaggio sul lato (scanalatura)
+
+Il fissaggio sul lato utilizza 4 dadi M4 (forniti) da inserire nella scanalatura laterale del profilo del Toplight. La profondità massima di inserimento del dado nella scanalatura è di **5 mm**.
+
+```{figure} img/fissaggio_lato.JPG
+:alt: Fissaggio del Toplight sul lato tramite dadi M4 nella scanalatura
+:align: center
+:width: 100%
+
+Fissaggio sul lato tramite 4 dadi M4 (forniti) inseriti nella scanalatura del profilo. Profondità massima: 5 mm.
+```
+
+##### Fissaggio laterale con staffe 
+Nel caso in cui il Toplight venisse fissato con delle staffe: 
+
+:::{error}
+![montaggio Laterale](./img/errorimontaggiolaterale.png)
+:::
+
+:::{tip}
+![montaggio Laterale](./img/montaggiolaterale.png)
+:::
+
 
 ### Cablaggio illuminatore
+
+
+![Pin Toplight](./img/pin_toplight.png)
+
 ```{list-table} 
 :header-rows: 1
 :widths: 30 70
@@ -287,17 +360,29 @@ Per ottenere i migliori risultati:
 * - Parametro
   - Requisito / Azione
 * - **Tensione**
-  - Verificare specifica sull'etichetta dell'illuminatore (tipicamente **24V DC**).
-* - **Corrente**
-  - Verificare specifica (tipicamente **1-3A**).
-* - **Cablaggio**
-  - Predisporre un cavo di alimentazione dedicato dal quadro elettrico.
+  - 24V DC (±10%). Tensione minima di funzionamento: 20V DC sull'ingresso luce.
+* - **Connettore**
+  - M12 5 poli (T-coding).
+* - **Pinout connettore**
+  - Pin 1: +24V (marrone) — Pin 3: GND (blu) — Pin 4: STROBE PNP (nero)
+* - **Modalità STROBE (PNP)**
+  - Da 5V a 24V per accensione al 100%. Da 0V a 1V per spegnimento al 100%.
+* - **Modalità CONTINUA**
+  - Pin 1 (+24V) e Pin 3 (GND) collegati; Pin 4 (PNP) collegato a Pin 1.
+* - **Caduta di tensione (cavo M12, 10m)**
+  - 1.15V @ 5A — 2.3V @ 10A — 3.5V @ 15A — 4.6V @ 20A (max 20A)
 * - **Schermatura**
   - Utilizzare cavi schermati per ridurre le interferenze elettromagnetiche (EMI).
 ```
+```{warning}
+**Sicurezza elettrica**
 
+- Rispettare le tensioni di alimentazione e i morsetti di connessione indicati.
+- Non modificare né smontare il prodotto.
+- Non collegare o pulire l'apparecchio quando è sotto tensione.
+- Non guardare direttamente la sorgente luminosa.
+```
 ```{note}
-
 Per dettagli sui collegamenti elettrici, consultare la sezione [Cablaggio e Connessioni](10_Cablaggio_Connessioni.md).
 ```
 
@@ -317,6 +402,11 @@ Si raccomanda fortemente di schermare la cella robotica da:
 - Flash o luci intermittenti nell'area
 
 ```
+---
+## Montaggio Camera e Toplight su Supporto ARS
+
+![Supporto con Cam e TPL](./img/tpl_cam_supporto1.png)
+
 
 ---
 

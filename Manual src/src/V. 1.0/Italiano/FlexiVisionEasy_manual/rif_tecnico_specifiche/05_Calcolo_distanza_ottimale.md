@@ -15,34 +15,6 @@ La scelta corretta della distanza di lavoro e della lente è fondamentale per:
 
 La scelta della lente è strettamente dipendente dalla distanza di montaggio raccomandata tra la telecamera e la superficie del piatto FlexiBowl. Mantenere la distanza di lavoro standard garantisce il corretto FOV e minimizza i problemi di distorsione ottica.
 
-### Tabella riepilogativa per modello
-
-```{list-table}
-:header-rows: 1
-:widths: 25 40 35
-
-* - Modello FlexiBowl
-  - Distanza di Lavoro Raccomandata (Working Distance)
-  - Lente Inclusa nel Kit (Lunghezza Focale)
-* - **FB 200**
-  - Circa 950 – 1000 mm
-  - 35 mm
-* - **FB 350**
-  - Circa 950 – 1000 mm
-  - 35 mm
-* - **FB 500**
-  - Circa 950 – 1000 mm
-  - 25 mm
-* - **FB 650**
-  - Circa 950 – 1000 mm
-  - 16 mm
-* - **FB 800**
-  - Circa 950 – 1000 mm
-  - 12 mm
-* - **FB 1200**
-  - Circa 1200 mm
-  - 8 mm
-```
 
 ```{note}
 **Lente già inclusa**
@@ -54,7 +26,6 @@ La lente appropriata per il modello FlexiBowl specificato nell'ordine è sempre 
 
 Il seguente diagramma illustra la relazione tra distanza di lavoro, lunghezza focale della lente e area di visione risultante per i diversi modelli di FlexiBowl.
 
-
 ```{image} ../rif_tecnico_specifiche/img/working_distance.JPG
 :alt: Distanza Di Lavoro
 :width: 40%
@@ -65,6 +36,34 @@ Il seguente diagramma illustra la relazione tra distanza di lavoro, lunghezza fo
 - **Distanza di Lavoro**: Distanza verticale tra la faccia frontale della lente e la superficie del piatto FlexiBowl
 - **Area di visione**: Zona della superficie del FlexiBowl coperta dal campo visivo della camera
 
+### Tabella riepilogativa per modello
+
+```{list-table}
+:header-rows: 1
+:widths: 25 40 35
+
+* - Modello FlexiBowl
+  - Distanza di Lavoro Raccomandata (Working Distance)
+  - Lente Inclusa nel Kit (Lunghezza Focale)
+* - **FB 200**
+  - 800 mm 
+  - 35 mm
+* - **FB 350**
+  - 1000 mm
+  - 35 mm
+* - **FB 500**
+  - 1000 mm
+  - 25 mm
+* - **FB 650**
+  - 1000 mm
+  - 16 mm
+* - **FB 800**
+  - 1000 mm
+  - 16 mm
+* - **FB 1200**
+  - 1300 mm
+  - 12 mm
+```
 
 ```{warning}
 **Importanza della distanza corretta**
@@ -77,19 +76,25 @@ Deviazioni significative dalla distanza di lavoro raccomandata possono causare:
 Rispettare sempre le distanze indicate in tabella durante il montaggio meccanico della camera.
 ```
 ### Posizionamento Camera 
+
+**Configurazione corretta.** La camera deve essere posizionata centralmente rispetto all'area di visione del FlexiBowl (zona backlight). In questo modo il campo visivo (indicato in verde) copre simmetricamente l'intera area di lavoro, garantendo il corretto funzionamento del sistema di visione.  
+
 ```{image} ../rif_tecnico_specifiche/img/config_giusta.JPG
 :alt: Distanza Di Lavoro
-:width: 40%
+:width: 70%
 :align: center
 ```
+
+**Configurazioni errate.** Le immagini mostrano esempi di posizionamento non corretto della camera: il campo visivo (indicato in rosso) risulta decentrato rispetto all'area di visone, coprendo solo parzialmente l'area di lavoro o includendo zone esterne ad essa. Queste configurazioni compromettono il riconoscimento dei pezzi e il funzionamento del sistema di visione.  
+
 ```{image} ../rif_tecnico_specifiche/img/config_sbagliata.png
 :alt: Distanza Di Lavoro
-:width: 40%
+:width: 60%
 :align: center
 ```
 ```{image} ../rif_tecnico_specifiche/img/config_sbagliata2.png
 :alt: Distanza Di Lavoro
-:width: 40%
+:width: 60%
 :align: center
 ```
 ---

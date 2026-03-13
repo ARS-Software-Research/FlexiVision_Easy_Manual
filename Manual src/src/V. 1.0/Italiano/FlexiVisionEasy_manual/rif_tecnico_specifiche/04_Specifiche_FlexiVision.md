@@ -375,6 +375,8 @@ Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge d
 :header-rows: 1
 :widths: 40 60
 
+* - **Fori Viti**
+  - M5
 * - **Caratteristica**
   - **Valore**
 * - Larghezza (totale con staffe)

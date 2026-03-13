@@ -1290,7 +1290,7 @@ Il filtro IR è un accessorio ottico da applicare all'obiettivo della camera che
 
 Il supporto per camera e toplight è una struttura regolabile in acciaio inox e alluminio che consente di posizionare con precisione la telecamera e il sistema di illuminazione sopra il FlexiBowl. Grazie agli ampi intervalli di regolazione verticale e radiale, permette di adattare il setup ottico a diverse configurazioni di applicazione senza richiedere modifiche strutturali.
 
-![Cam Top Stand](img/cam_top_stand.png)
+![Cam Top Stand](img/supporto.JPG)
 
 | Voce | GM000632 |
 | -- | -- |
@@ -1300,6 +1300,12 @@ Il supporto per camera e toplight è una struttura regolabile in acciaio inox e 
 | Peso | 14 kg |
 | Materiali | Palo in acciaio inox + profili in alluminio per struttura di supporto toplight e camera |
 | Predisposizione fissaggio | N°4 viti M10 su diametro Ø140 mm |
+
+### Dimensioni 
+
+![Cam Top Stand](img/dim_supporto.png)
+
+
 
 (switch)=
 ## Switch

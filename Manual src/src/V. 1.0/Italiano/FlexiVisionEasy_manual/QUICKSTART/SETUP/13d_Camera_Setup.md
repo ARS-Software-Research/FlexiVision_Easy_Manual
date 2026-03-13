@@ -222,6 +222,17 @@ Procedere quindi con i valori automatici per completare il setup iniziale.
     21. Se tutti i test sono positivi, la configurazione è corretta
 ```
 ---
+```{tip}
+
+A questo punto dovrebbero essere completati:
+- [✓] Login e attivazione licenza
+- [✓] Creazione ricetta base
+- [✓] FlexiBowl Setup
+- [✓] Hopper Setup 
+- [✓] Robot Setup
+- [✓] Camera Setup
+```
+---
 
 ## Passi successivi
 
