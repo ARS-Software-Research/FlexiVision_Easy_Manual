@@ -56,17 +56,17 @@ Il sistema supporta i seguenti comandi tramite stringhe di testo inviate sulla c
   - Azione
   - Valore di Ritorno
 * - `start_Locator`
-  - Avvia il processo di localizzazione dei pezzi. Richiama automaticamente la routine di manipolazione FlexiBowl se non ci sono pezzi prelevabili
-  - `Pattern_1;x;y;r`
+  - Avvia il processo di localizzazione dei pezzi. Se non sono presenti pezzi prelevabili, richiama automaticamente la routine di movimentazione del FlexiBowl.
+  - `Pattern_n;x;y;r`
 * - `stop_Locator`
   - Ferma il processo di localizzazione
   - Nessuno
 * - `turn_Locator`
   - Se nessun pezzo è stato prelevato, fa ruotare il FlexiBowl e riavvia la ricerca
-  - `Pattern_1;x;y;r`
+  - `Pattern_n;x;y;r`
 * - `test_Locator`
   - Avvia la localizzazione senza attivare il FlexiBowl (solo acquisizione immagine)
-  - `Pattern_1;x;y;r`
+  - `Pattern_n;x;y;r`/ Nessuno
 * - `state_Locator`
   - Restituisce lo stato diagnostico del localizzatore
   - `Locator is Running` / `Locator is in Error` / `Locator is not Running`

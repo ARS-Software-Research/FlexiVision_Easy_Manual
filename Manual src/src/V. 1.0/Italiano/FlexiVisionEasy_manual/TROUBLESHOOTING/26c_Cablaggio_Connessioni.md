@@ -45,43 +45,27 @@
   - Possibili Cause
   - Soluzioni
 * - **FlexiBowl non comunica con VisionController**
-  - • FlexiBowl non acceso (LED READY spento)
-    • Cavo Ethernet non collegato correttamente al FlexiBowl e/o al VisionController
-    
-    • Cavo Ethernet danneggiato  
-      
-
-    
-    • Indirizzo IP errato
-    
-    • FlexiBowl e VisionController su subnet diverse
-    • Firewall blocca comunicazione
-    
-    • Porta Ethernet VisionController guasta
-  - • Verificare LED READY acceso sul FlexiBowl
-    • Verificare connessione fisica cavo Ethernet su entrambi i lati
-    
-    • Testare cavo con cable tester o sostituire
-    
-    • Verificare configurazione IP in [FlexiBowl Setup](QUICKSTART/xx_FlexiBowl_Setup.md)
-    
-    • Configurare FlexiBowl e VisionController nella stessa rete (es: 192.168.1.x)
-    • Disabilitare temporaneamente firewall per test
-    
-    • Provare altra porta Ethernet del VisionController
-* - **Connessione intermittente**
-    
-    • Cavo troppo lungo (> 100m)
-    
-    • Connettore RJ45 danneggiato o mal crimpato
-    
-    • Interferenze elettromagnetiche
-  -  • Ridurre lunghezza cavo sotto 100m o usare switch intermedio
-    
-    • Sostituire connettori o cavo completo
-    
-    • Utilizzare cavo schermato (STP) lontano da fonti EMI
-
+  - • FlexiBowl non acceso (LED READY spento)  
+    • Cavo Ethernet non collegato correttamente al FlexiBowl e/o al VisionController  
+    • Cavo Ethernet danneggiato    
+    • Indirizzo IP errato  
+    • FlexiBowl e VisionController su subnet diverse  
+    • Firewall blocca comunicazione  
+    • Porta Ethernet VisionController guasta  
+  - • Verificare LED READY acceso sul FlexiBowl  
+    • Verificare connessione fisica cavo Ethernet su entrambi i lati  
+    • Testare cavo con cable tester o sostituire  
+    • Verificare configurazione IP in [FlexiBowl Setup](QUICKSTART/xx_FlexiBowl_Setup.md)  
+    • Configurare FlexiBowl e VisionController nella stessa rete (es: 192.168.1.x)  
+    • Disabilitare temporaneamente firewall per test  
+    • Provare altra porta Ethernet del VisionController  
+* - **Connessione intermittente**  
+  - • Cavo troppo lungo (> 100m)  
+    • Connettore RJ45 danneggiato o mal crimpato  
+    • Interferenze elettromagnetiche  
+  - • Ridurre lunghezza cavo sotto 100m o usare switch intermedio  
+    • Sostituire connettori o cavo completo  
+    • Utilizzare cavo schermato (STP) lontano da fonti EMI  
 ```
 (troubleshooting_pneumatica)=
 ## Problemi Pneumatici (Aria Compressa)

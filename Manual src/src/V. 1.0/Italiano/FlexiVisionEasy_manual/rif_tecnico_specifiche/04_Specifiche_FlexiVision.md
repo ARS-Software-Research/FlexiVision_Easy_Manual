@@ -31,7 +31,7 @@ Il sistema FlexiVision utilizza telecamere ad alta risoluzione con interfaccia G
 * - Dynamic Range
   - 70 dB
 * - GPIO
-  - Connettore Hirose 6-pin: 1 ingresso opto-isolato, 1 uscita opto-isolata, 1 I/O configurabile
+  - Connettore Hirose 6-pin: 1 ingresso opto-isolato, 1 uscita opto-isolata, 1 I/O configurabile senza isolamento ottico
 * - Formato Immagine
   - Mono8 / 10 / 10Packed
 * - Binning 
@@ -49,7 +49,7 @@ Il sistema FlexiVision utilizza telecamere ad alta risoluzione con interfaccia G
 * - impostazioni utente 
   - Support two sets of user-defined configuration
 * - Alimentazione
-  - 6V ~ 26V
+  - PoE / DC tramite connettore Hirose, con tensione da 6 V a 26 V
 * - Consumo Energetico
   - 12V ≈ 3.2 W
 * - Attacco Obiettivo
@@ -116,7 +116,7 @@ Vista posteriore della camera con connettori
 ```{warning}
 **Requisiti di rete obbligatori**
 
-L'interfaccia Gigabit Ethernet è obbligatoria e richiede un'infrastruttura di rete compatibile (switch Gigabit Ethernet).
+L'interfaccia Gigabit Ethernet è obbligatoria e richiede un'infrastruttura di rete compatibile (switch Gigabit Ethernet e cavi Ethernet almeno di categoria Cat6 o Cat7 con S/STP shielding).
 
 La mancata osservanza di questo requisito compromette completamente l'operatività della telecamera. Verificare che tutti i componenti di rete (cavi, switch, porte) supportino lo standard GigE.
 ```
@@ -226,7 +226,7 @@ Specifiche Cavo Alimentazione Camera
 :align: center
 :width: 50%
 ```
-
+```{dropdown} Obiettivo 35mm
 | Parametro | Ingrandimento di Riferimento | M.O.D. |
 |------------|-----------------------------|--------|
 | **Tipo di lente** | CCTV Lens | CCTV Lens |
@@ -251,6 +251,85 @@ Specifiche Cavo Alimentazione Camera
 | **Attacco (Mount)** | C-mount | C-mount |
 | **Cerchio immagine (mm)** | φ11 | φ11 |
 | **Camera massima compatibile** | 2/3" | 2/3" |
+```
+```{dropdown} Obiettivo 25mm
+| Parametro | Ingrandimento di Riferimento | M.O.D. |
+|-----------|:----------------------------:|:------:|
+| **Tipo di lente** | CCTV Lens | CCTV Lens |
+| **Posizione di fuoco** | Reference Magnification | M.O.D. |
+| **Ingrandimento** | 0.049 | 0.152 |
+| **Lunghezza focale (mm)** | 25.00 | 25.00 |
+| **Numero F (Fno)** | 1.60 ~ 16.00 | 1.60 ~ 16.00 |
+| **Apertura numerica (NA)** | - | - |
+| **Distanza di lavoro / oggetto (mm)** | 500.0 / 510.0 | 150.0 / 160.0 |
+| **Distanza oggetto-immagine (mm)** | 553.34 | 205.92 |
+| **Lunghezza meccanica tubo (mm)** | 34.60 ~ 38.50 | 34.60 ~ 38.50 |
+| **Back focus lente (mm)** | 13.75 | 16.33 |
+| **Profondità di campo @PCoC 0.04mm (mm)** | 54.223 | 5.835 |
+| **Risoluzione @550nm (µm)** | - | - |
+| **Posizione piano principale Ant./Post. (mm)** | 29.42 / -12.46 | 29.42 / -12.46 |
+| **Posizione pupilla Entr./Usc. (mm)** | 18.48 / -31.94 | 18.48 / -31.94 |
+| **Diametro pupilla Entr./Usc. (mm)** | 15.92 / 28.32 | 15.92 / 28.32 |
+| **Angolo di campo (°) H × V** | 19.39 × 14.64 | 18.05 × 13.89 |
+| **Distorsione TV (%)** | -0.041 | -0.271 |
+| **Illuminazione relativa (%)** | 49.78 | 53.52 |
+| **Peso (g)** | 50 | 50 |
+| **Attacco (Mount)** | C-mount | C-mount |
+| **Cerchio immagine (mm)** | φ11 | φ11 |
+| **Camera massima compatibile** | 2/3" | 2/3" |
+```
+```{dropdown} Obiettivo 16mm
+| Parametro | Ingrandimento di Riferimento | M.O.D. |
+|-----------|:----------------------------:|:------:|
+| **Tipo di lente** | CCTV Lens | CCTV Lens |
+| **Posizione di fuoco** | Reference Magnification | M.O.D. |
+| **Ingrandimento** | 0.031 | 0.095 |
+| **Lunghezza focale (mm)** | 16.16 | 16.16 |
+| **Numero F (Fno)** | 1.60 ~ 16.00 | 1.60 ~ 16.00 |
+| **Apertura numerica (NA)** | - | - |
+| **Distanza di lavoro / oggetto (mm)** | 500.0 / 507.0 | 150.0 / 157.0 |
+| **Distanza oggetto-immagine (mm)** | 554.26 | 205.30 |
+| **Lunghezza meccanica tubo (mm)** | 35.50 ~ 37.00 | 35.50 ~ 37.00 |
+| **Back focus lente (mm)** | 12.16 | 13.20 |
+| **Profondità di campo @PCoC 0.04mm (mm)** | 131.893 | 14.387 |
+| **Risoluzione @550nm (µm)** | - | - |
+| **Posizione piano principale Ant./Post. (mm)** | 28.44 / -4.50 | 28.44 / -4.50 |
+| **Posizione pupilla Entr./Usc. (mm)** | 18.85 / -28.07 | 18.85 / -28.07 |
+| **Diametro pupilla Entr./Usc. (mm)** | 10.18 / 25.02 | 10.18 / 25.02 |
+| **Angolo di campo (°) H × V** | 30.37 × 22.92 | 29.62 × 22.39 |
+| **Distorsione TV (%)** | -0.472 | -0.674 |
+| **Illuminazione relativa (%)** | 32.75 | 36.61 |
+| **Peso (g)** | 50 | 50 |
+| **Attacco (Mount)** | C-mount | C-mount |
+| **Cerchio immagine (mm)** | φ11 | φ11 |
+| **Camera massima compatibile** | 2/3" | 2/3" |
+```
+```{dropdown} Obiettivo 12mm
+| Parametro | Ingrandimento di Riferimento | M.O.D. |
+|-----------|:----------------------------:|:------:|
+| **Tipo di lente** | CCTV Lens | CCTV Lens |
+| **Posizione di fuoco** | Reference Magnification | M.O.D. |
+| **Ingrandimento** | 0.023 | 0.075 |
+| **Lunghezza focale (mm)** | 12.00 | 12.00 |
+| **Numero F (Fno)** | 1.80 ~ 16.00 | 1.80 ~ 16.00 |
+| **Apertura numerica (NA)** | - | - |
+| **Distanza di lavoro / oggetto (mm)** | 500.0 / 505.6 | 150.0 / 155.0 |
+| **Distanza oggetto-immagine (mm)** | 559.55 | 209.55 |
+| **Lunghezza meccanica tubo (mm)** | 39.20 ~ 40.10 | 39.20 ~ 40.10 |
+| **Back focus lente (mm)** | 12.23 | 12.84 |
+| **Profondità di campo @PCoC 0.04mm (mm)** | 277.576 | 28.121 |
+| **Risoluzione @550nm (µm)** | - | - |
+| **Posizione piano principale Ant./Post. (mm)** | 17.71 / -0.05 | 17.71 / -0.05 |
+| **Posizione pupilla Entr./Usc. (mm)** | 11.68 / -12.18 | 11.68 / -12.18 |
+| **Diametro pupilla Entr./Usc. (mm)** | 6.67 / 13.41 | 6.67 / 13.41 |
+| **Angolo di campo (°) H × V** | 40.54 × 30.77 | 39.40 × 30.05 |
+| **Distorsione TV (%)** | -0.983 | -0.905 |
+| **Illuminazione relativa (%)** | 40.64 | 42.64 |
+| **Peso (g)** | 60 | 60 |
+| **Attacco (Mount)** | C-mount | C-mount |
+| **Cerchio immagine (mm)** | φ11 | φ11 |
+| **Camera massima compatibile** | 2/3" | 2/3" |
+```
 ---
 (specifiche_VC)=
 ## VisionController
@@ -287,7 +366,7 @@ Il sistema FlexiVision opera su un PC Industriale (VisionController) che funge d
 * - Porte USB
   -  6× USB 3.0 TypeA
 * - Uscita Video
-  - 1× HDMI + 1× DisplayPort
+  - 2× HDMI 
 * - Audio
   - Line Out + MIC (Jack 2-in-1)
 * - Alimentazione (V DC)
@@ -460,7 +539,7 @@ Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezi
 
 * - Rete elettrica
   - Robot
-  - Alimentazione 110/220 Vdc
+  - Alimentazione secondo le specifiche del robot in vostro possesso
 
 * - Rete elettrica
   - Camera

@@ -461,7 +461,7 @@ document.write(`
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Lente già inclusa</strong></p>
-<p>La lente appropriata per il modello FlexiBowl specificato nell’ordine è sempre inclusa nel pacchetto FlexiVision e viene pre-montata sulla camera. Non è necessario acquistarla separatamente.</p>
+<p>La lente appropriata per il modello FlexiBowl specificato nell’ordine è sempre inclusa nel pacchetto FlexiVision e viene fornita in un imballo separato rispetto alla camera. Non è necessario acquistarla separatamente.</p>
 </div>
 <section id="schema-distanze-e-campo-visivo">
 <h3>Schema distanze e campo visivo<a class="headerlink" href="#schema-distanze-e-campo-visivo" title="Link to this heading">#</a></h3>
@@ -529,7 +529,7 @@ document.write(`
 </section>
 <section id="posizionamento-camera">
 <h3>Posizionamento Camera<a class="headerlink" href="#posizionamento-camera" title="Link to this heading">#</a></h3>
-<p><strong>Configurazione corretta.</strong> La camera deve essere posizionata centralmente rispetto all’area di visione del FlexiBowl (zona backlight). In questo modo il campo visivo (indicato in verde) copre simmetricamente l’intera area di lavoro, garantendo il corretto funzionamento del sistema di visione.</p>
+<p><strong>Configurazione corretta.</strong> La camera deve essere posizionata centralmente e con il medesimo orientamento angolare all’area di visione del FlexiBowl (zona backlight). In questo modo il campo visivo (indicato in verde) copre simmetricamente l’intera area di lavoro, garantendo il corretto funzionamento del sistema di visione.</p>
 <a class="reference internal image-reference" href="../../_images/config_giusta.JPG"><img alt="Distanza Di Lavoro" class="align-center" src="../../_images/config_giusta.JPG" style="width: 70%;" />
 </a>
 <p><strong>Configurazioni errate.</strong> Le immagini mostrano esempi di posizionamento non corretto della camera: il campo visivo (indicato in rosso) risulta decentrato rispetto all’area di visone, coprendo solo parzialmente l’area di lavoro o includendo zone esterne ad essa. Queste configurazioni compromettono il riconoscimento dei pezzi e il funzionamento del sistema di visione.</p>
@@ -542,7 +542,7 @@ document.write(`
 <hr class="docutils" />
 <section id="posizionamento-toplight">
 <h2>Posizionamento TopLight<a class="headerlink" href="#posizionamento-toplight" title="Link to this heading">#</a></h2>
-<p>Se il sistema include un TopLight (illuminatore dall’alto), il suo posizionamento deve essere coordinato con quello della camera per garantire un’illuminazione uniforme.</p>
+<p>Se il sistema include un TopLight (illuminatore dall’alto), il suo posizionamento deve avere il medesimo orientamento angolare della camera per garantire un’illuminazione uniforme. Deve essere installato su un supporto meccanicamente indipendente dal supporto della telecamera, tale che, per rimuovere o sostituire il sistema di illuminazione non debba essere necessario allentare o smontare la telecamera.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -561,23 +561,22 @@ document.write(`
 <td><p>Concentrica (stesso asse ottico della camera)</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Orientamento</strong></p></td>
-<td><p>Parallelo alla superficie del FlexiBowl</p></td>
+<td><p>Parallelo alla superficie del FlexiBowl e medesimo orientamento angolare  della telecamera (Lato lungo area di visione - Lato lungo di illuminazione)</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Altezza relativa camera-TopLight</strong></p></td>
-<td><p>TopLight leggermente più alto della camera (circa 50-100 mm)</p></td>
+<td><p>Ottica di visione a filo della superficie supperiore Top Light  (Lasciare libero accesso alle ghiere di regolazione dell’ottica di visione)</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/posizione_cam_TPL_B1.png"><img alt="Distanza Di Lavoro" src="../../_images/posizione_cam_TPL_B1.png" style="width: 80%;" />
+</a>
+</figure>
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Per ottenere la migliore uniformità di illuminazione:</p>
-<ol class="arabic simple">
-<li><p>Posizionare il TopLight alla stessa distanza della camera o leggermente più lontano</p></li>
-<li><p>Mantenere il TopLight concentrico rispetto al FlexiBowl per evitare ombre asimmetriche</p></li>
-<li><p>Durante la fase di test, acquisire immagini e verificare l’uniformità luminosa</p></li>
-<li><p>Se necessario, regolare la distanza o aggiungere diffusori per eliminare hotspot</p></li>
-</ol>
+<p>Per ottenere la migliore uniformità di illuminazioneseguire le indicazioni appena riportate</p>
 </div>
 <section id="schema-posizionamento-integrato">
 <h3>Schema posizionamento integrato<a class="headerlink" href="#schema-posizionamento-integrato" title="Link to this heading">#</a></h3>

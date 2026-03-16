@@ -97,7 +97,7 @@ Se FlexiBowl, robot o camera non sono raggiungibili:
    - Devono essere sulla stessa subnet (es: 192.168.1.x)
    - Non devono esserci conflitti di IP (due dispositivi con stesso IP)
 4. Utilizzare il comando `ping` da terminale per testare la raggiungibilità
-5. Disabilitare temporaneamente firewall sul VisionController per test
+5. Disabilitare temporaneamente il firewall di Windows sulla porta/adattatore usato per le telecamere GigE
 
 Per dettagli sulla configurazione di rete, vedere [Cablaggio e Connessioni](cablaggio).
 ```

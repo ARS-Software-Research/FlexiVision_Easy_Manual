@@ -72,7 +72,7 @@ Essendo un componente elettronico sensibile, richiede un posizionamento attento 
 * - **Spazio di ventilazione**
   - Minimo 50 mm su tutti i lati per circolazione aria
 * - **Fissaggio**
-  - Guida DIN 35 mm o viti M4 su pannello
+  - Guida DIN 35 mm o viti M5 su pannello
 * - **Temperatura ambiente**
   - 1°C ~ +50°C (verificare specifiche complete nella sezione [Specifiche VisionController](specifiche_VC))
 * - **Protezione**
@@ -246,7 +246,7 @@ Dimensioni camera CAM-CIC-5000-20G-1 (mm)
 ```{warning}
 **Fissaggio:**
 - Utilizzare i 4 fori di montaggio M3 presenti sul corpo camera
-- Viti consigliate: M3 × 8 mm (acciaio inox)
+- Viti consigliate: Viti consigliate: M3 A2 / M3 8.8
 - Coppia di serraggio: 0.5 Nm (non serrare eccessivamente per evitare deformazioni)
 ```
 
@@ -259,6 +259,37 @@ Prima di procedere con il fissaggio definitivo:
 3. Assicurarsi che la lente sia avvitata completamente (contatto metal-metal tra lente e corpo camera)
 4. NON rimuovere o allentare la lente se già montata correttamente
 ```
+### Installazione Camera
+Per garantire il corretto funzionamento del sistema di visione è necessario che la telecamera sia installata su un supporto rigido e stabile.
+Il sistema Flexibowl non genera vibrazioni; tuttavia, nelle linee automatizzate sono presenti altre sorgenti di vibrazione,(robot industriali,sistemi di movimentazione,altre macchine della linea)
+
+Se tali vibrazioni vengono trasmesse alla telecamera, l'immagine acquisita può risultare instabile e le coordinate calcolate dal sistema di visione potrebbero non essere affidabili, compromettendo la precisione del prelievo robotizzato.
+
+![Installazione Camera](./img/installazionecamera.png)
+
+:::{tip}
+Per questo motivo si raccomanda di:
+
+- installare la telecamera su una struttura rigida e stabile
+
+- evitare supporti soggetti a vibrazioni provenienti da robot o altre macchine
+
+- utilizzare preferibilmente una struttura indipendente dalla macchina
+:::
+
+### Regolazione della posizione della telecamera:
+
+Il supporto della telecamera deve consentire la regolazione della posizione per permettere il corretto allineamento con l’area di prelievo del Flexibowl.
+
+![Regolazioni Cmera](./img/regolazionicamera.png)
+
+:::{note}
+Partendo da un posizionamento nominale con inclinazione, altezza e posizionamento corretto al centro dell'area retroilluminata, si raccomanda di prevedere le seguenti regolazioni:
+
+Regolazione X/Y → ± 50mm
+Regolazione Z → ± 50mm
+Rotazione θ → ± 10°
+:::
 ---
 
 ## Montaggio Toplight
@@ -268,10 +299,35 @@ Se l'ordine include un Toplight (illuminatore dall'alto), questo deve essere mon
 :::{attention}
 Durante il montaggio, l'apparecchio deve essere spento e staccato dalla corrente.
 :::
+### Dimensioni Toplight 
+![Dimensioni Toplight](./img/toplight_dim.JPG)
+
+| Lunghezza x Larghezza (mm) | Altezza (mm) | Altezza con piastra di fissaggio (mm) | Diametro foro centrale | Superficie utile massima [A x B] | Perimetro utile massimo |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **A x B** | **C** | **C + 10 mm** | **D** | **–** | **–** |
+| 500x300 | 45 | 55 | 65 | 0,15 m² | 1,6 m |
+| 700x300 | 45 | 55 | 65 | 0,21 m² | 2 m |
+| 700x500 | 45 | 55 | 65 | 0,35 m² | 2,4 m |
+| 900x600 | 45 | 55 | 65 | 0,54 m² | 3 m |
+
 ### Posizionamento Toplight 
-![Posizone Toplight e Cam](./img/posizione_cam_TPL_B.png)
+Il toplight deve essere posizionato centralmente rispetto alla superficie utile del pannello luminoso,
+con l'ottica della telecamera montata all'interno del foro centrale, a filo con la superficie superiore del toplight.   
+Le frecce rosse indicano le viti di fissaggio delle ghiere dell'obiettivo, una per la regolazione del fuoco e una per la regolazione del diaframma. Come mostrato nella figura, il toplight deve essere montato in modo che le due viti restino accessibili dall'alto. 
+
+![Posizione Toplight e Cam](./img/posizione_cam_TPL_B.png)
+
+Il campo visivo della telecamera e il fascio luminoso del toplight (in verde) devono essere allineati concentricamente e perpendicolarmente rispetto all'area di visione sul FlexiBowl.    
+Come mostrato nelle tre viste (frontale, dall'alto e assonometrica), il toplight deve illuminare esattamente l'area inquadrata dalla telecamera, con entrambi i componenti centrati sull'asse ottico verticale del sistema.  
 
 ![Posizione Toplight Cam + FB](./img/posizioneTPL_giusta.png)
+
+Un posizionamento errato si verifica quando il toplight e la telecamera non sono centrati sull'area di visione del FlexiBowl.   
+Come illustrato (in rosso), due errori tipici sono:  
+- spostarsi in avanti o indietro rispetto all'area di visione.  
+- ruotare il toplight rispetto ad essa.   
+  
+In entrambi i casi, l'illuminazione risulta disassata e non perpendicolare, compromettendo la qualità dell'acquisizione.
 
 ![Posizione Toplight Cam + FB Sbagliata](./img/posizioneTPL_sbagliata.png)
 
@@ -402,12 +458,6 @@ Si raccomanda fortemente di schermare la cella robotica da:
 - Flash o luci intermittenti nell'area
 
 ```
----
-## Montaggio Camera e Toplight su Supporto ARS
-
-![Supporto con Cam e TPL](./img/tpl_cam_supporto1.png)
-
-
 ---
 
 ## Riferimenti correlati

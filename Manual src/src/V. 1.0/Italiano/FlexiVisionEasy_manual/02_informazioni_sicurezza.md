@@ -164,7 +164,9 @@ Se si riscontrano problemi:
 - NON firmare la ricevuta come "conforme"
 - Annotare i danni sul documento di trasporto
 - Fotografare eventuali danni evidenti
-- Contattare immediatamente il servizio assistenza ARS: [info@arsautomation.com](mailto:info@arsautomation.com)
+- Contattare immediatamente il servizio assistenza ARS: 
+    [service@arsautomation.com](mailto:service@arsautomation.com) 
+    [us.service@arsautomation.com](mailto:us.service@arsautomation.com) se si contatta dall'America
 ```
 
 ### Movimentazione e stoccaggio

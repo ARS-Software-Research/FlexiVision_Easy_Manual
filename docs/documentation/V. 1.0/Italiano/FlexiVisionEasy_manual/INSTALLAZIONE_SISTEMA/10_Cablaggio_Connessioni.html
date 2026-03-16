@@ -399,7 +399,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -415,6 +417,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cablaggio-illuminatore">Cablaggio illuminatore</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -448,7 +458,7 @@ tipo:<br />
 </tr>
 <tr class="row-odd"><td><p>Rete elettrica</p></td>
 <td><p>Robot</p></td>
-<td><p>Alimentazione 110/220 Vdc</p></td>
+<td><p>Alimentazione secondo le specifiche del robot in vostro possesso</p></td>
 </tr>
 <tr class="row-even"><td><p>Rete elettrica</p></td>
 <td><p>Camera</p></td>
@@ -531,6 +541,58 @@ tipo:<br />
 </tr>
 </tbody>
 </table>
+</div>
+<section id="cablaggio-illuminatore">
+<h2>Cablaggio illuminatore<a class="headerlink" href="#cablaggio-illuminatore" title="Link to this heading">#</a></h2>
+<p><img alt="Pin Toplight" src="../../_images/pin_toplight.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parametro</p></th>
+<th class="head"><p>Requisito / Azione</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Tensione</strong></p></td>
+<td><p>24V DC (±10%). Tensione minima di funzionamento: 20V DC sull’ingresso luce.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Connettore</strong></p></td>
+<td><p>M12 5 poli (T-coding).</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Pinout connettore</strong></p></td>
+<td><p>Pin 1: +24V (marrone) — Pin 3: GND (blu) — Pin 4: STROBE PNP (nero)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Modalità STROBE (PNP)</strong></p></td>
+<td><p>Da 5V a 24V per accensione al 100%. Da 0V a 1V per spegnimento al 100%.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Modalità CONTINUA</strong></p></td>
+<td><p>Pin 1 (+24V) e Pin 3 (GND) collegati; Pin 4 (PNP) collegato a Pin 1.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Caduta di tensione (cavo M12, 10m)</strong></p></td>
+<td><p>1.15V &#64; 5A — 2.3V &#64; 10A — 3.5V &#64; 15A — 4.6V &#64; 20A (max 20A)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Schermatura</strong></p></td>
+<td><p>Utilizzare cavi schermati per ridurre le interferenze elettromagnetiche (EMI).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Sicurezza elettrica</strong></p>
+<ul class="simple">
+<li><p>Rispettare le tensioni di alimentazione e i morsetti di connessione indicati.</p></li>
+<li><p>Non modificare né smontare il prodotto.</p></li>
+<li><p>Non collegare o pulire l’apparecchio quando è sotto tensione.</p></li>
+<li><p>Non guardare direttamente la sorgente luminosa.</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Per dettagli sui collegamenti elettrici, consultare la sezione <a class="reference internal" href="#"><span class="std std-doc">Cablaggio e Connessioni</span></a>.</p>
 </div>
 <br>
 <!-- Versions and languages set-up -->
@@ -795,6 +857,7 @@ ___\\ \\     // //___
 
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
+</section>
 
 
                 </article>
@@ -831,6 +894,21 @@ ___\\ \\     // //___
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cablaggio-illuminatore">Cablaggio illuminatore</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

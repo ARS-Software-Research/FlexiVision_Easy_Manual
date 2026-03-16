@@ -482,6 +482,46 @@ document.write(`
 </section>
 <section id="problemi-di-connessione-ethernet">
 <span id="troubleshooting-ethernet"></span><h2>Problemi di Connessione Ethernet<a class="headerlink" href="#problemi-di-connessione-ethernet" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Problema</p></th>
+<th class="head"><p>Possibili Cause</p></th>
+<th class="head"><p>Soluzioni</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>FlexiBowl non comunica con VisionController</strong></p></td>
+<td><p>• FlexiBowl non acceso (LED READY spento)<br />
+• Cavo Ethernet non collegato correttamente al FlexiBowl e/o al VisionController<br />
+• Cavo Ethernet danneggiato<br />
+• Indirizzo IP errato<br />
+• FlexiBowl e VisionController su subnet diverse<br />
+• Firewall blocca comunicazione<br />
+• Porta Ethernet VisionController guasta</p></td>
+<td><p>• Verificare LED READY acceso sul FlexiBowl<br />
+• Verificare connessione fisica cavo Ethernet su entrambi i lati<br />
+• Testare cavo con cable tester o sostituire<br />
+• Verificare configurazione IP in <a class="reference internal" href="#QUICKSTART/xx_FlexiBowl_Setup.md"><span class="xref myst">FlexiBowl Setup</span></a><br />
+• Configurare FlexiBowl e VisionController nella stessa rete (es: 192.168.1.x)<br />
+• Disabilitare temporaneamente firewall per test<br />
+• Provare altra porta Ethernet del VisionController</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Connessione intermittente</strong></p></td>
+<td><p>• Cavo troppo lungo (&gt; 100m)<br />
+• Connettore RJ45 danneggiato o mal crimpato<br />
+• Interferenze elettromagnetiche</p></td>
+<td><p>• Ridurre lunghezza cavo sotto 100m o usare switch intermedio<br />
+• Sostituire connettori o cavo completo<br />
+• Utilizzare cavo schermato (STP) lontano da fonti EMI</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="problemi-pneumatici-aria-compressa">
 <span id="troubleshooting-pneumatica"></span><h2>Problemi Pneumatici (Aria Compressa)<a class="headerlink" href="#problemi-pneumatici-aria-compressa" title="Link to this heading">#</a></h2>

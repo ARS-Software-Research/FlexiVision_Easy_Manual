@@ -526,8 +526,8 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">start_Locator</span></code></p></td>
-<td><p>Avvia il processo di localizzazione dei pezzi. Richiama automaticamente la routine di manipolazione FlexiBowl se non ci sono pezzi prelevabili</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Pattern_1;x;y;r</span></code></p></td>
+<td><p>Avvia il processo di localizzazione dei pezzi. Se non sono presenti pezzi prelevabili, richiama automaticamente la routine di movimentazione del FlexiBowl.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Pattern_n;x;y;r</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">stop_Locator</span></code></p></td>
 <td><p>Ferma il processo di localizzazione</p></td>
@@ -535,11 +535,11 @@ document.write(`
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">turn_Locator</span></code></p></td>
 <td><p>Se nessun pezzo è stato prelevato, fa ruotare il FlexiBowl e riavvia la ricerca</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Pattern_1;x;y;r</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Pattern_n;x;y;r</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">test_Locator</span></code></p></td>
 <td><p>Avvia la localizzazione senza attivare il FlexiBowl (solo acquisizione immagine)</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Pattern_1;x;y;r</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Pattern_n;x;y;r</span></code>/ Nessuno</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">state_Locator</span></code></p></td>
 <td><p>Restituisce lo stato diagnostico del localizzatore</p></td>

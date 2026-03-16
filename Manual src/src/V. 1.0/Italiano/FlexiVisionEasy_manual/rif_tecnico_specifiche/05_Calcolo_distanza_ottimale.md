@@ -19,7 +19,7 @@ La scelta della lente è strettamente dipendente dalla distanza di montaggio rac
 ```{note}
 **Lente già inclusa**
 
-La lente appropriata per il modello FlexiBowl specificato nell'ordine è sempre inclusa nel pacchetto FlexiVision e viene pre-montata sulla camera. Non è necessario acquistarla separatamente.
+La lente appropriata per il modello FlexiBowl specificato nell'ordine è sempre inclusa nel pacchetto FlexiVision e viene fornita in un imballo separato rispetto alla camera. Non è necessario acquistarla separatamente.
 ```
 
 ### Schema distanze e campo visivo
@@ -77,7 +77,7 @@ Rispettare sempre le distanze indicate in tabella durante il montaggio meccanico
 ```
 ### Posizionamento Camera 
 
-**Configurazione corretta.** La camera deve essere posizionata centralmente rispetto all'area di visione del FlexiBowl (zona backlight). In questo modo il campo visivo (indicato in verde) copre simmetricamente l'intera area di lavoro, garantendo il corretto funzionamento del sistema di visione.  
+**Configurazione corretta.** La camera deve essere posizionata centralmente e con il medesimo orientamento angolare all’area di visione del FlexiBowl (zona backlight). In questo modo il campo visivo (indicato in verde) copre simmetricamente l’intera area di lavoro, garantendo il corretto funzionamento del sistema di visione.  
 
 ```{image} ../rif_tecnico_specifiche/img/config_giusta.JPG
 :alt: Distanza Di Lavoro
@@ -101,7 +101,7 @@ Rispettare sempre le distanze indicate in tabella durante il montaggio meccanico
 
 ## Posizionamento TopLight 
 
-Se il sistema include un TopLight (illuminatore dall'alto), il suo posizionamento deve essere coordinato con quello della camera per garantire un'illuminazione uniforme.
+Se il sistema include un TopLight (illuminatore dall’alto), il suo posizionamento deve avere il medesimo orientamento angolare della camera per garantire un’illuminazione uniforme. Deve essere installato su un supporto meccanicamente indipendente dal supporto della telecamera, tale che, per rimuovere o sostituire il sistema di illuminazione non debba essere necessario allentare o smontare la telecamera.
 
 ```{list-table}
 :header-rows: 1
@@ -114,17 +114,18 @@ Se il sistema include un TopLight (illuminatore dall'alto), il suo posizionament
 * - **Posizione rispetto alla camera**
   - Concentrica (stesso asse ottico della camera)
 * - **Orientamento**
-  - Parallelo alla superficie del FlexiBowl
+  - Parallelo alla superficie del FlexiBowl e medesimo orientamento angolare  della telecamera (Lato lungo area di visione - Lato lungo di illuminazione)
 * - **Altezza relativa camera-TopLight**
-  - TopLight leggermente più alto della camera (circa 50-100 mm)
+  - Ottica di visione a filo della superficie supperiore Top Light  (Lasciare libero accesso alle ghiere di regolazione dell'ottica di visione)
+    :::{figure} ../rif_tecnico_specifiche/img/posizione_cam_TPL_B.png
+    :alt: Distanza Di Lavoro
+    :width: 80%
+    :align: center
+    :::
 ```
 
 ```{tip}
-Per ottenere la migliore uniformità di illuminazione:
-1. Posizionare il TopLight alla stessa distanza della camera o leggermente più lontano
-2. Mantenere il TopLight concentrico rispetto al FlexiBowl per evitare ombre asimmetriche
-3. Durante la fase di test, acquisire immagini e verificare l'uniformità luminosa
-4. Se necessario, regolare la distanza o aggiungere diffusori per eliminare hotspot
+Per ottenere la migliore uniformità di illuminazioneseguire le indicazioni appena riportate 
 ```
 
 ### Schema posizionamento integrato

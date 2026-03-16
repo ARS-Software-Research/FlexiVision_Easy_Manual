@@ -6,6 +6,7 @@ Il Toplight è un sistema di illuminazione dall'alto che illumina la superficie 
 I Toplight disponibli sono: 
 
 ```{dropdown} TopLight 500x300 - White 
+Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 200, FlexiBowl 350, FlexiBowl 500
 ![Toplight](./img/toplight_CM002316.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -101,6 +102,7 @@ I Toplight disponibli sono:
 
 ```
 ```{dropdown} TopLight 500x300 - Red  
+Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 200, FlexiBowl 350, FlexiBowl 500
 ![Toplight](./img/toplight_CM002316.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -198,6 +200,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 500x300 - Infrared
+Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 200, FlexiBowl 350, FlexiBowl 500
 ![Toplight](./img/toplight_CM002316.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -294,7 +297,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 700x300 - White
-
+Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBowl 800
 ![Toplight](./img/toplight_CM002317.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -390,7 +393,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 700x300 - Red
-
+Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBowl 800
 ![Toplight](./img/toplight_CM002317.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -486,7 +489,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 700x300 - Infrared
-
+Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBowl 800
 ![Toplight](./img/toplight_CM002317.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -582,7 +585,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 700x500 - White
-
+Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBowl 800
 ![Toplight](./img/toplight_CM002318.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -678,7 +681,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 700x500 - Red
-
+Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBowl 800
 ![Toplight](./img/toplight_CM002318.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -774,7 +777,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 700x500 - Infrared
-
+Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBowl 800
 ![Toplight](./img/toplight_CM002318.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -870,7 +873,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 900x600 - White
-
+Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
 ![Toplight](./img/toplight_CM002319.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -965,7 +968,7 @@ I Toplight disponibli sono:
 :::
 ```
 ```{dropdown} TopLight 900x600 - Red
-
+Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
 ![Toplight](./img/toplight_CM002319.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -1061,7 +1064,7 @@ I Toplight disponibli sono:
 ```
 
 ```{dropdown} TopLight 900x600 - Infrared
-
+Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
 ![Toplight](./img/toplight_CM002319.JPG)
 
 | Lunghezza | Larghezza | Altezza | Altezza con piastra di fissaggio | Diametro foro centrale | Superficie utile max [AxB] | Perimetro utile max |
@@ -1274,36 +1277,16 @@ La scelta tra backlight e toplight influenza significativamente il riconosciment
 - **Backlight**: Ottimo per profili/sagome, pezzi appaiono come silhouette scure su sfondo chiaro
 - **Toplight**: Necessario per riconoscere dettagli superficiali, texture, feature interne
 
-La calibrazione deve essere eseguita con lo stesso tipo di illuminazione che verrà utilizzato durante il picking in produzione.
+La calibrazione, quando si utilizza una griglia di calibrazione ARS, dev'essere eseguita utilizzando l'illuminatore backlight e spegnere il toplight se presente.
 ```
 ---
 (filtroIR)=
 ## Filtro IR
 
-Il filtro IR è un accessorio ottico da applicare all'obiettivo della camera che blocca la luce visibile lasciando passare esclusivamente la radiazione infrarossa. È necessario solo nel caso in cui si utilizzi un Backlight IR (850 nm): senza filtro, la camera riceverebbe sia luce visibile che infrarossa, compromettendo il contrasto e la qualità del riconoscimento.
-
+Il filtro IR è un accessorio ottico da applicare all’obiettivo della camera che blocca la luce visibile lasciando passare esclusivamente la radiazione infrarossa. È necessario solo nel caso in cui si utilizzi un illuminatore IR (850 nm): senza filtro, la camera riceverebbe sia luce visibile che infrarossa, compromettendo il contrasto e la qualità del riconoscimento.
 
 
 ---
-(supporto)=
-## Supporto per Camera e Toplight
-
-Il supporto per camera e toplight è una struttura regolabile in acciaio inox e alluminio che consente di posizionare con precisione la telecamera e il sistema di illuminazione sopra il FlexiBowl. Grazie agli ampi intervalli di regolazione verticale e radiale, permette di adattare il setup ottico a diverse configurazioni di applicazione senza richiedere modifiche strutturali.
-
-![Cam Top Stand](img/supporto.JPG)
-
-| Voce | GM000632 |
-| -- | -- |
-| Compatibilità | Camera e Toplight 200/350/500 – Toplight XL 650/800 – Toplight XXL 650/800 |
-| Intervallo posizionamento verticale (centro staffa camera dalla flangia base) | da 300 mm a 1300 mm |
-| Intervallo posizionamento radiale (centro staffa camera dal centro palo) | da 150 mm a 650 mm |
-| Peso | 14 kg |
-| Materiali | Palo in acciaio inox + profili in alluminio per struttura di supporto toplight e camera |
-| Predisposizione fissaggio | N°4 viti M10 su diametro Ø140 mm |
-
-### Dimensioni 
-
-![Cam Top Stand](img/dim_supporto.png)
 
 
 
