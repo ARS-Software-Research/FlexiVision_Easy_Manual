@@ -220,6 +220,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -273,7 +274,6 @@
 <li class="toctree-l2"><a class="reference internal" href="26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
 </ul>
 </details></li>
-
 </ul>
 
     </div>
@@ -399,7 +399,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -415,6 +417,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pattern-non-rilevato"><strong>Pattern non rilevato</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-sempre-bad-o-acceptable"><strong>Calibrazione sempre “Bad” o “Acceptable”</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errori-dopo-cambio-illuminazione"><strong>Errori dopo cambio illuminazione</strong></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -426,6 +438,50 @@ document.write(`
                   
   <section id="calibrazione-camera">
 <span id="troubleshooting-calib-cam"></span><h1>Calibrazione Camera<a class="headerlink" href="#calibrazione-camera" title="Link to this heading">#</a></h1>
+<section id="pattern-non-rilevato">
+<h2><strong>Pattern non rilevato</strong><a class="headerlink" href="#pattern-non-rilevato" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Errore: “Unable to detect calibration pattern”</strong></p>
+<p>Causa: Il software non riesce a identificare il pattern della griglia.</p>
+<p><strong>Soluzioni</strong>:</p>
+<ul class="simple">
+<li><p>Aumentare il contrasto (regolare esposizione o illuminazione)</p></li>
+<li><p>Verificare che l’intera griglia sia visibile nell’immagine</p></li>
+<li><p>Migliorare la messa a fuoco</p></li>
+<li><p>Pulire la superficie della griglia (polvere o impronte possono interferire)</p></li>
+<li><p>Verificare che la griglia sia quella corretta (quadrati, non cerchi o altri pattern)</p></li>
+</ul>
+</div>
+</section>
+<section id="calibrazione-sempre-bad-o-acceptable">
+<h2><strong>Calibrazione sempre “Bad” o “Acceptable”</strong><a class="headerlink" href="#calibrazione-sempre-bad-o-acceptable" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Qualità calibrazione insufficiente</strong></p>
+<p>Se nonostante le regolazioni la calibrazione rimane sotto “Excellent”:</p>
+<ol class="arabic simple">
+<li><p>Verificare la distanza di lavoro camera-FlexiBowl (deve essere quella calcolata)</p></li>
+<li><p>Controllare cje la camera sia parallela rispetto al piano del FlexiBowl (deve essere perfettamente orizzontale)</p></li>
+<li><p>Assicurarsi che la camera sia stabile (no vibrazioni durante acquisizione)</p></li>
+<li><p>Verificare che l’obiettivo sia avvitato completamente</p></li>
+</ol>
+<p>Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare <a class="reference internal" href="#09_Installazione_Meccanica.md"><span class="xref myst">Installazione Meccanica</span></a> per revisione.</p>
+</div>
+</section>
+<section id="errori-dopo-cambio-illuminazione">
+<h2><strong>Errori dopo cambio illuminazione</strong><a class="headerlink" href="#errori-dopo-cambio-illuminazione" title="Link to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Ri-calibrazione dopo cambio backlight/toplight</strong></p>
+<p>Se si passa da backlight a toplight (o viceversa):</p>
+<ol class="arabic simple">
+<li><p>La calibrazione geometrica rimane valida (non serve rifarla)</p></li>
+<li><p>È necessario solo regolare l’esposizione della camera per il nuovo tipo di illuminazione</p></li>
+<li><p>Acquisire un’immagine di test per verificare che il pattern sia ancora ben visibile</p></li>
+</ol>
+<p>In generale, è consigliabile decidere fin dall’inizio il tipo di illuminazione da utilizzare e mantenere quella configurazione.</p>
+</div>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -440,33 +496,28 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>Calibrazione fallisce (errore software)</strong></p></td>
-<td><p>• Target calibrazione non rilevato correttamente</p>
+<td><p>• Griglia di calibrazione non rilevato correttamente</p>
 <p>• Illuminazione insufficiente/eccessiva</p>
-<p>• Target calibrazione danneggiato o sporco</p>
-<p>• Distanza camera non corretta</p>
+<p>• Griglia calibrazione danneggiato o sporco</p>
 </td>
 <td><p>• Posizionare target piano e ben visibile</p>
 <p>• Regolare esposizione camera per visualizzare bene il target</p>
-<p>• Utilizzare target calibrazione pulito e integro</p>
-<p>• Verificare distanza di lavoro corretta (950-1000mm)</p>
+<p>• Utilizzare Griglia calibrazione pulito e integro</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Errore di calibrazione troppo elevato</strong></p></td>
 <td><p>• Camera non perfettamente ortogonale alla superficie</p>
-<p>• Target calibrazione non piano</p>
+<p>• Griglia calibrazione non piano</p>
 <p>• Distorsione ottica eccessiva</p>
-<p>• Lente non corretta per l’applicazione</p>
 </td>
 <td><p>• Verificare ortogonalità camera con livella (tolleranza ±1°)</p>
 <p>• Posizionare target su superficie rigida e piana</p>
 <p>• Verificare qualità ottica lente, pulire o sostituire</p>
-<p>• Consultare specifiche lente per compatibilità applicazione</p>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Coordinate reali non corrispondono a quelle misurate</strong></p></td>
-<td><p>• Fattore di scala errato post-calibrazione</p>
+<td><p>• Fattore di scala errato (Tile Size errato)</p>
 <p>• Camera spostata dopo calibrazione</p>
-<p>• Target calibrazione con dimensioni non standard</p>
 </td>
 <td><p>• Ripetere calibrazione completa</p>
 <p>• Fissare saldamente camera per evitare spostamenti</p>
@@ -475,12 +526,10 @@ document.write(`
 </tr>
 <tr class="row-odd"><td><p><strong>Calibrazione valida solo al centro immagine</strong></p></td>
 <td><p>• Distorsione ottica periferica</p>
-<p>• Lente di bassa qualità</p>
 <p>• Calibrazione con troppo pochi punti</p>
 </td>
 <td><p>• Utilizzare lente di qualità superiore a bassa distorsione</p>
-<p>• Ripetere calibrazione acquisendo più posizioni del target</p>
-<p>• Verificare parametri avanzati calibrazione</p>
+<p>• Verificare che la distanza di lavoro sia corretta</p>
 </td>
 </tr>
 </tbody>
@@ -749,6 +798,7 @@ ___\\ \\     // //___
 
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></section>
+</section>
 
 
                 </article>
@@ -785,6 +835,23 @@ ___\\ \\     // //___
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pattern-non-rilevato"><strong>Pattern non rilevato</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-sempre-bad-o-acceptable"><strong>Calibrazione sempre “Bad” o “Acceptable”</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errori-dopo-cambio-illuminazione"><strong>Errori dopo cambio illuminazione</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -2,6 +2,15 @@
 
 (troubleshooting_Nuova_Ricetta)=
 ## Troubleshooting per la sezione Creare una Nuova Ricetta 
+```{warning}
+**Errore durante salvataggio**
+
+Se il salvataggio della ricetta fallisce:
+- Verificare che ci sia sufficiente spazio sul disco 
+- Assicurarsi che il nome non contenga caratteri non ammessi (`/ \ : * ? " < > |`)
+- Verificare che non esista già una ricetta con lo stesso nome
+- Verificare di avere permessi di scrittura sulla cartella del software
+```
 
 ```{list-table}
 :header-rows: 1
@@ -11,31 +20,13 @@
   - Possibili Cause
   - Soluzioni
 * - **Impossibile creare nuova ricetta**
-  - • Ricetta base non salvata
-    
-    • Permessi insufficienti cartella ricette
-    
-    • Disco pieno
+  - • Disco pieno
     
     • Nome ricetta contiene caratteri non ammessi
-  - • Salvare ricetta base prima di crearne di nuove
-    
-    • Verificare permessi scrittura su cartella
-    
-    • Liberare spazio su disco
+  - • Liberare spazio su disco
     
     • Evitare caratteri speciali nel nome (/ \ : * ? " < > |)
-* - **Ricetta creata non appare nell'elenco**
-  - • Salvataggio non completato
-    
-    • File ricetta corrotto
-    
-    • Filtro di visualizzazione attivo
-  - • Ripetere creazione e salvataggio ricetta
-    
-    • Verificare integrità file in cartella ricette
-    
-    • Disabilitare eventuali filtri nella lista ricette
+
 * - **Ricetta salvata ma configurazioni perse**
   - • Salvataggio non confermato correttamente
     
@@ -50,12 +41,8 @@
 * - **Impossibile caricare ricetta creata**
   - • File ricetta corrotto
     
-    • Versione software incompatibile
-    
     • Percorso file cambiato
   - • Ripristinare da backup se disponibile
-    
-    • Aggiornare software alla versione corretta
     
     • Verificare percorso cartella ricette in configurazione
 * - **Ricetta caricata ha configurazioni errate**
@@ -80,21 +67,13 @@
 * - Problema
   - Possibili Cause
   - Soluzioni
-* - **Impossibile abilitare modello**
-  - • Ricetta non caricata
-    
-    • Limite massimo modelli raggiunto (8 per ricetta)
-    
-    • Slot modello già occupato
-  - • Caricare ricetta corretta
-    
-    • Disabilitare modelli non utilizzati o creare nuova ricetta
-    
-    • Selezionare slot modello libero
+
 * - **Grab Train Image acquisisce immagine nera**
   - • Camera non connessa
     
     • Toplight spento
+
+    • Backlight spento 
     
     • Esposizione troppo bassa
     
@@ -102,6 +81,8 @@
   - • Verificare connessione camera in Camera Setup
     
     • Accendere toplight e verificare alimentazione
+
+    • Controllare che light on in Configurazione FlexiBowl sia spuntato
     
     • Aumentare esposizione camera
     
@@ -109,95 +90,54 @@
 * - **ROI non si sposta o ridimensiona**
   - • Immagine non acquisita
     
-    • Modalità zoom attiva blocca editing
-    
     • Software bloccato
   - • Eseguire Grab Train Image prima
     
-    • Uscire da modalità zoom
-    
     • Riavviare software
-* - **Origine modello non posizionabile**
-  - • ROI non definito
-    
-    • Click non registrato
-    
-    • Bug software
-  - • Definire prima ROI attorno al componente
-    
-    • Fare click deciso sul punto desiderato
-    
-    • Riavviare software e riprovare
+
 * - **Apply Train non genera modello**
-  - • Feature Threshold non impostato
-    
-    • ROI troppo piccolo
+  - • ROI troppo piccolo
     
     • Immagine senza contrasto sufficiente
-    
-    • Modello non nominato
-  - • Impostare Feature Threshold (iniziare con 0.5)
-    
-    • Ingrandire ROI per includere tutto il componente
+  
+  - • Ingrandire ROI per includere tutto il componente
     
     • Migliorare contrasto/illuminazione
-    
-    • Inserire nome modello
+
 * - **Modello creato include trama superficie**
   - • Feature Threshold troppo basso
-    
-    • Superficie grip troppo texturizzata
     
     • Contrasto insufficiente componente-superficie
   - • Aumentare Feature Threshold (es: da 0.3 a 0.6)
     
-    • Sostituire superficie grip con una più uniforme
-    
     • Migliorare illuminazione per aumentare contrasto
-* - **Modello creato ha troppo poche linee**
+* - **Modello creato ha troppe poche linee**
   - • Feature Threshold troppo alto
     
-    • Componente con geometria troppo semplice
-    
     • Immagine sfocata
+
+    • Immagine senza contrasto sufficiente
   - • Diminuire Feature Threshold (es: da 0.8 a 0.5)
     
-    • Verificare che il componente abbia dettagli sufficienti
-    
     • Verificare fuoco camera e correggere se necessario
-* - **Modello include simulatori ingombro pinza**
-  - • Simulatori troppo vicini al componente
-    
-    • ROI troppo grande
-    
-    • Feature Threshold troppo basso
-  - • Riposizionare simulatori con margine 2-3mm maggiore
-    
-    • Ridurre ROI per escludere simulatori
-    
-    • Aumentare Feature Threshold
+
+     • Migliorare contrasto/illuminazione
+
 * - **Modello include riflessi luce**
   - • Feature Threshold troppo basso
     
     • Illuminazione non uniforme
     
-    • Superficie componente molto riflettente
   - • Aumentare Feature Threshold
     
     • Regolare posizione/angolo toplight
-    
-    • Ridurre potenza toplight
-    
-    • Utilizzare filtro polarizzatore se disponibile
+
+
 * - **Impossibile nominare modello**
-  - • Campo nome bloccato
-    
-    • Nome contiene caratteri non ammessi
+  - • Nome contiene caratteri non ammessi
     
     • Lunghezza nome eccessiva
-  - • Cliccare nel campo nome per attivarlo
-    
-    • Usare solo lettere, numeri, underscore e trattini
+  - • Usare solo lettere, numeri, underscore e trattini
     
     • Limitare nome a max 50 caratteri
 ```
@@ -211,17 +151,7 @@
 * - Problema
   - Possibili Cause
   - Soluzioni
-* - **Region Search non modificabile**
-  - • Modello non completato correttamente
-    
-    • Immagine non caricata
-    
-    • Software in modalità visualizzazione
-  - • Completare training modello prima
-    
-    • Acquisire nuova immagine
-    
-    • Verificare di essere in modalità edit
+
 * - **Test non rileva alcun componente**
   - • Accept Threshold troppo alto
     
@@ -242,7 +172,7 @@
     
     • Modello troppo semplice/generico
     
-    • Componenti molto simili ma diversi presenti
+    • Sono presenti componenti molto simili ma che hanno molte differenze allo stesso tempo
   - • Aumentare Accept Threshold (es: da 0.70 a 0.85)
     
     • Rifare modello con Feature Threshold più basso (più dettagliato)
@@ -263,17 +193,7 @@
     • Scartare componenti danneggiati
     
     • Rifare modello con Feature Threshold più alto (meno dettagliato)
-* - **Score componente di riferimento non è il più alto**
-  - • Altri componenti più fedeli al modello
-    
-    • Componente di riferimento spostato
-    
-    • Calibrazione errata
-  - • Normale se altri componenti sono in posizione migliore
-    
-    • Verificare che componente riferimento non sia stato urtato
-    
-    • Ripetere calibrazione se necessario
+
 * - **Results Panel vuoto anche con componenti visibili**
   - • Nessun componente supera Accept Threshold
     
@@ -286,27 +206,16 @@
     
     • Cliccare pulsante Test
 * - **Coordinate X,Y,Rotation non corrette**
-  - • Calibrazione camera non eseguita
+  - • Calibrazione camera non eseguita o eseguita male 
     
     • Sistema di riferimento errato
     
     • Camera spostata dopo calibrazione
-  - • Eseguire calibrazione camera completa
+  - • Eseguire calibrazione camera completa o rivedere quella corrente 
     
     • Verificare origine sistema coordinate
     
     • Ripetere calibrazione camera
-* - **Componente di riferimento perso/spostato**
-  - • Urtato durante pulizia scena
-    
-    • Vibrazione accidentale FlexiBowl
-    
-    • Soffio d'aria attivato
-  - • Riposizionare componente usando coordinate salvate
-    
-    • Fare attenzione durante manipolazioni
-    
-    • Disattivare air-blow durante setup
 ```
 (troubleshooting_istogrammi)=
 ## Troubleshooting per la sezione Istogrammi 
@@ -319,7 +228,7 @@
   - Possibili Cause
   - Soluzioni
 * - **Impossibile abilitare istogramma**
-  - • Modello non completato
+  - • Modello non riconosciuto
     
     • Limite massimo istogrammi raggiunto (8 per modello)
     
@@ -329,18 +238,8 @@
     • Disabilitare istogrammi non utilizzati
     
     • Selezionare slot libero
-* - **Riquadro istogramma non spostabile**
-  - • Istogramma non abilitato
-    
-    • Modalità test attiva
-    
-    • Software bloccato
-  - • Cliccare Enable Histogram prima
-    
-    • Uscire da modalità test
-    
-    • Riavviare software
-* - **AUTO non calcola Mean e Std Dev**
+
+* - **AUTO non calcola corretttamente**
   - • Area istogramma troppo piccola
     
     • Istogramma fuori dall'immagine
@@ -382,14 +281,10 @@
     
     • Illuminazione instabile
     
-    • Vibrazioni durante acquisizione
-    
     • Soglia troppo stretta
   - • Ridurre area al minimo necessario
     
     • Stabilizzare illuminazione
-    
-    • Inserire pause stabilizzazione
     
     • Ripetere calibrazione AUTO
 * - **Istogramma non triggera quando dovrebbe**
@@ -397,19 +292,13 @@
     
     • Soglia troppo permissiva
     
-    • Componenti simili a superficie
   - • Ingrandire area istogramma
     
     • Ripetere calibrazione AUTO con maggior contrasto
     
-    • Migliorare illuminazione
 * - **Impossibile creare secondo istogramma per pinza**
-  - • Primo istogramma non completato
-    
-    • Slot istogramma sbagliato selezionato
-  - • Completare e salvare primo istogramma
-    
-    • Tornare all'elenco e selezionare Histogram 2
+  -  • Slot istogramma sbagliato selezionato
+  -  • Tornare all'elenco e selezionare Histogram 2
 * - **Test multipli istogrammi non funziona**
   - • Non tutti gli istogrammi abilitati
     

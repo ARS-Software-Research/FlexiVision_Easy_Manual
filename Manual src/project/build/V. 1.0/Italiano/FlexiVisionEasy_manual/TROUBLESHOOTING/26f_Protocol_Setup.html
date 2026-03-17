@@ -220,6 +220,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -273,7 +274,6 @@
 <li class="toctree-l2"><a class="reference internal" href="26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
 </ul>
 </details></li>
-
 </ul>
 
     </div>
@@ -426,64 +426,6 @@ document.write(`
                   
   <section id="protocol-setup">
 <span id="troubleshooting-protocol-setup"></span><h1>Protocol Setup<a class="headerlink" href="#protocol-setup" title="Link to this heading">#</a></h1>
-<div class="pst-scrollable-table-container"><table class="table">
-<colgroup>
-<col style="width: 30.0%" />
-<col style="width: 35.0%" />
-<col style="width: 35.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Problema</p></th>
-<th class="head"><p>Possibili Cause</p></th>
-<th class="head"><p>Soluzioni</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Protocollo non compatibile con robot</strong></p></td>
-<td><p>• Protocollo selezionato errato</p>
-<p>• Versione firmware robot non supportata</p>
-<p>• Configurazione protocollo non standard</p>
-</td>
-<td><p>• Verificare protocollo supportato dal robot (documentazione robot)</p>
-<p>• Aggiornare firmware robot se necessario</p>
-<p>• Contattare supporto per protocolli custom</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Dati inviati non interpretati correttamente dal robot</strong></p></td>
-<td><p>• Formato dati non corretto</p>
-<p>• Ordine coordinate errato</p>
-<p>• Unità di misura non corrispondenti</p>
-<p>• Separatore decimale diverso (punto vs virgola)</p>
-</td>
-<td><p>• Verificare formato stringa dati in Protocol Setup</p>
-<p>• Configurare ordine coordinate secondo robot (XYZ vs ZYX, etc.)</p>
-<p>• Verificare unità (mm vs pollici)</p>
-<p>• Impostare separatore decimale corretto (tipicamente punto)</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Robot riceve dati ma non esegue movimento</strong></p></td>
-<td><p>• Programma robot non in ascolto</p>
-<p>• Flag di acknowledge non gestito</p>
-<p>• Robot in errore o modalità manuale</p>
-</td>
-<td><p>• Avviare programma socket server sul robot</p>
-<p>• Implementare gestione acknowledge in programma robot</p>
-<p>• Verificare stato robot e portare in automatico</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Perdita di pacchetti dati</strong></p></td>
-<td><p>• Connessione TCP/IP instabile</p>
-<p>• Buffer overflow robot</p>
-<p>• Timeout troppo basso</p>
-</td>
-<td><p>• Stabilizzare connessione Ethernet</p>
-<p>• Aumentare dimensione buffer robot</p>
-<p>• Incrementare valore timeout</p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
 <br>
 <!-- Versions and languages set-up -->
 <style>

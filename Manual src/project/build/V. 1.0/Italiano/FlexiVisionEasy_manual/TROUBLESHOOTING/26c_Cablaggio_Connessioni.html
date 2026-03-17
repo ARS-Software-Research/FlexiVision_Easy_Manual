@@ -220,6 +220,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -273,7 +274,6 @@
 <li class="toctree-l2"><a class="reference internal" href="26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
 </ul>
 </details></li>
-
 </ul>
 
     </div>
@@ -427,7 +427,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-pneumatici-aria-compressa">Problemi Pneumatici (Aria Compressa)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-connessione-camera">Problemi di Connessione Camera</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-connessione-toplight">Problemi di Connessione Toplight</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-cpnfigurazioni-multi-dispositivo">Problemi Cpnfigurazioni Multi-Dispositivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-configurazioni-multi-dispositivo">Problemi Configurazioni Multi-Dispositivo</a></li>
 </ul>
             </nav>
         </div>
@@ -682,8 +682,8 @@ document.write(`
 </table>
 </div>
 </section>
-<section id="problemi-cpnfigurazioni-multi-dispositivo">
-<span id="troubleshooting-multi"></span><h2>Problemi Cpnfigurazioni Multi-Dispositivo<a class="headerlink" href="#problemi-cpnfigurazioni-multi-dispositivo" title="Link to this heading">#</a></h2>
+<section id="problemi-configurazioni-multi-dispositivo">
+<span id="troubleshooting-multi"></span><h2>Problemi Configurazioni Multi-Dispositivo<a class="headerlink" href="#problemi-configurazioni-multi-dispositivo" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -698,40 +698,27 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>Sistema con 2-3 FlexiBowl: solo uno comunica</strong></p></td>
-<td><p>• Indirizzi IP duplicati</p>
-<p>• FlexiBowl sullo stesso hub Ethernet</p>
-<p>• Cavi incrociati</p>
-<p>• Switch Ethernet insufficiente</p>
-</td>
-<td><p>• Assegnare IP univoci a ogni FlexiBowl (es: 192.168.1.10, .11, .12)</p>
-<p>• Collegare ogni FlexiBowl a porta dedicata VisionController</p>
-<p>• Verificare corretto cablaggio stella (no daisy-chain)</p>
-<p>• Utilizzare switch managed per configurazione avanzata</p>
-</td>
+<td><p>• FlexiBowl spenti
+• Indirizzi IP duplicati
+• Cavi incrociati</p></td>
+<td><p>• Controllare che il FlexiBowl sia acceso
+• Assegnare IP univoci a ogni FlexiBowl (es: 192.168.1.10, .11, .12)
+• Verificare corretto cablaggio stella (no daisy-chain)</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Sistema con 2-3 camere: solo una acquisisce</strong></p></td>
-<td><p>• Porte POE insufficienti su VisionController</p>
-<p>• Potenza POE totale superata</p>
-<p>• Indirizzi IP camere in conflitto</p>
-<p>• Configurazione software non corretta</p>
-</td>
-<td><p>• Verificare numero porte POE disponibili, aggiungere switch POE se necessario</p>
-<p>• Calcolare potenza POE totale richiesta vs disponibile</p>
-<p>• Configurare IP statico univoco per ogni camera</p>
-<p>• Abilitare tutte le camere in <a class="reference internal" href="#QUICKSTART/xx_Camera_Setup.md"><span class="xref myst">Camera Setup</span></a></p>
-</td>
+<td><p>• Alimentazione non sufficiente
+• Indirizzi IP camere in conflitto</p></td>
+<td><p>• Controllare che l’alimentazione sia compresa fra 6 - 26 V
+• Configurare IP statico univoco per ogni camera
+• Abilitare tutte le camere in <a class="reference internal" href="#QUICKSTART/xx_Camera_Setup.md"><span class="xref myst">Camera Setup</span></a></p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Sistema con 2-3 tramogge: controllo errato</strong></p></td>
-<td><p>• Tramogge non abilitate individualmente in software</p>
-<p>• Cablaggio pneumatico incrociato</p>
-<p>• Comandi elettrici sovrapposti</p>
-<p>• Aree di controllo sovrapposte</p>
-</td>
-<td><p>• Abilitare ogni tramoggia in <a class="reference internal" href="#SETUP/xx_Hopper_Setup.md"><span class="xref myst">Hopper Setup</span></a></p>
-<p>• Verificare schema pneumatico, ogni tramoggia deve avere linea dedicata</p>
-<p>• Controllare cablaggio elettrovalvole</p>
-<p>• Definire aree di controllo separate per ogni tramoggia</p>
-</td>
+<td><p>• Tramogge non abilitate individualmente in software
+• Alimentazione errata
+• Contatto al robot errato</p></td>
+<td><p>• Abilitare ogni tramoggia in <a class="reference internal" href="#SETUP/xx_Hopper_Setup.md"><span class="xref myst">Hopper Setup</span></a>
+• Controllare alimentazione
+• Controllare contatto al robot</p></td>
 </tr>
 </tbody>
 </table>
@@ -1051,7 +1038,7 @@ ___\\ \\     // //___
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-pneumatici-aria-compressa">Problemi Pneumatici (Aria Compressa)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-connessione-camera">Problemi di Connessione Camera</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-di-connessione-toplight">Problemi di Connessione Toplight</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-cpnfigurazioni-multi-dispositivo">Problemi Cpnfigurazioni Multi-Dispositivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-configurazioni-multi-dispositivo">Problemi Configurazioni Multi-Dispositivo</a></li>
 </ul>
   </nav></div>
 

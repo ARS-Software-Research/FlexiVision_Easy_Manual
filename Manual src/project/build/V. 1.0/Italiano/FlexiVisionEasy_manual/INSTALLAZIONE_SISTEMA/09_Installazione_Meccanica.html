@@ -220,6 +220,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -273,7 +274,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
 </ul>
 </details></li>
-
 </ul>
 
     </div>
@@ -788,6 +788,17 @@ Questa flessibilità è particolarmente utile durante la calibrazione iniziale e
 <li><p>Coppia di serraggio: 0.5 Nm (non serrare eccessivamente per evitare deformazioni)</p></li>
 </ul>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Regolazione della posizione della camera</strong></p>
+<p>Per permettere aggiustamenti futuri ed evitare problemi di allineamento, progettare il supporto meccanico con possibilità di microregolazione su tutti gli assi:</p>
+<ul class="simple">
+<li><p><strong>Asse Z (altezza)</strong>: -10 mm / +30 mm</p></li>
+<li><p><strong>Asse X (sinistra-destra)</strong>: ±10 mm</p></li>
+<li><p><strong>Asse Y (avanti-indietro)</strong>: ±10 mm</p></li>
+</ul>
+<p>Un supporto con viti serrate definitivamente senza possibilità di regolazione rende impossibile correggere la posizione della camera dopo il montaggio iniziale.</p>
+</div>
 </section>
 <section id="verifica-montaggio-lente">
 <h3>Verifica montaggio lente<a class="headerlink" href="#verifica-montaggio-lente" title="Link to this heading">#</a></h3>
@@ -817,6 +828,16 @@ Il sistema Flexibowl non genera vibrazioni; tuttavia, nelle linee automatizzate 
 <li><p>utilizzare preferibilmente una struttura indipendente dalla macchina</p></li>
 </ul>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Viti di fissaggio camera: prevenzione allentamento</strong></p>
+<p>Le viti di fissaggio della camera possono allentarsi nel tempo per le seguenti cause:</p>
+<ul class="simple">
+<li><p><strong>Coppia di serraggio eccessiva (&gt; 0.5 Nm)</strong>: può causare deformazioni del corpo camera e successivo allentamento. Serrare sempre con coppia massima di <strong>0.5 Nm</strong>.</p></li>
+<li><p><strong>Vibrazioni trasmesse dalla linea</strong>: utilizzare <strong>frenafiletti medio</strong> su tutte le viti di fissaggio.</p></li>
+<li><p><strong>Viti non idonee</strong>: verificare l’utilizzo di viti <strong>M3 × 8 mm inox</strong> come consigliato.</p></li>
+</ul>
+</div>
 </section>
 <section id="regolazione-della-posizione-della-telecamera">
 <h3>Regolazione della posizione della telecamera:<a class="headerlink" href="#regolazione-della-posizione-della-telecamera" title="Link to this heading">#</a></h3>
@@ -828,6 +849,16 @@ Il sistema Flexibowl non genera vibrazioni; tuttavia, nelle linee automatizzate 
 <p>Regolazione X/Y → ± 50mm
 Regolazione Z → ± 50mm
 Rotazione θ → ± 10°</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p><strong>Camera danneggiata durante il montaggio</strong></p>
+<p>Per evitare danni alla telecamera durante le operazioni di installazione e regolazione:</p>
+<ul class="simple">
+<li><p><strong>Coppia di serraggio eccessiva</strong>: non superare <strong>0.5 Nm</strong> di coppia sulle viti M3. Il superamento di questo valore può deformare il corpo ottico in modo irreversibile.</p></li>
+<li><p><strong>Manipolazione scorretta</strong>: maneggiare sempre la camera con cura, evitando pressioni dirette sul corpo ottico e sul sensore.</p></li>
+<li><p><strong>Urti durante l’installazione</strong>: proteggere la camera durante eventuali lavori meccanici circostanti (foratura, fresatura, serraggio strutture).</p></li>
+</ul>
 </div>
 </section>
 </section>

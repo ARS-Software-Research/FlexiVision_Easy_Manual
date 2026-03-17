@@ -249,7 +249,17 @@ Dimensioni camera CAM-CIC-5000-20G-1 (mm)
 - Viti consigliate: Viti consigliate: M3 A2 / M3 8.8
 - Coppia di serraggio: 0.5 Nm (non serrare eccessivamente per evitare deformazioni)
 ```
+```{tip}
+**Regolazione della posizione della camera**
 
+Per permettere aggiustamenti futuri ed evitare problemi di allineamento, progettare il supporto meccanico con possibilità di microregolazione su tutti gli assi:
+
+- **Asse Z (altezza)**: -10 mm / +30 mm
+- **Asse X (sinistra-destra)**: ±10 mm
+- **Asse Y (avanti-indietro)**: ±10 mm
+
+Un supporto con viti serrate definitivamente senza possibilità di regolazione rende impossibile correggere la posizione della camera dopo il montaggio iniziale.
+```
 ### Verifica montaggio lente
 
 ```{warning}
@@ -277,6 +287,16 @@ Per questo motivo si raccomanda di:
 - utilizzare preferibilmente una struttura indipendente dalla macchina
 :::
 
+```{warning}
+**Viti di fissaggio camera: prevenzione allentamento**
+
+Le viti di fissaggio della camera possono allentarsi nel tempo per le seguenti cause:
+
+- **Coppia di serraggio eccessiva (> 0.5 Nm)**: può causare deformazioni del corpo camera e successivo allentamento. Serrare sempre con coppia massima di **0.5 Nm**.
+- **Vibrazioni trasmesse dalla linea**: utilizzare **frenafiletti medio** su tutte le viti di fissaggio.
+- **Viti non idonee**: verificare l'utilizzo di viti **M3 × 8 mm inox** come consigliato.
+```
+
 ### Regolazione della posizione della telecamera:
 
 Il supporto della telecamera deve consentire la regolazione della posizione per permettere il corretto allineamento con l’area di prelievo del Flexibowl.
@@ -290,6 +310,16 @@ Regolazione X/Y → ± 50mm
 Regolazione Z → ± 50mm
 Rotazione θ → ± 10°
 :::
+
+```{caution}
+**Camera danneggiata durante il montaggio**
+
+Per evitare danni alla telecamera durante le operazioni di installazione e regolazione:
+
+- **Coppia di serraggio eccessiva**: non superare **0.5 Nm** di coppia sulle viti M3. Il superamento di questo valore può deformare il corpo ottico in modo irreversibile.
+- **Manipolazione scorretta**: maneggiare sempre la camera con cura, evitando pressioni dirette sul corpo ottico e sul sensore.
+- **Urti durante l'installazione**: proteggere la camera durante eventuali lavori meccanici circostanti (foratura, fresatura, serraggio strutture).
+```
 ---
 
 ## Montaggio Toplight

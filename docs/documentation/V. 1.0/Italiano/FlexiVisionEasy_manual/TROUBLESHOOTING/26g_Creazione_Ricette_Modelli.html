@@ -220,6 +220,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -273,7 +274,6 @@
 <li class="toctree-l2"><a class="reference internal" href="26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
 </ul>
 </details></li>
-
 </ul>
 
     </div>
@@ -442,6 +442,17 @@ document.write(`
 <h1>Creazione Ricette e modelli<a class="headerlink" href="#creazione-ricette-e-modelli" title="Link to this heading">#</a></h1>
 <section id="troubleshooting-per-la-sezione-creare-una-nuova-ricetta">
 <span id="troubleshooting-nuova-ricetta"></span><h2>Troubleshooting per la sezione Creare una Nuova Ricetta<a class="headerlink" href="#troubleshooting-per-la-sezione-creare-una-nuova-ricetta" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Errore durante salvataggio</strong></p>
+<p>Se il salvataggio della ricetta fallisce:</p>
+<ul class="simple">
+<li><p>Verificare che ci sia sufficiente spazio sul disco</p></li>
+<li><p>Assicurarsi che il nome non contenga caratteri non ammessi (<code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">\</span> <span class="pre">:</span> <span class="pre">*</span> <span class="pre">?</span> <span class="pre">&quot;</span> <span class="pre">&lt;</span> <span class="pre">&gt;</span> <span class="pre">|</span></code>)</p></li>
+<li><p>Verificare che non esista già una ricetta con lo stesso nome</p></li>
+<li><p>Verificare di avere permessi di scrittura sulla cartella del software</p></li>
+</ul>
+</div>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -456,28 +467,14 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>Impossibile creare nuova ricetta</strong></p></td>
-<td><p>• Ricetta base non salvata</p>
-<p>• Permessi insufficienti cartella ricette</p>
-<p>• Disco pieno</p>
+<td><p>• Disco pieno</p>
 <p>• Nome ricetta contiene caratteri non ammessi</p>
 </td>
-<td><p>• Salvare ricetta base prima di crearne di nuove</p>
-<p>• Verificare permessi scrittura su cartella</p>
-<p>• Liberare spazio su disco</p>
+<td><p>• Liberare spazio su disco</p>
 <p>• Evitare caratteri speciali nel nome (/ \ : * ? “ &lt; &gt; |)</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Ricetta creata non appare nell’elenco</strong></p></td>
-<td><p>• Salvataggio non completato</p>
-<p>• File ricetta corrotto</p>
-<p>• Filtro di visualizzazione attivo</p>
-</td>
-<td><p>• Ripetere creazione e salvataggio ricetta</p>
-<p>• Verificare integrità file in cartella ricette</p>
-<p>• Disabilitare eventuali filtri nella lista ricette</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Ricetta salvata ma configurazioni perse</strong></p></td>
+<tr class="row-odd"><td><p><strong>Ricetta salvata ma configurazioni perse</strong></p></td>
 <td><p>• Salvataggio non confermato correttamente</p>
 <p>• Chiusura forzata software</p>
 <p>• Errore scrittura disco</p>
@@ -487,17 +484,15 @@ document.write(`
 <p>• Verificare log errori Windows</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Impossibile caricare ricetta creata</strong></p></td>
+<tr class="row-even"><td><p><strong>Impossibile caricare ricetta creata</strong></p></td>
 <td><p>• File ricetta corrotto</p>
-<p>• Versione software incompatibile</p>
 <p>• Percorso file cambiato</p>
 </td>
 <td><p>• Ripristinare da backup se disponibile</p>
-<p>• Aggiornare software alla versione corretta</p>
 <p>• Verificare percorso cartella ricette in configurazione</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>Ricetta caricata ha configurazioni errate</strong></p></td>
+<tr class="row-odd"><td><p><strong>Ricetta caricata ha configurazioni errate</strong></p></td>
 <td><p>• Ricetta sbagliata selezionata</p>
 <p>• Modifiche non salvate in precedenza</p>
 <p>• Conflitto tra ricette con nomi simili</p>
@@ -526,108 +521,67 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Impossibile abilitare modello</strong></p></td>
-<td><p>• Ricetta non caricata</p>
-<p>• Limite massimo modelli raggiunto (8 per ricetta)</p>
-<p>• Slot modello già occupato</p>
-</td>
-<td><p>• Caricare ricetta corretta</p>
-<p>• Disabilitare modelli non utilizzati o creare nuova ricetta</p>
-<p>• Selezionare slot modello libero</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Grab Train Image acquisisce immagine nera</strong></p></td>
+<tr class="row-even"><td><p><strong>Grab Train Image acquisisce immagine nera</strong></p></td>
 <td><p>• Camera non connessa</p>
 <p>• Toplight spento</p>
+<p>• Backlight spento</p>
 <p>• Esposizione troppo bassa</p>
 <p>• Lente con tappo protettivo</p>
 </td>
 <td><p>• Verificare connessione camera in Camera Setup</p>
 <p>• Accendere toplight e verificare alimentazione</p>
+<p>• Controllare che light on in Configurazione FlexiBowl sia spuntato</p>
 <p>• Aumentare esposizione camera</p>
 <p>• Rimuovere tappo lente</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>ROI non si sposta o ridimensiona</strong></p></td>
+<tr class="row-odd"><td><p><strong>ROI non si sposta o ridimensiona</strong></p></td>
 <td><p>• Immagine non acquisita</p>
-<p>• Modalità zoom attiva blocca editing</p>
 <p>• Software bloccato</p>
 </td>
 <td><p>• Eseguire Grab Train Image prima</p>
-<p>• Uscire da modalità zoom</p>
 <p>• Riavviare software</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Origine modello non posizionabile</strong></p></td>
-<td><p>• ROI non definito</p>
-<p>• Click non registrato</p>
-<p>• Bug software</p>
-</td>
-<td><p>• Definire prima ROI attorno al componente</p>
-<p>• Fare click deciso sul punto desiderato</p>
-<p>• Riavviare software e riprovare</p>
-</td>
-</tr>
 <tr class="row-even"><td><p><strong>Apply Train non genera modello</strong></p></td>
-<td><p>• Feature Threshold non impostato</p>
-<p>• ROI troppo piccolo</p>
+<td><p>• ROI troppo piccolo</p>
 <p>• Immagine senza contrasto sufficiente</p>
-<p>• Modello non nominato</p>
 </td>
-<td><p>• Impostare Feature Threshold (iniziare con 0.5)</p>
-<p>• Ingrandire ROI per includere tutto il componente</p>
+<td><p>• Ingrandire ROI per includere tutto il componente</p>
 <p>• Migliorare contrasto/illuminazione</p>
-<p>• Inserire nome modello</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Modello creato include trama superficie</strong></p></td>
 <td><p>• Feature Threshold troppo basso</p>
-<p>• Superficie grip troppo texturizzata</p>
 <p>• Contrasto insufficiente componente-superficie</p>
 </td>
 <td><p>• Aumentare Feature Threshold (es: da 0.3 a 0.6)</p>
-<p>• Sostituire superficie grip con una più uniforme</p>
 <p>• Migliorare illuminazione per aumentare contrasto</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>Modello creato ha troppo poche linee</strong></p></td>
+<tr class="row-even"><td><p><strong>Modello creato ha troppe poche linee</strong></p></td>
 <td><p>• Feature Threshold troppo alto</p>
-<p>• Componente con geometria troppo semplice</p>
 <p>• Immagine sfocata</p>
+<p>• Immagine senza contrasto sufficiente</p>
 </td>
 <td><p>• Diminuire Feature Threshold (es: da 0.8 a 0.5)</p>
-<p>• Verificare che il componente abbia dettagli sufficienti</p>
 <p>• Verificare fuoco camera e correggere se necessario</p>
+<p>• Migliorare contrasto/illuminazione</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Modello include simulatori ingombro pinza</strong></p></td>
-<td><p>• Simulatori troppo vicini al componente</p>
-<p>• ROI troppo grande</p>
-<p>• Feature Threshold troppo basso</p>
-</td>
-<td><p>• Riposizionare simulatori con margine 2-3mm maggiore</p>
-<p>• Ridurre ROI per escludere simulatori</p>
-<p>• Aumentare Feature Threshold</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Modello include riflessi luce</strong></p></td>
+<tr class="row-odd"><td><p><strong>Modello include riflessi luce</strong></p></td>
 <td><p>• Feature Threshold troppo basso</p>
 <p>• Illuminazione non uniforme</p>
-<p>• Superficie componente molto riflettente</p>
 </td>
 <td><p>• Aumentare Feature Threshold</p>
 <p>• Regolare posizione/angolo toplight</p>
-<p>• Ridurre potenza toplight</p>
-<p>• Utilizzare filtro polarizzatore se disponibile</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Impossibile nominare modello</strong></p></td>
-<td><p>• Campo nome bloccato</p>
-<p>• Nome contiene caratteri non ammessi</p>
+<tr class="row-even"><td><p><strong>Impossibile nominare modello</strong></p></td>
+<td><p>• Nome contiene caratteri non ammessi</p>
 <p>• Lunghezza nome eccessiva</p>
 </td>
-<td><p>• Cliccare nel campo nome per attivarlo</p>
-<p>• Usare solo lettere, numeri, underscore e trattini</p>
+<td><p>• Usare solo lettere, numeri, underscore e trattini</p>
 <p>• Limitare nome a max 50 caratteri</p>
 </td>
 </tr>
@@ -650,17 +604,7 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Region Search non modificabile</strong></p></td>
-<td><p>• Modello non completato correttamente</p>
-<p>• Immagine non caricata</p>
-<p>• Software in modalità visualizzazione</p>
-</td>
-<td><p>• Completare training modello prima</p>
-<p>• Acquisire nuova immagine</p>
-<p>• Verificare di essere in modalità edit</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Test non rileva alcun componente</strong></p></td>
+<tr class="row-even"><td><p><strong>Test non rileva alcun componente</strong></p></td>
 <td><p>• Accept Threshold troppo alto</p>
 <p>• Componenti fuori dalla Region Search</p>
 <p>• Modello non corretto</p>
@@ -672,17 +616,17 @@ document.write(`
 <p>• Stabilizzare illuminazione</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>Test rileva troppi falsi positivi</strong></p></td>
+<tr class="row-odd"><td><p><strong>Test rileva troppi falsi positivi</strong></p></td>
 <td><p>• Accept Threshold troppo basso</p>
 <p>• Modello troppo semplice/generico</p>
-<p>• Componenti molto simili ma diversi presenti</p>
+<p>• Sono presenti componenti molto simili ma che hanno molte differenze allo stesso tempo</p>
 </td>
 <td><p>• Aumentare Accept Threshold (es: da 0.70 a 0.85)</p>
 <p>• Rifare modello con Feature Threshold più basso (più dettagliato)</p>
 <p>• Separare in modelli diversi se necessario</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Test rileva componenti ma con score troppo bassi</strong></p></td>
+<tr class="row-even"><td><p><strong>Test rileva componenti ma con score troppo bassi</strong></p></td>
 <td><p>• Variabilità componenti reali vs modello training</p>
 <p>• Illuminazione diversa</p>
 <p>• Componenti sporchi/danneggiati</p>
@@ -692,16 +636,6 @@ document.write(`
 <p>• Standardizzare illuminazione</p>
 <p>• Scartare componenti danneggiati</p>
 <p>• Rifare modello con Feature Threshold più alto (meno dettagliato)</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Score componente di riferimento non è il più alto</strong></p></td>
-<td><p>• Altri componenti più fedeli al modello</p>
-<p>• Componente di riferimento spostato</p>
-<p>• Calibrazione errata</p>
-</td>
-<td><p>• Normale se altri componenti sono in posizione migliore</p>
-<p>• Verificare che componente riferimento non sia stato urtato</p>
-<p>• Ripetere calibrazione se necessario</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Results Panel vuoto anche con componenti visibili</strong></p></td>
@@ -715,23 +649,13 @@ document.write(`
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Coordinate X,Y,Rotation non corrette</strong></p></td>
-<td><p>• Calibrazione camera non eseguita</p>
+<td><p>• Calibrazione camera non eseguita o eseguita male</p>
 <p>• Sistema di riferimento errato</p>
 <p>• Camera spostata dopo calibrazione</p>
 </td>
-<td><p>• Eseguire calibrazione camera completa</p>
+<td><p>• Eseguire calibrazione camera completa o rivedere quella corrente</p>
 <p>• Verificare origine sistema coordinate</p>
 <p>• Ripetere calibrazione camera</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Componente di riferimento perso/spostato</strong></p></td>
-<td><p>• Urtato durante pulizia scena</p>
-<p>• Vibrazione accidentale FlexiBowl</p>
-<p>• Soffio d’aria attivato</p>
-</td>
-<td><p>• Riposizionare componente usando coordinate salvate</p>
-<p>• Fare attenzione durante manipolazioni</p>
-<p>• Disattivare air-blow durante setup</p>
 </td>
 </tr>
 </tbody>
@@ -754,7 +678,7 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>Impossibile abilitare istogramma</strong></p></td>
-<td><p>• Modello non completato</p>
+<td><p>• Modello non riconosciuto</p>
 <p>• Limite massimo istogrammi raggiunto (8 per modello)</p>
 <p>• Slot già occupato</p>
 </td>
@@ -763,17 +687,7 @@ document.write(`
 <p>• Selezionare slot libero</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Riquadro istogramma non spostabile</strong></p></td>
-<td><p>• Istogramma non abilitato</p>
-<p>• Modalità test attiva</p>
-<p>• Software bloccato</p>
-</td>
-<td><p>• Cliccare Enable Histogram prima</p>
-<p>• Uscire da modalità test</p>
-<p>• Riavviare software</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>AUTO non calcola Mean e Std Dev</strong></p></td>
+<tr class="row-odd"><td><p><strong>AUTO non calcola corretttamente</strong></p></td>
 <td><p>• Area istogramma troppo piccola</p>
 <p>• Istogramma fuori dall’immagine</p>
 <p>• Immagine non caricata</p>
@@ -783,7 +697,7 @@ document.write(`
 <p>• Acquisire nuova immagine</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Test sempre ROSSO anche con area libera</strong></p></td>
+<tr class="row-even"><td><p><strong>Test sempre ROSSO anche con area libera</strong></p></td>
 <td><p>• Calibrazione AUTO eseguita con area occupata</p>
 <p>• Ombra o riflesso nell’area</p>
 <p>• Bordo FlexiBowl incluso nell’area</p>
@@ -795,7 +709,7 @@ document.write(`
 <p>• Pulire superficie FlexiBowl</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>Test sempre VERDE anche con area occupata</strong></p></td>
+<tr class="row-odd"><td><p><strong>Test sempre VERDE anche con area occupata</strong></p></td>
 <td><p>• Calibrazione AUTO eseguita con componenti già presenti</p>
 <p>• Soglie calcolate male</p>
 <p>• Contrasto insufficiente</p>
@@ -805,37 +719,29 @@ document.write(`
 <p>• Migliorare contrasto illuminazione</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Istogramma triggera casualmente</strong></p></td>
+<tr class="row-even"><td><p><strong>Istogramma triggera casualmente</strong></p></td>
 <td><p>• Area troppo grande include zone variabili</p>
 <p>• Illuminazione instabile</p>
-<p>• Vibrazioni durante acquisizione</p>
 <p>• Soglia troppo stretta</p>
 </td>
 <td><p>• Ridurre area al minimo necessario</p>
 <p>• Stabilizzare illuminazione</p>
-<p>• Inserire pause stabilizzazione</p>
 <p>• Ripetere calibrazione AUTO</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>Istogramma non triggera quando dovrebbe</strong></p></td>
+<tr class="row-odd"><td><p><strong>Istogramma non triggera quando dovrebbe</strong></p></td>
 <td><p>• Area troppo piccola non include ostacolo</p>
 <p>• Soglia troppo permissiva</p>
-<p>• Componenti simili a superficie</p>
 </td>
 <td><p>• Ingrandire area istogramma</p>
 <p>• Ripetere calibrazione AUTO con maggior contrasto</p>
-<p>• Migliorare illuminazione</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Impossibile creare secondo istogramma per pinza</strong></p></td>
-<td><p>• Primo istogramma non completato</p>
-<p>• Slot istogramma sbagliato selezionato</p>
-</td>
-<td><p>• Completare e salvare primo istogramma</p>
-<p>• Tornare all’elenco e selezionare Histogram 2</p>
-</td>
+<tr class="row-even"><td><p><strong>Impossibile creare secondo istogramma per pinza</strong></p></td>
+<td><p>• Slot istogramma sbagliato selezionato</p></td>
+<td><p>• Tornare all’elenco e selezionare Histogram 2</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Test multipli istogrammi non funziona</strong></p></td>
+<tr class="row-odd"><td><p><strong>Test multipli istogrammi non funziona</strong></p></td>
 <td><p>• Non tutti gli istogrammi abilitati</p>
 <p>• Configurazione incompleta</p>
 <p>• Conflitto tra istogrammi</p>

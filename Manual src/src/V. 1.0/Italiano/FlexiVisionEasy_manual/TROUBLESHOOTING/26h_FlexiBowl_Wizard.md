@@ -19,31 +19,14 @@
     • Verificare connessione FlexiBowl
     
     • Completare configurazione base sistema
-* - **Impossibile selezionare taglia FlexiBowl**
-  - • Menu a tendina bloccato
-    
-    • Modello non disponibile in lista
-  - • Riavviare Wizard
-    
-    • Contattare supporto per modelli custom
+
 * - **Senso rotazione impostato non corrisponde**
   - • Errore di selezione CW/CCW
     
-    • Installazione meccanica invertita
   - • Verificare visivamente senso rotazione reale
     
     • Correggere selezione nel Wizard
     
-    • NON è modificabile via software se installazione è invertita
-* - **Caratterizzazione componente difficile**
-  - • Componente con caratteristiche miste
-    
-    • Geometria non rientra in categorie standard
-  - • Scegliere categoria più simile
-    
-    • Per componenti FLAT/CYLINDRICAL misti → scegliere prevalente
-    
-    • Per componenti complessi → sempre COMPLEX
 * - **Test Air-blow non funziona**
   - • Aria compressa non collegata
     
@@ -77,17 +60,7 @@
     • Accettare parametri Wizard come punto di partenza
     
     • Affinare manualmente in dashboard riassuntiva
-* - **Sincronizzazione Flip-Move non corretta**
-  - • Flip Count errato
-    
-    • Flip Delay non ottimale
-    
-    • Tempi Move non compatibili
-  - • Regolare Flip Count incrementalmente
-    
-    • Modificare Delay finché impulsi terminano insieme
-    
-    • Usare Test Sequence ripetutamente per verificare
+
 * - **Componenti si muovono durante acquisizione**
   - • Velocità/accelerazione troppo alte
     
@@ -99,24 +72,14 @@
     • Inserire pause 200-500ms
     
     • Sostituire superficie grip con più aderente
-* - **Soffio pre-flip non efficace**
-  - • Blow Time troppo breve
-    
-    • Pressione aria insufficiente
+* - **Soffio non efficace**
+  - • Pressione aria insufficiente/eccessiva
     
     • Ugelli ostruiti
-  - • Aumentare Blow Time
-    
-    • Verificare pressione 5-6 bar
+  - • Verificare pressione 5-6 bar
     
     • Pulire ugelli air-blow
-* - **Soffio post-flip raggruppa troppo**
-  - • Blow Time troppo lungo
-    
-    • Non necessario per applicazione
-  - • Diminuire Blow Time
-    
-    • Disabilitare post-flip e usare solo pre-flip
+
 * - **Modifiche parametri non si applicano**
   - • "Synchronize Parameters" non premuto
     
@@ -124,4 +87,15 @@
   - • **SEMPRE** cliccare Synchronize Parameters dopo modifiche
     
     • Salvare ricetta per rendere permanenti le modifiche
+* - **Turn FLB non funziona durante setup**
+  - • FlexiBowl non connesso
+    
+    • Comando non configurato
+    
+    • FlexiBowl in errore
+  - • Verificare connessione FlexiBowl
+    
+    • Controllare configurazione FlexiBowl Setup
+    
+    • Verificare LED READY FlexiBowl
 ```

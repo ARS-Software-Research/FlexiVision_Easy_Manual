@@ -1296,25 +1296,19 @@ Il filtro IR è un accessorio ottico da applicare all’obiettivo della camera c
 (display)=
 ## Display Touch Screen
 
-### Specifiche Elettriche
-
-|  |  |
-|--|--|
-| Touch Screen | Capacitivo |
-| Ingressi video | 1x VGA – 1x DP – 1x DVI-D |
-| Alimentazione | 12–32 Vdc (Assorbimento 30W) |
-| Montaggio | Da pannello (Panel Mount) |
-
-### Specifiche Fisiche
-
-|  |  |
-|--|--|
-| Peso | 7 kg |
-| Protezione frontale | IP66 |
-| Temperatura operativa | 0 .. +50 °C |
-| Temperatura di stoccaggio | -20 .. +65 °C |
-| Umidità | < 90% senza condensa |
-| Certificazione | CE |
+| Voce                  | Specifiche                                      |
+|-----------------------|-------------------------------------------------|
+| Schermo Touch         | Capacitivo                                     |
+| Ingresso Video        | 1x VGA<br>1x DP<br>1x DVI-D                     |
+| Alimentazione         | 12~32 Vdc (Assorbimento 30W)                    |
+| Montaggio             | Montaggio a pannello                           |
+| Dimensioni Esterne    | (L) 560 mm x (P) 350 mm x (A) 60 mm            |
+| Peso                  | 7 kg                                           |
+| Protezione            | IP66 (parte frontale)                          |
+| Temperatura Operativa | 0 ~ 50°C                                       |
+| Temperatura Stoccaggio| -20 ~ +65°C                                    |
+| Umidità               | < 90% senza condensa                           |
+| Certificazioni        | CE                                             |
 
 ## Ring Light
 

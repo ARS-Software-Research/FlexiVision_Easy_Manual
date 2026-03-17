@@ -220,6 +220,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -273,7 +274,6 @@
 <li class="toctree-l2"><a class="reference internal" href="26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
 </ul>
 </details></li>
-
 </ul>
 
     </div>
@@ -449,30 +449,10 @@ document.write(`
 <p>• Completare configurazione base sistema</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Impossibile selezionare taglia FlexiBowl</strong></p></td>
-<td><p>• Menu a tendina bloccato</p>
-<p>• Modello non disponibile in lista</p>
-</td>
-<td><p>• Riavviare Wizard</p>
-<p>• Contattare supporto per modelli custom</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Senso rotazione impostato non corrisponde</strong></p></td>
-<td><p>• Errore di selezione CW/CCW</p>
-<p>• Installazione meccanica invertita</p>
-</td>
+<tr class="row-odd"><td><p><strong>Senso rotazione impostato non corrisponde</strong></p></td>
+<td><p>• Errore di selezione CW/CCW</p></td>
 <td><p>• Verificare visivamente senso rotazione reale</p>
 <p>• Correggere selezione nel Wizard</p>
-<p>• NON è modificabile via software se installazione è invertita</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Caratterizzazione componente difficile</strong></p></td>
-<td><p>• Componente con caratteristiche miste</p>
-<p>• Geometria non rientra in categorie standard</p>
-</td>
-<td><p>• Scegliere categoria più simile</p>
-<p>• Per componenti FLAT/CYLINDRICAL misti → scegliere prevalente</p>
-<p>• Per componenti complessi → sempre COMPLEX</p>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Test Air-blow non funziona</strong></p></td>
@@ -505,17 +485,7 @@ document.write(`
 <p>• Affinare manualmente in dashboard riassuntiva</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Sincronizzazione Flip-Move non corretta</strong></p></td>
-<td><p>• Flip Count errato</p>
-<p>• Flip Delay non ottimale</p>
-<p>• Tempi Move non compatibili</p>
-</td>
-<td><p>• Regolare Flip Count incrementalmente</p>
-<p>• Modificare Delay finché impulsi terminano insieme</p>
-<p>• Usare Test Sequence ripetutamente per verificare</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Componenti si muovono durante acquisizione</strong></p></td>
+<tr class="row-odd"><td><p><strong>Componenti si muovono durante acquisizione</strong></p></td>
 <td><p>• Velocità/accelerazione troppo alte</p>
 <p>• Pause stabilizzazione assente</p>
 <p>• Superficie grip non adatta</p>
@@ -525,22 +495,12 @@ document.write(`
 <p>• Sostituire superficie grip con più aderente</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Soffio pre-flip non efficace</strong></p></td>
-<td><p>• Blow Time troppo breve</p>
-<p>• Pressione aria insufficiente</p>
+<tr class="row-even"><td><p><strong>Soffio non efficace</strong></p></td>
+<td><p>• Pressione aria insufficiente/eccessiva</p>
 <p>• Ugelli ostruiti</p>
 </td>
-<td><p>• Aumentare Blow Time</p>
-<p>• Verificare pressione 5-6 bar</p>
+<td><p>• Verificare pressione 5-6 bar</p>
 <p>• Pulire ugelli air-blow</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Soffio post-flip raggruppa troppo</strong></p></td>
-<td><p>• Blow Time troppo lungo</p>
-<p>• Non necessario per applicazione</p>
-</td>
-<td><p>• Diminuire Blow Time</p>
-<p>• Disabilitare post-flip e usare solo pre-flip</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>Modifiche parametri non si applicano</strong></p></td>
@@ -549,6 +509,16 @@ document.write(`
 </td>
 <td><p>• <strong>SEMPRE</strong> cliccare Synchronize Parameters dopo modifiche</p>
 <p>• Salvare ricetta per rendere permanenti le modifiche</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Turn FLB non funziona durante setup</strong></p></td>
+<td><p>• FlexiBowl non connesso</p>
+<p>• Comando non configurato</p>
+<p>• FlexiBowl in errore</p>
+</td>
+<td><p>• Verificare connessione FlexiBowl</p>
+<p>• Controllare configurazione FlexiBowl Setup</p>
+<p>• Verificare LED READY FlexiBowl</p>
 </td>
 </tr>
 </tbody>

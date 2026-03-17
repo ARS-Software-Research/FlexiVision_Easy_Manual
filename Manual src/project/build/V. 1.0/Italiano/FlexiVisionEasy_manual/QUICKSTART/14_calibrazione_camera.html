@@ -220,6 +220,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Calibrazione della Camera</strong></a></li>
 
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -273,7 +274,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../TROUBLESHOOTING/26i_Conf_Tramoggia.html">Configurazione Tramoggia</a></li>
 </ul>
 </details></li>
-
 </ul>
 
     </div>
@@ -440,6 +440,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-disegnare-un-piano-a-3-punti"><strong>Step 5: Disegnare un piano a 3 punti</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-verifica-della-traiettoria-del-robot"><strong>Step 6: Verifica della traiettoria del robot</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-salvataggio-ricetta-base-da-verificare"><strong>Step 7: Salvataggio Ricetta Base</strong> - da verificare</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-durante-la-calibrazione"><strong>Problemi comuni durante la calibrazione</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pattern-non-rilevato"><strong>Pattern non rilevato</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-sempre-bad-o-acceptable"><strong>Calibrazione sempre “Bad” o “Acceptable”</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errori-dopo-cambio-illuminazione"><strong>Errori dopo cambio illuminazione</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -959,7 +965,55 @@ Cliccare su Recipes
 controllare di avere la ricetta contenente tutti i setup e la calibrazione selezionata nel menu a sinistra e cliccare su Save Recipe<br />
 Questa ci permetterà di avere salvati a parte tutti i passaggi fatti fin’ora, in modo da avere una base per tutte le future ricette che conterranno i vari modelli<br />
 Per continuare con la creazione dei modelli, duplicare la ricetta base, rinominarla come si preferisce e cliccare su Edit Recipe, si aprirà una pagina con l’elenco di tutti i modelli disponibili</p>
+</section>
+</section>
 <hr class="docutils" />
+<section id="problemi-comuni-durante-la-calibrazione">
+<h1><strong>Problemi comuni durante la calibrazione</strong><a class="headerlink" href="#problemi-comuni-durante-la-calibrazione" title="Link to this heading">#</a></h1>
+<section id="pattern-non-rilevato">
+<h2><strong>Pattern non rilevato</strong><a class="headerlink" href="#pattern-non-rilevato" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Errore: “Unable to detect calibration pattern”</strong></p>
+<p>Causa: Il software non riesce a identificare il pattern della griglia.</p>
+<p><strong>Soluzioni</strong>:</p>
+<ul class="simple">
+<li><p>Aumentare il contrasto (regolare esposizione o illuminazione)</p></li>
+<li><p>Verificare che l’intera griglia sia visibile nell’immagine</p></li>
+<li><p>Migliorare la messa a fuoco</p></li>
+<li><p>Pulire la superficie della griglia (polvere o impronte possono interferire)</p></li>
+<li><p>Verificare che la griglia sia quella corretta (quadrati, non cerchi o altri pattern)</p></li>
+</ul>
+</div>
+</section>
+<section id="calibrazione-sempre-bad-o-acceptable">
+<h2><strong>Calibrazione sempre “Bad” o “Acceptable”</strong><a class="headerlink" href="#calibrazione-sempre-bad-o-acceptable" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Qualità calibrazione insufficiente</strong></p>
+<p>Se nonostante le regolazioni la calibrazione rimane sotto “Excellent”:</p>
+<ol class="arabic simple">
+<li><p>Verificare la distanza di lavoro camera-FlexiBowl (deve essere quella calcolata)</p></li>
+<li><p>Controllare cje la camera sia parallela rispetto al piano del FlexiBowl (deve essere perfettamente orizzontale)</p></li>
+<li><p>Assicurarsi che la camera sia stabile (no vibrazioni durante acquisizione)</p></li>
+<li><p>Verificare che l’obiettivo sia avvitato completamente</p></li>
+</ol>
+<p>Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare <a class="reference internal" href="#09_Installazione_Meccanica.md"><span class="xref myst">Installazione Meccanica</span></a> per revisione.</p>
+</div>
+</section>
+<section id="errori-dopo-cambio-illuminazione">
+<h2><strong>Errori dopo cambio illuminazione</strong><a class="headerlink" href="#errori-dopo-cambio-illuminazione" title="Link to this heading">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Ri-calibrazione dopo cambio backlight/toplight</strong></p>
+<p>Se si passa da backlight a toplight (o viceversa):</p>
+<ol class="arabic simple">
+<li><p>La calibrazione geometrica rimane valida (non serve rifarla)</p></li>
+<li><p>È necessario solo regolare l’esposizione della camera per il nuovo tipo di illuminazione</p></li>
+<li><p>Acquisire un’immagine di test per verificare che il pattern sia ancora ben visibile</p></li>
+</ol>
+<p>In generale, è consigliabile decidere fin dall’inizio il tipo di illuminazione da utilizzare e mantenere quella configurazione.</p>
+</div>
 <br>
 <!-- Versions and languages set-up -->
 <style>
@@ -1288,6 +1342,12 @@ ___\\ \\     // //___
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-disegnare-un-piano-a-3-punti"><strong>Step 5: Disegnare un piano a 3 punti</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-verifica-della-traiettoria-del-robot"><strong>Step 6: Verifica della traiettoria del robot</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-salvataggio-ricetta-base-da-verificare"><strong>Step 7: Salvataggio Ricetta Base</strong> - da verificare</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-durante-la-calibrazione"><strong>Problemi comuni durante la calibrazione</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pattern-non-rilevato"><strong>Pattern non rilevato</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calibrazione-sempre-bad-o-acceptable"><strong>Calibrazione sempre “Bad” o “Acceptable”</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#errori-dopo-cambio-illuminazione"><strong>Errori dopo cambio illuminazione</strong></a></li>
 </ul>
 </li>
 </ul>

@@ -219,6 +219,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../QUICKSTART/14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
 
+
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -272,7 +273,6 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Configurazione Tramoggia</a></li>
 </ul>
 </details></li>
-
 </ul>
 
     </div>
@@ -438,55 +438,15 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Tramoggia non abilitabile</strong></p></td>
-<td><p>• Hardware tramoggia non connesso</p>
-<p>• Ricetta non caricata</p>
-<p>• Configurazione base non completata</p>
+<tr class="row-even"><td><p><strong>Area di controllo non definibile</strong></p></td>
+<td><p>• Immagine non acquisita</p>
+<p>• Sezione sbagliata</p>
 </td>
-<td><p>• Verificare connessioni elettriche/pneumatiche tramoggia</p>
-<p>• Caricare ricetta corretta</p>
-<p>• Completare Hopper Setup iniziale</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Area di controllo non definibile</strong></p></td>
-<td><p>• Camera tramoggia non rilevata</p>
-<p>• Immagine non acquisita</p>
-<p>• Software in modalità sbagliata</p>
-</td>
-<td><p>• Verificare connessione camera hopper</p>
-<p>• Acquisire immagine test</p>
+<td><p>• Acquisire immagine test</p>
 <p>• Accedere tramite Config Hopper X</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>Riquadro blu non modificabile</strong></p></td>
-<td><p>• Modalità Expert attiva</p>
-<p>• Area bloccata</p>
-</td>
-<td><p>• Uscire da modalità Expert</p>
-<p>• Riavviare configurazione tramoggia</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>CAPTURE disco vuoto fallisce</strong></p></td>
-<td><p>• Componenti ancora presenti nell’area</p>
-<p>• Illuminazione insufficiente</p>
-<p>• Camera non funzionante</p>
-</td>
-<td><p>• Rimuovere <strong>TUTTI</strong> i componenti dall’area visibile</p>
-<p>• Verificare illuminazione camera hopper</p>
-<p>• Testare acquisizione camera</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>CAPTURE disco pieno fallisce</strong></p></td>
-<td><p>• Troppo pochi componenti posizionati</p>
-<p>• Componenti fuori area controllo</p>
-<p>• Illuminazione cambiata</p>
-</td>
-<td><p>• Posizionare numero adeguato di componenti nell’area</p>
-<p>• Verificare componenti dentro riquadro blu</p>
-<p>• Stabilizzare illuminazione</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>AUTO non calcola Mean e Std Dev</strong></p></td>
+<tr class="row-odd"><td><p><strong>AUTO non calcola Mean e Std Dev correttamente</strong></p></td>
 <td><p>• CAPTURE non eseguiti</p>
 <p>• Ordine CAPTURE invertito</p>
 <p>• Area controllo troppo piccola</p>
@@ -509,36 +469,14 @@ document.write(`
 <tr class="row-odd"><td><p><strong>TEST sempre ROSSO (tramoggia si attiva sempre)</strong></p></td>
 <td><p>• Soglia troppo restrittiva</p>
 <p>• CAPTURE vuoto con componenti presenti</p>
-<p>• Area include zone spurie</p>
 </td>
 <td><p>• Ripetere CAPTURE vuoto con area completamente pulita</p>
-<p>• Ridefinire area escludendo riflessi/ombre</p>
 <p>• Ripetere AUTO</p>
 </td>
 </tr>
-<tr class="row-even"><td><p><strong>Turn FLB non funziona durante setup</strong></p></td>
-<td><p>• FlexiBowl non connesso</p>
-<p>• Comando non configurato</p>
-<p>• FlexiBowl in errore</p>
-</td>
-<td><p>• Verificare connessione FlexiBowl</p>
-<p>• Controllare configurazione FlexiBowl Setup</p>
-<p>• Verificare LED READY FlexiBowl</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Steps parametro difficile da calcolare</strong></p></td>
-<td><p>• Non chiaro quanti cicli servono</p>
-<p>• Componenti arrivano in momenti diversi</p>
-</td>
-<td><p>• Svuotare completamente disco</p>
-<p>• Attivare tramoggia manualmente</p>
-<p>• Contare cicli finché PRIMI componenti raggiungono camera</p>
-<p>• Usare valore conservativo (arrotondare per eccesso)</p>
-</td>
-</tr>
 <tr class="row-even"><td><p><strong>Time vibrazione non produce effetto desiderato</strong></p></td>
-<td><p>• Valore troppo basso (pochi componenti)</p>
-<p>• Valore troppo alto (troppi componenti)</p>
+<td><p>• Valore troppo basso</p>
+<p>• Valore troppo alto</p>
 <p>• Livello vasca tramoggia variabile</p>
 </td>
 <td><p>• Iniziare con 500ms</p>
@@ -546,31 +484,12 @@ document.write(`
 <p>• <strong>CRITICO</strong>: Mantenere carico costante nella vasca</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p><strong>Flusso componenti irregolare</strong></p></td>
-<td><p>• Vasca tramoggia si svuota progressivamente</p>
-<p>• Superficie vibrante sporca</p>
-<p>• Componenti di dimensioni molto variabili</p>
-</td>
-<td><p>• Implementare riempimento periodico vasca</p>
-<p>• Pulire superficie vibrante</p>
-<p>• Separare componenti per dimensione omogenea</p>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Tramoggia scarica in momenti sbagliati</strong></p></td>
+<tr class="row-odd"><td><p><strong>Tramoggia scarica in momenti sbagliati</strong></p></td>
 <td><p>• Steps non corretto</p>
-<p>• Sincronizzazione errata con ciclo FlexiBowl</p>
+<p>• Hardware del Controller Tramoggia non configurato correttamente</p>
 </td>
 <td><p>• Ricalcolare Steps</p>
-<p>• Verificare coordinazione Hopper-FlexiBowl</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Modifiche non salvate</strong></p></td>
-<td><p>• <strong>Salva Ricetta</strong> non premuto</p>
-<p>• Uscita pagina prima di salvare</p>
-</td>
-<td><p>• <strong>FONDAMENTALE</strong>: SEMPRE salvare ricetta dopo modifiche</p>
-<p>• Verificare messaggio conferma salvataggio</p>
-<p>• Attendere completamento prima di uscire</p>
+<p>• Controllare le specifiche di configurazione nel <a class="reference internal" href="#"><span class="xref myst">manuale dedicato alla Tramoggia</span></a></p>
 </td>
 </tr>
 </tbody>

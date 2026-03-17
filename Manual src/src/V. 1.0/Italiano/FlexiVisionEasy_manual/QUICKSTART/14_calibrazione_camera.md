@@ -397,11 +397,53 @@ controllare di avere la ricetta contenente tutti i setup e la calibrazione selez
 Questa ci permetterà di avere salvati a parte tutti i passaggi fatti fin'ora, in modo da avere una base per tutte le future ricette che conterranno i vari modelli  
 Per continuare con la creazione dei modelli, duplicare la ricetta base, rinominarla come si preferisce e cliccare su Edit Recipe, si aprirà una pagina con l'elenco di tutti i modelli disponibili 
 
-
-
 ---
 
+# **Problemi comuni durante la calibrazione**
 
+## **Pattern non rilevato**
+
+```{warning}
+**Errore: "Unable to detect calibration pattern"**
+
+Causa: Il software non riesce a identificare il pattern della griglia.
+
+**Soluzioni**:
+- Aumentare il contrasto (regolare esposizione o illuminazione)
+- Verificare che l'intera griglia sia visibile nell'immagine
+- Migliorare la messa a fuoco
+- Pulire la superficie della griglia (polvere o impronte possono interferire)
+- Verificare che la griglia sia quella corretta (quadrati, non cerchi o altri pattern)
+```
+
+## **Calibrazione sempre "Bad" o "Acceptable"**
+
+```{warning}
+**Qualità calibrazione insufficiente**
+
+Se nonostante le regolazioni la calibrazione rimane sotto "Excellent":
+
+1. Verificare la distanza di lavoro camera-FlexiBowl (deve essere quella calcolata)
+2. Controllare cje la camera sia parallela rispetto al piano del FlexiBowl (deve essere perfettamente orizzontale)
+3. Assicurarsi che la camera sia stabile (no vibrazioni durante acquisizione)
+4. Verificare che l'obiettivo sia avvitato completamente 
+
+Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare [Installazione Meccanica](09_Installazione_Meccanica.md) per revisione.
+```
+
+## **Errori dopo cambio illuminazione**
+
+```{tip}
+**Ri-calibrazione dopo cambio backlight/toplight**
+
+Se si passa da backlight a toplight (o viceversa):
+
+1. La calibrazione geometrica rimane valida (non serve rifarla)
+2. È necessario solo regolare l'esposizione della camera per il nuovo tipo di illuminazione
+3. Acquisire un'immagine di test per verificare che il pattern sia ancora ben visibile
+
+In generale, è consigliabile decidere fin dall'inizio il tipo di illuminazione da utilizzare e mantenere quella configurazione.
+```
 
 
 

@@ -233,7 +233,7 @@
     • Implementare ciclo lavoro intermittente se possibile
 ```
 (troubleshooting_multi)=
-## Problemi Cpnfigurazioni Multi-Dispositivo
+## Problemi Configurazioni Multi-Dispositivo
 ```{list-table}
 :header-rows: 1
 :widths: 30 35 35
@@ -242,49 +242,24 @@
   - Possibili Cause
   - Soluzioni
 * - **Sistema con 2-3 FlexiBowl: solo uno comunica**
-  - • Indirizzi IP duplicati
-    
-    • FlexiBowl sullo stesso hub Ethernet
-    
+  - • FlexiBowl spenti
+    • Indirizzi IP duplicati
     • Cavi incrociati
-    
-    • Switch Ethernet insufficiente
-  - • Assegnare IP univoci a ogni FlexiBowl (es: 192.168.1.10, .11, .12)
-    
-    • Collegare ogni FlexiBowl a porta dedicata VisionController
-    
+  - • Controllare che il FlexiBowl sia acceso
+    • Assegnare IP univoci a ogni FlexiBowl (es: 192.168.1.10, .11, .12)
     • Verificare corretto cablaggio stella (no daisy-chain)
-    
-    • Utilizzare switch managed per configurazione avanzata
 * - **Sistema con 2-3 camere: solo una acquisisce**
-  - • Porte POE insufficienti su VisionController
-    
-    • Potenza POE totale superata
-    
+  - • Alimentazione non sufficiente 
     • Indirizzi IP camere in conflitto
-    
-    • Configurazione software non corretta
-  - • Verificare numero porte POE disponibili, aggiungere switch POE se necessario
-    
-    • Calcolare potenza POE totale richiesta vs disponibile
-    
+  - • Controllare che l'alimentazione sia compresa fra 6 - 26 V
     • Configurare IP statico univoco per ogni camera
-    
     • Abilitare tutte le camere in [Camera Setup](QUICKSTART/xx_Camera_Setup.md)
 * - **Sistema con 2-3 tramogge: controllo errato**
   - • Tramogge non abilitate individualmente in software
-    
-    • Cablaggio pneumatico incrociato
-    
-    • Comandi elettrici sovrapposti
-    
-    • Aree di controllo sovrapposte
+    • Alimentazione errata 
+    • Contatto al robot errato 
   - • Abilitare ogni tramoggia in [Hopper Setup](SETUP/xx_Hopper_Setup.md)
-    
-    • Verificare schema pneumatico, ogni tramoggia deve avere linea dedicata
-    
-    • Controllare cablaggio elettrovalvole
-    
-    • Definire aree di controllo separate per ogni tramoggia
+    • Controllare alimentazione
+    • Controllare contatto al robot 
 ```
 
