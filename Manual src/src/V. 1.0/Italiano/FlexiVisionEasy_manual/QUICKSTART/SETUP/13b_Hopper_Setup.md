@@ -1,7 +1,7 @@
 (hoppersetup)=
 # **Passo 5: Hopper Setup**
 
-Questa sezione descrive la procedura per configurare la tramoggia esterna (Hopper). L'Hopper è il componente che alimenta automaticamente pezzi sul FlexiBowl quando il livello scende sotto una soglia minima.
+Questa sezione descrive la procedura per configurare la tramoggia (Hopper). L'Hopper è il componente che alimenta automaticamente pezzi sul FlexiBowl quando il livello scende sotto una soglia minima.
 
 ```{note}
 **Prerequisiti**
@@ -31,7 +31,7 @@ Prima di procedere, assicurarsi che:
 
 ## Panoramica interfaccia Hopper Setup
 
-La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parametri operativi:
+La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parametri operativi delle varie tramogge:
 
 ![Pagina Hopper Setup](../SETUP/img/pagina_hoppersetup.png)
 
@@ -44,9 +44,9 @@ La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parame
 * - **Enable Hopper**
   - Interruttore per abilitare/disabilitare l'utilizzo dell'Hopper nel sistema
 * - **Steps**
-  - Numero di sequenze necessarie con cui l'area di visione arriva sotto l'area di scarico della tramoggia
+  - Numero di sequenze necessarie con cui la sezione del disco che attualmente si trova nell'area di visione, arriva sotto l'area di scarico della tramoggia
 * - **Time**
-  - Durata dell'attivazione del segnale in millisecondi
+  - Durata dell'attivazione della tramoggia in millisecondi
 * - **Signal**
   - Numero del segnale digitale utilizzato per controllare l'Hopper
 * - **Config Hopper**
@@ -71,13 +71,11 @@ La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parame
 
 ```{important}
 
-Abilitare l'Hopper solo se:
-- Il dispositivo è fisicamente presente e installato
-- I collegamenti elettrici sono stati verificati
+Abilitare l'Hopper solo se il dispositivo è correttamente installato
+
 ```
 
 ```{warning}
-**Verifica cablaggio**
 
 È fondamentale inserire il numero di segnale corretto:
 - Un numero errato attiverà il segnale sbagliato (potenzialmente pericoloso)
@@ -86,7 +84,6 @@ Abilitare l'Hopper solo se:
 ```
 
 ```{tip}
-**Ottimizzazione futura**
 
 I parametri impostati in questa fase sono sufficienti per la configurazione iniziale del sistema.
 Durante la procedura andremo poi a definire gli altri aspetti della configurazione della tramoggia.

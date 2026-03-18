@@ -63,7 +63,7 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
 
 * - 4
   - **Stato Connessioni**
-    * **FlexiBowl**: indica lo stato della connessione in tempo reale con l'alimentatore.
+    * **FlexiBowl**: indica lo stato della connessione in tempo reale con il FlexiBowl.
     * **Robot**: indica lo stato della connessione in tempo reale con il robot.
 
 * - 5
@@ -76,7 +76,7 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
     * **Vision - FlexiBowl - Robot**: grafico comparativo delle tre funzioni per capire l'impatto di ogni singolo processo sul tempo totale.
 * - 6
   - **Grafici di Performance e Storico**
-    * **Elenco modelli rilevati**: tabella con coordinate (**X**, **Y**), rotazione (**Rot**) del componente e lo **Score** (fedeltà dell'oggetto rispetto al modello originale).
+    * **Elenco modelli rilevati**: tabella con coordinate (**X**, **Y**), rotazione (**Rot**) del componente e lo **Score** (grado di similarità dell'oggetto riconosciuto rispetto al modello di riferimento).
     * **Parts per minute**: grafico della media dei componenti prelevati al minuto.
 ```
 (recipes)=
@@ -94,13 +94,16 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
 * - 1
   - **Gestione Database Ricette**
     * **Backup**: effettua un backup di tutte le ricette in un unico file .xml, salvabile nella posizione desiderata.
-    * **Import backup**: permette l'importazione di qualsiasi backup precedentemente effettuato con FlexiVision Easy.
-    * **Load recipe**: carica la ricetta selezionata nell'elenco soprastante per renderla operativa.
+    * **Import backup**: permette l'importazione di qualsiasi backup precedentemente effettuato con FlexiVision One.
+    * **Load recipe**: carica la ricetta selezionata nell'elenco sopra per renderla operativa.
     * **Delete recipe**: elimina definitivamente la ricetta selezionata dall'elenco.
 
 * - 2
   - **Creazione e Salvataggio**
-    * **New recipe**: avvia la creazione di una nuova ricetta. Dopo aver scelto il nome e il tipo di applicazione (Standard o Mix), la ricetta viene salvata, caricata e il sistema apre direttamente il menù di creazione modello.
+    * **New recipe**: avvia la creazione di una nuova ricetta. Dopo aver scelto il nome e il FlexiBowl con cui stiamo lavorando, si apre direttamente il menù di creazione modello. 
+      :::{note}
+        La ricetta deve poi essere salvata cliccando su Save. 
+      :::
     * **Save recipe**: salva la ricetta corrente sovrascrivendo i parametri modificati o crea un nuovo file se non ancora esistente.
 
 * - 3
@@ -128,25 +131,25 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
 
 * - 2
   - **Pannello di Accesso**
-     - **Name/Surname**: campo per l'inserimento del nome utente.
+     - **Name**: campo per l'inserimento del nome utente.
      - **Login**: pulsante per confermare le credenziali ed effettuare l'accesso al sistema.
 
 * - 3
-  - **Camera setup**: sezione dedicata alla configurazione dei parametri della telecamera.
+  - **Camera setup**: sezione dedicata alla configurazione dei parametri delle telecamere.
 * - 4
-  - **Flexibowl setup**: area per impostare i parametri di movimento e controllo dell'alimentatore.
+  - **Flexibowl setup**: area per impostare i parametri di movimento e controllo del FlexiBowl.
      
 * - 5
   - **Hopper setup**: configurazione dei parametri della tramoggia (vibrazione e scarico).
      
 * - 6
-  - **Robot setup**: sezione per la configurazione della comunicazione e dei parametri del robot.
+  - **Robot setup**: sezione per la configurazione della comunicazione del robot.
 
 * - 7
-  - **Protocol setup**: pagina di configurazione dei parametri dell'applicazione lato robot e lato visione.
+  - **Protocol setup**: pagina di configurazione dei parametri che definiscono quanti oggetti la visione deve o può restituire in ogni ciclo, con quale ordine vengono prioritizzati e quali valori statistici usare in base al numero di prese robot e al tempo massimo di gestione per ogni componente.
      
 * - 8
-  - **Account setup**: permette di configurare i vari account utente in base alle qualifiche e ai livelli di accesso.
+  - **Account setup**: permette di configurare i vari account utente in base ai livelli di accesso.
 
 * - 9
   - **Laser pointer**: permette di usare uno strumento laser per simulare un prelievo (pick) in assenza del robot.
@@ -154,7 +157,7 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
   - **Evaluate PPM**: permette di effettuare una stima dei pezzi al minuto (PPM) quando si utilizza il laser pointer.
 
 * - 11
-  - **Licence software**: pagina per l'attivazione del software; qui va inserita la chiave di licenza fornita da ARS per procedere all'attivazione.
+  - **Licence software**: pagina per l'attivazione della licenza software.
 ```
 ## i tasti INFO
 In ognuna delle sezioni operative, è disponibile un tasto INFO in alto a destra.

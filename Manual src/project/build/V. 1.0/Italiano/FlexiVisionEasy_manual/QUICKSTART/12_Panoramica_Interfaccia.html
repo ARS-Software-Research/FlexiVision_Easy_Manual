@@ -537,7 +537,7 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
 <tr class="row-odd"><td><p>4</p></td>
 <td><p><strong>Stato Connessioni</strong></p>
 <ul class="simple">
-<li><p><strong>FlexiBowl</strong>: indica lo stato della connessione in tempo reale con l’alimentatore.</p></li>
+<li><p><strong>FlexiBowl</strong>: indica lo stato della connessione in tempo reale con il FlexiBowl.</p></li>
 <li><p><strong>Robot</strong>: indica lo stato della connessione in tempo reale con il robot.</p></li>
 </ul>
 </td>
@@ -557,7 +557,7 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
 <tr class="row-odd"><td><p>6</p></td>
 <td><p><strong>Grafici di Performance e Storico</strong></p>
 <ul class="simple">
-<li><p><strong>Elenco modelli rilevati</strong>: tabella con coordinate (<strong>X</strong>, <strong>Y</strong>), rotazione (<strong>Rot</strong>) del componente e lo <strong>Score</strong> (fedeltà dell’oggetto rispetto al modello originale).</p></li>
+<li><p><strong>Elenco modelli rilevati</strong>: tabella con coordinate (<strong>X</strong>, <strong>Y</strong>), rotazione (<strong>Rot</strong>) del componente e lo <strong>Score</strong> (grado di similarità dell’oggetto riconosciuto rispetto al modello di riferimento).</p></li>
 <li><p><strong>Parts per minute</strong>: grafico della media dei componenti prelevati al minuto.</p></li>
 </ul>
 </td>
@@ -586,16 +586,21 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
 <td><p><strong>Gestione Database Ricette</strong></p>
 <ul class="simple">
 <li><p><strong>Backup</strong>: effettua un backup di tutte le ricette in un unico file .xml, salvabile nella posizione desiderata.</p></li>
-<li><p><strong>Import backup</strong>: permette l’importazione di qualsiasi backup precedentemente effettuato con FlexiVision Easy.</p></li>
-<li><p><strong>Load recipe</strong>: carica la ricetta selezionata nell’elenco soprastante per renderla operativa.</p></li>
+<li><p><strong>Import backup</strong>: permette l’importazione di qualsiasi backup precedentemente effettuato con FlexiVision One.</p></li>
+<li><p><strong>Load recipe</strong>: carica la ricetta selezionata nell’elenco sopra per renderla operativa.</p></li>
 <li><p><strong>Delete recipe</strong>: elimina definitivamente la ricetta selezionata dall’elenco.</p></li>
 </ul>
 </td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
 <td><p><strong>Creazione e Salvataggio</strong></p>
-<ul class="simple">
-<li><p><strong>New recipe</strong>: avvia la creazione di una nuova ricetta. Dopo aver scelto il nome e il tipo di applicazione (Standard o Mix), la ricetta viene salvata, caricata e il sistema apre direttamente il menù di creazione modello.</p></li>
+<ul>
+<li><p><strong>New recipe</strong>: avvia la creazione di una nuova ricetta. Dopo aver scelto il nome e il FlexiBowl con cui stiamo lavorando, si apre direttamente il menù di creazione modello.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La ricetta deve poi essere salvata cliccando su Save.</p>
+</div>
+</li>
 <li><p><strong>Save recipe</strong>: salva la ricetta corrente sovrascrivendo i parametri modificati o crea un nuovo file se non ancora esistente.</p></li>
 </ul>
 </td>
@@ -639,28 +644,28 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
 <tr class="row-odd"><td><p>2</p></td>
 <td><p><strong>Pannello di Accesso</strong></p>
 <ul class="simple">
-<li><p><strong>Name/Surname</strong>: campo per l’inserimento del nome utente.</p></li>
+<li><p><strong>Name</strong>: campo per l’inserimento del nome utente.</p></li>
 <li><p><strong>Login</strong>: pulsante per confermare le credenziali ed effettuare l’accesso al sistema.</p></li>
 </ul>
 </td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td><p><strong>Camera setup</strong>: sezione dedicata alla configurazione dei parametri della telecamera.</p></td>
+<td><p><strong>Camera setup</strong>: sezione dedicata alla configurazione dei parametri delle telecamere.</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
-<td><p><strong>Flexibowl setup</strong>: area per impostare i parametri di movimento e controllo dell’alimentatore.</p></td>
+<td><p><strong>Flexibowl setup</strong>: area per impostare i parametri di movimento e controllo del FlexiBowl.</p></td>
 </tr>
 <tr class="row-even"><td><p>5</p></td>
 <td><p><strong>Hopper setup</strong>: configurazione dei parametri della tramoggia (vibrazione e scarico).</p></td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
-<td><p><strong>Robot setup</strong>: sezione per la configurazione della comunicazione e dei parametri del robot.</p></td>
+<td><p><strong>Robot setup</strong>: sezione per la configurazione della comunicazione del robot.</p></td>
 </tr>
 <tr class="row-even"><td><p>7</p></td>
-<td><p><strong>Protocol setup</strong>: pagina di configurazione dei parametri dell’applicazione lato robot e lato visione.</p></td>
+<td><p><strong>Protocol setup</strong>: pagina di configurazione dei parametri che definiscono quanti oggetti la visione deve o può restituire in ogni ciclo, con quale ordine vengono prioritizzati e quali valori statistici usare in base al numero di prese robot e al tempo massimo di gestione per ogni componente.</p></td>
 </tr>
 <tr class="row-odd"><td><p>8</p></td>
-<td><p><strong>Account setup</strong>: permette di configurare i vari account utente in base alle qualifiche e ai livelli di accesso.</p></td>
+<td><p><strong>Account setup</strong>: permette di configurare i vari account utente in base ai livelli di accesso.</p></td>
 </tr>
 <tr class="row-even"><td><p>9</p></td>
 <td><p><strong>Laser pointer</strong>: permette di usare uno strumento laser per simulare un prelievo (pick) in assenza del robot.</p></td>
@@ -669,7 +674,7 @@ La navigazione è progettata per garantire semplicità d’uso, controllo immedi
 <td><p><strong>Evaluate PPM</strong>: permette di effettuare una stima dei pezzi al minuto (PPM) quando si utilizza il laser pointer.</p></td>
 </tr>
 <tr class="row-even"><td><p>11</p></td>
-<td><p><strong>Licence software</strong>: pagina per l’attivazione del software; qui va inserita la chiave di licenza fornita da ARS per procedere all’attivazione.</p></td>
+<td><p><strong>Licence software</strong>: pagina per l’attivazione della licenza software.</p></td>
 </tr>
 </tbody>
 </table>

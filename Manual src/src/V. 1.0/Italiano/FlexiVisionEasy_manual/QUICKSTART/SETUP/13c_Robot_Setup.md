@@ -10,7 +10,7 @@ Prima di procedere, assicurarsi che:
 - Il robot sia acceso e operativo
 - Il cavo Ethernet tra VisionController e robot sia collegato
 - Il robot sia configurato per accettare connessioni TCP/IP (consultare manuale robot)
-- Si conosca l'indirizzo IP del robot e la porta di comunicazione configurata
+- Si conosca la porta di comunicazione configurata nel codice del robot
 ```
 
 ---
@@ -50,9 +50,11 @@ La pagina Robot Setup presenta diverse sezioni per configurare e testare la comu
 * - **Server Online**
   - Indicatore di stato del server FlexiVision (verde = server attivo e accessibile)
 * - **Client Connect**
-  - 
+  -  Indicatore di stato del client robot (verde = robot connesso)
 * - **Messaggi robot-flexivision**
-  - Finestra di log che mostra i messaggi scambiati tra robot e FlexiVision (utilizzata per debugging)
+  - Finestre di log che mostrano i messaggi scambiati tra robot e FlexiVision (utilizzata per debugging):
+      - la prima finestra (la più piccola )indica i messaggi che FlexiVision o l'operatore inviano
+      - la seconda finestra indica i messaggi che Flexiision riceve
 ```
 
 ---
@@ -75,7 +77,6 @@ Il numero di porta deve essere:
 ```
 
 ```{warning}
-**Corrispondenza porta critica**
 
 È **fondamentale** che il numero di porta sia identico su entrambi i lati:
 - **FlexiVision**: Porta configurata in questa pagina
@@ -120,12 +121,18 @@ Dopo la riconfigurazione, verificare che il server sia attivo:
   - Osservare l'indicatore **Server Online**:
    - **Verde**: Server attivo   
      **Rosso**: Server non attivo  
-     
+* - **2**
+  - dopo aver avviato il programma dal robot, osservare l'indicatore **Client Online**:
+   - **Verde**: robot connesso  
+     **Rosso**: robot non connesso 
+
 ```
 ```{note}
-Se l'indicatore è verde, il server FlexiVision è pronto a ricevere connessioni dal robot
+Se gli indicatori sono verdi, il sistema è correttamentre connesso. 
 
-Se l'indicatore è rosso, verificare:
+Se uno degli indicatori è rosso, verificare:
+   - Controllare che il programma sul robot sia stato avviato 
+   - Controllare che gli indirizzi IP siano sulla stessa subnet
    - Che la porta non sia già in uso da un altro programma
    - I log di sistema per messaggi di errore
 ```

@@ -454,7 +454,7 @@ document.write(`
 <li><p>Il robot sia acceso e operativo</p></li>
 <li><p>Il cavo Ethernet tra VisionController e robot sia collegato</p></li>
 <li><p>Il robot sia configurato per accettare connessioni TCP/IP (consultare manuale robot)</p></li>
-<li><p>Si conosca l’indirizzo IP del robot e la porta di comunicazione configurata</p></li>
+<li><p>Si conosca la porta di comunicazione configurata nel codice del robot</p></li>
 </ul>
 </div>
 <hr class="docutils" />
@@ -507,10 +507,15 @@ document.write(`
 <td><p>Indicatore di stato del server FlexiVision (verde = server attivo e accessibile)</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Client Connect</strong></p></td>
-<td></td>
+<td><p>Indicatore di stato del client robot (verde = robot connesso)</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Messaggi robot-flexivision</strong></p></td>
-<td><p>Finestra di log che mostra i messaggi scambiati tra robot e FlexiVision (utilizzata per debugging)</p></td>
+<td><p>Finestre di log che mostrano i messaggi scambiati tra robot e FlexiVision (utilizzata per debugging):</p>
+<ul class="simple">
+<li><p>la prima finestra (la più piccola )indica i messaggi che FlexiVision o l’operatore inviano</p></li>
+<li><p>la seconda finestra indica i messaggi che Flexiision riceve</p></li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -542,7 +547,6 @@ Il numero di porta deve essere:</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><strong>Corrispondenza porta critica</strong></p>
 <p>È <strong>fondamentale</strong> che il numero di porta sia identico su entrambi i lati:</p>
 <ul class="simple">
 <li><p><strong>FlexiVision</strong>: Porta configurata in questa pagina</p></li>
@@ -592,14 +596,21 @@ Il numero di porta deve essere:</p>
 <td><p><strong>Verde</strong>: Server attivo<br />
 <strong>Rosso</strong>: Server non attivo</p></td>
 </tr>
+<tr class="row-even"><td><p><strong>2</strong></p></td>
+<td><p>dopo aver avviato il programma dal robot, osservare l’indicatore <strong>Client Online</strong>:</p></td>
+<td><p><strong>Verde</strong>: robot connesso<br />
+<strong>Rosso</strong>: robot non connesso</p></td>
+</tr>
 </tbody>
 </table>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Se l’indicatore è verde, il server FlexiVision è pronto a ricevere connessioni dal robot</p>
-<p>Se l’indicatore è rosso, verificare:</p>
+<p>Se gli indicatori sono verdi, il sistema è correttamentre connesso.</p>
+<p>Se uno degli indicatori è rosso, verificare:</p>
 <ul class="simple">
+<li><p>Controllare che il programma sul robot sia stato avviato</p></li>
+<li><p>Controllare che gli indirizzi IP siano sulla stessa subnet</p></li>
 <li><p>Che la porta non sia già in uso da un altro programma</p></li>
 <li><p>I log di sistema per messaggi di errore</p></li>
 </ul>

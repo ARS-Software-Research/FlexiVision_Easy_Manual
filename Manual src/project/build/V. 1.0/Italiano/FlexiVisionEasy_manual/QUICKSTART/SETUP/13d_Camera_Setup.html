@@ -462,7 +462,7 @@ document.write(`
 <ol class="arabic simple">
 <li><p>Dalla pagina principale del software, cliccare su <strong>SETUP</strong></p></li>
 <li><p>Nella pagina SETUP, identificare e cliccare sull’icona <strong>Camera Setup</strong></p></li>
-<li><p>Si apre la pagina di configurazione della camera</p></li>
+<li><p>Si apre la pagina di configurazione delle camere</p></li>
 </ol>
 </section>
 <hr class="docutils" />
@@ -470,52 +470,30 @@ document.write(`
 <h2>Panoramica interfaccia Camera Setup<a class="headerlink" href="#panoramica-interfaccia-camera-setup" title="Link to this heading">#</a></h2>
 <p>La pagina Camera Setup presenta tre riquadri informativi principali e un’area di configurazione:</p>
 <p>immagine schermata camera setup</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<colgroup>
-<col style="width: 30.0%" />
-<col style="width: 70.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Sezione</p></th>
-<th class="head"><p>Descrizione</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Camera Selected</strong></p></td>
-<td><p>Mostra l’identificazione della camera attualmente selezionata (modello e numero seriale)</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Serial Camera</strong></p></td>
-<td><p>Visualizza il numero seriale univoco della camera connessa</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Status</strong></p></td>
-<td><p>Indica lo stato della connessione e dell’acquisizione</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Calibration Status</strong></p></td>
-<td><p>Mostra se la camera è stata calibrata o meno</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Config Camera</strong></p></td>
-<td><p>Pulsante per aprire la pagina di configurazione dettagliata</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 </section>
 <hr class="docutils" />
 <section id="procedura-di-configurazione">
 <h2>Procedura di configurazione<a class="headerlink" href="#procedura-di-configurazione" title="Link to this heading">#</a></h2>
 <p>inserire immagini delle schermate per ogni passaggio per renderli più chiari e visibili</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Per comodità e coerenza, si consiglia di far coincidere il numero della camera con il corrispondente FlexiBowl:</p>
+<ul class="simple">
+<li><p>✅ Camera installata sopra FlexiBowl 1: CAM-CIC-5000-20G-12345 &gt; Seleziono Camera 1 FlexiBowl 1 e in “Image Acquisition Device” seleziono CAM-CIC-5000-20G-12345</p></li>
+</ul>
+</div>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p><strong>Accesso configurazione</strong></p></td>
 <td><ol class="arabic simple">
 <li><p>Cliccare sul pulsante <strong>Config Camera X</strong> (dove X è il numero della camera)</p></li>
-<li><p>Si apre una nuova finestra con le impostazioni dettagliate della camera</p></li>
+<li><p>Si apre la prima pagina della procedura guidata per la calibrazione, in cui è possibile modificare il parametro <strong>Cam Exposure</strong></p></li>
 </ol>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Attivazione modalità avanzata</strong></p></td>
 <td><ol class="arabic simple" start="3">
-<li><p>Nella finestra di configurazione camera, localizzare e cliccare sul pulsante <strong>Expert</strong> (in basso a destra)</p></li>
+<li><p>Cliccare sul pulsante <strong>Expert</strong> (in basso a destra)</p></li>
 <li><p>Questa modalità fornisce accesso a tutte le impostazioni avanzate della camera necessarie per la configurazione iniziale</p></li>
 </ol>
 </td>
@@ -523,21 +501,20 @@ document.write(`
 <tr class="row-odd"><td><p><strong>Configurazione image acquisition device</strong></p></td>
 <td><ol class="arabic simple" start="5">
 <li><p>Nel pannello <strong>Expert</strong>, cliccare sulla sezione <strong>Image Acquisition</strong> da <strong>Settings</strong></p></li>
-<li><p>Cercare e cliccare su <strong>Image Acquisition Device</strong></p></li>
+<li><p>Cliccare su <strong>Image Acquisition Device</strong></p></li>
 <li><p>Si apre un menu di selezione dei dispositivi di acquisizione disponibili</p></li>
 </ol>
 </td>
 </tr>
 <tr class="row-even"><td><p><strong>Identificazione camera specifica</strong></p></td>
 <td><ol class="arabic simple" start="8">
-<li><p>Dal menu dei dispositivi, selezionare la camera fisica connessa</p>
+<li><p>Dal menu dei dispositivi, selezionare la camera desiderata</p>
 <ul class="simple">
-<li><p>Cercare nell’elenco il numero seriale o il modello della vostra camera</p></li>
+<li><p>Cercare nell’elenco il numero seriale o il modello della camera</p></li>
 <li><p>Esempio: “CAM-CIC-5000-20G-XXXXX” (dove XXXXX è il seriale)</p></li>
 </ul>
 </li>
 <li><p>Cliccare sulla camera per selezionarla</p></li>
-<li><p>Confermare la selezione</p></li>
 </ol>
 </td>
 </tr>
@@ -588,13 +565,12 @@ document.write(`
 </tr>
 <tr class="row-even"><td><p><strong>Verifica funzionamento acquisizione</strong></p></td>
 <td><ol class="arabic simple" start="16">
-<li><p>Localizzare il pulsante <strong>Run</strong> in alto a sinistra dell’interfaccia (icona “play” o simile)</p></li>
+<li><p>Localizzare il pulsante <strong>Run</strong> in alto a sinistra dell’interfaccia (icona “play”)</p></li>
 <li><p>Cliccare su <strong>Run</strong> ripetutamente (5-10 volte) per acquisire immagini di test</p></li>
 <li><p>Osservare l’area di visualizzazione immagine:</p>
 <ul class="simple">
 <li><p>Dovrebbe mostrare la vista della camera sul FlexiBowl</p></li>
 <li><p>L’immagine dovrebbe aggiornarsi ad ogni click su Run</p></li>
-<li><p>Verificare che l’illuminazione sia visibile</p></li>
 </ul>
 </li>
 </ol>
@@ -608,7 +584,7 @@ document.write(`
 <p><strong>Diagnosi schermo completamente blu</strong></p>
 <p>Se durante i test l’immagine acquisita appare <strong>completamente blu</strong>  almeno una volta:</p>
 <p><strong>Causa</strong>: Problema di comunicazione GigE (latenza di rete o dimensione pacchetti non ottimale)</p>
-<p><strong>Soluzione obbligatoria</strong>:</p>
+<p><strong>Soluzione</strong>:</p>
 <ol class="arabic simple">
 <li><p>Dal menu in alto, selezionare <strong>GigE</strong> (o <strong>GigE Vision Settings</strong>)</p></li>
 <li><p>Modificare i seguenti parametri:</p>
@@ -629,21 +605,16 @@ document.write(`
 <p>Il parametro <strong>Latency Level</strong> controlla il buffer di comunicazione tra camera e VisionController.</p>
 <p><strong>Valori tipici</strong>:</p>
 <ul class="simple">
-<li><p>Valore predefinito: spesso 1 o 2</p></li>
-<li><p>Range disponibile: 1-10 (o 1-20 a seconda del driver)</p></li>
+<li><p>Valore predefinito: 0</p></li>
+<li><p>Range disponibile: 0-3</p></li>
 </ul>
 <p><strong>Come regolare</strong>:</p>
 <ol class="arabic simple">
-<li><p>Aumentare gradualmente il valore (es: da 1 a 3, poi a 5)</p></li>
-<li><p>Dopo ogni modifica, testare l’acquisizione (pulsante Run) 10-20 volte</p></li>
+<li><p>Aumentare gradualmente il valore</p></li>
+<li><p>Dopo ogni modifica, testare l’acquisizione (pulsante Run) 5-10 volte</p></li>
 <li><p>Se non si verificano più schermate blu, il valore è corretto</p></li>
-<li><p>Se le schermate blu persistono, aumentare ulteriormente</p></li>
+<li><p>Se le schermate blu persistono, aumentare ulteriormente o provare con modifiche al parametro Packet Size</p></li>
 </ol>
-<p><strong>Valore consigliato</strong>:</p>
-<ul class="simple">
-<li><p>Per reti dedicate (camera collegata direttamente al VisionController o tramite switch dedicato): 3-5</p></li>
-<li><p>Per reti condivise o con switch multipli: 5-10</p></li>
-</ul>
 </div>
 </section>
 <section id="packet-size-dimensione-pacchetto">
@@ -654,43 +625,15 @@ document.write(`
 <p>Il parametro <strong>Packet Size</strong> definisce la dimensione dei pacchetti dati trasmessi sulla rete Ethernet.</p>
 <p><strong>Valori tipici</strong>:</p>
 <ul class="simple">
-<li><p>Valore predefinito: 1500 byte (MTU standard Ethernet)</p></li>
-<li><p>Valore ottimale per GigE Vision: 8192-9000 byte (Jumbo Frames)</p></li>
+<li><p>Valore predefinito: 8164 bytes</p></li>
 </ul>
 <p><strong>Come regolare</strong>:</p>
 <ol class="arabic simple">
-<li><p>Provare ad aumentare il valore a <strong>9000</strong> byte (Jumbo Frame massimo)</p></li>
-<li><p>Se l’acquisizione fallisce completamente, ridurre gradualmente (8000, 7000, ecc.)</p></li>
-<li><p>Se 9000 funziona, testare con 10-20 acquisizioni per conferma</p></li>
+<li><p>Ridurre gradualmente (8000, 7000, ecc.)</p></li>
+<li><p>Dopo ogni modifica, testare l’acquisizione (pulsante Run) 5-10 volte</p></li>
+<li><p>Se non si verificano più schermate blu, il valore è corretto</p></li>
+<li><p>Se le schermate blu persistono, diminuire ulteriormente o provare con modifiche al parametro Latency Level</p></li>
 </ol>
-<p><strong>Nota importante</strong>:</p>
-<ul class="simple">
-<li><p>Jumbo Frames (&gt; 1500 byte) richiedono che tutti i dispositivi di rete (switch, router) li supportino</p></li>
-<li><p>Se il packet size alto causa problemi, tornare a 1500 e utilizzare invece un Latency Level più alto</p></li>
-</ul>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Configurazione ottimale consigliata</strong></p>
-<p>Per la maggior parte delle installazioni:</p>
-<ul class="simple">
-<li><p><strong>Latency Level</strong>: 5</p></li>
-<li><p><strong>Packet Size</strong>: 9000 (se la rete supporta Jumbo Frames) oppure 1500 (rete standard)</p></li>
-</ul>
-<p>Con questi valori, le schermate blu dovrebbero scomparire completamente.</p>
-<p>Se i problemi persistono, verificare:</p>
-<ul class="simple">
-<li><p>Qualità dei cavi Ethernet (utilizzare Cat6 o superiore)</p></li>
-<li><p>Performance dello switch di rete (deve essere Gigabit, non Fast Ethernet)</p></li>
-<li><p>Carico di rete (evitare altro traffico pesante sulla stessa rete)</p></li>
-</ul>
-</div>
-<hr class="docutils" />
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>Regolazioni immagine</strong></p>
-<p>Nella sezione Expert/Settings sono disponibili anche parametri per regolare esposizone, luminosità e contrasto, ma NON è necessario modificare questi parametri in questa fase. Verra fatto poi automaticamente o manualmente durante le fasi successive.</p>
-<p>Procedere quindi con i valori automatici per completare il setup iniziale.</p>
 </div>
 <hr class="docutils" />
 <div class="pst-scrollable-table-container"><table class="table">
@@ -735,6 +678,12 @@ document.write(`
 <p>Una volta completato il Camera Setup:</p>
 <ol class="arabic simple">
 <li><p><strong>Verifica setup completo</strong>: Tornare alla pagina SETUP e verificare che tutti i componenti (FlexiBowl, Hopper se presente, Robot, Camera) siano configurati</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A questo punto cliccare su Recipes e su Save Recipe per salvare la ricetta</p>
+</div>
+<ol class="arabic simple" start="2">
 <li><p><strong>Procedere con calibrazione</strong>: <a class="reference internal" href="../14_calibrazione_camera.html#calibrazione"><span class="std std-ref">Calibrazione Camera</span></a></p></li>
 </ol>
 <br>

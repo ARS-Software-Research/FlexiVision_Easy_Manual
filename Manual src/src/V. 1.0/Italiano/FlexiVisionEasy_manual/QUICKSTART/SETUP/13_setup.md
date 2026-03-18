@@ -18,12 +18,12 @@ Prima di iniziare la configurazione software, assicurarsi che:
 Il processo di configurazione iniziale è composto da sette passaggi principali:
 
 1. **Login** - Accesso al software con credenziali utente
-2. **Attivazione licenza** - Inserimento della chiave di licenza
+2. **Attivazione licenza** - Inserimento della chiave di licenza (se non già attiva)
 3. **Creazione ricetta base** - Configurazione del profilo applicativo
-4. **FlexiBowl Setup** - Connessione e configurazione dell'alimentatore vibrante
-5. **Hopper Setup**  - Configurazione tramoggia esterna
+4. **FlexiBowl Setup** - Connessione e configurazione del FlexiBowl
+5. **Hopper Setup**  - Configurazione della tramoggia 
 6. **Robot Setup** - Configurazione comunicazione con il robot
-7. **Camera Setup** - Configurazione e test della telecamera
+7. **Camera Setup** - Configurazione della camera
 
 ![Flowchart setup](img/flowchartSetup.jpg)
 
@@ -37,17 +37,20 @@ L'ordine dei setup è importante! Non saltare passaggi o modificare la sequenza,
 
 ## Operazioni preliminari
 
+Il primissimo passo prima dell'avvio del software FlexiVision One è inserire la chiave di licenza fornita con il kit. 
+
 ### Passo 1: Login al sistema
 
-All'avvio del software FlexiVision One, viene presentata la schermata di login.
+All'avvio del software FlexiVision One, viene presentata la pagina Home. 
 ```{list-table} 
    :widths: 10 90
    :header-rows: 0
-
+   * - **0**
+     - Cliccare su Setup 
    * - **1**
-     - **Selezionare l'utente** dal menu a tendina.
+     - **Selezionare l'utente ARS** dal menu a tendina in alto a destra.
    * - **2**
-     - **Inserire la password** fornita da ARS Automation.
+     - **Inserire la password** ArS2025.
        *(Nota: il campo è case-sensitive)*.
    * - **3**
      - Cliccare sul pulsante **LOGIN** per accedere all'interfaccia.
@@ -67,40 +70,38 @@ FlexiVision One supporta profili utente multipli con diversi livelli di permessi
 
 ### Passo 2: Attivazione licenza software
 
-Dopo il primo login, è necessario attivare la licenza software.
+Dopo il primo login, se è necessario attivare la licenza FlexiVision, seguire questi passi: 
 
 ```{list-table}
 :header-rows: 0
 :widths: 10 90
 
-* - **1.**
-  - Inserire la chiavetta fornita nel kit
 
-* - **2.**
+* - **4.**
   - Accedere alla sezione <img src="../SETUP/img/tasto_setup1.png" class="inline-icon"> e cliccare su **Software License**
     ```{dropdown} Pagina Software License 
        ![Pagina Software License](../SETUP/img/pagina_softwareL.png)
     ```
 
 * - **3.**
-  - Inserire la chiave di licenza fornita da ARS Automation nel campo dedicato.
-    La chiave è composta da caratteri alfanumerici (es: ``XXXX-XXXX-XXXX-XXXX``).
-    Copiare e incollare la chiave per evitare errori di digitazione.
-
+  - Inserire la chiave di licenza fornita da ARS Automation nel campo dedicato.  
+    La chiave è composta da caratteri numerici (es: ``XXXX-XXXX-XXXX-XXXX``).  
+    :::{tip}
+     Copiare e incollare la chiave per evitare errori di digitazione.
+    :::
 * - **4.**
   - Cliccare su **Activate**
 
 * - **5.**
-  - Attendere che l'indicatore di stato diventi verde
+  - Attendere che l'indicatore di stato "License activated" diventi verde
 ```
 
 ```{warning}
 **Chiave di licenza non valida**
 
 Se la licenza non viene accettata:
-- Verificare di aver inserito la chiave corretta (controllare maiuscole/minuscole)
+- Verificare di aver inserito la chiave corretta 
 - Assicurarsi che il VisionController sia connesso a Internet (alcune licenze richiedono validazione online)
-- Verificare la data di scadenza della licenza
 - Contattare il supporto ARS se il problema persiste
 ```
 
@@ -108,7 +109,7 @@ Se la licenza non viene accettata:
 (ricettabase)=
 ### Passo 3: Creazione ricetta base
 
-Prima di configurare i componenti hardware, è necessario creare una ricetta di base che definisca i parametri dell'applicazione.
+Prima di configurare i componenti hardware, è necessario creare una ricetta di base che definisca i parametri del sistema.
 
 ```{list-table}
 :header-rows: 0
@@ -118,20 +119,24 @@ Prima di configurare i componenti hardware, è necessario creare una ricetta di 
   - Accedere alla sezione <img src="../SETUP/img/tasto_recipes.png" class="inline-icon"> dal pulsante in alto
 
 * - **2.**
-  - Cliccare su **New Recipe**
-
-* - **3.**
-  - Inserire il nome della ricetta.
+   - Inserire il nome della ricetta.  
     Utilizzare un nome descrittivo (es: "Ricetta_Base").
     Evitare caratteri speciali o spazi (usare underscore ``_`` al posto degli spazi).
 
-* - **4.**
-  - Selezionare applicazione **Standard**
+* - **3.**
+  - Cliccare su **New Recipe**
+
 * - **5.**
-  - Selezionare il **FlexiBowl** utilizzato
+  - Selezionare il **FlexiBowl** utilizzato 
+   :::{nota}
+   Per comodità e coerenza, al primo avvio selezionare il FlexiBowl 1. 
+   :::
 
 * - **6.**
-  - Cliccare su **Save** per salvare la ricetta
+  - Cliccare su **Save Recipe** per salvare la ricetta
+
+* - **7**
+  - Cliccare nuovamente sul pulsante <img src="../SETUP/img/tasto_recipes.png" class="inline-icon">
 ```
 
 ```{tip}

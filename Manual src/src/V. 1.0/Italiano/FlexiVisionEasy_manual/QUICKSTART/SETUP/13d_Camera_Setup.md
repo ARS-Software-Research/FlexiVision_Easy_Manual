@@ -22,7 +22,7 @@ Prima di procedere, assicurarsi che:
 
 1. Dalla pagina principale del software, cliccare su **SETUP**
 2. Nella pagina SETUP, identificare e cliccare sull'icona **Camera Setup**
-3. Si apre la pagina di configurazione della camera
+3. Si apre la pagina di configurazione delle camere
 
 
 ---
@@ -39,14 +39,13 @@ immagine schermata camera setup
 
 * - Sezione
   - Descrizione
-* - **Camera Selected**
-  - Mostra l'identificazione della camera attualmente selezionata (modello e numero seriale)
-* - **Serial Camera**
+* - **Selected Camera**
+  - Mostra l'identificazione della camera attualmente selezionata
   - Visualizza il numero seriale univoco della camera connessa
 * - **Status**
-  - Indica lo stato della connessione e dell'acquisizione
-* - **Calibration Status**
-  - Mostra se la camera è stata calibrata o meno
+  - Indica lo stato della connessione
+* - **Calibration Result**
+  - Mostra il risultato della calibrazione della camera
 * - **Config Camera**
   - Pulsante per aprire la pagina di configurazione dettagliata
 ```
@@ -57,24 +56,28 @@ immagine schermata camera setup
 
 inserire immagini delle schermate per ogni passaggio per renderli più chiari e visibili 
 
+:::{note}
+Per comodità e coerenza, si consiglia di far coincidere il numero della camera con il corrispondente FlexiBowl: 
+ - ✅ Camera installata sopra FlexiBowl 1: CAM-CIC-5000-20G-12345 > Seleziono Camera 1 FlexiBowl 1 e in "Image Acquisition Device" seleziono CAM-CIC-5000-20G-12345
+:::
+
 ```{list-table}
 * - **Accesso configurazione**
   - 1. Cliccare sul pulsante **Config Camera X** (dove X è il numero della camera)
-    2. Si apre una nuova finestra con le impostazioni dettagliate della camera
+    2. Si apre la prima pagina della procedura guidata per la calibrazione, in cui è possibile modificare il parametro **Cam Exposure**
 
 * - **Attivazione modalità avanzata**
-  - 3. Nella finestra di configurazione camera, localizzare e cliccare sul pulsante **Expert** (in basso a destra)
+  - 3. Cliccare sul pulsante **Expert** (in basso a destra)
     4. Questa modalità fornisce accesso a tutte le impostazioni avanzate della camera necessarie per la configurazione iniziale
 * - **Configurazione image acquisition device**
   - 5. Nel pannello **Expert**, cliccare sulla sezione **Image Acquisition** da **Settings**
-    6. Cercare e cliccare su **Image Acquisition Device**
+    6. Cliccare su **Image Acquisition Device**
     7. Si apre un menu di selezione dei dispositivi di acquisizione disponibili
 * -  **Identificazione camera specifica**
-  - 8. Dal menu dei dispositivi, selezionare la camera fisica connessa
-        - Cercare nell'elenco il numero seriale o il modello della vostra camera
+  - 8. Dal menu dei dispositivi, selezionare la camera desiderata
+        - Cercare nell'elenco il numero seriale o il modello della camera
         - Esempio: "CAM-CIC-5000-20G-XXXXX" (dove XXXXX è il seriale)
-    9. Cliccare sulla camera per selezionarla
-    10. Confermare la selezione 
+    9. Cliccare sulla camera per selezionarla 
 ```
 
 ```{tip}
@@ -107,14 +110,13 @@ Se sono elencate multiple camere o dispositivi:
 ```{list-table}
 * - **Attivazione sistema di acquisizione**
   - 14. Dopo aver selezionato il formato corretto, cliccare su **Initialize Acquisition**  
-  15.Attendere il completamento dell'inizializzazione (pochi secondi)
+    15.Attendere il completamento dell'inizializzazione (pochi secondi)
 * - **Verifica funzionamento acquisizione**
-  - 16. Localizzare il pulsante **Run** in alto a sinistra dell'interfaccia (icona "play" o simile)
+  - 16. Localizzare il pulsante **Run** in alto a sinistra dell'interfaccia (icona "play")
     17. Cliccare su **Run** ripetutamente (5-10 volte) per acquisire immagini di test
     18. Osservare l'area di visualizzazione immagine:
         - Dovrebbe mostrare la vista della camera sul FlexiBowl
         - L'immagine dovrebbe aggiornarsi ad ogni click su Run
-        - Verificare che l'illuminazione sia visibile
 ```
 
 ```{warning}
@@ -124,7 +126,7 @@ Se durante i test l'immagine acquisita appare **completamente blu**  almeno una 
 
 **Causa**: Problema di comunicazione GigE (latenza di rete o dimensione pacchetti non ottimale)
 
-**Soluzione obbligatoria**:
+**Soluzione**:
 
 1. Dal menu in alto, selezionare **GigE** (o **GigE Vision Settings**)
 
@@ -145,19 +147,15 @@ Procedere con gli step successivi per la configurazione ottimale di questi param
 Il parametro **Latency Level** controlla il buffer di comunicazione tra camera e VisionController.
 
 **Valori tipici**:
-- Valore predefinito: spesso 1 o 2
-- Range disponibile: 1-10 (o 1-20 a seconda del driver)
+- Valore predefinito: 0
+- Range disponibile: 0-3
 
 **Come regolare**:
 
-1. Aumentare gradualmente il valore (es: da 1 a 3, poi a 5)
-2. Dopo ogni modifica, testare l'acquisizione (pulsante Run) 10-20 volte
+1. Aumentare gradualmente il valore 
+2. Dopo ogni modifica, testare l'acquisizione (pulsante Run) 5-10 volte
 3. Se non si verificano più schermate blu, il valore è corretto
-4. Se le schermate blu persistono, aumentare ulteriormente
-
-**Valore consigliato**: 
-- Per reti dedicate (camera collegata direttamente al VisionController o tramite switch dedicato): 3-5
-- Per reti condivise o con switch multipli: 5-10
+4. Se le schermate blu persistono, aumentare ulteriormente o provare con modifiche al parametro Packet Size
 ```
 
 #### Packet Size (Dimensione Pacchetto)
@@ -168,46 +166,16 @@ Il parametro **Latency Level** controlla il buffer di comunicazione tra camera e
 Il parametro **Packet Size** definisce la dimensione dei pacchetti dati trasmessi sulla rete Ethernet.
 
 **Valori tipici**:
-- Valore predefinito: 1500 byte (MTU standard Ethernet)
-- Valore ottimale per GigE Vision: 8192-9000 byte (Jumbo Frames)
+- Valore predefinito: 8164 bytes
 
 **Come regolare**:
 
-1. Provare ad aumentare il valore a **9000** byte (Jumbo Frame massimo)
-2. Se l'acquisizione fallisce completamente, ridurre gradualmente (8000, 7000, ecc.)
-3. Se 9000 funziona, testare con 10-20 acquisizioni per conferma
-
-**Nota importante**: 
-- Jumbo Frames (> 1500 byte) richiedono che tutti i dispositivi di rete (switch, router) li supportino
-- Se il packet size alto causa problemi, tornare a 1500 e utilizzare invece un Latency Level più alto
+1. Ridurre gradualmente (8000, 7000, ecc.)
+2. Dopo ogni modifica, testare l'acquisizione (pulsante Run) 5-10 volte
+3. Se non si verificano più schermate blu, il valore è corretto
+4. Se le schermate blu persistono, diminuire ulteriormente o provare con modifiche al parametro Latency Level
 ```
 
-```{tip}
-**Configurazione ottimale consigliata**
-
-Per la maggior parte delle installazioni:
-
-- **Latency Level**: 5
-- **Packet Size**: 9000 (se la rete supporta Jumbo Frames) oppure 1500 (rete standard)
-
-Con questi valori, le schermate blu dovrebbero scomparire completamente.
-
-Se i problemi persistono, verificare:
-- Qualità dei cavi Ethernet (utilizzare Cat6 o superiore)
-- Performance dello switch di rete (deve essere Gigabit, non Fast Ethernet)
-- Carico di rete (evitare altro traffico pesante sulla stessa rete)
-```
-
----
-
-
-```{important}
-**Regolazioni immagine**
-
-Nella sezione Expert/Settings sono disponibili anche parametri per regolare esposizone, luminosità e contrasto, ma NON è necessario modificare questi parametri in questa fase. Verra fatto poi automaticamente o manualmente durante le fasi successive.
-
-Procedere quindi con i valori automatici per completare il setup iniziale.
-```
 
 ---
 
@@ -239,6 +207,10 @@ A questo punto dovrebbero essere completati:
 Una volta completato il Camera Setup:
 
 1. **Verifica setup completo**: Tornare alla pagina SETUP e verificare che tutti i componenti (FlexiBowl, Hopper se presente, Robot, Camera) siano configurati
+
+:::{warning}
+A questo punto cliccare su Recipes e su Save Recipe per salvare la ricetta 
+:::
 
 2. **Procedere con calibrazione**: [Calibrazione Camera](calibrazione)
 

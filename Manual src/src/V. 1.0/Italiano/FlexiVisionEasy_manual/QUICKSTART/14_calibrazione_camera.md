@@ -1,7 +1,7 @@
 (calibrazione)=
 # **Calibrazione della Camera**
 
-La calibrazione è il passaggio cruciale che stabilisce la relazione geometrica esatta tra il mondo reale (coordinate in millimetri) e l'immagine acquisita dalla telecamera (pixel). Senza una calibrazione precisa, la precisione del sistema di picking risulta compromessa, rendendo inaffidabile l'intera applicazione.
+La calibrazione è il passaggio cruciale che stabilisce la relazione geometrica esatta tra il mondo reale (coordinate in millimetri) e l'immagine acquisita dalla telecamera (pixel). Senza una calibrazione accurata, la precisione del sistema di picking risulta compromessa, rendendo inaffidabile l'intera applicazione.
 
 ```{warning}
 **Prerequisito fondamentale**
@@ -12,9 +12,11 @@ Prima di procedere con la calibrazione, assicurarsi che tutti i setup hardware s
 - [Robot Setup](SETUP/13c_Robot_Setup.md) ✓
 - [Camera Setup](SETUP/13d_Camera_Setup.md) ✓
 
-La calibrazione deve essere ripetuta ogni volta che un elemento fisico della telecamera o del suo setup ottico viene modificato (es. messa a fuoco, apertura o posizione).
+La calibrazione deve essere ripetuta ogni volta che viene alterata la posizione della camera e/o del robot.
 ```
-
+:::{tip}
+Non è necessario eseguire nuovamente la calibrazione nel caso in cui viene alterata la posizione del FlexiBowl.
+:::
 ---
 
 ## **Perché la calibrazione è necessaria?**
@@ -31,15 +33,16 @@ La calibrazione è necessaria perché ogni combinazione di sensore e lente intro
 Esempi di distorsioni ottiche: nessuna distorsione (sinistra), distorsione a barile (centro), distorsione a cuscinetto (destra)
 ```
 
-```{note}
-
-La calibrazione calcola i parametri matematici per compensare queste distorsioni e "raddrizzare" l'immagine virtualmente.
-```
-
 ---
 
 
 ## **Step 1: La griglia di calibrazione**
+
+:::{error}
+Assicurarsi di avere: 
+- Backlight acceso (SETUP > FlexiBowl Setup > Config FlexiBowl > Light ON attivo)
+- Toplight spento
+:::
 
 :::{video} video2/Step1_calib.mp4
     :width: 100%
@@ -54,7 +57,7 @@ La griglia di calibrazione dedicata ARS deve essere posizionata sul FlexiBowl:
 * - 1. 
   - **Allentare le quattro viti** della flangia centrale del FlexiBowl
 * - 2. 
-  - **Ruotare leggermente la flangia** centrale e **Rimuoverla**
+  - **Ruotare leggermente la flangia** centrale in senso antiorario e **Rimuoverla**
 * - 3. 
   - **Sollevare** con cura e **Rimuovere la superficie**  
 * - 4. 
@@ -67,20 +70,6 @@ La griglia di calibrazione dedicata ARS deve essere posizionata sul FlexiBowl:
 :align: center
 
 Corretto posizionamento della griglia di calibrazione ARS sul FlexiBowl
-```
-
-```{warning}
-**Utilizzo griglia corretta**
-
-Assicurarsi di utilizzare la griglia di calibrazione corretta per il vostro modello di FlexiBowl:
-- FB 200 → Griglia 200
-- FB 350 → Griglia 350
-- FB 500 → Griglia 500
-- FB 650 → Griglia 650
-- FB 800 → Griglia 800
-- FB 1200 → Griglia 1200
-
-L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida completamente la calibrazione.
 ```
 :::{attention} 
  La griglia di calibrazione deve essere posizionata **alla stessa altezza dell'oggetto** utilizzato nell'applicazione.
@@ -108,17 +97,11 @@ L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida co
   - Cliccare il pulsante Config Camera della camera corrispondente 
 * - 7. 
   - Cliccare EXPERT dalla pagina Camera FLB 
-* - 8. 
-  - Dalla sezione Settings, seguire questi passaggi: 
-    - Cliccare **Image Acuisition Device**
-    - Selezionare la Camera 
-    - Cliccare **Video Formats** 
-    - Selezionare **Generic GigEVision** e **Mono**
-    - Cliccare *Initialize Acquisition*
-* - 9.
+* - 8.
   - **Mettere la camera in modalità "live display"**
       Prima di regolare l'apertura, attivare la modalità di visualizzazione continua:
-* - 10. 
+      - immagine
+* - 9. 
   - **Impostare l'apertura del diaframma**
     - Svitare leggermente la vite dell'anello superiore della camera 
     - Ruotare l'anello osservando l'immagine live, fino a che la giusta quantità di luce non entra nella camera 
@@ -128,7 +111,7 @@ L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida co
     :width: 100%
     :align: center
     :::
-* - 11.
+* - 10.
   - **Regolare manualmente il fuoco della camera**
     - Svitare leggermente la vite dell'anello inferiore della camera
     - Ruotare l'anello lentamente osservando l'immagine live
@@ -139,7 +122,7 @@ L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida co
     :width: 100%
     :align: center
     :::
-* - 12. 
+* - 11. 
   - Cliccare Back 
 ```
 
@@ -149,8 +132,9 @@ L'utilizzo di una griglia non corrispondente al modello di FlexiBowl invalida co
 La messa a fuoco deve garantire nitidezza su **tutta la superficie** del FlexiBowl, non solo al centro.
 
 Se il centro è nitido ma i bordi sono sfocati:
+- Verificare che l'ottica sia pulita
+- Verificare che la distanza di lavoro sia corretta
 - Verificare che la camera sia perfettamente parallela al piatto
-- Verificare la distanza di lavoro 
 - Chiudere leggermente il diaframma per aumentare la profondità di campo
 
 Se il problema persiste, potrebbe essere necessario rivedere il montaggio meccanico della camera.
@@ -193,13 +177,6 @@ Esempio di esposizione corretta: contrasto elevato, pattern ben definito, nessun
 - **Tempo troppo breve**: Immagine scura, pattern poco visibile
 - **Tempo troppo lungo**: Immagine sovraesposta, perdita di dettagli
 - **Tempo ottimale**: Massimo contrasto senza saturazione
-
-**Esempio di impostazione corretta:**
-
-Se l'immagine con esposizione 20ms appare:
-- Troppo scura → aumentare a 25-30ms
-- Troppo chiara → ridurre a 15-18ms
-- Contrasto insufficiente → regolare intensità backlight/toplight
 ```
 
 
@@ -215,7 +192,6 @@ Se l'immagine con esposizione 20ms appare:
 :widths: 5 95
 
 * - **15.**
-  - Cliccare su "NEXT" per accedere alla pagina "Calibration camera Flb1"
 
 * - **16.**
   - Cliccare su "Grab Image Calib" per scattare una foto della griglia di calibrazione.
@@ -236,7 +212,7 @@ Se l'immagine con esposizione 20ms appare:
     
     Il parametro "Result Calibration" restituirà un valore:
     
-    🟢 **Excellent (Verde)**: Calibrazione eccellente, precisione ottimale. Procedere con fiducia.
+    🟢 **Excellent (Verde)**: Calibrazione eccellente, precisione ottimale. 
     
     🟠 **Acceptable (Arancione)**: Calibrazione accettabile, precisione buona ma non ottimale.
     
@@ -273,35 +249,6 @@ Se il calcolo della calibrazione fallisce:
 - Ripetere l'acquisizione immagine (Grab Image) e tentare nuovamente
 ```
 
-```{warning}
-**Accettare solo buone calibrazioni**
-
-Non accontentarsi di calibrazioni "Acceptable" (arancione). Una calibrazione non ottimale causa:
-- Errori di posizionamento del robot 
-- Picking falliti o imprecisi
-- Necessità di correzioni manuali ripetute
-
-Investire tempo per ottenere una calibrazione Eccellente (verde) ripaga immediatamente in termini di affidabilità del sistema.
-In caso di risultato **Acceptable** o **Bad**:
-
-1. Tornare alla pagina precedente "Camera FLB x"
-2. Verificare e migliorare la messa a fuoco del pattern
-3. Regolare l'esposizione per massimizzare il contrasto
-4. Verificare l'uniformità dell'illuminazione
-5. Tornare alla pagina "Calibration Camera FLB x"
-6. Acquisire una nuova immagine "Grab Image"
-7. Ripetere il calcolo della calibrazione "Calibrate"
-```
-
-
-```{note}
-**La calibrazione viene salvata in automatico**
-
-Una volta completata con successo (risultato Good o Acceptable), la calibrazione viene automaticamente salvata, associata alla ricetta corrente e caricata automaticamente all'avvio successivo del software.  
-
-Non è necessario effettuare salvataggi manuali.
-```
-
 
 **Nota: spiegare che per i dubbi si può aprire info**
 
@@ -318,14 +265,12 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 * - **Ricalibrare quando:**
   - * Primo setup del sistema (obbligatorio)
     * Dopo aver modificato la posizione della camera
-    * Dopo aver regolato il fuoco o l'apertura dell'obiettivo
-    * Dopo aver spostato il FlexiBowl
-    * Dopo manutenzione meccanica della cella robotica
+    * Dopo aver spostato il Robot
     * Se si riscontrano errori sistematici di picking
-    * Dopo un urto o vibrazione significativa
 
 * - **Non è necessario ricalibrare quando:**
   - * Si cambia tipo di pezzo (stesso FlexiBowl, stessa camera)
+    * Si modificano il fuoco o l’apertura dell’obiettivo
     * Si modifica la ricetta software
     * Si regolano parametri di riconoscimento
     * Si aggiornano i programmi robot
@@ -394,7 +339,7 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 L'ultimo step della procedura è il salvataggio della rietta base
 Cliccare su Recipes
 controllare di avere la ricetta contenente tutti i setup e la calibrazione selezionata nel menu a sinistra e cliccare su Save Recipe   
-Questa ci permetterà di avere salvati a parte tutti i passaggi fatti fin'ora, in modo da avere una base per tutte le future ricette che conterranno i vari modelli  
+Questa ci permetterà di avere salvati a parte tutti i passaggi fatti fin'ora, in modo da avere una base per tutte le future ricette che conterranno i vari modelli  per il sistema calibrato
 Per continuare con la creazione dei modelli, duplicare la ricetta base, rinominarla come si preferisce e cliccare su Edit Recipe, si aprirà una pagina con l'elenco di tutti i modelli disponibili 
 
 ---
@@ -413,7 +358,6 @@ Causa: Il software non riesce a identificare il pattern della griglia.
 - Verificare che l'intera griglia sia visibile nell'immagine
 - Migliorare la messa a fuoco
 - Pulire la superficie della griglia (polvere o impronte possono interferire)
-- Verificare che la griglia sia quella corretta (quadrati, non cerchi o altri pattern)
 ```
 
 ## **Calibrazione sempre "Bad" o "Acceptable"**
@@ -431,19 +375,6 @@ Se nonostante le regolazioni la calibrazione rimane sotto "Excellent":
 Se il problema persiste, potrebbe esserci un problema meccanico nel montaggio. Consultare [Installazione Meccanica](09_Installazione_Meccanica.md) per revisione.
 ```
 
-## **Errori dopo cambio illuminazione**
-
-```{tip}
-**Ri-calibrazione dopo cambio backlight/toplight**
-
-Se si passa da backlight a toplight (o viceversa):
-
-1. La calibrazione geometrica rimane valida (non serve rifarla)
-2. È necessario solo regolare l'esposizione della camera per il nuovo tipo di illuminazione
-3. Acquisire un'immagine di test per verificare che il pattern sia ancora ben visibile
-
-In generale, è consigliabile decidere fin dall'inizio il tipo di illuminazione da utilizzare e mantenere quella configurazione.
-```
 
 
 
