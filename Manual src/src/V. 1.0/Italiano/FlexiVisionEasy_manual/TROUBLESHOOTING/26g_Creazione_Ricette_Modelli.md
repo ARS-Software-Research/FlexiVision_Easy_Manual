@@ -1,4 +1,4 @@
-# Creazione Ricette e modelli 
+# **Creazione Ricette e modelli** 
 
 (troubleshooting_Nuova_Ricetta)=
 ## Troubleshooting per la sezione Creare una Nuova Ricetta 

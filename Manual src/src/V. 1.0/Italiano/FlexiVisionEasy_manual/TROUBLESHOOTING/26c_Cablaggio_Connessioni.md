@@ -1,4 +1,4 @@
-# Cablaggio e Connessioni
+# **Cablaggio e Connessioni**
 (troubleshooting_alimentazione)=
 ## Problemi di Alimentazione FlexiBowl 
 
@@ -147,20 +147,20 @@
     • Reimpostare IP camera o configurare IP statico univoco    
     • Provare altra porta POE del VisionController  
 * - **Immagine camera nera o assente**
-  - • Illuminatore spento 
-    • Esposizione camera troppo bassa
-    • Lente con tappo protettivo non rimosso  
-    • Lente non installata  
-    • Camera non alimentata (POE non attivo)
+  - • Illuminatore spento   
+    • Esposizione camera troppo bassa  
+    • Lente con tappo protettivo non rimosso    
+    • Lente non installata    
+    • Camera non alimentata (POE non attivo)  
     
-    
-    • Camera guasta
-  - • Controllare che l'illuminatore sia acceso 
-    • Aumentare esposizione in [Camera Setup](QUICKSTART/xx_Camera_Setup.md)
-    • Rimuovere tappo protettivo lente 
-    • Installare lente con focale corretta
-    • Verificare LED camera acceso (indicatore POE attivo)
-    • Sostituire camera
+     
+    • Camera guasta  
+  - • Controllare che l'illuminatore sia acceso   
+    • Aumentare esposizione in [Camera Setup](QUICKSTART/xx_Camera_Setup.md)  
+    • Rimuovere tappo protettivo lente   
+    • Installare lente con focale corretta  
+    • Verificare LED camera acceso (indicatore POE attivo)  
+    • Sostituire camera  
 
 * - **Camera si disconnette casualmente**
   - • Alimentazione POE insufficiente (potenza < richiesta camera)
@@ -170,12 +170,12 @@
     • Surriscaldamento camera
     
     • Porta POE danneggiata
-  - • Verificare potenza POE disponibile 
-    • Sostituire cavo Ethernet
+  - • Verificare potenza POE disponibile   
+    • Sostituire cavo Ethernet  
     
-    • Migliorare ventilazione area camera
+    • Migliorare ventilazione area camera  
     
-    • Sostituire switch POE o porta VisionController
+    • Sostituire switch POE o porta VisionController  
 ```
 (troubleshooting_connessione_toplight)=
 ## Problemi di Connessione Toplight 
@@ -242,24 +242,24 @@
   - Possibili Cause
   - Soluzioni
 * - **Sistema con 2-3 FlexiBowl: solo uno comunica**
-  - • FlexiBowl spenti
-    • Indirizzi IP duplicati
-    • Cavi incrociati
-  - • Controllare che il FlexiBowl sia acceso
-    • Assegnare IP univoci a ogni FlexiBowl (es: 192.168.1.10, .11, .12)
-    • Verificare corretto cablaggio stella (no daisy-chain)
-* - **Sistema con 2-3 camere: solo una acquisisce**
-  - • Alimentazione non sufficiente 
-    • Indirizzi IP camere in conflitto
-  - • Controllare che l'alimentazione sia compresa fra 6 - 26 V
-    • Configurare IP statico univoco per ogni camera
-    • Abilitare tutte le camere in [Camera Setup](QUICKSTART/xx_Camera_Setup.md)
-* - **Sistema con 2-3 tramogge: controllo errato**
-  - • Tramogge non abilitate individualmente in software
-    • Alimentazione errata 
-    • Contatto al robot errato 
-  - • Abilitare ogni tramoggia in [Hopper Setup](SETUP/xx_Hopper_Setup.md)
-    • Controllare alimentazione
-    • Controllare contatto al robot 
+  - • FlexiBowl spenti  
+    • Indirizzi IP duplicati  
+    • Cavi incrociati  
+  - • Controllare che il FlexiBowl sia acceso  
+    • Assegnare IP univoci a ogni FlexiBowl (es: 192.168.1.10, .11, .12)  
+    • Verificare corretto cablaggio stella (no daisy-chain)  
+* - **Sistema con 2-3 camere: solo una acquisisce**  
+  - • Alimentazione non sufficiente   
+    • Indirizzi IP camere in conflitto  
+  - • Controllare che l'alimentazione sia compresa fra 6 - 26 V  
+    • Configurare IP statico univoco per ogni camera  
+    • Abilitare tutte le camere in [Camera Setup](QUICKSTART/xx_Camera_Setup.md)  
+* - **Sistema con 2-3 tramogge: controllo errato**  
+  - • Tramogge non abilitate individualmente in software  
+    • Alimentazione errata   
+    • Contatto al robot errato   
+  - • Abilitare ogni tramoggia in [Hopper Setup](SETUP/xx_Hopper_Setup.md)  
+    • Controllare alimentazione  
+    • Controllare contatto al robot   
 ```
 

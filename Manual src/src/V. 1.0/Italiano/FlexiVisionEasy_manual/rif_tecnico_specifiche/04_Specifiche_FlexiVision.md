@@ -508,12 +508,30 @@ Una calibrazione eccellente è il requisito fondamentale per l'accuratezza del s
 
 ### Specifiche tecniche griglia
 
-- Griglia per FlexiBowl 200: 
-- Griglia per FlexiBowl 350: 
-- Griglia per FlexiBowl 500: 
-- Griglia per FlexiBowl 650: 
-- Griglia per FlexiBowl 800: 
-- Griglia per FlexiBowl 1200: 
+```{dropdown} Griglia per FlexiBowl 200 
+![Griglia 200](./img/griglia200.JPG)
+
+```
+
+```{dropdown} Griglia per FlexiBowl 350 
+![Griglia 350](./img/griglia350.JPG)
+```
+
+```{dropdown} Griglia per FlexiBowl 500 
+![Griglia 500](./img/griglia500.JPG)
+```
+
+```{dropdown} Griglia per FlexiBowl 650 
+![Griglia 650](./img/griglia650.JPG)
+```
+
+```{dropdown} Griglia per FlexiBowl 800 
+![Griglia 800](./img/griglia800.JPG)
+```
+
+```{dropdown} Griglia per FlexiBowl 1200 
+![Griglia 1200](./img/griglia1200.JPG)
+```
 
 
 Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezione [Calibrazione della Camera](14_calibrazione_camera.md).

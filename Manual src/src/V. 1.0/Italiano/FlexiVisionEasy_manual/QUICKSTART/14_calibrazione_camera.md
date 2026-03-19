@@ -64,7 +64,7 @@ La griglia di calibrazione dedicata ARS deve essere posizionata sul FlexiBowl:
   - **Posizionare la griglia ARS** sul FlexiBowl allineando i perni di posizionamento con i fori predefiniti 
 ```
 
-```{figure} img/griglia_posizionamento.png
+```{figure} img/griglia_su_flexibowl.png
 :alt: Posizionamento griglia calibrazione
 :width: 60%
 :align: center
@@ -76,6 +76,8 @@ Corretto posizionamento della griglia di calibrazione ARS sul FlexiBowl
  
    Per questo motivo, viene fornita con dei **distanziali** da inserire nei pioli della griglia prima di installarla sul FlexiBowl.
    I distanziali hanno la funzione di **sollevare la griglia** fino al livello dell'altezza del pezzo, garantendo una calibrazione accurata.
+  ![Distanziali](./img/distanziali_griglia.JPG)
+  
   ```{figure} img/altezzacalibrazione.png
     :width: 100%
     :align: center

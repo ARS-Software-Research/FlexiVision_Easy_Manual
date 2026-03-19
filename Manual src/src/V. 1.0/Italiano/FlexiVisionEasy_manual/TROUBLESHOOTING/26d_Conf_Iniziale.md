@@ -1,4 +1,4 @@
-# Setup Iniziale
+# **Setup Iniziale**
 ```{warning}
 **Componenti non raggiungibili**
 
@@ -78,27 +78,15 @@ Per dettagli sulla configurazione di rete, vedere [Cablaggio e Connessioni](cabl
   - Possibili Cause
   - Soluzioni
 * - **Tramoggia non si attiva mai automaticamente**
-      :::{warning}
-        **Diagnosi mancata attivazione**
-
-        Se l'Hopper non si attiva:
-
-        1. Verificare che in **Enable Hopper** sia presente la spunta
-        2. Controllare il cablaggio elettrico del segnale digitale
-        3. Verificare che il numero **Signal** corrisponda al DO fisicamente connesso
-        4. Controllare l'alimentazione dell'Hopper 
-        5. Testare il segnale digitale con un multimetro (presenza tensione quando attivato)
-        6. Consultare il manuale dell'Hopper per verifiche specifiche del dispositivo
-      :::
-  - • Hopper non abilitato in software
-    
+  - • Hopper non abilitato in software  
+    • Campo Signal errato
     • Area di controllo non definita
     
     • Soglie non calibrate
     
     • Tramoggia non collegata elettricamente
-  - • Abilitare checkbox "Enable Hopper X"
-    
+  - • Abilitare checkbox "Enable Hopper X"  
+    • Verificare che il numero **Signal** corrisponda al DO fisicamente connesso
     • Definire area di controllo in "Define Area Check"
     
     • Eseguire calibrazione soglie con CAPTURE vuoto/pieno

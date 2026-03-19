@@ -68,7 +68,7 @@ Schema completo del processo di creazione ricetta e modelli
   - Definizione della ricetta applicativa con nome, tipo e FlexiBowl utilizzato
 * - **2**
   - Preparazione Fisica
-  - Posizionamento pezzo con robot e salvataggio coordinate di riferimento
+  - Posizionamento del pezzo di riferimento nell'area di visione
 * - **3**
   - Training Modello
   - Acquisizione immagine e creazione del pattern di riconoscimento
@@ -79,12 +79,18 @@ Schema completo del processo di creazione ricetta e modelli
   - Impostazione Filtri
   - Configurazione accept threshold e tolleranze di riconoscimento
 * - **6**
-  - Creazione Istogrammi
-  - Definizione zone che devono rimanere libere (area pinza, ostacoli)
+  - Preparazione fisica 
+  - Simulazione di picking con robot per posizionare gli oggetti che andranno a simulare l'ingombro della pinza 
 * - **7**
+  - Salvataggio coordinate 
+  - Salvare le coordinate del robot nella posizione di picking del componente di riferimento 
+* - **8**
+  - Creazione Clearances
+  - Definizione zone che devono rimanere libere (area pinza, ostacoli)
+* - **9**
   - Coordinate Robot
   - Calcolo offset gripper per prelievo corretto
-* - **8**
+* - **10**
   - Test e Validazione
   - Verifica funzionamento completo e salvataggio ricetta
 ```
@@ -98,8 +104,8 @@ Per informazioni complete su ogni fase del processo, consultare le sezioni dedic
 - **[Creazione Nuova Ricetta](nuovaricetta)** - Come creare e configurare una nuova ricetta
 - **[Training Modello]((nuovomodello))** - Acquisizione immagine e creazione pattern
 - **[Definizione ROI e Filtri]((roitest))** - Configurazione area di ricerca e tolleranze
-- **[Creazione Istogrammi](istogrammi)** - Definizione zone protette
-- **[Coordinate Robot Pick](robotpick)** - Calcolo offset gripper
+- **[Creazione Clearances](istogrammi)** - Definizione delle zone da lasciare libere 
+- **[Coordinate Robot Pick](robotpick)** - Calcolo gripper offset 
 
 ---
 
@@ -114,10 +120,10 @@ Prima di iniziare la creazione di modelli, preparare:
 
 - [ ] Almeno 10-20 pezzi del tipo da riconoscere (per test)
 - [ ] Pezzi puliti e in buone condizioni (rappresentativi della produzione)
-- [ ] Simulatori ingombro pinza (possono essere pezzi dello stesso tipo)
+- [ ] Simulatori ingombro pinza (possono essere pezzi dello stesso tipo, ma è importante non confonderli con il pezzo di riferimento per non spostarlo)
 - [ ] Foglio per annotare coordinate robot (X, Y, RZ)
 - [ ] FlexiBowl vuoto e pulito
-- [ ] Backlight/Toplight acceso e stabile
+- [ ] Backlight/Toplight acceso
 ```
 
 ### Ambiente ottimale
@@ -126,7 +132,7 @@ Prima di iniziare la creazione di modelli, preparare:
 **Condizioni ideali per training**
 
 - Illuminazione stabile (evitare luce solare diretta variabile)
-- FlexiBowl fermo (non in vibrazione durante acquisizione immagini)
+- FlexiBowl fermo 
 - Robot in posizione sicura (non deve interferire durante le acquisizioni)
 - Software FlexiVision Easy aperto e ricetta base caricata
 ```
@@ -136,7 +142,7 @@ Prima di iniziare la creazione di modelli, preparare:
 ```{error}
 **Evitare questi errori frequenti**
 
-❌ **Non salvare le coordinate robot** durante la preparazione fisica → impossibile calcolare offset gripper
+❌ **Non salvare le coordinate robot** durante la preparazione fisica → impossibile calcolar egripper offset 
 
 ❌ **Spostare il pezzo** dopo aver salvato le coordinate → offset errato
 
@@ -172,16 +178,6 @@ Per problemi specifici durante la creazione di modelli, consultare la sezione [T
 Una volta compresa la panoramica del processo, procedere con la creazione effettiva:
 
 **→ [Inizia: Creazione Nuova Ricetta](nuovaricetta)**
-
-```{tip}
-**Approccio consigliato**
-
-Per il primo modello:
-1. Leggere completamente questa panoramica
-2. Seguire passo-passo la guida dettagliata iniziando da "Nuova Ricetta"
-3. Tenere aperte le pagine di riferimento durante il lavoro
-4. Annotare le coordinate e i parametri utilizzati per riferimento futuro
-```
 
 
 ```{toctree}

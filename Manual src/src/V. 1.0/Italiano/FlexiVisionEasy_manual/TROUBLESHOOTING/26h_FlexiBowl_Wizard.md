@@ -1,5 +1,5 @@
 (troubleshooting_FB_Wizard)=
-# FlexiBowl Wizard
+# **FlexiBowl Wizard**
 
 ```{list-table}
 :header-rows: 1

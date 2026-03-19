@@ -1,5 +1,5 @@
 (troubleshooting_conf_tramoggia)=
-# Configurazione Tramoggia 
+# **Configurazione Tramoggia** 
 ```{list-table}
 :header-rows: 1
 :widths: 30 35 35

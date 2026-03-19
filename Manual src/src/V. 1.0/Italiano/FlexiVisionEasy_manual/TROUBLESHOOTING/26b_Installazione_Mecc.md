@@ -1,4 +1,4 @@
-# Installazione Meccanica
+# **Installazione Meccanica**
 (troubleshooting_vision_controller)=
 ## Problemi con il VisionController 
 

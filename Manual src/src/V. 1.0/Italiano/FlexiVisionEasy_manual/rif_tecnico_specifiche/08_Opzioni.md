@@ -1267,7 +1267,7 @@ Il Backlight è un sistema di retroilluminazione posizionato all'interno del pia
 | Materiale opalino | Metacrilato bianco opalino |  |  |
 ```
 
-#  backlight a toplight?
+## Backlight o Toplight?
 
 ```{warning}
 **Impatto sul riconoscimento pezzi**
@@ -1280,8 +1280,10 @@ La scelta tra backlight e toplight influenza significativamente il riconosciment
 La calibrazione, quando si utilizza una griglia di calibrazione ARS, dev'essere eseguita utilizzando l'illuminatore backlight e spegnere il toplight se presente.
 ```
 ---
+
 (filtroIR)=
 ## Filtro IR
+![Filtro IR](./img/FiltroIR_000047.png)
 
 Il filtro IR è un accessorio ottico da applicare all’obiettivo della camera che blocca la luce visibile lasciando passare esclusivamente la radiazione infrarossa. È necessario solo nel caso in cui si utilizzi un illuminatore IR (850 nm): senza filtro, la camera riceverebbe sia luce visibile che infrarossa, compromettendo il contrasto e la qualità del riconoscimento.
 
@@ -1296,11 +1298,10 @@ Il filtro IR è un accessorio ottico da applicare all’obiettivo della camera c
 (display)=
 ## Display Touch Screen
 
+![Display Touch Screen](./img/display.png)
+
 | Voce                  | Specifiche                                      |
 |-----------------------|-------------------------------------------------|
-| Schermo Touch         | Capacitivo                                     |
-| Ingresso Video        | 1x VGA<br>1x DP<br>1x DVI-D                     |
-| Alimentazione         | 12~32 Vdc (Assorbimento 30W)                    |
 | Montaggio             | Montaggio a pannello                           |
 | Dimensioni Esterne    | (L) 560 mm x (P) 350 mm x (A) 60 mm            |
 | Peso                  | 7 kg                                           |
@@ -1310,6 +1311,12 @@ Il filtro IR è un accessorio ottico da applicare all’obiettivo della camera c
 | Umidità               | < 90% senza condensa                           |
 | Certificazioni        | CE                                             |
 
+![Display Touch Screen Retro](./img/displayretro.jpg)
+| Voce                  | Specifiche                                      |
+|-----------------------|-------------------------------------------------|
+| Schermo Touch         | Capacitivo                                     |
+| Ingresso Video        | 1x VGA<br>1x DP<br>1x DVI-D                     |
+| Alimentazione         | 12~32 Vdc (Assorbimento 30W)                    |
 ## Ring Light
 
 | Parametro | Valore |

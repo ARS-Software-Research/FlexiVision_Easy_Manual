@@ -29,8 +29,8 @@ Componenti inclusi nel kit FlexiVision standard.
   - Strumento Laser per calibrazione
 * - 1
   - Cavo di alimentazione (10 m)
-* - 1
-  - Cavo Ethernet
+* - 3
+  - Cavi Ethernet
 ```
 ```{note}
 La griglia di calibrazione e l'ottica possono differire dalle immagini a seconda del kit scelto.
@@ -73,8 +73,8 @@ La griglia di calibrazione e l'ottica possono differire dalle immagini a seconda
   - :::{figure} ../img/Cavo_Alim.png
     :width: 150px
     :::
-* - Cavo Ethernet (3 m)
-  - 
+* - 3 Cavi Ethernet (3 m)
+  - Cat 6 con S/STP Shielding
   - :::{figure} ../img/Cavo_Alim.png
     :width: 150px
     :::

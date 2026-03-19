@@ -1,5 +1,5 @@
 (troubleshooting)=
-# Risoluzione Problemi 
+# **Risoluzione Problemi** 
 
 ```{list-table} 
 :widths: 45 45 30
@@ -70,7 +70,6 @@
 26c_Cablaggio_Connessioni.md
 26d_Conf_Iniziale.md
 26e_Calib_Cam.md
-26f_Protocol_Setup.md
 26g_Creazione_Ricette_Modelli.md
 26h_FlexiBowl_Wizard.md
 26i_Conf_Tramoggia.md

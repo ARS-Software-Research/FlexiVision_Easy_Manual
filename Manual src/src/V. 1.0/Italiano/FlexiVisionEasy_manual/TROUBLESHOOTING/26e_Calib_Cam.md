@@ -1,5 +1,5 @@
 (troubleshooting_calib_cam)=
-# Calibrazione Camera
+# **Calibrazione Camera**
 
 ## **Pattern non rilevato**
 
