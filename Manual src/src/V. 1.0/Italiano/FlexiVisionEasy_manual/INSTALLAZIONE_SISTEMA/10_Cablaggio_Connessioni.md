@@ -53,45 +53,35 @@ tipo:
 ```
 
 
-dal vecchio manuale:
-
 ```{list-table} 
 :header-rows: 1
-:widths: 10 70 20
 
 * - **Step**
   - **Azione**
-  - **Immagine**
-
 * - 1
-  - Collegare l'alimentazione alla connessione del FlexiBowl®.  
+  - Collegare l'alimentazione del FlexiBowl®.  
     [🔗 Fare riferimento al manuale per le specifiche di alimentazione](http://link-al-manuale.com)
-  - (Immagine 1)
-
 * - 2
-  - Collegare il cavo Ethernet alla presa Ethernet del FlexiBowl®.
-  - (Immagine 2)
-
+  - Collegare il [cavo di alimentazione Hirose 24V](cavo) alla Camera.
 * - 3
-  - Collegare l'aria compressa alla connessione del FlexiBowl®.  
-    [🔗 Fare riferimento al manuale per le specifiche pneumatiche](http://link-al-manuale.com)
-  - (Immagine 3)
-
+  - Collegare il FlexiBowl® al VisionController con casvo Ethernet.
 * - 4
-  - Accendere l'interruttore AC del FlexiBowl® (posizione "I"). Il led READY è **ON**.
-  - (Immagine 4)
-
+  - Collegare la Camera al VisionController (PC) con cavo Ethernet.
 * - 5
-  - Collegare il FlexiBowl® al VisionController.
-  - (Immagine 5)
-
+  - Collegare il Robot al VisionController con cavo Ethernet.
 * - 6
-  - Collegare il VisionController (PC) tramite la connessione Ethernet.
-  - (Immagine 6)
-
+  - Collegare l'aria compressa al FlexiBowl®.  
+    [🔗 Fare riferimento al manuale per le specifiche pneumatiche](http://link-al-manuale.com)
 * - 7
-  - Collegare la telecamera (compatibile POE). Deve essere collegata al VisionController.
-  - (Immagine 7)
+  - Se presente, collegare la tramoggia al suo controller
+* - 8
+  - Se presente, collegare il robot al controller della tramoggia (I/O Digitali)
+* - 9 
+  - Se presente, alimentare il controller della tramoggia (110/220 V in base all'opzione scelta al momento dell'acquisto della base vibrante della tramoggia)
+* - 10
+  - Accendere l'interruttore AC del FlexiBowl® (posizione "I"). Il led READY è **ON**.
+* - 11
+  - Accendere tutti gli altri dispositivi
 ```
 
 ### Cablaggio illuminatore
@@ -128,7 +118,5 @@ dal vecchio manuale:
 - Non collegare o pulire l'apparecchio quando è sotto tensione.
 - Non guardare direttamente la sorgente luminosa.
 ```
-```{note}
-Per dettagli sui collegamenti elettrici, consultare la sezione [Cablaggio e Connessioni](10_Cablaggio_Connessioni.md).
-```
+
 

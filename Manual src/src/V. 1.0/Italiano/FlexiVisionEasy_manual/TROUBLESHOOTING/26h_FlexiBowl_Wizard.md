@@ -1,4 +1,4 @@
-(troubleshooting_FB_Wizard)=
+(troubleshooting_fb_wizard)=
 # **FlexiBowl Wizard**
 
 ```{list-table}

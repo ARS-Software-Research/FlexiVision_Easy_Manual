@@ -1,7 +1,8 @@
 # **Creazione Ricette e modelli** 
 
-(troubleshooting_Nuova_Ricetta)=
+(troubleshooting_nuova_ricetta)=
 ## Troubleshooting per la sezione Creare una Nuova Ricetta 
+
 ```{warning}
 **Errore durante salvataggio**
 
@@ -57,7 +58,8 @@ Se il salvataggio della ricetta fallisce:
     
     • Utilizzare naming convention univoche
 ```
-(troubleshooting_Nuovo_modello)=
+
+(troubleshooting_nuovo_modello)=
 ## Troubleshooting per la sezione Creare un Nuovo Modello 
 
 ```{list-table}
@@ -141,7 +143,8 @@ Se il salvataggio della ricetta fallisce:
     
     • Limitare nome a max 50 caratteri
 ```
-(troubleshooting_Modelli_ROI)=
+
+(troubleshooting_modelli_roi)=
 ## Troubleshooting per la sezione Definizione ROI e Tolleranze 
 
 ```{list-table}
@@ -217,6 +220,7 @@ Se il salvataggio della ricetta fallisce:
     
     • Ripetere calibrazione camera
 ```
+
 (troubleshooting_istogrammi)=
 ## Troubleshooting per la sezione Istogrammi 
 

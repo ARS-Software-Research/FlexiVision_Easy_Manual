@@ -434,229 +434,127 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>Accept Threshold</strong></p></td>
-<td><p>Soglia di accettazione nell’algoritmo di pattern matching. Determina il livello minimo di similitudine (score 0.0-1.0) necessario affinché un oggetto rilevato venga considerato valido. Valori tipici: 0.70-0.90.</p></td>
+<td><p>Soglia minima di similitudine (score 0.0–1.0) affinché un oggetto rilevato venga accettato dal pattern matching. Valori tipici: 0.70–0.90.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Accel (Acceleration)</strong></p></td>
-<td><p>Parametro che definisce l’accelerazione del disco FlexiBowl durante la fase di movimento. Influenza la dolcezza dell’avvio e dell’arresto della rotazione.</p></td>
+<tr class="row-odd"><td><p><strong>Air-blow</strong></p></td>
+<td><p>Modulo pneumatico opzionale per la separazione dei componenti sul disco tramite getti d’aria compressa. Richiede alimentazione a 5–6 bar.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Air-blow</strong></p></td>
-<td><p>Modulo pneumatico opzionale che utilizza getti d’aria compressa per separare i componenti sul disco prima o dopo l’operazione di flip. Richiede alimentazione pneumatica a 5-6 bar.</p></td>
+<tr class="row-even"><td><p><strong>Artefatto</strong></p></td>
+<td><p>Difetto nell’immagine acquisita causato da interferenze elettromagnetiche, problemi di cablaggio o malfunzionamenti del sensore.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Artifact (Artefatto)</strong></p></td>
-<td><p>Difetto visibile nell’immagine acquisita dalla camera, causato da interferenze elettromagnetiche, problemi di cablaggio o malfunzionamenti del sensore.</p></td>
+<tr class="row-odd"><td><p><strong>Calibrazione Camera</strong></p></td>
+<td><p>Correlazione pixel/coordinate reali tramite target di calibrazione con pattern noto. Calcola i parametri intrinseci ed estrinseci della camera.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Calibrazione Camera</strong></p></td>
-<td><p>Processo che permette di correlare i pixel dell’immagine acquisita con le coordinate reali nello spazio. Utilizza un target di calibrazione con pattern noto per calcolare i parametri intrinseci ed estrinseci della camera.</p></td>
+<tr class="row-even"><td><p><strong>Clearance</strong></p></td>
+<td><p>Analisi della distribuzione dei livelli di grigio su un’area definita. Utilizzato per rilevare presenza/assenza di oggetti (controllo pinza, area libera).</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Camera POE</strong></p></td>
-<td><p>Camera industriale che riceve sia i dati che l’alimentazione elettrica attraverso un unico cavo Ethernet, secondo gli standard IEEE 802.3af (15.4W) o 802.3at (30W).</p></td>
+<td><p>Camera industriale alimentata e connessa tramite unico cavo Ethernet. Standard: IEEE 802.3af (15.4W) o 802.3at (30W).</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>CAPTURE</strong></p></td>
-<td><p>Comando utilizzato durante la configurazione della tramoggia per acquisire immagini di riferimento del disco vuoto e pieno, necessarie per il calcolo automatico delle soglie di controllo.</p></td>
+<td><p>Comando software per acquisire le immagini di riferimento del disco vuoto e pieno, necessarie al calcolo automatico delle soglie della tramoggia.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Cat5e / Cat6</strong></p></td>
-<td><p>Categorie di cavi Ethernet. Cat5e supporta fino a 1 Gbps, Cat6 fino a 10 Gbps. Lunghezza massima consigliata: 100m per evitare perdita di segnale.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>COMPLEX</strong></p></td>
-<td><p>Categoria di componenti con geometria irregolare o asimmetrica che non rientra nelle categorie FLAT o CYLINDRICAL. Richiede parametri FlexiBowl specifici.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>CW / CCW</strong></p></td>
-<td><p>Clockwise (orario) / Counter-Clockwise (antiorario). Senso di rotazione del disco FlexiBowl da configurare nel Wizard.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>CYLINDRICAL</strong></p></td>
-<td><p>Categoria di componenti con forma prevalentemente cilindrica o tubolare (es: perni, boccole, viti).</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>DIN Rail</strong></p></td>
-<td><p>Sistema di montaggio standardizzato (DIN EN 60715) a profilo 35mm utilizzato per fissare il VisionController all’interno dei quadri elettrici.</p></td>
+<tr class="row-odd"><td><p><strong>COMPLEX / FLAT / CYLINDRICAL</strong></p></td>
+<td><p>Categorie geometriche dei componenti nel FlexiBowl Wizard. <em>FLAT</em>: forme piatte (rondelle, guarnizioni). <em>CYLINDRICAL</em>: forme cilindriche (perni, viti). <em>COMPLEX</em>: geometrie irregolari o asimmetriche.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Distanza di Lavoro</strong></p></td>
-<td><p>Distanza ottimale tra la lente della camera e la superficie del disco FlexiBowl. Tipicamente 950-1000mm per le configurazioni standard.</p></td>
+<td><p>Distanza ottimale tra lente e superficie del disco. Tipicamente 950–1000mm nelle configurazioni standard.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Distorsione Ottica</strong></p></td>
-<td><p>Deformazione geometrica dell’immagine causata dalle caratteristiche ottiche della lente. Viene compensata durante la calibrazione camera.</p></td>
+<td><p>Deformazione geometrica dell’immagine dovuta alla lente. Compensata automaticamente durante la calibrazione camera.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>EMI</strong></p></td>
-<td><p>Electromagnetic Interference. Interferenze elettromagnetiche che possono disturbare camera, comunicazioni Ethernet e sensori. Richiedono cavi schermati (STP).</p></td>
+<tr class="row-even"><td><p><strong>Esposizione</strong></p></td>
+<td><p>Tempo di raccolta luce del sensore camera. Misurato in μs o ms; influenza direttamente la qualità dell’immagine in produzione.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Esposizione</strong></p></td>
-<td><p>Tempo durante il quale il sensore della camera raccoglie luce per formare l’immagine. Misurato in microsecondi (μs) o millisecondi (ms).</p></td>
+<tr class="row-odd"><td><p><strong>Feature Threshold</strong></p></td>
+<td><p>Soglia di estrazione delle caratteristiche (bordi, linee) durante il training del modello. Valori tipici: 0.3–0.8.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Feature Threshold</strong></p></td>
-<td><p>Soglia utilizzata durante il training del modello per determinare quali caratteristiche (linee, bordi) del componente devono essere estratte. Valori tipici: 0.3-0.8.</p></td>
+<tr class="row-even"><td><p><strong>FlexiBowl</strong></p></td>
+<td><p>Sistema di alimentazione a disco rotante vibrante per il posizionamento e orientamento casuale dei componenti ai fini del prelievo robotico.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Flip</strong></p></td>
-<td><p>Operazione pneumatica che genera un impulso d’aria sotto il disco FlexiBowl per riposizionare i componenti. Configurabile con parametri Count e Delay.</p></td>
+<tr class="row-odd"><td><p><strong>FlexiBowl Wizard</strong></p></td>
+<td><p>Procedura guidata per il calcolo automatico dei parametri ottimali del FlexiBowl in base alla geometria e al comportamento dei componenti.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Flip Count</strong></p></td>
-<td><p>Numero di impulsi pneumatici consecutivi eseguiti durante un’operazione di flip.</p></td>
+<tr class="row-even"><td><p><strong>Flip</strong></p></td>
+<td><p>Impulso pneumatico sotto il disco per riposizionare i componenti. Configurabile tramite <em>Flip Count</em> (numero di impulsi) e <em>Flip Delay</em> (intervallo in ms tra impulsi).</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Flip Delay</strong></p></td>
-<td><p>Intervallo di tempo (in millisecondi) tra impulsi pneumatici consecutivi durante l’operazione di flip.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>FLAT</strong></p></td>
-<td><p>Categoria di componenti con forma piatta o a disco (es: rondelle, guarnizioni, dischetti).</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>FlexiBowl</strong></p></td>
-<td><p>Sistema di alimentazione flessibile per componenti che utilizza un disco rotante vibrante per posizionare e orientare i pezzi in modo casuale per il prelievo robotico.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>FlexiBowl Wizard</strong></p></td>
-<td><p>Procedura guidata che calcola automaticamente i parametri ottimali di funzionamento del FlexiBowl in base alle caratteristiche geometriche e comportamentali dei componenti.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Frame (Robot)</strong></p></td>
-<td><p>Sistema di coordinate di riferimento utilizzato dal robot per definire la posizione degli oggetti nello spazio di lavoro.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Frenafiletti</strong></p></td>
-<td><p>Prodotto chimico applicato sulle filettature delle viti per prevenire l’allentamento dovuto a vibrazioni. Disponibile in diverse resistenze (basso, medio, alto).</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Fusibile</strong></p></td>
-<td><p>Dispositivo di protezione elettrica che interrompe il circuito in caso di sovracorrente. Il FlexiBowl ha fusibili interni accessibili solo al supporto tecnico.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Grab Train Image</strong></p></td>
-<td><p>Comando che acquisisce un’immagine dalla camera da utilizzare per il training di un nuovo modello di riconoscimento.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Gripper</strong></p></td>
-<td><p>Pinza robotica utilizzata per afferrare e manipolare i componenti. Può essere pneumatica, elettrica o a vuoto.</p></td>
+<tr class="row-odd"><td><p><strong>Grab Train Image</strong></p></td>
+<td><p>Comando software per acquisire l’immagine da usare nel training di un nuovo modello.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Gripper Offset</strong></p></td>
-<td><p>Vettore di correzione (ΔX, ΔY, ΔRZ) che compensa la differenza tra il centro del sistema di visione e il punto di presa effettivo del gripper robot.</p></td>
+<td><p>Vettore di correzione (ΔX, ΔY, ΔRZ) che compensa lo scostamento tra il centro ottico del sistema di visione e il TCP del gripper.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Hopper (Tramoggia)</strong></p></td>
-<td><p>Sistema di caricamento automatico che alimenta i componenti sul disco FlexiBowl tramite vibrazione. Può essere configurato con controllo visivo.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Hotspot</strong></p></td>
-<td><p>Zona di riflessione diretta della luce nell’immagine, che appare come un’area molto luminosa e può compromettere il riconoscimento.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>IP Rating</strong></p></td>
-<td><p>International Protection Rating. Classifica il grado di protezione contro solidi e liquidi. Il VisionController richiede installazione in quadro minimo IP40, consigliato IP54.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Istogramma</strong></p></td>
-<td><p>Strumento di analisi che verifica la presenza o assenza di oggetti in un’area specifica dell’immagine basandosi sulla distribuzione dei livelli di grigio. Utilizzato per controllo pinza e area libera.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>LED READY</strong></p></td>
-<td><p>Indicatore luminoso sul pannello FlexiBowl che segnala il corretto funzionamento del sistema. Deve essere acceso (verde) durante il normale funzionamento.</p></td>
+<tr class="row-odd"><td><p><strong>Hotspot</strong></p></td>
+<td><p>Zona di riflesso diretta della luce nell’immagine. Appare come area sovraesposta e può compromettere il riconoscimento.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Lente</strong></p></td>
-<td><p>Componente ottico della camera che focalizza la luce sul sensore. Caratterizzata da focale (es: 16mm, 25mm) e deve essere avvitata completamente (contatto metal-metal).</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>M3 / M4</strong></p></td>
-<td><p>Diametri metrici standard delle viti. M3 (3mm) per camera con coppia 0.5 Nm, M4 (4mm) per VisionController con coppia 1.2 Nm.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Mean (Media)</strong></p></td>
-<td><p>Valore medio dei livelli di grigio calcolato su un’area dell’immagine. Utilizzato negli istogrammi per determinare le soglie di rilevamento.</p></td>
+<td><p>Componente ottico della camera. Deve essere avvitata a contatto metal-metal; la focale (es. 16mm, 25mm) determina il campo visivo alla distanza di lavoro.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Model (Modello)</strong></p></td>
-<td><p>Template di riferimento creato durante il training che contiene le caratteristiche geometriche del componente da riconoscere. Ogni ricetta può contenere fino a 8 modelli.</p></td>
+<td><p>Template geometrico del componente creato in fase di training. Ogni ricetta supporta fino a 8 modelli.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Nm (Newton metro)</strong></p></td>
-<td><p>Unità di misura della coppia di serraggio. Critica per evitare danni: 0.5 Nm per camera, 1.2 Nm per VisionController.</p></td>
+<tr class="row-even"><td><p><strong>Origine Modello</strong></p></td>
+<td><p>Punto di riferimento sul componente usato come centro del sistema di coordinate per il calcolo delle posizioni. Corrisponde tipicamente al TCP di presa.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Origine Modello</strong></p></td>
-<td><p>Punto di riferimento sul componente utilizzato come centro del sistema di coordinate per il calcolo delle posizioni. Solitamente corrisponde al punto di presa del gripper.</p></td>
+<tr class="row-odd"><td><p><strong>Ortogonalità</strong></p></td>
+<td><p>Perpendicolarità della camera rispetto al disco (tolleranza ±1°). Verificabile con livella di precisione.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Ortogonalità</strong></p></td>
-<td><p>Condizione in cui la camera è perfettamente perpendicolare (90°) alla superficie del disco FlexiBowl. Tolleranza: ±1°. Verificabile con livella di precisione.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Pattern Matching</strong></p></td>
-<td><p>Algoritmo di visione artificiale che cerca e localizza oggetti nell’immagine confrontandoli con un modello di riferimento pre-registrato.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>POE (Power over Ethernet)</strong></p></td>
-<td><p>Tecnologia che permette di trasmettere alimentazione elettrica e dati attraverso un unico cavo Ethernet. Standard: IEEE 802.3af (15.4W), IEEE 802.3at (30W).</p></td>
+<tr class="row-even"><td><p><strong>Pattern Matching</strong></p></td>
+<td><p>Algoritmo che localizza i componenti nell’immagine confrontandoli con il modello di riferimento registrato in fase di training.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Protocol (Protocollo)</strong></p></td>
-<td><p>Formato standardizzato di comunicazione tra VisionController e robot. Definisce la struttura dei messaggi, l’ordine delle coordinate e le unità di misura.</p></td>
+<td><p>Formato di comunicazione tra VisionController e robot. Definisce struttura dei messaggi, ordine delle coordinate e unità di misura.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Recipe (Ricetta)</strong></p></td>
-<td><p>File di configurazione che contiene tutti i parametri di setup: modelli, soglie, calibrazioni, configurazioni FlexiBowl e robot. Salvata come file XML.</p></td>
+<td><p>File XML contenente tutti i parametri di configurazione del sistema: modelli, soglie, calibrazioni, setup FlexiBowl e robot.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Region Search</strong></p></td>
-<td><p>Area rettangolare nell’immagine dove l’algoritmo di pattern matching cerca i componenti. Limita la zona di ricerca per migliorare velocità e precisione.</p></td>
+<td><p>Area rettangolare nell’immagine entro cui il pattern matching esegue la ricerca. Riduce i tempi di elaborazione e aumenta la precisione.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Results Panel</strong></p></td>
-<td><p>Pannello software che mostra l’elenco di tutti i componenti rilevati con le loro coordinate (X, Y, Rotation) e score di confidenza.</p></td>
+<tr class="row-even"><td><p><strong>ROI (Region of Interest)</strong></p></td>
+<td><p>Area rettangolare che delimita il componente nell’immagine durante il training del modello.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>RGB / Grayscale</strong></p></td>
-<td><p>RGB: immagine a colori con 3 canali (rosso, verde, blu). Grayscale: immagine in scala di grigi con 1 canale. FlexiVision utilizza tipicamente grayscale per maggiore velocità.</p></td>
+<tr class="row-odd"><td><p><strong>RZ / Rotation Z</strong></p></td>
+<td><p>Angolo di rotazione attorno all’asse Z comunicato al robot per l’orientamento del componente. Espresso in gradi (0–360°).</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>RJ45</strong></p></td>
-<td><p>Connettore standard utilizzato per i cavi Ethernet. Deve essere crimpato correttamente per garantire connessioni stabili.</p></td>
+<tr class="row-even"><td><p><strong>Score</strong></p></td>
+<td><p>Indice di similitudine (0.0–1.0) tra il modello e l’oggetto rilevato. Determina la confidenza del riconoscimento.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>ROI (Region of Interest)</strong></p></td>
-<td><p>Regione di Interesse. Area rettangolare selezionata nell’immagine che delimita il componente durante il training del modello.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>RZ / Rotation Z</strong></p></td>
-<td><p>Angolo di rotazione attorno all’asse verticale (Z). Utilizzato per comunicare l’orientamento del componente al robot. Misurato in gradi (0-360°).</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Score</strong></p></td>
-<td><p>Valore numerico (0.0-1.0) che indica il grado di similitudine tra il modello e l’oggetto rilevato. Score alto = maggiore confidenza nel riconoscimento.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Simulatori Ingombro Pinza</strong></p></td>
-<td><p>Oggetti fisici posizionati attorno al componente durante il training per rappresentare le dimensioni della pinza robot ed evitare di includerla nel modello.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Speed</strong></p></td>
-<td><p>Parametro che definisce la velocità di rotazione del disco FlexiBowl durante la fase di movimento. Influenza il tempo ciclo complessivo.</p></td>
+<tr class="row-odd"><td><p><strong>Simulatori Ingombro Pinza</strong></p></td>
+<td><p>Oggetti fisici posizionati attorno al componente durante il training per escludere dal modello le aree occupate dalla pinza in fase di prelievo.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Steps</strong></p></td>
-<td><p>Numero di cicli di vibrazione della tramoggia necessari affinché i primi componenti raggiungano l’area di prelievo. Parametro critico per la sincronizzazione.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Std Dev (Standard Deviation)</strong></p></td>
-<td><p>Deviazione standard. Misura la variabilità dei livelli di grigio in un’area. Utilizzata negli istogrammi per calcolare le soglie di rilevamento.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>STP (Shielded Twisted Pair)</strong></p></td>
-<td><p>Cavo Ethernet schermato che protegge il segnale dalle interferenze elettromagnetiche. Raccomandato in ambienti industriali.</p></td>
+<td><p>Numero di cicli di vibrazione della tramoggia necessari affinché i componenti raggiungano l’area di prelievo. Parametro critico per la sincronizzazione con il ciclo robot.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Subnet</strong></p></td>
-<td><p>Sotto-rete. Gruppo di dispositivi con indirizzi IP che condividono gli stessi primi tre numeri (es: 192.168.1.x). FlexiBowl e VisionController devono essere sulla stessa subnet.</p></td>
+<td><p>FlexiBowl e VisionController devono condividere la stessa subnet (es. 192.168.1.x) per la comunicazione TCP/IP.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Switch AC</strong></p></td>
-<td><p>Interruttore di alimentazione principale. Posizione “I” = ON, posizione “O” = OFF. Presente sul pannello di controllo FlexiBowl.</p></td>
+<tr class="row-even"><td><p><strong>Synchronize Parameters</strong></p></td>
+<td><p>Comando software che trasferisce i parametri dal VisionController al FlexiBowl. Obbligatorio dopo ogni modifica per rendere effettive le impostazioni.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Synchronize Parameters</strong></p></td>
-<td><p>Comando che trasferisce i parametri configurati dal VisionController al FlexiBowl. Deve essere premuto dopo ogni modifica per applicare le impostazioni.</p></td>
+<tr class="row-odd"><td><p><strong>Target di Calibrazione</strong></p></td>
+<td><p>Pattern geometrico stampato (cerchi o scacchiera) con dimensioni note e superficie piana, usato per la calibrazione camera.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Target di Calibrazione</strong></p></td>
-<td><p>Pattern geometrico stampato (tipicamente cerchi o scacchiera) utilizzato per calibrare la camera. Deve avere dimensioni note e superficie piana.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>TCP/IP</strong></p></td>
-<td><p>Transmission Control Protocol / Internet Protocol. Stack di protocolli di comunicazione utilizzato per la trasmissione dati in rete tra VisionController, FlexiBowl e robot.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Threshold (Soglia)</strong></p></td>
-<td><p>Valore limite utilizzato in vari algoritmi per discriminare tra condizioni diverse (es: oggetto presente/assente, componente valido/non valido).</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Timeout</strong></p></td>
-<td><p>Tempo massimo di attesa per una risposta durante la comunicazione. Se superato, viene generato un errore di comunicazione.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Time (Tramoggia)</strong></p></td>
-<td><p>Durata in millisecondi della vibrazione della tramoggia. Determina la quantità di componenti scaricati. Valori tipici: 300-800ms.</p></td>
+<tr class="row-even"><td><p><strong>Timeout</strong></p></td>
+<td><p>Tempo massimo di attesa per una risposta in comunicazione. Al superamento viene generato un errore.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Tilt</strong></p></td>
-<td><p>Inclinazione della camera rispetto al piano orizzontale. Deve essere 0° ± 1° per garantire immagini non distorte.</p></td>
+<td><p>Inclinazione della camera rispetto al piano orizzontale. Valore ammesso: 0° ± 1°.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Tool (Robot)</strong></p></td>
-<td><p>Utensile montato al polso del robot, tipicamente il gripper. Definisce il sistema di coordinate del punto di lavoro (TCP - Tool Center Point).</p></td>
+<tr class="row-even"><td><p><strong>Toplight</strong></p></td>
+<td><p>Illuminatore LED posizionato sopra il disco che garantisce illuminazione uniforme dall’alto. Alimentazione: 24V DC.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Toplight</strong></p></td>
-<td><p>Illuminatore a LED posizionato sopra il disco FlexiBowl che fornisce illuminazione uniforme dall’alto. Alimentazione tipica: 24V DC.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Training</strong></p></td>
-<td><p>Processo di creazione di un modello di riconoscimento selezionando le caratteristiche distintive del componente da un’immagine di riferimento.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Tramoggia (Hopper)</strong></p></td>
-<td><p>Sistema vibrante che alimenta continuamente i componenti sul disco FlexiBowl. Controllabile automaticamente tramite visione.</p></td>
+<tr class="row-odd"><td><p><strong>Training</strong></p></td>
+<td><p>Processo di creazione del modello di riconoscimento tramite selezione delle caratteristiche distintive del componente da un’immagine di riferimento.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Trigger</strong></p></td>
-<td><p>Segnale che avvia l’acquisizione di un’immagine da parte della camera. Può essere software (temporizzato) o hardware (segnale elettrico).</p></td>
+<td><p>Segnale di avvio dell’acquisizione immagine. Può essere software (temporizzato) o hardware (segnale elettrico esterno).</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Vision Result</strong></p></td>
-<td><p>Risultato fornito dal sistema di visione contenente coordinate (X, Y, RZ) e score del componente rilevato, pronto per essere inviato al robot.</p></td>
+<td><p>Output del sistema di visione: coordinate (X, Y, RZ) e score del componente rilevato, trasmesso al robot per il prelievo.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>VisionController</strong></p></td>
-<td><p>Computer industriale che esegue il software FlexiVision Easy, gestisce le camere, elabora le immagini e comunica con FlexiBowl e robot.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Wizard</strong></p></td>
-<td><p>Procedura guidata passo-passo che semplifica la configurazione di sistemi complessi (es: FlexiBowl Wizard per calcolo automatico parametri).</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>X, Y, Z</strong></p></td>
-<td><p>Coordinate cartesiane nello spazio tridimensionale. X = asse orizzontale, Y = asse verticale nel piano, Z = asse verticale (altezza).</p></td>
+<td><p>Computer industriale che esegue FlexiVision Easy, gestisce le camere, elabora le immagini e comunica con FlexiBowl e robot.</p></td>
 </tr>
 </tbody>
 </table>

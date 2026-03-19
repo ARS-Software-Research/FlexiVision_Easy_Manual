@@ -1,67 +1,128 @@
 (troubleshooting)=
-# **Risoluzione Problemi** 
+# **Risoluzione Problemi**
 
-```{list-table} 
-:widths: 45 45 30
-:header-rows: 1
+Seleziona il componente per cui hai bisogno di supporto.
 
-* - Sezione
-  - Componente
-  - link alla pagina
-* - **Installazione Meccanica**
-  - 1. **VisionController**  
-    2. **Camera**  
-    3. **Toplight**  
-    4. **Luce Ambientale**  
-  - 1. [Vai alla Sezione](troubleshooting_vision_controller)
-    2. [Vai alla Sezione](troubleshooting_camera)   
-    3. [Vai alla Sezione](troubleshooting_toplight)
-    4. [Vai alla Sezione](troubleshooting_luce_ambientale)  
-* - **Cablaggio e Connessioni**
-  - 1. **Alimentazione**  
-    2. **Ethernet**  
-    3. **Pneumatica**  
-    4. **Connessione Camera**
-    5. **Connessione Toplight**
-    6. **Multi-Dispositivo**  
-  - 1. [Vai alla Sezione](troubleshooting_alimentazione)
-    2. [Vai alla Sezione](troubleshooting_ethernet) 
-    3. [Vai alla Sezione](troubleshooting_pneumatica)
-    4. [Vai alla Sezione](troubleshooting_connessione_camera)
-    5. [Vai alla Sezione](troubleshooting_connessione_toplight)
-    6. [Vai alla Sezione](troubleshooting_multi)  
-* - **Configurazione Iniziale**
-  - 1. **Passo 4: FlexiBowl Setup**  
-    2. **Passo 5: Hopper Setup** 
-    3. **Passo 6: Robot Setup**   
-    4. **Passo 7: Camera Setup** 
-  - 1. [Vai alla Sezione](troubleshooting_FB_setup)  
-    2. [Vai alla Sezione](troubleshooting_Hopper_setup)  
-    3. [Vai alla Sezione](troubleshooting_Robot_setup)  
-    4. [Vai alla Sezione](troubleshooting_cam_setup)
-* - **Calibrazione e Ricette**
-  - 1. **Calibrazione camera**  
-    2. **Protocol Setup**  
-    3. **Creazione Nuova Ricetta**  
-    4. **Creazione Nuovo Modello**  
-    5. **Modelli e ROI**  
-    6. **Istogrammi**  
-    7. **Robot Pick**
-  - 1. [Vai alla Sezione](troubleshooting_calib_cam)  
-    2. [Vai alla Sezione](troubleshooting_protocol_setup)  
-    3. [Vai alla Sezione](troubleshooting_Nuova_Ricetta)  
-    4. [Vai alla Sezione](troubleshooting_Nuovo_modello)  
-    5. [Vai alla Sezione](troubleshooting_Modelli_ROI)  
-    6. [Vai alla Sezione](troubleshooting_istogrammi)  
-    7. [Vai alla Sezione](troubleshooting_robot_pick)
-* - **Avanzate e Monitoraggio**
-  - 1. **FlexiBowl Wizard**  
-    2. **Tramoggia**  
-    3. **Monitoraggio**
-  - 1. [Vai alla Sezione](troubleshooting_FB_Wizard)  
-    2. [Vai alla Sezione](troubleshooting_conf_tramoggia)  
-    3. [Vai alla Sezione](troubleshooting_pneumatica)
-```
+## **Installazione Meccanica**
+
+:::{card} VisionController
+:link: troubleshooting_vision_controller
+:link-type: ref
+:::
+
+:::{card} Camera
+:link: troubleshooting_camera
+:link-type: ref
+:::
+
+:::{card} Toplight
+:link: troubleshooting_toplight
+:link-type: ref
+:::
+
+:::{card} Luce Ambientale
+:link: troubleshooting_luce_ambientale
+:link-type: ref
+:::
+
+## **Cablaggio e Connessioni**
+
+:::{card} Alimentazione
+:link: troubleshooting_alimentazione
+:link-type: ref
+:::
+
+:::{card} Ethernet
+:link: troubleshooting_ethernet
+:link-type: ref
+:::
+
+:::{card} Pneumatica
+:link: troubleshooting_pneumatica
+:link-type: ref
+:::
+
+:::{card} Connessione Camera
+:link: troubleshooting_connessione_camera
+:link-type: ref
+:::
+
+:::{card} Connessione Toplight
+:link: troubleshooting_connessione_toplight
+:link-type: ref
+:::
+
+:::{card} Multi-Dispositivo
+:link: troubleshooting_multi
+:link-type: ref
+:::
+
+## **Configurazione Iniziale**
+
+:::{card} FlexiBowl Setup
+:link: troubleshooting_fb_setup
+:link-type: ref
+:::
+
+:::{card} Hopper Setup
+:link: troubleshooting_hopper_setup
+:link-type: ref
+:::
+
+:::{card} Robot Setup
+:link: troubleshooting_robot_setup
+:link-type: ref
+:::
+
+:::{card} Camera Setup
+:link: troubleshooting_cam_setup
+:link-type: ref
+:::
+
+## **Calibrazione e Ricette**
+
+:::{card} Calibrazione Camera
+:link: troubleshooting_calib_cam
+:link-type: ref
+:::
+
+:::{card} Creazione Nuova Ricetta
+:link: troubleshooting_nuova_ricetta
+:link-type: ref
+:::
+
+:::{card} Creazione Nuovo Modello
+:link: troubleshooting_nuovo_modello
+:link-type: ref
+:::
+
+:::{card} Modelli e ROI
+:link: troubleshooting_modelli_roi
+:link-type: ref
+:::
+
+:::{card} Clearances
+:link: troubleshooting_istogrammi
+:link-type: ref
+:::
+
+:::{card} Robot Pick
+:link: troubleshooting_robot_pick
+:link-type: ref
+:::
+
+## **Avanzate e Monitoraggio**
+
+:::{card} FlexiBowl Wizard
+:link: troubleshooting_fb_wizard
+:link-type: ref
+:::
+
+:::{card} Tramoggia
+:link: troubleshooting_conf_tramoggia
+:link-type: ref
+:::
+
 
 
 ```{toctree}  

@@ -14,8 +14,69 @@ Se FlexiBowl, robot o camera non sono raggiungibili:
 
 Per dettagli sulla configurazione di rete, vedere [Cablaggio e Connessioni](cablaggio).
 ```
-(troubleshooting_FB_setup)=
+(troubleshooting_fb_setup)=
 ## Troubleshooting per la sezione Passo 4: FlexiBowl Setup 
+
+```{list-table}
+:header-rows: 1
+:widths: 40 60
+
+* - **Problema**
+  - **Cause e Soluzioni**
+* - FlexiBowl non risponde ai comandi software
+  - :::{list-table}
+    :widths: 10 45 45
+
+    * - 1
+      - Indirizzo IP non configurato o errato
+      - Verificare e configurare correttamente IP in FlexiBowl Setup
+    * - 2
+      - FlexiBowl non connesso in rete
+      - Testare connessione con ping da VisionController
+    * - 3
+      - Firewall blocca comunicazione
+      - Disabilitare firewall temporaneamente per test
+    * - 4
+      - FlexiBowl non acceso
+      - Verificare LED READY acceso su FlexiBowl
+    :::
+* - Impossibile salvare configurazione FlexiBowl
+  - :::{list-table}
+    :widths: 10 45 45
+
+    * - 1
+      - Disco pieno
+      - Liberare spazio su disco
+    :::
+* - Parametri FlexiBowl non si applicano
+  - :::{list-table}
+    :widths: 10 45 45
+
+    * - 1
+      - Pulsante "Synchronize Parameters" non premuto
+      - Cliccare sempre "Synchronize Parameters" dopo modifiche
+    * - 2
+      - Connessione FlexiBowl persa
+      - Verificare stabilità connessione Ethernet
+    * - 3
+      - FlexiBowl in errore
+      - Riavviare FlexiBowl
+    :::
+* - Wizard FlexiBowl calcola parametri errati
+  - :::{list-table}
+    :widths: 10 45 45
+
+    * - 1
+      - Caratterizzazione componente non corretta
+      - Rivedere selezione geometria (FLAT/CYLINDRICAL/COMPLEX)
+    * - 2
+      - Modello FlexiBowl selezionato errato
+      - Verificare taglia FlexiBowl installato vs selezionato
+    * - 3
+      - Senso rotazione impostato male
+      - Verificare senso rotazione fisico e confrontare con impostazione
+    :::
+```
 
 ```{list-table}
 :header-rows: 1
@@ -67,7 +128,8 @@ Per dettagli sulla configurazione di rete, vedere [Cablaggio e Connessioni](cabl
     
     • Verificare senso rotazione fisico e confrontare con impostazione
 ```
-(troubleshooting_Hopper_setup)=
+
+(troubleshooting_hopper_setup)=
 ## Troubleshooting per la sezione Passo 5: Hopper Setup 
 
 ```{list-table}
@@ -133,8 +195,10 @@ Per dettagli sulla configurazione di rete, vedere [Cablaggio e Connessioni](cabl
     
     • Controllare che il carico non superi il payload della tramoggia 
 ```
-(troubleshooting_Robot_setup)=
+
+(troubleshooting_robot_setup)=
 ## Troubleshooting per la sezione Passo 6: Robot Setup
+
 ```{warning}
 **Diagnosi connessione fallita**
 
@@ -247,8 +311,10 @@ Consultare [Protocollo TCP/IP](protocollo) per l'elenco completo e corretto dei 
     
     • Configurare robot e VisionController stessa rete
 ```
+
 (troubleshooting_cam_setup)=
 ## Troubleshooting per la sezione Passo 7: Camera Setup 
+
 ```{warning}
 **Problemi di messa a fuoco**
 
