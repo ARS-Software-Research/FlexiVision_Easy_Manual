@@ -83,9 +83,8 @@ tipo:
 * - 11
   - Accendere tutti gli altri dispositivi
 ```
-
+(cablaggio_illuminatore)=
 ### Cablaggio illuminatore
-
 
 ![Pin Toplight](./img/pin_toplight.png)
 
@@ -98,7 +97,10 @@ tipo:
 * - **Tensione**
   - 24V DC (±10%). Tensione minima di funzionamento: 20V DC sull'ingresso luce.
 * - **Connettore**
-  - M12 5 poli (T-coding).
+  - M12 Male. 
+    :::{note}
+      Per connettere il toplight, è possibile acquistare anche il suo [cavo di alimentazione](cavoalimtoplight). 
+    :::
 * - **Pinout connettore**
   - Pin 1: +24V (marrone) — Pin 3: GND (blu) — Pin 4: STROBE PNP (nero)
 * - **Modalità STROBE (PNP)**

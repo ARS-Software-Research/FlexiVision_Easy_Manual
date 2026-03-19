@@ -224,21 +224,12 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/17_NuovaRicetta.html"><strong>Creare una Nuova Ricetta</strong></a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18_NuovoModello.html"><strong>Creare un Nuovo Modello</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18b_Expert.html">expert della pagina…</a></li>
-</ul>
-</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/18_NuovoModello.html"><strong>Creare un Nuovo Modello</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/19_ROI_TEST.html"><strong>Definizione ROI e Tolleranze</strong></a></li>
 
 
-<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20_Istogrammi.html"><strong>Le Clearances</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20b_Expert.html">expert della pagina …</a></li>
-</ul>
-</details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/21_RobotPick.html"><strong>Calibrazione Robot Pick</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/21b_Expert.html">expert della pagina…</a></li>
-</ul>
-</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/20_Istogrammi.html"><strong>Le Clearances</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../QUICKSTART/Nuovo_Modello/21_RobotPick.html"><strong>Calibrazione Robot Pick</strong></a></li>
 </ul>
 </details></li>
 </ul>
@@ -515,7 +506,7 @@ document.write(`
 <td><p>Support two sets of user-defined configuration</p></td>
 </tr>
 <tr class="row-odd"><td><p>Alimentazione</p></td>
-<td><p>PoE / DC tramite connettore Hirose, con tensione da 6 V a 26 V</p></td>
+<td><p>PoE / DC tramite connettore Hirose, con tensione a 12 V o 24 V</p></td>
 </tr>
 <tr class="row-even"><td><p>Consumo Energetico</p></td>
 <td><p>12V ≈ 3.2 W</p></td>
@@ -581,7 +572,7 @@ document.write(`
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>Power</p></td>
-<td><p>Ingresso alimentazione DC 9V ~ 24V</p></td>
+<td><p>Ingresso alimentazione DC 12V o 24V</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
 <td><p>Line1</p></td>
@@ -629,11 +620,11 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>PoE</strong></p></td>
-<td><p>Alimentazione e dati su un unico cavo Ethernet. Consumo circa 3.2 W.</p></td>
+<td><p>Alimentazione e dati su un unico cavo Ethernet. Consumo 3.2 W &#64; 12 Vdc.</p></td>
 <td><p>Richiede PoE Injector o Switch PoE compatibile (IEEE 802.3af/at)</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Cavo Camera Esterno Fornito nel Kit</strong></p></td>
-<td><p>Alimentazione DC esterna tramite connettore Hirose 6-pin (6V ~ 26V). Incluso nel kit.</p></td>
+<td><p>Alimentazione DC esterna tramite connettore Hirose 6-pin (12V o 24V). Incluso nel kit.</p></td>
 <td><p>Cavo Ethernet separato necessario solo per i dati</p></td>
 </tr>
 </tbody>
@@ -671,31 +662,28 @@ document.write(`
 <tr class="row-even"><td><p><strong>Descrizione</strong></p></td>
 <td><p>Cavo I/O 10 metri, connettore HRS6P</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Drawing Number</strong></p></td>
-<td><p>185-1252R rev. B</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Compatibilità</strong></p></td>
+<tr class="row-odd"><td><p><strong>Compatibilità</strong></p></td>
 <td><p>Telecamere CIC-series</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Lunghezza</strong></p></td>
+<tr class="row-even"><td><p><strong>Lunghezza</strong></p></td>
 <td><p>10 metri (33’)</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Connettore (P1)</strong></p></td>
+<tr class="row-odd"><td><p><strong>Connettore (P1)</strong></p></td>
 <td><p>Push/Pull 6P RECP Shell SZ 7 Female</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Sezione conduttori</strong></p></td>
+<tr class="row-even"><td><p><strong>Sezione conduttori</strong></p></td>
 <td><p>22 AWG</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Tipo cavo</strong></p></td>
+<tr class="row-odd"><td><p><strong>Tipo cavo</strong></p></td>
 <td><p>Schermato, 3 coppie twistare, flessibile</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Colori cavi</strong></p></td>
-<td><p>Pin 6: Bianco, Pin 1: Marrone, Pin 5: Grigio, Pin 2: Verde , Pin 3: Rosa, Pin 4: Giallo</p></td>
+<tr class="row-even"><td><p><strong>Colori cavi</strong></p></td>
+<td><p>Pin 1: Marrone, Pin 2: Verde , Pin 3: Rosa, Pin 4: Giallo, Pin 5: Grigio, Pin 6: Bianco</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Schermatura</strong></p></td>
+<tr class="row-odd"><td><p><strong>Schermatura</strong></p></td>
 <td><p>Shield su tutti i conduttori</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Conformità</strong></p></td>
+<tr class="row-even"><td><p><strong>Conformità</strong></p></td>
 <td><p>UL/CSA e RoHS</p></td>
 </tr>
 </tbody>
@@ -1397,6 +1385,32 @@ Questa precisione è essenziale per il successo della calibrazione e si integra 
 </tbody>
 </table>
 </div>
+<a class="hidden reference internal image-reference" href="../../_images/laserscomp.png"><img alt="../../_images/laserscomp.png" class="hidden" src="../../_images/laserscomp.png" style="width: 1px;" />
+</a>
+<div style="display: flex; align-items: flex-start; gap: 2rem;">
+  <img src="../../_images/laserscomp.png" style="width: 280px; flex-shrink: 0;" />
+  <table style="border-collapse: collapse; font-size: 0.95em; align-self: center;">
+    <thead>
+      <tr style="background: #d0d0d0;">
+        <th style="padding: 6px 16px; text-align: left;">POS.</th>
+        <th style="padding: 6px 16px; text-align: left;">DESCRIZIONE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="padding: 5px 16px;">1</td><td style="padding: 5px 16px;">TAPPO DI CHIUSURA SUPERIORE</td></tr>
+      <tr><td style="padding: 5px 16px;">2</td><td style="padding: 5px 16px;">CONTENITORE BATTERIE CR2032 3V A BOTTONE</td></tr>
+      <tr><td style="padding: 5px 16px;">3</td><td style="padding: 5px 16px;">FLANGIA DI ACCOPPIAMENTO</td></tr>
+      <tr><td style="padding: 5px 16px;">4</td><td style="padding: 5px 16px;">MORSETTO</td></tr>
+      <tr><td style="padding: 5px 16px;">5</td><td style="padding: 5px 16px;">CORPO UTENSILE</td></tr>
+      <tr><td style="padding: 5px 16px;">6</td><td style="padding: 5px 16px;">PUNTATORE LASER</td></tr>
+      <tr><td style="padding: 5px 16px;">7</td><td style="padding: 5px 16px;">AMMORTIZZATORE A MOLLA</td></tr>
+      <tr><td style="padding: 5px 16px;">8</td><td style="padding: 5px 16px;">SUPPORTO DISTANZIALE</td></tr>
+    </tbody>
+  </table>
+</div><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Per cambiarle le DUE batterie dello strumento laser, seguire questi passaggi:</p>
+</div>
 <div class="tip admonition">
 <p class="admonition-title">Suggerimento</p>
 <p>L’utilizzo dello Strumento Laser in combinazione con la Griglia di Calibrazione Dedicata ARS costituisce la metodologia più robusta e precisa per l’installazione del sistema FlexiVision</p>
@@ -1465,7 +1479,7 @@ Questa precisione è essenziale per il successo della calibrazione e si integra 
 <tbody>
 <tr class="row-even"><td><p>Rete elettrica</p></td>
 <td><p>FlexiBowl</p></td>
-<td><p>Alimentazione 110/220 Vdc</p></td>
+<td><p>Alimentazione 110/230 Vac</p></td>
 </tr>
 <tr class="row-odd"><td><p>Rete elettrica</p></td>
 <td><p>Robot</p></td>
@@ -1481,7 +1495,7 @@ Questa precisione è essenziale per il successo della calibrazione e si integra 
 </tr>
 <tr class="row-even"><td><p>Rete elettrica</p></td>
 <td><p>Controller Tramoggia</p></td>
-<td><p>Alimentazione 110/220 Vdc</p></td>
+<td><p>Alimentazione 110/230 Vac</p></td>
 </tr>
 <tr class="row-odd"><td><p>Controller Tramoggia</p></td>
 <td><p>Tramoggia</p></td>
@@ -1518,6 +1532,12 @@ Questa precisione è essenziale per il successo della calibrazione e si integra 
 Toplight</div>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference internal" href="08_Opzioni.html#toplight"><span class="std std-ref">Toplight</span></a></div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover shadow docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Cavo Alimentazione Toplight</div>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="08_Opzioni.html#cavoalimtoplight"><span class="std std-ref">Cavo Alimentazione Toplight</span></a></div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover shadow docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">

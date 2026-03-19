@@ -295,9 +295,13 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 * - 21. 
   - Montare il Laser Tool con il suo supporto personalizzato 
 * - 22. 
-  - Posizionare lo Spacer Bracket sotto il laser 
+  - Posizionare lo Spacer Bracket  (**A**) sotto il laser 
 * - 23. 
-  - Abbassare il laser fino al livello dello spacer, così il laser avrà un'altezza di esattamente 3cm dalla griglia di calibrazione
+  - Abbassare il laser fino al livello dello spacer (**A**), così il laser avrà un'altezza di esattamente 3cm dalla griglia di calibrazione
+    :::{image} img/spacerbracket.png
+    :align: center 
+    :width: 75%
+    :::
 * - 24. 
   - Rimuovere lo Spacer Bracket 
 * - 25. 

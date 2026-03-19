@@ -196,6 +196,3 @@ Effettuare modifiche graduali (step di 0.1-0.2) e testare ogni volta.
 ```{seealso}
 Procedi alla [Definizione ROI](roitest) per continuare la configurazione.
 ```
-```{toctree}  
-18b_Expert.md
-```

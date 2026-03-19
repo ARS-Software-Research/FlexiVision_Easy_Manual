@@ -17,21 +17,25 @@ Prima di procedere, assicurarsi che:
 
 ## Accesso alla configurazione Camera
 
+```{list-table}
 
-**Navigazione**
-
-1. Dalla pagina principale del software, cliccare su **SETUP**
-2. Nella pagina SETUP, identificare e cliccare sull'icona **Camera Setup**
-3. Si apre la pagina di configurazione delle camere
-
+* - **1** 
+  - Dalla pagina principale del software, cliccare su <img src="../SETUP/img/tasto_setup1.png" class="inline-icon">
+* - **2**
+  - Nella pagina SETUP, identificare e cliccare sull'icona **Camera Setup**
+    ```{dropdown} Pagina Setup 
+       ![Pagina Setup](../SETUP/img/pagina_setup1.png)
+    ```
+* - **3**
+  - Si apre la pagina di configurazione delle camere
+```
 
 ---
 
 ## Panoramica interfaccia Camera Setup
 
 La pagina Camera Setup presenta tre riquadri informativi principali e un'area di configurazione:
-
-immagine schermata camera setup
+![Paagina Camera Setup](./img/pagina_camsetup.png)
 
 ```{list-table}
 :header-rows: 1
@@ -41,6 +45,7 @@ immagine schermata camera setup
   - Descrizione
 * - **Selected Camera**
   - Mostra l'identificazione della camera attualmente selezionata
+* - **Camera Serial Number**
   - Visualizza il numero seriale univoco della camera connessa
 * - **Status**
   - Indica lo stato della connessione

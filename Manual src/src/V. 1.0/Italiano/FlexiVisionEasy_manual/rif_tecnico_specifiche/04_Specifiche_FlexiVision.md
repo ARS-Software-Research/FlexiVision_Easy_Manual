@@ -49,7 +49,7 @@ Il sistema FlexiVision utilizza telecamere ad alta risoluzione con interfaccia G
 * - impostazioni utente 
   - Support two sets of user-defined configuration
 * - Alimentazione
-  - PoE / DC tramite connettore Hirose, con tensione da 6 V a 26 V
+  - PoE / DC tramite connettore Hirose, con tensione a 12 V o 24 V
 * - Consumo Energetico
   - 12V ≈ 3.2 W
 * - Attacco Obiettivo
@@ -95,7 +95,7 @@ Vista posteriore della camera con connettori
   - **Descrizione**
 * - 1
   - Power
-  - Ingresso alimentazione DC 9V ~ 24V
+  - Ingresso alimentazione DC 12V o 24V
 * - 2
   - Line1
   - Ingresso opto-isolato
@@ -131,10 +131,10 @@ La mancata osservanza di questo requisito compromette completamente l'operativit
   - **Descrizione**
   - **Requisiti**
 * - **PoE**
-  - Alimentazione e dati su un unico cavo Ethernet. Consumo circa 3.2 W.
+  - Alimentazione e dati su un unico cavo Ethernet. Consumo 3.2 W @ 12 Vdc.
   - Richiede PoE Injector o Switch PoE compatibile (IEEE 802.3af/at)
 * - **Cavo Camera Esterno Fornito nel Kit**
-  - Alimentazione DC esterna tramite connettore Hirose 6-pin (6V ~ 26V). Incluso nel kit.
+  - Alimentazione DC esterna tramite connettore Hirose 6-pin (12V o 24V). Incluso nel kit.
   - Cavo Ethernet separato necessario solo per i dati
 ```
 
@@ -163,9 +163,6 @@ Specifiche Cavo Alimentazione Camera
 * - **Descrizione**
   - Cavo I/O 10 metri, connettore HRS6P
 
-* - **Drawing Number**
-  - 185-1252R rev. B
-
 * - **Compatibilità**
   - Telecamere CIC-series
 
@@ -182,7 +179,7 @@ Specifiche Cavo Alimentazione Camera
   - Schermato, 3 coppie twistare, flessibile
 
 * - **Colori cavi**
-  - Pin 6: Bianco, Pin 1: Marrone, Pin 5: Grigio, Pin 2: Verde , Pin 3: Rosa, Pin 4: Giallo
+  - Pin 1: Marrone, Pin 2: Verde , Pin 3: Rosa, Pin 4: Giallo, Pin 5: Grigio, Pin 6: Bianco
 
 * - **Schermatura**
   - Shield su tutti i conduttori
@@ -489,6 +486,41 @@ Questa precisione è essenziale per il successo della calibrazione e si integra 
 |Facilità d'Uso	|Semplifica la procedura di allineamento visivo.	|Richiede maggiore attenzione nel posizionamento e nell'evitare l'inclinazione.|
 |Vantaggio Chiave	|Consente di salvare il punto di riferimento robot con la massima fedeltà possibile, essenziale per l'accuratezza finale del picking.|	Metodo base, ma meno preciso del laser.|
 
+
+```{image} img/laserscomp.png
+:width: 1px
+:class: hidden
+```
+```{raw} html
+<div style="display: flex; align-items: flex-start; gap: 2rem;">
+  <img src="../../_images/laserscomp.png" style="width: 280px; flex-shrink: 0;" />
+  <table style="border-collapse: collapse; font-size: 0.95em; align-self: center;">
+    <thead>
+      <tr style="background: #d0d0d0;">
+        <th style="padding: 6px 16px; text-align: left;">POS.</th>
+        <th style="padding: 6px 16px; text-align: left;">DESCRIZIONE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="padding: 5px 16px;">1</td><td style="padding: 5px 16px;">TAPPO DI CHIUSURA SUPERIORE</td></tr>
+      <tr><td style="padding: 5px 16px;">2</td><td style="padding: 5px 16px;">CONTENITORE BATTERIE CR2032 3V A BOTTONE</td></tr>
+      <tr><td style="padding: 5px 16px;">3</td><td style="padding: 5px 16px;">FLANGIA DI ACCOPPIAMENTO</td></tr>
+      <tr><td style="padding: 5px 16px;">4</td><td style="padding: 5px 16px;">MORSETTO</td></tr>
+      <tr><td style="padding: 5px 16px;">5</td><td style="padding: 5px 16px;">CORPO UTENSILE</td></tr>
+      <tr><td style="padding: 5px 16px;">6</td><td style="padding: 5px 16px;">PUNTATORE LASER</td></tr>
+      <tr><td style="padding: 5px 16px;">7</td><td style="padding: 5px 16px;">AMMORTIZZATORE A MOLLA</td></tr>
+      <tr><td style="padding: 5px 16px;">8</td><td style="padding: 5px 16px;">SUPPORTO DISTANZIALE</td></tr>
+    </tbody>
+  </table>
+</div>
+```
+:::{important}
+Per cambiarle le DUE batterie dello strumento laser, seguire questi passaggi:
+
+
+
+:::
+
 :::{admonition} Suggerimento 
 :class: tip 
 L'utilizzo dello Strumento Laser in combinazione con la Griglia di Calibrazione Dedicata ARS costituisce la metodologia più robusta e precisa per l'installazione del sistema FlexiVision
@@ -553,7 +585,7 @@ Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezi
 
 * - Rete elettrica
   - FlexiBowl
-  - Alimentazione 110/220 Vdc
+  - Alimentazione 110/230 Vac
 
 * - Rete elettrica
   - Robot
@@ -569,7 +601,7 @@ Per informazioni dettagliate sulle procedure di calibrazione, consultare la sezi
 
 * - Rete elettrica
   - Controller Tramoggia
-  - Alimentazione 110/220 Vdc
+  - Alimentazione 110/230 Vac
 
 * - Controller Tramoggia
   - Tramoggia
@@ -605,6 +637,12 @@ Componenti aggiuntivi disponibili separatamente:
 
 :::{card} Toplight
 :link: toplight
+:link-type: ref
+:class-card: shadow
+:::
+
+:::{card} Cavo Alimentazione Toplight
+:link: cavoalimtoplight
 :link-type: ref
 :class-card: shadow
 :::

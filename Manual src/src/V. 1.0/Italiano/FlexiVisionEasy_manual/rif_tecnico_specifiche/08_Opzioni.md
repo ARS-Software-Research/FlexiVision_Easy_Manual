@@ -27,7 +27,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 200, FlexiBow
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -37,7 +37,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 200, FlexiBow
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
@@ -123,7 +123,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 200, FlexiBow
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -133,13 +133,13 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 200, FlexiBow
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 96.6W
+  - 96.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -221,7 +221,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 200, FlexiBow
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -231,13 +231,13 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 200, FlexiBow
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 96.6W
+  - 96.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -318,7 +318,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -328,13 +328,13 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 135.6W
+  - 135.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -414,7 +414,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -424,13 +424,13 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 135.6W
+  - 135.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -510,7 +510,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -520,13 +520,13 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 135.6W
+  - 135.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -606,7 +606,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -616,13 +616,13 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 252.6W
+  - 252.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -702,7 +702,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -712,13 +712,13 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 252.6W
+  - 252.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -798,7 +798,7 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -808,13 +808,13 @@ Questa dimensione di Toplight è indicata per i modelli: FlexiBowl 650, FlexiBow
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 252.6W
+  - 252.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -894,7 +894,7 @@ Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -904,13 +904,13 @@ Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 345.6W
+  - 345.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -989,7 +989,7 @@ Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -999,13 +999,13 @@ Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 345.6W
+  - 345.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -1085,7 +1085,7 @@ Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
 * - Alimentazione
   - 24 VDC ±10%
 
-* - Modalità di funzionamento
+* - Modalità di controllo
   - Continua 
 
 * - Tempo massimo di salita
@@ -1095,13 +1095,13 @@ Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
   - 10 µs
 
 * - Controllo
-  - Connettore M12 5 poli
+  - [Connettore M12](cablaggio_illuminatore)
 
 * - Configurazione pin connettore
   - 1: 24VDC / 3: GND / 4: PNP
 
 * - Consumo
-  - 345.6W
+  - 345.6W @24 Vdc
 
 * - Tensione minima di funzionamento
   - 20V sull’ingresso luce
@@ -1158,6 +1158,23 @@ Questa dimensione di Toplight è indicata per il modelli FlexiBowl 1200
   - RoHS-CE-DEEE, UL
 :::
 ```
+(cavoalimtoplight)=
+### Cavo Alimentazione Toplight 
+
+```{image} img/cavoalimtoplight1.png
+:align: center
+:width: 60%
+```
+
+| Codice   | Descrizione              | Connettore |
+|----------|--------------------------|------------|
+| CE001337 | Cavo Alimentazione Toplight 2M  | M12 4 Pin Female |
+| CE001338 | Cavo Alimentazione Toplight power 5M | M12 4 Pin Female |
+| CE001339 | Cavo Alimentazione Toplight power 10M | M12 4 Pin Female |
+
+### Staffa per Montaggio Toplight 
+
+
 
 (backlight)=
 ## Backlight
@@ -1283,7 +1300,11 @@ La calibrazione, quando si utilizza una griglia di calibrazione ARS, dev'essere 
 
 (filtroIR)=
 ## Filtro IR
-![Filtro IR](./img/FiltroIR_000047.png)
+
+```{image} img/FiltroIR_000047.png
+:align: center
+:width: 60%
+```
 
 Il filtro IR è un accessorio ottico da applicare all’obiettivo della camera che blocca la luce visibile lasciando passare esclusivamente la radiazione infrarossa. È necessario solo nel caso in cui si utilizzi un illuminatore IR (850 nm): senza filtro, la camera riceverebbe sia luce visibile che infrarossa, compromettendo il contrasto e la qualità del riconoscimento.
 
@@ -1295,6 +1316,51 @@ Il filtro IR è un accessorio ottico da applicare all’obiettivo della camera c
 (switch)=
 ## Switch
 
+:::{image} img/switch.jpg
+:align: center
+:width: 30%
+:::
+
+### Specifiche Elettriche
+
+| Parametro | Valore |
+|-----------|--------|
+| Tensione di ingresso | 12/24/48 VDC |
+| Tensione operativa | 9.6 a 60 VDC |
+| Corrente di ingresso | 0.33 A (max.) |
+| Connessione alimentazione | 1 morsettiera rimovibile a 2 contatti |
+| Protezione da sovracorrente | Supportata |
+| Protezione da polarità inversa | Supportata |
+| Porte 10/100/1000BaseT(X) (RJ45) | 8 |
+| Modalità duplex | Full/Half duplex |
+| Connessione | Auto MDI/MDI-X |
+| Negoziazione velocità | Automatica |
+| Standard supportati | IEEE 802.3, IEEE 802.3u, IEEE 802.3ab, IEEE 802.1p, IEEE 802.3x |
+| Tipo di elaborazione | Store and Forward |
+| Dimensione tabella MAC | 4 K |
+| Dimensione buffer pacchetti | 1.5 Mbit |
+| Configurazione DIP switch | QoS, Protezione broadcast storm (BSP) |
+| Certificazioni | UL 61010-2-201, EN 62368-1, EN 55032/35, EN 61000-6-2/-6-4, CISPR 32, FCC Part 15B Class A, CE, FCC |
+
+
+![Dimensioni Switch](./img/dimswitch.png)
+
+### Specifiche Fisiche
+
+| Parametro | Valore |
+|-----------|--------|
+| Dimensioni | 36 x 81 x 65 mm (1.42 x 3.19 x 2.56 in) |
+| Peso | 180 g (0.4 lb) |
+| Alloggiamento | Metallo |
+| Grado di protezione | IP40 |
+| Installazione | Guida DIN, staffa a parete (kit opzionale) |
+| Temperatura operativa (standard) | -10 a 60°C (14 a 140°F) |
+| Temperatura operativa (modello -T) | -40 a 75°C (-40 a 167°F) |
+| Umidità relativa | 5 a 95% (senza condensa) |
+| Temperatura di stoccaggio | -40 a 85°C (-40 a 185°F) |
+| MTBF | 3.404.784 ore |
+| Garanzia | 5 anni |
+
 (display)=
 ## Display Touch Screen
 
@@ -1302,6 +1368,9 @@ Il filtro IR è un accessorio ottico da applicare all’obiettivo della camera c
 
 | Voce                  | Specifiche                                      |
 |-----------------------|-------------------------------------------------|
+| Schermo Touch         | Capacitivo                                     |
+| Ingresso Video        | 1x VGA<br>1x DP<br>1x DVI-D                     |
+| Alimentazione         | 12~32 Vdc (Assorbimento 30W)                    |
 | Montaggio             | Montaggio a pannello                           |
 | Dimensioni Esterne    | (L) 560 mm x (P) 350 mm x (A) 60 mm            |
 | Peso                  | 7 kg                                           |
@@ -1311,12 +1380,6 @@ Il filtro IR è un accessorio ottico da applicare all’obiettivo della camera c
 | Umidità               | < 90% senza condensa                           |
 | Certificazioni        | CE                                             |
 
-![Display Touch Screen Retro](./img/displayretro.jpg)
-| Voce                  | Specifiche                                      |
-|-----------------------|-------------------------------------------------|
-| Schermo Touch         | Capacitivo                                     |
-| Ingresso Video        | 1x VGA<br>1x DP<br>1x DVI-D                     |
-| Alimentazione         | 12~32 Vdc (Assorbimento 30W)                    |
 ## Ring Light
 
 | Parametro | Valore |

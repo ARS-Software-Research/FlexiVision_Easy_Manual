@@ -75,7 +75,7 @@ La griglia di calibrazione e l'ottica possono differire dalle immagini a seconda
     :::
 * - 3 Cavi Ethernet (3 m)
   - Cat 6 con S/STP Shielding
-  - :::{figure} ../img/Cavo_Alim.png
+  - :::{figure} ../img/cavoethernet.png
     :width: 150px
     :::
 * - Chiave di Licenza
@@ -92,6 +92,7 @@ A seconda della tua applicazione, i seguenti accessori opzionali potrebbero esse
 | Componente | Varianti disponibili |
 |------------|----------------------|
 | Toplight | [Link alla Sezione](toplight) |
+| Cavo Alimentazione Toplight | [Link alla Sezione](cavoalimtoplight) |
 | Backlight | [Link alla Sezione](backlight) |
 | Filtro IR | [Link alla Sezione](filtroIR) |
 | Cavo Ethernet |  5 m / 10 m |

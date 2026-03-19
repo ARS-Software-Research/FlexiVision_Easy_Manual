@@ -165,7 +165,5 @@ Prima di considerare la ricetta completata, continua con :
 
 ---
 
-```{toctree}  
-21b_Expert.md
-```
+
 [Back To Top]()

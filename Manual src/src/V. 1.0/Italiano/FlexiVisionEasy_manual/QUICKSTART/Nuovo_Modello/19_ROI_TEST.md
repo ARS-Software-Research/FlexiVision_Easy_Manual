@@ -198,6 +198,3 @@ Se Accept Threshold fosse 0.85:
 Procedi alla [Configurazione Istogrammi](istogrammi) per definire le aree libere.
 ```
 
-```{toctree}  
-19b_Expert.md
-```

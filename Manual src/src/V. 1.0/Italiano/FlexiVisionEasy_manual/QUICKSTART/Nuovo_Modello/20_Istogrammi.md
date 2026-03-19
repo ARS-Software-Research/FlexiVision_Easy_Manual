@@ -210,6 +210,3 @@ Una clearance diventa rossa (triggered) quando rileva al suo interno:
 Procedi alla [Calibrazione Robot](robotpick) per completare la configurazione.
 ```
 
-```{toctree}  
-20b_Expert.md
-```
