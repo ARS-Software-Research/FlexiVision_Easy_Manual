@@ -541,7 +541,7 @@ La <strong>Region Search</strong> è l’area all’interno della quale FlexiVis
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p><strong>5.</strong></p></td>
-<td><p>Cliccare su <img alt="../../../_images/tasto_TEST1.png" class="inline-icon" src="../../../_images/tasto_TEST1.png" /> per verificare il riconoscimento</p></td>
+<td><p>Cliccare su <img alt="../../../_images/tasto_TEST1.png" class="inline-icon" src="../../../_images/tasto_TEST1.png" /> per effettuare il riconoscimento</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>6.</strong></p></td>
 <td><p>Osservare quanti componenti vengono rilevati e con quali score</p></td>
@@ -556,7 +556,7 @@ La <strong>Region Search</strong> è l’area all’interno della quale FlexiVis
 <li><p><strong>Valore 0.95</strong> → Accetta solo componenti con fedeltà ≥ 95%</p></li>
 <li><p><strong>Valore 0.80</strong> → Accetta componenti con fedeltà ≥ 80%</p></li>
 <li><p><strong>Valore più alto</strong> → Più restrittivo (meno falsi positivi)</p></li>
-<li><p><strong>Valore più basso</strong> → Più permissivo (rileva anche componenti meno perfetti)</p></li>
+<li><p><strong>Valore più basso</strong> → Più permissivo (rileva anche componenti meno simili a quello di riferimento)</p></li>
 </ul>
 </div>
 </td>
@@ -574,7 +574,7 @@ La <strong>Region Search</strong> è l’area all’interno della quale FlexiVis
 <li><p>Se <strong>troppo pochi pezzi rilevati</strong> (pezzi buoni scartati) → Diminuire threshold (es: 0.80)</p></li>
 <li><p>Ripetere fino a trovare il valore ottimale per l’applicazione</p></li>
 </ol>
-<p><strong>Obiettivo</strong>: Trovare il valore più alto possibile che rileva tutti i pezzi buoni ma scarta i peggiorii.</p>
+<p><strong>Obiettivo</strong>: Trovare il valore più alto possibile che rileva tutti i pezzi buoni ma scarta i peggiori.</p>
 </div>
 </section>
 <hr class="docutils" />
@@ -602,11 +602,11 @@ La <strong>Region Search</strong> è l’area all’interno della quale FlexiVis
 </tr>
 <tr class="row-odd"><td><p><strong>X</strong></p></td>
 <td><p>Millimetri</p></td>
-<td><p>Coordinata X del componente (riferimento centro FlexiBowl)</p></td>
+<td><p>Coordinata X del componente (riferimento origine della griglia di calibrazione)</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Y</strong></p></td>
 <td><p>Millimetri</p></td>
-<td><p>Coordinata Y del componente (riferimento centro FlexiBowl)</p></td>
+<td><p>Coordinata Y del componente (riferimento origine della griglia di calibrazione)</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Rotation</strong></p></td>
 <td><p>Gradi</p></td>
@@ -614,16 +614,16 @@ La <strong>Region Search</strong> è l’area all’interno della quale FlexiVis
 </tr>
 <tr class="row-even"><td><p><strong>Score</strong></p></td>
 <td><p>Percentuale</p></td>
-<td><p>Grado di fedeltà rispetto al modello (0.00-1.00)</p></td>
+<td><p>Grado di fedeltà rispetto al modello di riferimento (0.00-1.00)</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Sistema di Priorità</p>
-<p>FlexiVision ordina automaticamente tutti i componenti riconosciuti per <strong>score decrescente</strong>:</p>
+<p>FlexiVision di dafault ordina automaticamente tutti i componenti riconosciuti per <strong>score decrescente</strong>:</p>
 <ul class="simple">
-<li><p><strong>Id 0</strong> → Componente con score più alto (più fedele al modello)</p></li>
+<li><p><strong>Id 0</strong> → Componente con score più alto (più simile al modello di riferimento)</p></li>
 <li><p><strong>Id 1</strong> → Secondo miglior componente</p></li>
 <li><p><strong>Id 2</strong> → Terzo miglior componente</p></li>
 <li><p>E così via…</p></li>
@@ -632,7 +632,6 @@ La <strong>Region Search</strong> è l’area all’interno della quale FlexiVis
 </section>
 <section id="esempio-interpretazione">
 <h3>Esempio interpretazione<a class="headerlink" href="#esempio-interpretazione" title="Link to this heading">#</a></h3>
-<p><strong>Lettura risultati - Esempio pratico</strong></p>
 <p>Supponiamo che dopo il Test appaiano questi risultati:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -716,7 +715,7 @@ Anche durante la pulizia della scena, fare attenzione a non urtare o spostare il
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p>Procedi alla <a class="reference internal" href="20_Istogrammi.html#istogrammi"><span class="std std-ref">Configurazione Istogrammi</span></a> per definire le aree libere.</p>
+<p>Procedi alla <a class="reference internal" href="20_Istogrammi.html#istogrammi"><span class="std std-ref">Configurazione Clearances</span></a> per definire le aree libere.</p>
 </div>
 <br>
 <!-- Versions and languages set-up -->

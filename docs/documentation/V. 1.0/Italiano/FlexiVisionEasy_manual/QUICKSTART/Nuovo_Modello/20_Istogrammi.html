@@ -443,7 +443,7 @@ Una <strong>Clearance</strong> in FlexiVision è uno strumento che monitora un�
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Principio di Funzionamento.</p>
-<p>L’istogramma analizza i livelli di bianco e nero in un’area definita:</p>
+<p>La Clearancea analizza le variazioni dei livelli di grigio in un’area definita:</p>
 <ul class="simple">
 <li><p>🟢 <strong>Verde</strong> → Area libera (OK per il prelievo)</p></li>
 <li><p>🔴 <strong>Rosso</strong> → Area occupata (presenza di ostacoli)</p></li>
@@ -455,7 +455,7 @@ Una <strong>Clearance</strong> in FlexiVision è uno strumento che monitora un�
 </div>
 <hr class="docutils" />
 <section id="step-1-setup-fisico">
-<h2><strong>Step 1: Setup Fisico</strong><a class="headerlink" href="#step-1-setup-fisico" title="Link to this heading">#</a></h2>
+<span id="setupclearances"></span><h2><strong>Step 1: Setup Fisico</strong><a class="headerlink" href="#step-1-setup-fisico" title="Link to this heading">#</a></h2>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p><strong>Attenzione!</strong>
@@ -484,7 +484,8 @@ Vi mostreremo la procedura con il Tool Pinza, in quanto necessita obbligatoriame
 </td>
 </tr>
 <tr class="row-odd"><td><p><strong>3.</strong></p></td>
-<td><p>Posizionare <strong>due oggetti</strong> ai lati del componente per simulare l’ingombro della pinza (ai lati della pinza per avere, una volta rimosso il robot, l’area libera fra il componente di riferimento e i due oggetti rappresenterà l’area di ingombro della pinza del robot)</p>
+<td><p>Posizionare <strong>due oggetti</strong> ai lati della pinza per avere, una volta rimosso il robot, lE areE libera fra il componente di riferimento e i due oggetti.<br />
+Esse rappresenteranno le aree di ingombro della pinza del robot.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Lasciare gli oggetti leggermente più distanti del necessario per evitare errori nella creazione del modello. (margine 2-3 mm)</p>
@@ -613,7 +614,12 @@ Vi mostreremo la procedura con il Tool Pinza, in quanto necessita obbligatoriame
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Creare sempre una clearance leggermente più grande dello stretto necessario per evitare falsi errori.</p>
+<p>Tenere sempre in considerazione questi due aspetti importanti:</p>
+<ul class="simple">
+<li><p>La ROI della Clearance, quando viene configurata, deve essere completamente libera (quindi priva di oggetti, ombre, artefatti)</p></li>
+<li><p>Creare sempre una clearance leggermente più grande dello stretto necessario per evitare falsi errori.</p></li>
+</ul>
+<p>La mancata osservazione di questi due punti, potrebbe comportare collisioni del robot con conseguenti danni a FlexiBowl, componenti o robot stesso.</p>
 </div>
 </td>
 </tr>
@@ -656,7 +662,7 @@ Vi mostreremo la procedura con il Tool Pinza, in quanto necessita obbligatoriame
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Cosa fare se il test fallisce (riquadro rosso)?</strong></p>
-<p>Se dopo AUTO e TEST il riquadro rimane rosso:</p>
+<p>Se dopo AUTO il riquadro diventa rosso:</p>
 <p><strong>Possibili cause:</strong></p>
 <ul class="simple">
 <li><p>C’è effettivamente qualcosa nell’area (pezzo, ombra, sporcizia)</p></li>
@@ -666,8 +672,6 @@ Vi mostreremo la procedura con il Tool Pinza, in quanto necessita obbligatoriame
 <p><strong>Soluzioni:</strong></p>
 <ol class="arabic simple">
 <li><p>Verificare visivamente che l’area sia completamente libera</p></li>
-<li><p>Pulire la superficie del FlexiBowl se necessario</p></li>
-<li><p>Riposizionare leggermente il riquadro escludendo bordi/artefatti</p></li>
 <li><p>Ripetere AUTO con condizioni di illuminazione stabili</p></li>
 <li><p>Ripetere TEST per verificare</p></li>
 </ol>
@@ -717,7 +721,7 @@ Visualizzare tutte le clearance contemporaneamente</p>
 </tr>
 <tr class="row-odd"><td><p>🔴 Rosso</p></td>
 <td><p>Triggered</p></td>
-<td><p>Area occupata, prelievo non sicuro</p></td>
+<td><p>Area occupata, prelievo non possibile</p></td>
 </tr>
 </tbody>
 </table>

@@ -29,7 +29,7 @@ Per avviare la procedura:
     :::
 
 * - **4.**
-  - Cliccare sul pulsante **FlexiBowl X Wizard**, e poi **FlexiBowl Interface** si aprirà una pagina di benvenuto al Wizard
+  - Cliccare sul pulsante **FlexiBowl X Wizard**, si aprirà una pagina di benvenuto al Wizard
 
 * - **5.**
   - Cliccare su <img src="../QUICKSTART/img/tasto_next.png" class="inline-icon icon-small">
@@ -73,7 +73,7 @@ Il sistema richiede informazioni sulla morfologia dei pezzi per ottimizzare la s
 * - 12. 
   - Selezionare **USE** per abilitarlo nell'applicazione corrente, altrimenti cliccare su **DON'T USE**.
 * - 13. 
-  - Cliccare su **TEST FLIP** per verificare la vibrazione.
+  - Cliccare su **TEST FLIP** per verificare l'effettiva attivazione del percussore.
       Il "Flip" è l'unità che genera l'impulso meccanico per ribaltare i pezzi, è fondamentale per separare, districare o capovolgere i componenti durante il ciclo di alimentazione.
  
       :::{important}
@@ -119,17 +119,12 @@ Utilizzare la funzione **Test Sequence** per verificare che il ciclo rispetti i 
 * - **Stabilità Immagine**
   - I componenti devono essere immobili al momento dello scatto della camera.
     - Se i pezzi si muovono, diminuire velocità/accelerazione o inserire una pausa (es. `pause 200ms`).
-    - Se il problema persiste, la superficie del disco (superficie di grip) potrebbe non essere corretta.
-
-* - **Regolazione Soffio**
-  - 
-    - **Tip**: Usare preferibilmente il soffio *pre-flip* per sparpagliare i pezzi.
-    - Usare il soffio *post-flip* (che raggruppa i pezzi) solo se strettamente necessario per cicli molto veloci.
-    
-    :::{warning}
-    Cliccare sempre su **Synchronize Parameters** dopo ogni modifica manuale per rendere attive le variazioni nel controller.
-    :::
 ```
+
+:::{warning}
+Cliccare sempre su **Synchronize Parameters** dopo ogni modifica manuale per rendere attive le variazioni nel controller.
+:::
+
 ## Panoramica Parametri Flexibowl
 ```{list-table}
 :header-rows: 1
@@ -178,18 +173,6 @@ Utilizzare la funzione **Test Sequence** per verificare che il ciclo rispetti i 
   - OPTION – Luce accesa
   - Premere per abilitare/disabilitare la retroilluminazione
 ```
-## Strategie per problemi comuni
-
-**Troubleshooting configurazione**
-
-| **Problema** | **Soluzione** |
-|--------------|---------------|
-| Pezzi non si separano | Aumentare Flip Count, incrementare Shake Accel, abilitare Air-blow Pre-Flip |
-| Pezzi vengono espulsi dal disco | Ridurre Speed, ridurre Accel, ridurre Blow Time |
-| Ciclo troppo lento | Aumentare Speed, ridurre Angle (rotazione più breve), ottimizzare Flip timing |
-| Pezzi rimangono aggregati in mucchi | Aumentare Shake Speed, incrementare Flip Count, usare Air-blow Pre-Flip |
-| Immagini sfocate (pezzi in movimento) | Ridurre Speed/Accel, aggiungere pause, verificare superficie grip |
-
 ## Prossimi Passi
 
 Una volta completata la configurazione del FlexiBowl, procedere con:
@@ -205,8 +188,7 @@ Prima di utilizzare in produzione:
 1. Eseguire 50-100 cicli di test per verificare consistenza
 2. Monitorare tasso di riempimento disco (deve essere costante)
 3. Verificare che non ci siano accumuli anomali o zone vuote persistenti
-4. Annotare eventuali necessità di regolazione fine
-5. Incrementare gradualmente verso velocità produttiva
+4. Incrementare gradualmente verso velocità produttiva
 
 La configurazione ottimale può richiedere 2-3 sessioni di fine-tuning con il pezzo reale in quantità significativa.
 ```

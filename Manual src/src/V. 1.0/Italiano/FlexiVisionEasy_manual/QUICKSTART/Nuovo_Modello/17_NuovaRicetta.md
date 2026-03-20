@@ -6,14 +6,12 @@ Questa sezione descrive come creare una nuova ricetta applicativa in FlexiVision
 **Creare una nuova ricetta quando:**
 
 - Si lavora con un **tipo di pezzo completamente diverso**
-- Si utilizza un **FlexiBowl di dimensione diversa**
 - Si cambia **applicazione** 
-- Si desidera mantenere **configurazioni separate** per produzioni diverse
 
 **NON serve creare una nuova ricetta quando:**
-- Si aggiunge una variante dello stesso pezzo (creare nuovo modello nella stessa ricetta)
-- Si fanno piccole regolazioni ai parametri esistenti
-- Si modifica solo l'accept threshold o i filtri
+- Si aggiunge una faccia dello stesso pezzo (creare nuovo modello nella stessa ricetta per lo stesso pezzo in posizioni diverse)
+- Si fanno piccole regolazioni ai parametri esistenti (cam exposure)
+- Si modifica solo l'accept threshold, score threshold, ecc.
 ```
 
 ---
@@ -57,8 +55,8 @@ Avere una ricetta base già pronta consente di riutilizzare tutte queste configu
 
 Per partire con la creazione del primo modello, e quindi con la configurazione di una nuova applicazione, si consiglia sempre di duplicare la ricetta base appena salvata.   
 Questo è utile perché permette di mantenere salvati a parte tutti i setup appena configurati. E questo è vantaggioso per due motivi: 
-- Per iniziare una nuova applicazione con lo stesso sistema, non dobbiamo ripetere tutti i passaggi fatti fin'ora 
-- Se cambia un solo elemento nella configurazione, posso tenere validi i setup di tutti gli altri componenti 
+- Per iniziare una nuova applicazione con lo stesso sistema, non si deve ripetere tutti i passaggi fatti fin'ora 
+- Se cambia un solo elemento nella configurazione, si possono tenere validi i setup di tutti gli altri componenti 
 
 ```{list-table}
 * - 1.
@@ -66,7 +64,7 @@ Questo è utile perché permette di mantenere salvati a parte tutti i setup appe
 * - 2.
   - Si apre la pagina di gestione ricette con l'elenco di tutte le ricette esistenti
 * - 3.
-  - Selelzionare la Ricetta Base
+  - Selezionare la Ricetta Base
 * - 4.
   - Duplicare la Ricetta Base
 * - 5.
@@ -81,7 +79,7 @@ Questo è utile perché permette di mantenere salvati a parte tutti i setup appe
 ```
 ## Step 2: Nominare la Ricetta
 
-Prima di cliccare su "Save Recipe", scegli un nome descrittivo.
+Prima di cliccare su "Save Recipe", scegliere un nome descrittivo.
 ```{list-table}
 * - 7. 
   - Rinominare la Ricetta duplicata   
@@ -101,23 +99,12 @@ Prima di cliccare su "Save Recipe", scegli un nome descrittivo.
     - `Assembly_Connettori_2024`
     - `QC_Ingranaggi_Serie_X`
 
+    **Formato suggerito**: `[LINEA]_[PRODOTTO]_[VARIANTE]_[ANNO]`
+
     Un nome chiaro facilita la gestione quando si hanno molte ricette diverse.
     :::
 ```
-```{tip}
-**Organizzazione ricette aziendali**
 
-Per aziende con molte applicazioni, considerare una naming convention strutturata:
-
-**Formato suggerito**: `[LINEA]_[PRODOTTO]_[VARIANTE]_[ANNO]`
-
-**Esempi:**
-- `LineaA_Viti_M6_Zincate_2024`
-- `LineaB_Connettori_TypeX_2024`
-- `QC_Ingranaggi_SerieY_2025`
-
-Vantaggi: ricette facilmente identificabili, ordinamento alfabetico logico, tracciabilità storica.
-```
 ```{warning}
 **Backup ricette**
 
@@ -140,6 +127,6 @@ Una ricetta ben configurata rappresenta ore di lavoro. Proteggerla adeguatamente
 
 - Pezzi fisici da riconoscere (almeno 10-15 pezzi)
 - FlexiBowl vuoto e pulito
-- Se il tool del robot che stiamo utilizzando è una pinza, ci occorreranno anche due oggetti (non necessariamente uguali ai pezzi di cui si vuole fare il modello) da utilizzare come simulatori per l'ingombro del tool. 
+- Se il tool del robot che stiamo utilizzando è una pinza, ci occorreranno anche due oggetti diversi dai pezzi di cui si vuole fare il modello da utilizzare come simulatori per l'ingombro del tool. 
 - Foglio per annotare coordinate robot (X, Y, RZ)
 ```

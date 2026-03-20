@@ -3,17 +3,6 @@
 
 La **Dashboard** è l'interfaccia principale per il monitoraggio in tempo reale del sistema FlexiVision One. In questa pagina è possibile verificare l'efficienza del processo, analizzare i tempi di ciclo, validare il riconoscimento dei componenti e identificare eventuali colli di bottiglia nel sistema.
 
-```{note}
-**Accesso Dashboard**
-
-La Dashboard è accessibile dal menu principale del software FlexiVision Easy.
-
-Utilizzare questa interfaccia durante:
-- Test iniziali di validazione sistema
-- Ottimizzazione parametri in fase di messa a punto
-- Monitoraggio produzione per verifica performance
-- Troubleshooting problemi di produttività
-```
 
 ---
 
@@ -41,31 +30,18 @@ L'interfaccia della Dashboard si divide in quattro sezioni principali:
     **Verde** 🟢: Sistema attivo e operativo.  
     **Rosso** 🔴: Sistema arrestato o in pausa.
 * - **In Run Time**
-  - Visualizza il tempo totale di attività del sistema dalla pressione del tasto Start. Utile per calcolare produttività oraria e uptime del sistema.
-* - **Selettore FlexiBowl**
-  - Menu a tendina per selezionare l'unità FlexiBowl specifica da monitorare. Utilizzato in sistemi multi-dispositivo con più FlexiBowl gestiti dalla stessa istanza FlexiVision.
-* - **Test**
-  - Avvia un ciclo continuo di movimentazione (disco FlexiBowl e tramoggia Hopper se presente) fino al rilevamento dei componenti nell'area di visione.   
-    Utile per test rapidi senza integrazione robot.
-* - **One Run**
-  - Esegue un singolo ciclo completo: movimentazione disco → acquisizione immagine → analisi modello. 
-    Utile per debug e verifica step-by-step del processo.
+  - Visualizza il tempo totale di attività del sistema dall'avvio dell'applicazione. 
+* - **Selezione FlexiBowl**
+  - Menu a tendina per selezionare il FlexiBowl specifico da monitorare. 
+* - **Test Locator**
+  - Scatta una foto dell'area di visione e avvia il riconoscimento dei componenti presenti. 
 ```
 
 ```{tip}
-**Utilizzo comandi di test**
-
-**Test (ciclo continuo)**:
-- Usare durante ottimizzazione parametri FlexiBowl
-- Permette di vedere effetto immediato delle modifiche
-- Fermare manualmente quando soddisfatti
-
-**One Run (ciclo singolo)**: resterà nella versione finale?
-- Usare per analisi dettagliata di ogni step
-- Ideale per troubleshooting problemi specifici
-- Permette ispezione accurata di ogni immagine acquisita
-
-In produzione normale, questi comandi non vengono utilizzati (il robot comanda i cicli tramite TCP/IP).
+**Test Locator**
+Utile per:
+- Verificare che i componenti effettivamente vengano riconosciuti dalla visione 
+- Nel caso in cui sia ha una collisione tra robot e comonente e voglio controllare l'affidabilità delle clearances
 ```
 
 ---
@@ -78,20 +54,8 @@ Al centro della dashboard vengono riportati i dati relativi ai componenti identi
 
 **Detected Vision Parts** mostra:
 - Immagine acquisita in tempo reale dalla camera
-- Overlay grafico dei componenti riconosciuti (riquadri colorati)
-- Identificativi (Id) di ogni componente rilevato
-- Region Search visibile come contorno
-- Istogrammi visualizzati come riquadri colorati (verde/rosso)
+- Un **grafico storico** dei rilevamenti negli ultimi 30 secondi che mostra l'andamento del numero di pezzi riconosciuti per acquisizione.
 
-Include anche un **grafico storico** dei rilevamenti negli ultimi 30 secondi che mostra l'andamento del numero di pezzi riconosciuti per acquisizione.
-
-
-```{note}
-
-Il numero di componenti visualizzati nel riquadro *Detected Vision Parts* dipende direttamente dai parametri di comunicazione configurati in **Protocol Setup**.
-
-Per modificare quanti pezzi vengono processati e visualizzati, consultare [Protocol Setup](15_Protocol_Setup.md).
-```
 
 ### Tabella Modelli Rilevati
 
@@ -109,45 +73,42 @@ La tabella sotto l'immagine elenca tutti i componenti presenti nell'area di pick
 * - **Id**
   - Intero
   - Identificativo univoco progressivo del componente (0, 1, 2, ...).   
-  Id 0 = componente con score più alto (migliore corrispondenza al modello).
+  Id 0 = componente con score più alto (migliore corrispondenza al modello se ordinati con Score Descending come consigliato).
 * - **X**
   - Millimetri
-  - Coordinata X del componente nel sistema di riferimento camera/FlexiBowl. Origine tipicamente al centro del disco.
+  - Coordinata X del componente.
 * - **Y**
   - Millimetri
-  - Coordinata Y del componente nel sistema di riferimento camera/FlexiBowl.
+  - Coordinata Y del componente.
 * - **Rot (Rotation)**
   - Gradi
-  - Angolo di rotazione del componente rispetto all'orientamento del modello originale. Range 0-360°.
+  - Angolo di rotazione del componente. 
 * - **Score**
   - Percentuale
   - Valore percentuale (0.00-1.00 o 0%-100%) che esprime il grado di affidabilità del riconoscimento. Rappresenta la vicinanza/fedeltà rispetto al modello di riferimento. Score più alto = corrispondenza migliore.
 ```
 
-```{list-table}
-**Interpretazione Score**
+```{list-table} **Interpretazione Score**
 
-**Score > 0.90 (90%)**:
-- Eccellente corrispondenza al modello
-- Pezzo sicuramente corretto e ben orientato
-- Picking ad alta confidenza
+* - **Score > 0.90 (90%)**:
+  - 
+    - Eccellente corrispondenza al modello
+    - Picking ad alta confidenza
 
-**Score 0.80-0.90 (80-90%)**:
-- Buona corrispondenza
-- Pezzo probabilmente corretto con lievi variazioni
-- Picking sicuro se Accept Threshold configurato appropriatamente
+* - **Score 0.80-0.90 (80-90%)**:
+  - 
+    - Buona corrispondenza
+    - Picking sicuro se Accept Threshold configurato appropriatamente
 
-**Score 0.70-0.80 (70-80%)**:
-- Corrispondenza accettabile
-- Potrebbe essere variante dimensionale o orientamento limite
-- Verificare consistenza nel tempo
+* - **Score 0.70-0.80 (70-80%)**:
+  - 
+    - Corrispondenza accettabile
+    - Verificare consistenza nel tempo
 
-**Score < 0.70 (< 70%)**:
-- Corrispondenza scarsa
-- Potrebbe essere pezzo sbagliato o molto diverso dal training
-- Se ricorrente, rivedere modello o Accept Threshold
-
-**Best practice**: Monitorare che gli score siano consistentemente sopra la soglia di Accept Threshold impostata durante la configurazione modello.
+* - **Score < 0.70 (< 70%)**:
+  - 
+    - Corrispondenza scarsa
+    - Se ricorrente, rivedere modello o Accept Threshold.
 ```
 
 ---
@@ -165,12 +126,12 @@ Indicatori di stato delle comunicazioni con i dispositivi esterni:
 * - Indicatore
   - Descrizione
 * - **FlexiBowl**
-  - Stato della connessione hardware tra il VisionController (PC) e il controller del FlexiBowl.  
+  - Stato della connessione hardware tra il VisionController (PC) e FlexiBowl.  
     **Verde**: Connesso e comunicante.  
     **Rosso**: Disconnesso o errore comunicazione.
 * - **Robot**
-  - Stato della comunicazione TCP/IP con il robot o PLC incaricato del prelievo.   
-    **Verde**: Connessione TCP stabilita.  
+  - Stato della comunicazione con il robot.   
+    **Verde**: Connessione TCP/IP stabilita.  
     **Rosso**: Disconnesso o timeout comunicazione.
 ```
 
@@ -185,9 +146,9 @@ Indicatori di stato delle comunicazioni con i dispositivi esterni:
 
 **Robot rosso**:
 - Verificare cavo Ethernet Robot → VisionController
-- Controllare che robot abbia aperto connessione TCP
+- Controllare che robot abbia aperto connessione TCP/IP
 - Verificare porta TCP/IP in Robot Setup
-- Controllare programma robot (deve aprire socket)
+- Controllare programma robot (Indirizzo IP del VisionController e Porta inserita correttamente nella sezione robot setup )
 
 In produzione, entrambi gli indicatori devono essere sempre verdi.
 ```
@@ -204,21 +165,16 @@ Il sistema fornisce un breakdown dettagliato dei tempi di ciclo per individuare 
   - Descrizione
 * - **Camera Processing Time**
   - Tempo impiegato per l'acquisizione dell'immagine dal sensore camera. Include tempo di esposizione e trasferimento dati. 
-    >Tipico: 50-150 ms?
 * - **Locator Processing Time**
-  - Tempo necessario all'algoritmo di visione per localizzare e riconoscere i componenti nell'immagine acquisita. Dipende da: numero modelli attivi, complessità modelli, numero istogrammi. 
-    >Tipico: 100-500 ms?
+  - Tempo necessario all'algoritmo di visione per localizzare e riconoscere i componenti nell'immagine acquisita. Dipende da: numero modelli attivi, complessità modelli, numero clearances. 
 * - **Total Vision Processing**
-  - Somma dei tempi di Camera e Locator. Rappresenta il tempo totale che il sistema di visione impiega per elaborare un'immagine.       
-    >Tipico: 
+  - Somma dei tempi di Camera e Locator. Rappresenta il tempo totale che il sistema di visione impiega per elaborare un'immagine e inviare la/le coordinate.       
 * - **Total FlexiBowl Time**
-  - Tempo impiegato dal FlexiBowl per eseguire una sequenza di movimentazione completa (Move + Shake + Flip + eventuali pause). Include tempo movimento fisico del disco. 
-    >Tipico: 
+  - Tempo impiegato dal FlexiBowl per eseguire una sequenza di movimentazione completa. 
 * - **Total Robot Time**
   - Tempo stimato o rilevato per l'operazione di Pick & Place completa del robot. Include: avvicinamento → presa → sollevamento → deposito → ritorno. 
-    >Tipico: 
 * - **Total Processing Time**
-  - Tempo totale del ciclo completo (Vision + FlexiBowl + Robot). Rappresenta il tempo dall'inizio di un ciclo all'inizio del successivo. Determina la produttività massima teorica (PPM).
+  - Tempo totale del ciclo completo (Visione + FlexiBowl + Robot). Rappresenta il tempo dall'inizio di un ciclo all'inizio del successivo. Determina la produttività massima teorica (PPM).
 ```
 
 ```{tip}
@@ -228,15 +184,15 @@ Il grafico dei tempi permette di identificare il **collo di bottiglia** del sist
 
 **Se Total Vision Processing è il maggiore**:
 - Troppi modelli attivi → Disabilitare modelli non necessari
-- Modelli troppo complessi → Semplificare con Feature Threshold più alto
-- Troppi istogrammi → Ridurre numero o dimensione istogrammi
-- Camera Processing alto → Ridurre risoluzione o tempo esposizione
+- Modelli troppo complessi → Semplificare con Score Threshold più alto
+- Troppi Clearances → Ridurre numero o dimensione clearances
+- Camera Processing alto → Ridurre tempo esposizione
 
 **Se Total FlexiBowl Time è il maggiore**:
+- Troppe pause → Ottimizzare sincronizzazione Flip/Move e ridurre la pausa di stabilizzazione (Pause X ms)
 - Sequenza movimentazione troppo lenta → Aumentare velocità in Config FlexiBowl
 - Angolo rotazione eccessivo → Ridurre Move Angle
-- Troppe pause → Ottimizzare sincronizzazione Flip/Move
-- Shake troppo lungo → Ridurre cicli shake
+- Shake troppo lungo → Aumentare velocità SHAKE e ridurre cicli SHAKE  
 
 **Se Total Robot Time è il maggiore**:
 - Traiettoria robot non ottimizzata → Ottimizzare path planning robot
@@ -261,8 +217,8 @@ I grafici nella parte inferiore della dashboard permettono un'analisi predittiva
 
 * - **Caratteristiche**:
   - 
-    - Asse X: Tempo (ultimi minuti/ore)
-    - Asse Y: PPM (pezzi/minuto)
+    - Asse X: Tempo 
+    - Asse Y: PPM (pezzi/secondo)
     - Linea trend: Media mobile per identificare tendenze
 
 * - **Utilizzo**:

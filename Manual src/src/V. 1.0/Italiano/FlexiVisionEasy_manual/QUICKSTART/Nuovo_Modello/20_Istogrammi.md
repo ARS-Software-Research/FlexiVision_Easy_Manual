@@ -8,7 +8,7 @@ Una **Clearance** in FlexiVision è uno strumento che monitora un'area specifica
 
 ```{note} Principio di Funzionamento. 
 
-L'istogramma analizza i livelli di bianco e nero in un'area definita:
+La Clearancea analizza le variazioni dei livelli di grigio in un'area definita:
 - 🟢 **Verde** → Area libera (OK per il prelievo)
 - 🔴 **Rosso** → Area occupata (presenza di ostacoli)
 ```
@@ -16,7 +16,7 @@ L'istogramma analizza i livelli di bianco e nero in un'area definita:
 L'utilizzo delle Clearances varia al variare del pezzo di cui si deve fare il modello. Questa è una valutazione a carico della figura incaricata di creare l'applicazione. 
 :::
 --- 
-
+(setupclearances)=
 ## **Step 1: Setup Fisico**
 
 :::{danger} **Attenzione!**
@@ -39,7 +39,8 @@ L'utilizzo delle Clearances varia al variare del pezzo di cui si deve fare il mo
     - Aprire la pinza
     - Portare il tool del robot sul componente a livello della superficie, come per afferrarlo
 * - **3.**
-  - Posizionare **due oggetti** ai lati del componente per simulare l'ingombro della pinza (ai lati della pinza per avere, una volta rimosso il robot, l'area libera fra il componente di riferimento e i due oggetti rappresenterà l'area di ingombro della pinza del robot)
+  - Posizionare **due oggetti** ai lati della pinza per avere, una volta rimosso il robot, lE areE libera fra il componente di riferimento e i due oggetti.  
+  Esse rappresenteranno le aree di ingombro della pinza del robot. 
     
     :::{important}
     Lasciare gli oggetti leggermente più distanti del necessario per evitare errori nella creazione del modello. (margine 2-3 mm)
@@ -112,7 +113,11 @@ L'utilizzo delle Clearances varia al variare del pezzo di cui si deve fare il mo
       - Margini attorno al componente
       - Zone di passaggio del robot
     :::{important}
-    Creare sempre una clearance leggermente più grande dello stretto necessario per evitare falsi errori.
+    Tenere sempre in considerazione questi due aspetti importanti:
+    - La ROI della Clearance, quando viene configurata, deve essere completamente libera (quindi priva di oggetti, ombre, artefatti)
+    - Creare sempre una clearance leggermente più grande dello stretto necessario per evitare falsi errori.
+
+    La mancata osservazione di questi due punti, potrebbe comportare collisioni del robot con conseguenti danni a FlexiBowl, componenti o robot stesso. 
     :::
 ```
 ---
@@ -138,7 +143,7 @@ L'utilizzo delle Clearances varia al variare del pezzo di cui si deve fare il mo
 ```{warning}
 **Cosa fare se il test fallisce (riquadro rosso)?**
 
-Se dopo AUTO e TEST il riquadro rimane rosso:
+Se dopo AUTO il riquadro diventa rosso:
 
 **Possibili cause:**
 - C'è effettivamente qualcosa nell'area (pezzo, ombra, sporcizia)
@@ -147,10 +152,8 @@ Se dopo AUTO e TEST il riquadro rimane rosso:
 
 **Soluzioni:**
 1. Verificare visivamente che l'area sia completamente libera
-2. Pulire la superficie del FlexiBowl se necessario
-3. Riposizionare leggermente il riquadro escludendo bordi/artefatti
-4. Ripetere AUTO con condizioni di illuminazione stabili
-5. Ripetere TEST per verificare
+2. Ripetere AUTO con condizioni di illuminazione stabili
+3. Ripetere TEST per verificare
 ```
 
 ---
@@ -188,7 +191,7 @@ Visualizzare tutte le clearance contemporaneamente
   - Area libera, prelievo possibile
 * - 🔴 Rosso
   - Triggered
-  - Area occupata, prelievo non sicuro
+  - Area occupata, prelievo non possibile
 ```
 
 ### Cosa Significa "Triggered"?

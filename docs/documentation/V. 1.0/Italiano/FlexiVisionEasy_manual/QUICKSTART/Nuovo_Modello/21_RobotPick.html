@@ -523,7 +523,7 @@ La funzione <strong>Robot Pick</strong> calcola l’offset tra le coordinate ril
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Vision Result
+<p>Vision Result:
 Queste sono le coordinate che FlexiVision “vede” nell’immagine. Non sono ancora collegate al sistema di coordinate del robot.</p>
 </div>
 </td>
@@ -542,9 +542,9 @@ Queste sono le coordinate che FlexiVision “vede” nell’immagine. Non sono a
 </td>
 <td><p>Nel riquadro <strong>Insert Robot Coordinates</strong>, inserire le coordinate salvate durante la creazione del modello:</p>
 <ul class="simple">
-<li><p><strong>X cord</strong> → Coordinata X annotata al punto 8 della <a class="reference internal" href="18_NuovoModello.html#nuovomodello"><span class="std std-ref">Creazione Modello</span></a></p></li>
-<li><p><strong>Y cord</strong> → Coordinata Y annotata al punto 8 della <a class="reference internal" href="18_NuovoModello.html#nuovomodello"><span class="std std-ref">Creazione Modello</span></a></p></li>
-<li><p><strong>RZ cord</strong> → Rotazione Z annotata al punto 8 della <a class="reference internal" href="18_NuovoModello.html#nuovomodello"><span class="std std-ref">Creazione Modello</span></a></p></li>
+<li><p><strong>X cord</strong> → Coordinata X annotata al punto 1 della <a class="reference internal" href="20_Istogrammi.html#setupclearances"><span class="std std-ref">Creazione Clearances</span></a></p></li>
+<li><p><strong>Y cord</strong> → Coordinata Y annotata al punto 1 della <a class="reference internal" href="20_Istogrammi.html#setupclearances"><span class="std std-ref">Creazione Clearances</span></a></p></li>
+<li><p><strong>RZ cord</strong> → Rotazione Z annotata al punto 1 della <a class="reference internal" href="20_Istogrammi.html#setupclearances"><span class="std std-ref">Creazione Clearances</span></a></p></li>
 </ul>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
@@ -556,7 +556,7 @@ Le coordinate devono essere inserite con <strong>massima precisione</strong>:</p
 <li><p>Verificare di non aver scambiato X e Y</p></li>
 <li><p>Controllare il segno (+ o -) di ciascuna coordinata</p></li>
 </ul>
-<p><strong>Errori in questa fase causano offset robot completamente errati</strong>, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore).</p>
+<p><strong>Errori in questa fase causano offset robot completamente errati</strong>, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore). La mancata osservazione di questi due punti, potrebbe comportare collisioni del robot con conseguenti danni a FlexiBowl, componenti o robot stesso.</p>
 </div>
 </td>
 </tr>
@@ -579,16 +579,10 @@ Le coordinate devono essere inserite con <strong>massima precisione</strong>:</p
 <p class="admonition-title"><strong>Come Funziona il Gripper Offset?</strong></p>
 <p>Il sistema confronta:</p>
 <ul class="simple">
-<li><p><strong>Coordinate Visione</strong>: dove FlexiVision “vede” il componente</p></li>
+<li><p><strong>Coordinate Visione</strong>: dove FlexiVision “vede” l’origine del componente</p></li>
 <li><p><strong>Coordinate Robot</strong>: dove il robot ha effettivamente afferrato il componente</p></li>
 </ul>
 <p>Calcola la differenza e la memorizza come <strong>offset</strong>. Questo offset verrà applicato a tutti i componenti rilevati in futuro, garantendo che il robot prelevi sempre nella posizione corretta.</p>
-<p class="rubric" id="esempio-pratico">Esempio Pratico</p>
-<p>Vision Result:        X=100, Y=200, RZ=0°
-Robot Coordinate:     X=350, Y=450, RZ=0°
-Gripper Offset:       ΔX=+250, ΔY=+250, ΔRZ=0°</p>
-<p>Quando FlexiVision rileva un nuovo componente a X=120, Y=220
-Il robot andrà a prelevarlo a X=370, Y=470</p>
 </div>
 </section>
 <hr class="docutils" />
@@ -614,7 +608,7 @@ Il robot andrà a prelevarlo a X=370, Y=470</p>
 <li><p>✓ Modello creato</p></li>
 <li><p>✓ Area di lavoro (ROI)</p></li>
 <li><p>✓ Tolleranze (Accept Threshold)</p></li>
-<li><p>✓ Istogrammi configurati</p></li>
+<li><p>✓ Clearances configurati</p></li>
 <li><p>✓ Calibrazione robot (Gripper Offset)</p></li>
 </ul>
 </div>

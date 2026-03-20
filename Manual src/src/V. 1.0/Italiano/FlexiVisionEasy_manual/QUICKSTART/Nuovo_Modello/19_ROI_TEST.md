@@ -80,7 +80,7 @@ Video tutorial esplicativo dei successivi Step 2 e Step 3:
 :widths: 5 95
 
 * - **5.**
-  - Cliccare su <img src="../Nuovo_Modello/img/tasto_TEST.png" class="inline-icon"> per verificare il riconoscimento
+  - Cliccare su <img src="../Nuovo_Modello/img/tasto_TEST.png" class="inline-icon"> per effettuare il riconoscimento
 
 * - **6.**
   - Osservare quanti componenti vengono rilevati e con quali score
@@ -96,7 +96,7 @@ Video tutorial esplicativo dei successivi Step 2 e Step 3:
     - **Valore 0.95** → Accetta solo componenti con fedeltà ≥ 95%
     - **Valore 0.80** → Accetta componenti con fedeltà ≥ 80%
     - **Valore più alto** → Più restrittivo (meno falsi positivi)
-    - **Valore più basso** → Più permissivo (rileva anche componenti meno perfetti)
+    - **Valore più basso** → Più permissivo (rileva anche componenti meno simili a quello di riferimento)
     :::
 ```
 
@@ -110,7 +110,7 @@ Video tutorial esplicativo dei successivi Step 2 e Step 3:
 4. Se **troppo pochi pezzi rilevati** (pezzi buoni scartati) → Diminuire threshold (es: 0.80)
 5. Ripetere fino a trovare il valore ottimale per l'applicazione
 
-**Obiettivo**: Trovare il valore più alto possibile che rileva tutti i pezzi buoni ma scarta i peggiorii.
+**Obiettivo**: Trovare il valore più alto possibile che rileva tutti i pezzi buoni ma scarta i peggiori.
 ```
 
 ---
@@ -133,30 +133,28 @@ Nel pannello Results vengono mostrati tutti i componenti rilevati che rispettano
   - Identificativo univoco progressivo (0, 1, 2, ...)
 * - **X**
   - Millimetri
-  - Coordinata X del componente (riferimento centro FlexiBowl)
+  - Coordinata X del componente (riferimento origine della griglia di calibrazione)
 * - **Y**
   - Millimetri
-  - Coordinata Y del componente (riferimento centro FlexiBowl)
+  - Coordinata Y del componente (riferimento origine della griglia di calibrazione)
 * - **Rotation**
   - Gradi
   - Angolo di rotazione del componente (0-360°)
 * - **Score**
   - Percentuale
-  - Grado di fedeltà rispetto al modello (0.00-1.00)
+  - Grado di fedeltà rispetto al modello di riferimento (0.00-1.00)
 ```
 
 
 ```{admonition} Sistema di Priorità
 :class: info
-FlexiVision ordina automaticamente tutti i componenti riconosciuti per **score decrescente**:
-- **Id 0** → Componente con score più alto (più fedele al modello)
+FlexiVision di dafault ordina automaticamente tutti i componenti riconosciuti per **score decrescente**:
+- **Id 0** → Componente con score più alto (più simile al modello di riferimento)
 - **Id 1** → Secondo miglior componente
 - **Id 2** → Terzo miglior componente
 - E così via...
 ```
 ### Esempio interpretazione
-
-**Lettura risultati - Esempio pratico**
 
 Supponiamo che dopo il Test appaiano questi risultati:
 
@@ -195,6 +193,6 @@ Se Accept Threshold fosse 0.85:
 ```
 
 ```{seealso}
-Procedi alla [Configurazione Istogrammi](istogrammi) per definire le aree libere.
+Procedi alla [Configurazione Clearances](istogrammi) per definire le aree libere.
 ```
 

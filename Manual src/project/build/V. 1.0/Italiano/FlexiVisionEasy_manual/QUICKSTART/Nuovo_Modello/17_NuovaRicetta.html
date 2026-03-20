@@ -433,15 +433,13 @@ document.write(`
 <p><strong>Creare una nuova ricetta quando:</strong></p>
 <ul class="simple">
 <li><p>Si lavora con un <strong>tipo di pezzo completamente diverso</strong></p></li>
-<li><p>Si utilizza un <strong>FlexiBowl di dimensione diversa</strong></p></li>
 <li><p>Si cambia <strong>applicazione</strong></p></li>
-<li><p>Si desidera mantenere <strong>configurazioni separate</strong> per produzioni diverse</p></li>
 </ul>
 <p><strong>NON serve creare una nuova ricetta quando:</strong></p>
 <ul class="simple">
-<li><p>Si aggiunge una variante dello stesso pezzo (creare nuovo modello nella stessa ricetta)</p></li>
-<li><p>Si fanno piccole regolazioni ai parametri esistenti</p></li>
-<li><p>Si modifica solo l’accept threshold o i filtri</p></li>
+<li><p>Si aggiunge una faccia dello stesso pezzo (creare nuovo modello nella stessa ricetta per lo stesso pezzo in posizioni diverse)</p></li>
+<li><p>Si fanno piccole regolazioni ai parametri esistenti (cam exposure)</p></li>
+<li><p>Si modifica solo l’accept threshold, score threshold, ecc.</p></li>
 </ul>
 </div>
 <hr class="docutils" />
@@ -506,8 +504,8 @@ document.write(`
 <p>Per partire con la creazione del primo modello, e quindi con la configurazione di una nuova applicazione, si consiglia sempre di duplicare la ricetta base appena salvata.<br />
 Questo è utile perché permette di mantenere salvati a parte tutti i setup appena configurati. E questo è vantaggioso per due motivi:</p>
 <ul class="simple">
-<li><p>Per iniziare una nuova applicazione con lo stesso sistema, non dobbiamo ripetere tutti i passaggi fatti fin’ora</p></li>
-<li><p>Se cambia un solo elemento nella configurazione, posso tenere validi i setup di tutti gli altri componenti</p></li>
+<li><p>Per iniziare una nuova applicazione con lo stesso sistema, non si deve ripetere tutti i passaggi fatti fin’ora</p></li>
+<li><p>Se cambia un solo elemento nella configurazione, si possono tenere validi i setup di tutti gli altri componenti</p></li>
 </ul>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
@@ -527,7 +525,7 @@ Questo è utile perché permette di mantenere salvati a parte tutti i setup appe
 <li></li>
 </ol>
 </td>
-<td><p>Selelzionare la Ricetta Base</p></td>
+<td><p>Selezionare la Ricetta Base</p></td>
 </tr>
 <tr class="row-even"><td><ol class="arabic simple" start="4">
 <li></li>
@@ -559,7 +557,7 @@ Questo è utile perché permette di mantenere salvati a parte tutti i setup appe
 </section>
 <section id="step-2-nominare-la-ricetta">
 <h2>Step 2: Nominare la Ricetta<a class="headerlink" href="#step-2-nominare-la-ricetta" title="Link to this heading">#</a></h2>
-<p>Prima di cliccare su “Save Recipe”, scegli un nome descrittivo.</p>
+<p>Prima di cliccare su “Save Recipe”, scegliere un nome descrittivo.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><ol class="arabic simple" start="7">
@@ -586,25 +584,13 @@ Questo è utile perché permette di mantenere salvati a parte tutti i setup appe
 <li><p><code class="docutils literal notranslate"><span class="pre">Assembly_Connettori_2024</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">QC_Ingranaggi_Serie_X</span></code></p></li>
 </ul>
+<p><strong>Formato suggerito</strong>: <code class="docutils literal notranslate"><span class="pre">[LINEA]_[PRODOTTO]_[VARIANTE]_[ANNO]</span></code></p>
 <p>Un nome chiaro facilita la gestione quando si hanno molte ricette diverse.</p>
 </div>
 </td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Organizzazione ricette aziendali</strong></p>
-<p>Per aziende con molte applicazioni, considerare una naming convention strutturata:</p>
-<p><strong>Formato suggerito</strong>: <code class="docutils literal notranslate"><span class="pre">[LINEA]_[PRODOTTO]_[VARIANTE]_[ANNO]</span></code></p>
-<p><strong>Esempi:</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">LineaA_Viti_M6_Zincate_2024</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">LineaB_Connettori_TypeX_2024</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">QC_Ingranaggi_SerieY_2025</span></code></p></li>
-</ul>
-<p>Vantaggi: ricette facilmente identificabili, ordinamento alfabetico logico, tracciabilità storica.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -628,7 +614,7 @@ Questo è utile perché permette di mantenere salvati a parte tutti i setup appe
 <ul class="simple">
 <li><p>Pezzi fisici da riconoscere (almeno 10-15 pezzi)</p></li>
 <li><p>FlexiBowl vuoto e pulito</p></li>
-<li><p>Se il tool del robot che stiamo utilizzando è una pinza, ci occorreranno anche due oggetti (non necessariamente uguali ai pezzi di cui si vuole fare il modello) da utilizzare come simulatori per l’ingombro del tool.</p></li>
+<li><p>Se il tool del robot che stiamo utilizzando è una pinza, ci occorreranno anche due oggetti diversi dai pezzi di cui si vuole fare il modello da utilizzare come simulatori per l’ingombro del tool.</p></li>
 <li><p>Foglio per annotare coordinate robot (X, Y, RZ)</p></li>
 </ul>
 </div>

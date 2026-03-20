@@ -575,13 +575,13 @@ document.write(`
 <p class="admonition-title">Tip</p>
 <p><strong>Checklist preparazione</strong></p>
 <p>Prima di iniziare la creazione di modelli, preparare:</p>
-<ul class="contains-task-list simple">
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Almeno 10-20 pezzi del tipo da riconoscere (per test)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Pezzi puliti e in buone condizioni (rappresentativi della produzione)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Simulatori ingombro pinza (possono essere pezzi dello stesso tipo, ma è importante non confonderli con il pezzo di riferimento per non spostarlo)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Foglio per annotare coordinate robot (X, Y, RZ)</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> FlexiBowl vuoto e pulito</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Backlight/Toplight acceso</p></li>
+<ul class="simple">
+<li><p>Almeno 10-20 pezzi del tipo da riconoscere (per test)</p></li>
+<li><p>Pezzi puliti e in buone condizioni (rappresentativi della produzione)</p></li>
+<li><p>Simulatori ingombro pinza (NON devono essere pezzi dello stesso tipo, poichè è importante non confonderli con il pezzo di riferimento.)</p></li>
+<li><p>Foglio per annotare coordinate robot (X, Y, RZ)</p></li>
+<li><p>FlexiBowl vuoto e pulito</p></li>
+<li><p>Backlight/Toplight acceso</p></li>
 </ul>
 </div>
 </section>
@@ -594,7 +594,7 @@ document.write(`
 <li><p>Illuminazione stabile (evitare luce solare diretta variabile)</p></li>
 <li><p>FlexiBowl fermo</p></li>
 <li><p>Robot in posizione sicura (non deve interferire durante le acquisizioni)</p></li>
-<li><p>Software FlexiVision Easy aperto e ricetta base caricata</p></li>
+<li><p>Software FlexiVision One aperto e ricetta base caricata</p></li>
 </ul>
 </div>
 </section>
@@ -603,11 +603,11 @@ document.write(`
 <div class="admonition error">
 <p class="admonition-title">Error</p>
 <p><strong>Evitare questi errori frequenti</strong></p>
-<p>❌ <strong>Non salvare le coordinate robot</strong> durante la preparazione fisica → impossibile calcolar egripper offset</p>
+<p>❌ <strong>Non salvare le coordinate robot</strong> durante la preparazione fisica → impossibile calcolare gripper offset</p>
 <p>❌ <strong>Spostare il pezzo</strong> dopo aver salvato le coordinate → offset errato</p>
 <p>❌ <strong>Feature threshold troppo basso</strong> → modello troppo dettagliato, riconosce trama superficie</p>
 <p>❌ <strong>ROI troppo stretta</strong> → pezzi ai bordi non vengono rilevati</p>
-<p>❌ <strong>Istogrammi troppo piccoli</strong> → collisioni pinza con pezzi adiacenti</p>
+<p>❌ <strong>Clearances troppo piccoli</strong> → collisioni pinza con pezzi adiacenti</p>
 <p>❌ <strong>Non testare con pezzi multipli</strong> → problemi non rilevati fino alla produzione</p>
 <p>Seguire attentamente le procedure dettagliate nelle prossime sezioni per evitare questi problemi.</p>
 </div>

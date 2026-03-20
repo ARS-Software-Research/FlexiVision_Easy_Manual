@@ -415,7 +415,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-test-degli-accessori"><strong>Step 4: Test degli Accessori</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-validazione-della-sequenza"><strong>Step 5: Validazione della Sequenza</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-parametri-flexibowl">Panoramica Parametri Flexibowl</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strategie-per-problemi-comuni">Strategie per problemi comuni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
             </nav>
@@ -462,7 +461,7 @@ document.write(`
 </details></td>
 </tr>
 <tr class="row-even"><td><p><strong>4.</strong></p></td>
-<td><p>Cliccare sul pulsante <strong>FlexiBowl X Wizard</strong>, e poi <strong>FlexiBowl Interface</strong> si aprirà una pagina di benvenuto al Wizard</p></td>
+<td><p>Cliccare sul pulsante <strong>FlexiBowl X Wizard</strong>, si aprirà una pagina di benvenuto al Wizard</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>5.</strong></p></td>
 <td><p>Cliccare su <img alt="../../_images/tasto_next.png" class="inline-icon icon-small" src="../../_images/tasto_next.png" /></p>
@@ -557,7 +556,7 @@ document.write(`
 <li></li>
 </ol>
 </td>
-<td><p>Cliccare su <strong>TEST FLIP</strong> per verificare la vibrazione.
+<td><p>Cliccare su <strong>TEST FLIP</strong> per verificare l’effettiva attivazione del percussore.
 Il “Flip” è l’unità che genera l’impulso meccanico per ribaltare i pezzi, è fondamentale per separare, districare o capovolgere i componenti durante il ciclo di alimentazione.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -632,23 +631,15 @@ Il “Flip” è l’unità che genera l’impulso meccanico per ribaltare i pez
 <td><p>I componenti devono essere immobili al momento dello scatto della camera.</p>
 <ul class="simple">
 <li><p>Se i pezzi si muovono, diminuire velocità/accelerazione o inserire una pausa (es. <code class="docutils literal notranslate"><span class="pre">pause</span> <span class="pre">200ms</span></code>).</p></li>
-<li><p>Se il problema persiste, la superficie del disco (superficie di grip) potrebbe non essere corretta.</p></li>
 </ul>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Regolazione Soffio</strong></p></td>
-<td><ul class="simple">
-<li><p><strong>Tip</strong>: Usare preferibilmente il soffio <em>pre-flip</em> per sparpagliare i pezzi.</p></li>
-<li><p>Usare il soffio <em>post-flip</em> (che raggruppa i pezzi) solo se strettamente necessario per cicli molto veloci.</p></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Cliccare sempre su <strong>Synchronize Parameters</strong> dopo ogni modifica manuale per rendere attive le variazioni nel controller.</p>
-</div>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Cliccare sempre su <strong>Synchronize Parameters</strong> dopo ogni modifica manuale per rendere attive le variazioni nel controller.</p>
 </div>
 </section>
 <section id="panoramica-parametri-flexibowl">
@@ -722,35 +713,6 @@ Il “Flip” è l’unità che genera l’impulso meccanico per ribaltare i pez
 </table>
 </div>
 </section>
-<section id="strategie-per-problemi-comuni">
-<h2>Strategie per problemi comuni<a class="headerlink" href="#strategie-per-problemi-comuni" title="Link to this heading">#</a></h2>
-<p><strong>Troubleshooting configurazione</strong></p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Problema</strong></p></th>
-<th class="head"><p><strong>Soluzione</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Pezzi non si separano</p></td>
-<td><p>Aumentare Flip Count, incrementare Shake Accel, abilitare Air-blow Pre-Flip</p></td>
-</tr>
-<tr class="row-odd"><td><p>Pezzi vengono espulsi dal disco</p></td>
-<td><p>Ridurre Speed, ridurre Accel, ridurre Blow Time</p></td>
-</tr>
-<tr class="row-even"><td><p>Ciclo troppo lento</p></td>
-<td><p>Aumentare Speed, ridurre Angle (rotazione più breve), ottimizzare Flip timing</p></td>
-</tr>
-<tr class="row-odd"><td><p>Pezzi rimangono aggregati in mucchi</p></td>
-<td><p>Aumentare Shake Speed, incrementare Flip Count, usare Air-blow Pre-Flip</p></td>
-</tr>
-<tr class="row-even"><td><p>Immagini sfocate (pezzi in movimento)</p></td>
-<td><p>Ridurre Speed/Accel, aggiungere pause, verificare superficie grip</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 <section id="prossimi-passi">
 <h2>Prossimi Passi<a class="headerlink" href="#prossimi-passi" title="Link to this heading">#</a></h2>
 <p>Una volta completata la configurazione del FlexiBowl, procedere con:</p>
@@ -764,7 +726,6 @@ Il “Flip” è l’unità che genera l’impulso meccanico per ribaltare i pez
 <li><p>Eseguire 50-100 cicli di test per verificare consistenza</p></li>
 <li><p>Monitorare tasso di riempimento disco (deve essere costante)</p></li>
 <li><p>Verificare che non ci siano accumuli anomali o zone vuote persistenti</p></li>
-<li><p>Annotare eventuali necessità di regolazione fine</p></li>
 <li><p>Incrementare gradualmente verso velocità produttiva</p></li>
 </ol>
 <p>La configurazione ottimale può richiedere 2-3 sessioni di fine-tuning con il pezzo reale in quantità significativa.</p>
@@ -1085,7 +1046,6 @@ ___\\ \\     // //___
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-test-degli-accessori"><strong>Step 4: Test degli Accessori</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-validazione-della-sequenza"><strong>Step 5: Validazione della Sequenza</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-parametri-flexibowl">Panoramica Parametri Flexibowl</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strategie-per-problemi-comuni">Strategie per problemi comuni</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prossimi-passi">Prossimi Passi</a></li>
 </ul>
   </nav></div>

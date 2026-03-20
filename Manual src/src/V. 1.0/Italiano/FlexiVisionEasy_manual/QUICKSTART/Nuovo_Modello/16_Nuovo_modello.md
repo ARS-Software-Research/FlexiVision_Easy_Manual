@@ -118,12 +118,12 @@ Per informazioni complete su ogni fase del processo, consultare le sezioni dedic
 
 Prima di iniziare la creazione di modelli, preparare:
 
-- [ ] Almeno 10-20 pezzi del tipo da riconoscere (per test)
-- [ ] Pezzi puliti e in buone condizioni (rappresentativi della produzione)
-- [ ] Simulatori ingombro pinza (possono essere pezzi dello stesso tipo, ma è importante non confonderli con il pezzo di riferimento per non spostarlo)
-- [ ] Foglio per annotare coordinate robot (X, Y, RZ)
-- [ ] FlexiBowl vuoto e pulito
-- [ ] Backlight/Toplight acceso
+-  Almeno 10-20 pezzi del tipo da riconoscere (per test)
+-  Pezzi puliti e in buone condizioni (rappresentativi della produzione)
+-  Simulatori ingombro pinza (NON devono essere pezzi dello stesso tipo, poichè è importante non confonderli con il pezzo di riferimento.)
+-  Foglio per annotare coordinate robot (X, Y, RZ)
+-  FlexiBowl vuoto e pulito
+-  Backlight/Toplight acceso
 ```
 
 ### Ambiente ottimale
@@ -134,7 +134,7 @@ Prima di iniziare la creazione di modelli, preparare:
 - Illuminazione stabile (evitare luce solare diretta variabile)
 - FlexiBowl fermo 
 - Robot in posizione sicura (non deve interferire durante le acquisizioni)
-- Software FlexiVision Easy aperto e ricetta base caricata
+- Software FlexiVision One aperto e ricetta base caricata
 ```
 
 ### Errori comuni da evitare
@@ -142,7 +142,7 @@ Prima di iniziare la creazione di modelli, preparare:
 ```{error}
 **Evitare questi errori frequenti**
 
-❌ **Non salvare le coordinate robot** durante la preparazione fisica → impossibile calcolar egripper offset 
+❌ **Non salvare le coordinate robot** durante la preparazione fisica → impossibile calcolare gripper offset 
 
 ❌ **Spostare il pezzo** dopo aver salvato le coordinate → offset errato
 
@@ -150,7 +150,7 @@ Prima di iniziare la creazione di modelli, preparare:
 
 ❌ **ROI troppo stretta** → pezzi ai bordi non vengono rilevati
 
-❌ **Istogrammi troppo piccoli** → collisioni pinza con pezzi adiacenti
+❌ **Clearances troppo piccoli** → collisioni pinza con pezzi adiacenti
 
 ❌ **Non testare con pezzi multipli** → problemi non rilevati fino alla produzione
 

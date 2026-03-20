@@ -98,9 +98,9 @@ Per ora, concentrarsi sul completamento del primo modello.
     :::{tip}
     **Dove posizionare l'origine?**
     
-    - **Centro geometrico**: Per pezzi simmetrici (viti, rondelle, ingranaggi circolari)
+    L'origine viene automaticamente posizionato al centro del componente.  
+    Se il punto di presa non coincide con il centro geometrico, spostare l'origine nel:
     - **Punto di presa**: Per pezzi asimmetrici, posizionare dove la pinza afferra
-    - **Feature caratteristica**: Per pezzi complessi, su una caratteristica distintiva
     
     *L'origine definisce il punto (0,0) del sistema di coordinate del modello.*
     :::
@@ -126,13 +126,12 @@ Per ora, concentrarsi sul completamento del primo modello.
     - I pezzi sono sempre molto simili tra loro (tolleranze strette)
     - Si vuole massima precisione anche con orientamenti difficili
     
-    **Usare valore MEDIO (0.4-0.6) quando:**
+    **Usare valore ALTO (0.4-0.6) quando:**
     - Il pezzo ha forma distintiva ma semplice
     - Si desidera equilibrio tra precisione e tolleranza
     - Prima configurazione di un modello (punto di partenza)
     
-    **Usare valore ALTO (0.7-0.9) quando:**
-    - Il pezzo ha forma molto semplice (cerchi, quadrati)
+    **Usare valore MOLTO ALTO (0.7-0.9) quando:**
     - Ci sono variazioni significative tra i pezzi (tolleranze larghe)
     - La superficie del pezzo è molto riflettente o variabile
     :::
@@ -156,7 +155,6 @@ Dopo aver generato il modello, è fondamentale verificarne la qualità prima di 
       ✓ Avere abbastanza linee per riconoscere il componente  
       ✓ Non includere la trama della superficie retrostante  
       ✓ Evitare riflessi di luce  
-      ✓ Escludere gli oggetti usati per simulare l'ingombro della pinza  
     :::
 
     ![Confronto Modello](../Nuovo_Modello/img/confrontomodello2.png)
@@ -172,13 +170,13 @@ Se il modello non è soddisfacente:
 ```{tip}
 **Strategia di ottimizzazione**
 
-**Problema: Modello include trama superficie**
-→ Soluzione: Aumentare Score Threshold (es: da 0.4 a 0.6)
+**Problema: Modello include trama superficie**  
+→ Soluzione: Aumentare Score Threshold o il valore Cam Exposure (SETUP > Camera Setup > Cam Exposure)
 
-**Problema: Modello ha troppo poche linee, non distintivo**
-→ Soluzione: Diminuire Score Threshold (es: da 0.6 a 0.4)
+**Problema: Modello ha troppo poche linee, non distintivo**  
+→ Soluzione: Diminuire Score Threshold 
 
-**Problema: Modello include riflessi**
+**Problema: Modello include riflessi**  
 → Soluzione: Aumentare Score Threshold oppure regolare esposizione camera
 
 Effettuare modifiche graduali (step di 0.1-0.2) e testare ogni volta.
@@ -189,6 +187,19 @@ Effettuare modifiche graduali (step di 0.1-0.2) e testare ogni volta.
 ```{list-table}
 * - 12. 
   - Nominare il modello con un nome descrittivo  
+    :::{tip}
+    **Evitare nomi generici**
+
+    ❌ Nomi da evitare:
+    - `Test`, `Prova`, `Modello1`, `Nuovo_Modello`
+
+    ✓ Nomi consigliati:
+    - `Prod_Viti_M8_Acciaio`
+    - `Assembly_Connettori_2024`
+    - `QC_Ingranaggi_Serie_X`
+
+    Un nome chiaro facilita la gestione quando si hanno molti modelli diverse.
+    :::
 * - 13. 
   - Cliccare su **Next** → si aprirà la pagina **Define Robot Pick Area**  
 ```

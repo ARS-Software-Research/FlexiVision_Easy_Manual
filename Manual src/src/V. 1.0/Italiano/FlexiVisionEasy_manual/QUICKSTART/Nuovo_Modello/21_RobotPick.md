@@ -55,7 +55,7 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
       - Il sistema rileverà il componente di riferimento
       - Le coordinate appariranno nella sezione **Vision Result**
 
-      :::{note} Vision Result
+      :::{note} Vision Result:
       Queste sono le coordinate che FlexiVision "vede" nell'immagine. Non sono ancora collegate al sistema di coordinate del robot.
       :::
 ```
@@ -70,9 +70,9 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
 ```{list-table}
 * - 3. 
   - Nel riquadro **Insert Robot Coordinates**, inserire le coordinate salvate durante la creazione del modello:
-      - **X cord** → Coordinata X annotata al punto 8 della [Creazione Modello](nuovomodello)
-      - **Y cord** → Coordinata Y annotata al punto 8 della [Creazione Modello](nuovomodello)
-      - **RZ cord** → Rotazione Z annotata al punto 8 della [Creazione Modello](nuovomodello)
+      - **X cord** → Coordinata X annotata al punto 1 della [Creazione Clearances](setupclearances)
+      - **Y cord** → Coordinata Y annotata al punto 1 della [Creazione Clearances](setupclearances)
+      - **RZ cord** → Rotazione Z annotata al punto 1 della [Creazione Clearances](setupclearances)
 
       :::{danger}
       Usa le coordinate salvate durante il setup del modello. Senza queste coordinate, la calibrazione sarà errata!  
@@ -82,7 +82,7 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
       - Verificare di non aver scambiato X e Y
       - Controllare il segno (+ o -) di ciascuna coordinata
 
-      **Errori in questa fase causano offset robot completamente errati**, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore).  
+      **Errori in questa fase causano offset robot completamente errati**, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore). La mancata osservazione di questi due punti, potrebbe comportare collisioni del robot con conseguenti danni a FlexiBowl, componenti o robot stesso.  
       :::
 * - 4. 
   - Cliccare su <img src="../Nuovo_Modello/img/tasto_GRIPPER_OFFSET.png" class="inline-icon">
@@ -94,19 +94,10 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
 ```{admonition} **Come Funziona il Gripper Offset?**
 :class: info
 Il sistema confronta:
-- **Coordinate Visione**: dove FlexiVision "vede" il componente
+- **Coordinate Visione**: dove FlexiVision "vede" l'origine del componente
 - **Coordinate Robot**: dove il robot ha effettivamente afferrato il componente
 
 Calcola la differenza e la memorizza come **offset**. Questo offset verrà applicato a tutti i componenti rilevati in futuro, garantendo che il robot prelevi sempre nella posizione corretta.
-
-### Esempio Pratico
-
-Vision Result:        X=100, Y=200, RZ=0°
-Robot Coordinate:     X=350, Y=450, RZ=0°
-Gripper Offset:       ΔX=+250, ΔY=+250, ΔRZ=0°
-
-Quando FlexiVision rileva un nuovo componente a X=120, Y=220
-Il robot andrà a prelevarlo a X=370, Y=470
 ```
 
 ---
@@ -126,7 +117,7 @@ Il robot andrà a prelevarlo a X=370, Y=470
       - ✓ Modello creato
       - ✓ Area di lavoro (ROI)
       - ✓ Tolleranze (Accept Threshold)
-      - ✓ Istogrammi configurati
+      - ✓ Clearances configurati
       - ✓ Calibrazione robot (Gripper Offset)
       :::
 ```
