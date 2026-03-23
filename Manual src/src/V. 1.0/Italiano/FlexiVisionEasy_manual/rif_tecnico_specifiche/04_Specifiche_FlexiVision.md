@@ -653,13 +653,6 @@ Componenti aggiuntivi disponibili separatamente:
 :class-card: shadow
 :::
 
-
-:::{card} Supporto per Camera e Toplight
-:link: supporto
-:link-type: ref
-:class-card: shadow
-:::
-
 :::{card} Switch
 :link: switch
 :link-type: ref

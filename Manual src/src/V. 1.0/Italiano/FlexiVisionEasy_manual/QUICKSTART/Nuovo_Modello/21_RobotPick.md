@@ -5,7 +5,6 @@ In questa pagina vedremo come collegare le coordinate della visione con quelle d
 
 **Cos'è il Robot Pick?**  
 La funzione **Robot Pick** calcola l'offset tra le coordinate rilevate da FlexiVision e le coordinate reali del robot, permettendo al robot di prelevare i componenti nella posizione corretta.
-
 ```{danger}
 **Coordinate robot fondamentali!**
 
@@ -45,12 +44,10 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
     :width: 100%
     :align: center
 :::
-
-
 ```{list-table}
-* - 1. 
+* - **1**
   - Cliccare su **Enable Robot Pick**
-* - 2. 
+* - **2**
   - Cliccare su <img src="../Nuovo_Modello/img/tasto_FIND_OBJECT1.png" class="inline-icon">:
       - Il sistema rileverà il componente di riferimento
       - Le coordinate appariranno nella sezione **Vision Result**
@@ -66,9 +63,8 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
     :width: 100%
     :align: center
 :::
-
 ```{list-table}
-* - 3. 
+* - **3**
   - Nel riquadro **Insert Robot Coordinates**, inserire le coordinate salvate durante la creazione del modello:
       - **X cord** → Coordinata X annotata al punto 1 della [Creazione Clearances](setupclearances)
       - **Y cord** → Coordinata Y annotata al punto 1 della [Creazione Clearances](setupclearances)
@@ -82,15 +78,14 @@ Dopo aver cliccato "Next" nella pagina Clearances, si apre la pagina **Robot Mod
       - Verificare di non aver scambiato X e Y
       - Controllare il segno (+ o -) di ciascuna coordinata
 
-      **Errori in questa fase causano offset robot completamente errati**, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore). La mancata osservazione di questi due punti, potrebbe comportare collisioni del robot con conseguenti danni a FlexiBowl, componenti o robot stesso.  
+      **Errori in questa fase causano offset robot completamente errati**, risultando in tentativi di prelievo in posizioni sbagliate (anche decine di centimetri di errore). La mancata osservanza di questi due punti potrebbe comportare collisioni del robot con conseguenti danni a FlexiBowl, componenti o robot stesso.  
       :::
-* - 4. 
+* - **4**
   - Cliccare su <img src="../Nuovo_Modello/img/tasto_GRIPPER_OFFSET.png" class="inline-icon">
       - Il sistema calcolerà automaticamente la trasformazione tra coordinate visione e coordinate robot
       - Questo offset verrà applicato a tutti i futuri rilevamenti
 ```
 ---
-
 ```{admonition} **Come Funziona il Gripper Offset?**
 :class: info
 Il sistema confronta:
@@ -103,12 +98,10 @@ Calcola la differenza e la memorizza come **offset**. Questo offset verrà appli
 ---
 
 ## **Step 3: Finalizzazione e Salvataggio**
-
-
 ```{list-table}
-* - 5. 
+* - **5**
   - Cliccando su <img src="../Nuovo_Modello/img/tasto_next.png" class="inline-icon">, torneremo alla pagina delle ricette <img src="../Nuovo_Modello/img/tasto_recipes.png" class="inline-icon">
-* - 6. 
+* - **6**
   - Cliccare su <img src="../Nuovo_Modello/img/tasto_save_recipes.png" class="inline-icon"> per salvare l'intera configurazione
 
       :::{admonition} Salvataggio Completo
@@ -117,7 +110,7 @@ Calcola la differenza e la memorizza come **offset**. Questo offset verrà appli
       - ✓ Modello creato
       - ✓ Area di lavoro (ROI)
       - ✓ Tolleranze (Accept Threshold)
-      - ✓ Clearances configurati
+      - ✓ Clearances configurate
       - ✓ Calibrazione robot (Gripper Offset)
       :::
 ```
@@ -127,16 +120,15 @@ Calcola la differenza e la memorizza come **offset**. Questo offset verrà appli
 ## Modelli Multipli - Aggiungere Altri Modelli
 
 ### **Step 4: Modelli Aggiuntivi (opzionale)**
-
 ```{list-table}
-* - 7. 
+* - **7**
   - Per creare altri modelli nella stessa ricetta:
       - Tornare su <img src="../Nuovo_Modello/img/tasto_edit_recipes.png" class="inline-icon">
       - Selezionare un nuovo modello non ancora configurato 
       - Ripetere l'intera procedura dalla [Creazione Modello](nuovomodello)
 
       :::{tip}
-      Ogni modello nella ricetta può avere configurazioni diverse (ROI, istogrammi, offset), permettendo di gestire componenti con caratteristiche diverse nella stessa applicazione.
+      Ogni modello nella ricetta può avere configurazioni diverse (ROI, clearance, offset), permettendo di gestire componenti con caratteristiche diverse nella stessa applicazione.
       :::
 ```
 
@@ -144,12 +136,11 @@ Calcola la differenza e la memorizza come **offset**. Questo offset verrà appli
 
 ## Verifica Finale
 
-Prima di considerare la ricetta completata, continua con :
+Prima di considerare la ricetta completata, continua con:
 
-- [Configurazione del FlexiBowl ](configfb)
-- [Configurazione della Tramoggia ](confighopper)
-- [Monitoraggio Applicazione ](dashboard)
-
+- [Configurazione del FlexiBowl](configfb)
+- [Configurazione della Tramoggia](confighopper)
+- [Monitoraggio Applicazione](dashboard)
 ```{seealso}
 - [Troubleshooting](troubleshooting)
 ```

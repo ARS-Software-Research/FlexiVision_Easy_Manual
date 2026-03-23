@@ -128,10 +128,6 @@ Se il sistema include un TopLight (illuminatore dall’alto), il suo posizioname
 Per ottenere la migliore uniformità di illuminazioneseguire le indicazioni appena riportate 
 ```
 
-### Schema posizionamento integrato
-
-immagine del sistema con toplight 
-
 ```{warning}
 **Evitare riflessioni dirette**
 

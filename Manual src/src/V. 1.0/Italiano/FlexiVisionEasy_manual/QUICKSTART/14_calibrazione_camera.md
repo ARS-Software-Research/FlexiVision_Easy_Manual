@@ -52,15 +52,15 @@ Assicurarsi di avere:
 La griglia di calibrazione dedicata ARS deve essere posizionata sul FlexiBowl:
 
 ```{list-table}
-* - 0. 
+* - **0** 
   - Se presenti, rimuovere i deviatori montati sul FlexiBowl.
-* - 1. 
+* - **1** 
   - **Allentare le quattro viti** della flangia centrale del FlexiBowl
-* - 2. 
+* - **2** 
   - **Ruotare leggermente la flangia** centrale in senso antiorario e **Rimuoverla**
-* - 3. 
+* - **3**
   - **Sollevare** con cura e **Rimuovere la superficie**  
-* - 4. 
+* - **4**
   - **Posizionare la griglia ARS** sul FlexiBowl allineando i perni di posizionamento con i fori predefiniti 
 ```
 
@@ -93,17 +93,17 @@ Corretto posizionamento della griglia di calibrazione ARS sul FlexiBowl
 
 ```{list-table}
 
-* - 5. 
+* - **5**
   - Accedere alla sezione Camera SETUP dalla sezione SETUP 
-* - 6. 
+* - **6**
   - Cliccare il pulsante Config Camera della camera corrispondente 
-* - 7. 
+* - **7**
   - Cliccare EXPERT dalla pagina Camera FLB 
-* - 8.
+* - **8**
   - **Mettere la camera in modalità "live display"**
       Prima di regolare l'apertura, attivare la modalità di visualizzazione continua:
       - immagine
-* - 9. 
+* - **9**
   - **Impostare l'apertura del diaframma**
     - Svitare leggermente la vite dell'anello superiore della camera 
     - Ruotare l'anello osservando l'immagine live, fino a che la giusta quantità di luce non entra nella camera 
@@ -113,7 +113,7 @@ Corretto posizionamento della griglia di calibrazione ARS sul FlexiBowl
     :width: 100%
     :align: center
     :::
-* - 10.
+* - **10**
   - **Regolare manualmente il fuoco della camera**
     - Svitare leggermente la vite dell'anello inferiore della camera
     - Ruotare l'anello lentamente osservando l'immagine live
@@ -124,7 +124,7 @@ Corretto posizionamento della griglia di calibrazione ARS sul FlexiBowl
     :width: 100%
     :align: center
     :::
-* - 11. 
+* - **11**
   - Cliccare Back 
 ```
 
@@ -151,7 +151,7 @@ Se cliccando più volte il tasto RUN appare anche solo una volta una schermata c
 :::
 
 ```{list-table}
-* - 13. 
+* - **12** 
   - **Regolare l'esposizione della camera**
     - Dalla pagina **Camera FLB x**, individuare il parametro **Cam Exposure** (Esposizione della Camera):
     - Regolare il parametro "Cam Exposure" e cliccare su "TEST", ripetere questo passaggio fino a che non viene trovata la giusta esposizione per l'immagine: 
@@ -159,7 +159,7 @@ Se cliccando più volte il tasto RUN appare anche solo una volta una schermata c
    		- Contrasto elevato tra quadrati bianchi e neri
    		- Nessuna sovraesposizione (aree completamente bianche "bruciate")
    		- Nessuna sottoesposizione (immagine troppo scura)
-* - 14. 
+* - **13** 
   - Cliccare NEXT
 ```
 
@@ -193,9 +193,9 @@ Esempio di esposizione corretta: contrasto elevato, pattern ben definito, nessun
 ```{list-table}
 :widths: 5 95
 
-* - **15.**
+* - **14**
 
-* - **16.**
+* - **15**
   - Cliccare su "Grab Image Calib" per scattare una foto della griglia di calibrazione.
     
     Verificare visivamente che:
@@ -203,13 +203,13 @@ Esempio di esposizione corretta: contrasto elevato, pattern ben definito, nessun
     - Il pattern sia nitido
     - Non ci siano ombre o riflessi
 
-* - **17.**
+* - **16**
   - Impostare i valori "Tile Size X" e "Tile Size Y" entrambi a 10
 
-* - **18.**
+* - **17**
   - Cliccare su "Calibrate" per effettuare la calibrazione
 
-* - **19.**
+* - **18**
   - **Valutare la qualità della calibrazione**
     
     Il parametro "Result Calibration" restituirà un valore:
@@ -289,22 +289,22 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 :::
 
 ```{list-table}
-* - 20. 
+* - **19** 
   - Una volta ottenuta una calibrazione di ottima qualità, Cliccare "NEXT". 
     Apparirà una finestra che richiede la calibrazione del robot prima di proseguire, **NON** cliccare su "Sì" e seguire i prossimi passaggi
-* - 21. 
+* - **20** 
   - Montare il Laser Tool con il suo supporto personalizzato 
-* - 22. 
+* - **21**
   - Posizionare lo Spacer Bracket  (**A**) sotto il laser 
-* - 23. 
+* - **22**
   - Abbassare il laser fino al livello dello spacer (**A**), così il laser avrà un'altezza di esattamente 3cm dalla griglia di calibrazione
     :::{image} img/spacerbracket.png
     :align: center 
     :width: 75%
     :::
-* - 24. 
+* - **23**
   - Rimuovere lo Spacer Bracket 
-* - 25. 
+* - **24**
   - Accendere il laser 
 ```
 
@@ -316,11 +316,11 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 :::
 
 ```{list-table}
-* - 26.
+* - **25**
   - Portare il laser sul punto di origine 
-* - 27. 
+* - **26**
   - Portare il laser nel punto finale dell'asse X
-* - 28.
+* - **27**
   - Portare il laser nel punto finale dell'asse Y 
 ```
 
@@ -332,22 +332,32 @@ In quali casi si apre Expert? Expert si apre per la configurazione della luminos
 :::
 
 ```{list-table}
-* - 29. 
+* - **28** 
   - Riportare il laser sul punto di origine
-* - 30. 
+* - **29**
   - Muovere il robot dalla sua teach pendant lungo gli assi X e Y. 
-* - 31. 
+* - **30**
   - Verificare che la corretta traiettoria sia seguita: il robot, muovendosi esclusivamente lungo gli assi X e Y, deve seguire correttamente le linee della griglia 
-* - 32.
+* - **31**
   - Cliccare "YES"
   ```
-## **Step 7: Salvataggio Ricetta Base** - da verificare
-L'ultimo step della procedura è il salvataggio della rietta base
-Cliccare su Recipes
-controllare di avere la ricetta contenente tutti i setup e la calibrazione selezionata nel menu a sinistra e cliccare su Save Recipe   
-Questa ci permetterà di avere salvati a parte tutti i passaggi fatti fin'ora, in modo da avere una base per tutte le future ricette che conterranno i vari modelli  per il sistema calibrato
-Per continuare con la creazione dei modelli, duplicare la ricetta base, rinominarla come si preferisce e cliccare su Edit Recipe, si aprirà una pagina con l'elenco di tutti i modelli disponibili 
+## **Step 7: Salvataggio Ricetta Base** 
+```{list-table}
+:header-rows: 0
+:widths: 10 90
 
+* - **32**
+  - Cliccare su **Recipes**
+
+* - **33**
+  - Controllare di avere la ricetta contenente tutti i setup e la calibrazione selezionata nel menu a sinistra e cliccare su **Save Recipe**
+
+* - **34**
+  - Questa ci permetterà di avere salvati a parte tutti i passaggi fatti fin'ora, in modo da avere una base per tutte le future ricette che conterranno i vari modelli per il sistema calibrato
+
+* - **35**
+  - Per continuare con la creazione dei modelli, duplicare la ricetta base, rinominarla come si preferisce e cliccare su **Edit Recipe**: si aprirà una pagina con l'elenco di tutti i modelli disponibili
+```
 ---
 
 # **Problemi comuni durante la calibrazione**

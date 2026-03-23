@@ -52,6 +52,7 @@ tipo:
   - Ethernet TCP
 ```
 
+## Procedura guidata di cablaggio
 
 ```{list-table} 
 :header-rows: 1
@@ -84,7 +85,7 @@ tipo:
   - Accendere tutti gli altri dispositivi
 ```
 (cablaggio_illuminatore)=
-### Cablaggio illuminatore
+## Cablaggio illuminatore
 
 ![Pin Toplight](./img/pin_toplight.png)
 

@@ -15,14 +15,14 @@ Assicurarsi che:
 
 ## Accesso alla configurazione FlexiBowl
 ```{list-table}
-* - 1. 
+* - **1** 
   - Dalla pagina principale del software, cliccare su <img src="../SETUP/img/tasto_setup1.png" class="inline-icon">
-* - 2. 
+* - **2**
   - Nella pagina SETUP, identificare e cliccare sull'icona **FlexiBowl Setup**
     ```{dropdown} Pagina Setup 
        ![Pagina Setup](../SETUP/img/pagina_setup1.png)
     ```
-* - 3. 
+* - **3**
   - Si apre la schermata di configurazione dei FlexiBowl
 ```
 ![Pagina FlexiBowl Setup](../SETUP/img/pagina_FBsetup.png)
@@ -33,10 +33,10 @@ Assicurarsi che:
 ### **Step 1: Configurazione indirizzo di rete**
 
 ```{list-table}
-* - 1. 
+* - **4**
   - Verificare che l'indirizzo sia sulla stessa subnet del VisionController
   
-* - 2. 
+* - **5**
   - Nel campo **FlexiBowl IP**, inserire l'indirizzo IP del FlexiBowl
       - Formato: `192.168.1.XXX` (o secondo la configurazione della vostra rete)
 ```
@@ -52,13 +52,13 @@ Il FlexiBowl viene spedito con indirizzo IP di default `192.168.1.10`
 ```{list-table}
 :widths: 5 95
 
-* - **1.**
+* - **6**
   - Dopo aver inserito l'IP, cliccare sul pulsante **Connection Test**
 
-* - **2.**
+* - **7**
   - Il sistema esegue un test di comunicazione (ping) verso il FlexiBowl
 
-* - **3.**
+* - **8**
   - Osservare l'indicatore di **Status**:
     - 🟢 **Verde**: Connessione stabilita correttamente
     - 🔴 **Rosso**: Connessione fallita (verificare indirizzo IP e cablaggio)
@@ -91,9 +91,9 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 ### **Step 3: Accesso configurazione**
 
 ```{list-table}
-* - 1. 
+* - **9** 
   - Cliccare sul pulsante <img src="../SETUP/img/FB_config1.png" class="inline-icon icon-xl" >
-* - 2. 
+* - **10**
   - Si apre una finestra con i parametri configurabili del FlexiBowl
 ```
 
@@ -101,7 +101,7 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 
 ```{list-table}
 
-* - 3. 
+* - **11**
   - Accendere il backlight spuntando la casella "Light ON"
 ```
 
@@ -109,9 +109,9 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 
 ```{list-table}
 
-* - 1.
+* - **12**
   - Cliccare su **Synchronize Parameters**
-* - 2.
+* - **13**
   - Tornare alla pagina SETUP principale per procedere con il setup successivo 
 ```
 
@@ -122,8 +122,6 @@ Una volta stabilita la connessione, procedere con la configurazione dei parametr
 - Le modifiche non vengono applicate al FlexiBowl 
 - Il sistema potrebbe comportarsi in modo incoerente
 - Le impostazioni non vengono salvate 
-```
-
 ```
 ---
 

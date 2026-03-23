@@ -313,49 +313,9 @@ I grafici nella parte inferiore della dashboard permettono un'analisi predittiva
 * - **Grafico tempi sovrapposti**
   - Un grafico comparativo a tre linee che sovrappone i tempi dei singoli processi nel tempo.
 
-* - **Linee visualizzate**:
-  - 
-    - **Linea blu**: Total Vision Processing
-    - **Linea verde**: Total FlexiBowl Time
-    - **Linea rossa**: Total Robot Time
-
 * - **Utilizzo**: 
   - Identificare istantaneamente quale processo influenza maggiormente il tempo di ciclo totale e come varia nel tempo.
 ```
-
-```{tip}
-
-  :::{list-table} **Questo grafico è fondamentale per il tuning**, infatti permette di capire istantaneamente:
-
-    * - **Quale processo domina il ciclo**:
-      - 
-        - Se linea Robot sempre più alta → Robot è collo di bottiglia
-        - Se linea FlexiBowl sempre più alta → Movimentazione da ottimizzare
-        - Se linea Vision sempre più alta → Elaborazione immagini troppo lenta
-
-    * - **Variazioni nel tempo**:
-      - 
-        - Linea Vision che cresce gradualmente → Possibile degrado performance (memoria, CPU)
-        - Linea FlexiBowl che oscilla → Comportamento pezzi non costante
-        - Linea Robot instabile → Problemi intermittenti robot (interferenze, ritardi comunicazione)
-
-    * - **Bilanciamento ottimale**:
-      - 
-        - Idealmente, le tre linee dovrebbero essere relativamente bilanciate
-        - Nessuna linea dovrebbe dominare eccessivamente (>2x le altre)
-        - Se una linea è 3-5x le altre, concentrare ottimizzazione su quel processo
-
-    * - **Esempio lettura**:
-      - 
-        Vision: 300 ms (costante)
-        FlexiBowl: 2000 ms (costante)
-        Robot: 8000 ms (variabile 6000-10000)
-
-        Interpretazione: Robot è chiaro collo di bottiglia. 
-        Azione: Ottimizzare programma robot, ridurre traiettorie, aumentare velocità.
-  :::
-```
-
 ---
 
 ## Monitoraggio Qualità - Indicatori critici da monitorare
@@ -384,7 +344,6 @@ I grafici nella parte inferiore della dashboard permettono un'analisi predittiva
     - Considerare re-training modello se pezzi sono cambiati
     - Ridurre Accept Threshold se score sono comunque affidabili ma più bassi
 ```
-
 ---
 
 ## Best Practices Monitoraggio Produttivo

@@ -25,18 +25,17 @@ Prima di procedere con il training del modello, familiarizzare con l'interfaccia
 
 Prima di procedere, assicurarsi di aver salvato la ricetta base creata durante il setup iniziale:
 :::{list-table}
-  * - 1.
+  * - **1**
     - Dalla pagina principale, cliccare su **Recipes**
-  * - 2.
+  * - **2**
     - Verificare che la ricetta corrente sia quella base (es: "Ricetta_Base" creata durante il setup)
-  * - 3.
+  * - **3**
     - Cliccare su **Save Recipe**
-  * - 4.
+  * - **4**
     - Mantenere lo stesso nome nel campo di salvataggio (si sta sovrascrivendo la ricetta con le configurazioni aggiornate)
-  * - 5.
+  * - **5**
     - Confermare il salvataggio
 :::
-
 ```{important}
 
 **Perché salvare la ricetta base?**
@@ -57,19 +56,18 @@ Per partire con la creazione del primo modello, e quindi con la configurazione d
 Questo è utile perché permette di mantenere salvati a parte tutti i setup appena configurati. E questo è vantaggioso per due motivi: 
 - Per iniziare una nuova applicazione con lo stesso sistema, non si deve ripetere tutti i passaggi fatti fin'ora 
 - Se cambia un solo elemento nella configurazione, si possono tenere validi i setup di tutti gli altri componenti 
-
 ```{list-table}
-* - 1.
+* - **6**
   - Dalla pagina principale del software FlexiVision One, cliccare su **Recipes**
-* - 2.
+* - **7**
   - Si apre la pagina di gestione ricette con l'elenco di tutte le ricette esistenti
-* - 3.
+* - **8**
   - Selezionare la Ricetta Base
-* - 4.
+* - **9**
   - Duplicare la Ricetta Base
-* - 5.
+* - **10**
   - Cliccare su Load Recipe 
-* - 6.
+* - **11**
   - Verificare nella barra superiore che il nome visualizzato sia quello della nuova ricetta
     :::{warning}
     **Lavorare sempre sulla ricetta corretta**
@@ -81,7 +79,7 @@ Questo è utile perché permette di mantenere salvati a parte tutti i setup appe
 
 Prima di cliccare su "Save Recipe", scegliere un nome descrittivo.
 ```{list-table}
-* - 7. 
+* - **12**
   - Rinominare la Ricetta duplicata   
     **Convenzioni consigliate:**
     - Nomi che identificano chiaramente il pezzo o l'applicazione
@@ -104,7 +102,6 @@ Prima di cliccare su "Save Recipe", scegliere un nome descrittivo.
     Un nome chiaro facilita la gestione quando si hanno molte ricette diverse.
     :::
 ```
-
 ```{warning}
 **Backup ricette**
 
@@ -121,7 +118,6 @@ Una ricetta ben configurata rappresenta ore di lavoro. Proteggerla adeguatamente
 ## Prossimi passi
 
 **→ [Creare un Modello](18_NuovoModello.md)**
-
 ```{tip}
 **Cosa serve per il prossimo step**
 

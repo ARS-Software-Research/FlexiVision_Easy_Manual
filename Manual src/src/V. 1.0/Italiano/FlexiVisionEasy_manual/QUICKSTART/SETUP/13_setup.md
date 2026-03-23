@@ -77,22 +77,22 @@ Dopo il primo login, se è necessario attivare la licenza FlexiVision, seguire q
 :widths: 10 90
 
 
-* - **4.**
+* - **4**
   - Accedere alla sezione <img src="../SETUP/img/tasto_setup1.png" class="inline-icon"> e cliccare su **Software License**
     ```{dropdown} Pagina Software License 
        ![Pagina Software License](../SETUP/img/pagina_softwareL.png)
     ```
 
-* - **3.**
+* - **5**
   - Inserire la chiave di licenza fornita da ARS Automation nel campo dedicato.  
     La chiave è composta da caratteri numerici (es: ``XXXX-XXXX-XXXX-XXXX``).  
     :::{tip}
      Copiare e incollare la chiave per evitare errori di digitazione.
     :::
-* - **4.**
+* - **6**
   - Cliccare su **Activate**
 
-* - **5.**
+* - **7**
   - Attendere che l'indicatore di stato "License activated" diventi verde
 ```
 
@@ -111,33 +111,35 @@ Se la licenza non viene accettata:
 
 Prima di configurare i componenti hardware, è necessario creare una ricetta di base che definisca i parametri del sistema.
 
-```{list-table}
+````{list-table}
 :header-rows: 0
 :widths: 10 90
 
-* - **1.**
-  - Accedere alla sezione <img src="../SETUP/img/tasto_recipes.png" class="inline-icon"> dal pulsante in alto
+* - **8**
+  - Accedere alla sezione |tasto_recipes| dal pulsante in alto
 
-* - **2.**
-   - Inserire il nome della ricetta.  
+* - **9**
+  - Inserire il nome della ricetta.
+
     Utilizzare un nome descrittivo (es: "Ricetta_Base").
+
     Evitare caratteri speciali o spazi (usare underscore ``_`` al posto degli spazi).
 
-* - **3.**
+* - **10**
   - Cliccare su **New Recipe**
 
-* - **5.**
-  - Selezionare il **FlexiBowl** utilizzato 
-   :::{nota}
-   Per comodità e coerenza, al primo avvio selezionare il FlexiBowl 1. 
-   :::
+* - **11**
+  - Selezionare il **FlexiBowl** utilizzato
+    :::{note}
+    Per comodità e coerenza, al primo avvio selezionare il FlexiBowl 1.
+    :::
 
-* - **6.**
+* - **12**
   - Cliccare su **Save Recipe** per salvare la ricetta
 
-* - **7**
-  - Cliccare nuovamente sul pulsante <img src="../SETUP/img/tasto_recipes.png" class="inline-icon">
-```
+* - **13**
+  - Cliccare nuovamente sul pulsante |tasto_recipes|
+````
 
 ```{tip}
 **Organizzazione ricette**
@@ -159,11 +161,11 @@ Tutti i setup hardware sono accessibili dalla pagina centrale **SETUP** del soft
 
 
 ```{list-table} 
-* - 1. 
+* - **14** 
   - Dal menu principale, cliccare su <img src="../SETUP/img/tasto_setup1.png" class="inline-icon">
-* - 2. 
+* - **15** 
   - Vengono visualizzate le icone dei diversi componenti da configurare
-* - 3. 
+* - **16**
   - Cliccare sull'icona del componente desiderato per accedere alla sua configurazione specifica
 ```
 

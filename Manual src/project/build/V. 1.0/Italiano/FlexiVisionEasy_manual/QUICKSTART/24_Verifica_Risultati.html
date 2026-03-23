@@ -50,7 +50,7 @@
     <script src="../../_static/fix_print.js?v=cc433d1f"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Garanzia" href="../25_Garanzia.html" />
+    <link rel="next" title="Panoramica Applicazione Mix" href="../APPLICAZIONI_MIX/28_Panoramica_Mix.html" />
     <link rel="prev" title="Configurazione Protocollo: Protocol Setup" href="15_Protocol_Setup.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -244,6 +244,20 @@
 </ul>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Monitoraggio Applicazione: Dashboard</strong></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">APPLICAZIONI MIX</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../APPLICAZIONI_MIX/28_Panoramica_Mix.html">Panoramica Applicazione Mix</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../APPLICAZIONI_MIX/29_Comandi_Mix.html">Comandi Applicazione Mix</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">CONFIGURAZIONI MULTI-DISPOSITIVO</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../CONFIGURAZIONI_MULTI-DISPOSITIVO/30_2FB2CAM.html">2 FlexiBowl e 2 Camere</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../CONFIGURAZIONI_MULTI-DISPOSITIVO/31_3FB3CAM.html">3 FlexiBowl e 3 Camere</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">GARANZIA</span></p>
 <ul class="nav bd-sidenav">
@@ -850,60 +864,11 @@ Id 0 = componente con score più alto (migliore corrispondenza al modello se ord
 <tr class="row-odd"><td><p><strong>Grafico tempi sovrapposti</strong></p></td>
 <td><p>Un grafico comparativo a tre linee che sovrappone i tempi dei singoli processi nel tempo.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Linee visualizzate</strong>:</p></td>
-<td><ul class="simple">
-<li><p><strong>Linea blu</strong>: Total Vision Processing</p></li>
-<li><p><strong>Linea verde</strong>: Total FlexiBowl Time</p></li>
-<li><p><strong>Linea rossa</strong>: Total Robot Time</p></li>
-</ul>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Utilizzo</strong>:</p></td>
+<tr class="row-even"><td><p><strong>Utilizzo</strong>:</p></td>
 <td><p>Identificare istantaneamente quale processo influenza maggiormente il tempo di ciclo totale e come varia nel tempo.</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id4">
-<caption><span class="caption-text"><strong>Questo grafico è fondamentale per il tuning</strong>, infatti permette di capire istantaneamente:</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
-<tbody>
-<tr class="row-odd"><td><p><strong>Quale processo domina il ciclo</strong>:</p></td>
-<td><ul class="simple">
-<li><p>Se linea Robot sempre più alta → Robot è collo di bottiglia</p></li>
-<li><p>Se linea FlexiBowl sempre più alta → Movimentazione da ottimizzare</p></li>
-<li><p>Se linea Vision sempre più alta → Elaborazione immagini troppo lenta</p></li>
-</ul>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Variazioni nel tempo</strong>:</p></td>
-<td><ul class="simple">
-<li><p>Linea Vision che cresce gradualmente → Possibile degrado performance (memoria, CPU)</p></li>
-<li><p>Linea FlexiBowl che oscilla → Comportamento pezzi non costante</p></li>
-<li><p>Linea Robot instabile → Problemi intermittenti robot (interferenze, ritardi comunicazione)</p></li>
-</ul>
-</td>
-</tr>
-<tr class="row-odd"><td><p><strong>Bilanciamento ottimale</strong>:</p></td>
-<td><ul class="simple">
-<li><p>Idealmente, le tre linee dovrebbero essere relativamente bilanciate</p></li>
-<li><p>Nessuna linea dovrebbe dominare eccessivamente (&gt;2x le altre)</p></li>
-<li><p>Se una linea è 3-5x le altre, concentrare ottimizzazione su quel processo</p></li>
-</ul>
-</td>
-</tr>
-<tr class="row-even"><td><p><strong>Esempio lettura</strong>:</p></td>
-<td><p>Vision: 300 ms (costante)
-FlexiBowl: 2000 ms (costante)
-Robot: 8000 ms (variabile 6000-10000)</p>
-<p>Interpretazione: Robot è chiaro collo di bottiglia.
-Azione: Ottimizzare programma robot, ridurre traiettorie, aumentare velocità.</p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </section>
 </section>
@@ -1332,11 +1297,11 @@ ___\\ \\     // //___
       </div>
     </a>
     <a class="right-next"
-       href="../25_Garanzia.html"
+       href="../APPLICAZIONI_MIX/28_Panoramica_Mix.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>Garanzia</strong></p>
+        <p class="prev-next-title">Panoramica Applicazione Mix</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1394,7 +1359,7 @@ ___\\ \\     // //___
   <div class="footer-item">
     
 <p class="component-author">
-By Noah Costantini & Niccolò Quadrani
+By Author name not set
 </p>
 
   </div>

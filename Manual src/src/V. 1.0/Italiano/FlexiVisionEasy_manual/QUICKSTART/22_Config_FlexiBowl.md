@@ -7,31 +7,30 @@ L'interfaccia **FlexiBowl® Wizard** è uno strumento interattivo progettato per
 ## **Step 1: Accesso al Wizard**
 
 Per avviare la procedura:
-
 ```{list-table}
 :widths: 5 95
 
-* - **1.**
+* - **1**
   - Recarsi nella sezione <img src="../QUICKSTART/img/tasto_setup1.png" class="inline-icon"> del software FlexiVision
 
-* - **2.**
+* - **2**
   - Cliccare sul pulsante **FlexiBowl Setup**, si aprirà una pagina con tutti i FlexiBowl gestibili con FlexiVision One
 
     :::{dropdown} Pagina FlexiBowl Setup  
     ![Pagina FlexiBowl Setup](../QUICKSTART/img/pagina_FBsetup.png)
     :::
 
-* - **3.**
+* - **3**
   - Cliccare sul pulsante <img src="../QUICKSTART/img/FB_config1.png" class="inline-icon icon-xl">, si aprirà una pagina con tutte le movimentazioni disponibili per il FlexiBowl selezionato
 
     :::{dropdown} Pagina Configurazione FlexiBowl  
     ![Pagina FlexiBowl Config](../QUICKSTART/img/pagina_FBsetup.png)
     :::
 
-* - **4.**
+* - **4**
   - Cliccare sul pulsante **FlexiBowl X Wizard**, si aprirà una pagina di benvenuto al Wizard
 
-* - **5.**
+* - **5**
   - Cliccare su <img src="../QUICKSTART/img/tasto_next.png" class="inline-icon icon-small">
     
     :::{note}
@@ -43,21 +42,21 @@ Per avviare la procedura:
 
 In questa fase si definiscono le caratteristiche hardware del sistema:
 ```{list-table}
-* - 6. 
+* - **6**
   - Selezionare la taglia del dispositivo (es. 200, 350, 500, ecc.).
-* - 7. 
+* - **7**
   - Definire il senso di rotazione del disco (**Clockwise** o **CounterClockwise**).
 ```
 ## **Step 3: Caratterizzazione del Componente**
 
 Il sistema richiede informazioni sulla morfologia dei pezzi per ottimizzare la separazione.
 ```{list-table}
-* - 8. 
+* - **8**
   - Selezionare la geometria che meglio descrive il componente:
       * **FLAT**: Componenti piatti.
       * **CYLINDRICAL**: Componenti cilindrici.
       * **COMPLEX**: Geometrie articolate o irregolari.
-* - 9. 
+* - **9**
   - Definire come i componenti interagiscono tra loro sulla superficie:
       * **Overlapping**: I pezzi tendono a sovrapporsi.
       * **Not Overlapping**: I pezzi non si sovrappongono.
@@ -66,28 +65,27 @@ Il sistema richiede informazioni sulla morfologia dei pezzi per ottimizzare la s
 ```
 ## **Step 4: Test degli Accessori**
 ```{list-table}
-* - 10. 
+* - **10**
   - Selezionare dal menu a tendina se il FlexiBowl® è equipaggiato con il modulo **Air-blow**.
-* - 11. 
+* - **11**
   - Cliccare su **TEST Air-blow** per verificare il funzionamento.
-* - 12. 
+* - **12**
   - Selezionare **USE** per abilitarlo nell'applicazione corrente, altrimenti cliccare su **DON'T USE**.
-* - 13. 
+* - **13**
   - Cliccare su **TEST FLIP** per verificare l'effettiva attivazione del percussore.
       Il "Flip" è l'unità che genera l'impulso meccanico per ribaltare i pezzi, è fondamentale per separare, districare o capovolgere i componenti durante il ciclo di alimentazione.
  
       :::{important}
       Se l'impulso non è avvertibile, verificare che l'aria compressa sia collegata e agire sul regolatore di pressione meccanico posto sul pannello di controllo.
       :::
-* - 14. 
+* - **14**
   - Al termine del Wizard, cliccando su **FINISH**, il sistema calcolerà automaticamente i parametri: 
     - Parametri di movimento (velocità, accelerazione, angolo)
     - Parametri di scuotimento (shake)
     - Temporizzazioni accessori (flip, blow)
-* - 15. 
+* - **15**
   - Sarà quindi possibile affinarli nella dashboard riassuntiva.
 ```
-
 ```{list-table} Panoramica Parametri
    :widths: 20 30 50
    :header-rows: 1
@@ -180,7 +178,6 @@ Una volta completata la configurazione del FlexiBowl, procedere con:
 **→ [Configurazione Hopper](23_Config_Hopper.md)** - Se presente tramoggia esterna
 
 **→ [Verifica Risultati](24_Verifica_Risultati.md)** - Monitoraggio applicazione completa
-
 ```{tip}
 **Test produzione**
 

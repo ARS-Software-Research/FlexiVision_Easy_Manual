@@ -19,17 +19,14 @@ Dopo aver cliccato "Next" nella pagina di training, si apre automaticamente la p
     :width: 100%
     :align: center
 :::
-
 ```{list-table}
-* - 1. 
+* - **1**
   - Nella pagina **Define Robot Picking Limit Area Model**, modificare il riquadro per delimitare l'area di ricerca
-* - 2. 
+* - **2**
   - Una volta dimensionata correttamente la Region Search, Cliccare su <img src="../Nuovo_Modello/img/tasto_next.png" class="inline-icon">
-* - 3. 
+* - **3**
   - Si aprirà la pagina **Locator Model 1 Cam 1**
 ```
-
-
 ```{tip}
 Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zone non raggiungibili.
 ```
@@ -37,7 +34,6 @@ Dimensiona l'area in base allo spazio effettivo di lavoro del robot, evitando zo
 ### Panoramica interfaccia Locator Model
 
 ![Pagina Locator Model](../Nuovo_Modello/img/pagina_locatormodel.png)
-
 ```{list-table}
 :header-rows: 1
 :widths: 30 70
@@ -62,11 +58,10 @@ Video tutorial esplicativo dei successivi Step 2 e Step 3:
 
 
 ## **Step 2: Preparazione Scena**
-
 ```{list-table}
 :widths: 5 95
 
-* - **4.**
+* - **4**
   - Posizionare **altri componenti** nell'area di visione in modo casuale intorno al componente di riferimento in modo da non confonderli con esso.
     
     :::{warning}
@@ -75,17 +70,16 @@ Video tutorial esplicativo dei successivi Step 2 e Step 3:
 ```
 
 ## **Step 3: Esecuzione Test e Accept Threshold**
-
 ```{list-table}
 :widths: 5 95
 
-* - **5.**
+* - **5**
   - Cliccare su <img src="../Nuovo_Modello/img/tasto_TEST.png" class="inline-icon"> per effettuare il riconoscimento
 
-* - **6.**
+* - **6**
   - Osservare quanti componenti vengono rilevati e con quali score
 
-* - **7.**
+* - **7**
   - Modificare l'**Accept Threshold** in base alle esigenze dell'applicazione
     
     :::{note}
@@ -99,7 +93,6 @@ Video tutorial esplicativo dei successivi Step 2 e Step 3:
     - **Valore più basso** → Più permissivo (rileva anche componenti meno simili a quello di riferimento)
     :::
 ```
-
 ```{tip}
 
 **Approccio iterativo consigliato:**
@@ -120,7 +113,6 @@ Video tutorial esplicativo dei successivi Step 2 e Step 3:
 ### Visualizzazione componenti rilevati
 
 Nel pannello Results vengono mostrati tutti i componenti rilevati che rispettano l'Accept Threshold:
-
 ```{list-table}
 :header-rows: 1
 :widths: 15 25 60
@@ -144,8 +136,6 @@ Nel pannello Results vengono mostrati tutti i componenti rilevati che rispettano
   - Percentuale
   - Grado di fedeltà rispetto al modello di riferimento (0.00-1.00)
 ```
-
-
 ```{admonition} Sistema di Priorità
 :class: info
 FlexiVision di dafault ordina automaticamente tutti i componenti riconosciuti per **score decrescente**:
@@ -180,19 +170,16 @@ Se Accept Threshold fosse 0.85:
 # Finalizzazione
 
 ## **Step 4: Pulizia e Proseguimento**
-
 ```{list-table}
-* - 4.
+* - **8**
   - Rimuovere **tutti i componenti** dall'area, **tranne il componente di riferimento** e i due oggetti ai suoi lati
     :::{danger}
       **Non spostare il componente di riferimento!**
       Anche durante la pulizia della scena, fare attenzione a non urtare o spostare il componente di riferimento. Le sue coordinate sono ancora necessarie per la calibrazione robot nella fase finale.
     :::
-* - 5. 
+* - **9**
   - Cliccare su <img src="../Nuovo_Modello/img/tasto_next.png" class="inline-icon"> → si aprirà la pagina delle **Clearances**
 ```
-
 ```{seealso}
 Procedi alla [Configurazione Clearances](istogrammi) per definire le aree libere.
 ```
-

@@ -259,6 +259,36 @@ FlexiVisionEasy_manual/QUICKSTART/15_Protocol_Setup.md
 
 FlexiVisionEasy_manual/QUICKSTART/24_Verifica_Risultati.md
 ```
+
+```{toctree}
+:hidden:
+:caption: APPLICAZIONI MIX
+
+FlexiVisionEasy_manual/APPLICAZIONI_MIX/28_Panoramica_Mix.md
+```  
+
+```{toctree}
+:hidden:
+:caption: 
+
+FlexiVisionEasy_manual/APPLICAZIONI_MIX/29_Comandi_Mix.md
+```  
+
+```{toctree}
+:hidden:
+:caption: CONFIGURAZIONI MULTI-DISPOSITIVO
+
+FlexiVisionEasy_manual/CONFIGURAZIONI_MULTI-DISPOSITIVO/30_2FB2CAM.md
+```
+
+```{toctree}
+:hidden:
+:caption: 
+
+FlexiVisionEasy_manual/CONFIGURAZIONI_MULTI-DISPOSITIVO/31_3FB3CAM.md
+```  
+
+
 ```{toctree}  
 :hidden:
 :caption: GARANZIA 
