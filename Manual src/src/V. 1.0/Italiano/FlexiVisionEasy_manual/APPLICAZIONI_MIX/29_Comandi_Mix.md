@@ -49,7 +49,7 @@ Questo significa che per richiedere le coordinate di un modello diverso è neces
 
 | Comando | Azione | Valore di Ritorno |
 |---|---|---|
-| `mix_Locator_1` | Avvia la ricerca del **Modello 1**. Se non trovato, aziona il FlexiBowl® e ripete la ricerca automaticamente fino al ritrovamento o a `stop_Locator`. Attiva la tramoggia se necessario. | `Pattern_1;x;y;r` |
+| `mix_Locator_1` | Avvia la ricerca del **Modello 1**. Se non trovato, aziona il FlexiBowl® e ripete la ricerca automaticamente fino al ritrovamento o a `stop_Locator`. Attiva la tramoggia se necessario. | `Pattern_1;x;y;r` / `Hopper;signalnumber;time` |
 | `mix_Locator_2` | Come sopra, per il **Modello 2** | `Pattern_2;x;y;r` |
 | `mix_Locator_3` | Come sopra, per il **Modello 3** | `Pattern_3;x;y;r` |
 | … | … | … |

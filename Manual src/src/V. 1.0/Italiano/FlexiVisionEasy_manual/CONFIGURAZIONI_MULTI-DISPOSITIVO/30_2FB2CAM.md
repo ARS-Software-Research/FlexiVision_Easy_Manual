@@ -28,7 +28,7 @@ Questa configurazione supporta due varianti operative, in base al numero di robo
 | **Ricette indipendenti** | 2 (una per stazione) | 2 (una per stazione) |
 | **Applicazioni Mix** | Sì, su ciascuna stazione | Sì, su ciascuna stazione |
 | **Switch richiesto** | Sì | Sì |
-| **Indicata per** | Cicli di picking rapidi, pezzi per la stessa operazione | Massima produttività, celle indipendenti |
+| **Indicata per** |  | |
 
 
 ---

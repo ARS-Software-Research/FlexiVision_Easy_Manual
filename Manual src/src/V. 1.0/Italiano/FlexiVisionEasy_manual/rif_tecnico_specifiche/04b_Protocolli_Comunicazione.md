@@ -57,7 +57,7 @@ Il sistema supporta i seguenti comandi tramite stringhe di testo inviate sulla c
   - Valore di Ritorno
 * - `start_Locator`
   - Avvia il processo di localizzazione dei pezzi. Se non sono presenti pezzi prelevabili, richiama automaticamente la routine di movimentazione del FlexiBowl.
-  - `Pattern_n;x;y;r`
+  - `Pattern_n;x;y;r` / `Hopper;signalnumber;time`
 * - `stop_Locator`
   - Ferma il processo di localizzazione
   - Nessuno
@@ -70,20 +70,6 @@ Il sistema supporta i seguenti comandi tramite stringhe di testo inviate sulla c
 * - `state_Locator`
   - Restituisce lo stato diagnostico del localizzatore
   - `Locator is Running` / `Locator is in Error` / `Locator is not Running`
-```
-
-### Comandi di controllo qualità
-
-```{list-table}
-:header-rows: 1
-:widths: 30 40 30
-
-* - Comando
-  - Azione
-  - Valore di Ritorno
-* - `start_Control`
-  - Avvia il ciclo di ispezione qualità sul pezzo
-  - `Control_1;x;y;r`
 ```
 
 ### Comandi FlexiBowl
