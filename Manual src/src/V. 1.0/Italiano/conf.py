@@ -7,6 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'FlexiVision Easy'
+author = 'Ars Team'
 copyright = '2025, Ars Automation'
 release = '1.0'
 
