@@ -497,16 +497,6 @@ document.write(`
 <td><p>Primo robot su un FlexiBowl, secondo robot su due FlexiBowl</p></td>
 <td><p>Ogni robot è dedicato a una stazione</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>Ricette indipendenti</strong></p></td>
-<td><p>3 (una per stazione)</p></td>
-<td><p>3 (una per stazione)</p></td>
-<td><p>3 (una per stazione)</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Applicazioni Mix</strong></p></td>
-<td><p>Sì, su ciascuna stazione</p></td>
-<td><p>Sì, su ciascuna stazione</p></td>
-<td><p>Sì, su ciascuna stazione</p></td>
-</tr>
 <tr class="row-even"><td><p><strong>Switch richiesto</strong></p></td>
 <td><p>Sì</p></td>
 <td><p>Sì</p></td>
@@ -524,6 +514,7 @@ document.write(`
 <hr class="docutils" />
 <section id="variante-a-1-robot-3-flexibowl">
 <h2>Variante A — 1 Robot, 3 FlexiBowl®<a class="headerlink" href="#variante-a-1-robot-3-flexibowl" title="Link to this heading">#</a></h2>
+<p><img alt="Panoramica Sistema 3FB3CAM1Robot" src="../../_images/3FB3CAM1R.png" /></p>
 <p>Un <strong>singolo robot</strong> opera su tutte e tre le stazioni. Il robot deve essere posizionato in modo da poter raggiungere l’area di picking di ciascun FlexiBowl®. Il VisionController gestisce le tre stazioni in modo indipendente, ciascuna con la propria ricetta e il proprio canale di comunicazione TCP/IP.</p>
 <p>Ogni stazione supporta applicazioni di tipo <strong>Standard</strong> o <strong>Mix</strong>.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -542,22 +533,29 @@ document.write(`
 <tr class="row-even"><td><p>Robot</p></td>
 <td><p>1</p></td>
 </tr>
-<tr class="row-odd"><td><p>Ricette indipendenti</p></td>
-<td><p>3 (una per stazione)</p></td>
-</tr>
-<tr class="row-even"><td><p>Applicazioni Mix supportate</p></td>
-<td><p>Sì (su ciascuna stazione)</p></td>
-</tr>
 <tr class="row-odd"><td><p>Switch richiesto</p></td>
 <td><p><strong>Sì</strong></p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Ricetta base e gestione delle ricette</strong></p>
+<p>Come per la configurazione singola, anche in una configurazione 3FB + 3CAM il processo parte dalla creazione di un’<strong>unica ricetta base</strong>, che contiene i setup hardware e la calibrazione della camera per l’intero sistema. Questa ricetta base viene poi <strong>duplicata</strong> per ciascuna stazione: ogni duplicato costituisce la ricetta operativa di quella stazione, all’interno della quale vengono creati i modelli dei pezzi (fino a 8 per stazione).</p>
+<p>Per questo è fondamentale che l’associazione tra i dispositivi venga configurata correttamente fin dall’inizio:</p>
+<ul class="simple">
+<li><p><strong>Camera 1</strong> → FlexiBowl® 1 (+ Tramoggia 1, se presente)</p></li>
+<li><p><strong>Camera 2</strong> → FlexiBowl® 2 (+ Tramoggia 2, se presente)</p></li>
+<li><p><strong>Camera 3</strong> → FlexiBowl® 3 (+ Tramoggia 3, se presente)</p></li>
+</ul>
+<p>Un’associazione errata in fase di setup si ripercuoterebbe su tutte le ricette derivate, compromettendo il riconoscimento dei pezzi e il corretto funzionamento dell’intero sistema.</p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="variante-b-2-robot-3-flexibowl">
 <h2>Variante B — 2 Robot, 3 FlexiBowl®<a class="headerlink" href="#variante-b-2-robot-3-flexibowl" title="Link to this heading">#</a></h2>
+<p><img alt="Panoramica Sistema 3FB3CAM2Robot" src="../../_images/3FB3CAM2R.png" /></p>
 <p>In questa variante <strong>due robot</strong> si suddividono le tre stazioni. Il primo robot farà il picking su un solo FlexiBowl, il secondo sugli altri due FlexiBowl. La distribuzione del carico tra i robot è definita dalla logica del programma robot e dalla disposizione fisica dell’impianto.</p>
 <p>Ogni stazione supporta applicazioni di tipo <strong>Standard</strong> o <strong>Mix</strong>.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -576,22 +574,29 @@ document.write(`
 <tr class="row-even"><td><p>Robot</p></td>
 <td><p>2</p></td>
 </tr>
-<tr class="row-odd"><td><p>Ricette indipendenti</p></td>
-<td><p>3 (una per stazione)</p></td>
-</tr>
-<tr class="row-even"><td><p>Applicazioni Mix supportate</p></td>
-<td><p>Sì (su ciascuna stazione)</p></td>
-</tr>
 <tr class="row-odd"><td><p>Switch richiesto</p></td>
 <td><p><strong>Sì</strong></p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Ricetta base e gestione delle ricette</strong></p>
+<p>Come per la configurazione singola, anche in una configurazione 3FB + 3CAM il processo parte dalla creazione di un’<strong>unica ricetta base</strong>, che contiene i setup hardware e la calibrazione della camera per l’intero sistema. Questa ricetta base viene poi <strong>duplicata</strong> per ciascuna stazione: ogni duplicato costituisce la ricetta operativa di quella stazione, all’interno della quale vengono creati i modelli dei pezzi (fino a 8 per stazione).</p>
+<p>Per questo è fondamentale che l’associazione tra i dispositivi venga configurata correttamente fin dall’inizio:</p>
+<ul class="simple">
+<li><p><strong>Camera 1</strong> → FlexiBowl® 1 (+ Tramoggia 1, se presente)</p></li>
+<li><p><strong>Camera 2</strong> → FlexiBowl® 2 (+ Tramoggia 2, se presente)</p></li>
+<li><p><strong>Camera 3</strong> → FlexiBowl® 3 (+ Tramoggia 3, se presente)</p></li>
+</ul>
+<p>Un’associazione errata in fase di setup si ripercuoterebbe su tutte le ricette derivate, compromettendo il riconoscimento dei pezzi e il corretto funzionamento dell’intero sistema.</p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="variante-c-3-robot-3-flexibowl">
 <h2>Variante C — 3 Robot, 3 FlexiBowl®<a class="headerlink" href="#variante-c-3-robot-3-flexibowl" title="Link to this heading">#</a></h2>
+<p><img alt="Panoramica Sistema 3FB3CAM3Robot" src="../../_images/3FB3CAM3R.png" /></p>
 <p>Ogni robot è dedicato a una singola stazione: massima produttività con le tre celle che operano in parallelo e in modo completamente indipendente.</p>
 <p>Ogni stazione supporta applicazioni di tipo <strong>Standard</strong> o <strong>Mix</strong>.</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -610,12 +615,6 @@ document.write(`
 <tr class="row-even"><td><p>Robot</p></td>
 <td><p>3</p></td>
 </tr>
-<tr class="row-odd"><td><p>Ricette indipendenti</p></td>
-<td><p>3 (una per stazione)</p></td>
-</tr>
-<tr class="row-even"><td><p>Applicazioni Mix supportate</p></td>
-<td><p>Sì (su ciascuna stazione)</p></td>
-</tr>
 <tr class="row-odd"><td><p>Switch richiesto</p></td>
 <td><p><strong>Sì</strong></p></td>
 </tr>
@@ -625,6 +624,18 @@ document.write(`
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>La variante C garantisce le migliori prestazioni complessive. Ciascuna cella è completamente autonoma e non dipende dalla disponibilità delle altre.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Ricetta base e gestione delle ricette</strong></p>
+<p>Come per la configurazione singola, anche in una configurazione 3FB + 3CAM il processo parte dalla creazione di un’<strong>unica ricetta base</strong>, che contiene i setup hardware e la calibrazione della camera per l’intero sistema. Questa ricetta base viene poi <strong>duplicata</strong> per ciascuna stazione: ogni duplicato costituisce la ricetta operativa di quella stazione, all’interno della quale vengono creati i modelli dei pezzi (fino a 8 per stazione).</p>
+<p>Per questo è fondamentale che l’associazione tra i dispositivi venga configurata correttamente fin dall’inizio:</p>
+<ul class="simple">
+<li><p><strong>Camera 1</strong> → FlexiBowl® 1 (+ Tramoggia 1, se presente)</p></li>
+<li><p><strong>Camera 2</strong> → FlexiBowl® 2 (+ Tramoggia 2, se presente)</p></li>
+<li><p><strong>Camera 3</strong> → FlexiBowl® 3 (+ Tramoggia 3, se presente)</p></li>
+</ul>
+<p>Un’associazione errata in fase di setup si ripercuoterebbe su tutte le ricette derivate, compromettendo il riconoscimento dei pezzi e il corretto funzionamento dell’intero sistema.</p>
 </div>
 </section>
 <hr class="docutils" />
@@ -699,12 +710,16 @@ Ad esempio, per una configurazione con FB500 + FB650 + FB800, il kit base copre 
 <p>Dalla <strong>Variante B</strong> in poi, il numero totale di dispositivi supera le porte disponibili sullo Switch.<br />
 In questi casi, una porta del VisionController viene utilizzata per collegarlo allo Switch, mentre le restanti porte libere del VisionController accolgono i dispositivi che non trovano posto sullo Switch:</p>
 <ul class="simple">
-<li><p>Nella <strong>Variante B</strong> (2 robot), il <strong>FlexiBowl® 2</strong> si collega direttamente a una porta libera del VisionController.</p></li>
-<li><p>Nella <strong>Variante C</strong> (3 robot), il <strong>FlexiBowl® 2</strong> e la <strong>Camera 3</strong> si collegano direttamente alle porte libere del VisionController.</p></li>
+<li><p>Nella <strong>Variante B</strong> (2 robot), il <strong>FlexiBowl® 3</strong> si collega direttamente a una porta libera del VisionController.</p></li>
+<li><p>Nella <strong>Variante C</strong> (3 robot), il <strong>FlexiBowl® 3</strong> e la <strong>Camera 3</strong> si collegano direttamente alle porte libere del VisionController.</p></li>
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Lo Switch dispone di <strong>8 porte Ethernet</strong>. A partire dalla Variante B, non è possibile connettere tutti i dispositivi esclusivamente attraverso lo Switch: i dispositivi in eccesso vanno collegati direttamente alle porte Ethernet libere del VisionController, come indicato nelle tabelle di seguito.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si può arbitrariamente decidere quali dispositivi connettere al VisionController. L’mportante è lasciare sempre una porta libera per connettere il VisionController allo Switch</p>
 </div>
 <section id="schema-di-connessione">
 <h3>Schema di connessione<a class="headerlink" href="#schema-di-connessione" title="Link to this heading">#</a></h3>
@@ -769,6 +784,10 @@ In questi casi, una porta del VisionController viene utilizzata per collegarlo a
 </tr>
 </tbody>
 </table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si può arbitrariamente decidere quali dispositivi connettere al VisionController. L’mportante è lasciare sempre una porta libera per connettere il VisionController allo Switch</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -860,6 +879,10 @@ lo  Consultare la sezione <a class="reference internal" href="../rif_tecnico_spe
 </tr>
 </tbody>
 </table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si può arbitrariamente decidere quali dispositivi connettere al VisionController. L’mportante è lasciare sempre una porta libera per connettere il VisionController allo Switch</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

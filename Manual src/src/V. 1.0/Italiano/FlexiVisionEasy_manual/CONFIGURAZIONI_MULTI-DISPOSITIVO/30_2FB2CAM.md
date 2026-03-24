@@ -25,8 +25,6 @@ Questa configurazione supporta due varianti operative, in base al numero di robo
 | **FlexiBowl®** | 2 | 2 |
 | **Camere** | 2 | 2 |
 | **Logica operativa** | Il robot raggiunge entrambe le stazioni | Ogni robot è dedicato a una stazione |
-| **Ricette indipendenti** | 2 (una per stazione) | 2 (una per stazione) |
-| **Applicazioni Mix** | Sì, su ciascuna stazione | Sì, su ciascuna stazione |
 | **Switch richiesto** | Sì | Sì |
 | **Indicata per** |  | |
 
@@ -34,6 +32,8 @@ Questa configurazione supporta due varianti operative, in base al numero di robo
 ---
 
 ## Variante A — 1 Robot, 2 FlexiBowl®
+
+![Panoramica Sistema 2FB2CAM1Robot](./img/2FB2CAM1R.png)
 
 In questa variante un **singolo robot** opera su entrambe le stazioni. Il robot è posizionato in modo da poter raggiungere l'area di picking di ciascun FlexiBowl®, alternando il prelievo tra le due stazioni sulla base dei comandi ricevuti.
 
@@ -44,13 +44,25 @@ Ogni stazione gestisce una propria ricetta indipendente. Su ciascuna stazione è
 | FlexiBowl® | 2 |
 | Camere | 2 |
 | Robot | 1 |
-| Ricette indipendenti | 2 (una per stazione) |
-| Applicazioni Mix supportate | Sì (su ciascuna stazione) |
 | Switch richiesto | **Sì** |
 
+```{important}
+**Ricetta base e gestione delle ricette**
+
+Come per la configurazione singola, anche in una configurazione 2FB + 2CAM il processo parte dalla creazione di un'**unica ricetta base**, che contiene i setup hardware e la calibrazione della camera per l'intero sistema. Questa ricetta base viene poi **duplicata** per ciascuna stazione: ogni duplicato costituisce la ricetta operativa di quella stazione, all'interno della quale vengono creati i modelli dei pezzi (fino a 8 per stazione).
+
+Per questo è fondamentale che l'associazione tra i dispositivi venga configurata correttamente fin dall'inizio:
+
+* **Camera 1** → FlexiBowl® 1 (+ Tramoggia 1, se presente)
+* **Camera 2** → FlexiBowl® 2 (+ Tramoggia 2, se presente)
+
+Un'associazione errata in fase di setup si ripercuoterebbe su tutte le ricette derivate, compromettendo il riconoscimento dei pezzi e il corretto funzionamento dell'intero sistema.
+```
 ---
 
 ## Variante B — 2 Robot, 2 FlexiBowl®
+
+![Panoramica Sistema 2FB2CAM2Robot](./img/2FB2CAM2R.png)
 
 In questa variante ogni robot è dedicato a una singola stazione: il **Robot 1** effettua il picking sul FlexiBowl® 1, il **Robot 2** effettua il picking sul FlexiBowl® 2. Le due celle sono indipendenti e non si sovrappongono.
 
@@ -61,11 +73,22 @@ Anche in questa variante ciascuna stazione supporta applicazioni sia di tipo **S
 | FlexiBowl® | 2 |
 | Camere | 2 |
 | Robot | 2 |
-| Ricette indipendenti | 2 (una per stazione) |
-| Applicazioni Mix supportate | Sì (su ciascuna stazione) |
 | Switch richiesto | **Sì** |
 ```{tip}
 Questa variante garantisce la massima produttività, con le due celle che operano in parallelo e in modo completamente autonomo.
+```
+
+```{important}
+**Ricetta base e gestione delle ricette**
+
+Come per la configurazione singola, anche in una configurazione 2FB + 2CAM il processo parte dalla creazione di un'**unica ricetta base**, che contiene i setup hardware e la calibrazione della camera per l'intero sistema. Questa ricetta base viene poi **duplicata** per ciascuna stazione: ogni duplicato costituisce la ricetta operativa di quella stazione, all'interno della quale vengono creati i modelli dei pezzi (fino a 8 per stazione).
+
+Per questo è fondamentale che l'associazione tra i dispositivi venga configurata correttamente fin dall'inizio:
+
+* **Camera 1** → FlexiBowl® 1 (+ Tramoggia 1, se presente)
+* **Camera 2** → FlexiBowl® 2 (+ Tramoggia 2, se presente)
+
+Un'associazione errata in fase di setup si ripercuoterebbe su tutte le ricette derivate, compromettendo il riconoscimento dei pezzi e il corretto funzionamento dell'intero sistema.
 ```
 
 ---
