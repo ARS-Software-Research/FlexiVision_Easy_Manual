@@ -209,17 +209,18 @@
 </ul>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="13_setup.html"><strong>Configurazione Iniziale del Sistema</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="13d_Camera_Setup.html"><strong>Passo 3: Camera Setup</strong></a></li>
+
+
+
 <li class="toctree-l2"><a class="reference internal" href="13a_FB_Setup.html"><strong>Passo 4: FlexiBowl Setup</strong></a></li>
+
 <li class="toctree-l2 current active"><a class="current reference internal" href="#"><strong>Passo 5: Hopper Setup</strong></a></li>
+
 <li class="toctree-l2"><a class="reference internal" href="13c_Robot_Setup.html"><strong>Passo 6 : Robot Setup</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="13d_Camera_Setup.html"><strong>Passo 7: Camera Setup</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_Protocol_Setup.html"><strong>Passo 7: Protocol Setup</strong></a></li>
 </ul>
 </details></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../14_calibrazione_camera.html"><strong>Calibrazione della Camera</strong></a></li>
-
-
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../Nuovo_Modello/16_Nuovo_modello.html"><strong>Creazione Ricette e Modelli - Panoramica</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -232,15 +233,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../Nuovo_Modello/21_RobotPick.html"><strong>Calibrazione Robot Pick</strong></a></li>
 </ul>
 </details></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../22_Config_FlexiBowl.html"><strong>Configurazione guidata: FlexiBowl® Wizard</strong></a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../23_Config_Hopper.html"><strong>Configurazione della Tramoggia (Hopper)</strong></a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../15_Protocol_Setup.html"><strong>Configurazione Protocollo: Protocol Setup</strong></a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../24_Verifica_Risultati.html"><strong>Monitoraggio Applicazione: Dashboard</strong></a></li>
@@ -423,11 +415,27 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Passo 5: Hopper Setup</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-configurazione-hopper">Accesso alla configurazione Hopper</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-interfaccia-hopper-setup">Panoramica interfaccia Hopper Setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di configurazione</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-della-tramoggia-hopper"><strong>Configurazione della Tramoggia (Hopper)</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-alla-configurazione"><strong>Step 1: Accesso alla Configurazione</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-definizione-dellarea-di-controllo"><strong>Step 2: Definizione dell’Area di Controllo</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-definizione-dei-valori-di-soglia"><strong>Step 3: Definizione dei Valori di Soglia</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-parametri-operativi"><strong>Step 4: Parametri Operativi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-configurazione">Salvataggio Configurazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-hopper">Troubleshooting Hopper</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passi-successivi">Passi successivi</a></li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -457,7 +465,7 @@ document.write(`
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
 <tr class="row-odd"><td><p><strong>1</strong></p></td>
-<td><p>Dalla pagina principale del software, cliccare su <img alt="../../../_images/tasto_setup11.png" class="inline-icon" src="../../../_images/tasto_setup11.png" /></p></td>
+<td><p>Dalla pagina principale del software, cliccare su <img alt="../../../_images/tasto_setup1.png" class="inline-icon" src="../../../_images/tasto_setup1.png" /></p></td>
 </tr>
 <tr class="row-even"><td><p><strong>2</strong></p></td>
 <td><p>Nella pagina SETUP, identificare e cliccare sull’icona <strong>Hopper Setup</strong></p>
@@ -479,7 +487,7 @@ document.write(`
 <section id="panoramica-interfaccia-hopper-setup">
 <h2>Panoramica interfaccia Hopper Setup<a class="headerlink" href="#panoramica-interfaccia-hopper-setup" title="Link to this heading">#</a></h2>
 <p>La pagina Hopper Setup presenta diverse sezioni per la configurazione dei parametri operativi delle varie tramogge:</p>
-<p><img alt="Pagina Hopper Setup" src="../../../_images/pagina_hoppersetup1.png" /></p>
+<p><img alt="Pagina Hopper Setup" src="../../../_images/pagina_hoppersetup.png" /></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -530,7 +538,7 @@ document.write(`
 </tr>
 <tr class="row-odd"><td><p>Step 3</p></td>
 <td><p>Salvataggio e Completamento</p></td>
-<td><p>Tornare alla pagina <img alt="../../../_images/tasto_setup11.png" class="inline-icon" src="../../../_images/tasto_setup11.png" /> principale per procedere con il setup successivo</p></td>
+<td><p>Tornare alla pagina <img alt="../../../_images/tasto_setup1.png" class="inline-icon" src="../../../_images/tasto_setup1.png" /> principale per procedere con il setup successivo</p></td>
 </tr>
 </tbody>
 </table>
@@ -553,6 +561,344 @@ document.write(`
 <p>I parametri impostati in questa fase sono sufficienti per la configurazione iniziale del sistema.
 Durante la procedura andremo poi a definire gli altri aspetti della configurazione della tramoggia.</p>
 </div>
+<hr class="docutils" />
+</section>
+</section>
+<section id="configurazione-della-tramoggia-hopper">
+<span id="confighopper"></span><h1><strong>Configurazione della Tramoggia (Hopper)</strong><a class="headerlink" href="#configurazione-della-tramoggia-hopper" title="Link to this heading">#</a></h1>
+<p>La configurazione della tramoggia permette di gestire il rifornimento automatico dei componenti sul disco del FlexiBowl®. Il sistema utilizza la visione per determinare quando il livello di riempimento è insufficiente e attivare la tramoggia.</p>
+<section id="step-1-accesso-alla-configurazione">
+<h2><strong>Step 1: Accesso alla Configurazione</strong><a class="headerlink" href="#step-1-accesso-alla-configurazione" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>1</strong></p></td>
+<td><p>Cliccare sulla sezione <img alt="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_setup1.png" class="inline-icon" src="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_setup1.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>2</strong></p></td>
+<td><p>Dalla sezione <strong>Hopper Setup</strong>, è possibile visualizzare e gestire le unità di carico collegate.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Pagina Hopper Setup</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="Pagina Hooper Setup" src="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/pagina_hoppersetup.png" /></p>
+</div>
+</details></td>
+</tr>
+<tr class="row-odd"><td><p><strong>3</strong></p></td>
+<td><p>Selezionare la casella <strong>Enable Hopper X</strong> per attivare la tramoggia corrispondente.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>4</strong></p></td>
+<td><p>Cliccare sul pulsante <strong>Config Hopper X</strong> per accedere alla configurazione specifica</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="step-2-definizione-dellarea-di-controllo">
+<h2><strong>Step 2: Definizione dell’Area di Controllo</strong><a class="headerlink" href="#step-2-definizione-dellarea-di-controllo" title="Link to this heading">#</a></h2>
+<div  class="sphinx-contrib-video-container align-center"><video controls="True" preload="auto" width="100%"><source src="../../../_images/TastoInfo_AreaHopper_1280x7201.mp4" type="video/mp4"></video></div><p>In questa fase si definisce la porzione di disco che la telecamera deve monitorare per lo scarico.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>5</strong></p></td>
+<td><p>Modificare il riquadro blu a schermo per inquadrare l’area in cui verranno rilevati i componenti.
+<strong>Strumenti di supporto</strong>:</p>
+<ul class="simple">
+<li><p><strong>Info</strong>: Cliccare per visualizzare dettagli sulle funzionalità della pagina.</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="step-3-definizione-dei-valori-di-soglia">
+<h2><strong>Step 3: Definizione dei Valori di Soglia</strong><a class="headerlink" href="#step-3-definizione-dei-valori-di-soglia" title="Link to this heading">#</a></h2>
+<div  class="sphinx-contrib-video-container align-center"><video controls="True" preload="auto" width="100%"><source src="../../../_images/TastoInfo_Hopper_1280x7201.mp4" type="video/mp4"></video></div><div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>6</strong></p></td>
+<td><p>Cliccare <img alt="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_next.png" class="inline-icon icon-small" src="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_next.png" /> per accedere alla pagina <strong>Define Value Hopper Cam</strong>, dove si istruisce il sistema a distinguere tra disco vuoto e disco pieno.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Pagina Define Value Hopper Cam</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><img alt="Pagina Define Value Hopper Cam" src="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/pagina_valuehopper.png" /></p>
+</div>
+</details></td>
+</tr>
+<tr class="row-even"><td><p><strong>7</strong></p></td>
+<td><p>Rimuovere tutti i componenti dall’area di visione e cliccare sul primo pulsante <strong>CAPTURE</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>8</strong></p></td>
+<td><p>Posizionare il numero minimo di componenti che si desidera mantenere in area di visione. Se il numero scende sotto questa soglia, la tramoggia si attiverà.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>9</strong></p></td>
+<td><p>Cliccare sul secondo pulsante <strong>CAPTURE</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>10</strong></p></td>
+<td><p>Cliccando su <img alt="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_AUTO.png" class="inline-icon" src="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_AUTO.png" /> nell’Expression Builder, il sistema calcola automaticamente i valori di <strong>Mean</strong> (Media) e <strong>Standard Deviation</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>11</strong></p></td>
+<td><p>Rimuovere alcuni pezzi e cliccare su <img alt="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_TEST.png" class="inline-icon" src="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_TEST.png" />.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>12</strong></p></td>
+<td><p>Osservare l’indicatore risultato:</p>
+<ul>
+<li><p><strong>Verde</strong> 🟢: Livello insufficiente, Hopper si attiva (scarico necessario)</p></li>
+<li><p><strong>Rosso</strong> 🔴: Livello sufficiente, Hopper NON si ATTIVA (OK)</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Calibrazione insufficiente</strong></p>
+<p>Se il sistema non rileva correttamente il livello:</p>
+<p><strong>Problema: Sempre verde (attiva sempre Hopper)</strong><br />
+→ Soglia troppo bassa o interferenze nell’area<br />
+→ Soluzione: Aumentare numero pezzi nella seconda acquisizione, verificare pulizia area</p>
+<p><strong>Problema: Sempre rosso (non attiva mai Hopper)</strong><br />
+→ Soglia troppo alta o area monitoraggio non rappresentativa<br />
+→ Soluzione: Ridurre numero pezzi nella seconda acquisizione CAPTURE, ripetere AUTO</p>
+<p><strong>Problema: Comportamento errato (alterna verde/rosso casualmente)</strong><br />
+→ Illuminazione instabile o area troppo piccola<br />
+→ Soluzione: Verificare backlight stabile, ingrandire area monitoraggio, ripetere calibrazione</p>
+</div>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Fill Hopper Threshold</strong> = …</p>
+</div>
+</section>
+<section id="step-4-parametri-operativi">
+<h2><strong>Step 4: Parametri Operativi</strong><a class="headerlink" href="#step-4-parametri-operativi" title="Link to this heading">#</a></h2>
+<p>Tornare alla schermata principale di Hopper Setup per definire il comportamento meccanico.
+<img alt="Pagina Hopper Setup" src="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/pagina_hoppersetup.png" /></p>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-text">Parametri di Funzionamento</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Parametro</strong></p></th>
+<th class="head"><p><strong>Descrizione e Procedura</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Steps</strong></p></td>
+<td><p>Numero di avanzamenti del FlexiBowl (sequenze) necessari per portare i pezzi dall’area di visione all’area di scarico della tramoggia.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Come calcolarlo:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>Svuotare completamente il disco FlexiBowl</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Lasciare un componente al centro dell’area di visione</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Eseguire sequenze FlexiBowl fino a che il componente non arriva all’area di scarico della tramoggia e contare quanti avanzamenti sono stati necessari</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Il risultato del conteggio è il valore da inserire in <strong>Steps</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="docutils">
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Time</strong></p></td>
+<td><p>Millisecondi di attivazione della tramoggia.   Valore consigliato: <strong>100 – 1000 ms</strong> (Media: <strong>500 ms</strong>). Regolare di ±50 ms in base al flusso desiderato.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Il tempo di attivazione dipende non solo dal valore impostato, ma anche dal volume di componenti attualmente presenti nella vasca della tramoggia. È essenziale mantenere un carico costante per un flusso uniforme.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Il valore Time è strettamente connesso al volume di carico della tramoggia:</p>
+<ul class="simple">
+<li><p>Con tramoggia piena si avrà un maggior numero di pezzi nell’area di scarico</p></li>
+<li><p>Con tramoggia semipiena si avrà un minor numero di pezzi nell’area di scarico</p></li>
+</ul>
+<p>Un tempo di attivazione efficace dipende da:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Peso del pezzo</strong> (*)</p></th>
+<th class="head"><p><strong>Comportamento del pezzo</strong></p></th>
+<th class="head"><p><strong>Volume di carico della Tramoggia</strong></p></th>
+<th class="head"><p><strong>Time consigliato</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Pezzi pesanti</strong></p></td>
+<td><ul class="simple">
+<li><p>Si incastrano</p></li>
+<li><p>Non si incastrano</p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>Meno del 30% (&lt;30%)</p></li>
+<li><p>Compreso tra 50% e 80% (&gt;50% e &lt;80%)</p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>Time maggiore di 600 ms</p></li>
+<li><p>Time maggiore di 600 ms</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Pezzi leggeri</strong></p></td>
+<td><ul class="simple">
+<li><p>Si incastrano</p></li>
+<li><p>Non si incastrano</p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>Meno del 30% (&lt;30%)</p></li>
+<li><p>Compreso tra 50% e 80% (&gt;50% e &lt;80%)</p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>Time compreso tra 100-500 ms</p></li>
+<li><p>Time compreso tra 100-500 ms</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Best practice generale</strong>: Mantenere la tramoggia costantemente piena per &gt;50% e &lt;80% per ottenere un flusso uniforme</p>
+<p>(*) Per <strong>peso del pezzo</strong> si intende relativo alla dimensione della tramoggia utilizzata.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>In generale, è importante non superare mai il carico massimo della tramoggia utilizzata.</p>
+</div>
+</section>
+<section id="salvataggio-configurazione">
+<h2>Salvataggio Configurazione<a class="headerlink" href="#salvataggio-configurazione" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Salvataggio ricetta obbligatorio</strong></p>
+<p>Al termine della configurazione Hopper:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<tbody>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>Verificare che tutti i parametri siano configurati correttamente:</p>
+<ul class="simple">
+<li><p>Area monitoraggio posizionata</p></li>
+<li><p>Soglie calibrate (TEST funzionante)</p></li>
+<li><p>Steps e Time impostati</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Tornare alla pagina principale <img alt="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_recipes.png" class="inline-icon icon-small" src="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_recipes.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Cliccare su <img alt="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_save_recipes.png" class="inline-icon icon-small" src="FlexiVisionEasy_manual/QUICKSTART/QUICKSTART/img/tasto_save_recipes.png" /></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Confermare il salvataggio</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>IMPORTANTE</strong>: Ogni variazione apportata viene memorizzata <strong>SOLO</strong> se la ricetta viene salvata correttamente prima di uscire o cambiare pagina.</p>
+<p>Senza salvataggio, tutte le configurazioni Hopper verranno perse alla chiusura di FlexiVision!</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="troubleshooting-hopper">
+<h2>Troubleshooting Hopper<a class="headerlink" href="#troubleshooting-hopper" title="Link to this heading">#</a></h2>
+<section id="problemi-comuni-e-soluzioni">
+<h3>Problemi comuni e soluzioni<a class="headerlink" href="#problemi-comuni-e-soluzioni" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Hopper non si attiva mai</strong></p>
+<p><strong>Sintomi</strong>: Disco si svuota ma Hopper non scarica</p>
+<p><strong>Cause possibili:</strong></p>
+<ul class="simple">
+<li><p>Soglia configurata troppo bassa (sistema pensa sia sempre pieno)</p></li>
+<li><p>Area monitoraggio mal posizionata (non rappresentativa)</p></li>
+<li><p>Enable Hopper disabilitato</p></li>
+</ul>
+<p><strong>Soluzioni:</strong></p>
+<ol class="arabic simple">
+<li><p>Verificare Enable Hopper attivo</p></li>
+<li><p>Ripetere calibrazione soglie con più pezzi nella seconda acquisizione</p></li>
+<li><p>Spostare area monitoraggio in zona più rappresentativa</p></li>
+<li><p>Eseguire TEST manualmente per verificare trigger</p></li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Hopper si attiva troppo frequentemente</strong></p>
+<p><strong>Sintomi</strong>: Hopper scarica continuamente, disco si riempie eccessivamente</p>
+<p><strong>Cause possibili:</strong></p>
+<ul class="simple">
+<li><p>Soglia configurata troppo alta</p></li>
+<li><p>Time di scarico troppo lungo</p></li>
+<li><p>Area monitoraggio in zona sempre vuota</p></li>
+</ul>
+<p><strong>Soluzioni:</strong></p>
+<ol class="arabic simple">
+<li><p>Ridurre soglia (meno pezzi nella seconda acquisizione CAPTURE)</p></li>
+<li><p>Ridurre Time (durata vibrazione) di 100-200 ms</p></li>
+<li><p>Verificare posizionamento area monitoraggio</p></li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Pezzi scaricati non arrivano in tempo</strong></p>
+<p><strong>Sintomi</strong>: Robot trova disco vuoto subito dopo attivazione Hopper</p>
+<p><strong>Cause possibili:</strong></p>
+<ul class="simple">
+<li><p>Steps troppo pochi (pezzi non hanno tempo di arrivare)</p></li>
+<li><p>Sequenze FlexiBowl non efficaci</p></li>
+<li><p>Ostruzione percorso scarico</p></li>
+</ul>
+<p><strong>Soluzioni:</strong></p>
+<ol class="arabic simple">
+<li><p>Aumentare Steps di 1-2 unità</p></li>
+<li><p>Verificare parametri Config FlexiBowl (velocità, angolo)</p></li>
+<li><p>Ispezionare fisicamente percorso scarico Hopper → Disco</p></li>
+</ol>
+</div>
+</section>
 </section>
 <hr class="docutils" />
 <section id="passi-successivi">
@@ -869,11 +1215,27 @@ ___\\ \\     // //___
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Passo 5: Hopper Setup</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accesso-alla-configurazione-hopper">Accesso alla configurazione Hopper</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panoramica-interfaccia-hopper-setup">Panoramica interfaccia Hopper Setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedura-di-configurazione">Procedura di configurazione</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#configurazione-della-tramoggia-hopper"><strong>Configurazione della Tramoggia (Hopper)</strong></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-accesso-alla-configurazione"><strong>Step 1: Accesso alla Configurazione</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-definizione-dellarea-di-controllo"><strong>Step 2: Definizione dell’Area di Controllo</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-definizione-dei-valori-di-soglia"><strong>Step 3: Definizione dei Valori di Soglia</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-parametri-operativi"><strong>Step 4: Parametri Operativi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#salvataggio-configurazione">Salvataggio Configurazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-hopper">Troubleshooting Hopper</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problemi-comuni-e-soluzioni">Problemi comuni e soluzioni</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#passi-successivi">Passi successivi</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>

@@ -220,12 +220,7 @@ FlexiVisionEasy_manual/QUICKSTART/12_Panoramica_Interfaccia.md
 
 FlexiVisionEasy_manual/QUICKSTART/SETUP/13_setup.md
 ``` 
-```{toctree}
-:hidden:
-:caption: 
 
-FlexiVisionEasy_manual/QUICKSTART/14_calibrazione_camera.md
-``` 
 
 ```{toctree}
 :hidden:
@@ -234,18 +229,6 @@ FlexiVisionEasy_manual/QUICKSTART/14_calibrazione_camera.md
 FlexiVisionEasy_manual/QUICKSTART/Nuovo_Modello/16_Nuovo_modello.md
 ```
 
-```{toctree}
-:hidden:
-:caption: 
-
-FlexiVisionEasy_manual/QUICKSTART/22_Config_FlexiBowl.md
-```
-```{toctree}
-:hidden:
-:caption: 
-
-FlexiVisionEasy_manual/QUICKSTART/23_Config_Hopper.md
-```
 ```{toctree}
 :hidden:
 :caption: 
