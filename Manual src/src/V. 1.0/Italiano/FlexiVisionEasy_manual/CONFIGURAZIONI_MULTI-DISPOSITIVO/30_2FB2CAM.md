@@ -26,7 +26,6 @@ Questa configurazione supporta due varianti operative, in base al numero di robo
 | **Camere** | 2 | 2 |
 | **Logica operativa** | Il robot raggiunge entrambe le stazioni | Ogni robot è dedicato a una stazione |
 | **Switch richiesto** | Sì | Sì |
-| **Indicata per** |  | |
 
 
 ---
@@ -74,6 +73,7 @@ Anche in questa variante ciascuna stazione supporta applicazioni sia di tipo **S
 | Camere | 2 |
 | Robot | 2 |
 | Switch richiesto | **Sì** |
+
 ```{tip}
 Questa variante garantisce la massima produttività, con le due celle che operano in parallelo e in modo completamente autonomo.
 ```

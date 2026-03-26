@@ -142,19 +142,10 @@ Seleziona il componente per cui hai bisogno di supporto.
 **Problemi con la licenza**
 
 Se la licenza non si attiva:
-- Verificare la connessione Internet (alcune licenze richiedono validazione online)
+- Verificare la connessione Internet 
 - Controllare la data/ora del sistema operativo Windows (deve essere corretta)
 - Assicurarsi di aver inserito la chiave esattamente come fornita
 ```
 
-```{tip}
-**Prima configurazione completa**
-
-Per una prima installazione, si consiglia di:
-1. Completare tutti i setup di base (fino al Passo 7)
-2. Effettuare la calibrazione camera seguendo la procedura guidata
-3. Creare un modello di test con un pezzo semplice
-4. Verificare il picking con il robot prima di procedere con la produzione
-```
 ---
  

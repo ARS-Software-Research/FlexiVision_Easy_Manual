@@ -1,4 +1,4 @@
-# Comandi Applicazione Mix
+# **Comandi Applicazione Mix**
 ```{note}
 **Prerequisiti**
 
@@ -50,10 +50,10 @@ Questo significa che per richiedere le coordinate di un modello diverso è neces
 | Comando | Azione | Valore di Ritorno |
 |---|---|---|
 | `mix_Locator_1` | Avvia la ricerca del **Modello 1**. Se non trovato, aziona il FlexiBowl® e ripete la ricerca automaticamente fino al ritrovamento o a `stop_Locator`. Attiva la tramoggia se necessario. | `Pattern_1;x;y;r` / `Hopper;signalnumber;time` |
-| `mix_Locator_2` | Come sopra, per il **Modello 2** | `Pattern_2;x;y;r` |
-| `mix_Locator_3` | Come sopra, per il **Modello 3** | `Pattern_3;x;y;r` |
+| `mix_Locator_2` | Come sopra, per il **Modello 2** | `Pattern_2;x;y;r` / `Hopper;signalnumber;time` |
+| `mix_Locator_3` | Come sopra, per il **Modello 3** | `Pattern_3;x;y;r` / `Hopper;signalnumber;time` |
 | … | … | … |
-| `mix_Locator_8` | Come sopra, per il **Modello 8** | `Pattern_8;x;y;r` |
+| `mix_Locator_8` | Come sopra, per il **Modello 8** | `Pattern_8;x;y;r` / `Hopper;signalnumber;time` |
 | `turn_Locator` | Se nessun pezzo è stato prelevato, fa ruotare il FlexiBowl® e riavvia la ricerca multi-componente | `Pattern_n;x;y;r` |
 | `test_Locator` | Avvia la localizzazione multi-componente senza attivare il FlexiBowl® (solo acquisizione immagine) | `Pattern_n;x;y;r` / Nessuno |
 | `stop_Locator` | Interrompe qualsiasi ricerca in corso | Nessuno |
@@ -71,7 +71,7 @@ Il numero massimo di modelli gestibili all'interno di una singola ricetta Mix è
 
 ### Segnali hopper opzionale
 ```{note}
-If hopper should be activated you will receive the string `"Hopper;signalnumber;time"`
+Se la tramoggia deve essere attivata, ricevermeo la stringa: `"Hopper;signalnumber;time"`
 ```
 
 ---

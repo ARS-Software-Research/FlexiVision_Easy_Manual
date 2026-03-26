@@ -29,7 +29,6 @@ Una volta configurato correttamente, raramente richiede modifiche (solo se cambi
 
 ## Parametri Configurabili
 
-I parametri di Protocol Setup si dividono in due categorie: parametri di flusso dati e parametri statistici.
 ![Pagina Protocol Setup](../QUICKSTART/img/pagina_protocolsetup.png)
 
 ```{list-table}

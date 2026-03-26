@@ -90,7 +90,7 @@ Il sistema supporta i seguenti comandi tramite stringhe di testo inviate sulla c
 ### Segnali hopper opzionale
 
 ```{note}
-If hopper should be activated you will receive the string “Hopper;signalnumber;time”
+Se la tramoggia deve essere attivata, ricevermeo la stringa: `"Hopper;signalnumber;time"`
 
 ```
 

@@ -1,4 +1,4 @@
-# Panoramica Applicazione Mix
+# **Panoramica Applicazione Mix**
 Questa sezione introduce il concetto di **Applicazione Mix** in FlexiVision One, spiegando in cosa si differenzia da un'applicazione standard e come configurarla correttamente a livello di ricetta e modelli.
 
 ---

@@ -26,8 +26,6 @@ Questa configurazione supporta tre varianti operative, in base al numero di robo
 | **Camere** | 3 | 3 | 3 |
 | **Logica operativa** | Il robot raggiunge tutte e tre le stazioni | Primo robot su un FlexiBowl, secondo robot su due FlexiBowl | Ogni robot è dedicato a una stazione |
 | **Switch richiesto** | Sì | Sì | Sì |
-| **Indicata per** |  |  |  |
-
 ---
 
 ## Variante A — 1 Robot, 3 FlexiBowl®
@@ -105,6 +103,7 @@ Ogni stazione supporta applicazioni di tipo **Standard** o **Mix**.
 | Camere | 3 |
 | Robot | 3 |
 | Switch richiesto | **Sì** |
+
 ```{tip}
 La variante C garantisce le migliori prestazioni complessive. Ciascuna cella è completamente autonoma e non dipende dalla disponibilità delle altre.
 ```
@@ -149,6 +148,7 @@ Selezionare il kit in base alla taglia del FlexiBowl® di ciascuna stazione aggi
 | FB 650 | GM002005 | CE000879 — FlexiVision 16mm Optic |
 | FB 800 | GM002006 | CE000879 — FlexiVision 16mm Optic |
 | FB 1200 | GM002007 | CE000878 — FlexiVision 12mm Optic |
+
 ```{note}
 Se le stazioni aggiuntive utilizzano FlexiBowl® di taglie diverse, acquistare un kit per ciascuna taglia.  
  Ad esempio, per una configurazione con FB500 + FB650 + FB800, il kit base copre la prima stazione, mentre per la seconda e la terza stazione è necessario ordinare rispettivamente GM002004 e GM002006.
